@@ -1,6 +1,6 @@
 # CLAUDE.md
 
-2D 탑뷰 전술 잠입 슈팅 게임 (Unity 6000.3.10f1, URP 2D, Windows). 단일 기준 문서는 `docs/MASTER_PROMPT.md`이다.
+2D 탑뷰 전술 잠입 슈팅 게임 (Unity 6000.3.24f1, URP 2D, Windows). 단일 기준 문서는 `docs/MASTER_PROMPT.md`이다.
 
 ## 문서 우선순위
 1. `docs/MASTER_PROMPT.md` — 규칙·수치·데이터 형식·개발 순서(Phase)

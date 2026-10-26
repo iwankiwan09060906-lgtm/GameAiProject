@@ -54,7 +54,7 @@
 
 | 항목 | 값 |
 | --- | --- |
-| 엔진 | Unity 6 — **6000.3.10f1** (`ProjectSettings/ProjectVersion.txt` 기준) |
+| 엔진 | Unity 6 — **6000.3.24f1** (`ProjectSettings/ProjectVersion.txt` 기준) |
 | 플랫폼 | Windows PC 스탠드얼론(64bit), 싱글 플레이 |
 | 렌더 | **URP 2D 렌더러**(`com.unity.render-pipelines.universal` 17.3, 설치됨). `Light2D`(Global + Point), 벽 `ShadowCaster2D`. 카메라 Orthographic + **Pixel Perfect Camera**(Assets PPU 32, Reference Resolution 960×540) |
 | 스프라이트 | PPU 32, Filter Point, Compression None. Aseprite 임포터 설치됨(`.aseprite` 직접 사용 가능) |
