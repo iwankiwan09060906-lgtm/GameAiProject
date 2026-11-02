@@ -1,0 +1,369 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc50f338ec2b68830928c289db47adaa, type: 3}
+  m_Name: AssetCatalog
+  m_EditorClassIdentifier: GameAi.Runtime::GameAi.AssetCatalog
+  sprites:
+  - name: accomplice
+    frames:
+    - {fileID: 21300000, guid: 4de5a0edeb5676240941ce40fdf9c671, type: 3}
+  - name: blood_1
+    frames:
+    - {fileID: 21300000, guid: d175ff50f14e31845b37570be0421af8, type: 3}
+  - name: blood_2
+    frames:
+    - {fileID: 21300000, guid: 78318f356cc78c84797f7e48ff3f7c81, type: 3}
+  - name: blood_3
+    frames:
+    - {fileID: 21300000, guid: d2a3d69373a1a8547805ac7e5ee600a6, type: 3}
+  - name: blood_4
+    frames:
+    - {fileID: 21300000, guid: 1aef322e5f187814f8842d17ec55f2c3, type: 3}
+  - name: casing
+    frames:
+    - {fileID: 21300000, guid: 02a9733b87067d74fb42603a20b5d024, type: 3}
+  - name: corpse_guard
+    frames:
+    - {fileID: 21300000, guid: 85ec256100d25dd4690868ee5feacfe2, type: 3}
+  - name: corpse_rifleman
+    frames:
+    - {fileID: 21300000, guid: 8eccf37ccce8e384b8d64b60432acaae, type: 3}
+  - name: cover_high_cabinet
+    frames:
+    - {fileID: 21300000, guid: 98b3651e5c906744dac0eef089378be0, type: 3}
+  - name: cover_high_counter_metal
+    frames:
+    - {fileID: 21300000, guid: 1cd83cf447444c6468285ce5ac4e17a0, type: 3}
+  - name: cover_high_counter_wooden_red
+    frames:
+    - {fileID: 21300000, guid: a3e71bb168f14a0478e166d45b964bb0, type: 3}
+  - name: cover_high_counter_wooden_red2
+    frames:
+    - {fileID: 21300000, guid: 429ba625929b23443a21149dafa27a47, type: 3}
+  - name: cover_high_crate
+    frames:
+    - {fileID: 21300000, guid: 352f4b660a4b629438807bd1038ecc81, type: 3}
+  - name: cover_high_fridge
+    frames:
+    - {fileID: 21300000, guid: 55fbb68818219cb42a0a6bfac398434e, type: 3}
+  - name: cover_high_hifi
+    frames:
+    - {fileID: 21300000, guid: ab7f001c2480f6b4db2e969a7c54605f, type: 3}
+  - name: cover_high_oven1
+    frames:
+    - {fileID: 21300000, guid: 293b0c7b6f11a8c4980f95edad3072d8, type: 3}
+  - name: cover_low_bath_e
+    frames:
+    - {fileID: 21300000, guid: b3ea294825180ff4d9482ea978ebeaba, type: 3}
+  - name: cover_low_bath_n
+    frames:
+    - {fileID: 21300000, guid: e636b0bbdffcdf740ad7bd8497789228, type: 3}
+  - name: cover_low_bath_s
+    frames:
+    - {fileID: 21300000, guid: 3ddd4659aebadca43a72125dc3f93571, type: 3}
+  - name: cover_low_bath_w
+    frames:
+    - {fileID: 21300000, guid: bfc652dedbeda8f46a88e6c008ee758e, type: 3}
+  - name: cover_low_bed_wooden_e
+    frames:
+    - {fileID: 21300000, guid: feae08e6f90f97140ba6a3a98c85d3b5, type: 3}
+  - name: cover_low_bed_wooden_n
+    frames:
+    - {fileID: 21300000, guid: c10be746a009c7849bb7f5f7a4fbb7c7, type: 3}
+  - name: cover_low_bed_wooden_s
+    frames:
+    - {fileID: 21300000, guid: 39717a7c3f699a248997c817421bc1de, type: 3}
+  - name: cover_low_bed_wooden_w
+    frames:
+    - {fileID: 21300000, guid: bc4002f7edb732d438c9dfcbb389d0a1, type: 3}
+  - name: cover_low_crate
+    frames:
+    - {fileID: 21300000, guid: d051758039635a342aafd159ceeadf85, type: 3}
+  - name: cover_low_desk1
+    frames:
+    - {fileID: 21300000, guid: 64de98631e6f1774c8418e9cc0bb447f, type: 3}
+  - name: cover_low_sofa_down_1
+    frames:
+    - {fileID: 21300000, guid: 1941b61d20ee8b0499d8ca001af73422, type: 3}
+  - name: cover_low_sofa_down_2
+    frames:
+    - {fileID: 21300000, guid: 854fa4c9d0a094c4f89e42092a1eb620, type: 3}
+  - name: cover_low_sofa_left_1
+    frames:
+    - {fileID: 21300000, guid: 7a3eec14962214e4fb2a350fbe0942cd, type: 3}
+  - name: cover_low_sofa_left_2
+    frames:
+    - {fileID: 21300000, guid: 463705b7e08dda540a3c92cf8313f0ef, type: 3}
+  - name: cover_low_sofa_right_1
+    frames:
+    - {fileID: 21300000, guid: 8c0a424b99bb2de44919cc2075278fc3, type: 3}
+  - name: cover_low_sofa_right_2
+    frames:
+    - {fileID: 21300000, guid: 1947f08277f22f641adb093af2ee7107, type: 3}
+  - name: cover_low_sofa_up_1
+    frames:
+    - {fileID: 21300000, guid: ce4db61ec19a5914e96e30cf76bb1522, type: 3}
+  - name: cover_low_sofa_up_2
+    frames:
+    - {fileID: 21300000, guid: a05b9ecfb70213943b2cc173568fc6e4, type: 3}
+  - name: cover_low_table_red
+    frames:
+    - {fileID: 21300000, guid: 250bbd4df8c4d584399242b0efca8fad, type: 3}
+  - name: cover_low_table_white
+    frames:
+    - {fileID: 21300000, guid: 3f10571990c01764791341c9523eef27, type: 3}
+  - name: crosshair
+    frames:
+    - {fileID: 21300000, guid: 54bd88dfa26d4c24b8c3dfaa2c206b83, type: 3}
+  - name: door_closed
+    frames:
+    - {fileID: 21300000, guid: cbefd5fa8a43c9a4c91f17ea95fd3546, type: 3}
+  - name: door_open
+    frames:
+    - {fileID: 21300000, guid: f04061829396a6245ac23f3a0cbefd99, type: 3}
+  - name: foliage_bush
+    frames:
+    - {fileID: 21300000, guid: 921b239c250e7e641855e029b0aa6d25, type: 3}
+  - name: foliage_fern
+    frames:
+    - {fileID: 21300000, guid: c39d01d7c87c5aa4eb493cb5759cf2e1, type: 3}
+  - name: foliage_fir
+    frames:
+    - {fileID: 21300000, guid: f263529f78a605f48bc74c5d766b5eca, type: 3}
+  - name: foliage_leaves
+    frames:
+    - {fileID: 21300000, guid: 980859c6004e5694584d8342676f254f, type: 3}
+  - name: foliage_pine
+    frames:
+    - {fileID: 21300000, guid: 540dcfd8d275dd0469fb9f873761c6b4, type: 3}
+  - name: foliage_plants
+    frames:
+    - {fileID: 21300000, guid: 46042985f678c3d4fb6cf047964d272d, type: 3}
+  - name: foliage_reeds
+    frames:
+    - {fileID: 21300000, guid: fb50ffdf95479864f85f420608e7531a, type: 3}
+  - name: guard_idle
+    frames:
+    - {fileID: 21300000, guid: 0ced94e75c784bd4a8abca8e1fccfc7b, type: 3}
+  - name: guard_shoot
+    frames:
+    - {fileID: 21300000, guid: 17960814af3b86f47b4c6933e9646e4b, type: 3}
+  - name: guard_walk
+    frames:
+    - {fileID: -5733428916423009627, guid: d0a14788b59201f4d9166460c26f3c28, type: 3}
+    - {fileID: 7836249351320665054, guid: d0a14788b59201f4d9166460c26f3c28, type: 3}
+  - name: held_pistol
+    frames:
+    - {fileID: 21300000, guid: a3ff9577caa67f04f8d97b8ba5746653, type: 3}
+  - name: held_rifle
+    frames:
+    - {fileID: 21300000, guid: 960f53d7d581cd64497f9f9811b562d7, type: 3}
+  - name: held_silenced_pistol
+    frames:
+    - {fileID: 21300000, guid: 70137dd715a180f47b507a145813f6d8, type: 3}
+  - name: hit_blood_1
+    frames:
+    - {fileID: 21300000, guid: 4ed7cd882c1927f428fe68921a42864d, type: 3}
+  - name: hit_blood_2
+    frames:
+    - {fileID: 21300000, guid: 2760fe30924684c4a8043c329cd17981, type: 3}
+  - name: hit_blood_3
+    frames:
+    - {fileID: 21300000, guid: 95baf83559b57db499903851f4b51dd7, type: 3}
+  - name: hit_blood_4
+    frames:
+    - {fileID: 21300000, guid: 8f1d9df170ffda94e9c98fd3c86f428f, type: 3}
+  - name: hit_blood_5
+    frames:
+    - {fileID: 21300000, guid: 7e7bf59744b032a4aa65db9aa15f150a, type: 3}
+  - name: hit_blood_6
+    frames:
+    - {fileID: 21300000, guid: d9df182b95a1b1b4292dd63587d388dc, type: 3}
+  - name: hit_blood_7
+    frames:
+    - {fileID: 21300000, guid: bb7607ee3881b7649be1bbe2d718ec9b, type: 3}
+  - name: hit_blood_8
+    frames:
+    - {fileID: 21300000, guid: 009ead06fe9f5294fb0387d0e673a816, type: 3}
+  - name: hit_blood_9
+    frames:
+    - {fileID: 21300000, guid: 81417b0952944aa4cadc3d1961f14bb9, type: 3}
+  - name: icon_armor
+    frames:
+    - {fileID: 21300000, guid: 6f7c63ccd5b159a41a8d1b46c13751c3, type: 3}
+  - name: icon_detect
+    frames:
+    - {fileID: 21300000, guid: 3a2547031b8142840a41c2cdf0a4e48f, type: 3}
+  - name: icon_light
+    frames:
+    - {fileID: 21300000, guid: ce7615f1165f5cd4ea2235d3e4e6621c, type: 3}
+  - name: icon_noise
+    frames:
+    - {fileID: 21300000, guid: fc26bc570262de74eabb188d0c44e230, type: 3}
+  - name: icon_suspect
+    frames:
+    - {fileID: 21300000, guid: 8502e14d8706051459902ddc1d27da5c, type: 3}
+  - name: lamp
+    frames:
+    - {fileID: 21300000, guid: 07d2c3d520e706f41babb62880f2398b, type: 3}
+  - name: muzzle_flash_1
+    frames:
+    - {fileID: 21300000, guid: 6bd6f7ba3d6ebaa46b076f74bc199706, type: 3}
+  - name: muzzle_flash_2
+    frames:
+    - {fileID: 21300000, guid: 8e6c9e76c0628e943b290242562e3a45, type: 3}
+  - name: muzzle_flash_3
+    frames:
+    - {fileID: 21300000, guid: 2d39ad73cff79664f807b0c12a5f20f3, type: 3}
+  - name: muzzle_flash_4
+    frames:
+    - {fileID: 21300000, guid: 59e1d2a9b7f035b489ed075eaa4c55e8, type: 3}
+  - name: obj_bomb
+    frames:
+    - {fileID: 21300000, guid: a75ceb11963ac8a4888f1d9271a3a779, type: 3}
+  - name: obj_decoy
+    frames:
+    - {fileID: 21300000, guid: 762f00b295df71c408b1086bf3b95db8, type: 3}
+  - name: obj_exit
+    frames:
+    - {fileID: 21300000, guid: 751f2b54c7376b84e848cd1847f69345, type: 3}
+  - name: obj_target
+    frames:
+    - {fileID: 21300000, guid: b806d8a97fa8ee541b382f7445a0454a, type: 3}
+  - name: panel_dark
+    frames:
+    - {fileID: 21300000, guid: f0541f177f2110b4b8afb0ac119b9ae4, type: 3}
+  - name: panel_dialogue
+    frames:
+    - {fileID: 21300000, guid: 2aa97dbef39d9f34c8a8314a8869965b, type: 3}
+  - name: panel_gold
+    frames:
+    - {fileID: 21300000, guid: c0da9091e4ffaba4e80b185ee43e7850, type: 3}
+  - name: player
+    frames:
+    - {fileID: 21300000, guid: 1ef8a44d08354fe418ac4b09aaaa048e, type: 3}
+  - name: player_idle
+    frames:
+    - {fileID: 21300000, guid: 43031fd4e3e56e94ca7db830b595d0b3, type: 3}
+  - name: player_melee
+    frames:
+    - {fileID: 21300000, guid: 002c2a4078d989545b37036c304436c8, type: 3}
+  - name: player_shoot
+    frames:
+    - {fileID: 21300000, guid: cd00219374a9448458d2c81cb2057b34, type: 3}
+  - name: player_walk
+    frames:
+    - {fileID: 2215745761463138581, guid: e319f914a66931242a676cdd094a529b, type: 3}
+    - {fileID: 1700766857389022521, guid: e319f914a66931242a676cdd094a529b, type: 3}
+  - name: rifleman_idle
+    frames:
+    - {fileID: 21300000, guid: 32905119f45022d4e90603fac87f2b78, type: 3}
+  - name: rifleman_shoot
+    frames:
+    - {fileID: 21300000, guid: 1195531e4ba9c88448546a278ff67bff, type: 3}
+  - name: rifleman_walk
+    frames:
+    - {fileID: 5734453158951494869, guid: 157d2401945529f4b96af07be382df8c, type: 3}
+    - {fileID: -9020251799579848211, guid: 157d2401945529f4b96af07be382df8c, type: 3}
+  - name: stance_crouch
+    frames:
+    - {fileID: 21300000, guid: 32a92a3ace3958743b0762a375d85983, type: 3}
+  - name: stance_idle
+    frames:
+    - {fileID: 21300000, guid: 25c647c030c050444943d2217458e002, type: 3}
+  - name: stance_run
+    frames:
+    - {fileID: 21300000, guid: 39a859a10a145774e89f52259a807534, type: 3}
+  - name: stance_walk
+    frames:
+    - {fileID: 21300000, guid: 4cf51ab780ffb5d47ad2499cba727de7, type: 3}
+  - name: tile_floor_carpet
+    frames:
+    - {fileID: 21300000, guid: 5f6b64bcb80cb2a4090e1b84a9f41589, type: 3}
+  - name: tile_floor_outdoor
+    frames:
+    - {fileID: 21300000, guid: 8e63080b62e340d4085bd3f26532c9df, type: 3}
+  - name: tile_floor_tile
+    frames:
+    - {fileID: 21300000, guid: 68894028e97d06a4da08463e54a636ef, type: 3}
+  - name: tile_floor_wood
+    frames:
+    - {fileID: 21300000, guid: 4de31393a5c537e4fa874f7f26f5a46f, type: 3}
+  - name: tile_wall
+    frames:
+    - {fileID: 21300000, guid: 4f864876479fefd4bb3d5e4ddd411593, type: 3}
+  - name: tile_window
+    frames:
+    - {fileID: 21300000, guid: 545b06078ccc2434092e9205434028f5, type: 3}
+  - name: weapon_pistol
+    frames:
+    - {fileID: 21300000, guid: c1dca9731e88a5040ac0855c3f759935, type: 3}
+  - name: weapon_rifle
+    frames:
+    - {fileID: 21300000, guid: acf5cec298170ae4f8fe516583ff67f7, type: 3}
+  - name: weapon_silenced_pistol
+    frames:
+    - {fileID: 21300000, guid: fe482a42dc2db454d90753ddcb919538, type: 3}
+  clips:
+  - name: amb_outdoor_night
+    clip: {fileID: 8300000, guid: 98380340665d12a4197d34b1e2d19111, type: 3}
+  - name: bgm_game
+    clip: {fileID: 8300000, guid: 2684eb67aa1abaa4ba4bbc0d62e064d9, type: 3}
+  - name: bgm_menu
+    clip: {fileID: 8300000, guid: a4c5df7523bcdef4a821f31fb4b8ac4b, type: 3}
+  - name: sfx_alert
+    clip: {fileID: 8300000, guid: b3d566e487ff9054e82fefe53f73a6f5, type: 3}
+  - name: sfx_bark
+    clip: {fileID: 8300000, guid: 933c8e8a298b82e479b6b536ffa67bc9, type: 3}
+  - name: sfx_casing
+    clip: {fileID: 8300000, guid: 0efb9dbae6a8c5c489c940a05b9fb386, type: 3}
+  - name: sfx_decoy
+    clip: {fileID: 8300000, guid: 83b4c83404e8abe4c8251b99c7747daa, type: 3}
+  - name: sfx_dialogue_next
+    clip: {fileID: 8300000, guid: 64597e41898dccd41802bcd5ea0d54ba, type: 3}
+  - name: sfx_door
+    clip: {fileID: 8300000, guid: d365a3c52808d61429c56e693f232b5a, type: 3}
+  - name: sfx_empty
+    clip: {fileID: 8300000, guid: 2ea27148dfb1318428a86af38baef1b3, type: 3}
+  - name: sfx_fail
+    clip: {fileID: 8300000, guid: b066ab83427bb7f4e91b9837f00af486, type: 3}
+  - name: sfx_footstep
+    clip: {fileID: 8300000, guid: a3a20f4750370ab4c98ad2abc3cf2db9, type: 3}
+  - name: sfx_hit_armor
+    clip: {fileID: 8300000, guid: e61311c9abc9df1428fd9beac4da3229, type: 3}
+  - name: sfx_hit_enemy
+    clip: {fileID: 8300000, guid: 15a1d787855a7b44391780c4f32ded41, type: 3}
+  - name: sfx_hit_player
+    clip: {fileID: 8300000, guid: 899416092c0fc8c4997b43611ea41c8d, type: 3}
+  - name: sfx_nvg_off
+    clip: {fileID: 8300000, guid: 6c2bf081501fdd84aa0af793eb1ee1d6, type: 3}
+  - name: sfx_nvg_on
+    clip: {fileID: 8300000, guid: f35b0befe161d0b429f0d9fbf61f1d3e, type: 3}
+  - name: sfx_pickup
+    clip: {fileID: 8300000, guid: 9cb5421ff28f61e48952e66a2e841484, type: 3}
+  - name: sfx_reload
+    clip: {fileID: 8300000, guid: 226063e46e485cd48967049e206a5da3, type: 3}
+  - name: sfx_shot_pistol
+    clip: {fileID: 8300000, guid: 1131f75a425c6ab469becc7f91621a3b, type: 3}
+  - name: sfx_shot_rifle
+    clip: {fileID: 8300000, guid: 1496981a9bd283e438e868ba4ed04cd0, type: 3}
+  - name: sfx_shot_silenced
+    clip: {fileID: 8300000, guid: 81d2523815e7e9549ab0bb0b8c655e0f, type: 3}
+  - name: sfx_success
+    clip: {fileID: 8300000, guid: b66c3a314b59e85478907560cb545158, type: 3}
+  - name: sfx_takedown
+    clip: {fileID: 8300000, guid: ea499239a424a4443b5b4f7541dbd54a, type: 3}
+  - name: sfx_ui_click
+    clip: {fileID: 8300000, guid: e7a5242759c00c348b3db6341f610606, type: 3}
+  font: {fileID: 11400000, guid: ae9ce6308a293024a985459afd5a43b2, type: 2}
+  spriteLit: {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  spriteUnlit: {fileID: 2100000, guid: 9dfc825aed78fcd4ba02077103263b40, type: 2}

@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "weapons": [
+    { "id": "pistol",          "display_name": "P-9",    "damage": 20, "range_m": 15, "fire_interval_s": 0.3,  "noise_radius_m": 12, "mag_size": 12, "reserve": 36, "reload_s": 1.5, "auto": false },
+    { "id": "silenced_pistol", "display_name": "P-9 SD", "damage": 17, "range_m": 12, "fire_interval_s": 0.3,  "noise_radius_m": 3,  "mag_size": 10, "reserve": 30, "reload_s": 1.8, "auto": false },
+    { "id": "rifle",           "display_name": "AR-30",  "damage": 30, "range_m": 30, "fire_interval_s": 0.12, "noise_radius_m": 25, "mag_size": 30, "reserve": 90, "reload_s": 2.5, "auto": true }
+  ],
+  "switch_delay_s": 0.3,
+  "player": { "hp": 100, "armor": 50, "decoys": 2, "nvg_battery_s": 60, "nvg_recharge_per_s": 0.5 },
+  "melee": { "range_m": 1.5, "back_arc_deg": 120 }
+}

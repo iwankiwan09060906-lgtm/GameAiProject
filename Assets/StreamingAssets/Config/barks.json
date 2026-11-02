@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "barks": [
+    { "when": "investigate_noise", "lines": ["뭐지, 방금 그 소리?", "누구 있어?"] },
+    { "when": "investigate_sight", "lines": ["저기... 뭐가 움직였나?", "잘못 봤나?"] },
+    { "when": "detect",            "lines": ["저기 있다!", "침입자다!", "거기 서!"] },
+    { "when": "hit",               "lines": ["윽!", "맞았다!"] },
+    { "when": "reload",            "lines": ["장전 중! 엄호해!"] },
+    { "when": "lost",              "lines": ["어디 숨었어...", "놓쳤다, 찾아!"] },
+    { "when": "search_end",        "lines": ["기분 탓인가.", "아무도 없군."] },
+    { "when": "alert_received",    "lines": ["연락 받았다, 간다."] }
+  ]
+}

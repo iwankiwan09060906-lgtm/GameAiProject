@@ -1,0 +1,72 @@
+{
+  "version": 2,
+  "reference_resolution": [1920, 1080],
+  "pixel_reference_resolution": [960, 540],
+  "pixels_per_unit": 32,
+  "camera_ortho_size": 8.4375,
+  "camera_lookahead_ratio": 0.3,
+  "camera_lookahead_max_m": 3.0,
+  "interact_range_m": 1.2,
+  "fixed_seed_enabled": false,
+  "fixed_seed": 12345,
+  "default_difficulty": "normal",
+  "lighting": {
+    "ambient_color": "#1A1830",
+    "global_intensity_scale": 10.0,
+    "lamp_color": "#FFC873",
+    "lamp_falloff": 0.6,
+    "shadow_strength": 0.9,
+    "wall_rim_color": "#3A3A44",
+    "muzzle_light_color": "#FFD38A",
+    "muzzle_light_radius_m": 3.0,
+    "muzzle_light_s": 0.05,
+    "nvg_color": "#7CFF9A",
+    "nvg_global_intensity": 0.6,
+    "film_grain_alpha": 0.04
+  },
+  "audio": { "ambience_fade_s": 0.5 },
+  "player": {
+    "walk_speed": 3.5,
+    "run_mult": 1.5,
+    "crouch_mult": 0.5,
+    "radius_m": 0.4,
+    "fov_deg": 90,
+    "view_m": 12,
+    "vision_rays": 90
+  },
+  "view": {
+    "hand_x_m": 0.25,
+    "hand_y_m": -0.25,
+    "held_center_m": 0.16,
+    "muzzle_m": 0.31,
+    "walk_fps": 8,
+    "shoot_frame_s": 0.1,
+    "melee_frame_s": 0.2,
+    "enemy_radius_m": 0.4
+  },
+  "fog": {
+    "unexplored_alpha": 1.0,
+    "memory_alpha": 0.65,
+    "memory_gray": 0.04
+  },
+  "fx": {
+    "tracer_s": 0.1,
+    "tracer_color": "#FFE680",
+    "muzzle_s": 0.05,
+    "hit_flash_s": 0.1,
+    "hit_blood_s": 0.3,
+    "pool_max": 512,
+    "casing_s": 0.15,
+    "casing_dist_min_m": 0.4,
+    "casing_dist_max_m": 0.8,
+    "blood_scale_min": 0.5,
+    "blood_scale_max": 0.9,
+    "blood_scatter_m": 0.3
+  },
+  "crosshair": {
+    "shot_spread": 1.35,
+    "shot_spread_s": 0.15,
+    "run_spread": 1.2,
+    "display_scale": 1
+  }
+}

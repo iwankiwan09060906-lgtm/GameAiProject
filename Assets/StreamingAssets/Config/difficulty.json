@@ -1,0 +1,5 @@
+{ "version": 1, "levels": [
+  { "id": "easy",   "mult": 0.8 },
+  { "id": "normal", "mult": 1.0 },
+  { "id": "hard",   "mult": 1.2 }
+] }

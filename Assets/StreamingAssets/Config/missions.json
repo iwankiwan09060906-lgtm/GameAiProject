@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "maps": [
+    { "id": "map_01", "file": "maps/map_01.json", "mission": "eliminate" },
+    { "id": "map_02", "file": "maps/map_02.json", "mission": "steal" },
+    { "id": "map_03", "file": "maps/map_03.json", "mission": "steal_exit" },
+    { "id": "map_04", "file": "maps/map_04.json", "mission": "eliminate" }
+  ],
+  "bomb": { "enabled": false, "time_limit_s": 180, "defuse_s": 5, "keep_progress": true }
+}
