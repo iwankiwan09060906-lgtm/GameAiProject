@@ -12,7 +12,7 @@
 
 ## 작업 규칙
 - Phase 순서대로, Phase마다 완료 조건 확인 후 `phase-N: 요약`으로 커밋한다.
-- 외부 에셋 없이도 실행되어야 한다(코드 생성 스프라이트·톤). 같은 이름 파일을 넣으면 교체된다.
+- 외부 에셋은 `Assets/_Project/`에 들어 있고 파일 목록은 `docs/ASSET_DIRECTION.md` 3장이 기준이다. 파일이 빠져도 실행되어야 한다(코드 생성 스프라이트·톤). 같은 이름 파일로 덮어쓰면 교체된다.
 - 씬·프리팹은 손으로 만들지 않고 `Assets/_Project/Editor/ProjectBuilder.cs`(`Tools/Build Project`)로 생성한다.
 - 범위 밖 기능(MASTER_PROMPT 2.2, 15장)은 만들지 않는다.
 

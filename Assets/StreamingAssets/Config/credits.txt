@@ -1,0 +1,7 @@
+Characters and props based on "Pixel Topdown Shooter - Assets" by Dyru
+(https://dyru.itch.io/top-down-shooter), licensed under CC BY 4.0, modified.
+
+Thanks to: Ritpop, extradave, Screaming Brain Studios, CDmir, ansimuz, Reactorcore,
+AntumDeluge, niro58, Kenney, The Free Firearm Sound Library, rubberduck,
+congusbongus, Paul Wortmann, Ted Kerr.
+Fonts: Galmuri (Lee Minseo), Noto Sans KR (Google & Adobe) — SIL OFL 1.1.

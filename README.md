@@ -27,6 +27,7 @@
 Assets/_Project/Scripts/   Core · Grid · Player · Weapons · Combat · Vision · Map · Mission · AI · UI · Audio · Data · Debug · Util
 Assets/_Project/Art/       픽셀아트 (없으면 코드 생성 스프라이트)
 Assets/_Project/Audio/     sfx · bgm (없으면 코드 생성 톤)
+AssetSource/               사용한 외부 에셋 원본·라이선스, 재생성 스크립트
 Assets/StreamingAssets/Config/   게임 수치·맵·대사 JSON
 docs/reference/            목표 화면 3장
 ```

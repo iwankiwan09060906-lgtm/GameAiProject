@@ -1,0 +1,57 @@
+b #16161C
+k #120D0E
+h #2B1B22
+i #4A2C33
+j #7A4A48
+s #E8B08C
+t #C27F63
+u #8A4F45
+v #552E30
+w #EFE6DA
+p #1A1418
+c #2A2F3A
+d #3E4656
+e #5C6678
+r #8E2A30
+q #C8323C
+---
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbkkkkkkkkkkbbbbbbbbbbb
+bbbbbbbbbkkjjiiiiihhkkbbbbbbbbbb
+bbbbbbbbkjjjjiiiiiihhhkbbbbbbbbb
+bbbbbbbkjjjiiiiiiiihhhhkbbbbbbbb
+bbbbbbkjjjiiiiiiiiiiihhhkbbbbbbb
+bbbbbkjjiiiiihhiiiiiihhhhkbbbbbb
+bbbbbkjjiiihhsssshhiiihhhkbbbbbb
+bbbbbkjiihssssssstthhhhhhhkbbbbb
+bbbbbkjiihsssssssssttuhhhhkbbbbb
+bbbbbkjiihssssssssstttuhhhkbbbbb
+bbbbbkjiihskkkssssskkkuhhhkbbbbb
+bbbbbkjiihssssssssstttuhhhkbbbbb
+bbbbbkjiihswpwssssswpwuhhhkbbbbb
+bbbbbkjiihsttsssssttttuhhhkbbbbb
+bbbbbkjiihssssssstssttuhhhkbbbbb
+bbbbbkjiihssssssstssttuhhhkbbbbb
+bbbbbkjiihssssstuutstuuhhhkbbbbb
+bbbbbkjiihssssssssstttuhhhkbbbbb
+bbbbbkjiihsssvvvvvvtttuhhhkbbbbb
+bbbbbkjiihssssstttstttuhhhkbbbbb
+bbbbbkjiihtsssssssstttvhhhkbbbbb
+bbbbbkjiihhtssssstttuvhhhhkbbbbb
+bbbbbkjiihhhttsstttuvhhhhhkbbbbb
+bbbbbbkkihhvttttuuvhhhhkkbbbbbbb
+bbbbbbbbkkkvuttuuvvkkkkbbbbbbbbb
+bbbbbbbbbkrqqqqqqqqrrrkbbbbbbbbb
+bbbbbbkkkrqqqqqqqqqqrrrkkkbbbbbb
+bbbbkkeddrqqqqqqqqrrrrrrcckkbbbb
+bbbkeeddcrrqqqqqrrrrrrrcccckkbbb
+bbkeedddcckrrrrrrrrrkccccccckbbb
+bkeeddddcckkkrrrrkkkcccccccckkbb
+bkeedddddcckkkkkkkcccccccccckkbb
+keedddddddccckcccccccccccccccckb
+keedddddddccckcccccccccccccccckb
+keedddddddccckcccccccccccccccckb
+keedddddddccckcccccccccccccccckb
+keedddddddccckcccccccccccccccckb
+keedddddddccckcccccccccccccccckb

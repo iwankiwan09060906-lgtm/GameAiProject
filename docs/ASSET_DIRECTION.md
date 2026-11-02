@@ -1,6 +1,6 @@
 # 2D 탑뷰 전술 잠입 슈팅 — 에셋 디렉션 및 적용 가이드
 
-이 문서는 팀이 정한 **목표 게임 화면 3장**(`docs/reference/`)을 기준으로 그래픽·사운드·UI의 방향, 무료 에셋 후보, 파일 이름 규칙을 정한다.
+이 문서는 팀이 정한 **목표 게임 화면 3장**(`docs/reference/`)을 기준으로 그래픽·사운드·UI의 방향, 무료 에셋, 파일 목록을 정한다. 외부 에셋은 2026-11-03에 `Assets/_Project/`에 정리해 넣었고, 실제 파일 목록은 3장이 기준이다.
 수치·규칙은 `MASTER_PROMPT.md`(7장 규칙, 11장 에셋), `요구사항 정의서.md`(2.3 레퍼런스 화면 결정 #21~#30), `기능 정의서.md`를 따른다.
 
 ---
@@ -70,7 +70,7 @@
 
 ---
 
-## 2. 무료 에셋 후보
+## 2. 무료 에셋
 
 > 원칙(결정 #5): 사용이 허용된 무료 에셋 또는 직접 제작. 라이선스를 다운로드 페이지에서 **직접 확인한 뒤** `ASSET_CREDITS.md`에 기록한다. 레퍼런스 화면과 똑같은 스타일의 무료 에셋은 거의 없으므로, **바닥·벽·가구는 무료 타일을 고치고, 캐릭터·초상화·UI는 직접 그리는 것**을 기본으로 한다(Aseprite 임포터가 프로젝트에 설치되어 있음).
 >
@@ -79,7 +79,7 @@
 > - **CC-BY (3.0/4.0)**: 게임 크레딧 화면과 `ASSET_CREDITS.md`에 지정 문구를 적는 조건으로 허용한다.
 > - **쓰지 않음**: CC-BY-SA, GPL, 비상업(NC), "재배포 금지", 라이선스 표기 없음, 유료. 공개 GitHub 저장소에 원본 파일이 올라가므로 재배포 금지 조건이 있으면 쓸 수 없다.
 >
-> 아래 후보는 2026-10-26에 각 페이지의 라이선스 표기를 확인했다. 받기 전에 한 번 더 확인한다.
+> 아래 에셋의 상태와 라이선스 확인 기록은 `ASSET_CREDITS.md`가 기준이다.
 
 ### 2.0 레퍼런스 요소 → 에셋 대응
 
@@ -87,14 +87,16 @@
 
 | 레퍼런스 요소 | 받아올 에셋 | 우리가 손볼 것 |
 | --- | --- | --- |
-| 나무 마루·체크 타일·청록 카펫 | Modern Houses, Tiny Top Down Pack | 16px 타일은 2배 확대, 채도 10~20% 낮춤 |
-| 욕조·소파·침대·상자 | Modern Houses, Crimelike Furniture | 위에서 본 모습만 골라 엄폐물(`c`/`C`)로 지정 |
-| 어두운 정원·풀숲 | Grass Tiles 32×32, Trees & Bushes | 남색 전역광 아래에서만 보이므로 대비만 맞춤 |
-| 총을 든 캐릭터 | Pixel Topdown Shooter(dyru) | 색 4종 중 회색 계열을 플레이어, 붉은·녹색 계열을 적 2종으로 재채색 |
-| 총구 화염·혈흔·시체 | Reactorcore 총구 화염, Reactorcore 혈흔, Blood Splatters | 혈흔은 `#6E0F0F`로 재채색, 시체는 캐릭터 스프라이트를 눕혀 제작 |
-| 꺾쇠 조준선, `?` `!` | Kenney Crosshair Pack, Emotes Pack | 흰색 1px 외곽선 추가 |
-| HUD 무기 그림 | CC0 Firearm Icons, Weapon Pack Firearms 02 | 빨강 윤곽 단색으로 재채색 |
-| 초상화·대화창·HUD 패널 | 없음 | 직접 제작(Aseprite) |
+| 나무 마루·체크 타일·청록 카펫 | Modern Houses | 16px 타일은 2배 확대, 채도 낮춤, 카펫은 청록 재채색 |
+| 검은 벽 | Tiny Top Down Pack | 거의 검정으로 어둡게 |
+| 얇은 금색 문 | Pixel Topdown Shooter(dyru) | 벽 조각을 금색 재채색 |
+| 욕조·소파·침대·상자 | Modern Houses, Crimelike Furniture, dyru | 위에서 본 모습 위주로 골라 엄폐물(`c`/`C`)로 지정 |
+| 어두운 정원·풀숲 | Grass Tiles 32×32, Trees & Bushes | Trees & Bushes는 잔디가 배경에 구워져 있어 작은 나무 2종만 잘라 씀 |
+| 총을 든 캐릭터 | Pixel Topdown Shooter(dyru) | 회색 캐릭터를 플레이어, 주황 캐릭터를 경비병, 녹색 체크 캐릭터를 소총병으로 재채색. 총은 별도 그림(`held_*`)을 겹침 |
+| 총구 화염·혈흔·시체 | Reactorcore 총구 화염, Reactorcore 혈흔, Blood Splatters | 혈흔은 `#6E0F0F`로 재채색, 시체는 캐릭터 + 혈흔 합성(임시본) |
+| 꺾쇠 조준선, `?` `!` | Kenney Crosshair Pack, Emotes Pack | 조준선에 어두운 1px 외곽선 추가 |
+| HUD 무기 그림 | CC0 Firearm Icons, Weapon Pack Firearms 02 | 빨강 윤곽으로 재채색 |
+| 초상화·대화창·HUD 패널 | 없음 | 임시본을 코드로 그려 넣음(3.1). 팀이 Aseprite로 그리면 같은 이름으로 덮어씀 |
 | 노란 천장등, 남색 야외, 벽 그림자, 야간 투시 | 없음 | Unity 기능으로 제작(2.4) |
 
 ### 2.1 그래픽
@@ -103,16 +105,15 @@
 | --- | --- | --- | --- | --- |
 | "Modern Houses" Tileset TopDown | Ritpop | 현대식 실내 바닥·벽·가구(16px → 32px 2배) | CC0 | [opengameart](https://opengameart.org/node/138632) · [itch.io](https://ritpop.itch.io/modern-houses-tileset-topdown) |
 | Crimelike — Furniture | extradave | 32×32 욕조(피 묻은 변형 포함)·소파·침대 등 가구 | CC0 | [opengameart](https://opengameart.org/node/4726) |
-| Tiny Top Down Pack | Screaming Brain Studios | 32×32 벽·바닥 10가지 스타일, 문 타일 — 타일·콘크리트 바닥, 창고 벽 | CC0 | [opengameart](https://opengameart.org/content/tiny-top-down-pack) |
+| Tiny Top Down Pack | Screaming Brain Studios | 32×32 벽 타일(10가지 스타일 중 어두운 패널 1장) | CC0 | [opengameart](https://opengameart.org/content/tiny-top-down-pack) |
 | Grass Tiles [32x32] | CDmir | 야외 바닥(`tile_floor_outdoor`) | CC0 | [opengameart](https://opengameart.org/content/grass-tiles-32x32-0) |
-| Trees & Bushes | ansimuz | 야외 풀숲·나무(정원 장식, 시야를 가리지 않는 장식물) | CC0 | [opengameart](https://opengameart.org/content/trees-bushes) |
-| Pixel Topdown Shooter — Assets | dyru | **캐릭터 바탕**: 5명 × 걷기·총 들기·사격·근접 공격 4가지 자세, 4색. 무기·탄·총구 효과·상자도 포함 | **CC BY 4.0** (크레딧 필수) | [itch.io](https://dyru.itch.io/top-down-shooter) |
-| Gun Muzzle Flash Effects | Reactorcore | 총구 화염(16~128px, 232장). 사격마다 같은 크기 세트에서 무작위 1장 | CC0 | [opengameart](https://opengameart.org/content/gun-muzzle-flash-effects-fire-and-ion-and-melee) |
-| Gore Blood Gibs Meat Chunks | Reactorcore | 피격 시 튀는 피 입자·혈흔 | CC0 | [opengameart](https://opengameart.org/content/gore-blood-gibs-meat-chunks) |
+| Trees & Bushes | ansimuz | 야외 관목·소나무(시트가 불투명이라 잔디를 지워서 사용, 큰 나무는 크기가 맞지 않아 안 씀) | CC0 | [opengameart](https://opengameart.org/content/trees-bushes) |
+| Pixel Topdown Shooter — Assets | dyru | **캐릭터 바탕**: 5명 × 4자세(32×32). 총 3종·상자·서류·방탄 아이콘·문으로 쓴 벽 조각도 포함 | **CC BY 4.0** (크레딧 필수) | [itch.io](https://dyru.itch.io/top-down-shooter) |
+| Gun Muzzle Flash Effects | Reactorcore | 총구 화염 4장(24×20). 사격마다 무작위 1장 | CC0 | [opengameart](https://opengameart.org/content/gun-muzzle-flash-effects-fire-and-ion-and-melee) |
+| Gore Blood Gibs Meat Chunks | Reactorcore | 피격 순간 피 애니메이션(Blood2_Burst 9프레임) | CC0 | [opengameart](https://opengameart.org/content/gore-blood-gibs-meat-chunks) |
 | Blood Splatters | AntumDeluge | 32×32 바닥 혈흔 데칼 | CC0 | [opengameart](https://opengameart.org/node/147730) |
-| Bloodsplatter and Bloodsplash Animation | overcrafted | 피격 순간 짧은 혈흔 애니메이션 | CC0 | [opengameart](https://opengameart.org/node/51056) |
-| CC0 Firearm Icons | AntumDeluge | 32×32 권총·소총 아이콘 → HUD 무기 그림 바탕 | CC0 | [opengameart](https://opengameart.org/node/120825) |
-| Weapon Pack — Firearms 02 | niro58 | HUD 무기 아이콘 예비 | 페이지에서 확인 필요 | [itch.io](https://niro58.itch.io/weapon-pack-firearms-02) |
+| CC0 Firearm Icons | AntumDeluge | HUD 권총 그림 바탕(turacept 원본 50×25) | CC0 | [opengameart](https://opengameart.org/node/120825) |
+| Weapon Pack — Firearms 02 | niro58 | HUD 소총 그림 바탕 | CC0 | [itch.io](https://niro58.itch.io/weapon-pack-firearms-02) |
 | Crosshair Pack | Kenney | 꺾쇠형 조준선 | CC0 | [kenney.nl](https://kenney.nl/assets/crosshair-pack) |
 | Emotes Pack | Kenney | `?` `!` 인지 아이콘 | CC0 | [kenney.nl](https://kenney.nl/assets/emotes-pack) |
 
@@ -120,6 +121,7 @@
 
 | 에셋 | 이유 |
 | --- | --- |
+| Bloodsplatter and Bloodsplash Animation (overcrafted, CC0) | 640×800 고해상도 그림이라 픽셀 화면과 맞지 않음. Reactorcore 혈흔으로 대체 |
 | Pixel Art Top Down Soldiers (tbbk, CC0) | 창병·장교 변형이 있는 중세풍이고 애니메이션이 없어 현대 전술 분위기와 맞지 않음 |
 | Top Down Shooter Character Animations (JJ99) | 정탑뷰로 분위기는 맞지만 **재배포 금지** 조건 → 공개 저장소에 올릴 수 없음 |
 | Top Down Shooter Character (ChrisJulch) | 페이지에 라이선스 표기가 없음 |
@@ -131,11 +133,11 @@
 
 | 에셋 | 제작자 | 활용처 | 라이선스 | 링크 |
 | --- | --- | --- | --- | --- |
-| The Free Firearm Sound Library | Ben Jaszczak 외 | 권총·소총 사격, 재장전, 빈 탄창 | CC0 | [opengameart](https://opengameart.org/content/the-free-firearm-sound-library) |
-| 25 CC0 Bang / Firework SFX | rubberduck | 소음권총(피치·볼륨 낮춤) | CC0 | [opengameart](https://opengameart.org/content/25-cc0-bang-firework-sfx) |
+| The Free Firearm Sound Library | Ben Jaszczak 외 | 권총·소총 사격(사격음만 있는 팩) | CC0 | [opengameart](https://opengameart.org/content/the-free-firearm-sound-library) |
+| 25 CC0 Bang / Firework SFX | rubberduck | 소음권총 | CC0 | [opengameart](https://opengameart.org/content/25-cc0-bang-firework-sfx) |
 | Impact Sounds | Kenney | 발소리, 피격, 근접 제압, 유인탄, 탄피 | CC0 | [kenney.nl](https://kenney.nl/assets/impact-sounds) |
-| RPG Audio | Kenney | 문 개폐, 자료 확보 | CC0 | [kenney.nl](https://kenney.nl/assets/rpg-audio) |
-| Interface Sounds | Kenney | 버튼, 발각 경고음, 대화 넘김, 성공·실패 | CC0 | [kenney.nl](https://kenney.nl/assets/interface-sounds) |
+| RPG Audio | Kenney | 문 개폐, 자료 확보, 재장전 | CC0 | [kenney.nl](https://kenney.nl/assets/rpg-audio) |
+| Interface Sounds | Kenney | 버튼, 빈 탄창, 발각 경고음, 대화 넘김, 성공·실패 | CC0 | [kenney.nl](https://kenney.nl/assets/interface-sounds) |
 | Abandoned passages (horror ambience loop) | congusbongus | **인게임 배경음** `bgm_game` — 어둡고 좁은 실내의 불안한 앰비언트 루프 | CC0 | [opengameart](https://opengameart.org/content/abandoned-passages-horror-ambience-loop) |
 | Dark Cavern Ambient | Paul Wortmann | 메뉴 배경음 `bgm_menu` (루프 버전 002) | CC0 | [opengameart](https://opengameart.org/content/dark-cavern-ambient) |
 | Crickets ambient noise (loopable) | Ted Kerr | 야외 환경음 `amb_outdoor_night` — 레퍼런스의 밤 정원 | CC0 | [opengameart](https://opengameart.org/content/crickets-ambient-noise-loopable) |
@@ -148,8 +150,9 @@
 | 폰트 | 활용처 | 라이선스 | 링크 |
 | --- | --- | --- | --- |
 | 갈무리(Galmuri11) | HUD·대화창·메뉴·적 대사 전부 | SIL OFL 1.1 | [GitHub](https://github.com/Quiple/Galmuri) |
-| Neo둥근모 (예비) | 갈무리가 너무 가늘어 보일 때 대체. 옛 PC 통신 느낌의 굵은 도트 | SIL OFL 1.1 | [GitHub](https://github.com/neodgm) |
-| Noto Sans KR (예비) | 디버그 오버레이처럼 작은 글자가 많이 나올 때 | SIL OFL 1.1 | [Google Fonts](https://fonts.google.com/noto/specimen/Noto+Sans+KR) |
+| Noto Sans KR | 디버그 오버레이처럼 작은 글자가 많이 나올 때 | SIL OFL 1.1 | [Google Fonts](https://fonts.google.com/noto/specimen/Noto+Sans+KR) |
+
+Neo둥근모는 받은 파일이 소스뿐이고 `.ttf`가 없어 제외했다. 갈무리가 너무 가늘어 보이면 릴리스 페이지에서 `.ttf`를 받아 다시 검토한다.
 
 ### 2.4 에셋 없이 Unity 기능으로 만드는 것
 
@@ -167,59 +170,82 @@
 
 ---
 
-## 3. 파일 이름 규칙 (`Assets/_Project/`)
+## 3. 에셋 파일 목록 (`Assets/_Project/`)
 
-외부 파일이 없으면 코드 생성 임시 에셋(`Util/ProceduralSprites`)이 쓰이고, 아래 경로에 **같은 이름의 파일**을 넣으면 `AssetCatalog`(MASTER_PROMPT 11.0)가 `Tools/Build Project` 실행 때 찾아 교체한다. 스프라이트는 모두 PPU 32, Point 필터.
+아래 파일은 **이미 들어 있다**(2026-11-03). `AssetCatalog`(MASTER_PROMPT 11.0)가 이 이름으로 찾고, 파일이 없으면 "없을 때" 칸의 코드 생성 에셋을 쓴다. 스프라이트는 모두 PPU 32, Point 필터.
+
+**교체 방법**: 같은 이름의 파일로 덮어쓴 뒤 `Tools/Build Project`를 실행한다. 재채색 값이나 자르는 위치를 바꾸려면 `AssetSource/build_assets.cs`를 고치고 `AssetSource/build_assets.ps1`을 실행한다. 이 스크립트는 3.1의 스프라이트와 사격음 2개를 원본에서 다시 만들고, 3.2의 나머지 소리는 원본을 이름만 바꿔 넣은 것이다. 초상화·소품 도트는 `AssetSource/drawn/*.txt`(팔레트 + 문자 격자)를 고쳐도 된다. `AssetSource/`는 `Assets/` 밖이라 Unity가 임포트하지 않는다.
 
 ### 3.1 그래픽 (`Art/`)
 
-| 파일 | 대상 | 크기 | 코드 생성 대체 |
-| --- | --- | --- | --- |
-| `tiles/tile_floor_wood.png` · `tile_floor_tile.png` · `tile_floor_carpet.png` · `tile_floor_outdoor.png` | 바닥 4종(맵 JSON `floor` 영역별) | 32×32 | 단색 + 2px 격자 무늬 |
-| `tiles/tile_wall.png` | 벽 `#` | 32×32 | 검정 + 1px 테두리 |
-| `tiles/tile_window.png` | 창문 `W` | 32×32 | 벽 + 흰 막대 |
-| `tiles/door_closed.png` / `door_open.png` | 문 `D` | 32×8 / 8×32 | 금색 막대 |
-| `props/cover_low_*.png` | 낮은 엄폐물 `c`(소파·테이블·상자) | 32×32 | 갈색 사각 + 줄무늬 |
-| `props/cover_high_*.png` | 높은 엄폐물 `C`(옷장·선반·큰 상자) | 32×32 | 진한 갈색 사각 |
-| `props/lamp.png` | 천장등 위치 표시 | 8×8 | 노란 점 |
-| `props/foliage_*.png` | 야외 풀숲·나무 `f` 타일(장식, 이동만 막음) | 32×32 / 64×64 | 진한 녹색 원 |
-| `chars/player_{idle,walk,shoot}.png` | 플레이어(시트, 프레임 32×32) | 32×32 | 회색 원 + 총 막대 |
-| `chars/guard_*.png` / `rifleman_*.png` | 적 2종 | 32×32 | 갈색 / 녹갈색 원 + 총 막대 |
-| `chars/corpse_*.png` | 시체 | 32×32 | 눕힌 실루엣 + 혈흔 |
-| `fx/muzzle_flash.png` · `fx/casing.png` · `fx/blood_*.png` | 총구 화염·탄피·혈흔 | 16×16 / 2×2 / 32×32 | 노란 별 / 금색 점 / 붉은 얼룩 |
-| `obj/obj_target.png` · `obj_bomb.png` · `obj_exit.png` · `obj_decoy.png` | 목표·폭탄·탈출·유인탄 | 32×32 | 노란 서류 / 빨간 상자 / 초록 윤곽 / 주황 원 |
-| `ui/crosshair.png` | 꺾쇠 조준선 | 32×32 | 흰 꺾쇠 4개 |
-| `ui/icon_suspect.png` / `icon_detect.png` | `?` / `!` | 16×16 | 노랑 / 빨강 글자 |
-| `ui/icon_{armor,light,noise}.png` | HUD 아이콘 | 16×16 | 단색 기호 |
-| `ui/stance_{idle,walk,run,crouch}.png` | 자세 실루엣 | 32×64 | 흰 사람 모양 |
-| `ui/weapon_{pistol,silenced_pistol,rifle}.png` | HUD 무기 그림 | 64×32 | 빨강 윤곽 총 |
-| `portraits/{speaker_id}.png` | 대화 초상화(예: `accomplice.png`) | 32×40 (4배 표시) | 이름 첫 글자가 적힌 사각 |
+| 파일 | 대상 | 크기 | 원본 | 없을 때 |
+| --- | --- | --- | --- | --- |
+| `tiles/tile_floor_wood.png` · `tile_floor_tile.png` · `tile_floor_carpet.png` | 실내 바닥 3종(맵 JSON `floor` 영역별) | 32×32 | Modern Houses 16px 2배. 카펫은 청록 재채색, 타일은 회색조 | 단색 + 2px 격자 무늬 |
+| `tiles/tile_floor_outdoor.png` | 야외 바닥 | 32×32 | Grass Tiles | 단색 + 2px 격자 무늬 |
+| `tiles/tile_wall.png` | 벽 `#` | 32×32 | Tiny Top Down을 거의 검정으로 어둡게. **1px 테두리는 타일에 없다** | 검정 + 1px 테두리 |
+| `tiles/tile_window.png` | 창문 `W` | 32×32 | 벽 타일 + 흰 막대 | 벽 + 흰 막대 |
+| `tiles/door_closed.png` / `door_open.png` | 문 `D` | 32×8 / 8×32 | dyru 벽 조각을 금색 재채색 | 금색 막대 |
+| `props/cover_low_*.png` (20장) | 낮은 엄폐물 `c`: 소파 8·침대 4·욕조 4·책상·테이블 2·상자 | 32×32 | Crimelike, Modern Houses, dyru | 갈색 사각 + 줄무늬 |
+| `props/cover_high_*.png` (8장) | 높은 엄폐물 `C`: 카운터 3·수납장·냉장고·오븐·오디오·큰 상자 | 32×32 | Crimelike, Modern Houses, dyru | 진한 갈색 사각 |
+| `props/foliage_*.png` (7장) | 야외 풀숲 `f` 타일(장식, 이동만 막음) | 32×32 | Trees & Bushes 2장, Grass Tiles 5장 | 진한 녹색 원 |
+| `chars/{player,guard,rifleman}_idle.png` / `_shoot.png` | 서 있기 / 사격 | 32×32 | dyru 재채색 | 원 + 총 막대 |
+| `chars/{player,guard,rifleman}_walk.png` | 걷기(2프레임 시트) | 64×32 | dyru 재채색 | 코드 생성 1프레임 |
+| `chars/player_melee.png` | 근접 제압 | 32×32 | dyru 재채색 | 사격 프레임으로 대체 |
+| `chars/held_{pistol,silenced_pistol,rifle}.png` | 손에 든 총(캐릭터 위에 겹침) | 16×16 | dyru | 표시 안 함(코드 생성 캐릭터에 총 막대가 있음) |
+| `chars/corpse_{guard,rifleman}.png` | 시체 | 32×32 | dyru 캐릭터 + 혈흔 합성(임시본) | 눕힌 실루엣 + 혈흔 |
+| `fx/muzzle_flash_*.png` (4장) | 총구 화염. 왼쪽 끝이 총구 | 24×20 | Reactorcore | 노란 별 |
+| `fx/blood_*.png` (4장) | 바닥 혈흔(`#6E0F0F` 재채색) | 32×32 | Blood Splatters | 붉은 얼룩 |
+| `fx/hit_blood_*.png` (9장) | 피격 순간 피 애니메이션(번호 순서로 재생) | 20×20 | Reactorcore | 혈흔을 작게 흩뿌림 |
+| `fx/casing.png` | 탄피 | 2×2 | 코드로 그림 | 금색 점 |
+| `props/lamp.png` | 천장등 위치 표시 | 8×8 | 코드로 그림 | 노란 점 |
+| `obj/obj_target.png` | 목표 서류 | 32×32 | dyru 2배 | 노란 서류 |
+| `obj/obj_bomb.png` · `obj_exit.png` · `obj_decoy.png` | 폭탄·탈출 지점·유인탄 | 32×32 | 코드로 그림 | 빨간 상자 / 초록 윤곽 / 주황 원 |
+| `ui/crosshair.png` | 꺾쇠 조준선(1px 어두운 외곽선 포함) | 32×32 | Kenney Crosshair | 흰 꺾쇠 4개 |
+| `ui/icon_suspect.png` / `icon_detect.png` | `?` / `!` | 16×16 | Kenney Emotes 재채색 | 노랑 / 빨강 글자 |
+| `ui/icon_armor.png` | HUD 방탄 아이콘 | 16×16 | dyru 하늘색 재채색 | 단색 기호 |
+| `ui/icon_light.png` · `icon_noise.png` | HUD 밝기(전구)·소음(스피커) 아이콘 | 16×16 | 코드로 그림 | 단색 기호 |
+| `ui/stance_{idle,walk,run,crouch}.png` | 자세 실루엣 | 32×64 | 코드로 그림 | 흰 사람 모양 |
+| `ui/panel_dark.png` · `panel_gold.png` · `panel_dialogue.png` | HUD 패널 / 무기 이름 칸 금색 테두리 / 대화창(위쪽 빨강 1px). 9-slice(테두리 2px) | 16×16 | 코드로 그림 | 단색 Image |
+| `ui/weapon_{pistol,silenced_pistol,rifle}.png` | HUD 무기 그림 | 64×32 | Firearm Icons(권총), Weapon Pack(소총) 빨강 윤곽 재채색 | 빨강 윤곽 총 |
+| `portraits/accomplice.png` · `portraits/player.png` | 대화 초상화(`dialogue.json`의 화자 2명, 4배 표시) | 32×40 | 코드로 그림(임시본) | 이름 첫 글자가 적힌 사각 |
 
-### 3.2 사운드 (`Audio/sfx/`, `Audio/bgm/`, `.ogg` 또는 `.wav`)
+**캐릭터 사용법**: 모든 캐릭터는 오른쪽(+X)을 본다. dyru 캐릭터에는 총이 없으므로 `held_*`를 겹쳐 그린다. 기준점은 캐릭터 칸의 아래쪽 손 (25, 24)px이고, 총 그림의 왼쪽 끝이 손잡이다.
 
-| ID | 용도 | 길이 | 후보 |
+3장의 이름이 있는 파일은 모두 들어 있다. "코드로 그림"은 외부 에셋이 없어 `AssetSource/`에서 만든 임시본이고, 팀이 그린 그림이 나오면 같은 이름으로 덮어쓴다. 화자를 `dialogue.json`에 더하면 `portraits/{speaker_id}.png`도 더한다.
+
+### 3.2 사운드 (`Audio/sfx/`, `Audio/bgm/`)
+
+파일 이름이 ID다. 확장자는 `.ogg`·`.wav`·`.mp3`를 모두 받는다. 길이는 실제 파일 기준이다.
+
+| ID | 용도 | 길이 | 원본 |
 | --- | --- | --- | --- |
-| `sfx_shot_pistol` / `sfx_shot_silenced` / `sfx_shot_rifle` | 사격 3종 | 0.08~0.12s | Firearm Library / 25 Bang |
-| `sfx_reload` / `sfx_empty` | 재장전 / 빈 탄창 | 0.4s / 0.05s | Firearm Library |
-| `sfx_casing` | 탄피 떨어짐 | 0.1s | Impact Sounds(metal light) |
-| `sfx_footstep` | 발소리 | 0.08s | Impact Sounds(footstep) |
-| `sfx_door` | 문 | 0.2s | RPG Audio(doorOpen) |
-| `sfx_hit_player` / `sfx_hit_armor` / `sfx_hit_enemy` | 피격(체력 / 방탄 / 적) | 0.1~0.15s | Impact Sounds |
-| `sfx_takedown` | 근접 제압 | 0.2s | Impact Sounds(soft heavy) |
-| `sfx_alert` | 발각 경고음 | 1.0s | Interface Sounds |
-| `sfx_bark` | 적 대사 표시음 | 0.15s | Interface Sounds(낮게) |
-| `sfx_decoy` | 유인탄 | 0.3s | Impact Sounds(metal) |
-| `sfx_pickup` | 자료 확보 | 0.3s | RPG Audio |
-| `sfx_nvg_on` / `sfx_nvg_off` | 야간 투시 켜기·끄기 | 0.2s | Interface Sounds |
-| `sfx_dialogue_next` | 대화 넘김 | 0.05s | Interface Sounds(click) |
-| `sfx_success` / `sfx_fail` / `sfx_ui_click` | 결과·버튼 | 1.0 / 1.0 / 0.05s | Interface Sounds |
-| `bgm_menu` / `bgm_game` | 배경음 | 루프 | Dark Cavern Ambient / Abandoned passages |
-| `amb_outdoor_night` | 야외 구역에 있을 때 겹쳐 트는 환경음 | 루프 11s | Crickets ambient noise |
+| `sfx_shot_pistol` / `sfx_shot_rifle` (`.wav`) | 사격 | 0.12s | Firearm Library `X_39P`(Walther PPQ) / `D_32P`(AR-15) 첫 발 |
+| `sfx_shot_silenced` | 소음 사격 | 0.26s | 25 Bang `shot_03` |
+| `sfx_reload` | 재장전 | 0.45s | RPG Audio `metalClick` |
+| `sfx_empty` | 빈 탄창 | 약 0.1s | Interface `click_002` |
+| `sfx_casing` | 탄피 떨어짐 | 0.35s | Impact `impactMetal_light_000` |
+| `sfx_footstep` | 발소리 | 0.11s | Impact `footstep_concrete_000` |
+| `sfx_door` | 문 | 0.92s | RPG Audio `doorOpen_1` |
+| `sfx_hit_player` / `sfx_hit_armor` / `sfx_hit_enemy` | 피격(체력 / 방탄 / 적) | 0.43 / 0.54 / 0.12s | Impact `impactPunch_medium_000` / `impactPlate_light_000` / `impactSoft_medium_000` |
+| `sfx_takedown` | 근접 제압 | 0.51s | Impact `impactSoft_heavy_000` |
+| `sfx_alert` | 발각 경고음 | 0.50s | Interface `error_006` |
+| `sfx_bark` | 적 대사 표시음 | 0.12s | Interface `bong_001` |
+| `sfx_decoy` | 유인탄 | 0.27s | Impact `impactMetal_medium_000` |
+| `sfx_pickup` | 자료 확보 | 0.28s | RPG Audio `bookPlace1` |
+| `sfx_nvg_on` / `sfx_nvg_off` | 야간 투시 켜기·끄기 | 0.21s | Interface `maximize_003` / `minimize_003` |
+| `sfx_dialogue_next` | 대화 넘김 | 0.04s | Interface `select_001` |
+| `sfx_success` / `sfx_fail` / `sfx_ui_click` | 결과·버튼 | 0.54 / 0.50 / 0.10s | Interface `confirmation_002` / `error_005` / `click_001` |
+| `bgm_menu` | 메뉴 배경음(`Audio/bgm/`) | 루프 120s | Dark Cavern Ambient 002 |
+| `bgm_game` | 게임 배경음(`Audio/bgm/`) | 루프 31s | Abandoned passages `freezer` |
+| `amb_outdoor_night` (`.mp3`) | 야외 환경음(`Audio/bgm/`) | 루프 | Crickets ambient noise |
+
+소리는 파일 길이와 파형으로만 골랐고 귀로 듣지 않았다. Phase 7에서 들어 보고 어울리지 않으면 같은 팩의 다른 파일로 바꾼다.
 
 ### 3.3 폰트 (`Fonts/`)
 - `Galmuri11.ttf` → TextMeshPro 폰트 에셋 `Galmuri11 SDF.asset`(Atlas Render Mode: Raster, Sampling Point Size 11의 배수).
-- 갈무리가 작게 보이면 `NeoDunggeunmo.ttf`로 바꾼다(같은 방식, Sampling Point Size 16의 배수).
-- 없으면 Unity 기본 폰트로 표시하고 `DECISIONS.md`에 적는다.
+- `NotoSansKR-Regular.ttf`: 디버그 오버레이 전용.
+- `*-OFL.txt`: 폰트 라이선스. 폰트와 함께 배포해야 하므로 지우지 않는다.
+- 폰트가 없으면 Unity 기본 폰트로 표시하고 `DECISIONS.md`에 적는다.
 
 ### 3.4 크레딧 화면
 CC-BY 에셋을 쓰면 메인 메뉴의 "크레딧" 화면과 `ASSET_CREDITS.md` 5장에 지정 문구를 넣는다. CC0 에셋도 감사 표시로 제작자 이름을 같은 화면에 적는다.

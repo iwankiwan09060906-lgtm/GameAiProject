@@ -1,0 +1,12 @@
+Y #FFC873
+y #C98A3A
+W #FFF1C9
+---
+..yyyy..
+.yYYYYy.
+yYWWYYYy
+yYWWWYYy
+yYYWWYYy
+yYYYYYYy
+.yYYYYy.
+..yyyy..

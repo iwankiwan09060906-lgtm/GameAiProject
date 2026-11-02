@@ -11,7 +11,7 @@
 너는 이 프로젝트의 단독 개발자다. 아래 규칙을 지켜 작업한다.
 
 1. 이 문서의 **6장 개발 순서**를 Phase 순서대로 진행한다. Phase 하나가 끝날 때마다 "완료 조건"을 확인하고, 통과하면 git 커밋한다(커밋 메시지는 `phase-N: 요약`).
-2. **외부 파일 없이도 게임이 실행되어야 한다.** 이미지·소리 에셋이 없으면 코드로 만든 임시 에셋(11장)을 쓴다. 에셋 파일을 나중에 넣으면 교체되도록 만든다.
+2. **외부 파일 없이도 게임이 실행되어야 한다.** 외부 에셋은 이미 `Art/`·`Audio/`·`Fonts/`에 들어 있으므로 이 파일을 쓰고, 파일이 빠진 항목은 코드로 만든 임시 에셋(11장)으로 돌아간다.
 3. Unity 에디터를 직접 조작할 수 없다고 가정한다. 씬·프리팹·ScriptableObject를 손으로 쓰지 말고, **`Assets/_Project/Editor/ProjectBuilder.cs`** 에 메뉴 항목(`Tools/Build Project`)을 만들어 씬과 프리팹을 코드로 생성한다. URP 2D 렌더러 에셋·Pixel Perfect Camera·전역 2D 라이트 설정도 여기서 만든다. Unity가 설치되어 있으면 `-batchmode -executeMethod`로 실행해 확인한다.
 4. 게임 로직은 가능한 한 **MonoBehaviour와 분리된 순수 C# 클래스**로 만들고(격자, A*, 감지 계산, 소리 감쇠, 밝기 격자, 방탄·체력, 승패 판정, 기록 비교), EditMode 테스트를 함께 작성한다.
 5. 모든 수치는 코드에 박지 말고 `StreamingAssets/Config/*.json`에서 읽는다(7장 값이 기본값). 파일이 없거나 값이 빠지면 코드 안의 기본값으로 채우고 경고 로그를 남긴다.
@@ -84,6 +84,7 @@ repo-root/
 │  ├─ VERIFY.md                   # 검수 체크리스트와 결과표
 │  ├─ reference/                  # 목표 화면 3장 (ref_01_combat, ref_02_dialogue, ref_03_nightvision)
 │  └─ evidence/                   # 로그, 스크린샷, 클리어 영상, 목표 화면 비교
+├─ AssetSource/                   # 사용한 외부 에셋 원본·라이선스, build_assets.ps1 (Unity가 임포트하지 않음)
 ├─ Packages/manifest.json
 ├─ ProjectSettings/
 └─ Assets/
@@ -116,9 +117,9 @@ repo-root/
       ├─ Editor/                  # ProjectBuilder.cs, AssetCatalogBuilder.cs, MapValidatorMenu.cs
       ├─ Scenes/                  # MainMenu.unity, Game.unity  (ProjectBuilder가 생성)
       ├─ Prefabs/                 # Player, Enemy_Guard, Enemy_Rifleman, Door, Lamp, Corpse, FX, UI
-      ├─ Art/                     # tiles/ props/ chars/ fx/ obj/ ui/ portraits/ (없으면 코드 생성)
-      ├─ Audio/                   # sfx/ bgm/ (bgm/에 amb_ 환경음 포함, 없으면 코드 생성 톤)
-      └─ Fonts/                   # Galmuri11 → NeoDunggeunmo → Unity 기본 폰트 순으로 대체
+      ├─ Art/                     # tiles/ props/ chars/ fx/ obj/ ui/ portraits/ (파일이 빠지면 코드 생성)
+      ├─ Audio/                   # sfx/ bgm/ (bgm/에 amb_ 환경음 포함, 파일이 빠지면 코드 생성 톤)
+      └─ Fonts/                   # Galmuri11, 디버그용 NotoSansKR. 없으면 Unity 기본 폰트
 ```
 
 ---
@@ -197,7 +198,7 @@ repo-root/
 - `CoverObject`: 높은(`C`)·낮은(`c`) 엄폐물, 창문(`W`). 파괴 불가. 풀숲(`f`)은 이동만 막는 장식물이다.
 - `WeaponController`: 3종, 탄창·예비, 재장전, 0.3초 전환 지연, 재장전 중 전환 시 취소·잔탄 유지. `Hitscan` + 궤적선 0.1초.
 - `Health`: 체력 + 방탄(7.2). 피격 적색 깜빡임 0.1초.
-- `CombatFx`: 총구 화염(0.05초, 작은 Light2D, 그림이 여러 장이면 연출 난수로 1장), 탄피, 피격 순간 피 입자(혈흔 그림을 작게 4~6개 흩뿌림, 0.3초), 바닥 혈흔, 시체. `ObjectPool` 최대 512.
+- `CombatFx`: 총구 화염(0.05초, 작은 Light2D, 연출 난수로 1장), 탄피, 피격 순간 피(`fx/hit_blood_*` 번호 순서로 0.3초 재생, 파일이 없으면 혈흔 그림을 작게 4~6개 흩뿌림), 바닥 혈흔, 시체. `ObjectPool` 최대 512.
 - `MeleeTakedown`: 7.5 조건.
 - **완료 조건**: 허수아비 적을 사격·제압할 수 있고, 벽·문·창문·엄폐물 뒤는 맞지 않으며, 혈흔·탄피·시체가 남는다.
 
@@ -225,7 +226,7 @@ repo-root/
 - `Hud`: 10장 좌하단 통합 패널(체력·방탄, 소음 미터, 무기 칸, 자세 실루엣; 밝기 미터는 Phase 8에서 켬), 좌상단 목표·타이머, 우상단 경계.
 - `DialogueBox`(7.19) + `dialogue.json` 맵 1 브리핑.
 - `MainMenu`, `MissionSelect`(난이도), `SettingsOverlay`, `PauseMenu`, `ResultScreen`, `CreditsScreen`(11.5).
-- `AudioManager`: 코드 생성 톤(11.2), 일시정지 시 정지·이어 재생, 음량 3종. `AmbienceZone`: 플레이어 칸 바닥이 야외(`o`)면 `amb_outdoor_night`를 0.5초 페이드 인, 실내면 페이드 아웃(배경음 음량을 따름).
+- `AudioManager`: `Audio/`의 외부 소리 재생(파일이 없으면 코드 생성 톤, 11.2), 일시정지 시 정지·이어 재생, 음량 3종. `AmbienceZone`: 플레이어 칸 바닥이 야외(`o`)면 `amb_outdoor_night`를 0.5초 페이드 인, 실내면 페이드 아웃(배경음 음량을 따름).
 - **완료 조건**: 메인 메뉴 → 미션 선택 → 브리핑 → 플레이 → 결과 → 메인 메뉴를 오갈 수 있고, 메인 메뉴에서 크레딧 화면이 열린다. HUD 배치가 ref_01과 같다.
 
 ### Phase 8 — 밝기 격자·맵 2~4·나머지 M
@@ -770,22 +771,25 @@ for 각 칸 c:
 | 결과 | 성공/실패, 클리어 시간, 발각 횟수, 처치 수, 최고 기록 갱신 여부, 다시 하기·다음 미션·메인 메뉴 |
 | 디버그(F3) | 적 ID·상태·게이지, 시야 부채꼴, A* 경로선, 소리 반경, 밝기 히트맵, 피아 색 원, FPS·AI ms |
 
-UI는 **uGUI**(Canvas Screen Space Overlay, Canvas Scaler 1920×1080 Scale With Screen Size). 픽셀 UI 이미지는 정수 배율(×2)로 표시한다. 폰트는 11.3 순서로 고른다. 한글이 깨지면 DECISIONS에 적고 영문 라벨로 대체.
+UI는 **uGUI**(Canvas Screen Space Overlay, Canvas Scaler 1920×1080 Scale With Screen Size). 픽셀 UI 이미지는 정수 배율(×2)로 표시한다. 폰트는 11.3을 따른다. 한글이 깨지면 DECISIONS에 적고 영문 라벨로 대체.
 
 ---
 
 ## 11. 에셋
 
-> 에셋이 하나도 없어도 게임이 실행되어야 한다. 아래 "코드 생성" 버전을 먼저 만들고, 외부 에셋은 `Art/`·`Audio/`·`Fonts/`에 **같은 이름의 파일을 넣고 `Tools/Build Project`를 다시 실행하면 교체**되게 한다. 방식은 `AssetCatalog`(아래 11.0)이며 `Resources`/`Addressables`는 쓰지 않는다. 파일 이름·크기 전체 목록은 `docs/ASSET_DIRECTION.md` 3장, Unity 기능으로 만드는 연출 값은 같은 문서 2.4(= `game.json`의 `lighting`).
+> 외부 에셋은 이미 `Art/`·`Audio/`·`Fonts/`에 들어 있다(2026-11-03). 게임은 이 파일을 쓰도록 만들되, 파일이 빠져도 실행되어야 하므로 아래 "코드 생성" 버전도 함께 만든다. 파일을 바꾸려면 **같은 이름의 파일로 덮어쓰고 `Tools/Build Project`를 다시 실행**한다. 방식은 `AssetCatalog`(아래 11.0)이며 `Resources`/`Addressables`는 쓰지 않는다. 실제 파일·크기·원본 전체 목록은 `docs/ASSET_DIRECTION.md` 3장, Unity 기능으로 만드는 연출 값은 같은 문서 2.4(= `game.json`의 `lighting`).
 >
-> - **변형 파일**: 이름에 `_*`가 붙은 항목(`cover_low_*`, `foliage_*`, `blood_*`, `corpse_*` 등)은 같은 접두사 파일을 모두 모은다. 맵 소품은 칸 좌표 해시로 고르고(난수 안 씀), 혈흔·총구 화염은 연출 난수원으로 고른다.
-> - **애니메이션 시트**: `chars/{player,guard,rifleman}_{idle,walk,shoot}.png`는 가로로 이어 붙인 32×32 프레임이다. 걷기는 초당 8프레임, 사격 프레임은 0.1초 표시. 파일이 없으면 코드 생성 1프레임.
+> - **변형 파일**: 이름에 `_*`가 붙은 항목(`cover_low_*`, `cover_high_*`, `foliage_*`, `blood_*`, `corpse_*`, `muzzle_flash_*`)은 같은 접두사 파일을 모두 모은다. 맵 소품은 칸 좌표 해시로 고르고(난수 안 씀), 혈흔·총구 화염은 연출 난수원으로 고른다. 시체는 `corpse_guard`·`corpse_rifleman`을 적 종류에 맞춰 쓴다. `hit_blood_*`는 변형이 아니라 번호 순서로 재생하는 프레임이다.
+> - **캐릭터**: `chars/{player,guard,rifleman}_{idle,shoot}.png`는 1프레임, `_walk.png`는 가로로 이어 붙인 32×32 2프레임, `player_melee.png`는 1프레임이다. 걷기는 초당 8프레임, 사격 프레임은 0.1초 표시. 모두 오른쪽(+X)을 보고, 파일이 없으면 코드 생성 1프레임.
+> - **손에 든 총**: 캐릭터 그림에는 총이 없다. 현재 무기의 `chars/held_{pistol,silenced_pistol,rifle}.png`를 아래쪽 손 위치에 겹쳐 그린다(`ASSET_DIRECTION.md` 3.1 "캐릭터 사용법"). 경비병은 권총, 소총병은 소총.
+> - **벽 테두리**: `tile_wall.png`에는 1px 선이 없다. 바닥과 맞닿은 변에만 맵 렌더러가 `#3A3A44` 1px 선을 그린다.
+> - **UI 패널**: `ui/panel_dark`(HUD), `panel_gold`(무기 이름 칸), `panel_dialogue`(대화창)는 테두리 2px 9-slice 16×16이다. 임포트 때 Sprite Border를 2로 지정한다.
 > - 외부 파일이 있는 항목과 없는 항목이 섞여도 동작해야 한다.
 
 ### 11.0 에셋 연결 방식 (`AssetCatalog`)
 Unity 빌드는 `Assets/` 폴더를 실행 중에 읽지 못하므로, 파일 이름으로 찾는 연결표를 둔다.
 - `Core/AssetCatalog`: `ScriptableObject`. 이름(확장자 제외) → `Sprite[]`(시트·변형 포함) / `AudioClip` / `TMP_FontAsset` 목록을 직렬화해 가진다. `GameManager`와 `MainMenu` 씬의 부트스트랩이 참조하므로 빌드에 자동 포함된다.
-- `Editor/AssetCatalogBuilder`: `Art/`(하위 폴더 포함)·`Audio/`·`Fonts/`를 훑어 `AssetCatalog.asset`을 다시 만든다. `Tools/Build Project`가 호출하고, 에셋이 바뀌면 `AssetPostprocessor`가 자동 갱신한다. 이때 스프라이트는 PPU 32·Point·압축 없음, 시트(`chars/*`)는 32×32로 자르는 임포트 설정을 함께 적용한다.
+- `Editor/AssetCatalogBuilder`: `Art/`(하위 폴더 포함)·`Audio/`·`Fonts/`를 훑어 `AssetCatalog.asset`을 다시 만든다. `Tools/Build Project`가 호출하고, 에셋이 바뀌면 `AssetPostprocessor`가 자동 갱신한다. 이때 스프라이트는 PPU 32·Point·압축 없음, 걷기 시트(`chars/*_walk`)는 32×32로 자르는 임포트 설정을 함께 적용한다. `Fonts/`의 `*-OFL.txt`는 라이선스 파일이므로 경고 없이 건너뛴다.
 - 조회: `AssetCatalog.GetSprite(name)` / `GetClip(id)` / `GetFont()`. 없으면 `ProceduralSprites`·`AudioManager`의 코드 생성 에셋을 돌려준다. 조회 결과는 시작할 때 한 번 캐시한다.
 - 이름 규칙·크기는 `ASSET_DIRECTION.md` 3장. 알 수 없는 이름의 파일은 무시하고 경고 로그.
 - 테스트: 파일이 없을 때 폴백, 이름 충돌(같은 이름 두 개)은 먼저 찾은 것 사용 + 경고(EditMode `ConfigTests`에 포함).
@@ -813,12 +817,14 @@ Unity 빌드는 `Assets/` 폴더를 실행 중에 읽지 못하므로, 파일 �
 | HUD 아이콘 (방탄·밝기·소음) | 16×16 단색 기호 | |
 | 자세 실루엣 (서기·걷기·달리기·웅크리기) | 32×64 흰 사람 모양 | |
 | HUD 무기 그림 | 64×32 빨강 윤곽 총 | |
-| 대화 초상화 | 32×40 사각 + 이름 첫 글자 | 직접 그린 픽셀 초상화로 교체 |
+| 대화 초상화 | 32×40 사각 + 이름 첫 글자 | `accomplice`·`player` 임시본이 들어 있음 |
 | 야간 투시 필터 | 녹색 `#7CFF9A` 곱하기 + 노이즈 + 비네팅 | |
 | 필름 그레인 | 노이즈 텍스처 256×256, 알파 0.04 | 야간 투시와 같은 텍스처 |
 | UI 패널 | `#0E0E12` 알파 0.85, 글자 `#E8E4DA`, 강조 `#C8323C`, 테두리 `#C9A24A` | |
 
 ### 11.2 사운드 (없으면 코드로 톤 생성: `AudioClip.Create` + 사인/노이즈)
+
+아래 길이는 코드 생성 톤의 기준이다. 들어 있는 외부 파일의 실제 길이는 `ASSET_DIRECTION.md` 3.2.
 
 | ID | 용도 | 길이 | 코드 생성 방법 |
 | --- | --- | --- | --- |
@@ -839,24 +845,22 @@ Unity 빌드는 `Assets/` 폴더를 실행 중에 읽지 못하므로, 파일 �
 | `bgm_menu` / `bgm_game` | 배경음 | 루프 20s / 30s | 저음 패드 |
 | `amb_outdoor_night` | 야외 환경음(배경음 위에 겹침) | 루프 11s | 고역 필터 노이즈 + 짧은 고음 펄스 반복(풀벌레) |
 
-외부 효과음·BGM은 11.5 라이선스 기준에 맞는 것만, 파일 이름을 위 ID로 맞춰 효과음은 `Audio/sfx/`, 배경음·환경음(`bgm_*`, `amb_*`)은 `Audio/bgm/`에 넣고 출처를 `ASSET_CREDITS.md`에 적는다. 각 ID의 후보 에셋은 `ASSET_DIRECTION.md` 3.2.
+외부 효과음·BGM은 11.5 라이선스 기준에 맞는 것만, 파일 이름을 위 ID로 맞춰 효과음은 `Audio/sfx/`, 배경음·환경음(`bgm_*`, `amb_*`)은 `Audio/bgm/`에 넣고 출처를 `ASSET_CREDITS.md`에 적는다. 위 ID는 모두 파일이 들어 있고, 확장자는 `.ogg`·`.wav`·`.mp3`를 모두 찾는다. 각 ID의 원본은 `ASSET_DIRECTION.md` 3.2.
 
 ### 11.3 폰트
-`Fonts/`에서 아래 순서로 처음 있는 것을 TMP 폰트 에셋(Atlas Render Mode: Raster, Point)으로 만든다. 모두 없으면 Unity 기본 폰트로 표시하고 `DECISIONS.md`에 적는다.
-1. `Galmuri11.ttf` → `Galmuri11 SDF.asset` (Sampling Point Size 11의 배수)
-2. `NeoDunggeunmo.ttf` → `NeoDunggeunmo SDF.asset` (Sampling Point Size 16의 배수)
+`Fonts/Galmuri11.ttf`로 TMP 폰트 에셋 `Galmuri11 SDF.asset`(Atlas Render Mode: Raster, Point, Sampling Point Size 11의 배수)을 만든다. 없으면 Unity 기본 폰트로 표시하고 `DECISIONS.md`에 적는다.
 
-HUD·대화창·메뉴·적 대사는 같은 폰트 하나로 통일한다. 디버그 오버레이만 `NotoSansKR-Regular.ttf`가 있으면 그것을 쓴다(없으면 위 폰트).
+HUD·대화창·메뉴·적 대사는 같은 폰트 하나로 통일한다. 디버그 오버레이만 `NotoSansKR-Regular.ttf`를 쓴다(없으면 위 폰트).
 
 ### 11.4 에셋 준비 담당 메모
-김성범이 픽셀아트 제작·에셋 수집·출처 확인을 맡는다. 기본 방침은 **바닥·벽·가구는 무료 타일을 고쳐 쓰고, 캐릭터는 dyru 캐릭터를 재채색·보강, 초상화·HUD 패널은 직접 그린다**(Aseprite). 생성 도구는 수업 규정 확인 전에는 쓰지 않는다. 목표 화면은 스타일 참고용이며 그 게임의 그림·글꼴·대사를 가져오지 않는다. Claude Code는 **코드 생성 에셋만으로 완성**하고, 외부 에셋은 교체 지점만 만든다.
+김성범이 픽셀아트 제작·에셋 수집·출처 확인을 맡는다. 기본 방침은 **바닥·벽·가구는 무료 타일을 고쳐 쓰고, 캐릭터는 dyru 캐릭터를 재채색·보강, 초상화·HUD 패널은 직접 그린다**(Aseprite). 생성 도구는 수업 규정 확인 전에는 쓰지 않는다. 목표 화면은 스타일 참고용이며 그 게임의 그림·글꼴·대사를 가져오지 않는다. Claude Code는 **들어 있는 파일을 연결**하고 코드 생성 폴백을 유지한다. 초상화·패널·자세 실루엣 등은 임시본이 들어 있으므로(`ASSET_DIRECTION.md` 3.1 "코드로 그림"), 직접 그린 그림이 나오면 같은 이름으로 덮어쓴다.
 
 ### 11.5 라이선스와 크레딧
 - **허용**: CC0 1.0(우선), CC BY 3.0/4.0(크레딧 표기 조건), 폰트는 SIL OFL 1.1.
 - **금지**: CC-BY-SA, GPL 단독, 비상업(NC), 재배포 금지, 라이선스 표기 없음, 유료. 공개 GitHub 저장소에 원본 파일이 올라가기 때문이다. 여러 라이선스 중 고를 수 있으면 허용 라이선스로 쓴다(예: Dark Ambience Loop는 CC BY 3.0으로 사용).
-- 에셋을 넣을 때 다운로드 페이지에서 라이선스를 다시 확인하고 `ASSET_CREDITS.md`의 상태를 `후보` → `사용`으로 바꾼다(날짜·확인한 사람).
+- 에셋을 넣을 때 다운로드 페이지에서 라이선스를 다시 확인하고 `ASSET_CREDITS.md`의 상태를 `후보` → `사용`으로 바꾼다(날짜·확인한 사람). `사용(재확인 필요)` 항목은 사람이 페이지를 확인한 뒤 `사용`으로 바꾼다.
 - **크레딧 화면**: `StreamingAssets/Config/credits.txt`를 그대로 보여 준다. 내용은 `ASSET_CREDITS.md` 5장 문구(CC-BY 지정 문구 + CC0 감사 표시 + 폰트)와 같게 유지한다. CC-BY 에셋은 이 문구가 빠지면 쓸 수 없다. 파일이 없으면 "외부 에셋 없음 — 모든 그래픽·사운드는 코드로 생성"을 표시하고 경고 로그.
-- Claude Code는 실제로 `Assets/_Project/`에 들어 있는 에셋만 `credits.txt`에 남긴다. 처음에는 외부 에셋이 없으므로 기본 문구만 둔다.
+- Claude Code는 실제로 `Assets/_Project/`에 들어 있는 에셋만 `credits.txt`에 남긴다. `credits.txt`는 `ASSET_CREDITS.md` 5장 문구로 이미 만들어 두었다(Dark Ambience Loop 문구는 넣은 뒤에만 더한다).
 
 ---
 
