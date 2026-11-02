@@ -137,10 +137,10 @@ repo-root/
 | 이벤트 | 필드 | 보내는 쪽 → 받는 쪽 |
 | --- | --- | --- |
 | `NoiseEvent` | position, kind, radius, sourceId, time | 플레이어·무기·유인탄 → HearingSensor, HUD 소음 미터 |
-| `DamageEvent` | targetId, amount, attackerId, hitPoint, time | Hitscan → Health, CombatFx |
+| `DamageEvent` | targetId, amount, attackerId, hitPoint, kind(Bullet/Melee), time | Hitscan·MeleeTakedown → Health, CombatFx |
 | `HealthChangedEvent` | entityId, hp, armor | Health → HUD |
-| `DeathEvent` | entityId, isPlayer, position, time (1회만) | Health → Mission·AI·UI·CombatFx |
-| `ShotFiredEvent` | shooterId, muzzlePos, dir, weaponId | WeaponController → CombatFx(화염·탄피), LightGrid(사격 밝기), Crosshair |
+| `DeathEvent` | entityId, isPlayer, position, corpseSprite, rotationDeg, time (1회만) | Health → Mission·AI·UI·CombatFx |
+| `ShotFiredEvent` | shooterId, muzzlePos, dir, weaponId, endPos | WeaponController → CombatFx(화염·궤적·탄피), LightGrid(사격 밝기), Crosshair |
 | `EnemyStateChangedEvent` | enemyId, from, to, reason, time | EnemyBrain → UI·Mission·Debug·BarkPicker |
 | `DetectionEvent` | enemyId, time | AwarenessGauge → Mission·Alert |
 | `AlertEvent` | kind(Shout/Radio), position, time, senderId | AlertSystem → 수신 적 |
@@ -533,9 +533,11 @@ for 각 칸 c:
   "default_difficulty": "normal",
   "lighting": {
     "ambient_color": "#1A1830",
+    "global_intensity_scale": 10.0,
     "lamp_color": "#FFC873",
     "lamp_falloff": 0.6,
     "shadow_strength": 0.9,
+    "wall_rim_color": "#3A3A44",
     "muzzle_light_color": "#FFD38A",
     "muzzle_light_radius_m": 3.0,
     "muzzle_light_s": 0.05,
@@ -543,9 +545,16 @@ for 각 칸 c:
     "nvg_global_intensity": 0.6,
     "film_grain_alpha": 0.04
   },
-  "audio": { "ambience_fade_s": 0.5 }
+  "audio": { "ambience_fade_s": 0.5 },
+  "player": { "walk_speed": 3.5, "run_mult": 1.5, "crouch_mult": 0.5, "radius_m": 0.4, "fov_deg": 90, "view_m": 12, "vision_rays": 90 },
+  "view": { "hand_x_m": 0.25, "hand_y_m": -0.25, "held_center_m": 0.16, "muzzle_m": 0.31, "walk_fps": 8, "shoot_frame_s": 0.1, "melee_frame_s": 0.2, "enemy_radius_m": 0.4 },
+  "fog": { "unexplored_alpha": 1.0, "memory_alpha": 0.65, "memory_gray": 0.04 },
+  "fx": { "tracer_s": 0.1, "tracer_color": "#FFE680", "muzzle_s": 0.05, "hit_flash_s": 0.1, "hit_blood_s": 0.3, "pool_max": 512,
+          "casing_s": 0.15, "casing_dist_min_m": 0.4, "casing_dist_max_m": 0.8, "blood_scale_min": 0.5, "blood_scale_max": 0.9, "blood_scatter_m": 0.3 },
+  "crosshair": { "shot_spread": 1.35, "shot_spread_s": 0.15, "run_spread": 1.2, "display_scale": 1 }
 }
 ```
+`global_intensity_scale`은 화면용 Global Light2D 세기 = `ambient.indoor` × 이 값이다. 판정용 밝기(7.17)는 `ambient` 값을 그대로 쓴다.
 
 ### 9.2 `weapons.json`
 ```json
@@ -557,7 +566,8 @@ for 각 칸 c:
     { "id": "rifle",           "display_name": "AR-30",  "damage": 30, "range_m": 30, "fire_interval_s": 0.12, "noise_radius_m": 25, "mag_size": 30, "reserve": 90, "reload_s": 2.5, "auto": true }
   ],
   "switch_delay_s": 0.3,
-  "player": { "hp": 100, "armor": 50, "decoys": 2, "nvg_battery_s": 60, "nvg_recharge_per_s": 0.5 }
+  "player": { "hp": 100, "armor": 50, "decoys": 2, "nvg_battery_s": 60, "nvg_recharge_per_s": 0.5 },
+  "melee": { "range_m": 1.5, "back_arc_deg": 120 }
 }
 ```
 
@@ -848,7 +858,7 @@ Unity 빌드는 `Assets/` 폴더를 실행 중에 읽지 못하므로, 파일 �
 외부 효과음·BGM은 11.5 라이선스 기준에 맞는 것만, 파일 이름을 위 ID로 맞춰 효과음은 `Audio/sfx/`, 배경음·환경음(`bgm_*`, `amb_*`)은 `Audio/bgm/`에 넣고 출처를 `ASSET_CREDITS.md`에 적는다. 위 ID는 모두 파일이 들어 있고, 확장자는 `.ogg`·`.wav`·`.mp3`를 모두 찾는다. 각 ID의 원본은 `ASSET_DIRECTION.md` 3.2.
 
 ### 11.3 폰트
-`Fonts/Galmuri11.ttf`로 TMP 폰트 에셋 `Galmuri11 SDF.asset`(Atlas Render Mode: Raster, Point, Sampling Point Size 11의 배수)을 만든다. 없으면 Unity 기본 폰트로 표시하고 `DECISIONS.md`에 적는다.
+`Fonts/Galmuri11.ttf`로 TMP 폰트 에셋 `Galmuri11 SDF.asset`(Atlas Render Mode: Raster, Point, Sampling Point Size 12의 배수, 기본 24)을 만든다. 글자 크기도 12의 배수로 쓴다. Galmuri11의 도트 격자가 12px이라 다른 크기에서는 픽셀이 어긋난다. 없으면 Unity 기본 폰트로 표시하고 `DECISIONS.md`에 적는다.
 
 HUD·대화창·메뉴·적 대사는 같은 폰트 하나로 통일한다. 디버그 오버레이만 `NotoSansKR-Regular.ttf`를 쓴다(없으면 위 폰트).
 

@@ -160,7 +160,7 @@ Neo둥근모는 받은 파일이 소스뿐이고 `.ttf`가 없어 제외했다. 
 
 | 효과 | 만드는 방법 | 값 |
 | --- | --- | --- |
-| 어두운 전역광 | URP 2D Renderer + Global Light 2D | 실내 강도 0.15, 야외 0.08, 색 `#1A1830` |
+| 어두운 전역광 | URP 2D Renderer + Global Light 2D | 판정 값은 실내 0.15, 야외 0.08. 화면 세기 = 실내 값 × `global_intensity_scale`(10), 색 `#1A1830`. 야외는 바닥 타일 색을 야외/실내 비율로 어둡게 |
 | 노란 천장등 | 방마다 Point Light 2D(맵 JSON의 `lamp` 위치) | 색 `#FFC873`, 반경 4~6m, Falloff 0.6 |
 | 벽 그림자 | 벽 타일에 Shadow Caster 2D(Composite) | 그림자 강도 0.9 |
 | 총구 화염 빛 | 사격 순간 0.05초 켜지는 Point Light 2D | 색 `#FFD38A`, 반경 3m |
@@ -242,7 +242,7 @@ Neo둥근모는 받은 파일이 소스뿐이고 `.ttf`가 없어 제외했다. 
 소리는 파일 길이와 파형으로만 골랐고 귀로 듣지 않았다. Phase 7에서 들어 보고 어울리지 않으면 같은 팩의 다른 파일로 바꾼다.
 
 ### 3.3 폰트 (`Fonts/`)
-- `Galmuri11.ttf` → TextMeshPro 폰트 에셋 `Galmuri11 SDF.asset`(Atlas Render Mode: Raster, Sampling Point Size 11의 배수).
+- `Galmuri11.ttf` → TextMeshPro 폰트 에셋 `Galmuri11 SDF.asset`(Atlas Render Mode: Raster, Sampling Point Size 12의 배수, 기본 24).
 - `NotoSansKR-Regular.ttf`: 디버그 오버레이 전용.
 - `*-OFL.txt`: 폰트 라이선스. 폰트와 함께 배포해야 하므로 지우지 않는다.
 - 폰트가 없으면 Unity 기본 폰트로 표시하고 `DECISIONS.md`에 적는다.

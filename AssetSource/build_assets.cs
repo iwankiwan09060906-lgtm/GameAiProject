@@ -44,9 +44,9 @@ public static class AssetBuild
         var dyru = Load("dyru/shooter_up.png");
 
         // 16px 타일 2배 확대, 채도 낮춤(ASSET_DIRECTION 2.0)
-        Save(Desat(Scale(Crop(mh, 96, 32, 16, 16), 2), 0.15), "tiles/tile_floor_wood.png");
-        Save(Desat(Scale(Crop(mh, 208, 112, 16, 16), 2), 0.85), "tiles/tile_floor_tile.png");
-        Save(Tint(Scale(Crop(mh, 96, 90, 16, 16), 2), Carpet), "tiles/tile_floor_carpet.png");
+        Save(Desat(Scale(Crop(mh, 112, 32, 16, 16), 2), 0.15), "tiles/tile_floor_wood.png");
+        Save(Desat(Scale(Crop(mh, 224, 112, 16, 16), 2), 0.85), "tiles/tile_floor_tile.png");
+        Save(Tint(Scale(Crop(mh, 112, 90, 16, 16), 2), Carpet), "tiles/tile_floor_carpet.png");
         Save(Crop(grass, 0, 0, 32, 32), "tiles/tile_floor_outdoor.png");
 
         // 벽은 거의 검정. 방 쪽 1px 선은 맵 렌더러가 그린다(DECISIONS)

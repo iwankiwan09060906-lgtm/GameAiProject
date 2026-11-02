@@ -1,0 +1,304 @@
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using UnityEngine;
+
+namespace GameAi
+{
+    // 빌드를 -smoke <폴더>로 실행하면 정해진 동작을 재생해 결과와 스크린샷을 남긴다.
+    // 사람 입력 없이 실제 화면과 게임 흐름을 확인하는 용도다
+    public sealed class SmokeRunner : MonoBehaviour
+    {
+        sealed class ScriptedInput : IInputSource
+        {
+            public PlayerInputState State;
+
+            public PlayerInputState Read(Camera camera)
+            {
+                PlayerInputState current = State;
+                State.FirePressed = false;
+                State.InteractPressed = false;
+                State.MeleePressed = false;
+                State.ReloadPressed = false;
+                State.WeaponSelect = 0;
+                return current;
+            }
+        }
+
+        readonly List<string> report = new List<string>();
+        readonly ScriptedInput scripted = new ScriptedInput();
+        string outputDir;
+        GameManager game;
+        int failures;
+
+        [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.AfterSceneLoad)]
+        static void Install()
+        {
+            string[] args = Environment.GetCommandLineArgs();
+            int index = Array.IndexOf(args, "-smoke");
+            if (index < 0 || index + 1 >= args.Length) return;
+
+            var go = new GameObject("SmokeRunner");
+            DontDestroyOnLoad(go);
+            go.AddComponent<SmokeRunner>().outputDir = args[index + 1];
+        }
+
+        IEnumerator Start()
+        {
+            Directory.CreateDirectory(outputDir);
+            while (game == null || !game.IsReady)
+            {
+                game = FindAnyObjectByType<GameManager>();
+                yield return null;
+            }
+
+            game.SetInputSource(scripted, true);
+            yield return Run();
+
+            File.WriteAllLines(Path.Combine(outputDir, "smoke_report.txt"), report);
+            Application.Quit(failures == 0 ? 0 : 1);
+        }
+
+        IEnumerator Run()
+        {
+            PlayerController player = game.Player;
+            GridMap grid = game.Grid;
+            Log("시작 위치 " + player.Position + ", 맵 " + grid.Width + "x" + grid.Height + ", 적 " + game.Enemies.Count + ", 문 " + game.Doors.Count);
+            Check("적 4명", game.Enemies.Count == 4);
+
+            Aim(new Vector2(30f, 15f));
+            yield return Frames(5);
+            yield return Shot("01_garden_start");
+
+            // 걷기 속도: 1초에 약 3.5m
+            Vector2 before = player.Position;
+            scripted.State.Move = Vector2.left;
+            yield return new WaitForSeconds(1f);
+            scripted.State.Move = Vector2.zero;
+            float walked = Vector2.Distance(before, player.Position);
+            Log("걷기 1초 이동 거리 " + walked.ToString("F2"));
+            Check("걷기 속도", walked > 2.8f && walked < 4.2f);
+
+            // 벽을 뚫지 못한다
+            scripted.State.Move = Vector2.left;
+            yield return new WaitForSeconds(4f);
+            scripted.State.Move = Vector2.zero;
+            Check("정원 서쪽 벽에서 멈춤", player.Position.x > 28f);
+
+            yield return DoorAndRoomTest();
+            yield return CombatTest();
+            yield return MeleeTest();
+            yield return WallBlockTest();
+            yield return WeaponTest();
+
+            Log("탄피·혈흔 " + game.Fx.DecalCount + ", 시체 " + game.Fx.CorpseCount);
+            Check("전투 흔적이 남음", game.Fx.DecalCount > 0 && game.Fx.CorpseCount >= 2);
+
+            yield return PlayerDamageTest();
+        }
+
+        // 방탄 → 체력 순서와 사망 1회를 확인한다. 적 공격은 Phase 5에서 생기므로 피해를 직접 보낸다
+        IEnumerator PlayerDamageTest()
+        {
+            int deaths = 0;
+            Action<DeathEvent> onDeath = e => { if (e.isPlayer) deaths++; };
+            EventBus.Subscribe(onDeath);
+
+            Health health = game.Player.Health;
+            SendDamage(60);
+            yield return Frames(2);
+            Check("방탄 먼저, 넘친 피해는 체력으로", health.Armor == 0 && health.Hp == 90);
+
+            SendDamage(200);
+            yield return Frames(2);
+            SendDamage(200);
+            yield return Frames(2);
+            Check("플레이어 사망은 한 번만", deaths == 1 && health.IsDead);
+
+            Vector2 before = game.Player.Position;
+            scripted.State.Move = Vector2.right;
+            yield return new WaitForSeconds(0.2f);
+            scripted.State.Move = Vector2.zero;
+            Check("사망 후 입력을 막음", game.Player.Position == before);
+            EventBus.Unsubscribe(onDeath);
+        }
+
+        void SendDamage(int amount)
+        {
+            EventBus.Publish(new DamageEvent
+            {
+                targetId = EntityIds.Player,
+                amount = amount,
+                attackerId = 1,
+                hitPoint = game.Player.Position,
+                kind = DamageKind.Bullet,
+                time = Time.time,
+            });
+        }
+
+        // 복도 동쪽 문 앞에서 열고 들어간다
+        IEnumerator DoorAndRoomTest()
+        {
+            Door door = game.Doors.First(d => d.Cell == new Vector2Int(27, 18));
+            game.Player.SetPosition(new Vector2(28.45f, 18.5f));
+            Aim(new Vector2(20f, 18.5f));
+            yield return Frames(3);
+            yield return Shot("02_door_closed_prompt");
+            Check("문 앞 안내가 뜸", game.Prompt.CurrentAction == "열기");
+            Check("닫힌 문이 이동을 막음", game.Grid.BlocksMove(27, 18));
+
+            scripted.State.InteractPressed = true;
+            yield return Frames(3);
+            Check("Space로 열림", door.IsOpen);
+            Check("열린 문은 이동 가능", !game.Grid.BlocksMove(27, 18));
+            Check("안내가 닫기로 바뀜", game.Prompt.CurrentAction == "닫기");
+            yield return Shot("03_door_open");
+
+            game.Player.SetPosition(new Vector2(14f, 18.5f));
+            Aim(new Vector2(26f, 18.5f));
+            yield return Frames(3);
+            Aim(new Vector2(4f, 18.5f));
+            yield return Frames(3);
+            yield return Shot("04_corridor_memory");
+            Check("지나온 칸이 기억으로 남음", game.Fog.GetState(24, 18) == FogState.Memory);
+            Check("가 본 적 없는 칸은 미탐색", game.Fog.GetState(3, 3) == FogState.Unexplored);
+        }
+
+        // 문을 열고 들어가 거실 경비병을 사격한다
+        IEnumerator CombatTest()
+        {
+            Door door = game.Doors.First(d => d.Cell == new Vector2Int(18, 19));
+            game.Player.SetPosition(new Vector2(18.5f, 18.55f));
+            Aim(new Vector2(18.5f, 26f));
+            yield return Frames(3);
+            scripted.State.InteractPressed = true;
+            yield return Frames(2);
+            Check("거실 문 열림", door.IsOpen);
+
+            EnemyController guard = game.Enemies.First(e => e.name.Contains("guard") && e.Target.Position.y > 20f);
+            game.Player.SetPosition(guard.Target.Position + new Vector2(4f, 0f));
+            Aim(guard.Target.Position);
+            yield return Frames(5);
+            Check("시야 안 적은 보임", game.Vision.IsVisible(guard.Target.Position));
+
+            int hp = guard.Health.Hp;
+            int magBefore = game.Weapons.Inventory.Current.Mag;
+            scripted.State.FirePressed = true;
+            yield return Frames(2);
+            yield return Shot("05_shot_flash");
+            Check("권총 피해 20", hp - guard.Health.Hp == 20);
+            Check("탄창 1 감소", game.Weapons.Inventory.Current.Mag == magBefore - 1);
+
+            for (int i = 0; i < 2; i++)
+            {
+                yield return new WaitForSeconds(0.35f);
+                scripted.State.FirePressed = true;
+                yield return Frames(2);
+            }
+            yield return Frames(3);
+            Check("세 발에 경비병 사망", guard.Health.IsDead);
+            Check("사망 후 대상에서 빠짐", !guard.Target.Alive);
+            yield return Frames(12);
+            yield return Shot("06_corpse_blood");
+        }
+
+        // 침실 경비병은 등 뒤에서만 제압된다
+        IEnumerator MeleeTest()
+        {
+            EnemyController enemy = game.Enemies.First(e => e.name.Contains("guard") && e.Target.Alive && e.Target.Position.y < 15f);
+            Vector2 front = enemy.Target.Position + enemy.Facing * 1f;
+            Vector2 back = enemy.Target.Position - enemy.Facing * 1f;
+
+            game.Player.SetPosition(front);
+            Aim(enemy.Target.Position);
+            yield return Frames(2);
+            scripted.State.MeleePressed = true;
+            yield return Frames(3);
+            Check("정면 근접은 실패", enemy.Target.Alive);
+
+            game.Player.SetPosition(back);
+            Aim(enemy.Target.Position);
+            yield return Frames(2);
+            scripted.State.MeleePressed = true;
+            yield return Frames(3);
+            Check("뒤쪽 근접 제압 성공", !enemy.Target.Alive);
+            yield return Frames(3);
+            yield return Shot("07_takedown");
+        }
+
+        // 벽 너머 소총병은 맞지 않는다
+        IEnumerator WallBlockTest()
+        {
+            EnemyController rifleman = game.Enemies.First(e => e.name.Contains("rifleman"));
+            game.Player.SetPosition(new Vector2(12.5f, rifleman.Target.Position.y));
+            Aim(rifleman.Target.Position);
+            yield return Frames(3);
+            Check("벽 너머 적은 보이지 않음", !game.Vision.IsVisible(rifleman.Target.Position));
+
+            int hp = rifleman.Health.Hp;
+            scripted.State.WeaponSelect = 3;
+            yield return new WaitForSeconds(0.4f);
+            scripted.State.FireHeld = true;
+            yield return new WaitForSeconds(0.5f);
+            scripted.State.FireHeld = false;
+            yield return Frames(3);
+            Check("벽 너머 소총 사격은 맞지 않음", rifleman.Health.Hp == hp);
+            Check("소총 연사로 탄이 줄어듦", game.Weapons.Inventory.Current.Mag <= 26);
+        }
+
+        IEnumerator WeaponTest()
+        {
+            WeaponInventory inventory = game.Weapons.Inventory;
+            WeaponSlot rifle = inventory.Current;
+            int mag = rifle.Mag;
+            int reserve = rifle.Reserve;
+
+            scripted.State.ReloadPressed = true;
+            yield return Frames(2);
+            Check("재장전 시작", inventory.IsReloading);
+            scripted.State.WeaponSelect = 1;
+            yield return Frames(2);
+            Check("전환으로 재장전 취소", !inventory.IsReloading);
+            Check("취소해도 잔탄 유지", rifle.Mag == mag && rifle.Reserve == reserve);
+
+            yield return new WaitForSeconds(0.4f);
+            scripted.State.WeaponSelect = 3;
+            yield return new WaitForSeconds(0.4f);
+            scripted.State.ReloadPressed = true;
+            yield return new WaitForSeconds(2.7f);
+            Check("재장전 완료", rifle.Mag == rifle.Def.mag_size);
+        }
+
+        void Aim(Vector2 world)
+        {
+            scripted.State.AimWorld = world;
+        }
+
+        static IEnumerator Frames(int count)
+        {
+            for (int i = 0; i < count; i++)
+                yield return null;
+        }
+
+        IEnumerator Shot(string name)
+        {
+            yield return new WaitForEndOfFrame();
+            ScreenCapture.CaptureScreenshot(Path.Combine(outputDir, name + ".png"));
+            yield return null;
+        }
+
+        void Check(string label, bool ok)
+        {
+            if (!ok) failures++;
+            Log((ok ? "[통과] " : "[실패] ") + label);
+        }
+
+        void Log(string line)
+        {
+            report.Add(line);
+            Debug.Log("[Smoke] " + line);
+        }
+    }
+}

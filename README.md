@@ -21,6 +21,16 @@
   - [ASSET_DIRECTION.md](docs/ASSET_DIRECTION.md) — 목표 화면 분석, 아트·사운드 방향, 파일 이름 규칙
   - [ASSET_CREDITS.md](docs/ASSET_CREDITS.md) — 외부 에셋 출처·라이선스
 
+## 실행
+
+1. Unity 6000.3.24f1로 프로젝트를 연다.
+2. 메뉴 `Tools/Build Project`를 실행한다. URP 2D 설정, 에셋 카탈로그, 씬, 빌드 설정을 만든다.
+3. `Assets/_Project/Scenes/Game.unity`를 열고 Play를 누른다.
+
+Windows 빌드는 `Tools/Build Windows Player`로 만들고 결과는 `Build/Game.exe`다. 테스트는 Window > General > Test Runner의 EditMode에서 실행한다.
+
+**현재 구현 범위**: Phase 3까지. 맵 1, 이동·조준, 시야·탐색 기억, 조명, 문, 무기 3종, 근접 제압, 전투 흔적. 적은 아직 움직이지 않는 허수아비이고 소리와 HUD는 없다.
+
 ## 폴더 구조
 
 ```
