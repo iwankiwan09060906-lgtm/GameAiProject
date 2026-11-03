@@ -7,6 +7,7 @@
   "camera_lookahead_ratio": 0.3,
   "camera_lookahead_max_m": 3.0,
   "interact_range_m": 1.2,
+  "vsync_count": 1,
   "fixed_seed_enabled": false,
   "fixed_seed": 12345,
   "default_difficulty": "normal",

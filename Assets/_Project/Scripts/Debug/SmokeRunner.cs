@@ -7,10 +7,11 @@ using UnityEngine;
 
 namespace GameAi
 {
-    // 빌드를 -smoke <폴더>로 실행하면 정해진 동작을 재생해 결과와 스크린샷을 남긴다.
-    // 사람 입력 없이 실제 화면과 게임 흐름을 확인하는 용도다
+    // 빌드를 `-smoke <폴더>`로 실행하면 정해진 조작을 재생해 판정 결과와 스크린샷을 남기고 스스로 종료한다.
+    // 사람 입력 없이 실제 화면과 게임 흐름을 확인하는 용도다. 일반 실행에서는 아무 일도 하지 않는다
     public sealed class SmokeRunner : MonoBehaviour
     {
+        // 키보드 대신 정해 둔 입력을 돌려주는 입력원. 한 번 읽히면 "누른 순간" 값은 꺼진다
         sealed class ScriptedInput : IInputSource
         {
             public PlayerInputState State;
@@ -28,11 +29,13 @@ namespace GameAi
         }
 
         readonly List<string> report = new List<string>();
+        readonly List<string> hitchLines = new List<string>();
         readonly ScriptedInput scripted = new ScriptedInput();
         string outputDir;
         GameManager game;
         int failures;
 
+        // 씬이 불린 직후 실행 인자에 -smoke가 있을 때만 스스로를 설치한다
         [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.AfterSceneLoad)]
         static void Install()
         {
@@ -43,6 +46,14 @@ namespace GameAi
             var go = new GameObject("SmokeRunner");
             DontDestroyOnLoad(go);
             go.AddComponent<SmokeRunner>().outputDir = args[index + 1];
+        }
+
+        // 0.025초(40fps 미만)를 넘긴 프레임을 직전 로그 줄과 함께 남긴다
+        void Update()
+        {
+            if (Time.unscaledDeltaTime <= 0.025f) return;
+            string stage = report.Count > 0 ? report[report.Count - 1] : "시작 전";
+            hitchLines.Add("끊김 " + (Time.unscaledDeltaTime * 1000f).ToString("F0") + "ms, 프레임 " + Time.frameCount + ", 직전 단계: " + stage);
         }
 
         IEnumerator Start()
@@ -57,10 +68,14 @@ namespace GameAi
             game.SetInputSource(scripted, true);
             yield return Run();
 
+            report.AddRange(hitchLines);
             File.WriteAllLines(Path.Combine(outputDir, "smoke_report.txt"), report);
+
+            // 하나라도 실패하면 종료 코드 1
             Application.Quit(failures == 0 ? 0 : 1);
         }
 
+        // 전체 시나리오. 순서대로 실행한다
         IEnumerator Run()
         {
             PlayerController player = game.Player;
@@ -96,49 +111,45 @@ namespace GameAi
             Log("탄피·혈흔 " + game.Fx.DecalCount + ", 시체 " + game.Fx.CorpseCount);
             Check("전투 흔적이 남음", game.Fx.DecalCount > 0 && game.Fx.CorpseCount >= 2);
 
+            // 성능 측정은 위치와 탄약을 바꾸므로 다른 시험이 모두 끝난 뒤에 한다
+            yield return PerfTest();
             yield return PlayerDamageTest();
         }
 
-        // 방탄 → 체력 순서와 사망 1회를 확인한다. 적 공격은 Phase 5에서 생기므로 피해를 직접 보낸다
-        IEnumerator PlayerDamageTest()
+        // 불 켜진 방 안에서 달리며 사격하는 동안 프레임 시간과 게임 코드 시간, 메모리 할당을 잰다.
+        // 프레임은 길고 게임 코드가 짧으면 끊김의 원인은 게임 밖(전원·수직동기·GPU)이다
+        IEnumerator PerfTest()
         {
-            int deaths = 0;
-            Action<DeathEvent> onDeath = e => { if (e.isPlayer) deaths++; };
-            EventBus.Subscribe(onDeath);
+            game.Player.SetPosition(new Vector2(6.5f, 6.5f));
+            scripted.State.RunHeld = true;
+            yield return Frames(30);
 
-            Health health = game.Player.Health;
-            SendDamage(60);
-            yield return Frames(2);
-            Check("방탄 먼저, 넘친 피해는 체력으로", health.Armor == 0 && health.Hp == 90);
-
-            SendDamage(200);
-            yield return Frames(2);
-            SendDamage(200);
-            yield return Frames(2);
-            Check("플레이어 사망은 한 번만", deaths == 1 && health.IsDead);
-
-            Vector2 before = game.Player.Position;
-            scripted.State.Move = Vector2.right;
-            yield return new WaitForSeconds(0.2f);
-            scripted.State.Move = Vector2.zero;
-            Check("사망 후 입력을 막음", game.Player.Position == before);
-            EventBus.Unsubscribe(onDeath);
-        }
-
-        void SendDamage(int amount)
-        {
-            EventBus.Publish(new DamageEvent
+            game.Perf.Reset();
+            long memoryBefore = GC.GetTotalMemory(false);
+            int collectionsBefore = GC.CollectionCount(0);
+            for (int i = 0; i < 300; i++)
             {
-                targetId = EntityIds.Player,
-                amount = amount,
-                attackerId = 1,
-                hitPoint = game.Player.Position,
-                kind = DamageKind.Bullet,
-                time = Time.time,
-            });
+                // 원을 그리며 달려 시야 방향과 위치가 계속 바뀌게 한다
+                float angle = i * 0.08f;
+                scripted.State.Move = new Vector2(Mathf.Cos(angle), Mathf.Sin(angle));
+                Aim(game.Player.Position + new Vector2(Mathf.Cos(angle * 2f), Mathf.Sin(angle * 2f)) * 5f);
+
+                // 소총을 들고 있으므로 누르고 있는 동안 연사된다. 30프레임마다 10프레임씩 쏜다
+                scripted.State.FireHeld = i % 30 < 10;
+                yield return null;
+            }
+            scripted.State.RunHeld = false;
+            scripted.State.FireHeld = false;
+            scripted.State.Move = Vector2.zero;
+
+            long allocated = GC.GetTotalMemory(false) - memoryBefore;
+            Log("성능: " + game.Perf.FrameSummary());
+            Log("성능: " + game.Perf.SectionSummary());
+            Log("성능: 300프레임 동안 GC 수집 " + (GC.CollectionCount(0) - collectionsBefore) + "회, 힙 변화 " + allocated / 1024 + "KB");
+            Log("성능: vSync " + QualitySettings.vSyncCount + ", 목표 프레임 " + Application.targetFrameRate);
         }
 
-        // 복도 동쪽 문 앞에서 열고 들어간다
+        // 복도 동쪽 문 앞에서 문을 열고 들어가 탐색 기억을 확인한다
         IEnumerator DoorAndRoomTest()
         {
             Door door = game.Doors.First(d => d.Cell == new Vector2Int(27, 18));
@@ -156,6 +167,7 @@ namespace GameAi
             Check("안내가 닫기로 바뀜", game.Prompt.CurrentAction == "닫기");
             yield return Shot("03_door_open");
 
+            // 복도를 지나가며 본 뒤 반대쪽을 바라보면 지나온 칸이 기억으로 남아야 한다
             game.Player.SetPosition(new Vector2(14f, 18.5f));
             Aim(new Vector2(26f, 18.5f));
             yield return Frames(3);
@@ -183,6 +195,7 @@ namespace GameAi
             yield return Frames(5);
             Check("시야 안 적은 보임", game.Vision.IsVisible(guard.Target.Position));
 
+            // 권총 한 발: 피해 20, 탄창 1 감소
             int hp = guard.Health.Hp;
             int magBefore = game.Weapons.Inventory.Current.Mag;
             scripted.State.FirePressed = true;
@@ -191,6 +204,7 @@ namespace GameAi
             Check("권총 피해 20", hp - guard.Health.Hp == 20);
             Check("탄창 1 감소", game.Weapons.Inventory.Current.Mag == magBefore - 1);
 
+            // 발사 간격(0.3초)을 두고 두 발 더 쏴서 50 체력을 모두 깎는다
             for (int i = 0; i < 2; i++)
             {
                 yield return new WaitForSeconds(0.35f);
@@ -228,7 +242,7 @@ namespace GameAi
             yield return Shot("07_takedown");
         }
 
-        // 벽 너머 소총병은 맞지 않는다
+        // 벽 너머 소총병은 보이지도 맞지도 않는다
         IEnumerator WallBlockTest()
         {
             EnemyController rifleman = game.Enemies.First(e => e.name.Contains("rifleman"));
@@ -248,6 +262,7 @@ namespace GameAi
             Check("소총 연사로 탄이 줄어듦", game.Weapons.Inventory.Current.Mag <= 26);
         }
 
+        // 재장전 시작 → 전환으로 취소(잔탄 유지) → 다시 재장전해서 완료
         IEnumerator WeaponTest()
         {
             WeaponInventory inventory = game.Weapons.Inventory;
@@ -271,6 +286,46 @@ namespace GameAi
             Check("재장전 완료", rifle.Mag == rifle.Def.mag_size);
         }
 
+        // 방탄 → 체력 순서와 사망 1회를 확인한다. 적 공격은 Phase 5에서 생기므로 피해를 직접 보낸다
+        IEnumerator PlayerDamageTest()
+        {
+            int deaths = 0;
+            Action<DeathEvent> onDeath = e => { if (e.isPlayer) deaths++; };
+            EventBus.Subscribe(onDeath);
+
+            Health health = game.Player.Health;
+            SendDamage(60);
+            yield return Frames(2);
+            Check("방탄 먼저, 넘친 피해는 체력으로", health.Armor == 0 && health.Hp == 90);
+
+            // 이미 죽은 뒤에 또 피해가 와도 DeathEvent는 한 번만 나와야 한다
+            SendDamage(200);
+            yield return Frames(2);
+            SendDamage(200);
+            yield return Frames(2);
+            Check("플레이어 사망은 한 번만", deaths == 1 && health.IsDead);
+
+            Vector2 before = game.Player.Position;
+            scripted.State.Move = Vector2.right;
+            yield return new WaitForSeconds(0.2f);
+            scripted.State.Move = Vector2.zero;
+            Check("사망 후 입력을 막음", game.Player.Position == before);
+            EventBus.Unsubscribe(onDeath);
+        }
+
+        void SendDamage(int amount)
+        {
+            EventBus.Publish(new DamageEvent
+            {
+                targetId = EntityIds.Player,
+                amount = amount,
+                attackerId = 1,
+                hitPoint = game.Player.Position,
+                kind = DamageKind.Bullet,
+                time = Time.time,
+            });
+        }
+
         void Aim(Vector2 world)
         {
             scripted.State.AimWorld = world;
@@ -282,6 +337,7 @@ namespace GameAi
                 yield return null;
         }
 
+        // 프레임 렌더링이 끝난 뒤 화면을 저장한다
         IEnumerator Shot(string name)
         {
             yield return new WaitForEndOfFrame();
