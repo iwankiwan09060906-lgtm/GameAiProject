@@ -3,6 +3,8 @@ using UnityEngine;
 
 namespace GameAi.Tests
 {
+    // 격자 DDA 레이캐스트와 칸 종류별 차단 규칙(9.3 표)을 확인한다.
+    // 시야·총알·빛이 같은 칸에서도 다르게 막히는지, 모서리·맵 밖 같은 경계 상황이 맞는지가 핵심이다
     public class GridTests
     {
         // 가운데 줄에 시험할 칸 하나를 둔 7x3 맵

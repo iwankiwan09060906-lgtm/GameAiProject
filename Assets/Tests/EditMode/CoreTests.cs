@@ -3,6 +3,7 @@ using NUnit.Framework;
 
 namespace GameAi.Tests
 {
+    // 이벤트 버스(구독·해제·발행 중 해제)와 난수원(같은 시드 → 같은 수열, AI·연출 분리)을 확인한다
     public class CoreTests
     {
         struct Ping

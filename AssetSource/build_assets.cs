@@ -1,5 +1,12 @@
 // AssetSource 원본을 잘라 Assets/_Project 아래의 게임용 파일로 만든다.
 // 실행: AssetSource/build_assets.ps1 (Unity 없이 .NET만 사용)
+//
+// 하는 일:
+//   1. 타일·소품·캐릭터·이펙트·UI 그림을 원본 시트에서 잘라 내고 크기·색을 맞춘다(BuildTiles ~ BuildObjAndUi)
+//   2. AssetSource/drawn/*.txt의 문자 격자로 초상화·소품·아이콘을 그린다(BuildDrawn)
+//   3. 자세 실루엣과 UI 패널을 코드로 그린다(BuildStances, BuildPanels)
+//   4. 96kHz 24bit 사격 녹음에서 첫 발만 잘라 게임용 wav로 저장한다(Shot)
+// 같은 입력이면 항상 같은 파일이 나오므로, 원본이나 값을 고치고 다시 실행해도 된다.
 using System;
 using System.Collections.Generic;
 using System.Drawing;

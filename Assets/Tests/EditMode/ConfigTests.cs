@@ -5,6 +5,8 @@ using UnityEngine.TestTools;
 
 namespace GameAi.Tests
 {
+    // 설정 JSON 읽기(값 누락·깨진 파일·없는 파일 처리), 에셋 카탈로그의 코드 생성 폴백,
+    // 파일 이름 규칙(중복·정렬)을 확인한다. 에셋이 하나도 없어도 실행된다는 약속의 근거가 되는 테스트다
     public class ConfigTests
     {
         [Test]

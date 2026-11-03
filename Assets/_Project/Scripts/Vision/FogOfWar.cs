@@ -2,9 +2,11 @@ using UnityEngine;
 
 namespace GameAi
 {
+    // 칸의 탐색 상태. 한 번도 못 봄 → 지금 보임 → 봤었지만 지금은 안 보임(기억)
     public enum FogState : byte { Unexplored, Memory, Visible }
 
-    // 탐색 기억. 한 번 본 칸은 기억으로 남고, 지금 보이는 칸만 Visible이다
+    // 탐색 기억(FN-VIS-02). 한 번 본 칸은 기억으로 남고, 지금 보이는 칸만 Visible이다.
+    // 새로 만들면 모두 Unexplored라서 재시작·사망 때 새로 만드는 것으로 "지운다"를 처리한다
     public sealed class FogOfWar
     {
         readonly GridMap grid;
@@ -21,6 +23,7 @@ namespace GameAi
             return states[grid.Index(x, y)];
         }
 
+        // 이번 프레임의 시야로 상태를 갱신한다
         public void Update(PlayerVision vision)
         {
             for (int y = 0; y < grid.Height; y++)
@@ -30,12 +33,15 @@ namespace GameAi
                     int i = grid.Index(x, y);
                     if (vision.IsVisible(x, y))
                         states[i] = FogState.Visible;
+
+                    // 방금까지 보였는데 이제 안 보이면 기억으로 바꾼다. 미탐색은 그대로 둔다
                     else if (states[i] == FogState.Visible)
                         states[i] = FogState.Memory;
                 }
             }
         }
 
+        // 텍스처에 쓸 픽셀을 채운다. 보이는 칸은 투명, 기억은 회색조 반투명, 미탐색은 검정
         public void WritePixels(Color32[] pixels, Color32 unexplored, Color32 memory)
         {
             var clear = new Color32(0, 0, 0, 0);

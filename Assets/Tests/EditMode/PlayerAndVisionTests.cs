@@ -4,6 +4,8 @@ using UnityEngine;
 
 namespace GameAi.Tests
 {
+    // 플레이어 이동(속도·벽 충돌·미끄러짐·문), 카메라 앞당김, 시야 부채꼴과 가림,
+    // 탐색 기억(안개) 상태를 확인한다
     public class PlayerAndVisionTests
     {
         const float Radius = 0.4f;

@@ -2,7 +2,8 @@ using UnityEngine;
 
 namespace GameAi
 {
-    // 방탄이 먼저 1:1로 받고 남은 피해가 체력으로 넘어간다
+    // 체력과 방탄 계산(7.2). 순수 C#이라 테스트하기 쉽다.
+    // 피해는 방탄이 먼저 1:1로 받고, 남은 피해가 체력으로 넘어간다
     public sealed class HealthModel
     {
         public int Hp { get; private set; }
@@ -15,7 +16,7 @@ namespace GameAi
             Armor = armor;
         }
 
-        // 방탄이 받은 양을 돌려준다
+        // 피해를 적용하고, 방탄이 받아낸 양을 돌려준다(방탄 피격음을 고를 때 쓴다)
         public int Apply(int amount)
         {
             if (IsDead || amount <= 0) return 0;
@@ -27,14 +28,22 @@ namespace GameAi
         }
     }
 
+    // HealthModel을 게임 오브젝트에 붙이는 컴포넌트. DamageEvent를 받아 체력을 깎고,
+    // 사망을 확정하는 시점에 DeathEvent를 한 번만 보낸다(5.3)
     public sealed class Health : MonoBehaviour
     {
         HealthModel model;
         CombatTarget target;
         CharacterView view;
+
+        // 피격 시 몸이 빨갛게 변하는 시간(초)
         float flashSeconds;
         bool isPlayer;
+
+        // 사망 시 놓을 시체 그림 이름
         string corpseSprite;
+
+        // DeathEvent를 이미 보냈는지. 한 번만 보내려고 확인한다
         bool deathSent;
 
         public int Hp { get { return model.Hp; } }
@@ -51,6 +60,7 @@ namespace GameAi
             corpseSprite = corpse;
         }
 
+        // 구독은 OnEnable, 해제는 OnDisable(5.1)
         void OnEnable()
         {
             EventBus.Subscribe<DamageEvent>(OnDamage);
@@ -61,6 +71,7 @@ namespace GameAi
             EventBus.Unsubscribe<DamageEvent>(OnDamage);
         }
 
+        // 모든 Health가 모든 DamageEvent를 받으므로, 자기 대상이 아니면 무시한다
         void OnDamage(DamageEvent evt)
         {
             if (model == null || evt.targetId != target.Id || model.IsDead) return;
@@ -69,7 +80,8 @@ namespace GameAi
             EventBus.Publish(new HealthChangedEvent { entityId = target.Id, hp = model.Hp, armor = model.Armor });
         }
 
-        // 프레임 순서의 '사망 확정' 단계에서 부른다. DeathEvent는 한 번만 보낸다
+        // 프레임 순서의 '사망 확정'(7단계)에서 부른다.
+        // 피해를 받은 프레임이 아니라 이 시점에 사망을 알려서, 같은 프레임의 다른 사건과 순서가 어긋나지 않는다
         public void Tick()
         {
             if (!model.IsDead || deathSent) return;
@@ -84,6 +96,8 @@ namespace GameAi
                 rotationDeg = view.AimDeg,
                 time = Time.time,
             });
+
+            // 살아 있던 몸 그림은 숨기고, 시체 그림은 CombatFx가 따로 놓는다
             view.gameObject.SetActive(false);
         }
     }

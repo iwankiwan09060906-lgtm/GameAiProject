@@ -4,6 +4,8 @@ using UnityEngine;
 
 namespace GameAi.Tests
 {
+    // 무기 탄창·재장전·전환(7.3), 히트스캔 명중 판정(가장 가까운 하나, 막는 칸, 사거리),
+    // 근접 제압 조건(7.5), 오브젝트 풀 상한을 확인한다
     public class CombatTests
     {
         static WeaponDef Pistol()

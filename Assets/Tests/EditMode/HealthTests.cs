@@ -2,6 +2,7 @@ using NUnit.Framework;
 
 namespace GameAi.Tests
 {
+    // 체력·방탄 계산(7.2): 방탄이 먼저 받고 남은 피해가 체력으로 넘어가며, 사망은 한 번만 확정된다
     public class HealthTests
     {
         [Test]

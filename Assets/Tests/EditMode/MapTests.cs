@@ -4,6 +4,8 @@ using UnityEngine;
 
 namespace GameAi.Tests
 {
+    // 맵 JSON 파싱(줄 순서·문자 해석·순찰 중첩 배열), 맵 1이 규격을 지키는지,
+    // 그림자 상자 합치기, 상호작용 대상 고르기를 확인한다
     public class MapTests
     {
         static ParsedMap LoadMap01(out MapData data)

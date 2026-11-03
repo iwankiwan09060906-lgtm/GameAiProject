@@ -9,7 +9,8 @@ using UnityEngine.TextCore.LowLevel;
 
 namespace GameAi.EditorTools
 {
-    // Art/Audio/Fonts를 훑어 AssetCatalog.asset을 다시 만들고 임포트 설정을 맞춘다
+    // Art/Audio/Fonts를 훑어 AssetCatalog.asset을 다시 만들고, 그림 임포트 설정을 규칙에 맞춘다(11.0).
+    // AssetPostprocessor라서 파일을 넣거나 지우면 에디터에서 자동으로 갱신된다
     public sealed class AssetCatalogBuilder : AssetPostprocessor
     {
         public const string CatalogPath = "Assets/_Project/AssetCatalog.asset";
@@ -20,28 +21,41 @@ namespace GameAi.EditorTools
         const string FontAssetPath = FontRoot + "/Galmuri11 SDF.asset";
         const string LitMaterial = "Packages/com.unity.render-pipelines.universal/Runtime/Materials/Sprite-Lit-Default.mat";
         const string UnlitMaterial = "Packages/com.unity.render-pipelines.universal/Runtime/Materials/Sprite-Unlit-Default.mat";
+
+        // 걷기 시트의 프레임 한 장 크기(px)
         const int FramePixels = 32;
         const int PixelsPerUnit = 32;
+
+        // 9-slice 패널의 고정 테두리(px)
         const int PanelBorder = 2;
+
+        // Galmuri11의 도트 격자가 12px이라 12의 배수여야 픽셀이 어긋나지 않는다
         const int FontSamplingSize = 24;
         const int FontPadding = 2;
         const int FontAtlasSize = 2048;
 
+        // 빌드 도중 파일이 바뀌어 다시 빌드가 시작되는 것을 막는다
         static bool building;
 
+        // 에셋이 임포트·삭제·이동될 때마다 불리는 유니티 콜백
         static void OnPostprocessAllAssets(string[] imported, string[] deleted, string[] moved, string[] movedFrom)
         {
+            // 배치 모드에서는 ProjectBuilder가 직접 Build를 부르므로 건너뛴다
             if (building || Application.isBatchMode) return;
             bool relevant = imported.Concat(deleted).Concat(moved).Any(IsWatched);
+
+            // 임포트 중에 에셋을 만지면 안 되므로 한 박자 뒤로 미룬다
             if (relevant) EditorApplication.delayCall += () => Build();
         }
 
+        // 카탈로그가 만든 .asset·.meta는 제외한다. 그걸 감시하면 서로를 계속 불러 끝나지 않는다
         static bool IsWatched(string path)
         {
             if (path.EndsWith(".asset") || path.EndsWith(".meta")) return false;
             return path.StartsWith(ArtRoot) || path.StartsWith(AudioRoot) || path.StartsWith(FontRoot);
         }
 
+        // 카탈로그를 처음부터 다시 만든다. Tools/Build Project가 부른다
         public static AssetCatalog Build()
         {
             building = true;
@@ -70,6 +84,7 @@ namespace GameAi.EditorTools
             }
         }
 
+        // 폴더 안(하위 포함)의 해당 확장자 파일을 이름 순으로. 순서가 항상 같아야 같은 결과가 나온다
         static IEnumerable<string> FindFiles(string root, params string[] extensions)
         {
             if (!Directory.Exists(root)) return Enumerable.Empty<string>();
@@ -79,11 +94,13 @@ namespace GameAi.EditorTools
                 .OrderBy(p => Path.GetFileNameWithoutExtension(p), System.StringComparer.Ordinal);
         }
 
+        // 가로로 이어 붙인 걷기 시트인지
         static bool IsSheet(string path)
         {
             return path.Contains("/chars/") && path.EndsWith("_walk.png");
         }
 
+        // 모든 그림에 PPU 32, Point 필터, 압축 없음을 적용하고 시트는 32x32로 자른다
         static void ApplyAllSpriteSettings()
         {
             foreach (string path in FindFiles(ArtRoot, ".png"))
@@ -96,6 +113,7 @@ namespace GameAi.EditorTools
             }
         }
 
+        // 설정이 이미 같으면 아무것도 하지 않는다(불필요한 재임포트를 피한다). 바꿨으면 true
         static bool ApplySpriteSettings(TextureImporter importer, string path)
         {
             var settings = new TextureImporterSettings();
@@ -130,7 +148,7 @@ namespace GameAi.EditorTools
             return true;
         }
 
-        // 가로로 이어 붙인 시트를 32x32 프레임으로 자른다
+        // 가로로 이어 붙인 시트를 32x32 프레임으로 자른다. 이미 같게 잘려 있으면 false
         static bool SliceSheet(TextureImporter importer)
         {
             var factory = new SpriteDataProviderFactories();
@@ -146,6 +164,7 @@ namespace GameAi.EditorTools
                 same = current[i].rect == new Rect(i * FramePixels, 0, FramePixels, height);
             if (same) return false;
 
+            // 프레임 이름은 {파일이름}_{번호}
             string baseName = Path.GetFileNameWithoutExtension(importer.assetPath);
             var rects = new SpriteRect[frames];
             for (int i = 0; i < frames; i++)
@@ -164,6 +183,7 @@ namespace GameAi.EditorTools
             return true;
         }
 
+        // Art 폴더의 그림을 이름 규칙에 맞는 것만 모은다
         static List<AssetCatalog.SpriteEntry> CollectSprites()
         {
             var found = new Dictionary<string, string>();
@@ -179,12 +199,14 @@ namespace GameAi.EditorTools
                     Debug.LogWarning("[AssetCatalog] 같은 이름 파일이 있어 먼저 찾은 것을 씁니다: " + path);
             }
 
+            // hit_blood_2가 hit_blood_10보다 앞에 오도록 숫자 순으로 정렬한다
             var names = found.Keys.ToList();
             names.Sort(AssetNames.NaturalCompare);
 
             var entries = new List<AssetCatalog.SpriteEntry>();
             foreach (string name in names)
             {
+                // 시트는 자른 프레임들을 가로 위치 순으로, 일반 그림은 한 장을 담는다
                 Sprite[] frames = AssetDatabase.LoadAllAssetRepresentationsAtPath(found[name])
                     .OfType<Sprite>().OrderBy(s => s.rect.x).ToArray();
                 if (frames.Length == 0)
@@ -198,6 +220,7 @@ namespace GameAi.EditorTools
             return entries;
         }
 
+        // Audio 폴더의 소리를 이름 규칙에 맞는 것만 모은다. ogg·wav·mp3 모두 받는다
         static List<AssetCatalog.ClipEntry> CollectClips()
         {
             var found = new Dictionary<string, string>();
@@ -222,7 +245,8 @@ namespace GameAi.EditorTools
             return entries;
         }
 
-        // 한글이 많아 글자를 미리 굽지 않고 동적 아틀라스에 필요한 글자만 넣는다
+        // TMP 폰트 에셋을 만든다. 한글 글자가 매우 많아 미리 굽지 않고,
+        // 동적 아틀라스(Dynamic)에 화면에 처음 나오는 글자만 그때그때 넣는다. 힌팅 없는 Raster라 도트가 번지지 않는다
         static TMP_FontAsset EnsureFontAsset()
         {
             var existing = AssetDatabase.LoadAssetAtPath<TMP_FontAsset>(FontAssetPath);
@@ -243,6 +267,7 @@ namespace GameAi.EditorTools
                 return null;
             }
 
+            // 아틀라스와 재질을 폰트 에셋 파일 안에 함께 저장해야 다음 실행에서도 남는다
             asset.name = "Galmuri11 SDF";
             AssetDatabase.CreateAsset(asset, FontAssetPath);
             asset.atlasTexture.name = "Galmuri11 Atlas";
