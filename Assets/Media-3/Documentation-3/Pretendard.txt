@@ -1,0 +1,9 @@
+Pretendard
+[에셋 출처 기록]
+
+에셋 이름: Pretendard
+제작자: 길형진
+다운로드 사이트: GitHub
+원본 주소: https://github.com/orioncactus/pretendard
+사용 목적: 게임 메뉴 및 UI 한글 표시
+라이선스: SIL Open Font License 1.1
