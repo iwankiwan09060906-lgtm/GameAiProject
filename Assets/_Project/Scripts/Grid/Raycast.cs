@@ -43,9 +43,15 @@ namespace GameAi
 
         // dir은 정규화된 방향 벡터. 시작 칸은 막힘 검사를 하지 않는다(문 안에 서서 쏘는 경우 등).
         // 막는 칸을 만나면 그 칸에서 멈추고, 지나온 칸(멈춘 칸 포함)을 visitor로 알린다.
+        // 계산은 "1칸 = 1" 단위로 하고, 결과 거리·지점만 m로 되돌린다
         public static RayHit Cast<TVisitor>(GridMap grid, Vector2 origin, Vector2 dir, float maxDistance, RayMask mask, ref TVisitor visitor)
             where TVisitor : struct, ICellVisitor
         {
+            float cellSize = grid.CellSize;
+            Vector2 worldOrigin = origin;
+            origin /= cellSize;
+            maxDistance /= cellSize;
+
             int x = Mathf.FloorToInt(origin.x);
             int y = Mathf.FloorToInt(origin.y);
             visitor.Visit(x, y);
@@ -76,7 +82,7 @@ namespace GameAi
                     {
                         visitor.Visit(x + stepX, y);
                         visitor.Visit(x, y + stepY);
-                        return MakeHit(new Vector2Int(x + stepX, y), origin, dir, t);
+                        return MakeHit(new Vector2Int(x + stepX, y), worldOrigin, dir, t * cellSize);
                     }
                     x += stepX;
                     y += stepY;
@@ -102,11 +108,12 @@ namespace GameAi
 
                 visitor.Visit(x, y);
                 if (grid.BlocksRay(x, y, mask))
-                    return MakeHit(new Vector2Int(x, y), origin, dir, t);
+                    return MakeHit(new Vector2Int(x, y), worldOrigin, dir, t * cellSize);
             }
 
             // 사거리 안에 막는 칸이 없었다
-            return new RayHit { Hit = false, Point = origin + dir * maxDistance, Distance = maxDistance };
+            float range = maxDistance * cellSize;
+            return new RayHit { Hit = false, Point = worldOrigin + dir * range, Distance = range };
         }
 
         // 시작점에서 진행 방향의 첫 칸 경계까지의 거리(축 방향 성분만)

@@ -83,24 +83,25 @@ namespace GameAi
             Log("시작 위치 " + player.Position + ", 맵 " + grid.Width + "x" + grid.Height + ", 적 " + game.Enemies.Count + ", 문 " + game.Doors.Count);
             Check("적 4명", game.Enemies.Count == 4);
 
-            Aim(new Vector2(30f, 15f));
+            Aim(new Vector2(10f, 9f));
             yield return Frames(5);
-            yield return Shot("01_garden_start");
+            yield return Shot("01_yard_start");
 
             // 걷기 속도: 1초에 약 3.5m
             Vector2 before = player.Position;
-            scripted.State.Move = Vector2.left;
+            scripted.State.Move = Vector2.right;
             yield return new WaitForSeconds(1f);
             scripted.State.Move = Vector2.zero;
             float walked = Vector2.Distance(before, player.Position);
             Log("걷기 1초 이동 거리 " + walked.ToString("F2"));
             Check("걷기 속도", walked > 2.8f && walked < 4.2f);
 
-            // 벽을 뚫지 못한다
+            // 벽을 뚫지 못한다. 바깥 벽(x 0 ~ 0.5m)에서 몸 반지름만큼 떨어져 멈춘다
             scripted.State.Move = Vector2.left;
             yield return new WaitForSeconds(4f);
             scripted.State.Move = Vector2.zero;
-            Check("정원 서쪽 벽에서 멈춤", player.Position.x > 28f);
+            Log("서쪽 벽에서 멈춘 위치 " + player.Position.x.ToString("F2"));
+            Check("마당 서쪽 벽에서 멈춤", player.Position.x > 0.85f && player.Position.x < 1.0f);
 
             yield return DoorAndRoomTest();
             yield return CombatTest();
@@ -120,7 +121,8 @@ namespace GameAi
         // 프레임은 길고 게임 코드가 짧으면 끊김의 원인은 게임 밖(전원·수직동기·GPU)이다
         IEnumerator PerfTest()
         {
-            game.Player.SetPosition(new Vector2(6.5f, 6.5f));
+            // 조명·소품이 가장 많은 서버실 가운데
+            game.Player.SetPosition(new Vector2(32.25f, 21f));
             scripted.State.RunHeld = true;
             yield return Frames(30);
 
@@ -149,48 +151,54 @@ namespace GameAi
             Log("성능: vSync " + QualitySettings.vSyncCount + ", 목표 프레임 " + Application.targetFrameRate);
         }
 
-        // 복도 동쪽 문 앞에서 문을 열고 들어가 탐색 기억을 확인한다
+        // 마당 북쪽 문(폭 3칸) 앞에서 문을 열고, 복도를 지나며 탐색 기억을 확인한다
         IEnumerator DoorAndRoomTest()
         {
-            Door door = game.Doors.First(d => d.Cell == new Vector2Int(27, 18));
-            game.Player.SetPosition(new Vector2(28.45f, 18.5f));
-            Aim(new Vector2(20f, 18.5f));
+            GridMap grid = game.Grid;
+            Vector2Int doorCell = grid.WorldToCell(new Vector2(6.75f, 12.25f));
+            Door door = game.Doors.First(d => d.Area.Contains(doorCell));
+            Check("이어진 D 칸이 문 하나(폭 1.5m)", door.Area.width * grid.CellSize > 1.4f);
+            game.Player.SetPosition(new Vector2(6.75f, 11.5f));
+            Aim(new Vector2(6.75f, 20f));
             yield return Frames(3);
             yield return Shot("02_door_closed_prompt");
             Check("문 앞 안내가 뜸", game.Prompt.CurrentAction == "열기");
-            Check("닫힌 문이 이동을 막음", game.Grid.BlocksMove(27, 18));
+            Check("닫힌 문이 이동을 막음", grid.BlocksMove(doorCell.x, doorCell.y));
 
             scripted.State.InteractPressed = true;
             yield return Frames(3);
             Check("Space로 열림", door.IsOpen);
-            Check("열린 문은 이동 가능", !game.Grid.BlocksMove(27, 18));
+            Check("열린 문은 이동 가능", !grid.BlocksMove(doorCell.x, doorCell.y));
             Check("안내가 닫기로 바뀜", game.Prompt.CurrentAction == "닫기");
             yield return Shot("03_door_open");
 
             // 복도를 지나가며 본 뒤 반대쪽을 바라보면 지나온 칸이 기억으로 남아야 한다
-            game.Player.SetPosition(new Vector2(14f, 18.5f));
-            Aim(new Vector2(26f, 18.5f));
+            game.Player.SetPosition(new Vector2(14f, 14f));
+            Aim(new Vector2(26f, 14f));
             yield return Frames(3);
-            Aim(new Vector2(4f, 18.5f));
+            Aim(new Vector2(2f, 14f));
             yield return Frames(3);
             yield return Shot("04_corridor_memory");
-            Check("지나온 칸이 기억으로 남음", game.Fog.GetState(24, 18) == FogState.Memory);
-            Check("가 본 적 없는 칸은 미탐색", game.Fog.GetState(3, 3) == FogState.Unexplored);
+            Vector2Int seen = grid.WorldToCell(new Vector2(24f, 14f));
+            Vector2Int never = grid.WorldToCell(new Vector2(3f, 25f));
+            Check("지나온 칸이 기억으로 남음", game.Fog.GetState(seen.x, seen.y) == FogState.Memory);
+            Check("가 본 적 없는 칸은 미탐색", game.Fog.GetState(never.x, never.y) == FogState.Unexplored);
         }
 
-        // 문을 열고 들어가 거실 경비병을 사격한다
+        // 서버실 문을 열고 들어가 서버실 경비병을 사격한다
         IEnumerator CombatTest()
         {
-            Door door = game.Doors.First(d => d.Cell == new Vector2Int(18, 19));
-            game.Player.SetPosition(new Vector2(18.5f, 18.55f));
-            Aim(new Vector2(18.5f, 26f));
+            Vector2Int doorCell = game.Grid.WorldToCell(new Vector2(32.25f, 15.75f));
+            Door door = game.Doors.First(d => d.Area.Contains(doorCell));
+            game.Player.SetPosition(new Vector2(32.25f, 15.0f));
+            Aim(new Vector2(32.25f, 26f));
             yield return Frames(3);
             scripted.State.InteractPressed = true;
             yield return Frames(2);
-            Check("거실 문 열림", door.IsOpen);
+            Check("서버실 문 열림", door.IsOpen);
 
-            EnemyController guard = game.Enemies.First(e => e.name.Contains("guard") && e.Target.Position.y > 20f);
-            game.Player.SetPosition(guard.Target.Position + new Vector2(4f, 0f));
+            EnemyController guard = game.Enemies.First(e => e.name.Contains("guard") && e.Target.Position.x > 30f && e.Target.Position.y > 20f);
+            game.Player.SetPosition(guard.Target.Position + new Vector2(-4f, 0f));
             Aim(guard.Target.Position);
             yield return Frames(5);
             Check("시야 안 적은 보임", game.Vision.IsVisible(guard.Target.Position));
@@ -218,7 +226,7 @@ namespace GameAi
             yield return Shot("06_corpse_blood");
         }
 
-        // 침실 경비병은 등 뒤에서만 제압된다
+        // 사무실 경비병은 등 뒤에서만 제압된다
         IEnumerator MeleeTest()
         {
             EnemyController enemy = game.Enemies.First(e => e.name.Contains("guard") && e.Target.Alive && e.Target.Position.y < 15f);
@@ -242,7 +250,7 @@ namespace GameAi
             yield return Shot("07_takedown");
         }
 
-        // 벽 너머 소총병은 보이지도 맞지도 않는다
+        // 벽 너머 소총병(엘리베이터 홀)은 창고에서 보이지도 맞지도 않는다
         IEnumerator WallBlockTest()
         {
             EnemyController rifleman = game.Enemies.First(e => e.name.Contains("rifleman"));

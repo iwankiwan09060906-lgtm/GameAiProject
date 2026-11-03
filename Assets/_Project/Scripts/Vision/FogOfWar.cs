@@ -41,19 +41,12 @@ namespace GameAi
             }
         }
 
-        // 텍스처에 쓸 픽셀을 채운다. 보이는 칸은 투명, 기억은 회색조 반투명, 미탐색은 검정
+        // 텍스처에 쓸 픽셀을 채운다. 한 번이라도 본 칸(지금 보임 포함)은 회색조 반투명, 미탐색은 검정.
+        // 지금 보이는 곳의 구멍은 칸 단위가 아니라 시야 메시(VisionRenderer)가 부드럽게 뚫는다
         public void WritePixels(Color32[] pixels, Color32 unexplored, Color32 memory)
         {
-            var clear = new Color32(0, 0, 0, 0);
             for (int i = 0; i < states.Length; i++)
-            {
-                switch (states[i])
-                {
-                    case FogState.Visible: pixels[i] = clear; break;
-                    case FogState.Memory: pixels[i] = memory; break;
-                    default: pixels[i] = unexplored; break;
-                }
-            }
+                pixels[i] = states[i] == FogState.Unexplored ? unexplored : memory;
         }
     }
 }

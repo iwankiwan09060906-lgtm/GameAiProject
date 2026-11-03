@@ -12,12 +12,14 @@
   "fixed_seed": 12345,
   "default_difficulty": "normal",
   "lighting": {
-    "ambient_color": "#1A1830",
+    "ambient_color": "#131A28",
     "global_intensity_scale": 10.0,
     "lamp_color": "#FFC873",
     "lamp_falloff": 0.6,
     "shadow_strength": 0.9,
-    "wall_rim_color": "#3A3A44",
+    "wall_rim_color": "#4A5466",
+    "window_glass_color": "#1C2B38",
+    "window_glint_color": "#9EC4D8",
     "muzzle_light_color": "#FFD38A",
     "muzzle_light_radius_m": 3.0,
     "muzzle_light_s": 0.05,
@@ -47,8 +49,16 @@
   },
   "fog": {
     "unexplored_alpha": 1.0,
-    "memory_alpha": 0.65,
-    "memory_gray": 0.04
+    "memory_alpha": 0.72,
+    "memory_gray": 0.03,
+    "smooth_memory": true,
+    "soft_rays": 720,
+    "near_m": 0.9,
+    "edge_wall_m": 0.3,
+    "edge_range_m": 1.5,
+    "edge_near_m": 0.6,
+    "cone_soft_deg": 6,
+    "reveal_depth_m": 2.5
   },
   "fx": {
     "tracer_s": 0.1,

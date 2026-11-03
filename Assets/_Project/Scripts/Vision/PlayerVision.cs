@@ -45,6 +45,15 @@ namespace GameAi
             return IsVisible(cell.x, cell.y);
         }
 
+        // 칸 묶음(여러 칸짜리 문) 중 하나라도 보이는지
+        public bool IsVisible(RectInt area)
+        {
+            for (int y = area.yMin; y < area.yMax; y++)
+                for (int x = area.xMin; x < area.xMax; x++)
+                    if (IsVisible(x, y)) return true;
+            return false;
+        }
+
         // position에서 aimDir 방향으로 시야를 다시 계산한다
         public void Compute(Vector2 position, Vector2 aimDir)
         {

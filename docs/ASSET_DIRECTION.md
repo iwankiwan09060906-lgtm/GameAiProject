@@ -18,7 +18,7 @@
 | 요소 | 레퍼런스에서 보이는 모습 | 우리 게임 적용 | 관련 기능 |
 | --- | --- | --- | --- |
 | 시점 | 정탑뷰(위에서 수직), 카메라가 플레이어를 따라감 | 정탑뷰, 커서 쪽으로 최대 3m 앞당김(look-ahead) | FN-PLY-01 |
-| 지형 | 두꺼운 검은 벽과 밝은 테두리, 나무 마루·타일·카펫 바닥, 욕조·소파·침대·상자 | 1칸=1m=32px 픽셀아트 타일, 벽은 검정 + 1px 하이라이트 | FN-MAP-01 |
+| 지형 | 검은 벽과 밝은 테두리, 나무 마루·타일·카펫 바닥, 욕조·소파·침대·상자 | 1m=32px 픽셀아트 타일, 벽은 검정 + 1px 하이라이트 + 바닥 쪽 그늘. 맵 1은 0.5m 칸이라 벽이 캐릭터보다 얇고, 금속 바닥과 시설·사무 가구 소품을 많이 깐 어두운 현대 시설 | FN-MAP-01 |
 | 조명 | 천장등 아래만 노랗게 밝고 나머지는 어두움, 야외는 남색 어둠 | URP 2D 라이트(점광원 + 전역광), 벽 그림자. **밝기가 AI 감지에 영향** | FN-VIS-04 |
 | 문 | 벽 사이의 얇은 금색 막대 | 닫힘 = 얇은 막대, 열림 = 90° 회전 막대 | FN-MAP-02 |
 | 창문 | 벽 중간의 흰 직사각형 | `W` 타일: 시야 투과, 이동·총알 차단 | FN-COM-02 |
@@ -174,7 +174,7 @@ Neo둥근모는 받은 파일이 소스뿐이고 `.ttf`가 없어 제외했다. 
 
 아래 파일은 **이미 들어 있다**(2026-11-03). `AssetCatalog`(MASTER_PROMPT 11.0)가 이 이름으로 찾고, 파일이 없으면 "없을 때" 칸의 코드 생성 에셋을 쓴다. 스프라이트는 모두 PPU 32, Point 필터.
 
-**교체 방법**: 같은 이름의 파일로 덮어쓴 뒤 `Tools/Build Project`를 실행한다. 재채색 값이나 자르는 위치를 바꾸려면 `AssetSource/build_assets.cs`를 고치고 `AssetSource/build_assets.ps1`을 실행한다. 이 스크립트는 3.1의 스프라이트와 사격음 2개를 원본에서 다시 만들고, 3.2의 나머지 소리는 원본을 이름만 바꿔 넣은 것이다. 초상화·소품 도트는 `AssetSource/drawn/*.txt`(팔레트 + 문자 격자)를 고쳐도 된다. `AssetSource/`는 `Assets/` 밖이라 Unity가 임포트하지 않는다.
+**교체 방법**: 같은 이름의 파일로 덮어쓴 뒤 `Tools/Build Project`를 실행한다. 장식 소품(`deco_*`, `floor_*`)은 `AssetSource/build_deco.ps1`이 `AssetSource/newasset/` 시트에서 다시 만들고, 맵 1의 방·소품 배치는 `AssetSource/build_map.ps1`(결과 확인용 `AssetSource/map_preview.png`)이 만든다. 재채색 값이나 자르는 위치를 바꾸려면 `AssetSource/build_assets.cs`를 고치고 `AssetSource/build_assets.ps1`을 실행한다. 이 스크립트는 3.1의 스프라이트와 사격음 2개를 원본에서 다시 만들고, 3.2의 나머지 소리는 원본을 이름만 바꿔 넣은 것이다. 초상화·소품 도트는 `AssetSource/drawn/*.txt`(팔레트 + 문자 격자)를 고쳐도 된다. `AssetSource/`는 `Assets/` 밖이라 Unity가 임포트하지 않는다.
 
 ### 3.1 그래픽 (`Art/`)
 
@@ -208,6 +208,8 @@ Neo둥근모는 받은 파일이 소스뿐이고 `.ttf`가 없어 제외했다. 
 | `ui/panel_dark.png` · `panel_gold.png` · `panel_dialogue.png` | HUD 패널 / 무기 이름 칸 금색 테두리 / 대화창(위쪽 빨강 1px). 9-slice(테두리 2px) | 16×16 | 코드로 그림 | 단색 Image |
 | `ui/weapon_{pistol,silenced_pistol,rifle}.png` | HUD 무기 그림 | 64×32 | Firearm Icons(권총), Weapon Pack(소총) 빨강 윤곽 재채색 | 빨강 윤곽 총 |
 | `portraits/accomplice.png` · `portraits/player.png` | 대화 초상화(`dialogue.json`의 화자 2명, 4배 표시) | 32×40 | 코드로 그림(임시본) | 이름 첫 글자가 적힌 사각 |
+| `tiles/floor_metal_dark.png` · `floor_metal_plate.png` · `floor_metal_blue.png` · `floor_ground.png` | 맵 1 바닥(`floor_sprites`로 `w`·`t`·`k`·`o`에 대응). 0.5m 칸마다 16px 조각을 잘라 그림 | 32×32 / 64×64 | newAsset 시설 시트·지면 시트 | 맵의 기본 바닥(`tile_floor_*`) |
+| `deco/deco_*.png` (317장) | 맵 장식 소품(맵 JSON `props`). 시설(`deco_server_*`, `deco_console_*`, `deco_elevator*`, 화물·드럼통·화장실 등), `deco_office_*`(사무 가구), `deco_ruin_*`(폐허·잔해), `deco_terr_*`(흙·얼룩·돌·콘크리트판), `deco_item_*`(작은 물건) | 그림마다 다름(32px = 1m) | newAsset 시트 8장(`AssetSource/build_deco.ps1`) | 그리지 않음(판정은 엄폐 칸이 맡으므로 실행에는 영향 없음) |
 
 **캐릭터 사용법**: 모든 캐릭터는 오른쪽(+X)을 본다. dyru 캐릭터에는 총이 없으므로 `held_*`를 겹쳐 그린다. 기준점은 캐릭터 칸의 아래쪽 손 (25, 24)px이고, 총 그림의 왼쪽 끝이 손잡이다.
 

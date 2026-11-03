@@ -49,15 +49,19 @@ namespace GameAi
             return position;
         }
 
-        // 막힌 칸과 겹친 원을 바깥으로 민다
+        // 막힌 칸과 겹친 원을 바깥으로 민다. 계산은 "1칸 = 1" 단위로 바꿔서 하고 m로 되돌린다
         public static Vector2 PushOutOfCells(GridMap grid, Vector2 position, float radius)
         {
+            float cellSize = grid.CellSize;
+            position /= cellSize;
+            radius /= cellSize;
+
             // 면에 닿은 칸을 먼저 밀어낸다. 모서리를 먼저 처리하면 벽 칸 이음새의 모서리에 걸려 옆으로 튄다
             position = PushPass(grid, position, radius, false);
-            return PushPass(grid, position, radius, true);
+            return PushPass(grid, position, radius, true) * cellSize;
         }
 
-        // 원 주변 칸을 훑으며 겹친 막힌 칸을 민다. corners가 true면 모서리에서 겹친 칸만, false면 면에서 겹친 칸만 처리한다
+        // 원 주변 칸을 훑으며 겹친 막힌 칸을 민다(칸 단위 좌표). corners가 true면 모서리에서 겹친 칸만, false면 면에서 겹친 칸만 처리한다
         static Vector2 PushPass(GridMap grid, Vector2 position, float radius, bool corners)
         {
             int minX = Mathf.FloorToInt(position.x - radius);

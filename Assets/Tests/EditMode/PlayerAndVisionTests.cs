@@ -46,6 +46,39 @@ namespace GameAi.Tests
         }
 
         [Test]
+        public void 반_미터_칸의_얇은_벽에서도_반지름만큼_떨어져_멈춘다()
+        {
+            // 칸 6(3.0 ~ 3.5m)만 벽인 0.5m 격자
+            var grid = new GridMap(12, 6, 0.5f);
+            for (int y = 0; y < 6; y++) grid.SetTile(6, y, TileType.Wall);
+            Vector2 end = PlayerMotor.Move(grid, new Vector2(1.5f, 1.5f), new Vector2(5f, 0f), Radius);
+            Assert.AreEqual(3f - Radius, end.x, 1e-3f);
+            Assert.AreEqual(1.5f, end.y, 1e-3f);
+        }
+
+        [Test]
+        public void 시야_모양은_벽에_닿은_지점에서_멈추고_등_뒤는_몸_주변만_보인다()
+        {
+            var grid = new GridMap(40, 20, 0.5f);
+            for (int y = 0; y < 20; y++) grid.SetTile(20, y, TileType.Wall);
+            var config = new FogConfig { soft_rays = 360 };
+            var fan = new VisionFan(grid, 90f, 12f, config);
+            fan.Compute(new Vector2(5f, 5f), Vector2.right);
+
+            // 0번은 등 뒤, 가운데(180번)는 조준 방향. 조준 방향 레이는 x = 10m 벽에 닿고,
+            // 벽 두께(10 ~ 10.5m)만큼 윗면을 보인 뒤 반대쪽 끝 0.3m에서 어두워진다
+            Assert.AreEqual(10.5f - config.edge_wall_m, fan.Inner[180].x, 1e-3f);
+            Assert.AreEqual(0f, fan.InnerAlpha[180]);
+            Assert.AreEqual(config.edge_wall_m, fan.Feather[180], 1e-3f);
+            Assert.AreEqual(config.near_m, Vector2.Distance(new Vector2(5f, 5f), fan.Inner[0]), 1e-3f);
+
+            // 부채꼴 가장자리 완충 각도에서는 점점 어두워진다
+            int edge = 180 + 45 + 3;
+            Assert.Greater(fan.InnerAlpha[edge], 0f);
+            Assert.Less(fan.InnerAlpha[edge], 1f);
+        }
+
+        [Test]
         public void 벽을_따라_미끄러진다()
         {
             var grid = new GridMap(6, 6);
@@ -188,7 +221,9 @@ namespace GameAi.Tests
             var unexplored = new Color32(0, 0, 0, 255);
             var memory = new Color32(25, 25, 28, 166);
             fog.WritePixels(pixels, unexplored, memory);
-            Assert.AreEqual(0, pixels[grid.Index(5, 4)].a);
+
+            // 지금 보이는 칸도 텍스처에는 기억 색으로 쓴다. 보이는 곳의 구멍은 시야 메시가 뚫는다
+            Assert.AreEqual(166, pixels[grid.Index(5, 4)].a);
             Assert.AreEqual(255, pixels[grid.Index(25, 4)].a);
 
             vision.Compute(new Vector2(2.5f, 4.5f), Vector2.left);

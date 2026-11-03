@@ -20,12 +20,18 @@ namespace GameAi
         // 문 앞에서 "[SPACE] 열기"를 띄울 때, 벽 너머의 문은 제외하고 이 문은 고르기 위해 쓴다
         public static bool ReachesCell(GridMap grid, Vector2 a, Vector2Int cell, RayMask mask)
         {
-            Vector2 target = GridMap.CellCenter(cell);
+            return ReachesArea(grid, a, new RectInt(cell.x, cell.y, 1, 1), mask);
+        }
+
+        // 여러 칸짜리 대상(폭 3칸 문 등)의 중심까지 레이를 쏘아, 처음 막힌 칸이 그 대상의 칸이면 닿은 것으로 친다
+        public static bool ReachesArea(GridMap grid, Vector2 a, RectInt area, RayMask mask)
+        {
+            Vector2 target = grid.AreaCenter(area);
             Vector2 delta = target - a;
             float distance = delta.magnitude;
             if (distance < 1e-5f) return true;
             RayHit hit = Raycast.Cast(grid, a, delta / distance, distance, mask);
-            return !hit.Hit || hit.Cell == cell;
+            return !hit.Hit || area.Contains(hit.Cell);
         }
     }
 }

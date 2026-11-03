@@ -3,7 +3,7 @@ using UnityEngine;
 namespace GameAi
 {
     // 맵의 격자 데이터. 순수 C#이라 Unity 없이도 테스트할 수 있다.
-    // 1칸 = 1m. 원점은 왼쪽 아래 칸의 왼쪽 아래 모서리, 칸 중심은 (x + 0.5, y + 0.5).
+    // 1칸 = CellSize m(기본 1m, 맵 JSON의 cell_m). 원점은 왼쪽 아래 칸의 왼쪽 아래 모서리, 칸 중심은 ((x + 0.5) × CellSize, (y + 0.5) × CellSize).
     // 1차원 배열 하나에 [y * Width + x] 순서로 담아 메모리 이동이 적고 빠르다.
     public sealed class GridMap
     {
@@ -16,10 +16,14 @@ namespace GameAi
         public int Width { get; }
         public int Height { get; }
 
-        public GridMap(int width, int height)
+        // 한 칸의 한 변 길이(m). 벽 두께가 곧 이 값이다
+        public float CellSize { get; }
+
+        public GridMap(int width, int height, float cellSize = 1f)
         {
             Width = width;
             Height = height;
+            CellSize = cellSize;
             tiles = new TileType[width * height];
             floors = new FloorType[width * height];
             doorOpen = new bool[width * height];
@@ -86,17 +90,29 @@ namespace GameAi
         // 월드 좌표가 속한 칸. 음수 좌표에서도 정확하도록 FloorToInt를 쓴다
         public Vector2Int WorldToCell(Vector2 world)
         {
-            return new Vector2Int(Mathf.FloorToInt(world.x), Mathf.FloorToInt(world.y));
+            return new Vector2Int(Mathf.FloorToInt(world.x / CellSize), Mathf.FloorToInt(world.y / CellSize));
         }
 
-        public static Vector2 CellCenter(int x, int y)
+        public Vector2 CellCenter(int x, int y)
         {
-            return new Vector2(x + 0.5f, y + 0.5f);
+            return new Vector2((x + 0.5f) * CellSize, (y + 0.5f) * CellSize);
         }
 
-        public static Vector2 CellCenter(Vector2Int cell)
+        public Vector2 CellCenter(Vector2Int cell)
         {
             return CellCenter(cell.x, cell.y);
+        }
+
+        // 칸 묶음(문처럼 여러 칸짜리)의 월드 중심
+        public Vector2 AreaCenter(RectInt area)
+        {
+            return area.center * CellSize;
+        }
+
+        // 칸 묶음이 차지하는 월드 사각형(m)
+        public Rect AreaRect(RectInt area)
+        {
+            return new Rect(area.x * CellSize, area.y * CellSize, area.width * CellSize, area.height * CellSize);
         }
     }
 }

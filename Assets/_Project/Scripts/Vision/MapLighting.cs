@@ -15,6 +15,9 @@ namespace GameAi
         // 그림자 상자의 크기 기준이 되는 1x1 흰 그림
         readonly Sprite box;
 
+        // 칸 한 변(m). 칸 좌표의 그림자 상자를 월드 크기로 바꿀 때 쓴다
+        float cellSize = 1f;
+
         public Light2D GlobalLight { get; private set; }
 
         public MapLighting(AssetCatalog catalog, LightingConfig config, Transform parent)
@@ -28,6 +31,7 @@ namespace GameAi
 
         public void Build(ParsedMap map, MapData data)
         {
+            cellSize = map.Grid.CellSize;
             CreateGlobal(data.ambient.indoor);
             foreach (MapLight light in data.lights)
                 CreateLamp(light);
@@ -45,22 +49,26 @@ namespace GameAi
             GlobalLight.intensity = ambient * config.global_intensity_scale;
         }
 
-        // 천장등 하나: 따뜻한 노란 점광원 + 위치 표시 점
+        // 천장등 하나: 점광원 + 위치 표시 점. 색을 적지 않으면 game.json의 천장등 색
         void CreateLamp(MapLight data)
         {
             var go = new GameObject("Lamp");
             go.transform.SetParent(root, false);
             go.transform.position = data.Position;
 
+            Color lampColor = MathUtil.ParseColor(config.lamp_color, new Color(1f, 0.78f, 0.45f));
             var light = go.AddComponent<Light2D>();
             light.lightType = Light2D.LightType.Point;
-            light.color = MathUtil.ParseColor(config.lamp_color, new Color(1f, 0.78f, 0.45f));
+            light.color = string.IsNullOrEmpty(data.color) ? lampColor : MathUtil.ParseColor(data.color, lampColor);
             light.intensity = data.intensity;
             light.pointLightInnerRadius = 0f;
             light.pointLightOuterRadius = data.radius_m;
             light.falloffIntensity = config.lamp_falloff;
-            light.shadowsEnabled = true;
+            light.shadowsEnabled = !data.no_shadows;
             light.shadowIntensity = config.shadow_strength;
+
+            // 모니터·경고등 같은 작은 빛은 표시 점 없이 빛만 둔다
+            if (data.no_shadows) return;
 
             // 조명 위치를 알려 주는 작은 점. 조명을 받지 않게 해서 항상 밝게 보인다
             var marker = go.AddComponent<SpriteRenderer>();
@@ -129,8 +137,8 @@ namespace GameAi
         {
             var go = new GameObject("ShadowBox");
             go.transform.SetParent(parent, false);
-            go.transform.position = rect.center;
-            go.transform.localScale = new Vector3(rect.width, rect.height, 1f);
+            go.transform.position = rect.center * cellSize;
+            go.transform.localScale = new Vector3(rect.width * cellSize, rect.height * cellSize, 1f);
 
             var bounds = go.AddComponent<SpriteRenderer>();
             bounds.sprite = box;

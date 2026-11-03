@@ -34,6 +34,8 @@
 | Weapon Pack — Firearms 02 | niro58 | CC0 1.0 | https://niro58.itch.io/weapon-pack-firearms-02 | HUD 소총 그림(Low_Res_Gun_05) | 사용 (2026-11-03, Claude Code) |
 | Crosshair Pack | Kenney | CC0 1.0 | https://kenney.nl/assets/crosshair-pack | 꺾쇠 조준선 | 사용 (2026-11-03, Claude Code) |
 | Emotes Pack | Kenney | CC0 1.0 | https://kenney.nl/assets/emotes-pack | `?` `!` 인지 아이콘 | 사용 (2026-11-03, Claude Code) |
+| newAsset 시설 시트(`AssetSource/newasset/scifi_facility.png`) | 미상(사용자 제공, 배경 제거 미리보기 파일) | **미상** | 사용자가 `Assets/newAsset`에 넣어 줌 | 금속 바닥 3종, 서버 랙·관제 콘솔·엘리베이터·화물·드럼통·화장실 등 `deco_*` 61장 | **확인 필요** |
+| newAsset 사무실·폐허·지면·아이콘 시트(`AssetSource/newasset/Office_*_32x32*.png`) | 미상(사용자 제공. 파일 이름은 상용 픽셀 팩 형식) | **미상** — 상용 팩이면 재배포 금지일 수 있음 | 사용자가 `Assets/newAsset`에 넣어 줌 | 책상·의자·캐비닛·화분·정수기(`deco_office_*`), 폐허·잔해(`deco_ruin_*`), 흙·얼룩·돌(`deco_terr_*`), 작은 물건(`deco_item_*`), 마당 바닥 | **확인 필요** |
 | Bloodsplatter and Bloodsplash Animation | overcrafted | CC0 1.0 | https://opengameart.org/node/51056 | (640×800 고해상도 그림이라 픽셀 화면과 맞지 않음. Gore 팩으로 대체) | 제외 |
 | Pixel Art Top Down Soldiers | tbbk | CC0 1.0 | https://opengameart.org/content/pixel-art-top-down-soldiers | (중세풍·애니메이션 없음, 분위기 불일치) | 제외 |
 | Top Down Shooter Character Animations | JJ99 | 상업 사용 허용, **재배포 금지** | https://jayjay99.itch.io/top-down-shooter-male-character-animation | (공개 저장소에 올릴 수 없음) | 제외 |

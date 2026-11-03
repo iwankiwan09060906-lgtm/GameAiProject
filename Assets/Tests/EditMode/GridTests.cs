@@ -146,7 +146,33 @@ namespace GameAi.Tests
         {
             var grid = new GridMap(4, 4);
             Assert.AreEqual(new Vector2Int(2, 1), grid.WorldToCell(new Vector2(2.9f, 1.1f)));
-            Assert.AreEqual(new Vector2(2.5f, 1.5f), GridMap.CellCenter(2, 1));
+            Assert.AreEqual(new Vector2(2.5f, 1.5f), grid.CellCenter(2, 1));
+        }
+
+        [Test]
+        public void 반_미터_칸은_좌표가_절반이다()
+        {
+            var grid = new GridMap(8, 8, 0.5f);
+            Assert.AreEqual(new Vector2Int(5, 2), grid.WorldToCell(new Vector2(2.9f, 1.1f)));
+            Assert.AreEqual(new Vector2(1.25f, 0.75f), grid.CellCenter(2, 1));
+            Assert.AreEqual(new Vector2(1.5f, 0.75f), grid.AreaCenter(new RectInt(2, 1, 2, 1)));
+        }
+
+        [Test]
+        public void 반_미터_칸에서도_레이는_m_단위로_멈춘다()
+        {
+            // 칸 3(1.5 ~ 2.0m)이 벽. 0.25m에서 오른쪽으로 쏘면 1.25m 뒤 벽 경계에 닿는다
+            var grid = new GridMap(8, 3, 0.5f);
+            grid.SetTile(3, 1, TileType.Wall);
+            RayHit hit = Raycast.Cast(grid, new Vector2(0.25f, 0.75f), Vector2.right, 3f, RayMask.Sight);
+            Assert.IsTrue(hit.Hit);
+            Assert.AreEqual(new Vector2Int(3, 1), hit.Cell);
+            Assert.AreEqual(1.25f, hit.Distance, 1e-4f);
+            Assert.AreEqual(1.5f, hit.Point.x, 1e-4f);
+
+            RayHit miss = Raycast.Cast(grid, new Vector2(0.25f, 0.25f), Vector2.right, 2f, RayMask.Sight);
+            Assert.IsFalse(miss.Hit);
+            Assert.AreEqual(2f, miss.Distance, 1e-4f);
         }
     }
 }

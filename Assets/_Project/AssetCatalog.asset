@@ -124,12 +124,975 @@ MonoBehaviour:
   - name: crosshair
     frames:
     - {fileID: 21300000, guid: 54bd88dfa26d4c24b8c3dfaa2c206b83, type: 3}
+  - name: deco_airlock
+    frames:
+    - {fileID: 21300000, guid: e0e0cdd199a3b2944af9095d83b344b8, type: 3}
+  - name: deco_badge
+    frames:
+    - {fileID: 21300000, guid: fe910713545927445be623a3a9bfb0f1, type: 3}
+  - name: deco_barrel_bio
+    frames:
+    - {fileID: 21300000, guid: 77505c06d8d924e48b57e479fab30eb7, type: 3}
+  - name: deco_barrel_red
+    frames:
+    - {fileID: 21300000, guid: 2e8a8811ec5354444ae71ef72c6d4cdb, type: 3}
+  - name: deco_barrel_stack
+    frames:
+    - {fileID: 21300000, guid: 7137e943958dbe94387d2afb957859a5, type: 3}
+  - name: deco_barrel_white
+    frames:
+    - {fileID: 21300000, guid: e6b8653d1b0018547959636fc77e3ad6, type: 3}
+  - name: deco_barrier
+    frames:
+    - {fileID: 21300000, guid: f0ac4780bf81fdc4ebe0e5b7ac6db2b0, type: 3}
+  - name: deco_bin_bio
+    frames:
+    - {fileID: 21300000, guid: f643a2f0fd80e584b839b57d0de83b0b, type: 3}
+  - name: deco_bin_bio_2
+    frames:
+    - {fileID: 21300000, guid: b9a33dc179b479c47a5314102769fde6, type: 3}
+  - name: deco_bolt
+    frames:
+    - {fileID: 21300000, guid: 204668060256ec845aa60e2edef8368c, type: 3}
+  - name: deco_box
+    frames:
+    - {fileID: 21300000, guid: b9de0560b9fed0946991d08100fc1652, type: 3}
+  - name: deco_cables_1
+    frames:
+    - {fileID: 21300000, guid: 87ee5f9623bf5d042b7d18381caf39e1, type: 3}
+  - name: deco_cables_2
+    frames:
+    - {fileID: 21300000, guid: 4887e284949299948822050d36216c2d, type: 3}
+  - name: deco_canister
+    frames:
+    - {fileID: 21300000, guid: d4f13c255ec3d684bad26659dfac7d4b, type: 3}
+  - name: deco_cargo_pad
+    frames:
+    - {fileID: 21300000, guid: 60e6662b5ca2cd54ebfbab6d7e54a75b, type: 3}
+  - name: deco_cone
+    frames:
+    - {fileID: 21300000, guid: 35406433613c9f14bba0337bc8ca5490, type: 3}
+  - name: deco_console_blue
+    frames:
+    - {fileID: 21300000, guid: 4e3942c91651a8f49b1447dc41e5c896, type: 3}
+  - name: deco_console_green
+    frames:
+    - {fileID: 21300000, guid: f65056c1485dae847a31c606e03325b2, type: 3}
+  - name: deco_conveyor
+    frames:
+    - {fileID: 21300000, guid: 2ec81730a17ee6e47823b7ce432db8f9, type: 3}
+  - name: deco_crate_big
+    frames:
+    - {fileID: 21300000, guid: a549d7d4efad7674289652db6925f561, type: 3}
+  - name: deco_crate_small
+    frames:
+    - {fileID: 21300000, guid: 0e3594bcdcfcb2c4881db558b0e595e0, type: 3}
+  - name: deco_debris
+    frames:
+    - {fileID: 21300000, guid: bb2fa4a061a55ff42b13e02e691a72f3, type: 3}
+  - name: deco_drone_parts
+    frames:
+    - {fileID: 21300000, guid: 7965e2248e209204b80a03ed4d57ad00, type: 3}
+  - name: deco_elevator
+    frames:
+    - {fileID: 21300000, guid: bcad66ee48820514a9e8226f6338afc9, type: 3}
+  - name: deco_elevator_open
+    frames:
+    - {fileID: 21300000, guid: 86ceecd1e90818d4cb5afb0dbcaab8ed, type: 3}
+  - name: deco_extinguisher
+    frames:
+    - {fileID: 21300000, guid: e477ba25f718b46479e2c65376d5abc7, type: 3}
+  - name: deco_fire
+    frames:
+    - {fileID: 21300000, guid: 04855b95097e74e408deabee0e6f285b, type: 3}
+  - name: deco_floor_panel
+    frames:
+    - {fileID: 21300000, guid: faab12605c66a3e4883bb4511a9add89, type: 3}
+  - name: deco_folder
+    frames:
+    - {fileID: 21300000, guid: 2cbe33ef4f0cb4d4a91883137a0fbad4, type: 3}
+  - name: deco_frame_big
+    frames:
+    - {fileID: 21300000, guid: d30c2a87d3ac45642ba086635d3e7b60, type: 3}
+  - name: deco_frame_mid
+    frames:
+    - {fileID: 21300000, guid: 195e2d5468c941b45828932f0c073403, type: 3}
+  - name: deco_frame_small
+    frames:
+    - {fileID: 21300000, guid: d49fadbcaed433c4daee6afe5c4a5bfc, type: 3}
+  - name: deco_gasmask
+    frames:
+    - {fileID: 21300000, guid: 45e7de75d8c1d5c4a8daba6475be8021, type: 3}
+  - name: deco_hatch_arch
+    frames:
+    - {fileID: 21300000, guid: 3ad79403e4a50a8468dcc059bb08d45d, type: 3}
+  - name: deco_hatch_plate
+    frames:
+    - {fileID: 21300000, guid: 418da6eeba102b447ac231d33ecfd1ef, type: 3}
+  - name: deco_hatch_window
+    frames:
+    - {fileID: 21300000, guid: 079802d7869ac8b4cb2ce010ff3c35bc, type: 3}
+  - name: deco_hazard_pad
+    frames:
+    - {fileID: 21300000, guid: 1f480ecd10453ff439253f459650f3d5, type: 3}
+  - name: deco_helmet
+    frames:
+    - {fileID: 21300000, guid: bcf29a1b9f3183742adb84b4a05be297, type: 3}
+  - name: deco_item_0
+    frames:
+    - {fileID: 21300000, guid: b6ad8f77f0e8f4e46b73006c040cfcdf, type: 3}
+  - name: deco_item_1
+    frames:
+    - {fileID: 21300000, guid: a75df49a97e9b164b80a5b45c1a150a5, type: 3}
+  - name: deco_item_2
+    frames:
+    - {fileID: 21300000, guid: 9ac7d2768a1e1d14b96c3232a951688b, type: 3}
+  - name: deco_item_3
+    frames:
+    - {fileID: 21300000, guid: 303259e61bb1f184f9e41b4b5ab1af8f, type: 3}
+  - name: deco_item_4
+    frames:
+    - {fileID: 21300000, guid: 05cb570eaa1d68d4899c5155c09b1a61, type: 3}
+  - name: deco_item_5
+    frames:
+    - {fileID: 21300000, guid: e6a6fe8431844d44eb7ab30a1728667c, type: 3}
+  - name: deco_item_6
+    frames:
+    - {fileID: 21300000, guid: 19a8231dfdf45ad48b2f14c1c6c8865f, type: 3}
+  - name: deco_item_7
+    frames:
+    - {fileID: 21300000, guid: 5004ccc74b92844418dd4057f8ba1bdc, type: 3}
+  - name: deco_item_8
+    frames:
+    - {fileID: 21300000, guid: 2b233b5241e6f6f49b5fbdb6d97cd33e, type: 3}
+  - name: deco_item_9
+    frames:
+    - {fileID: 21300000, guid: b72eabbc0b5e00b4c96bb94814b2b0fc, type: 3}
+  - name: deco_item_10
+    frames:
+    - {fileID: 21300000, guid: 54536a0339c2a084e81df2d5923b5afc, type: 3}
+  - name: deco_item_11
+    frames:
+    - {fileID: 21300000, guid: b473bcf87eec17946888b2ab69690cb1, type: 3}
+  - name: deco_item_12
+    frames:
+    - {fileID: 21300000, guid: b1f105f3670655e4393ff965e1415b2a, type: 3}
+  - name: deco_item_13
+    frames:
+    - {fileID: 21300000, guid: f7c87a68fde171c45b18a200d0cb41c5, type: 3}
+  - name: deco_item_14
+    frames:
+    - {fileID: 21300000, guid: 9fdb9f603064fd745945b1392b1b9318, type: 3}
+  - name: deco_item_15
+    frames:
+    - {fileID: 21300000, guid: 421163502bb3e4c4a82c921fe031d9bd, type: 3}
+  - name: deco_item_16
+    frames:
+    - {fileID: 21300000, guid: 9ce40c5150564e14280c5acd7e8d7bc0, type: 3}
+  - name: deco_item_17
+    frames:
+    - {fileID: 21300000, guid: 06e621ebd82de294ead65bc7af60664a, type: 3}
+  - name: deco_item_18
+    frames:
+    - {fileID: 21300000, guid: 072b123e4f17e0d40a62f71a6c515b09, type: 3}
+  - name: deco_item_19
+    frames:
+    - {fileID: 21300000, guid: b44f56b74760d8c478cb531f4fca4365, type: 3}
+  - name: deco_item_20
+    frames:
+    - {fileID: 21300000, guid: ad2a5b05b42d5f94c808359a7611ff6b, type: 3}
+  - name: deco_item_21
+    frames:
+    - {fileID: 21300000, guid: b6d7b556e80faa3409013762a7d87aee, type: 3}
+  - name: deco_item_22
+    frames:
+    - {fileID: 21300000, guid: a80411876ef40c242a2affa57e504762, type: 3}
+  - name: deco_item_23
+    frames:
+    - {fileID: 21300000, guid: 5cf95c8a80cb5054cb292232aad30e2a, type: 3}
+  - name: deco_item_24
+    frames:
+    - {fileID: 21300000, guid: 9bca099724d595741952c62f2e434955, type: 3}
+  - name: deco_item_25
+    frames:
+    - {fileID: 21300000, guid: d22fa899aecf64c45b657bd63293cb96, type: 3}
+  - name: deco_item_26
+    frames:
+    - {fileID: 21300000, guid: 676630a7e276d5648b87706cd9396f50, type: 3}
+  - name: deco_item_27
+    frames:
+    - {fileID: 21300000, guid: 75abf100030817f4bb089b5a6428bfa7, type: 3}
+  - name: deco_item_28
+    frames:
+    - {fileID: 21300000, guid: c4d7d87a2dfc9f24e8e27cda00288128, type: 3}
+  - name: deco_item_29
+    frames:
+    - {fileID: 21300000, guid: 4fbea442c2575a444a53324e960ff472, type: 3}
+  - name: deco_item_30
+    frames:
+    - {fileID: 21300000, guid: cb30305583b43d44db57e73fc80eff4d, type: 3}
+  - name: deco_item_31
+    frames:
+    - {fileID: 21300000, guid: bb8d2ef793e01dc42873aa126383a17b, type: 3}
+  - name: deco_item_32
+    frames:
+    - {fileID: 21300000, guid: ada1851c8b838084696742598ae5f5af, type: 3}
+  - name: deco_item_33
+    frames:
+    - {fileID: 21300000, guid: 40b730cc7301206419cd1ffee1a4d7b0, type: 3}
+  - name: deco_item_34
+    frames:
+    - {fileID: 21300000, guid: 9ee2cd0792bfc034291ea9cb240e8956, type: 3}
+  - name: deco_item_35
+    frames:
+    - {fileID: 21300000, guid: ca5dc2d1ca08b834ebc70e23d859b220, type: 3}
+  - name: deco_item_36
+    frames:
+    - {fileID: 21300000, guid: 556aa5a38be453748aaf2e0426ac8c16, type: 3}
+  - name: deco_item_37
+    frames:
+    - {fileID: 21300000, guid: 14762633a13f3e84faf0d3424f7d9473, type: 3}
+  - name: deco_item_38
+    frames:
+    - {fileID: 21300000, guid: b4a70e97f1f94894d81add1270798216, type: 3}
+  - name: deco_item_39
+    frames:
+    - {fileID: 21300000, guid: 0a99cbb4acda879468de4554bebee171, type: 3}
+  - name: deco_item_40
+    frames:
+    - {fileID: 21300000, guid: cceb1b882bcac2340922d06481fd9917, type: 3}
+  - name: deco_item_41
+    frames:
+    - {fileID: 21300000, guid: 486558c561b471246b239ac3de1d0683, type: 3}
+  - name: deco_keycard
+    frames:
+    - {fileID: 21300000, guid: 6cf041d882fd5b44891c2631fc06d878, type: 3}
+  - name: deco_ladder
+    frames:
+    - {fileID: 21300000, guid: 5c10af32efa0c1e49bd52ac3f10afe97, type: 3}
+  - name: deco_medkit
+    frames:
+    - {fileID: 21300000, guid: 39c8d4266f7ffd3448eeb0b2836c905f, type: 3}
+  - name: deco_note
+    frames:
+    - {fileID: 21300000, guid: 560e829d7a4749b4aa44adc7bc590701, type: 3}
+  - name: deco_office_armchair_1
+    frames:
+    - {fileID: 21300000, guid: 900f94b1bf7692c44a360aaffb7c93f8, type: 3}
+  - name: deco_office_armchair_2
+    frames:
+    - {fileID: 21300000, guid: bfeefdcbfe61c694988754e99b9c69fc, type: 3}
+  - name: deco_office_bench
+    frames:
+    - {fileID: 21300000, guid: bbe2953099870114e9d24e1302096890, type: 3}
+  - name: deco_office_bin_white
+    frames:
+    - {fileID: 21300000, guid: 35f3b5fd43bcf9a43a6926c36ceedc1c, type: 3}
+  - name: deco_office_binders_1
+    frames:
+    - {fileID: 21300000, guid: 15b49ed5ca8b1e04ead71b4f92fc5850, type: 3}
+  - name: deco_office_binders_2
+    frames:
+    - {fileID: 21300000, guid: 0e35e9577be37694aba7fb38b047258d, type: 3}
+  - name: deco_office_board_1
+    frames:
+    - {fileID: 21300000, guid: daaac8c3ca2e9f8469e59cc734a17667, type: 3}
+  - name: deco_office_board_2
+    frames:
+    - {fileID: 21300000, guid: f265d548b246598448c8f2e40e98ff70, type: 3}
+  - name: deco_office_board_3
+    frames:
+    - {fileID: 21300000, guid: c7fae9a4e28f5ee44a5028fedb3b29a5, type: 3}
+  - name: deco_office_book_1
+    frames:
+    - {fileID: 21300000, guid: 2f78a72955217214784675c539ad09c5, type: 3}
+  - name: deco_office_book_2
+    frames:
+    - {fileID: 21300000, guid: ccbbe30a05b8cf64fb34cb0eb219c97d, type: 3}
+  - name: deco_office_book_3
+    frames:
+    - {fileID: 21300000, guid: 0a9850dcd6c7f2043b5dc5db11162a70, type: 3}
+  - name: deco_office_bookshelf_1
+    frames:
+    - {fileID: 21300000, guid: 7b6ab2c755d8366408df3e766f39b3e4, type: 3}
+  - name: deco_office_bookshelf_2
+    frames:
+    - {fileID: 21300000, guid: 4f3828ce362ff054395acef725d8358f, type: 3}
+  - name: deco_office_bookshelf_3
+    frames:
+    - {fileID: 21300000, guid: 07025f7b319943946809bcd03bbc4c22, type: 3}
+  - name: deco_office_bookshelf_4
+    frames:
+    - {fileID: 21300000, guid: 6549b308bf6243d479153c426b551f89, type: 3}
+  - name: deco_office_bookshelf_5
+    frames:
+    - {fileID: 21300000, guid: a8c0b9be85d3d074cbf0396826c2242d, type: 3}
+  - name: deco_office_bookshelf_6
+    frames:
+    - {fileID: 21300000, guid: 274f08db13ca2fb4d88cf80b8c89962b, type: 3}
+  - name: deco_office_box_1
+    frames:
+    - {fileID: 21300000, guid: 2ba4587556b868d4ebfd061b8605b81f, type: 3}
+  - name: deco_office_box_2
+    frames:
+    - {fileID: 21300000, guid: c12af88f7fbf9124a931cffb288c57e0, type: 3}
+  - name: deco_office_box_3
+    frames:
+    - {fileID: 21300000, guid: c8f8586ac8753bc4f90390bdae68accf, type: 3}
+  - name: deco_office_box_4
+    frames:
+    - {fileID: 21300000, guid: cd38337a3485cef40b4ae590a9d7e8db, type: 3}
+  - name: deco_office_box_open
+    frames:
+    - {fileID: 21300000, guid: 325cf61606cfdae40851818116506939, type: 3}
+  - name: deco_office_cabinet_1
+    frames:
+    - {fileID: 21300000, guid: 3b98a0191a186ba4c968852effab5687, type: 3}
+  - name: deco_office_cabinet_2
+    frames:
+    - {fileID: 21300000, guid: d45aa403e94fb6e44a237e7716630a14, type: 3}
+  - name: deco_office_cabinet_3
+    frames:
+    - {fileID: 21300000, guid: ba898345330dcb84ebea6604b4eadcaf, type: 3}
+  - name: deco_office_cabinet_4
+    frames:
+    - {fileID: 21300000, guid: 423c50660b26ff04498d2c11360b4866, type: 3}
+  - name: deco_office_cabinet_corner
+    frames:
+    - {fileID: 21300000, guid: 8f4f1daef9aec0d4782d9387e29ce4d9, type: 3}
+  - name: deco_office_cabinet_dark
+    frames:
+    - {fileID: 21300000, guid: f91528ed59436994a9762377a2174093, type: 3}
+  - name: deco_office_cabinet_low_1
+    frames:
+    - {fileID: 21300000, guid: 8c80f051815559b449d145720dafe62f, type: 3}
+  - name: deco_office_cabinet_low_2
+    frames:
+    - {fileID: 21300000, guid: 60f211ce52ede6e42b08d41ba38314ec, type: 3}
+  - name: deco_office_calc_1
+    frames:
+    - {fileID: 21300000, guid: 1e096edab312b0447ad2b369e80053b6, type: 3}
+  - name: deco_office_calc_2
+    frames:
+    - {fileID: 21300000, guid: d31f0db6e5a8d604c8e278a1330e0fc3, type: 3}
+  - name: deco_office_calc_3
+    frames:
+    - {fileID: 21300000, guid: f1e12d6723f14964081c48880646b713, type: 3}
+  - name: deco_office_chair_1
+    frames:
+    - {fileID: 21300000, guid: aeac11b8bdf800f4d972d82d49396945, type: 3}
+  - name: deco_office_chair_2
+    frames:
+    - {fileID: 21300000, guid: 150a6f7d285393445b085255696e8ebc, type: 3}
+  - name: deco_office_chair_3
+    frames:
+    - {fileID: 21300000, guid: 13f85419d1f5fdb4c91e15ace6629e34, type: 3}
+  - name: deco_office_chair_4
+    frames:
+    - {fileID: 21300000, guid: 23e2697cb7313c140ab464cc43d803ce, type: 3}
+  - name: deco_office_chair_5
+    frames:
+    - {fileID: 21300000, guid: cd9c096b6a0a6b64c9dfb7e92ef2853e, type: 3}
+  - name: deco_office_chair_6
+    frames:
+    - {fileID: 21300000, guid: aa1b5cdff771dd744b8ef21422bb82ba, type: 3}
+  - name: deco_office_chair_7
+    frames:
+    - {fileID: 21300000, guid: 34d9275155d1476408fe7f381925983e, type: 3}
+  - name: deco_office_chair_8
+    frames:
+    - {fileID: 21300000, guid: 0a4aa03ff6e6ddf428906a9a3dd7c4b9, type: 3}
+  - name: deco_office_chair_9
+    frames:
+    - {fileID: 21300000, guid: 38ee192d197350b42911509ca84d9d4e, type: 3}
+  - name: deco_office_chair_10
+    frames:
+    - {fileID: 21300000, guid: d2d7235a5dd561c4996b789541979870, type: 3}
+  - name: deco_office_chair_11
+    frames:
+    - {fileID: 21300000, guid: 577effe9c6b64714792308df0178edee, type: 3}
+  - name: deco_office_chair_12
+    frames:
+    - {fileID: 21300000, guid: 7bf8811c7a21fdf4da68aa59610716f1, type: 3}
+  - name: deco_office_clock
+    frames:
+    - {fileID: 21300000, guid: d91f55096d35dcc468a980e979ac440e, type: 3}
+  - name: deco_office_cooler_1
+    frames:
+    - {fileID: 21300000, guid: 33f602c14652bdc45a2de4673591e23d, type: 3}
+  - name: deco_office_cooler_2
+    frames:
+    - {fileID: 21300000, guid: 3f6129b500afd934c9e98286dd42e694, type: 3}
+  - name: deco_office_cooler_3
+    frames:
+    - {fileID: 21300000, guid: aa6b0cfa82ab9744aa7591f83c5deacc, type: 3}
+  - name: deco_office_copier
+    frames:
+    - {fileID: 21300000, guid: 09136b2c062d9e042adeb5a7b6203679, type: 3}
+  - name: deco_office_corkboard
+    frames:
+    - {fileID: 21300000, guid: 901f22addc6f4824bb2f62ac844d321f, type: 3}
+  - name: deco_office_counter_1
+    frames:
+    - {fileID: 21300000, guid: ba027661bd6df6f429d4d47b8e2f0101, type: 3}
+  - name: deco_office_counter_2
+    frames:
+    - {fileID: 21300000, guid: 61c4a4a095ce6524996c45382b206757, type: 3}
+  - name: deco_office_counter_3
+    frames:
+    - {fileID: 21300000, guid: c77dbffa852f7b14592f9aa14811d33c, type: 3}
+  - name: deco_office_counter_4
+    frames:
+    - {fileID: 21300000, guid: f7d05f2963cf7724f86a7d7546097c89, type: 3}
+  - name: deco_office_cup
+    frames:
+    - {fileID: 21300000, guid: 54cdf3f6dbc56204e8a76193df9a1e72, type: 3}
+  - name: deco_office_cup_2
+    frames:
+    - {fileID: 21300000, guid: 70be8f9c263aefd4db6041be4040c139, type: 3}
+  - name: deco_office_desk_1
+    frames:
+    - {fileID: 21300000, guid: 9502d3594ab7f15468b70b2073eb0562, type: 3}
+  - name: deco_office_desk_2
+    frames:
+    - {fileID: 21300000, guid: 1e267c9b248b42f4389dfd72d2a8fd8b, type: 3}
+  - name: deco_office_desk_3
+    frames:
+    - {fileID: 21300000, guid: d3be67d2e9a83b04a864c3c5c705ed56, type: 3}
+  - name: deco_office_desk_4
+    frames:
+    - {fileID: 21300000, guid: 20f3da0e312d39a40a8ee1cf63b52957, type: 3}
+  - name: deco_office_desk_5
+    frames:
+    - {fileID: 21300000, guid: 9623f10d9b0ff69458e5829b1cfb2459, type: 3}
+  - name: deco_office_desk_6
+    frames:
+    - {fileID: 21300000, guid: 44039a7e166d82d4f8cc4e70dab17536, type: 3}
+  - name: deco_office_desk_side_1
+    frames:
+    - {fileID: 21300000, guid: 87fc6740cad1808459df4e5ee32bd8cf, type: 3}
+  - name: deco_office_desk_side_2
+    frames:
+    - {fileID: 21300000, guid: eae733de9d349674da16284f1f202279, type: 3}
+  - name: deco_office_door_dark
+    frames:
+    - {fileID: 21300000, guid: 211b4863f11dd0a418a07ca604605e9d, type: 3}
+  - name: deco_office_envelope
+    frames:
+    - {fileID: 21300000, guid: 099daa24c2e59d249879ecddefabd5a3, type: 3}
+  - name: deco_office_file_1
+    frames:
+    - {fileID: 21300000, guid: 92907bbb34b3ef649bf165707256af18, type: 3}
+  - name: deco_office_file_2
+    frames:
+    - {fileID: 21300000, guid: ae27708db2342a841a0cf79850d379af, type: 3}
+  - name: deco_office_file_3
+    frames:
+    - {fileID: 21300000, guid: 44a7c65aae5cf6446808a2945165b9ec, type: 3}
+  - name: deco_office_file_4
+    frames:
+    - {fileID: 21300000, guid: 42fcd4cc9f147544e985a707ba18498a, type: 3}
+  - name: deco_office_file_5
+    frames:
+    - {fileID: 21300000, guid: 4bd6350e5bd5ac947bbfcdf506e96cfa, type: 3}
+  - name: deco_office_file_green_1
+    frames:
+    - {fileID: 21300000, guid: 76122ab0427ecab48bd179a24a86e2a5, type: 3}
+  - name: deco_office_file_green_2
+    frames:
+    - {fileID: 21300000, guid: 163e60ad9fa46654386071a29566097b, type: 3}
+  - name: deco_office_file_green_3
+    frames:
+    - {fileID: 21300000, guid: a482fafa43d2d7f4bb350aada3ca1ef1, type: 3}
+  - name: deco_office_file_green_4
+    frames:
+    - {fileID: 21300000, guid: 73afe7bd124ebef4285e5033c198186b, type: 3}
+  - name: deco_office_file_green_5
+    frames:
+    - {fileID: 21300000, guid: 93ce545a72a625946a37a6d7b7c89614, type: 3}
+  - name: deco_office_file_tall_1
+    frames:
+    - {fileID: 21300000, guid: b942f5f4991751a49bfcc461a1604675, type: 3}
+  - name: deco_office_file_tall_2
+    frames:
+    - {fileID: 21300000, guid: d13de0b46fe716e429f7a4a119e74a43, type: 3}
+  - name: deco_office_file_tall_3
+    frames:
+    - {fileID: 21300000, guid: cea7477fc5b7d9d49aa1a687a0152965, type: 3}
+  - name: deco_office_file_tall_4
+    frames:
+    - {fileID: 21300000, guid: 53207e33c153e3b4aa368c92f5e0d597, type: 3}
+  - name: deco_office_file_tall_5
+    frames:
+    - {fileID: 21300000, guid: 6b5a61b693ebbf645b01f6b5aeedbe71, type: 3}
+  - name: deco_office_folder_1
+    frames:
+    - {fileID: 21300000, guid: 1b6255f46c46dd647a56eaf90538dd60, type: 3}
+  - name: deco_office_folder_2
+    frames:
+    - {fileID: 21300000, guid: ef803172212c5a64491ce2e5aaa0c2e7, type: 3}
+  - name: deco_office_folder_3
+    frames:
+    - {fileID: 21300000, guid: 731c496919301a24bb110836257206fa, type: 3}
+  - name: deco_office_frame_1
+    frames:
+    - {fileID: 21300000, guid: 2f9eff95072ba9b4d800d55c72987ebb, type: 3}
+  - name: deco_office_frame_2
+    frames:
+    - {fileID: 21300000, guid: ddf48220d19938a49b28ea9ce9696eaa, type: 3}
+  - name: deco_office_keyboard_1
+    frames:
+    - {fileID: 21300000, guid: d73f78e42f1a5084eaaa64b9171cc248, type: 3}
+  - name: deco_office_keyboard_2
+    frames:
+    - {fileID: 21300000, guid: 387db1a6c272d5c4f8eb94e9cdc75edd, type: 3}
+  - name: deco_office_ldesk_1
+    frames:
+    - {fileID: 21300000, guid: aa2321b186a608344a5068905de6f944, type: 3}
+  - name: deco_office_ldesk_2
+    frames:
+    - {fileID: 21300000, guid: 33d48d7dd6f01724795a8b8a883f0b0e, type: 3}
+  - name: deco_office_ldesk_3
+    frames:
+    - {fileID: 21300000, guid: 0483161180ecb394cbc9ec52057887ae, type: 3}
+  - name: deco_office_locker_1
+    frames:
+    - {fileID: 21300000, guid: ff4b47af95c60b7469d6d4fd8ae58cdf, type: 3}
+  - name: deco_office_locker_2
+    frames:
+    - {fileID: 21300000, guid: ebb5b89fa53c486448e096a4d0b7908d, type: 3}
+  - name: deco_office_locker_3
+    frames:
+    - {fileID: 21300000, guid: 2fd198fee856db247b7945d68f091624, type: 3}
+  - name: deco_office_locker_4
+    frames:
+    - {fileID: 21300000, guid: db88cc45b3467934194fb21f5cb67936, type: 3}
+  - name: deco_office_locker_green
+    frames:
+    - {fileID: 21300000, guid: 5bf2990d58c0a5d48a4dad8a3cd4dde4, type: 3}
+  - name: deco_office_monitor_dark
+    frames:
+    - {fileID: 21300000, guid: e7b3dce54da14ae4dae0c37ce8571c1c, type: 3}
+  - name: deco_office_monitor_green
+    frames:
+    - {fileID: 21300000, guid: 6fa05a1c50734dd4caa7cf970820790e, type: 3}
+  - name: deco_office_monitor_red
+    frames:
+    - {fileID: 21300000, guid: eaf4209a81df46f4ab0f867491db6f93, type: 3}
+  - name: deco_office_mug
+    frames:
+    - {fileID: 21300000, guid: 0860b7a0e14aeb5498316d0ed3593592, type: 3}
+  - name: deco_office_mug_blue
+    frames:
+    - {fileID: 21300000, guid: 0a6f3e8bc504f4349baf34ebf66e8ee5, type: 3}
+  - name: deco_office_note_1
+    frames:
+    - {fileID: 21300000, guid: 8d1ca2ed806f7654aa2472c821fbfa32, type: 3}
+  - name: deco_office_note_2
+    frames:
+    - {fileID: 21300000, guid: cd7b1e460776d38438f305d1a8ecda9f, type: 3}
+  - name: deco_office_note_3
+    frames:
+    - {fileID: 21300000, guid: d95d342fccbf3f74a9fa26862d77c2e6, type: 3}
+  - name: deco_office_paper_2
+    frames:
+    - {fileID: 21300000, guid: 4505a362135d2384d8bb7def67790e88, type: 3}
+  - name: deco_office_paper_stack
+    frames:
+    - {fileID: 21300000, guid: a134e23647384ee41a449dbe0908b81d, type: 3}
+  - name: deco_office_papers_1
+    frames:
+    - {fileID: 21300000, guid: 56ef5fb1d9714b44795f03f4252066d3, type: 3}
+  - name: deco_office_papers_2
+    frames:
+    - {fileID: 21300000, guid: 2a13e8a0df52842469f7b8f308cc768a, type: 3}
+  - name: deco_office_papers_3
+    frames:
+    - {fileID: 21300000, guid: 3f042c33a875a5e43bbeb203b9ef9af0, type: 3}
+  - name: deco_office_papers_4
+    frames:
+    - {fileID: 21300000, guid: 49ea810b5f8c5db45b641ea39e58c77e, type: 3}
+  - name: deco_office_papers_5
+    frames:
+    - {fileID: 21300000, guid: 156ceb845b6028b4b8cb38f333576423, type: 3}
+  - name: deco_office_partition_1
+    frames:
+    - {fileID: 21300000, guid: 8123df24e64a8c741b922cbfdcfe9fdf, type: 3}
+  - name: deco_office_partition_2
+    frames:
+    - {fileID: 21300000, guid: bb00ce3b38ad57e40bd6e807ed85d91f, type: 3}
+  - name: deco_office_partition_3
+    frames:
+    - {fileID: 21300000, guid: 2b2d215f259c7c0428f3475272220fe3, type: 3}
+  - name: deco_office_partition_4
+    frames:
+    - {fileID: 21300000, guid: 467098312c4ac2b42b5c2b6cb25449a8, type: 3}
+  - name: deco_office_partition_5
+    frames:
+    - {fileID: 21300000, guid: f711434bb2b60594b972b7d1ff696b24, type: 3}
+  - name: deco_office_pc_old
+    frames:
+    - {fileID: 21300000, guid: d98240ce2a2df6648b5052c3fe82a221, type: 3}
+  - name: deco_office_pc_tower
+    frames:
+    - {fileID: 21300000, guid: a71e86f0cac8f5a4fa2c44bc86914e11, type: 3}
+  - name: deco_office_phone
+    frames:
+    - {fileID: 21300000, guid: 64f57586606484a4c94b81c0c2a9aed4, type: 3}
+  - name: deco_office_phone_desk
+    frames:
+    - {fileID: 21300000, guid: da62fea8ac608e343b700ba36cd99106, type: 3}
+  - name: deco_office_plant_dry
+    frames:
+    - {fileID: 21300000, guid: e2f6886fd6de6f9459a3df28f345f04b, type: 3}
+  - name: deco_office_plant_pole
+    frames:
+    - {fileID: 21300000, guid: cb92daca6700da94c9dc3e138693f5bf, type: 3}
+  - name: deco_office_plant_small
+    frames:
+    - {fileID: 21300000, guid: fb02879d87a23b441837a64a8f89c62a, type: 3}
+  - name: deco_office_plant_tall
+    frames:
+    - {fileID: 21300000, guid: bd8e5e6f15da5054ca4e12c75e7b5eb1, type: 3}
+  - name: deco_office_pot
+    frames:
+    - {fileID: 21300000, guid: 0040deff870e80b47b5f0c1a659f50e0, type: 3}
+  - name: deco_office_printer
+    frames:
+    - {fileID: 21300000, guid: 2c7874d71947df34186a7b2628a450c4, type: 3}
+  - name: deco_office_printer_tall
+    frames:
+    - {fileID: 21300000, guid: ca5b084b0fb52a54c857783254289766, type: 3}
+  - name: deco_office_safe
+    frames:
+    - {fileID: 21300000, guid: e5ec95a82f9955641927aff2f5f0e0e3, type: 3}
+  - name: deco_office_seat_1
+    frames:
+    - {fileID: 21300000, guid: b1e98da55180cc9449237f13149ffad9, type: 3}
+  - name: deco_office_seat_2
+    frames:
+    - {fileID: 21300000, guid: d2f623fbb57737744b825291a9c44ff0, type: 3}
+  - name: deco_office_seats_1
+    frames:
+    - {fileID: 21300000, guid: 27c19d1b0ac26914dbef8b3d0535ae67, type: 3}
+  - name: deco_office_seats_2
+    frames:
+    - {fileID: 21300000, guid: 61c8076d9d676784ca60b862c0c4bdee, type: 3}
+  - name: deco_office_sofa_1
+    frames:
+    - {fileID: 21300000, guid: 1792243670a62a24983cb8aba9e83767, type: 3}
+  - name: deco_office_sofa_2
+    frames:
+    - {fileID: 21300000, guid: e71a8b81896740542ab50b111eedd4bf, type: 3}
+  - name: deco_office_stapler
+    frames:
+    - {fileID: 21300000, guid: 79c1cacb9d70eaa4495e5e6a8f2aba3f, type: 3}
+  - name: deco_office_sticky
+    frames:
+    - {fileID: 21300000, guid: 527fb6eaf88582b4cbeed4a557488658, type: 3}
+  - name: deco_office_stool
+    frames:
+    - {fileID: 21300000, guid: b65a235bbe8c5874b987eae61e8807c6, type: 3}
+  - name: deco_office_table_1
+    frames:
+    - {fileID: 21300000, guid: 7522f0a51b0a49542b4654b27db5153d, type: 3}
+  - name: deco_office_table_2
+    frames:
+    - {fileID: 21300000, guid: 670125289061a0d4e9438d63a850a817, type: 3}
+  - name: deco_office_table_small
+    frames:
+    - {fileID: 21300000, guid: 5286d9cfea8e4cf4694937fa8b4eef07, type: 3}
+  - name: deco_office_tape
+    frames:
+    - {fileID: 21300000, guid: 2a6f5d842c78f00428e5482439fe32fd, type: 3}
+  - name: deco_office_tower_1
+    frames:
+    - {fileID: 21300000, guid: 0a936fa32b5b45c459c4b1463b7ba954, type: 3}
+  - name: deco_office_tower_2
+    frames:
+    - {fileID: 21300000, guid: 73781c43ee09b044592918354c117ada, type: 3}
+  - name: deco_office_tower_3
+    frames:
+    - {fileID: 21300000, guid: 4cfbb08a3e8cba746a39580ee5c88884, type: 3}
+  - name: deco_office_tower_white
+    frames:
+    - {fileID: 21300000, guid: afb2142c6c15caa4589716063ca752c5, type: 3}
+  - name: deco_office_trash
+    frames:
+    - {fileID: 21300000, guid: 6938de9fd1ee0cf41abba76d6cd830bf, type: 3}
+  - name: deco_office_trash_full
+    frames:
+    - {fileID: 21300000, guid: 30171d11632170348955dd59cecc345b, type: 3}
+  - name: deco_office_wallboard_1
+    frames:
+    - {fileID: 21300000, guid: 6b68fc2d5e9a31c47bad405040943925, type: 3}
+  - name: deco_office_wallboard_2
+    frames:
+    - {fileID: 21300000, guid: 3da237024e5a4d54282ded3021f84714, type: 3}
+  - name: deco_office_wallboard_3
+    frames:
+    - {fileID: 21300000, guid: 59a52f0ea8ea38343a2742041f3f966f, type: 3}
+  - name: deco_office_wallboard_4
+    frames:
+    - {fileID: 21300000, guid: 414af68c7207b9447b87e72377c4d3c7, type: 3}
+  - name: deco_office_water_1
+    frames:
+    - {fileID: 21300000, guid: 165dfe827043cc044bc27f6926b27308, type: 3}
+  - name: deco_office_water_2
+    frames:
+    - {fileID: 21300000, guid: aeec11052aaf5df4ea7a51fea0292281, type: 3}
+  - name: deco_pipe
+    frames:
+    - {fileID: 21300000, guid: 40349e214f9e9194dafd8291fa93e181, type: 3}
+  - name: deco_rail_1
+    frames:
+    - {fileID: 21300000, guid: 42a304a144a103146a102d3609f90508, type: 3}
+  - name: deco_rail_2
+    frames:
+    - {fileID: 21300000, guid: 03b81eecade4ba749bbf1cfa4bc14384, type: 3}
+  - name: deco_robot
+    frames:
+    - {fileID: 21300000, guid: 2b4667236f5d549438a17d01434f5bfe, type: 3}
+  - name: deco_ruin_pillar_broken
+    frames:
+    - {fileID: 21300000, guid: f6cacd81766534c45b9c60961f4c596f, type: 3}
+  - name: deco_ruin_post
+    frames:
+    - {fileID: 21300000, guid: 6787f5d7944c97f458b85431b619b359, type: 3}
+  - name: deco_ruin_rad_1
+    frames:
+    - {fileID: 21300000, guid: 9f7f899e10c247240b1479fc58315561, type: 3}
+  - name: deco_ruin_rad_2
+    frames:
+    - {fileID: 21300000, guid: 5af0b4ab1a8a55d4e8e7da0c9f387786, type: 3}
+  - name: deco_ruin_rad_3
+    frames:
+    - {fileID: 21300000, guid: b6e72a57df5c08940a56c01cc381daaf, type: 3}
+  - name: deco_ruin_rubble_1
+    frames:
+    - {fileID: 21300000, guid: 74791eb2c4e2a7a47b2dcc0bcb8b6b35, type: 3}
+  - name: deco_ruin_rubble_2
+    frames:
+    - {fileID: 21300000, guid: 016bd3cdac763a74d8143ccad2e88adf, type: 3}
+  - name: deco_ruin_rubble_3
+    frames:
+    - {fileID: 21300000, guid: 8f05a0134066be84796713e8d4716f7c, type: 3}
+  - name: deco_ruin_rubble_4
+    frames:
+    - {fileID: 21300000, guid: 53a2aff5d7a715b42902ff368eb9051c, type: 3}
+  - name: deco_ruin_rubble_5
+    frames:
+    - {fileID: 21300000, guid: 06bb60976bca4b841949eb6ff53932a0, type: 3}
+  - name: deco_ruin_rubble_6
+    frames:
+    - {fileID: 21300000, guid: 89eef084c46cf5242a0119760d7916fa, type: 3}
+  - name: deco_ruin_rubble_column
+    frames:
+    - {fileID: 21300000, guid: 8841c83c98148d84abf12858b10eac0b, type: 3}
+  - name: deco_ruin_rubble_long
+    frames:
+    - {fileID: 21300000, guid: 23ccb673fed8ee24aaa483b4ec8686a5, type: 3}
+  - name: deco_ruin_scorch_1
+    frames:
+    - {fileID: 21300000, guid: e41ef53787f9d6848a27cd93b9b66d5e, type: 3}
+  - name: deco_ruin_scorch_2
+    frames:
+    - {fileID: 21300000, guid: 952d3f7f32cc9ba4498300e8dda12d3b, type: 3}
+  - name: deco_ruin_sign_noentry
+    frames:
+    - {fileID: 21300000, guid: 01d892860e4ce1d49baa4a9140c6088a, type: 3}
+  - name: deco_ruin_sign_skull
+    frames:
+    - {fileID: 21300000, guid: e4851c1cf62e57149857f21f0281e919, type: 3}
+  - name: deco_ruin_tile_1
+    frames:
+    - {fileID: 21300000, guid: b49e3b691e563c048b6cc7a006a0424d, type: 3}
+  - name: deco_ruin_tile_2
+    frames:
+    - {fileID: 21300000, guid: ca10c0946335fa74690d7a7aa983b991, type: 3}
+  - name: deco_ruin_tile_3
+    frames:
+    - {fileID: 21300000, guid: 22ccf9e3a77ca104d8de2ee1137ba0bf, type: 3}
+  - name: deco_ruin_tile_4
+    frames:
+    - {fileID: 21300000, guid: 0cea708e5d296064b9682c3826c5cad7, type: 3}
+  - name: deco_ruin_tile_5
+    frames:
+    - {fileID: 21300000, guid: ce442ec4fd9788c4ca17712020c25e4f, type: 3}
+  - name: deco_ruin_tile_6
+    frames:
+    - {fileID: 21300000, guid: de4b8bba638013548b8d9b0c05b0bc97, type: 3}
+  - name: deco_ruin_tiles_2
+    frames:
+    - {fileID: 21300000, guid: 9cd641cfd55e8134890c07d593546125, type: 3}
+  - name: deco_ruin_tiles_3
+    frames:
+    - {fileID: 21300000, guid: 7c01536b5021479438cfdeffcd466eba, type: 3}
+  - name: deco_ruin_tiles_4
+    frames:
+    - {fileID: 21300000, guid: faee6bd8582673b4ea518282ab994445, type: 3}
+  - name: deco_ruin_tiles_pile
+    frames:
+    - {fileID: 21300000, guid: 8745baed46ab5694681d8b9a7c7cbb12, type: 3}
+  - name: deco_ruin_wall_huge
+    frames:
+    - {fileID: 21300000, guid: b8410a9d25e14e543b30ae0af407e413, type: 3}
+  - name: deco_ruin_wall_long
+    frames:
+    - {fileID: 21300000, guid: fdbfbad72c735d84ebcfec379d6e3f20, type: 3}
+  - name: deco_ruin_wall_piece_1
+    frames:
+    - {fileID: 21300000, guid: 54af992b1d8ebe440a415c47bf124cb3, type: 3}
+  - name: deco_ruin_wall_piece_2
+    frames:
+    - {fileID: 21300000, guid: f9c7781ef47572e4c918569355764634, type: 3}
+  - name: deco_ruin_wall_pillar
+    frames:
+    - {fileID: 21300000, guid: 0bb5caa6a2f9cb24889ae8604f4c48de, type: 3}
+  - name: deco_ruin_wall_window
+    frames:
+    - {fileID: 21300000, guid: fa0be1adbd74ac1478d9e4831c91bb14, type: 3}
+  - name: deco_ruin_wall_window_wide
+    frames:
+    - {fileID: 21300000, guid: 0e25858c266ea984da1761fd1306afa5, type: 3}
+  - name: deco_scrap
+    frames:
+    - {fileID: 21300000, guid: 03e0d85304cd0e94d80221e0fc5f7894, type: 3}
+  - name: deco_scrap_2
+    frames:
+    - {fileID: 21300000, guid: a21f806baf269e74eac6153aacd2e2ae, type: 3}
+  - name: deco_server_1
+    frames:
+    - {fileID: 21300000, guid: eb7b522b231d7aa4e8bac0614a9aa823, type: 3}
+  - name: deco_server_2
+    frames:
+    - {fileID: 21300000, guid: f8d56bcf610f89c4994594b7cba7fc9f, type: 3}
+  - name: deco_server_3
+    frames:
+    - {fileID: 21300000, guid: 21eacb2b661b1884bbf79dddc84778aa, type: 3}
+  - name: deco_server_4
+    frames:
+    - {fileID: 21300000, guid: 78f630bb553c3764491ec35baa42170c, type: 3}
+  - name: deco_server_5
+    frames:
+    - {fileID: 21300000, guid: 896e428e81e4357409db3a7d9efe9fdd, type: 3}
+  - name: deco_server_6
+    frames:
+    - {fileID: 21300000, guid: d7fb6d6e7ec381347a1fe8f7c097257a, type: 3}
+  - name: deco_shower
+    frames:
+    - {fileID: 21300000, guid: b0a431a66d36e4443b23f7de89469ed2, type: 3}
+  - name: deco_sink
+    frames:
+    - {fileID: 21300000, guid: bac5d7148bf3c134dbb13cbf4a86bcda, type: 3}
+  - name: deco_tablet
+    frames:
+    - {fileID: 21300000, guid: 4642070fd586d2846b932cb1a5525716, type: 3}
+  - name: deco_terminal
+    frames:
+    - {fileID: 21300000, guid: d2eb71d5a7b1fcc46ae9d0261f698864, type: 3}
+  - name: deco_terr_dirt_1
+    frames:
+    - {fileID: 21300000, guid: edf304c4e2b852445b727646c317239d, type: 3}
+  - name: deco_terr_dirt_2
+    frames:
+    - {fileID: 21300000, guid: 340a74f770318a8439c2815c9972b2e8, type: 3}
+  - name: deco_terr_dirt_3
+    frames:
+    - {fileID: 21300000, guid: 0b977b7e9d0006f418ea5ea6d7be4f2e, type: 3}
+  - name: deco_terr_dirt_4
+    frames:
+    - {fileID: 21300000, guid: 6287f347c05fa4d43849f72b4f5b029a, type: 3}
+  - name: deco_terr_gold_pile
+    frames:
+    - {fileID: 21300000, guid: e46e317c54774424e9474bcbade53d4f, type: 3}
+  - name: deco_terr_leaves
+    frames:
+    - {fileID: 21300000, guid: 21b36e14020c0a446bea68fcbcafb904, type: 3}
+  - name: deco_terr_plate_dirt
+    frames:
+    - {fileID: 21300000, guid: 23551cb6766f28448bf20826295a66bd, type: 3}
+  - name: deco_terr_plate_gray
+    frames:
+    - {fileID: 21300000, guid: a6459a86de248cd4e9b31d90d768ddb8, type: 3}
+  - name: deco_terr_puddle
+    frames:
+    - {fileID: 21300000, guid: d6decc66a4f8b2143940aa77505693ed, type: 3}
+  - name: deco_terr_rock_1
+    frames:
+    - {fileID: 21300000, guid: 28d2f1ed28920484da3302f9750196ea, type: 3}
+  - name: deco_terr_rock_2
+    frames:
+    - {fileID: 21300000, guid: 42469ef700f336a4683fe3929ce22ec1, type: 3}
+  - name: deco_terr_rock_3
+    frames:
+    - {fileID: 21300000, guid: 87669aa63033a1a4b8b7d48c1bd64e85, type: 3}
+  - name: deco_terr_rock_4
+    frames:
+    - {fileID: 21300000, guid: f2721c610a432814ba5d7126d0a65daa, type: 3}
+  - name: deco_terr_slab
+    frames:
+    - {fileID: 21300000, guid: d9cdf3fd7164b5b4d8758dd9ae19c779, type: 3}
+  - name: deco_terr_slab_cracked
+    frames:
+    - {fileID: 21300000, guid: 2bb28a046f689c441a8d93baf7848790, type: 3}
+  - name: deco_terr_stain_1
+    frames:
+    - {fileID: 21300000, guid: a92d14e307d4da1408a74f354efa82b5, type: 3}
+  - name: deco_terr_stain_2
+    frames:
+    - {fileID: 21300000, guid: be33b79f02355284fa719babf4de6159, type: 3}
+  - name: deco_terr_stain_3
+    frames:
+    - {fileID: 21300000, guid: 3b76365b9b83a1e41994aaab578d92eb, type: 3}
+  - name: deco_terr_stain_4
+    frames:
+    - {fileID: 21300000, guid: 30a8c1235db87554d8210f0c3c777111, type: 3}
+  - name: deco_terr_weed
+    frames:
+    - {fileID: 21300000, guid: 6872545014f3a5c43859f01af4d45699, type: 3}
+  - name: deco_toilet
+    frames:
+    - {fileID: 21300000, guid: 36d486d4a5bab254888a91831e64fb0f, type: 3}
+  - name: deco_toolbox
+    frames:
+    - {fileID: 21300000, guid: febce8b80fdfb18418aa36c793fbf06a, type: 3}
+  - name: deco_vent_1
+    frames:
+    - {fileID: 21300000, guid: 9ce78fab84c8dfb4c85daba00aa02db5, type: 3}
+  - name: deco_vent_2
+    frames:
+    - {fileID: 21300000, guid: cbcc054bddfba6843abb9f0980e224d2, type: 3}
+  - name: deco_vent_3
+    frames:
+    - {fileID: 21300000, guid: eff3befa698eb8243b297f42a70a5c87, type: 3}
+  - name: deco_vent_4
+    frames:
+    - {fileID: 21300000, guid: 3cfe1f40fe5c7124ab5438c3849f0ea1, type: 3}
+  - name: deco_window_long
+    frames:
+    - {fileID: 21300000, guid: ab10714e2d5100d4aa0a618140beb378, type: 3}
+  - name: deco_window_small
+    frames:
+    - {fileID: 21300000, guid: aba73979d1ff62a479821a5040845dc4, type: 3}
   - name: door_closed
     frames:
     - {fileID: 21300000, guid: cbefd5fa8a43c9a4c91f17ea95fd3546, type: 3}
   - name: door_open
     frames:
     - {fileID: 21300000, guid: f04061829396a6245ac23f3a0cbefd99, type: 3}
+  - name: floor_ground
+    frames:
+    - {fileID: 21300000, guid: 5a409659fe8577e4680fcf2f22c4875d, type: 3}
+  - name: floor_metal_blue
+    frames:
+    - {fileID: 21300000, guid: e80b560512b0c0d48aec9ca038d9aa83, type: 3}
+  - name: floor_metal_dark
+    frames:
+    - {fileID: 21300000, guid: bfb03eff6cab98545b289e482a15f189, type: 3}
+  - name: floor_metal_plate
+    frames:
+    - {fileID: 21300000, guid: da6b36b2d6d739d40b43ca763a33bcc0, type: 3}
   - name: foliage_bush
     frames:
     - {fileID: 21300000, guid: 921b239c250e7e641855e029b0aa6d25, type: 3}
@@ -367,3 +1330,4 @@ MonoBehaviour:
   font: {fileID: 11400000, guid: ae9ce6308a293024a985459afd5a43b2, type: 2}
   spriteLit: {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   spriteUnlit: {fileID: 2100000, guid: 9dfc825aed78fcd4ba02077103263b40, type: 2}
+  visionFog: {fileID: 2100000, guid: c3a31e182d53a464bb57101e1222529d, type: 2}

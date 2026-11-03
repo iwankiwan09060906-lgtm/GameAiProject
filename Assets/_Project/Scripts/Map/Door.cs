@@ -6,10 +6,11 @@ namespace GameAi
 {
     // 문 하나. 닫힘은 이동·시야·총알·빛을 막고, 열림은 모두 통과시킨다(FN-MAP-02).
     // 열림 여부의 진짜 값은 GridMap에 있고, 이 클래스는 그림과 그림자만 맞춘다.
+    // 칸이 작은 맵(cell_m 0.5)에서는 이어진 D 칸 여러 개가 문 하나가 된다
     public sealed class Door : MonoBehaviour, IInteractable
     {
-        // 열린 문 막대를 칸 가장자리로 옮기는 거리(m)
-        const float BarOffset = 0.44f;
+        // 열린 문 막대를 문 끝에서 안쪽으로 들이는 거리(m)
+        const float BarInset = 0.06f;
 
         GridMap grid;
 
@@ -20,33 +21,40 @@ namespace GameAi
         Sprite horizontalBar;
         Sprite verticalBar;
 
-        // 양옆이 벽이면(복도를 가로막는 문) 가로 막대로 닫힌다
+        // 가로로 놓인 문(복도를 가로막는 문)이면 가로 막대로 닫힌다
         bool isHorizontal;
+
+        // 문 폭(m). 막대 그림을 이 길이로 늘린다
+        float length;
 
         // 화면에 마지막으로 보여 준 상태. 시야 밖에서는 실제 상태가 바뀌어도 이 값을 유지한다(FN-VIS-03)
         bool shownOpen;
 
         public int Id { get; private set; }
-        public Vector2Int Cell { get; private set; }
-        public Vector2 Position { get { return GridMap.CellCenter(Cell); } }
-        public bool IsOpen { get { return grid.IsDoorOpen(Cell.x, Cell.y); } }
+        public RectInt Area { get; private set; }
+        public Vector2 Position { get { return grid.AreaCenter(Area); } }
+        public bool IsOpen { get { return grid.IsDoorOpen(Area.x, Area.y); } }
         public string PromptAction { get { return IsOpen ? "닫기" : "열기"; } }
 
         // 열린 문 칸에 살아 있는 대상이 서 있으면 닫지 못한다
         public bool CanInteract { get { return !IsOpen || !IsOccupied(); } }
 
-        public void Init(int id, Vector2Int cell, GridMap map, IReadOnlyList<CombatTarget> targets,
+        public void Init(int id, RectInt area, GridMap map, IReadOnlyList<CombatTarget> targets,
             SpriteRenderer renderer, ShadowCaster2D caster, Sprite horizontal, Sprite vertical)
         {
             Id = id;
-            Cell = cell;
+            Area = area;
             grid = map;
             occupants = targets;
             view = renderer;
             shadow = caster;
             horizontalBar = horizontal;
             verticalBar = vertical;
-            isHorizontal = IsWall(cell.x - 1, cell.y) || IsWall(cell.x + 1, cell.y);
+
+            // 여러 칸이면 긴 쪽 방향, 한 칸이면 양옆이 벽인지로 정한다
+            if (area.width != area.height) isHorizontal = area.width > area.height;
+            else isHorizontal = IsWall(area.x - 1, area.y) || IsWall(area.xMax, area.y);
+            length = Mathf.Max(area.width, area.height) * map.CellSize;
 
             // 일부러 "열림"으로 시작해 첫 RefreshView가 닫힌 실제 상태로 바꾸게 한다
             shownOpen = true;
@@ -62,11 +70,12 @@ namespace GameAi
         // foreach 대신 인덱스로 순회해 매 프레임 호출돼도 메모리를 할당하지 않는다
         bool IsOccupied()
         {
+            Rect rect = grid.AreaRect(Area);
             for (int i = 0; i < occupants.Count; i++)
             {
                 CombatTarget target = occupants[i];
                 if (!target.Alive) continue;
-                Vector2 closest = MathUtil.ClosestPointOnCell(target.Position, Cell.x, Cell.y);
+                var closest = new Vector2(Mathf.Clamp(target.Position.x, rect.xMin, rect.xMax), Mathf.Clamp(target.Position.y, rect.yMin, rect.yMax));
                 if ((closest - target.Position).sqrMagnitude < target.Radius * target.Radius)
                     return true;
             }
@@ -77,7 +86,9 @@ namespace GameAi
         public void Interact(int actorId)
         {
             bool open = !IsOpen;
-            grid.SetDoorOpen(Cell.x, Cell.y, open);
+            for (int y = Area.yMin; y < Area.yMax; y++)
+                for (int x = Area.xMin; x < Area.xMax; x++)
+                    grid.SetDoorOpen(x, y, open);
 
             // 열린 문은 빛을 막지 않으므로 그림자 상자를 끈다
             shadow.enabled = !open;
@@ -97,10 +108,16 @@ namespace GameAi
             bool bar = isHorizontal != shownOpen;
             view.sprite = bar ? horizontalBar : verticalBar;
 
-            // 열린 문은 칸 한쪽 가장자리에 붙여 그린다
+            // 막대 그림의 긴 쪽을 문 폭에 맞춘다
+            Vector2 size = view.sprite != null ? (Vector2)view.sprite.bounds.size : Vector2.one;
+            float spriteLength = Mathf.Max(0.01f, bar ? size.x : size.y);
+            float scale = length / spriteLength;
+            view.transform.localScale = bar ? new Vector3(scale, 1f, 1f) : new Vector3(1f, scale, 1f);
+
+            // 열린 문은 한쪽 끝(경첩)에 붙여 그린다
             Vector2 center = Position;
             if (shownOpen)
-                center += isHorizontal ? Vector2.left * BarOffset : Vector2.up * BarOffset;
+                center += (isHorizontal ? Vector2.left : Vector2.up) * (length / 2f - BarInset);
             view.transform.position = center;
         }
     }

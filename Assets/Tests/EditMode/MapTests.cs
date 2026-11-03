@@ -84,14 +84,15 @@ namespace GameAi.Tests
         [Test]
         public void 맵1은_규격을_지킨다()
         {
+            // 40m x 30m. 칸이 0.5m라 격자는 80 x 60칸
             ParsedMap map = LoadMap01(out MapData data);
-            Assert.AreEqual(40, map.Grid.Width);
-            Assert.AreEqual(30, map.Grid.Height);
+            Assert.AreEqual(40f, map.Grid.Width * map.Grid.CellSize, 1e-4f);
+            Assert.AreEqual(30f, map.Grid.Height * map.Grid.CellSize, 1e-4f);
             Assert.AreEqual(4, data.enemies.Length);
             Assert.AreEqual(4, map.Spawns.Count);
             Assert.AreEqual(data.rows.Length, data.floor_rows.Length);
             foreach (string row in data.floor_rows)
-                Assert.AreEqual(40, row.Length);
+                Assert.AreEqual(map.Grid.Width, row.Length);
 
             int riflemen = 0;
             foreach (MapEnemy enemy in data.enemies)
@@ -107,6 +108,18 @@ namespace GameAi.Tests
                 }
             }
             Assert.AreEqual(1, riflemen);
+        }
+
+        [Test]
+        public void 맵1의_소품_그림은_장식_이름_규칙을_따른다()
+        {
+            LoadMap01(out MapData data);
+            Assert.Greater(data.props.Length, 100);
+            foreach (MapProp prop in data.props)
+            {
+                StringAssert.StartsWith("deco_", prop.sprite);
+                Assert.IsTrue(AssetNames.IsKnown(prop.sprite, false), prop.sprite);
+            }
         }
 
         [Test]
@@ -158,10 +171,35 @@ namespace GameAi.Tests
             Assert.Less(boxes.Count, solid / 3);
         }
 
+        [Test]
+        public void 이어진_D_칸은_문_하나가_된다()
+        {
+            var data = new MapData
+            {
+                id = "t",
+                cell_m = 0.5f,
+                rows = new[]
+                {
+                    "#DDD#",
+                    "D...#",
+                    "D.P.#",
+                    "#####",
+                },
+            };
+            var errors = new List<string>();
+            ParsedMap map = MapParser.Parse(data, errors);
+            CollectionAssert.IsEmpty(errors);
+            Assert.AreEqual(0.5f, map.Grid.CellSize);
+            Assert.AreEqual(new Vector2(1.25f, 0.75f), map.PlayerStart);
+            Assert.AreEqual(2, map.Doors.Count);
+            CollectionAssert.Contains(map.Doors, new RectInt(1, 3, 3, 1));
+            CollectionAssert.Contains(map.Doors, new RectInt(0, 1, 1, 2));
+        }
+
         sealed class FakeDoor : IInteractable
         {
             public Vector2 Position { get; set; }
-            public Vector2Int Cell { get; set; }
+            public RectInt Area { get; set; }
             public string PromptAction { get { return "열기"; } }
             public bool CanInteract { get; set; } = true;
             public int Used;
@@ -176,8 +214,8 @@ namespace GameAi.Tests
         public void 상호작용은_거리_안의_가장_가까운_대상_하나()
         {
             var grid = new GridMap(6, 3);
-            var near = new FakeDoor { Position = new Vector2(2.5f, 1.5f), Cell = new Vector2Int(2, 1) };
-            var far = new FakeDoor { Position = new Vector2(0.5f, 1.5f), Cell = new Vector2Int(0, 1) };
+            var near = new FakeDoor { Position = new Vector2(2.5f, 1.5f), Area = new RectInt(2, 1, 1, 1) };
+            var far = new FakeDoor { Position = new Vector2(0.5f, 1.5f), Area = new RectInt(0, 1, 1, 1) };
             var system = new InteractionSystem(grid, 1.2f);
             system.Add(far);
             system.Add(near);
@@ -199,7 +237,7 @@ namespace GameAi.Tests
         {
             var grid = new GridMap(4, 3);
             grid.SetTile(2, 1, TileType.Wall);
-            var target = new FakeDoor { Position = new Vector2(3.5f, 1.5f), Cell = new Vector2Int(3, 1) };
+            var target = new FakeDoor { Position = new Vector2(3.5f, 1.5f), Area = new RectInt(3, 1, 1, 1) };
             var system = new InteractionSystem(grid, 3f);
             system.Add(target);
             system.Tick(new Vector2(1.5f, 1.5f), false, 0);

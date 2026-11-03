@@ -8,8 +8,8 @@ namespace GameAi
     {
         Vector2 Position { get; }
 
-        // 대상이 서 있는 칸. 시야가 닿는지 검사할 때 쓴다
-        Vector2Int Cell { get; }
+        // 대상이 차지하는 칸(문은 여러 칸). 시야가 닿는지 검사할 때 쓴다
+        RectInt Area { get; }
 
         // 안내에 띄울 동작 이름(열기, 닫기 ...)
         string PromptAction { get; }
@@ -61,7 +61,7 @@ namespace GameAi
                 if (distance > bestDistance || !item.CanInteract) continue;
 
                 // 문은 닫혀 있어도 그 칸 자체에는 닿아야 한다. 벽 너머 문은 고르지 않는다
-                if (!LineOfSight.ReachesCell(grid, actorPos, item.Cell, RayMask.Sight)) continue;
+                if (!LineOfSight.ReachesArea(grid, actorPos, item.Area, RayMask.Sight)) continue;
                 best = item;
                 bestDistance = distance;
             }

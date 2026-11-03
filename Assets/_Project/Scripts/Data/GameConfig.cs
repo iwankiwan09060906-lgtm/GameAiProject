@@ -57,6 +57,10 @@ namespace GameAi
 
         // 벽이 바닥과 맞닿은 변에 그리는 1px 밝은 선
         public string wall_rim_color = "#3A3A44";
+
+        // 작은 칸(cell_m < 1) 맵의 창문 유리 색과 가운데 반사선 색
+        [OptionalKey] public string window_glass_color = "#1C2B38";
+        [OptionalKey] public string window_glint_color = "#9EC4D8";
         public string muzzle_light_color = "#FFD38A";
         public float muzzle_light_radius_m = 3f;
         public float muzzle_light_s = 0.05f;
@@ -113,13 +117,33 @@ namespace GameAi
         public float enemy_radius_m = 0.4f;
     }
 
-    // 탐색 기억 덮개의 투명도와 색
+    // 탐색 기억 덮개의 투명도와 색, 화면 시야 모양(VisionFan)의 부드러움
     [Serializable]
     public class FogConfig
     {
         public float unexplored_alpha = 1f;
         public float memory_alpha = 0.65f;
         public float memory_gray = 0.04f;
+
+        // 기억 텍스처를 보간해 칸 경계를 번지게 한다
+        [OptionalKey] public bool smooth_memory = true;
+
+        // 화면 시야를 그리는 레이 수(360° 전체). 많을수록 벽 모서리가 매끈하다
+        [OptionalKey] public int soft_rays = 720;
+
+        // 등 뒤까지 포함해 몸 주변이 보이는 반지름(m). 표시만이고 적 발견 판정과는 무관하다
+        [OptionalKey] public float near_m = 0.9f;
+
+        // 맑은 곳에서 안개까지 번지는 거리(m): 벽에 막힌 곳 / 시야 거리 끝 / 몸 주변 원
+        [OptionalKey] public float edge_wall_m = 0.3f;
+        [OptionalKey] public float edge_range_m = 1.5f;
+        [OptionalKey] public float edge_near_m = 0.6f;
+
+        // 부채꼴 좌우 가장자리가 어두워지는 각도 폭(도)
+        [OptionalKey] public float cone_soft_deg = 6f;
+
+        // 레이가 닿은 벽·높은 가구의 윗면을 최대 몇 m까지 드러낼지. 두께가 이보다 두꺼우면 여기서 끊는다
+        [OptionalKey] public float reveal_depth_m = 2.5f;
     }
 
     // 전투 연출 값

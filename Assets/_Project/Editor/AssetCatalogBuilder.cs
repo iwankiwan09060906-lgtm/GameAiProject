@@ -21,6 +21,8 @@ namespace GameAi.EditorTools
         const string FontAssetPath = FontRoot + "/Galmuri11 SDF.asset";
         const string LitMaterial = "Packages/com.unity.render-pipelines.universal/Runtime/Materials/Sprite-Lit-Default.mat";
         const string UnlitMaterial = "Packages/com.unity.render-pipelines.universal/Runtime/Materials/Sprite-Unlit-Default.mat";
+        const string FogShader = "Assets/_Project/Shaders/VisionFog.shader";
+        const string FogMaterial = "Assets/_Project/Shaders/VisionFog.mat";
 
         // 걷기 시트의 프레임 한 장 크기(px)
         const int FramePixels = 32;
@@ -73,7 +75,8 @@ namespace GameAi.EditorTools
 
                 catalog.SetContent(CollectSprites(), CollectClips(), EnsureFontAsset(),
                     AssetDatabase.LoadAssetAtPath<Material>(LitMaterial),
-                    AssetDatabase.LoadAssetAtPath<Material>(UnlitMaterial));
+                    AssetDatabase.LoadAssetAtPath<Material>(UnlitMaterial),
+                    EnsureFogMaterial());
                 EditorUtility.SetDirty(catalog);
                 AssetDatabase.SaveAssets();
                 return catalog;
@@ -243,6 +246,23 @@ namespace GameAi.EditorTools
                 if (clip != null) entries.Add(new AssetCatalog.ClipEntry { name = pair.Key, clip = clip });
             }
             return entries;
+        }
+
+        // 시야 안개 재질을 만든다. 카탈로그가 참조해야 빌드에 셰이더가 포함된다
+        static Material EnsureFogMaterial()
+        {
+            var existing = AssetDatabase.LoadAssetAtPath<Material>(FogMaterial);
+            if (existing != null) return existing;
+
+            var shader = AssetDatabase.LoadAssetAtPath<Shader>(FogShader);
+            if (shader == null)
+            {
+                Debug.LogWarning("[AssetCatalog] VisionFog.shader가 없어 안개 재질을 만들지 않습니다.");
+                return null;
+            }
+            var material = new Material(shader) { name = "VisionFog" };
+            AssetDatabase.CreateAsset(material, FogMaterial);
+            return material;
         }
 
         // TMP 폰트 에셋을 만든다. 한글 글자가 매우 많아 미리 굽지 않고,

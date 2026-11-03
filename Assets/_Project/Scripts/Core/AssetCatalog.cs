@@ -30,12 +30,14 @@ namespace GameAi
         [SerializeField] TMP_FontAsset font;
         [SerializeField] Material spriteLit;
         [SerializeField] Material spriteUnlit;
+        [SerializeField] Material visionFog;
 
         // 이름으로 빨리 찾으려고 처음 쓸 때 한 번 만드는 색인(저장되지 않음)
         Dictionary<string, Sprite[]> spriteIndex;
         Dictionary<string, AudioClip> clipIndex;
         Material fallbackLit;
         Material fallbackUnlit;
+        Material fallbackFog;
 
         public TMP_FontAsset Font { get { return font; } }
 
@@ -61,14 +63,36 @@ namespace GameAi
             }
         }
 
+        // 시야 안개 메시 재질(GameAi/VisionFog). 빌드에 셰이더가 들어가도록 카탈로그가 재질을 참조한다.
+        // 카탈로그가 없으면 셰이더를 이름으로 찾는다(에디터에서는 항상 찾힌다)
+        public Material VisionFog
+        {
+            get
+            {
+                if (visionFog != null) return visionFog;
+                if (fallbackFog == null)
+                {
+                    Shader shader = Shader.Find("GameAi/VisionFog");
+                    if (shader == null)
+                    {
+                        Debug.LogWarning("[AssetCatalog] GameAi/VisionFog 셰이더가 없어 안개 가장자리가 부드럽지 않습니다.");
+                        return SpriteUnlit;
+                    }
+                    fallbackFog = new Material(shader);
+                }
+                return fallbackFog;
+            }
+        }
+
         // 에디터 빌더가 내용을 채울 때 부른다
-        public void SetContent(List<SpriteEntry> spriteEntries, List<ClipEntry> clipEntries, TMP_FontAsset fontAsset, Material lit, Material unlit)
+        public void SetContent(List<SpriteEntry> spriteEntries, List<ClipEntry> clipEntries, TMP_FontAsset fontAsset, Material lit, Material unlit, Material fog)
         {
             sprites = spriteEntries;
             clips = clipEntries;
             font = fontAsset;
             spriteLit = lit;
             spriteUnlit = unlit;
+            visionFog = fog;
             spriteIndex = null;
             clipIndex = null;
         }
@@ -143,6 +167,7 @@ namespace GameAi
         {
             "cover_low_", "cover_high_", "foliage_", "player_", "guard_", "rifleman_", "held_", "corpse_",
             "muzzle_flash_", "blood_", "hit_blood_", "stance_", "weapon_", "sfx_", "bgm_", "amb_",
+            "deco_", "floor_",
         };
 
         // 이름 규칙에 없는 파일은 카탈로그에 넣지 않는다. 초상화는 이름이 화자 ID라서 폴더로 구분한다
