@@ -1,0 +1,109 @@
+{
+  "date": "2026-11-06",
+  "timezone": "Asia/Seoul",
+  "runs": {
+    "EditMode": {
+      "total": "180",
+      "passed": "180",
+      "failed": "0",
+      "skipped": "0",
+      "duration": "0.238113",
+      "start-time": "2026-11-05 16:45:50Z",
+      "end-time": "2026-11-05 16:45:50Z",
+      "fixtures": {
+        "AiAgentTests": 42,
+        "AiDoorTests": 14,
+        "AiLogicTests": 5,
+        "AiMemoryTests": 19,
+        "AiRadioTests": 8,
+        "DialogueTests": 14,
+        "GridWorldTraversalTests": 7,
+        "MovementConstraintTests": 24,
+        "NavigationTests": 43,
+        "PathRequestBudgetTests": 4
+      }
+    },
+    "PlayMode": {
+      "total": "28",
+      "passed": "28",
+      "failed": "0",
+      "skipped": "0",
+      "duration": "46.032962",
+      "start-time": "2026-11-05 16:46:31Z",
+      "end-time": "2026-11-05 16:47:17Z",
+      "fixtures": {
+        "CrowdLoadTests": 2,
+        "DialogueLifecycleTests": 4,
+        "IntegrationTests": 20,
+        "SandboxRunTests": 2
+      }
+    }
+  },
+  "crowd_samples": {
+    "20": {
+      "p50": "0.1910",
+      "p95": "1.4869",
+      "max": "2.9129",
+      "mean": "0.3093",
+      "requests": 200,
+      "peak_waiting": 16,
+      "peak_radio": 20
+    },
+    "40": {
+      "p50": "0.3704",
+      "p95": "1.7482",
+      "max": "8.9469",
+      "mean": "0.6037",
+      "requests": 400,
+      "peak_waiting": 36,
+      "peak_radio": 80
+    }
+  },
+  "preserved_sha256": {
+    "output/NullTraceAI/NullTraceAI-Integration-2026-11-05.zip": "58451fd00597d82199be4e18e56a6e7b695ce2a2f439892f172f1b48fc6ca7bb",
+    "output/NullTraceAI/NullTraceAI-Integration-2026-10-31.zip": "3cce7e72b9cb803e63e05790c9bf985eef9e4a8318e34d498c33ff8faffff463",
+    "적_NPC_AI_알고리즘_설계안.md": "7ed1ac5aa67797a47327f61b61b401b1f158aa2191cab3c835d747b3a2022c3b",
+    "output/pdf/적_NPC_AI_팀공유_설명서.pdf": "966eb51b6dcf0981c3c9703ec6f4a59d9036c34db9d78754bf607716278b1850"
+  },
+  "code_sha256": {
+    "Assets/NullTraceAI/Demo/EnemyDebugView.cs": "0c8497eae391293a95395db624263e55f71a204076413b7d184f183abc6c26f8",
+    "Assets/NullTraceAI/Demo/SandboxController.cs": "41607a77340c2686cb538915a3c406574b0a1dc5c1cbe210416bd8f2fafd308d",
+    "Assets/NullTraceAI/Editor/SandboxBuilder.cs": "24940933f92bcf893b98cde9a331c603d9ebd1178bd6d6ca01128816f10b5365",
+    "Assets/NullTraceAI/Runtime/AiDoor2D.cs": "19d76ee5f038e496454d868e5543d5a733425b9ec219c8c42cfd5c5ef63607df",
+    "Assets/NullTraceAI/Runtime/AiMath.cs": "19011140293d1c50efda9994ad898e998edea6ac5d060ee0d4a6a1a14ac96bd7",
+    "Assets/NullTraceAI/Runtime/EnemyAgent.Actions.cs": "69a57a2ffc4e5b6572f1715a54069f3a1c2aae0c99c15aa504bdfde67246f763",
+    "Assets/NullTraceAI/Runtime/EnemyAgent.cs": "a37ce276ef78e88a7f966bd1d6a37fc3dae68e5ccae2e2e0368da898744395e3",
+    "Assets/NullTraceAI/Runtime/EnemyAgent.Movement.cs": "7f80e60196289edff4525963205dd69f4d5093062f371059c6b54cbcdc873bed",
+    "Assets/NullTraceAI/Runtime/EnemyBehaviorTree.cs": "38c7321c4ab3d789f022c6fa7823528e9e0840da73e3c313e9740f6b474a3e56",
+    "Assets/NullTraceAI/Runtime/EnemyDialogue.cs": "1f9fd7d431ff6234cc4035ba9aae56fe0aa5fc6b3b25ceb56c6cabe2005b79e1",
+    "Assets/NullTraceAI/Runtime/EnemyMemory.cs": "818e338aa225960e692a52c5e6b855898cd357c04ed04c089308d47b511a45e8",
+    "Assets/NullTraceAI/Runtime/EnemyProfile.cs": "d446c01e94a5023d9f486e336c51b4d4b5123b5fe78fbfdfeac7eace6e54e35e",
+    "Assets/NullTraceAI/Runtime/EnemyTarget.cs": "12e25565e1b3e8ef0d43065bf298dd066b1582b69692358882768633eac7877c",
+    "Assets/NullTraceAI/Runtime/EnemyTypes.cs": "c25cf450ac73719de7353f4189a11806f6f0b6aeb9ef96fc4ba930f199a4b426",
+    "Assets/NullTraceAI/Runtime/GridWorld2D.cs": "1fd445582f306d048c2c21db32b32e94edb8be44a9081f90718419aa7369cb92",
+    "Assets/NullTraceAI/Runtime/NoiseBus.cs": "fd3e961d8cb14c8df7738da8b58a4aedc5ff03bc3cb80a5b1dca4371438ad79d",
+    "Assets/NullTraceAI/Runtime/PathRequestBudget.cs": "542c422a76fa0695189a7a6e25f154597d6b6d40e6a3fbd934d14362e91389b9",
+    "Assets/NullTraceAI/Runtime/RadioChannel.cs": "f41b7a37d4fd80d59981d5c71fe6227a86aa0c3953c0620bc412a7d7402c9272",
+    "Assets/NullTraceAI/Runtime/SpeechGate.cs": "cd3a5273dc03624eb862fbf5fa4f17321751ed2e30712f20d0964f4f443d8fbc",
+    "Assets/NullTraceAI/Runtime/Navigation/AStarPathfinder.cs": "2cebbf7cb75eab58c30da1d3608695a2a99d2927642cbacac6cf66f2a2f76e24",
+    "Assets/NullTraceAI/Runtime/Navigation/GridMap.cs": "5a65581eb9b28aad78ff866d6a862e088452c64a435c7589b3035d70bf0b906c",
+    "Assets/NullTraceAI/Runtime/Navigation/MovementConstraint2D.cs": "bd33465965b1f5797993f629264cd85996e2e464668a30b3725760aa445744fb",
+    "Assets/NullTraceAI/Tests/EditMode/AiAgentTests.cs": "7cad18320dcc7001e8569b401105139c18e34942b6aaf7f095452fe2858e45e3",
+    "Assets/NullTraceAI/Tests/EditMode/AiDoorTests.cs": "011d0692bacae53d174d4cd223ecae57c18aeb7a6b7ce5c64ac60ca7b10ba323",
+    "Assets/NullTraceAI/Tests/EditMode/AiLogicTests.cs": "9cbe23c11184ccac871039fa7330ad957c05bb430561562ef3b9be625298acc6",
+    "Assets/NullTraceAI/Tests/EditMode/AiMemoryTests.cs": "3825db7203525ff10ceb8598fb18930a06d17d16b816a99eace076cea4d36585",
+    "Assets/NullTraceAI/Tests/EditMode/AiRadioTests.cs": "8a2c872ab1037ed58c9bd79c85092c1a52c4409c8b67784bf7405e6e778133ff",
+    "Assets/NullTraceAI/Tests/EditMode/DialogueTests.cs": "baeb830c24c090b1767ea7c01aca9989ce42b44095ff7898a73112b75d22733f",
+    "Assets/NullTraceAI/Tests/EditMode/GridWorldTraversalTests.cs": "19670ccf027f277ab13938990af379e2502a8fb75e5f89df9706178cde6d8d23",
+    "Assets/NullTraceAI/Tests/EditMode/MovementConstraintTests.cs": "046cce82e35c3b4cc6911af1c3e7f769939606fd7d94c7c5a93c1bf079944937",
+    "Assets/NullTraceAI/Tests/EditMode/NavigationTests.cs": "7b2800867dce40da7b1582fa2f5d780eecd05cd678357921520c8874a000a1e8",
+    "Assets/NullTraceAI/Tests/EditMode/PathRequestBudgetTests.cs": "f353c422cc65687c81e37d698c56d92cdfbd6b6583930f8d13a50dabc2d136c4",
+    "Assets/NullTraceAI/Tests/PlayMode/CrowdLoadTests.cs": "2a7908fe60cf8582ca18e3c5cc9ec915c028cc1dbcefc3009381b65c68760fc8",
+    "Assets/NullTraceAI/Tests/PlayMode/DialogueLifecycleTests.cs": "6dae0aa5743d27bcad8f8e8694d436d4bc4487203c98936e4719167a2d0cc408",
+    "Assets/NullTraceAI/Tests/PlayMode/IntegrationFeedbackTests.cs": "ced81d931ae7d74f470b5348787bb71425718e1d5fd8bec78d2670db12443e7a",
+    "Assets/NullTraceAI/Tests/PlayMode/IntegrationTests.cs": "6801a039e17f1e602b010fcdd7a0e93541734dc4390b26caff3ab8759e8bde9c",
+    "Assets/NullTraceAI/Tests/PlayMode/SandboxRunTests.cs": "44d34ab5ce3517da3b5e448a835114ccbf183db3de530147c614663e6f998d04"
+  },
+  "visual_review": "1280×720 순찰/교전 PNG 2장: 한글·약한 단서 대기·E 문 버튼·패널 경계·도형·공격 표시 확인",
+  "scope": "208/208; failure=0; skip=0; no final assets/player combat/Qwen/executable or final-game FPS guarantee"
+}

@@ -1,0 +1,5 @@
+{
+  "name": "NullTrace.AI.Editor",
+  "references": ["NullTrace.AI.Runtime", "NullTrace.AI.Demo", "Unity.InputSystem", "UnityEngine.UI", "Unity.TextMeshPro", "Unity.TextMeshPro.Editor"],
+  "includePlatforms": ["Editor"]
+}

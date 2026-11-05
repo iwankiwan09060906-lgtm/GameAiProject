@@ -1,0 +1,8 @@
+Unity 6000.3.24f1; Editor batchmode; Windows 11  (10.0.26200)
+CPU: AMD Ryzen 9 9950X3D 16-Core Processor ; logical cores: 32
+20 active enemies; 32x24 grid; one detour wall; two patrol points; no target; no visuals.
+120 warmup + 600 measured steps; manual public Tick(1/60), timeScale=0 prevents automatic duplicate ticks.
+Total 20-agent Tick CPU per step: mean=0.0815 ms; median=0.0809 ms; p95=0.0844 ms; max=0.0975 ms
+Path requests (including warmup): 20; allocation measurement omitted.
+Finite-patrol active NPC steps: 12000/12000; MoveSpeed=1 world unit/s.
+Includes perception/FSM/navigation/collision in Tick; excludes Update dispatch, rendering, player/build overhead. Not an FPS test or a universal 2 ms guarantee.

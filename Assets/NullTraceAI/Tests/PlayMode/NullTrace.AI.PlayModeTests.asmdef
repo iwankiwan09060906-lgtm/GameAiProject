@@ -1,0 +1,6 @@
+{
+  "name": "NullTrace.AI.PlayModeTests",
+  "rootNamespace": "NullTrace.AI.Tests",
+  "references": ["NullTrace.AI.Runtime", "NullTrace.AI.Demo", "UnityEngine.UI", "Unity.TextMeshPro"],
+  "optionalUnityReferences": ["TestAssemblies"]
+}

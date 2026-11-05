@@ -1,0 +1,1 @@
+start=(-3.25, 0.25); end=(2.95, 0.25); elapsed=1.965s; frames=20824; maxAbsY=2.250
