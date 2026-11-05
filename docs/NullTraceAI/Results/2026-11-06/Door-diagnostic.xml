@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="1" result="Failed(Child)" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-11-05 16:44:29Z" end-time="2026-11-05 16:44:34Z" duration="5.0339403">
+  <test-suite type="TestSuite" id="1040" name="NullTraceAI" fullname="NullTraceAI" runstate="Runnable" testcasecount="28" result="Failed" site="Child" start-time="2026-11-05 16:44:29Z" end-time="2026-11-05 16:44:34Z" duration="5.033940" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="PlayMode" />
+    </properties>
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="Assembly" id="1033" name="NullTrace.AI.PlayModeTests.dll" fullname="D:/유니티 과제/게임인공지능/NullTraceAI/Library/ScriptAssemblies/NullTrace.AI.PlayModeTests.dll" runstate="Runnable" testcasecount="28" result="Failed" site="Child" start-time="2026-11-05 16:44:29Z" end-time="2026-11-05 16:44:34Z" duration="5.030116" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="24460" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+        <property name="EditorOnly" value="False" />
+      </properties>
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="TestSuite" id="1034" name="NullTrace" fullname="NullTrace" runstate="Runnable" testcasecount="28" result="Failed" site="Child" start-time="2026-11-05 16:44:29Z" end-time="2026-11-05 16:44:34Z" duration="5.029568" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-suite type="TestSuite" id="1035" name="AI" fullname="NullTrace.AI" runstate="Runnable" testcasecount="28" result="Failed" site="Child" start-time="2026-11-05 16:44:29Z" end-time="2026-11-05 16:44:34Z" duration="5.029186" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-suite type="TestSuite" id="1036" name="Tests" fullname="NullTrace.AI.Tests" runstate="Runnable" testcasecount="28" result="Failed" site="Child" start-time="2026-11-05 16:44:29Z" end-time="2026-11-05 16:44:34Z" duration="5.028803" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <failure>
+              <message><![CDATA[One or more child tests had errors]]></message>
+            </failure>
+            <test-suite type="TestFixture" id="1009" name="IntegrationTests" fullname="NullTrace.AI.Tests.IntegrationTests" classname="NullTrace.AI.Tests.IntegrationTests" runstate="Runnable" testcasecount="20" result="Failed" site="Child" start-time="2026-11-05 16:44:29Z" end-time="2026-11-05 16:44:34Z" duration="5.027909" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[One or more child tests had errors]]></message>
+              </failure>
+              <test-case id="1013" name="NpcPlansThroughOrdinaryDoorButOpensOnlyWhenNearAndThenPasses" fullname="NullTrace.AI.Tests.IntegrationTests.NpcPlansThroughOrdinaryDoorButOpensOnlyWhenNearAndThenPasses" methodname="NpcPlansThroughOrdinaryDoorButOpensOnlyWhenNearAndThenPasses" classname="NullTrace.AI.Tests.IntegrationTests" runstate="Runnable" seed="699625953" result="Failed" start-time="2026-11-05 16:44:29Z" end-time="2026-11-05 16:44:34Z" duration="5.020621" asserts="0">
+                <properties>
+                  <property name="_JOINTYPE" value="UnityCombinatorial" />
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <failure>
+                  <message><![CDATA[  The NPC must open a nearby ordinary door: position=(-0.46, 0.25, 0.00), goal=Patrol, blocked=False, requests=2, error=실제 Collider2D에 막혀 진전을 기다리는 중입니다.
+  Expected: True
+  But was:  False
+]]></message>
+                  <stack-trace><![CDATA[at NullTrace.AI.Tests.IntegrationTests+<NpcPlansThroughOrdinaryDoorButOpensOnlyWhenNearAndThenPasses>d__6.MoveNext () [0x00172] in D:\유니티 과제\게임인공지능\NullTraceAI\Assets\NullTraceAI\Tests\PlayMode\IntegrationFeedbackTests.cs:142
+at UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a] in .\Library\PackageCache\com.unity.test-framework@bd7f943e9647\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:44
+]]></stack-trace>
+                </failure>
+                <output><![CDATA[Saving results to: C:/Users/max03/AppData/LocalLow/DefaultCompany/NullTraceAI\TestResults.xml
+]]></output>
+              </test-case>
+            </test-suite>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

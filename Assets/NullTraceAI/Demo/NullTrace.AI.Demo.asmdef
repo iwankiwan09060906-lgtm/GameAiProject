@@ -1,0 +1,5 @@
+{
+  "name": "NullTrace.AI.Demo",
+  "rootNamespace": "NullTrace.AI.Demo",
+  "references": ["NullTrace.AI.Runtime", "Unity.InputSystem", "UnityEngine.UI", "Unity.TextMeshPro"]
+}

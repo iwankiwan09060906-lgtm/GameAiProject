@@ -1,0 +1,7 @@
+{
+  "name": "NullTrace.AI.EditModeTests",
+  "rootNamespace": "NullTrace.AI.Tests",
+  "references": ["NullTrace.AI.Runtime"],
+  "includePlatforms": ["Editor"],
+  "optionalUnityReferences": ["TestAssemblies"]
+}

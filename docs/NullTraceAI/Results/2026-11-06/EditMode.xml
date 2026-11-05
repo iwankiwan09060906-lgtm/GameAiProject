@@ -1,0 +1,1189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="180" result="Passed" total="180" passed="180" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.238113">
+  <test-suite type="TestSuite" id="1000" name="NullTraceAI" fullname="NullTraceAI" runstate="Runnable" testcasecount="180" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.238113" total="180" passed="180" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="EditMode" />
+    </properties>
+    <test-suite type="Assembly" id="1207" name="NullTrace.AI.EditModeTests.dll" fullname="D:/유니티 과제/게임인공지능/NullTraceAI/Library/ScriptAssemblies/NullTrace.AI.EditModeTests.dll" runstate="Runnable" testcasecount="180" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.232059" total="180" passed="180" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="47420" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="EditMode" />
+        <property name="EditorOnly" value="True" />
+      </properties>
+      <test-suite type="TestSuite" id="1208" name="NullTrace" fullname="NullTrace" runstate="Runnable" testcasecount="180" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.229486" total="180" passed="180" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="TestSuite" id="1209" name="AI" fullname="NullTrace.AI" runstate="Runnable" testcasecount="180" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.227097" total="180" passed="180" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="TestSuite" id="1210" name="Tests" fullname="NullTrace.AI.Tests" runstate="Runnable" testcasecount="180" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.225149" total="180" passed="180" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-suite type="TestFixture" id="1001" name="AiAgentTests" fullname="NullTrace.AI.Tests.AiAgentTests" classname="NullTrace.AI.Tests.AiAgentTests" runstate="Runnable" testcasecount="42" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.150388" total="42" passed="42" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1019" name="AreaRejectsOutsideClueAndVisibleTargetWithoutBoundaryClamping" fullname="NullTrace.AI.Tests.AiAgentTests.AreaRejectsOutsideClueAndVisibleTargetWithoutBoundaryClamping" methodname="AreaRejectsOutsideClueAndVisibleTargetWithoutBoundaryClamping" classname="NullTrace.AI.Tests.AiAgentTests" runstate="Runnable" seed="1503372960" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.030697" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1008" name="AttackCooldownStaysInsideGoalAndSurvivesGoalChanges" fullname="NullTrace.AI.Tests.AiAgentTests.AttackCooldownStaysInsideGoalAndSurvivesGoalChanges" methodname="AttackCooldownStaysInsideGoalAndSurvivesGoalChanges" classname="NullTrace.AI.Tests.AiAgentTests" runstate="Runnable" seed="1306404493" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.011643" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1043" name="BlockedPatrolDefendsWithoutStartingResponseEpisodeOrSkippingVisit" fullname="NullTrace.AI.Tests.AiAgentTests.BlockedPatrolDefendsWithoutStartingResponseEpisodeOrSkippingVisit" methodname="BlockedPatrolDefendsWithoutStartingResponseEpisodeOrSkippingVisit" classname="NullTrace.AI.Tests.AiAgentTests" runstate="Runnable" seed="1200832087" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.007914" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1042" name="BlockedReturnDefendsWithoutChangingEpisodeAndSharesAttackInterval" fullname="NullTrace.AI.Tests.AiAgentTests.BlockedReturnDefendsWithoutChangingEpisodeAndSharesAttackInterval" methodname="BlockedReturnDefendsWithoutChangingEpisodeAndSharesAttackInterval" classname="NullTrace.AI.Tests.AiAgentTests" runstate="Runnable" seed="974901646" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.002251" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1033" name="BlockedReturnRetainsRetryHistoryAcrossTemporaryWorldDisable" fullname="NullTrace.AI.Tests.AiAgentTests.BlockedReturnRetainsRetryHistoryAcrossTemporaryWorldDisable" methodname="BlockedReturnRetainsRetryHistoryAcrossTemporaryWorldDisable" classname="NullTrace.AI.Tests.AiAgentTests" runstate="Runnable" seed="1813371578" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.010115" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <output><![CDATA[GridWorld2D가 비활성이거나 Rebuild()가 필요합니다.
+]]></output>
+              </test-case>
+              <test-case id="1029" name="ClearedSearchDoesNotRepeatWithoutFreshInformation" fullname="NullTrace.AI.Tests.AiAgentTests.ClearedSearchDoesNotRepeatWithoutFreshInformation" methodname="ClearedSearchDoesNotRepeatWithoutFreshInformation" classname="NullTrace.AI.Tests.AiAgentTests" runstate="Runnable" seed="844579144" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.003189" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1025" name="CurrentDirectEnemyRemainsActionableWhenHistoricalRecordWasProcessed" fullname="NullTrace.AI.Tests.AiAgentTests.CurrentDirectEnemyRemainsActionableWhenHistoricalRecordWasProcessed" methodname="CurrentDirectEnemyRemainsActionableWhenHistoricalRecordWasProcessed" classname="NullTrace.AI.Tests.AiAgentTests" runstate="Runnable" seed="567940554" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.002784" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-suite type="ParameterizedMethod" id="1040" name="DeadlineReturnUsesTimeLimitAndCurrentVisibilityFacts" fullname="NullTrace.AI.Tests.AiAgentTests.DeadlineReturnUsesTimeLimitAndCurrentVisibilityFacts" classname="NullTrace.AI.Tests.AiAgentTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.005194" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1038" name="DeadlineReturnUsesTimeLimitAndCurrentVisibilityFacts(False)" fullname="NullTrace.AI.Tests.AiAgentTests.DeadlineReturnUsesTimeLimitAndCurrentVisibilityFacts(False)" methodname="DeadlineReturnUsesTimeLimitAndCurrentVisibilityFacts" classname="NullTrace.AI.Tests.AiAgentTests" runstate="Runnable" seed="1472960721" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.002099" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1039" name="DeadlineReturnUsesTimeLimitAndCurrentVisibilityFacts(True)" fullname="NullTrace.AI.Tests.AiAgentTests.DeadlineReturnUsesTimeLimitAndCurrentVisibilityFacts(True)" methodname="DeadlineReturnUsesTimeLimitAndCurrentVisibilityFacts" classname="NullTrace.AI.Tests.AiAgentTests" runstate="Runnable" seed="1739116738" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000473" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-suite type="ParameterizedMethod" id="1007" name="DeathDisableAndDestroyCancelAttackImmediatelyButKeepHistoricalSight" fullname="NullTrace.AI.Tests.AiAgentTests.DeathDisableAndDestroyCancelAttackImmediatelyButKeepHistoricalSight" classname="NullTrace.AI.Tests.AiAgentTests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.003769" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1004" name="DeathDisableAndDestroyCancelAttackImmediatelyButKeepHistoricalSight(0)" fullname="NullTrace.AI.Tests.AiAgentTests.DeathDisableAndDestroyCancelAttackImmediatelyButKeepHistoricalSight(0)" methodname="DeathDisableAndDestroyCancelAttackImmediatelyButKeepHistoricalSight" classname="NullTrace.AI.Tests.AiAgentTests" runstate="Runnable" seed="1099892920" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.001342" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1005" name="DeathDisableAndDestroyCancelAttackImmediatelyButKeepHistoricalSight(1)" fullname="NullTrace.AI.Tests.AiAgentTests.DeathDisableAndDestroyCancelAttackImmediatelyButKeepHistoricalSight(1)" methodname="DeathDisableAndDestroyCancelAttackImmediatelyButKeepHistoricalSight" classname="NullTrace.AI.Tests.AiAgentTests" runstate="Runnable" seed="1918134498" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000817" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1006" name="DeathDisableAndDestroyCancelAttackImmediatelyButKeepHistoricalSight(2)" fullname="NullTrace.AI.Tests.AiAgentTests.DeathDisableAndDestroyCancelAttackImmediatelyButKeepHistoricalSight(2)" methodname="DeathDisableAndDestroyCancelAttackImmediatelyButKeepHistoricalSight" classname="NullTrace.AI.Tests.AiAgentTests" runstate="Runnable" seed="540328647" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000630" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-case id="1017" name="DeletedOrVersionChangedPatrolPointStopsWithoutSkipping" fullname="NullTrace.AI.Tests.AiAgentTests.DeletedOrVersionChangedPatrolPointStopsWithoutSkipping" methodname="DeletedOrVersionChangedPatrolPointStopsWithoutSkipping" classname="NullTrace.AI.Tests.AiAgentTests" runstate="Runnable" seed="1200789523" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000740" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1036" name="ExhaustedUnconfirmedClueSpeaksDoubtOnceAfterArrival" fullname="NullTrace.AI.Tests.AiAgentTests.ExhaustedUnconfirmedClueSpeaksDoubtOnceAfterArrival" methodname="ExhaustedUnconfirmedClueSpeaksDoubtOnceAfterArrival" classname="NullTrace.AI.Tests.AiAgentTests" runstate="Runnable" seed="515513662" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.001162" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1018" name="ExpiredClueImmediatelyInvalidatesHeldGoal" fullname="NullTrace.AI.Tests.AiAgentTests.ExpiredClueImmediatelyInvalidatesHeldGoal" methodname="ExpiredClueImmediatelyInvalidatesHeldGoal" classname="NullTrace.AI.Tests.AiAgentTests" runstate="Runnable" seed="627492341" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.002136" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1015" name="FinitePatrolCompletesOnlyAtPostAndRequiresExternalRestart" fullname="NullTrace.AI.Tests.AiAgentTests.FinitePatrolCompletesOnlyAtPostAndRequiresExternalRestart" methodname="FinitePatrolCompletesOnlyAtPostAndRequiresExternalRestart" classname="NullTrace.AI.Tests.AiAgentTests" runstate="Runnable" seed="250457371" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.001655" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1041" name="FreshClueWaitingDuringReturnDoesNotGetDoubtLine" fullname="NullTrace.AI.Tests.AiAgentTests.FreshClueWaitingDuringReturnDoesNotGetDoubtLine" methodname="FreshClueWaitingDuringReturnDoesNotGetDoubtLine" classname="NullTrace.AI.Tests.AiAgentTests" runstate="Runnable" seed="1595588048" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.001150" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1002" name="GradualIdentificationCreatesEpisodeBeforeStationaryCombat" fullname="NullTrace.AI.Tests.AiAgentTests.GradualIdentificationCreatesEpisodeBeforeStationaryCombat" methodname="GradualIdentificationCreatesEpisodeBeforeStationaryCombat" classname="NullTrace.AI.Tests.AiAgentTests" runstate="Runnable" seed="474940353" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.002633" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1028" name="HighSuspicionWithoutCurrentSightNeverAuthorizesAttack" fullname="NullTrace.AI.Tests.AiAgentTests.HighSuspicionWithoutCurrentSightNeverAuthorizesAttack" methodname="HighSuspicionWithoutCurrentSightNeverAuthorizesAttack" classname="NullTrace.AI.Tests.AiAgentTests" runstate="Runnable" seed="589488763" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000809" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1012" name="InvalidAndZeroTimeFreezeTimersButLongFrameDoesNotExtendDeadline" fullname="NullTrace.AI.Tests.AiAgentTests.InvalidAndZeroTimeFreezeTimersButLongFrameDoesNotExtendDeadline" methodname="InvalidAndZeroTimeFreezeTimersButLongFrameDoesNotExtendDeadline" classname="NullTrace.AI.Tests.AiAgentTests" runstate="Runnable" seed="551529907" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000936" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1024" name="InvalidWallMaskReportsErrorAndRecoversAfterRebuild" fullname="NullTrace.AI.Tests.AiAgentTests.InvalidWallMaskReportsErrorAndRecoversAfterRebuild" methodname="InvalidWallMaskReportsErrorAndRecoversAfterRebuild" classname="NullTrace.AI.Tests.AiAgentTests" runstate="Runnable" seed="504638745" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.002456" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <output><![CDATA[ObstacleMask가 0입니다. 벽 Collider2D의 레이어를 지정하세요.
+]]></output>
+              </test-case>
+              <test-case id="1026" name="LaterEpisodeGetsNewAnchorAndDeadlineAfterPatrolRecoveryProgress" fullname="NullTrace.AI.Tests.AiAgentTests.LaterEpisodeGetsNewAnchorAndDeadlineAfterPatrolRecoveryProgress" methodname="LaterEpisodeGetsNewAnchorAndDeadlineAfterPatrolRecoveryProgress" classname="NullTrace.AI.Tests.AiAgentTests" runstate="Runnable" seed="230144458" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.001836" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1044" name="LateReturnGenerationIsDiscardedWhenCurrentEnemyRequiresNewResponse" fullname="NullTrace.AI.Tests.AiAgentTests.LateReturnGenerationIsDiscardedWhenCurrentEnemyRequiresNewResponse" methodname="LateReturnGenerationIsDiscardedWhenCurrentEnemyRequiresNewResponse" classname="NullTrace.AI.Tests.AiAgentTests" runstate="Runnable" seed="1315373317" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.006169" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1003" name="LightControlsRangeAndOcclusionPreservesHistoricalContributionWithoutAttacking" fullname="NullTrace.AI.Tests.AiAgentTests.LightControlsRangeAndOcclusionPreservesHistoricalContributionWithoutAttacking" methodname="LightControlsRangeAndOcclusionPreservesHistoricalContributionWithoutAttacking" classname="NullTrace.AI.Tests.AiAgentTests" runstate="Runnable" seed="1200126125" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.003944" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1037" name="LostIdentifiedEnemyUsesLostContactLineInsteadOfDoubt" fullname="NullTrace.AI.Tests.AiAgentTests.LostIdentifiedEnemyUsesLostContactLineInsteadOfDoubt" methodname="LostIdentifiedEnemyUsesLostContactLineInsteadOfDoubt" classname="NullTrace.AI.Tests.AiAgentTests" runstate="Runnable" seed="226139991" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.004948" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1013" name="NewCluesAndCombatDoNotResetEpisodeBudget" fullname="NullTrace.AI.Tests.AiAgentTests.NewCluesAndCombatDoNotResetEpisodeBudget" methodname="NewCluesAndCombatDoNotResetEpisodeBudget" classname="NullTrace.AI.Tests.AiAgentTests" runstate="Runnable" seed="1680270490" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.002743" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1022" name="NewDynamicWallStopsSweptMovementWithoutRebuild" fullname="NullTrace.AI.Tests.AiAgentTests.NewDynamicWallStopsSweptMovementWithoutRebuild" methodname="NewDynamicWallStopsSweptMovementWithoutRebuild" classname="NullTrace.AI.Tests.AiAgentTests" runstate="Runnable" seed="491279444" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.002610" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1031" name="NoiseBusReplacementUnsubscribesOldAndLateBindingReceivesOnlyOnce" fullname="NullTrace.AI.Tests.AiAgentTests.NoiseBusReplacementUnsubscribesOldAndLateBindingReceivesOnlyOnce" methodname="NoiseBusReplacementUnsubscribesOldAndLateBindingReceivesOnlyOnce" classname="NullTrace.AI.Tests.AiAgentTests" runstate="Runnable" seed="337107462" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.001026" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1010" name="NoiseRemembersImpulseAndResetDoesNotDuplicateSubscription" fullname="NullTrace.AI.Tests.AiAgentTests.NoiseRemembersImpulseAndResetDoesNotDuplicateSubscription" methodname="NoiseRemembersImpulseAndResetDoesNotDuplicateSubscription" classname="NullTrace.AI.Tests.AiAgentTests" runstate="Runnable" seed="191065047" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.001262" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1023" name="OwnDeathCancelsOutputAndMovement" fullname="NullTrace.AI.Tests.AiAgentTests.OwnDeathCancelsOutputAndMovement" methodname="OwnDeathCancelsOutputAndMovement" classname="NullTrace.AI.Tests.AiAgentTests" runstate="Runnable" seed="1640291688" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000793" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1027" name="RecoveryDelayExpiresWithoutFinishingNextVisitOrPost" fullname="NullTrace.AI.Tests.AiAgentTests.RecoveryDelayExpiresWithoutFinishingNextVisitOrPost" methodname="RecoveryDelayExpiresWithoutFinishingNextVisitOrPost" classname="NullTrace.AI.Tests.AiAgentTests" runstate="Runnable" seed="15517866" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.001431" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1034" name="ReentrantTargetReplacementCancelsRemainingAttackAndSpeech" fullname="NullTrace.AI.Tests.AiAgentTests.ReentrantTargetReplacementCancelsRemainingAttackAndSpeech" methodname="ReentrantTargetReplacementCancelsRemainingAttackAndSpeech" classname="NullTrace.AI.Tests.AiAgentTests" runstate="Runnable" seed="532519028" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000951" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1014" name="ReturnLatchHoldsUntilArrivalThenDirectSightBypassesWeakClueDelay" fullname="NullTrace.AI.Tests.AiAgentTests.ReturnLatchHoldsUntilArrivalThenDirectSightBypassesWeakClueDelay" methodname="ReturnLatchHoldsUntilArrivalThenDirectSightBypassesWeakClueDelay" classname="NullTrace.AI.Tests.AiAgentTests" runstate="Runnable" seed="826012913" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.001730" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1021" name="SealedAnchorKeepsEpisodeAndUsesBoundedRetryUntilMapReopens" fullname="NullTrace.AI.Tests.AiAgentTests.SealedAnchorKeepsEpisodeAndUsesBoundedRetryUntilMapReopens" methodname="SealedAnchorKeepsEpisodeAndUsesBoundedRetryUntilMapReopens" classname="NullTrace.AI.Tests.AiAgentTests" runstate="Runnable" seed="1753846059" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.001729" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1045" name="SlowReturnGenerationSurvivesNormalDutyResumeAndFallsBackOnce" fullname="NullTrace.AI.Tests.AiAgentTests.SlowReturnGenerationSurvivesNormalDutyResumeAndFallsBackOnce" methodname="SlowReturnGenerationSurvivesNormalDutyResumeAndFallsBackOnce" classname="NullTrace.AI.Tests.AiAgentTests" runstate="Runnable" seed="2113045408" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000947" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1030" name="StartInsideWallDoesNotTeleportEvenIfGlobalQueriesSkipStartingColliders" fullname="NullTrace.AI.Tests.AiAgentTests.StartInsideWallDoesNotTeleportEvenIfGlobalQueriesSkipStartingColliders" methodname="StartInsideWallDoesNotTeleportEvenIfGlobalQueriesSkipStartingColliders" classname="NullTrace.AI.Tests.AiAgentTests" runstate="Runnable" seed="93456826" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000917" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1009" name="TargetReplacementNeedsFreshIdentification" fullname="NullTrace.AI.Tests.AiAgentTests.TargetReplacementNeedsFreshIdentification" methodname="TargetReplacementNeedsFreshIdentification" classname="NullTrace.AI.Tests.AiAgentTests" runstate="Runnable" seed="1693511927" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000846" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1020" name="UnreachableResponseIsExcludedAndMapChangeCanMakeItEligibleAgain" fullname="NullTrace.AI.Tests.AiAgentTests.UnreachableResponseIsExcludedAndMapChangeCanMakeItEligibleAgain" methodname="UnreachableResponseIsExcludedAndMapChangeCanMakeItEligibleAgain" classname="NullTrace.AI.Tests.AiAgentTests" runstate="Runnable" seed="954417993" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.003223" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1032" name="VisibleButUnreachableEnemyFailsPreparationInsteadOfFallingThroughToWatch" fullname="NullTrace.AI.Tests.AiAgentTests.VisibleButUnreachableEnemyFailsPreparationInsteadOfFallingThroughToWatch" methodname="VisibleButUnreachableEnemyFailsPreparationInsteadOfFallingThroughToWatch" classname="NullTrace.AI.Tests.AiAgentTests" runstate="Runnable" seed="1051843406" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.002517" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1011" name="WallsAttenuateSoundPerListener" fullname="NullTrace.AI.Tests.AiAgentTests.WallsAttenuateSoundPerListener" methodname="WallsAttenuateSoundPerListener" classname="NullTrace.AI.Tests.AiAgentTests" runstate="Runnable" seed="1482687899" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000522" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1016" name="WaypointArrivalWinsSameTickAsClueAndRestoresNextUnfinishedVisit" fullname="NullTrace.AI.Tests.AiAgentTests.WaypointArrivalWinsSameTickAsClueAndRestoresNextUnfinishedVisit" methodname="WaypointArrivalWinsSameTickAsClueAndRestoresNextUnfinishedVisit" classname="NullTrace.AI.Tests.AiAgentTests" runstate="Runnable" seed="1019293994" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000846" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1035" name="WeakClueWaitsOnlyForMinimumTimeAfterReturn" fullname="NullTrace.AI.Tests.AiAgentTests.WeakClueWaitsOnlyForMinimumTimeAfterReturn" methodname="WeakClueWaitsOnlyForMinimumTimeAfterReturn" classname="NullTrace.AI.Tests.AiAgentTests" runstate="Runnable" seed="505078995" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000824" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-suite type="TestFixture" id="1046" name="AiDoorTests" fullname="NullTrace.AI.Tests.AiDoorTests" classname="NullTrace.AI.Tests.AiDoorTests" runstate="Runnable" testcasecount="14" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.010448" total="14" passed="14" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1047" name="ClosedOpenableDoorIsPlannedWithoutOpeningOrAllowingActualMovement" fullname="NullTrace.AI.Tests.AiDoorTests.ClosedOpenableDoorIsPlannedWithoutOpeningOrAllowingActualMovement" methodname="ClosedOpenableDoorIsPlannedWithoutOpeningOrAllowingActualMovement" classname="NullTrace.AI.Tests.AiDoorTests" runstate="Runnable" seed="1716508827" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.001697" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1055" name="ClosingOrLockingRejectsNpcBodyOverlapAndLeavesAllStateUnchanged" fullname="NullTrace.AI.Tests.AiDoorTests.ClosingOrLockingRejectsNpcBodyOverlapAndLeavesAllStateUnchanged" methodname="ClosingOrLockingRejectsNpcBodyOverlapAndLeavesAllStateUnchanged" classname="NullTrace.AI.Tests.AiDoorTests" runstate="Runnable" seed="1544526460" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.001374" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1054" name="DisabledOrMissingDoorComponentLeavesOrdinaryObstacle" fullname="NullTrace.AI.Tests.AiDoorTests.DisabledOrMissingDoorComponentLeavesOrdinaryObstacle" methodname="DisabledOrMissingDoorComponentLeavesOrdinaryObstacle" classname="NullTrace.AI.Tests.AiDoorTests" runstate="Runnable" seed="846974176" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000582" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1059" name="DoorRegisteredToAnotherWorldIsNotIgnored" fullname="NullTrace.AI.Tests.AiDoorTests.DoorRegisteredToAnotherWorldIsNotIgnored" methodname="DoorRegisteredToAnotherWorldIsNotIgnored" classname="NullTrace.AI.Tests.AiDoorTests" runstate="Runnable" seed="1368253420" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000385" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1060" name="InvalidPositionsDoNotOpenDoorOrPassPlanningChecks" fullname="NullTrace.AI.Tests.AiDoorTests.InvalidPositionsDoNotOpenDoorOrPassPlanningChecks" methodname="InvalidPositionsDoNotOpenDoorOrPassPlanningChecks" classname="NullTrace.AI.Tests.AiDoorTests" runstate="Runnable" seed="479908657" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000351" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1048" name="LockAndNpcPermissionChangesSynchronizePlanningAndNotifyAfterRevision" fullname="NullTrace.AI.Tests.AiDoorTests.LockAndNpcPermissionChangesSynchronizePlanningAndNotifyAfterRevision" methodname="LockAndNpcPermissionChangesSynchronizePlanningAndNotifyAfterRevision" classname="NullTrace.AI.Tests.AiDoorTests" runstate="Runnable" seed="1916545671" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.001061" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1058" name="LockedDoorUsesExistingAStarDetourOnlyInsideAllowedArea" fullname="NullTrace.AI.Tests.AiDoorTests.LockedDoorUsesExistingAStarDetourOnlyInsideAllowedArea" methodname="LockedDoorUsesExistingAStarDetourOnlyInsideAllowedArea" classname="NullTrace.AI.Tests.AiDoorTests" runstate="Runnable" seed="1785332446" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000576" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1051" name="OneRequestDoesNotOpenEveryDoorAlongItsLine" fullname="NullTrace.AI.Tests.AiDoorTests.OneRequestDoesNotOpenEveryDoorAlongItsLine" methodname="OneRequestDoesNotOpenEveryDoorAlongItsLine" classname="NullTrace.AI.Tests.AiDoorTests" runstate="Runnable" seed="1588934628" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000360" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1056" name="OpenCloseAndRepeatedRequestsHaveConsistentRevision" fullname="NullTrace.AI.Tests.AiDoorTests.OpenCloseAndRepeatedRequestsHaveConsistentRevision" methodname="OpenCloseAndRepeatedRequestsHaveConsistentRevision" classname="NullTrace.AI.Tests.AiDoorTests" runstate="Runnable" seed="484917565" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000360" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1049" name="OpensOnlyNearbyDoorInMovementDirectionAndInvalidatesOldPath" fullname="NullTrace.AI.Tests.AiDoorTests.OpensOnlyNearbyDoorInMovementDirectionAndInvalidatesOldPath" methodname="OpensOnlyNearbyDoorInMovementDirectionAndInvalidatesOldPath" classname="NullTrace.AI.Tests.AiDoorTests" runstate="Runnable" seed="431784372" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000409" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1052" name="OrdinaryWallInFrontPreventsOpeningDoorBehindIt" fullname="NullTrace.AI.Tests.AiDoorTests.OrdinaryWallInFrontPreventsOpeningDoorBehindIt" methodname="OrdinaryWallInFrontPreventsOpeningDoorBehindIt" classname="NullTrace.AI.Tests.AiDoorTests" runstate="Runnable" seed="291405005" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000300" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1057" name="PlanningStillChecksBodyWidthAndRegisteredArea" fullname="NullTrace.AI.Tests.AiDoorTests.PlanningStillChecksBodyWidthAndRegisteredArea" methodname="PlanningStillChecksBodyWidthAndRegisteredArea" classname="NullTrace.AI.Tests.AiDoorTests" runstate="Runnable" seed="3669023" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000375" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1053" name="SeparateWallOverlappingDoorIsStillAnObstacle" fullname="NullTrace.AI.Tests.AiDoorTests.SeparateWallOverlappingDoorIsStillAnObstacle" methodname="SeparateWallOverlappingDoorIsStillAnObstacle" classname="NullTrace.AI.Tests.AiDoorTests" runstate="Runnable" seed="61421536" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000445" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1050" name="TinyMovementStepStillOpensNearbyDoorWithoutRemoteOpening" fullname="NullTrace.AI.Tests.AiDoorTests.TinyMovementStepStillOpensNearbyDoorWithoutRemoteOpening" methodname="TinyMovementStepStillOpensNearbyDoorWithoutRemoteOpening" classname="NullTrace.AI.Tests.AiDoorTests" runstate="Runnable" seed="1633850386" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000392" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-suite type="TestFixture" id="1061" name="AiLogicTests" fullname="NullTrace.AI.Tests.AiLogicTests" classname="NullTrace.AI.Tests.AiLogicTests" runstate="Runnable" testcasecount="5" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.002267" total="5" passed="5" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1066" name="NoiseBusCopiesPositionAndRejectsInvalidOrInactiveInput" fullname="NullTrace.AI.Tests.AiLogicTests.NoiseBusCopiesPositionAndRejectsInvalidOrInactiveInput" methodname="NoiseBusCopiesPositionAndRejectsInvalidOrInactiveInput" classname="NullTrace.AI.Tests.AiLogicTests" runstate="Runnable" seed="810479664" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000624" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1064" name="ProfileRepairsNonFiniteValuesAndPreservesLightOrdering" fullname="NullTrace.AI.Tests.AiLogicTests.ProfileRepairsNonFiniteValuesAndPreservesLightOrdering" methodname="ProfileRepairsNonFiniteValuesAndPreservesLightOrdering" classname="NullTrace.AI.Tests.AiLogicTests" runstate="Runnable" seed="2102868565" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000238" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1063" name="SoundAttenuatesWithDistanceAndEveryCollider" fullname="NullTrace.AI.Tests.AiLogicTests.SoundAttenuatesWithDistanceAndEveryCollider" methodname="SoundAttenuatesWithDistanceAndEveryCollider" classname="NullTrace.AI.Tests.AiLogicTests" runstate="Runnable" seed="1393450526" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000248" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1065" name="SpeechLimitsBothAllLinesAndRepeatedLinesAndCanReset" fullname="NullTrace.AI.Tests.AiLogicTests.SpeechLimitsBothAllLinesAndRepeatedLinesAndCanReset" methodname="SpeechLimitsBothAllLinesAndRepeatedLinesAndCanReset" classname="NullTrace.AI.Tests.AiLogicTests" runstate="Runnable" seed="225418022" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000133" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1062" name="ViewUsesRangeAndFullAngleWithoutRequiringNormalizedFacing" fullname="NullTrace.AI.Tests.AiLogicTests.ViewUsesRangeAndFullAngleWithoutRequiringNormalizedFacing" methodname="ViewUsesRangeAndFullAngleWithoutRequiringNormalizedFacing" classname="NullTrace.AI.Tests.AiLogicTests" runstate="Runnable" seed="264875590" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000193" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-suite type="TestFixture" id="1067" name="AiMemoryTests" fullname="NullTrace.AI.Tests.AiMemoryTests" classname="NullTrace.AI.Tests.AiMemoryTests" runstate="Runnable" testcasecount="19" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.005675" total="19" passed="19" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1086" name="BehaviorTreeRemembersRunningStepAndResetCancelsItsProcedure" fullname="NullTrace.AI.Tests.AiMemoryTests.BehaviorTreeRemembersRunningStepAndResetCancelsItsProcedure" methodname="BehaviorTreeRemembersRunningStepAndResetCancelsItsProcedure" classname="NullTrace.AI.Tests.AiMemoryTests" runstate="Runnable" seed="474521270" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000307" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1076" name="CompletionSeparatesInspectFromSearchAndPreservesUnrelatedEvents" fullname="NullTrace.AI.Tests.AiMemoryTests.CompletionSeparatesInspectFromSearchAndPreservesUnrelatedEvents" methodname="CompletionSeparatesInspectFromSearchAndPreservesUnrelatedEvents" classname="NullTrace.AI.Tests.AiMemoryTests" runstate="Runnable" seed="63615326" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000209" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1073" name="ContributionsDecayProportionallyAndExpiryRemovesOnlyItsEvent" fullname="NullTrace.AI.Tests.AiMemoryTests.ContributionsDecayProportionallyAndExpiryRemovesOnlyItsEvent" methodname="ContributionsDecayProportionallyAndExpiryRemovesOnlyItsEvent" classname="NullTrace.AI.Tests.AiMemoryTests" runstate="Runnable" seed="1215826" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000187" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1083" name="CurrentDirectSightRejectsIndirectReplacementButFreshSightAfterRemovalCanReturn" fullname="NullTrace.AI.Tests.AiMemoryTests.CurrentDirectSightRejectsIndirectReplacementButFreshSightAfterRemovalCanReturn" methodname="CurrentDirectSightRejectsIndirectReplacementButFreshSightAfterRemovalCanReturn" classname="NullTrace.AI.Tests.AiMemoryTests" runstate="Runnable" seed="1550917622" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000369" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1071" name="DirectSightReplacesIndirectContributionAndSurvivesLostSight" fullname="NullTrace.AI.Tests.AiMemoryTests.DirectSightReplacesIndirectContributionAndSurvivesLostSight" methodname="DirectSightReplacesIndirectContributionAndSurvivesLostSight" classname="NullTrace.AI.Tests.AiMemoryTests" runstate="Runnable" seed="448299601" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000159" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1068" name="DuplicateDoesNotAddSuspicionOrRefreshQuietTime" fullname="NullTrace.AI.Tests.AiMemoryTests.DuplicateDoesNotAddSuspicionOrRefreshQuietTime" methodname="DuplicateDoesNotAddSuspicionOrRefreshQuietTime" classname="NullTrace.AI.Tests.AiMemoryTests" runstate="Runnable" seed="339008989" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000164" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1080" name="EvictedDuplicateCannotRestoreScoreOrReopenInvestigation" fullname="NullTrace.AI.Tests.AiMemoryTests.EvictedDuplicateCannotRestoreScoreOrReopenInvestigation" methodname="EvictedDuplicateCannotRestoreScoreOrReopenInvestigation" classname="NullTrace.AI.Tests.AiMemoryTests" runstate="Runnable" seed="1360963505" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000296" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1074" name="ExpiredFutureAndMalformedReportsAreRejected" fullname="NullTrace.AI.Tests.AiMemoryTests.ExpiredFutureAndMalformedReportsAreRejected" methodname="ExpiredFutureAndMalformedReportsAreRejected" classname="NullTrace.AI.Tests.AiMemoryTests" runstate="Runnable" seed="349172354" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000154" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1078" name="FloodIsBoundedAndCurrentDirectSightSurvivesWeakSounds" fullname="NullTrace.AI.Tests.AiMemoryTests.FloodIsBoundedAndCurrentDirectSightSurvivesWeakSounds" methodname="FloodIsBoundedAndCurrentDirectSightSurvivesWeakSounds" classname="NullTrace.AI.Tests.AiMemoryTests" runstate="Runnable" seed="961758504" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000386" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1081" name="ForgottenVeryOldPacketCannotEvictRecentUnprocessedClue" fullname="NullTrace.AI.Tests.AiMemoryTests.ForgottenVeryOldPacketCannotEvictRecentUnprocessedClue" methodname="ForgottenVeryOldPacketCannotEvictRecentUnprocessedClue" classname="NullTrace.AI.Tests.AiMemoryTests" runstate="Runnable" seed="1437623849" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000196" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1069" name="IndirectConfidenceChangeIsIgnoredWithoutReopeningProcessedClue" fullname="NullTrace.AI.Tests.AiMemoryTests.IndirectConfidenceChangeIsIgnoredWithoutReopeningProcessedClue" methodname="IndirectConfidenceChangeIsIgnoredWithoutReopeningProcessedClue" classname="NullTrace.AI.Tests.AiMemoryTests" runstate="Runnable" seed="809317449" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000141" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1077" name="InvestigationReportStoresScopeWithoutClearingLaterThreatOrResettingDecay" fullname="NullTrace.AI.Tests.AiMemoryTests.InvestigationReportStoresScopeWithoutClearingLaterThreatOrResettingDecay" methodname="InvestigationReportStoresScopeWithoutClearingLaterThreatOrResettingDecay" classname="NullTrace.AI.Tests.AiMemoryTests" runstate="Runnable" seed="1125515691" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000182" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1070" name="OldHighConfidenceCannotOverwriteNewerObservation" fullname="NullTrace.AI.Tests.AiMemoryTests.OldHighConfidenceCannotOverwriteNewerObservation" methodname="OldHighConfidenceCannotOverwriteNewerObservation" classname="NullTrace.AI.Tests.AiMemoryTests" runstate="Runnable" seed="1887290922" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000145" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1072" name="PreIdentificationVisualContributionIsAtMostTwentyPerSecond" fullname="NullTrace.AI.Tests.AiMemoryTests.PreIdentificationVisualContributionIsAtMostTwentyPerSecond" methodname="PreIdentificationVisualContributionIsAtMostTwentyPerSecond" classname="NullTrace.AI.Tests.AiMemoryTests" runstate="Runnable" seed="78134927" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000140" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1079" name="ProcessedRecordIsEvictedBeforeOlderUnprocessedClue" fullname="NullTrace.AI.Tests.AiMemoryTests.ProcessedRecordIsEvictedBeforeOlderUnprocessedClue" methodname="ProcessedRecordIsEvictedBeforeOlderUnprocessedClue" classname="NullTrace.AI.Tests.AiMemoryTests" runstate="Runnable" seed="950858258" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000163" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1084" name="ReceivePrunesExpiredCluesBeforeApplyingCapacity" fullname="NullTrace.AI.Tests.AiMemoryTests.ReceivePrunesExpiredCluesBeforeApplyingCapacity" methodname="ReceivePrunesExpiredCluesBeforeApplyingCapacity" classname="NullTrace.AI.Tests.AiMemoryTests" runstate="Runnable" seed="482996412" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000113" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1082" name="SameObservationDirectConfirmationReplacesIndirectWithoutAddingOrReopening" fullname="NullTrace.AI.Tests.AiMemoryTests.SameObservationDirectConfirmationReplacesIndirectWithoutAddingOrReopening" methodname="SameObservationDirectConfirmationReplacesIndirectWithoutAddingOrReopening" classname="NullTrace.AI.Tests.AiMemoryTests" runstate="Runnable" seed="864080556" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000171" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1075" name="SameRevisionCannotMoveObservationOrExtendExpiry" fullname="NullTrace.AI.Tests.AiMemoryTests.SameRevisionCannotMoveObservationOrExtendExpiry" methodname="SameRevisionCannotMoveObservationOrExtendExpiry" classname="NullTrace.AI.Tests.AiMemoryTests" runstate="Runnable" seed="137818170" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000141" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1085" name="UtilityUsesHoldAdvantageAndDeterministicTieButNeverKeepsInvalidGoal" fullname="NullTrace.AI.Tests.AiMemoryTests.UtilityUsesHoldAdvantageAndDeterministicTieButNeverKeepsInvalidGoal" methodname="UtilityUsesHoldAdvantageAndDeterministicTieButNeverKeepsInvalidGoal" classname="NullTrace.AI.Tests.AiMemoryTests" runstate="Runnable" seed="1756270358" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000516" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-suite type="TestFixture" id="1087" name="AiRadioTests" fullname="NullTrace.AI.Tests.AiRadioTests" classname="NullTrace.AI.Tests.AiRadioTests" runstate="Runnable" testcasecount="8" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.007043" total="8" passed="8" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1090" name="ExpiredPacketNeverRestartsOriginalLifetime" fullname="NullTrace.AI.Tests.AiRadioTests.ExpiredPacketNeverRestartsOriginalLifetime" methodname="ExpiredPacketNeverRestartsOriginalLifetime" classname="NullTrace.AI.Tests.AiRadioTests" runstate="Runnable" seed="1258750489" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.002929" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1093" name="InFlightSameEventKeepsOneSnapshotAndOriginalDelay" fullname="NullTrace.AI.Tests.AiRadioTests.InFlightSameEventKeepsOneSnapshotAndOriginalDelay" methodname="InFlightSameEventKeepsOneSnapshotAndOriginalDelay" classname="NullTrace.AI.Tests.AiRadioTests" runstate="Runnable" seed="1837464870" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000544" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1095" name="LoweringLimitTrimsTailAndZeroDelayStillDeliversNewInformation" fullname="NullTrace.AI.Tests.AiRadioTests.LoweringLimitTrimsTailAndZeroDelayStillDeliversNewInformation" methodname="LoweringLimitTrimsTailAndZeroDelayStillDeliversNewInformation" classname="NullTrace.AI.Tests.AiRadioTests" runstate="Runnable" seed="147885839" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000577" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1088" name="ReceiverKnowsNothingUntilDeliveryAndRetransmissionCannotAddScore" fullname="NullTrace.AI.Tests.AiRadioTests.ReceiverKnowsNothingUntilDeliveryAndRetransmissionCannotAddScore" methodname="ReceiverKnowsNothingUntilDeliveryAndRetransmissionCannotAddScore" classname="NullTrace.AI.Tests.AiRadioTests" runstate="Runnable" seed="1129034169" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000418" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1094" name="RepeatedNpcDeliverCallsDoNotRescanUnchangedQueue" fullname="NullTrace.AI.Tests.AiRadioTests.RepeatedNpcDeliverCallsDoNotRescanUnchangedQueue" methodname="RepeatedNpcDeliverCallsDoNotRescanUnchangedQueue" classname="NullTrace.AI.Tests.AiRadioTests" runstate="Runnable" seed="921926264" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000319" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1089" name="ResetDiscardsQueuedDeliveryAndNewListenerDoesNotReadOldQueue" fullname="NullTrace.AI.Tests.AiRadioTests.ResetDiscardsQueuedDeliveryAndNewListenerDoesNotReadOldQueue" methodname="ResetDiscardsQueuedDeliveryAndNewListenerDoesNotReadOldQueue" classname="NullTrace.AI.Tests.AiRadioTests" runstate="Runnable" seed="184498233" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000749" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1091" name="SendRateAndInactiveReceiverDoNotLeakKnowledge" fullname="NullTrace.AI.Tests.AiRadioTests.SendRateAndInactiveReceiverDoNotLeakKnowledge" methodname="SendRateAndInactiveReceiverDoNotLeakKnowledge" classname="NullTrace.AI.Tests.AiRadioTests" runstate="Runnable" seed="1037532740" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000301" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1092" name="WholeChannelQueueHasHardLimitAndDropsExcessNewRecipients" fullname="NullTrace.AI.Tests.AiRadioTests.WholeChannelQueueHasHardLimitAndDropsExcessNewRecipients" methodname="WholeChannelQueueHasHardLimitAndDropsExcessNewRecipients" classname="NullTrace.AI.Tests.AiRadioTests" runstate="Runnable" seed="344642438" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000405" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-suite type="TestFixture" id="1096" name="DialogueTests" fullname="NullTrace.AI.Tests.DialogueTests" classname="NullTrace.AI.Tests.DialogueTests" runstate="Runnable" testcasecount="14" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.007844" total="14" passed="14" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1103" name="Cancel_DropsPendingGenerationEvenWhenItCompletesLater" fullname="NullTrace.AI.Tests.DialogueTests.Cancel_DropsPendingGenerationEvenWhenItCompletesLater" methodname="Cancel_DropsPendingGenerationEvenWhenItCompletesLater" classname="NullTrace.AI.Tests.DialogueTests" runstate="Runnable" seed="1918624919" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000996" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1101" name="Cancel_DropsPreparedLineDuringPause" fullname="NullTrace.AI.Tests.DialogueTests.Cancel_DropsPreparedLineDuringPause" methodname="Cancel_DropsPreparedLineDuringPause" classname="NullTrace.AI.Tests.DialogueTests" runstate="Runnable" seed="545197579" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000205" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1110" name="CancelAndTimeoutKeepSlotUntilUnderlyingTaskActuallyFinishes" fullname="NullTrace.AI.Tests.DialogueTests.CancelAndTimeoutKeepSlotUntilUnderlyingTaskActuallyFinishes" methodname="CancelAndTimeoutKeepSlotUntilUnderlyingTaskActuallyFinishes" classname="NullTrace.AI.Tests.DialogueTests" runstate="Runnable" seed="1389957978" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.001513" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1098" name="CompletedProvider_UsesGeneratedLine" fullname="NullTrace.AI.Tests.DialogueTests.CompletedProvider_UsesGeneratedLine" methodname="CompletedProvider_UsesGeneratedLine" classname="NullTrace.AI.Tests.DialogueTests" runstate="Runnable" seed="1677426763" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000250" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1107" name="EmptyResponse_UsesFallback" fullname="NullTrace.AI.Tests.DialogueTests.EmptyResponse_UsesFallback" methodname="EmptyResponse_UsesFallback" classname="NullTrace.AI.Tests.DialogueTests" runstate="Runnable" seed="2099937471" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000169" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1109" name="GlobalLimitFallsBackWithoutCallingThirdProvider" fullname="NullTrace.AI.Tests.DialogueTests.GlobalLimitFallsBackWithoutCallingThirdProvider" methodname="GlobalLimitFallsBackWithoutCallingThirdProvider" classname="NullTrace.AI.Tests.DialogueTests" runstate="Runnable" seed="349771151" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000600" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1108" name="InvalidElapsedTime_DoesNotExpireRequest" fullname="NullTrace.AI.Tests.DialogueTests.InvalidElapsedTime_DoesNotExpireRequest" methodname="InvalidElapsedTime_DoesNotExpireRequest" classname="NullTrace.AI.Tests.DialogueTests" runstate="Runnable" seed="1696896835" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000234" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1097" name="MissingProvider_UsesFallbackOnceWithoutBlocking" fullname="NullTrace.AI.Tests.DialogueTests.MissingProvider_UsesFallbackOnceWithoutBlocking" methodname="MissingProvider_UsesFallbackOnceWithoutBlocking" classname="NullTrace.AI.Tests.DialogueTests" runstate="Runnable" seed="1847892073" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000168" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1111" name="NullThrowAndAlreadyCompletedTasksReturnTheirGlobalSlots" fullname="NullTrace.AI.Tests.DialogueTests.NullThrowAndAlreadyCompletedTasksReturnTheirGlobalSlots" methodname="NullThrowAndAlreadyCompletedTasksReturnTheirGlobalSlots" classname="NullTrace.AI.Tests.DialogueTests" runstate="Runnable" seed="2119782274" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000313" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1102" name="Pause_StillTimesOutButWaitsForResumeToSpeak" fullname="NullTrace.AI.Tests.DialogueTests.Pause_StillTimesOutButWaitsForResumeToSpeak" methodname="Pause_StillTimesOutButWaitsForResumeToSpeak" classname="NullTrace.AI.Tests.DialogueTests" runstate="Runnable" seed="808819755" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000212" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-suite type="ParameterizedMethod" id="1106" name="ProviderFailure_FallsBackWithoutThrowing" fullname="NullTrace.AI.Tests.DialogueTests.ProviderFailure_FallsBackWithoutThrowing" classname="NullTrace.AI.Tests.DialogueTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.001352" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1104" name="ProviderFailure_FallsBackWithoutThrowing(False)" fullname="NullTrace.AI.Tests.DialogueTests.ProviderFailure_FallsBackWithoutThrowing(False)" methodname="ProviderFailure_FallsBackWithoutThrowing" classname="NullTrace.AI.Tests.DialogueTests" runstate="Runnable" seed="1823568653" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000889" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1105" name="ProviderFailure_FallsBackWithoutThrowing(True)" fullname="NullTrace.AI.Tests.DialogueTests.ProviderFailure_FallsBackWithoutThrowing(True)" methodname="ProviderFailure_FallsBackWithoutThrowing" classname="NullTrace.AI.Tests.DialogueTests" runstate="Runnable" seed="111579916" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000135" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-case id="1100" name="Replacement_DoesNotDeliverPreviousRequest" fullname="NullTrace.AI.Tests.DialogueTests.Replacement_DoesNotDeliverPreviousRequest" methodname="Replacement_DoesNotDeliverPreviousRequest" classname="NullTrace.AI.Tests.DialogueTests" runstate="Runnable" seed="884586771" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000276" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1099" name="Timeout_UsesFallbackAndIgnoresLateCompletion" fullname="NullTrace.AI.Tests.DialogueTests.Timeout_UsesFallbackAndIgnoresLateCompletion" methodname="Timeout_UsesFallbackAndIgnoresLateCompletion" classname="NullTrace.AI.Tests.DialogueTests" runstate="Runnable" seed="1490079164" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000239" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-suite type="TestFixture" id="1112" name="GridWorldTraversalTests" fullname="NullTrace.AI.Tests.GridWorldTraversalTests" classname="NullTrace.AI.Tests.GridWorldTraversalTests" runstate="Runnable" testcasecount="7" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.003942" total="7" passed="7" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1117" name="AStarRejectsDetourOutsideAllowedRegion" fullname="NullTrace.AI.Tests.GridWorldTraversalTests.AStarRejectsDetourOutsideAllowedRegion" methodname="AStarRejectsDetourOutsideAllowedRegion" classname="NullTrace.AI.Tests.GridWorldTraversalTests" runstate="Runnable" seed="316190322" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000862" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1115" name="BodyWidthBlocksRouteWhoseCenterLineIsClear" fullname="NullTrace.AI.Tests.GridWorldTraversalTests.BodyWidthBlocksRouteWhoseCenterLineIsClear" methodname="BodyWidthBlocksRouteWhoseCenterLineIsClear" classname="NullTrace.AI.Tests.GridWorldTraversalTests" runstate="Runnable" seed="1974197168" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000262" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1114" name="ClearEndpointsDoNotPermitCrossingMiddleWall" fullname="NullTrace.AI.Tests.GridWorldTraversalTests.ClearEndpointsDoNotPermitCrossingMiddleWall" methodname="ClearEndpointsDoNotPermitCrossingMiddleWall" classname="NullTrace.AI.Tests.GridWorldTraversalTests" runstate="Runnable" seed="378824755" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000626" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1113" name="ClearSegmentsAndStationaryPointAreAllowedWithoutMovingWorld" fullname="NullTrace.AI.Tests.GridWorldTraversalTests.ClearSegmentsAndStationaryPointAreAllowedWithoutMovingWorld" methodname="ClearSegmentsAndStationaryPointAreAllowedWithoutMovingWorld" classname="NullTrace.AI.Tests.GridWorldTraversalTests" runstate="Runnable" seed="905364477" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000546" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1116" name="DoorChangesAreCheckedAgainstLivePhysics" fullname="NullTrace.AI.Tests.GridWorldTraversalTests.DoorChangesAreCheckedAgainstLivePhysics" methodname="DoorChangesAreCheckedAgainstLivePhysics" classname="NullTrace.AI.Tests.GridWorldTraversalTests" runstate="Runnable" seed="790611147" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000350" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1118" name="InvalidOrOutOfBoundsSegmentsAreRejected" fullname="NullTrace.AI.Tests.GridWorldTraversalTests.InvalidOrOutOfBoundsSegmentsAreRejected" methodname="InvalidOrOutOfBoundsSegmentsAreRejected" classname="NullTrace.AI.Tests.GridWorldTraversalTests" runstate="Runnable" seed="2104638309" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000238" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1119" name="TinyMovesStillValidateTheirDestination" fullname="NullTrace.AI.Tests.GridWorldTraversalTests.TinyMovesStillValidateTheirDestination" methodname="TinyMovesStillValidateTheirDestination" classname="NullTrace.AI.Tests.GridWorldTraversalTests" runstate="Runnable" seed="1477632431" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000221" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-suite type="TestFixture" id="1120" name="MovementConstraintTests" fullname="NullTrace.AI.Tests.MovementConstraintTests" classname="NullTrace.AI.Tests.MovementConstraintTests" runstate="Runnable" testcasecount="24" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.003793" total="24" passed="24" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-suite type="ParameterizedMethod" id="1139" name="CircleIncludesWholeBody" fullname="NullTrace.AI.Tests.MovementConstraintTests.CircleIncludesWholeBody" classname="NullTrace.AI.Tests.MovementConstraintTests" runstate="Runnable" testcasecount="6" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000691" total="6" passed="6" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1133" name="CircleIncludesWholeBody(4.0f,0.0f,1.0f,True)" fullname="NullTrace.AI.Tests.MovementConstraintTests.CircleIncludesWholeBody(4.0f,0.0f,1.0f,True)" methodname="CircleIncludesWholeBody" classname="NullTrace.AI.Tests.MovementConstraintTests" runstate="Runnable" seed="715603508" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000208" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1134" name="CircleIncludesWholeBody(4.001f,0.0f,1.0f,False)" fullname="NullTrace.AI.Tests.MovementConstraintTests.CircleIncludesWholeBody(4.001f,0.0f,1.0f,False)" methodname="CircleIncludesWholeBody" classname="NullTrace.AI.Tests.MovementConstraintTests" runstate="Runnable" seed="546626136" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000030" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1135" name="CircleIncludesWholeBody(3.0f,4.0f,0.0f,True)" fullname="NullTrace.AI.Tests.MovementConstraintTests.CircleIncludesWholeBody(3.0f,4.0f,0.0f,True)" methodname="CircleIncludesWholeBody" classname="NullTrace.AI.Tests.MovementConstraintTests" runstate="Runnable" seed="1028957772" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000024" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1136" name="CircleIncludesWholeBody(3.0f,4.0f,0.01f,False)" fullname="NullTrace.AI.Tests.MovementConstraintTests.CircleIncludesWholeBody(3.0f,4.0f,0.01f,False)" methodname="CircleIncludesWholeBody" classname="NullTrace.AI.Tests.MovementConstraintTests" runstate="Runnable" seed="1080578031" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000022" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1137" name="CircleIncludesWholeBody(0.0f,0.0f,5.0f,True)" fullname="NullTrace.AI.Tests.MovementConstraintTests.CircleIncludesWholeBody(0.0f,0.0f,5.0f,True)" methodname="CircleIncludesWholeBody" classname="NullTrace.AI.Tests.MovementConstraintTests" runstate="Runnable" seed="855764685" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000023" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1138" name="CircleIncludesWholeBody(0.0f,0.0f,5.01f,False)" fullname="NullTrace.AI.Tests.MovementConstraintTests.CircleIncludesWholeBody(0.0f,0.0f,5.01f,False)" methodname="CircleIncludesWholeBody" classname="NullTrace.AI.Tests.MovementConstraintTests" runstate="Runnable" seed="1759433624" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000032" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-case id="1140" name="IntersectionRequiresRectangleAndCircle" fullname="NullTrace.AI.Tests.MovementConstraintTests.IntersectionRequiresRectangleAndCircle" methodname="IntersectionRequiresRectangleAndCircle" classname="NullTrace.AI.Tests.MovementConstraintTests" runstate="Runnable" seed="952293050" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000132" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1144" name="InvalidQueriesFailClosed" fullname="NullTrace.AI.Tests.MovementConstraintTests.InvalidQueriesFailClosed" methodname="InvalidQueriesFailClosed" classname="NullTrace.AI.Tests.MovementConstraintTests" runstate="Runnable" seed="541556969" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000183" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1143" name="InvalidRegionsFailClosed" fullname="NullTrace.AI.Tests.MovementConstraintTests.InvalidRegionsFailClosed" methodname="InvalidRegionsFailClosed" classname="NullTrace.AI.Tests.MovementConstraintTests" runstate="Runnable" seed="1631287480" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000333" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1145" name="LargeFiniteCircleDoesNotAcceptOutsidePointThroughOverflow" fullname="NullTrace.AI.Tests.MovementConstraintTests.LargeFiniteCircleDoesNotAcceptOutsidePointThroughOverflow" methodname="LargeFiniteCircleDoesNotAcceptOutsidePointThroughOverflow" classname="NullTrace.AI.Tests.MovementConstraintTests" runstate="Runnable" seed="1520706053" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000128" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1146" name="LargeRectangleStillRejectsBodyAcrossBoundary" fullname="NullTrace.AI.Tests.MovementConstraintTests.LargeRectangleStillRejectsBodyAcrossBoundary" methodname="LargeRectangleStillRejectsBodyAcrossBoundary" classname="NullTrace.AI.Tests.MovementConstraintTests" runstate="Runnable" seed="253380434" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000139" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-suite type="ParameterizedMethod" id="1132" name="RectangleIncludesWholeBody" fullname="NullTrace.AI.Tests.MovementConstraintTests.RectangleIncludesWholeBody" classname="NullTrace.AI.Tests.MovementConstraintTests" runstate="Runnable" testcasecount="11" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000983" total="11" passed="11" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1121" name="RectangleIncludesWholeBody(1.0f,3.0f,1.0f,True)" fullname="NullTrace.AI.Tests.MovementConstraintTests.RectangleIncludesWholeBody(1.0f,3.0f,1.0f,True)" methodname="RectangleIncludesWholeBody" classname="NullTrace.AI.Tests.MovementConstraintTests" runstate="Runnable" seed="467266391" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000124" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1122" name="RectangleIncludesWholeBody(0.999f,3.0f,1.0f,False)" fullname="NullTrace.AI.Tests.MovementConstraintTests.RectangleIncludesWholeBody(0.999f,3.0f,1.0f,False)" methodname="RectangleIncludesWholeBody" classname="NullTrace.AI.Tests.MovementConstraintTests" runstate="Runnable" seed="844752098" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000030" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1123" name="RectangleIncludesWholeBody(9.0f,3.0f,1.0f,True)" fullname="NullTrace.AI.Tests.MovementConstraintTests.RectangleIncludesWholeBody(9.0f,3.0f,1.0f,True)" methodname="RectangleIncludesWholeBody" classname="NullTrace.AI.Tests.MovementConstraintTests" runstate="Runnable" seed="1725086985" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000026" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1124" name="RectangleIncludesWholeBody(9.001f,3.0f,1.0f,False)" fullname="NullTrace.AI.Tests.MovementConstraintTests.RectangleIncludesWholeBody(9.001f,3.0f,1.0f,False)" methodname="RectangleIncludesWholeBody" classname="NullTrace.AI.Tests.MovementConstraintTests" runstate="Runnable" seed="1527932704" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000026" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1125" name="RectangleIncludesWholeBody(5.0f,1.0f,1.0f,True)" fullname="NullTrace.AI.Tests.MovementConstraintTests.RectangleIncludesWholeBody(5.0f,1.0f,1.0f,True)" methodname="RectangleIncludesWholeBody" classname="NullTrace.AI.Tests.MovementConstraintTests" runstate="Runnable" seed="577492353" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000026" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1126" name="RectangleIncludesWholeBody(5.0f,0.999f,1.0f,False)" fullname="NullTrace.AI.Tests.MovementConstraintTests.RectangleIncludesWholeBody(5.0f,0.999f,1.0f,False)" methodname="RectangleIncludesWholeBody" classname="NullTrace.AI.Tests.MovementConstraintTests" runstate="Runnable" seed="829500640" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000025" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1127" name="RectangleIncludesWholeBody(5.0f,5.0f,1.0f,True)" fullname="NullTrace.AI.Tests.MovementConstraintTests.RectangleIncludesWholeBody(5.0f,5.0f,1.0f,True)" methodname="RectangleIncludesWholeBody" classname="NullTrace.AI.Tests.MovementConstraintTests" runstate="Runnable" seed="76184932" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000024" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1128" name="RectangleIncludesWholeBody(5.0f,5.001f,1.0f,False)" fullname="NullTrace.AI.Tests.MovementConstraintTests.RectangleIncludesWholeBody(5.0f,5.001f,1.0f,False)" methodname="RectangleIncludesWholeBody" classname="NullTrace.AI.Tests.MovementConstraintTests" runstate="Runnable" seed="1659206231" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000029" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1129" name="RectangleIncludesWholeBody(0.0f,0.0f,0.0f,True)" fullname="NullTrace.AI.Tests.MovementConstraintTests.RectangleIncludesWholeBody(0.0f,0.0f,0.0f,True)" methodname="RectangleIncludesWholeBody" classname="NullTrace.AI.Tests.MovementConstraintTests" runstate="Runnable" seed="791007860" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000038" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1130" name="RectangleIncludesWholeBody(10.0f,6.0f,0.0f,True)" fullname="NullTrace.AI.Tests.MovementConstraintTests.RectangleIncludesWholeBody(10.0f,6.0f,0.0f,True)" methodname="RectangleIncludesWholeBody" classname="NullTrace.AI.Tests.MovementConstraintTests" runstate="Runnable" seed="1622405434" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000028" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1131" name="RectangleIncludesWholeBody(5.0f,3.0f,3.01f,False)" fullname="NullTrace.AI.Tests.MovementConstraintTests.RectangleIncludesWholeBody(5.0f,3.0f,3.01f,False)" methodname="RectangleIncludesWholeBody" classname="NullTrace.AI.Tests.MovementConstraintTests" runstate="Runnable" seed="841679378" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000026" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-case id="1141" name="SegmentIncludesWholeSweptBody" fullname="NullTrace.AI.Tests.MovementConstraintTests.SegmentIncludesWholeSweptBody" methodname="SegmentIncludesWholeSweptBody" classname="NullTrace.AI.Tests.MovementConstraintTests" runstate="Runnable" seed="1418951325" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000159" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1142" name="ZeroRadiusCircleAllowsOnlyItsAnchorPoint" fullname="NullTrace.AI.Tests.MovementConstraintTests.ZeroRadiusCircleAllowsOnlyItsAnchorPoint" methodname="ZeroRadiusCircleAllowsOnlyItsAnchorPoint" classname="NullTrace.AI.Tests.MovementConstraintTests" runstate="Runnable" seed="1546806963" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000094" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-suite type="TestFixture" id="1147" name="NavigationTests" fullname="NullTrace.AI.Tests.NavigationTests" classname="NullTrace.AI.Tests.NavigationTests" runstate="Runnable" testcasecount="43" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.024773" total="43" passed="43" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-suite type="ParameterizedMethod" id="1181" name="BlockedEndpointClearsPreviousPath" fullname="NullTrace.AI.Tests.NavigationTests.BlockedEndpointClearsPreviousPath" classname="NullTrace.AI.Tests.NavigationTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000401" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1179" name="BlockedEndpointClearsPreviousPath(True)" fullname="NullTrace.AI.Tests.NavigationTests.BlockedEndpointClearsPreviousPath(True)" methodname="BlockedEndpointClearsPreviousPath" classname="NullTrace.AI.Tests.NavigationTests" runstate="Runnable" seed="1881444580" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000227" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1180" name="BlockedEndpointClearsPreviousPath(False)" fullname="NullTrace.AI.Tests.NavigationTests.BlockedEndpointClearsPreviousPath(False)" methodname="BlockedEndpointClearsPreviousPath" classname="NullTrace.AI.Tests.NavigationTests" runstate="Runnable" seed="281462768" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000024" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-case id="1198" name="ChangedTraversalRuleIsUsedByEachSearch" fullname="NullTrace.AI.Tests.NavigationTests.ChangedTraversalRuleIsUsedByEachSearch" methodname="ChangedTraversalRuleIsUsedByEachSearch" classname="NullTrace.AI.Tests.NavigationTests" runstate="Runnable" seed="2127626512" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000212" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-suite type="ParameterizedMethod" id="1201" name="ConstrainedRandomGridsMatchIndependentDijkstra" fullname="NullTrace.AI.Tests.NavigationTests.ConstrainedRandomGridsMatchIndependentDijkstra" classname="NullTrace.AI.Tests.NavigationTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.005013" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1199" name="ConstrainedRandomGridsMatchIndependentDijkstra(False)" fullname="NullTrace.AI.Tests.NavigationTests.ConstrainedRandomGridsMatchIndependentDijkstra(False)" methodname="ConstrainedRandomGridsMatchIndependentDijkstra" classname="NullTrace.AI.Tests.NavigationTests" runstate="Runnable" seed="1031826682" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.002972" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1200" name="ConstrainedRandomGridsMatchIndependentDijkstra(True)" fullname="NullTrace.AI.Tests.NavigationTests.ConstrainedRandomGridsMatchIndependentDijkstra(True)" methodname="ConstrainedRandomGridsMatchIndependentDijkstra" classname="NullTrace.AI.Tests.NavigationTests" runstate="Runnable" seed="807809299" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.001824" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-case id="1197" name="DiagonalConstraintChecksActualSegmentAndKeepsWallCornerRule" fullname="NullTrace.AI.Tests.NavigationTests.DiagonalConstraintChecksActualSegmentAndKeepsWallCornerRule" methodname="DiagonalConstraintChecksActualSegmentAndKeepsWallCornerRule" classname="NullTrace.AI.Tests.NavigationTests" runstate="Runnable" seed="1040479785" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000309" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-suite type="ParameterizedMethod" id="1168" name="DiagonalNeedsBothOrthogonalCellsOpen" fullname="NullTrace.AI.Tests.NavigationTests.DiagonalNeedsBothOrthogonalCellsOpen" classname="NullTrace.AI.Tests.NavigationTests" runstate="Runnable" testcasecount="4" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000690" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1164" name="DiagonalNeedsBothOrthogonalCellsOpen(False,False,14)" fullname="NullTrace.AI.Tests.NavigationTests.DiagonalNeedsBothOrthogonalCellsOpen(False,False,14)" methodname="DiagonalNeedsBothOrthogonalCellsOpen" classname="NullTrace.AI.Tests.NavigationTests" runstate="Runnable" seed="1853473689" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000263" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1165" name="DiagonalNeedsBothOrthogonalCellsOpen(True,False,20)" fullname="NullTrace.AI.Tests.NavigationTests.DiagonalNeedsBothOrthogonalCellsOpen(True,False,20)" methodname="DiagonalNeedsBothOrthogonalCellsOpen" classname="NullTrace.AI.Tests.NavigationTests" runstate="Runnable" seed="883260199" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000050" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1166" name="DiagonalNeedsBothOrthogonalCellsOpen(False,True,20)" fullname="NullTrace.AI.Tests.NavigationTests.DiagonalNeedsBothOrthogonalCellsOpen(False,True,20)" methodname="DiagonalNeedsBothOrthogonalCellsOpen" classname="NullTrace.AI.Tests.NavigationTests" runstate="Runnable" seed="768301" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000036" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1167" name="DiagonalNeedsBothOrthogonalCellsOpen(True,True,-1)" fullname="NullTrace.AI.Tests.NavigationTests.DiagonalNeedsBothOrthogonalCellsOpen(True,True,-1)" methodname="DiagonalNeedsBothOrthogonalCellsOpen" classname="NullTrace.AI.Tests.NavigationTests" runstate="Runnable" seed="2046996349" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000037" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-suite type="ParameterizedMethod" id="1186" name="EqualCostRoutesAreDeterministicAcrossOtherSearches" fullname="NullTrace.AI.Tests.NavigationTests.EqualCostRoutesAreDeterministicAcrossOtherSearches" classname="NullTrace.AI.Tests.NavigationTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000848" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1184" name="EqualCostRoutesAreDeterministicAcrossOtherSearches(False)" fullname="NullTrace.AI.Tests.NavigationTests.EqualCostRoutesAreDeterministicAcrossOtherSearches(False)" methodname="EqualCostRoutesAreDeterministicAcrossOtherSearches" classname="NullTrace.AI.Tests.NavigationTests" runstate="Runnable" seed="656325825" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000515" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1185" name="EqualCostRoutesAreDeterministicAcrossOtherSearches(True)" fullname="NullTrace.AI.Tests.NavigationTests.EqualCostRoutesAreDeterministicAcrossOtherSearches(True)" methodname="EqualCostRoutesAreDeterministicAcrossOtherSearches" classname="NullTrace.AI.Tests.NavigationTests" runstate="Runnable" seed="1305333826" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000130" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-suite type="ParameterizedMethod" id="1163" name="FindsShortestDetourAroundWall" fullname="NullTrace.AI.Tests.NavigationTests.FindsShortestDetourAroundWall" classname="NullTrace.AI.Tests.NavigationTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000488" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1161" name="FindsShortestDetourAroundWall(False,120)" fullname="NullTrace.AI.Tests.NavigationTests.FindsShortestDetourAroundWall(False,120)" methodname="FindsShortestDetourAroundWall" classname="NullTrace.AI.Tests.NavigationTests" runstate="Runnable" seed="976336249" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000244" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1162" name="FindsShortestDetourAroundWall(True,108)" fullname="NullTrace.AI.Tests.NavigationTests.FindsShortestDetourAroundWall(True,108)" methodname="FindsShortestDetourAroundWall" classname="NullTrace.AI.Tests.NavigationTests" runstate="Runnable" seed="1034855758" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000062" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-suite type="ParameterizedMethod" id="1190" name="FixedSeedRandomGridsMatchIndependentDijkstra" fullname="NullTrace.AI.Tests.NavigationTests.FixedSeedRandomGridsMatchIndependentDijkstra" classname="NullTrace.AI.Tests.NavigationTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.010025" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1188" name="FixedSeedRandomGridsMatchIndependentDijkstra(False)" fullname="NullTrace.AI.Tests.NavigationTests.FixedSeedRandomGridsMatchIndependentDijkstra(False)" methodname="FixedSeedRandomGridsMatchIndependentDijkstra" classname="NullTrace.AI.Tests.NavigationTests" runstate="Runnable" seed="381467670" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.004996" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1189" name="FixedSeedRandomGridsMatchIndependentDijkstra(True)" fullname="NullTrace.AI.Tests.NavigationTests.FixedSeedRandomGridsMatchIndependentDijkstra(True)" methodname="FixedSeedRandomGridsMatchIndependentDijkstra" classname="NullTrace.AI.Tests.NavigationTests" runstate="Runnable" seed="961390031" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.004794" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-case id="1148" name="GridStartsWalkableAndCanBeChanged" fullname="NullTrace.AI.Tests.NavigationTests.GridStartsWalkableAndCanBeChanged" methodname="GridStartsWalkableAndCanBeChanged" classname="NullTrace.AI.Tests.NavigationTests" runstate="Runnable" seed="970124072" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000217" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-suite type="ParameterizedMethod" id="1154" name="InvalidDimensionsThrow" fullname="NullTrace.AI.Tests.NavigationTests.InvalidDimensionsThrow" classname="NullTrace.AI.Tests.NavigationTests" runstate="Runnable" testcasecount="5" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.001042" total="5" passed="5" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1149" name="InvalidDimensionsThrow(0,2)" fullname="NullTrace.AI.Tests.NavigationTests.InvalidDimensionsThrow(0,2)" methodname="InvalidDimensionsThrow" classname="NullTrace.AI.Tests.NavigationTests" runstate="Runnable" seed="1277794353" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000565" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1150" name="InvalidDimensionsThrow(2,0)" fullname="NullTrace.AI.Tests.NavigationTests.InvalidDimensionsThrow(2,0)" methodname="InvalidDimensionsThrow" classname="NullTrace.AI.Tests.NavigationTests" runstate="Runnable" seed="1111585673" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000038" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1151" name="InvalidDimensionsThrow(-1,2)" fullname="NullTrace.AI.Tests.NavigationTests.InvalidDimensionsThrow(-1,2)" methodname="InvalidDimensionsThrow" classname="NullTrace.AI.Tests.NavigationTests" runstate="Runnable" seed="1176778093" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000026" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1152" name="InvalidDimensionsThrow(2,-1)" fullname="NullTrace.AI.Tests.NavigationTests.InvalidDimensionsThrow(2,-1)" methodname="InvalidDimensionsThrow" classname="NullTrace.AI.Tests.NavigationTests" runstate="Runnable" seed="970191469" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000035" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1153" name="InvalidDimensionsThrow(50000,50000)" fullname="NullTrace.AI.Tests.NavigationTests.InvalidDimensionsThrow(50000,50000)" methodname="InvalidDimensionsThrow" classname="NullTrace.AI.Tests.NavigationTests" runstate="Runnable" seed="1009854925" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000024" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-suite type="ParameterizedMethod" id="1171" name="MovementModeUsesCorrectShortestCost" fullname="NullTrace.AI.Tests.NavigationTests.MovementModeUsesCorrectShortestCost" classname="NullTrace.AI.Tests.NavigationTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000421" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1169" name="MovementModeUsesCorrectShortestCost(False,70)" fullname="NullTrace.AI.Tests.NavigationTests.MovementModeUsesCorrectShortestCost(False,70)" methodname="MovementModeUsesCorrectShortestCost" classname="NullTrace.AI.Tests.NavigationTests" runstate="Runnable" seed="548590797" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000183" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1170" name="MovementModeUsesCorrectShortestCost(True,52)" fullname="NullTrace.AI.Tests.NavigationTests.MovementModeUsesCorrectShortestCost(True,52)" methodname="MovementModeUsesCorrectShortestCost" classname="NullTrace.AI.Tests.NavigationTests" runstate="Runnable" seed="1645981185" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000045" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-case id="1187" name="NullArgumentsThrowAndValidOutputListIsCleared" fullname="NullTrace.AI.Tests.NavigationTests.NullArgumentsThrowAndValidOutputListIsCleared" methodname="NullArgumentsThrowAndValidOutputListIsCleared" classname="NullTrace.AI.Tests.NavigationTests" runstate="Runnable" seed="778120222" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000308" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1191" name="NullTraversalPredicatePreservesOriginalPath" fullname="NullTrace.AI.Tests.NavigationTests.NullTraversalPredicatePreservesOriginalPath" methodname="NullTraversalPredicatePreservesOriginalPath" classname="NullTrace.AI.Tests.NavigationTests" runstate="Runnable" seed="2063422872" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000200" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-suite type="ParameterizedMethod" id="1160" name="OutsideCellsAreNotWalkableAndCannotBeWritten" fullname="NullTrace.AI.Tests.NavigationTests.OutsideCellsAreNotWalkableAndCannotBeWritten" classname="NullTrace.AI.Tests.NavigationTests" runstate="Runnable" testcasecount="5" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000647" total="5" passed="5" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1155" name="OutsideCellsAreNotWalkableAndCannotBeWritten(-1,0)" fullname="NullTrace.AI.Tests.NavigationTests.OutsideCellsAreNotWalkableAndCannotBeWritten(-1,0)" methodname="OutsideCellsAreNotWalkableAndCannotBeWritten" classname="NullTrace.AI.Tests.NavigationTests" runstate="Runnable" seed="1865731206" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000220" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1156" name="OutsideCellsAreNotWalkableAndCannotBeWritten(0,-1)" fullname="NullTrace.AI.Tests.NavigationTests.OutsideCellsAreNotWalkableAndCannotBeWritten(0,-1)" methodname="OutsideCellsAreNotWalkableAndCannotBeWritten" classname="NullTrace.AI.Tests.NavigationTests" runstate="Runnable" seed="2125987936" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000033" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1157" name="OutsideCellsAreNotWalkableAndCannotBeWritten(3,0)" fullname="NullTrace.AI.Tests.NavigationTests.OutsideCellsAreNotWalkableAndCannotBeWritten(3,0)" methodname="OutsideCellsAreNotWalkableAndCannotBeWritten" classname="NullTrace.AI.Tests.NavigationTests" runstate="Runnable" seed="1009375931" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000025" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1158" name="OutsideCellsAreNotWalkableAndCannotBeWritten(0,2)" fullname="NullTrace.AI.Tests.NavigationTests.OutsideCellsAreNotWalkableAndCannotBeWritten(0,2)" methodname="OutsideCellsAreNotWalkableAndCannotBeWritten" classname="NullTrace.AI.Tests.NavigationTests" runstate="Runnable" seed="2092464127" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000030" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1159" name="OutsideCellsAreNotWalkableAndCannotBeWritten(int.MaxValue,int.MinValue)" fullname="NullTrace.AI.Tests.NavigationTests.OutsideCellsAreNotWalkableAndCannotBeWritten(int.MaxValue,int.MinValue)" methodname="OutsideCellsAreNotWalkableAndCannotBeWritten" classname="NullTrace.AI.Tests.NavigationTests" runstate="Runnable" seed="88973515" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000024" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-suite type="ParameterizedMethod" id="1178" name="OutsideEndpointsClearPreviousPath" fullname="NullTrace.AI.Tests.NavigationTests.OutsideEndpointsClearPreviousPath" classname="NullTrace.AI.Tests.NavigationTests" runstate="Runnable" testcasecount="5" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000660" total="5" passed="5" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1173" name="OutsideEndpointsClearPreviousPath(-1,0,1,1)" fullname="NullTrace.AI.Tests.NavigationTests.OutsideEndpointsClearPreviousPath(-1,0,1,1)" methodname="OutsideEndpointsClearPreviousPath" classname="NullTrace.AI.Tests.NavigationTests" runstate="Runnable" seed="204208" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000247" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1174" name="OutsideEndpointsClearPreviousPath(0,0,2,1)" fullname="NullTrace.AI.Tests.NavigationTests.OutsideEndpointsClearPreviousPath(0,0,2,1)" methodname="OutsideEndpointsClearPreviousPath" classname="NullTrace.AI.Tests.NavigationTests" runstate="Runnable" seed="1409151162" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000028" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1175" name="OutsideEndpointsClearPreviousPath(0,2,1,1)" fullname="NullTrace.AI.Tests.NavigationTests.OutsideEndpointsClearPreviousPath(0,2,1,1)" methodname="OutsideEndpointsClearPreviousPath" classname="NullTrace.AI.Tests.NavigationTests" runstate="Runnable" seed="753243699" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000027" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1176" name="OutsideEndpointsClearPreviousPath(0,0,1,-1)" fullname="NullTrace.AI.Tests.NavigationTests.OutsideEndpointsClearPreviousPath(0,0,1,-1)" methodname="OutsideEndpointsClearPreviousPath" classname="NullTrace.AI.Tests.NavigationTests" runstate="Runnable" seed="886103533" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000021" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1177" name="OutsideEndpointsClearPreviousPath(-1,-1,-1,-1)" fullname="NullTrace.AI.Tests.NavigationTests.OutsideEndpointsClearPreviousPath(-1,-1,-1,-1)" methodname="OutsideEndpointsClearPreviousPath" classname="NullTrace.AI.Tests.NavigationTests" runstate="Runnable" seed="1657611675" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000020" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-case id="1183" name="RepeatedSearchReplacesLongerRouteAfterObstacleChanges" fullname="NullTrace.AI.Tests.NavigationTests.RepeatedSearchReplacesLongerRouteAfterObstacleChanges" methodname="RepeatedSearchReplacesLongerRouteAfterObstacleChanges" classname="NullTrace.AI.Tests.NavigationTests" runstate="Runnable" seed="357161567" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000218" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1182" name="RepeatedSearchSeesBlockedAndReopenedPassage" fullname="NullTrace.AI.Tests.NavigationTests.RepeatedSearchSeesBlockedAndReopenedPassage" methodname="RepeatedSearchSeesBlockedAndReopenedPassage" classname="NullTrace.AI.Tests.NavigationTests" runstate="Runnable" seed="1285442723" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000231" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-suite type="ParameterizedMethod" id="1195" name="RestrictedEndpointClearsPath" fullname="NullTrace.AI.Tests.NavigationTests.RestrictedEndpointClearsPath" classname="NullTrace.AI.Tests.NavigationTests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000501" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1192" name="RestrictedEndpointClearsPath(0,0,0,0)" fullname="NullTrace.AI.Tests.NavigationTests.RestrictedEndpointClearsPath(0,0,0,0)" methodname="RestrictedEndpointClearsPath" classname="NullTrace.AI.Tests.NavigationTests" runstate="Runnable" seed="1293672123" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000226" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1193" name="RestrictedEndpointClearsPath(0,0,2,0)" fullname="NullTrace.AI.Tests.NavigationTests.RestrictedEndpointClearsPath(0,0,2,0)" methodname="RestrictedEndpointClearsPath" classname="NullTrace.AI.Tests.NavigationTests" runstate="Runnable" seed="20010913" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000027" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1194" name="RestrictedEndpointClearsPath(2,0,0,0)" fullname="NullTrace.AI.Tests.NavigationTests.RestrictedEndpointClearsPath(2,0,0,0)" methodname="RestrictedEndpointClearsPath" classname="NullTrace.AI.Tests.NavigationTests" runstate="Runnable" seed="510547746" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000020" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-case id="1172" name="SameStartAndGoalReturnsOneCellUnlessBlocked" fullname="NullTrace.AI.Tests.NavigationTests.SameStartAndGoalReturnsOneCellUnlessBlocked" methodname="SameStartAndGoalReturnsOneCellUnlessBlocked" classname="NullTrace.AI.Tests.NavigationTests" runstate="Runnable" seed="1178701155" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000218" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1196" name="TraversalConstraintFindsAlternativeInsideAllowedArea" fullname="NullTrace.AI.Tests.NavigationTests.TraversalConstraintFindsAlternativeInsideAllowedArea" methodname="TraversalConstraintFindsAlternativeInsideAllowedArea" classname="NullTrace.AI.Tests.NavigationTests" runstate="Runnable" seed="128948673" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000550" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-suite type="TestFixture" id="1202" name="PathRequestBudgetTests" fullname="NullTrace.AI.Tests.PathRequestBudgetTests" classname="NullTrace.AI.Tests.PathRequestBudgetTests" runstate="Runnable" testcasecount="4" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.006462" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1204" name="CancelledDisabledDestroyedAndChangedWorldWaitersDoNotBlockQueue" fullname="NullTrace.AI.Tests.PathRequestBudgetTests.CancelledDisabledDestroyedAndChangedWorldWaitersDoNotBlockQueue" methodname="CancelledDisabledDestroyedAndChangedWorldWaitersDoNotBlockQueue" classname="NullTrace.AI.Tests.PathRequestBudgetTests" runstate="Runnable" seed="1013796955" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000617" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1203" name="FloodIsLimitedAndEarlierWaiterCannotBeOvertaken" fullname="NullTrace.AI.Tests.PathRequestBudgetTests.FloodIsLimitedAndEarlierWaiterCannotBeOvertaken" methodname="FloodIsLimitedAndEarlierWaiterCannotBeOvertaken" classname="NullTrace.AI.Tests.PathRequestBudgetTests" runstate="Runnable" seed="1365790261" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000442" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1205" name="MapRebuildEveryFrameDoesNotStarveWaitingAgents" fullname="NullTrace.AI.Tests.PathRequestBudgetTests.MapRebuildEveryFrameDoesNotStarveWaitingAgents" methodname="MapRebuildEveryFrameDoesNotStarveWaitingAgents" classname="NullTrace.AI.Tests.PathRequestBudgetTests" runstate="Runnable" seed="2064231409" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.004363" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1206" name="WorldsHaveIndependentLimitsAndDisableDropsOldTickets" fullname="NullTrace.AI.Tests.PathRequestBudgetTests.WorldsHaveIndependentLimitsAndDisableDropsOldTickets" methodname="WorldsHaveIndependentLimitsAndDisableDropsOldTickets" classname="NullTrace.AI.Tests.PathRequestBudgetTests" runstate="Runnable" seed="649649600" result="Passed" start-time="2026-11-05 16:45:50Z" end-time="2026-11-05 16:45:50Z" duration="0.000507" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <output><![CDATA[Saving results to: C:/Users/max03/AppData/LocalLow/DefaultCompany/NullTraceAI\TestResults.xml
+]]></output>
+              </test-case>
+            </test-suite>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>
