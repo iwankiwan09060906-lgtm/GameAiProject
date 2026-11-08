@@ -1,0 +1,2717 @@
+fileFormatVersion: 2
+guid: d6389f349d69a74408c6512297f3ac2f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4466014530234834208
+    second: canned food and drink updated_0
+  - first:
+      213: -7047611437864971205
+    second: canned food and drink updated_1
+  - first:
+      213: 1109718836412124463
+    second: canned food and drink updated_2
+  - first:
+      213: 2355588043002614351
+    second: canned food and drink updated_3
+  - first:
+      213: 1029359032224099380
+    second: canned food and drink updated_4
+  - first:
+      213: 9007875014890852185
+    second: canned food and drink updated_5
+  - first:
+      213: -3211489064930464867
+    second: canned food and drink updated_6
+  - first:
+      213: -8266919247107627292
+    second: canned food and drink updated_7
+  - first:
+      213: 8186312567153994186
+    second: canned food and drink updated_8
+  - first:
+      213: 8640774468640096274
+    second: canned food and drink updated_9
+  - first:
+      213: 6605889006155651622
+    second: canned food and drink updated_10
+  - first:
+      213: -4233283843992637516
+    second: canned food and drink updated_11
+  - first:
+      213: 4495558148199331405
+    second: canned food and drink updated_12
+  - first:
+      213: -2143743972867064018
+    second: canned food and drink updated_13
+  - first:
+      213: -7199126824219311605
+    second: canned food and drink updated_14
+  - first:
+      213: 3597464649214070237
+    second: canned food and drink updated_15
+  - first:
+      213: -3892297014275072939
+    second: canned food and drink updated_16
+  - first:
+      213: 7244584631244538604
+    second: canned food and drink updated_17
+  - first:
+      213: 5679313061920628349
+    second: canned food and drink updated_18
+  - first:
+      213: -1030053155960245165
+    second: canned food and drink updated_19
+  - first:
+      213: 9096964360700380568
+    second: canned food and drink updated_20
+  - first:
+      213: 1119861433219492163
+    second: canned food and drink updated_21
+  - first:
+      213: -637300094472225839
+    second: canned food and drink updated_22
+  - first:
+      213: -4593150660110750292
+    second: canned food and drink updated_23
+  - first:
+      213: 3361388413483213827
+    second: canned food and drink updated_24
+  - first:
+      213: -598829306798694517
+    second: canned food and drink updated_25
+  - first:
+      213: -7514371648537948987
+    second: canned food and drink updated_26
+  - first:
+      213: -2834204373851728982
+    second: canned food and drink updated_27
+  - first:
+      213: 3209925015813011919
+    second: canned food and drink updated_28
+  - first:
+      213: 15746161010150165
+    second: canned food and drink updated_29
+  - first:
+      213: -4875796589543551324
+    second: canned food and drink updated_30
+  - first:
+      213: 7959586632522108172
+    second: canned food and drink updated_31
+  - first:
+      213: -8653050076522740888
+    second: canned food and drink updated_32
+  - first:
+      213: 6688008328450180712
+    second: canned food and drink updated_33
+  - first:
+      213: -262933881921890718
+    second: canned food and drink updated_34
+  - first:
+      213: 7032668550208633602
+    second: canned food and drink updated_35
+  - first:
+      213: -7326587106429150247
+    second: canned food and drink updated_36
+  - first:
+      213: -5354651532471796709
+    second: canned food and drink updated_37
+  - first:
+      213: -833302797884491159
+    second: canned food and drink updated_38
+  - first:
+      213: 1566874396678292512
+    second: canned food and drink updated_39
+  - first:
+      213: -2561755868448083438
+    second: canned food and drink updated_40
+  - first:
+      213: 2013762896602417930
+    second: canned food and drink updated_41
+  - first:
+      213: -7565844532753201292
+    second: canned food and drink updated_42
+  - first:
+      213: -9101596381754222463
+    second: canned food and drink updated_43
+  - first:
+      213: -4598021755736867401
+    second: canned food and drink updated_44
+  - first:
+      213: 5119670747760994126
+    second: canned food and drink updated_45
+  - first:
+      213: 2833995426801902086
+    second: canned food and drink updated_46
+  - first:
+      213: -291179151513914399
+    second: canned food and drink updated_47
+  - first:
+      213: -1903556657613336119
+    second: canned food and drink updated_48
+  - first:
+      213: 7996010011273456519
+    second: canned food and drink updated_49
+  - first:
+      213: -5652501847383724890
+    second: canned food and drink updated_50
+  - first:
+      213: 6264403191113870462
+    second: canned food and drink updated_51
+  - first:
+      213: 1465985645933370295
+    second: canned food and drink updated_52
+  - first:
+      213: 2644973581094630832
+    second: canned food and drink updated_53
+  - first:
+      213: -3179354840359100996
+    second: canned food and drink updated_54
+  - first:
+      213: -163136491685173951
+    second: canned food and drink updated_55
+  - first:
+      213: 3019098399024291585
+    second: canned food and drink updated_56
+  - first:
+      213: -102918610167654998
+    second: canned food and drink updated_57
+  - first:
+      213: -7102759435865564933
+    second: canned food and drink updated_58
+  - first:
+      213: -8562056855946359187
+    second: canned food and drink updated_59
+  - first:
+      213: -7477232726212984055
+    second: canned food and drink updated_60
+  - first:
+      213: -1590757660070875966
+    second: canned food and drink updated_61
+  - first:
+      213: 6721848287530466497
+    second: canned food and drink updated_62
+  - first:
+      213: 8830618927275619465
+    second: canned food and drink updated_63
+  - first:
+      213: 543516936449270397
+    second: canned food and drink updated_64
+  - first:
+      213: -5228135725407470320
+    second: canned food and drink updated_65
+  - first:
+      213: 9098769092179048436
+    second: canned food and drink updated_66
+  - first:
+      213: -3222761882830190787
+    second: canned food and drink updated_67
+  - first:
+      213: -196941025308064247
+    second: canned food and drink updated_68
+  - first:
+      213: -5280350192509316445
+    second: canned food and drink updated_69
+  - first:
+      213: -4560577642939231104
+    second: canned food and drink updated_70
+  - first:
+      213: 4720791474159643417
+    second: canned food and drink updated_71
+  - first:
+      213: -5684134408969269999
+    second: canned food and drink updated_72
+  - first:
+      213: 4738457728130001215
+    second: canned food and drink updated_73
+  - first:
+      213: -1727139685607488226
+    second: canned food and drink updated_74
+  - first:
+      213: 2707062192660416592
+    second: canned food and drink updated_75
+  - first:
+      213: -5307831080648841154
+    second: canned food and drink updated_76
+  - first:
+      213: 6761405779944909683
+    second: canned food and drink updated_77
+  - first:
+      213: 1363626174479119962
+    second: canned food and drink updated_78
+  - first:
+      213: -5957443605127951564
+    second: canned food and drink updated_79
+  - first:
+      213: 6499279116598660181
+    second: canned food and drink updated_80
+  - first:
+      213: -6448316180898136197
+    second: canned food and drink updated_81
+  - first:
+      213: 6911963328267874912
+    second: canned food and drink updated_82
+  - first:
+      213: 8391990823527794206
+    second: canned food and drink updated_83
+  - first:
+      213: 3812332816431274734
+    second: canned food and drink updated_84
+  - first:
+      213: 1390802528836988314
+    second: canned food and drink updated_85
+  - first:
+      213: -1272369092254064283
+    second: canned food and drink updated_86
+  - first:
+      213: 8199284720943052271
+    second: canned food and drink updated_87
+  - first:
+      213: 341836163523476666
+    second: canned food and drink updated_88
+  - first:
+      213: 3402360266384687306
+    second: canned food and drink updated_89
+  - first:
+      213: -6172428049006083416
+    second: canned food and drink updated_90
+  - first:
+      213: 4752693183002434521
+    second: canned food and drink updated_91
+  - first:
+      213: -6272716893764103375
+    second: canned food and drink updated_92
+  - first:
+      213: -8976188443107101153
+    second: canned food and drink updated_93
+  - first:
+      213: 5927826231432267378
+    second: canned food and drink updated_94
+  - first:
+      213: 6038682706929100742
+    second: canned food and drink updated_95
+  - first:
+      213: 6951775055461029135
+    second: canned food and drink updated_96
+  - first:
+      213: 8641038689159929730
+    second: canned food and drink updated_97
+  - first:
+      213: -6084047715419087110
+    second: canned food and drink updated_98
+  - first:
+      213: -6523519561722790393
+    second: canned food and drink updated_99
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: canned food and drink updated_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 287
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e2ae9b52778502c0800000000000000
+      internalID: -4466014530234834208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canned food and drink updated_1
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 287
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b341413bcbad13e90800000000000000
+      internalID: -7047611437864971205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canned food and drink updated_2
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 287
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2d87e4f663866f00800000000000000
+      internalID: 1109718836412124463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canned food and drink updated_3
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 287
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f42145c38dab0b020800000000000000
+      internalID: 2355588043002614351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canned food and drink updated_4
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 287
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43cae060694094e00800000000000000
+      internalID: 1029359032224099380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canned food and drink updated_5
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 287
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95f8faba996620d70800000000000000
+      internalID: 9007875014890852185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canned food and drink updated_6
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 287
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9ba4cce5bf7e63d0800000000000000
+      internalID: -3211489064930464867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canned food and drink updated_7
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 287
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e66f49aeb0064d80800000000000000
+      internalID: -8266919247107627292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canned food and drink updated_8
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 287
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac9a78928ef9b9170800000000000000
+      internalID: 8186312567153994186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canned food and drink updated_9
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 287
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 210ce8339923ae770800000000000000
+      internalID: 8640774468640096274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canned food and drink updated_10
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 287
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62ad0953d05dcab50800000000000000
+      internalID: 6605889006155651622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canned food and drink updated_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 262
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bf2b65d5ca5045c0800000000000000
+      internalID: -4233283843992637516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canned food and drink updated_12
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 255
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d46b88a315e636e30800000000000000
+      internalID: 4495558148199331405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canned food and drink updated_13
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 257
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2fbfd7f634ef32e0800000000000000
+      internalID: -2143743972867064018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canned food and drink updated_14
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 255
+        width: 8
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b020c65cb40971c90800000000000000
+      internalID: -7199126824219311605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canned food and drink updated_15
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 255
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddd0e6cc903cce130800000000000000
+      internalID: 3597464649214070237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canned food and drink updated_16
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 255
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55c12dfdc78cbf9c0800000000000000
+      internalID: -3892297014275072939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canned food and drink updated_17
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 255
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce2c592b65fe98460800000000000000
+      internalID: 7244584631244538604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canned food and drink updated_18
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 255
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7ed308b329f0de40800000000000000
+      internalID: 5679313061920628349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canned food and drink updated_19
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 255
+        width: 10
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3543833bc1484b1f0800000000000000
+      internalID: -1030053155960245165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canned food and drink updated_20
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 255
+        width: 10
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8954fe563e8ee3e70800000000000000
+      internalID: 9096964360700380568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canned food and drink updated_21
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 255
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34925bc4a0c8a8f00800000000000000
+      internalID: 1119861433219492163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canned food and drink updated_22
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 255
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1dbf8adc0fad727f0800000000000000
+      internalID: -637300094472225839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canned food and drink updated_23
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 224
+        width: 46
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cad6f386fc9d140c0800000000000000
+      internalID: -4593150660110750292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canned food and drink updated_24
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 224
+        width: 29
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 304e7c1e3fc06ae20800000000000000
+      internalID: 3361388413483213827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canned food and drink updated_25
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 223
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8f9b2f0be780b7f0800000000000000
+      internalID: -598829306798694517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canned food and drink updated_26
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 223
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cc01aa6cc697b790800000000000000
+      internalID: -7514371648537948987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canned food and drink updated_27
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 223
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa395b36322eaa8d0800000000000000
+      internalID: -2834204373851728982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canned food and drink updated_28
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 223
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc9bc238bc1fb8c20800000000000000
+      internalID: 3209925015813011919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canned food and drink updated_29
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 223
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51b069dcc01f73000800000000000000
+      internalID: 15746161010150165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canned food and drink updated_30
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 223
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ae023bb5d0b55cb0800000000000000
+      internalID: -4875796589543551324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canned food and drink updated_31
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 223
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0d8d6eded1267e60800000000000000
+      internalID: 7959586632522108172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canned food and drink updated_32
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 223
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 863023d1dc03ae780800000000000000
+      internalID: -8653050076522740888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canned food and drink updated_33
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 223
+        width: 15
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8668020e32490dc50800000000000000
+      internalID: 6688008328450180712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canned food and drink updated_34
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 191
+        width: 10
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26691a8070fd95cf0800000000000000
+      internalID: -262933881921890718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canned food and drink updated_35
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 191
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20b3f3629ce099160800000000000000
+      internalID: 7032668550208633602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canned food and drink updated_36
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 191
+        width: 21
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9db555938dbb25a90800000000000000
+      internalID: -7326587106429150247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canned food and drink updated_37
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 191
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1c74072dc470b5b0800000000000000
+      internalID: -5354651532471796709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canned food and drink updated_38
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 191
+        width: 21
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96a71c535838f64f0800000000000000
+      internalID: -833302797884491159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canned food and drink updated_39
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 191
+        width: 23
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0240aad46f7aeb510800000000000000
+      internalID: 1566874396678292512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canned food and drink updated_40
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 159
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21231e34c90d27cd0800000000000000
+      internalID: -2561755868448083438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canned food and drink updated_41
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 191
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0b49d16fa252fb10800000000000000
+      internalID: 2013762896602417930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canned food and drink updated_42
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 191
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4770a67ab78b00790800000000000000
+      internalID: -7565844532753201292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canned food and drink updated_43
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 191
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1881f882052a0b180800000000000000
+      internalID: -9101596381754222463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canned food and drink updated_44
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 191
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bd39c3139b8030c0800000000000000
+      internalID: -4598021755736867401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canned food and drink updated_45
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 191
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e47a04f7b69bc0740800000000000000
+      internalID: 5119670747760994126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canned food and drink updated_46
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 159
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 602eb9553df545720800000000000000
+      internalID: 2833995426801902086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canned food and drink updated_47
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 191
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e3730cba1685fbf0800000000000000
+      internalID: -291179151513914399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canned food and drink updated_48
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 159
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c1902d2e453595e0800000000000000
+      internalID: -1903556657613336119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canned food and drink updated_49
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 159
+        width: 10
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78beb669db887fe60800000000000000
+      internalID: 7996010011273456519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canned food and drink updated_50
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 159
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ac247e94874e81b0800000000000000
+      internalID: -5652501847383724890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canned food and drink updated_51
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 159
+        width: 21
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7c6a281381afe650800000000000000
+      internalID: 6264403191113870462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canned food and drink updated_52
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 159
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bb1ea78d2a385410800000000000000
+      internalID: 1465985645933370295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canned food and drink updated_53
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 159
+        width: 21
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b530755575d4b420800000000000000
+      internalID: 2644973581094630832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canned food and drink updated_54
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 127
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbd1a7d1e99a0e3d0800000000000000
+      internalID: -3179354840359100996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canned food and drink updated_55
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 159
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 145a333a93c6cbdf0800000000000000
+      internalID: -163136491685173951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canned food and drink updated_56
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 159
+        width: 21
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10f1bcf7ffdf5e920800000000000000
+      internalID: 3019098399024291585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canned food and drink updated_57
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 159
+        width: 21
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa51e20c11c529ef0800000000000000
+      internalID: -102918610167654998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canned food and drink updated_58
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 159
+        width: 21
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf8dd24dceded6d90800000000000000
+      internalID: -7102759435865564933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canned food and drink updated_59
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 127
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6e8e9a37a67d2980800000000000000
+      internalID: -8562056855946359187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canned food and drink updated_60
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 127
+        width: 10
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 903462b93788b3890800000000000000
+      internalID: -7477232726212984055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canned food and drink updated_61
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 127
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cc6ebb165e7ce9e0800000000000000
+      internalID: -1590757660070875966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canned food and drink updated_62
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 127
+        width: 21
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1cc3254576dc84d50800000000000000
+      internalID: 6721848287530466497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canned food and drink updated_63
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 127
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 984ba13b029ac8a70800000000000000
+      internalID: 8830618927275619465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canned food and drink updated_64
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 127
+        width: 21
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d72a77626c5fa8700800000000000000
+      internalID: 543516936449270397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canned food and drink updated_65
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 95
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01dfe81f14ee177b0800000000000000
+      internalID: -5228135725407470320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canned food and drink updated_66
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 127
+        width: 10
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f7b2a03842554e70800000000000000
+      internalID: 9098769092179048436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canned food and drink updated_67
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 127
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d37cc3a74237643d0800000000000000
+      internalID: -3222761882830190787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canned food and drink updated_68
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 127
+        width: 21
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 906cfc05e23544df0800000000000000
+      internalID: -196941025308064247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canned food and drink updated_69
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 127
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a211d5f97d68b6b0800000000000000
+      internalID: -5280350192509316445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canned food and drink updated_70
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 127
+        width: 21
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 084d406fbc295b0c0800000000000000
+      internalID: -4560577642939231104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canned food and drink updated_71
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 95
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91b6afb75de938140800000000000000
+      internalID: 4720791474159643417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canned food and drink updated_72
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 95
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11dcfc1fed5ed11b0800000000000000
+      internalID: -5684134408969269999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canned food and drink updated_73
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 95
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f39a464c23262c140800000000000000
+      internalID: 4738457728130001215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canned food and drink updated_74
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 95
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e15c2e15b97f708e0800000000000000
+      internalID: -1727139685607488226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canned food and drink updated_75
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 95
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0580a6ab8ba619520800000000000000
+      internalID: 2707062192660416592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canned food and drink updated_76
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 95
+        width: 21
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e38e52611cbc656b0800000000000000
+      internalID: -5307831080648841154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canned food and drink updated_77
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 63
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37ba3efbbb655dd50800000000000000
+      internalID: 6761405779944909683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canned food and drink updated_78
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 95
+        width: 10
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a56b048e7c29ce210800000000000000
+      internalID: 1363626174479119962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canned food and drink updated_79
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 95
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43b0de2ea98e25da0800000000000000
+      internalID: -5957443605127951564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canned food and drink updated_80
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 95
+        width: 21
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55c4af00ce3123a50800000000000000
+      internalID: 6499279116598660181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canned food and drink updated_81
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 95
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7fb92e199af286a0800000000000000
+      internalID: -6448316180898136197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canned food and drink updated_82
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 95
+        width: 21
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 062fee1a60a3cef50800000000000000
+      internalID: 6911963328267874912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canned food and drink updated_83
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 63
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1646baf037567470800000000000000
+      internalID: 8391990823527794206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canned food and drink updated_84
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 63
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eea53f87f7028e430800000000000000
+      internalID: 3812332816431274734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canned food and drink updated_85
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 63
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9d2b0cf78f1d4310800000000000000
+      internalID: 1390802528836988314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canned food and drink updated_86
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 63
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 561a2094d03a75ee0800000000000000
+      internalID: -1272369092254064283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canned food and drink updated_87
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 63
+        width: 21
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe539141306b9c170800000000000000
+      internalID: 8199284720943052271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canned food and drink updated_88
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 63
+        width: 21
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abcf23afd227eb400800000000000000
+      internalID: 341836163523476666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canned food and drink updated_89
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 63
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac043c3c2ac973f20800000000000000
+      internalID: 3402360266384687306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canned food and drink updated_90
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 63
+        width: 21
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a2c5517461275aa0800000000000000
+      internalID: -6172428049006083416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canned food and drink updated_91
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 63
+        width: 23
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9dbd743e445f4f140800000000000000
+      internalID: 4752693183002434521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canned food and drink updated_92
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 63
+        width: 21
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 133599a2835d2f8a0800000000000000
+      internalID: -6272716893764103375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canned food and drink updated_93
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 63
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1672ab3b2c2e6380800000000000000
+      internalID: -8976188443107101153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canned food and drink updated_94
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1
+        width: 43
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27643ceec8ed34250800000000000000
+      internalID: 5927826231432267378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canned food and drink updated_95
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 2
+        width: 43
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c7adc97de5bdc350800000000000000
+      internalID: 6038682706929100742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canned food and drink updated_96
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 0
+        width: 61
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f051d23b49aa97060800000000000000
+      internalID: 6951775055461029135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canned food and drink updated_97
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 1
+        width: 43
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28fd8c5d7e22be770800000000000000
+      internalID: 8641038689159929730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canned food and drink updated_98
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 0
+        width: 61
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afe1be566de119ba0800000000000000
+      internalID: -6084047715419087110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canned food and drink updated_99
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 0
+        width: 44
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70e733e858dc775a0800000000000000
+      internalID: -6523519561722790393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      canned food and drink updated_0: -4466014530234834208
+      canned food and drink updated_1: -7047611437864971205
+      canned food and drink updated_10: 6605889006155651622
+      canned food and drink updated_11: -4233283843992637516
+      canned food and drink updated_12: 4495558148199331405
+      canned food and drink updated_13: -2143743972867064018
+      canned food and drink updated_14: -7199126824219311605
+      canned food and drink updated_15: 3597464649214070237
+      canned food and drink updated_16: -3892297014275072939
+      canned food and drink updated_17: 7244584631244538604
+      canned food and drink updated_18: 5679313061920628349
+      canned food and drink updated_19: -1030053155960245165
+      canned food and drink updated_2: 1109718836412124463
+      canned food and drink updated_20: 9096964360700380568
+      canned food and drink updated_21: 1119861433219492163
+      canned food and drink updated_22: -637300094472225839
+      canned food and drink updated_23: -4593150660110750292
+      canned food and drink updated_24: 3361388413483213827
+      canned food and drink updated_25: -598829306798694517
+      canned food and drink updated_26: -7514371648537948987
+      canned food and drink updated_27: -2834204373851728982
+      canned food and drink updated_28: 3209925015813011919
+      canned food and drink updated_29: 15746161010150165
+      canned food and drink updated_3: 2355588043002614351
+      canned food and drink updated_30: -4875796589543551324
+      canned food and drink updated_31: 7959586632522108172
+      canned food and drink updated_32: -8653050076522740888
+      canned food and drink updated_33: 6688008328450180712
+      canned food and drink updated_34: -262933881921890718
+      canned food and drink updated_35: 7032668550208633602
+      canned food and drink updated_36: -7326587106429150247
+      canned food and drink updated_37: -5354651532471796709
+      canned food and drink updated_38: -833302797884491159
+      canned food and drink updated_39: 1566874396678292512
+      canned food and drink updated_4: 1029359032224099380
+      canned food and drink updated_40: -2561755868448083438
+      canned food and drink updated_41: 2013762896602417930
+      canned food and drink updated_42: -7565844532753201292
+      canned food and drink updated_43: -9101596381754222463
+      canned food and drink updated_44: -4598021755736867401
+      canned food and drink updated_45: 5119670747760994126
+      canned food and drink updated_46: 2833995426801902086
+      canned food and drink updated_47: -291179151513914399
+      canned food and drink updated_48: -1903556657613336119
+      canned food and drink updated_49: 7996010011273456519
+      canned food and drink updated_5: 9007875014890852185
+      canned food and drink updated_50: -5652501847383724890
+      canned food and drink updated_51: 6264403191113870462
+      canned food and drink updated_52: 1465985645933370295
+      canned food and drink updated_53: 2644973581094630832
+      canned food and drink updated_54: -3179354840359100996
+      canned food and drink updated_55: -163136491685173951
+      canned food and drink updated_56: 3019098399024291585
+      canned food and drink updated_57: -102918610167654998
+      canned food and drink updated_58: -7102759435865564933
+      canned food and drink updated_59: -8562056855946359187
+      canned food and drink updated_6: -3211489064930464867
+      canned food and drink updated_60: -7477232726212984055
+      canned food and drink updated_61: -1590757660070875966
+      canned food and drink updated_62: 6721848287530466497
+      canned food and drink updated_63: 8830618927275619465
+      canned food and drink updated_64: 543516936449270397
+      canned food and drink updated_65: -5228135725407470320
+      canned food and drink updated_66: 9098769092179048436
+      canned food and drink updated_67: -3222761882830190787
+      canned food and drink updated_68: -196941025308064247
+      canned food and drink updated_69: -5280350192509316445
+      canned food and drink updated_7: -8266919247107627292
+      canned food and drink updated_70: -4560577642939231104
+      canned food and drink updated_71: 4720791474159643417
+      canned food and drink updated_72: -5684134408969269999
+      canned food and drink updated_73: 4738457728130001215
+      canned food and drink updated_74: -1727139685607488226
+      canned food and drink updated_75: 2707062192660416592
+      canned food and drink updated_76: -5307831080648841154
+      canned food and drink updated_77: 6761405779944909683
+      canned food and drink updated_78: 1363626174479119962
+      canned food and drink updated_79: -5957443605127951564
+      canned food and drink updated_8: 8186312567153994186
+      canned food and drink updated_80: 6499279116598660181
+      canned food and drink updated_81: -6448316180898136197
+      canned food and drink updated_82: 6911963328267874912
+      canned food and drink updated_83: 8391990823527794206
+      canned food and drink updated_84: 3812332816431274734
+      canned food and drink updated_85: 1390802528836988314
+      canned food and drink updated_86: -1272369092254064283
+      canned food and drink updated_87: 8199284720943052271
+      canned food and drink updated_88: 341836163523476666
+      canned food and drink updated_89: 3402360266384687306
+      canned food and drink updated_9: 8640774468640096274
+      canned food and drink updated_90: -6172428049006083416
+      canned food and drink updated_91: 4752693183002434521
+      canned food and drink updated_92: -6272716893764103375
+      canned food and drink updated_93: -8976188443107101153
+      canned food and drink updated_94: 5927826231432267378
+      canned food and drink updated_95: 6038682706929100742
+      canned food and drink updated_96: 6951775055461029135
+      canned food and drink updated_97: 8641038689159929730
+      canned food and drink updated_98: -6084047715419087110
+      canned food and drink updated_99: -6523519561722790393
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

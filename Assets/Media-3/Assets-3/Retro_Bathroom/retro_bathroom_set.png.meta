@@ -1,0 +1,3679 @@
+fileFormatVersion: 2
+guid: cc39ebb050d9acf4fa2ebc26679c8b65
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3722326559385984840
+    second: retro_bathroom_set_0
+  - first:
+      213: 2351550566835651989
+    second: retro_bathroom_set_1
+  - first:
+      213: 1250517418008748268
+    second: retro_bathroom_set_2
+  - first:
+      213: -1694033180111841217
+    second: retro_bathroom_set_3
+  - first:
+      213: -4165467062496239012
+    second: retro_bathroom_set_4
+  - first:
+      213: -4025846427887366135
+    second: retro_bathroom_set_5
+  - first:
+      213: -6059281792278554300
+    second: retro_bathroom_set_6
+  - first:
+      213: -1562945195105705013
+    second: retro_bathroom_set_7
+  - first:
+      213: 607552071872927318
+    second: retro_bathroom_set_8
+  - first:
+      213: 8859054394257038207
+    second: retro_bathroom_set_9
+  - first:
+      213: 444465631952000568
+    second: retro_bathroom_set_10
+  - first:
+      213: 4764823696853913906
+    second: retro_bathroom_set_11
+  - first:
+      213: -1407534331707679403
+    second: retro_bathroom_set_12
+  - first:
+      213: -3830413932227696684
+    second: retro_bathroom_set_13
+  - first:
+      213: -3512819997384673550
+    second: retro_bathroom_set_14
+  - first:
+      213: 7921773916671886936
+    second: retro_bathroom_set_15
+  - first:
+      213: 7743737826759984444
+    second: retro_bathroom_set_16
+  - first:
+      213: -4831169233646574616
+    second: retro_bathroom_set_17
+  - first:
+      213: 200116454921248283
+    second: retro_bathroom_set_18
+  - first:
+      213: 7046454427990956548
+    second: retro_bathroom_set_19
+  - first:
+      213: 609239683549887232
+    second: retro_bathroom_set_20
+  - first:
+      213: -7781215202463401921
+    second: retro_bathroom_set_21
+  - first:
+      213: -7394812645742655798
+    second: retro_bathroom_set_22
+  - first:
+      213: -1686159755453635251
+    second: retro_bathroom_set_23
+  - first:
+      213: 5285109417936237982
+    second: retro_bathroom_set_24
+  - first:
+      213: -1699280727127349987
+    second: retro_bathroom_set_25
+  - first:
+      213: 5162622642679845476
+    second: retro_bathroom_set_26
+  - first:
+      213: 2959799429612489550
+    second: retro_bathroom_set_27
+  - first:
+      213: -6081823234008213411
+    second: retro_bathroom_set_28
+  - first:
+      213: -7601100899571872380
+    second: retro_bathroom_set_29
+  - first:
+      213: 6842242234279877668
+    second: retro_bathroom_set_30
+  - first:
+      213: 45179577517360855
+    second: retro_bathroom_set_31
+  - first:
+      213: -3988311786031811346
+    second: retro_bathroom_set_32
+  - first:
+      213: -2170451170106626763
+    second: retro_bathroom_set_33
+  - first:
+      213: -3581305119876173250
+    second: retro_bathroom_set_34
+  - first:
+      213: 7498585195017453394
+    second: retro_bathroom_set_35
+  - first:
+      213: -1002761003663411497
+    second: retro_bathroom_set_36
+  - first:
+      213: -5204428183477206432
+    second: retro_bathroom_set_37
+  - first:
+      213: -4627936603430458229
+    second: retro_bathroom_set_38
+  - first:
+      213: -5147127687263919296
+    second: retro_bathroom_set_39
+  - first:
+      213: 2832621652268172196
+    second: retro_bathroom_set_40
+  - first:
+      213: -9185057729112377930
+    second: retro_bathroom_set_41
+  - first:
+      213: 1575224208937581226
+    second: retro_bathroom_set_42
+  - first:
+      213: 1360592537498044803
+    second: retro_bathroom_set_43
+  - first:
+      213: 1723075816049920990
+    second: retro_bathroom_set_44
+  - first:
+      213: 6156358817665609517
+    second: retro_bathroom_set_45
+  - first:
+      213: -9119948600299065254
+    second: retro_bathroom_set_46
+  - first:
+      213: -1215470424240593611
+    second: retro_bathroom_set_47
+  - first:
+      213: -3988902832567283266
+    second: retro_bathroom_set_48
+  - first:
+      213: 6006415152619275890
+    second: retro_bathroom_set_49
+  - first:
+      213: -1035140171765660956
+    second: retro_bathroom_set_50
+  - first:
+      213: 8127700259192081299
+    second: retro_bathroom_set_51
+  - first:
+      213: 1147952931869477720
+    second: retro_bathroom_set_52
+  - first:
+      213: 8910228183082144535
+    second: retro_bathroom_set_53
+  - first:
+      213: 3173086506910657530
+    second: retro_bathroom_set_54
+  - first:
+      213: 7692559874750277228
+    second: retro_bathroom_set_55
+  - first:
+      213: 7963188636276604811
+    second: retro_bathroom_set_56
+  - first:
+      213: 7299097760659049682
+    second: retro_bathroom_set_57
+  - first:
+      213: 1663756441728677940
+    second: retro_bathroom_set_58
+  - first:
+      213: 690681020810249262
+    second: retro_bathroom_set_59
+  - first:
+      213: -52369136486056270
+    second: retro_bathroom_set_60
+  - first:
+      213: 1408898256836676163
+    second: retro_bathroom_set_61
+  - first:
+      213: 787280918462252290
+    second: retro_bathroom_set_62
+  - first:
+      213: -4176978057318534966
+    second: retro_bathroom_set_63
+  - first:
+      213: 4740129878583784998
+    second: retro_bathroom_set_64
+  - first:
+      213: 6856358468523434562
+    second: retro_bathroom_set_65
+  - first:
+      213: 8330216001177338418
+    second: retro_bathroom_set_66
+  - first:
+      213: -8923530866350531492
+    second: retro_bathroom_set_67
+  - first:
+      213: 3436025300996806707
+    second: retro_bathroom_set_68
+  - first:
+      213: -3405394781299874680
+    second: retro_bathroom_set_69
+  - first:
+      213: 5994768215767345071
+    second: retro_bathroom_set_70
+  - first:
+      213: 3332589727587199977
+    second: retro_bathroom_set_71
+  - first:
+      213: -2304252904154823321
+    second: retro_bathroom_set_72
+  - first:
+      213: 3732023491232692341
+    second: retro_bathroom_set_73
+  - first:
+      213: -8447191412115296249
+    second: retro_bathroom_set_74
+  - first:
+      213: -6082332851697906874
+    second: retro_bathroom_set_75
+  - first:
+      213: 5274453413056815866
+    second: retro_bathroom_set_76
+  - first:
+      213: 3527549165283241424
+    second: retro_bathroom_set_77
+  - first:
+      213: 2785176057552190067
+    second: retro_bathroom_set_78
+  - first:
+      213: 6125933943110797322
+    second: retro_bathroom_set_79
+  - first:
+      213: 8146140930948073554
+    second: retro_bathroom_set_80
+  - first:
+      213: 3248520924262766557
+    second: retro_bathroom_set_81
+  - first:
+      213: 7017215688537865031
+    second: retro_bathroom_set_82
+  - first:
+      213: -6339221833438991710
+    second: retro_bathroom_set_83
+  - first:
+      213: -1768146609501094977
+    second: retro_bathroom_set_84
+  - first:
+      213: 1121664864829120618
+    second: retro_bathroom_set_85
+  - first:
+      213: 3498377404833377649
+    second: retro_bathroom_set_86
+  - first:
+      213: -7686705698399444378
+    second: retro_bathroom_set_87
+  - first:
+      213: 7785157346778890588
+    second: retro_bathroom_set_88
+  - first:
+      213: -4089354785812056990
+    second: retro_bathroom_set_89
+  - first:
+      213: 7274174946540920068
+    second: retro_bathroom_set_90
+  - first:
+      213: -8429544886896316713
+    second: retro_bathroom_set_91
+  - first:
+      213: -6953618899975859160
+    second: retro_bathroom_set_92
+  - first:
+      213: -4821245250469485512
+    second: retro_bathroom_set_93
+  - first:
+      213: 1243820393261026757
+    second: retro_bathroom_set_94
+  - first:
+      213: 1185620119442724807
+    second: retro_bathroom_set_95
+  - first:
+      213: 5387878042912127396
+    second: retro_bathroom_set_96
+  - first:
+      213: 5681050554786375315
+    second: retro_bathroom_set_97
+  - first:
+      213: -4788164905326405404
+    second: retro_bathroom_set_98
+  - first:
+      213: -6130135577519653491
+    second: retro_bathroom_set_99
+  - first:
+      213: 1891239463342112783
+    second: retro_bathroom_set_100
+  - first:
+      213: -5879737707788692692
+    second: retro_bathroom_set_101
+  - first:
+      213: -8950616583469131007
+    second: retro_bathroom_set_102
+  - first:
+      213: -6878876516905847489
+    second: retro_bathroom_set_103
+  - first:
+      213: -478891123128264673
+    second: retro_bathroom_set_104
+  - first:
+      213: -7094743039454326133
+    second: retro_bathroom_set_105
+  - first:
+      213: 1365080641815542313
+    second: retro_bathroom_set_106
+  - first:
+      213: 4763279060685760260
+    second: retro_bathroom_set_107
+  - first:
+      213: -4566845413063414283
+    second: retro_bathroom_set_108
+  - first:
+      213: -6056799897416374399
+    second: retro_bathroom_set_109
+  - first:
+      213: -405813436378090289
+    second: retro_bathroom_set_110
+  - first:
+      213: 290332544834725208
+    second: retro_bathroom_set_111
+  - first:
+      213: -5118715560434775370
+    second: retro_bathroom_set_112
+  - first:
+      213: 4990438578040009743
+    second: retro_bathroom_set_113
+  - first:
+      213: -7609795860479499900
+    second: retro_bathroom_set_114
+  - first:
+      213: -652679775621411641
+    second: retro_bathroom_set_115
+  - first:
+      213: 8996741120574130697
+    second: retro_bathroom_set_116
+  - first:
+      213: 5695008500410472363
+    second: retro_bathroom_set_117
+  - first:
+      213: 4804029598257809613
+    second: retro_bathroom_set_118
+  - first:
+      213: 3600717509947242635
+    second: retro_bathroom_set_119
+  - first:
+      213: 3820632261670209696
+    second: retro_bathroom_set_120
+  - first:
+      213: -1122654965226452905
+    second: retro_bathroom_set_121
+  - first:
+      213: 7756361620590747592
+    second: retro_bathroom_set_122
+  - first:
+      213: 1414106649880333932
+    second: retro_bathroom_set_123
+  - first:
+      213: 8608670681250547290
+    second: retro_bathroom_set_124
+  - first:
+      213: -6973414868690436068
+    second: retro_bathroom_set_125
+  - first:
+      213: 616577402283706540
+    second: retro_bathroom_set_126
+  - first:
+      213: 5346979958155543290
+    second: retro_bathroom_set_127
+  - first:
+      213: 5847719943331783926
+    second: retro_bathroom_set_128
+  - first:
+      213: -40734823556964042
+    second: retro_bathroom_set_129
+  - first:
+      213: -2521998951935727377
+    second: retro_bathroom_set_130
+  - first:
+      213: -5997207101933302886
+    second: retro_bathroom_set_131
+  - first:
+      213: -8419537207774375517
+    second: retro_bathroom_set_132
+  - first:
+      213: 4681424715045362322
+    second: retro_bathroom_set_133
+  - first:
+      213: 9209053399563973883
+    second: retro_bathroom_set_134
+  - first:
+      213: 1625874023389786182
+    second: retro_bathroom_set_135
+  - first:
+      213: 5449719860887077755
+    second: retro_bathroom_set_136
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: retro_bathroom_set_0
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 320
+        width: 24
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b0ebc947b3a75cc0800000000000000
+      internalID: -3722326559385984840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_1
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 320
+        width: 24
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5958b9f08c262a020800000000000000
+      internalID: 2351550566835651989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_2
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 358
+        width: 14
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce0a9d557faba5110800000000000000
+      internalID: 1250517418008748268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_3
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 362
+        width: 28
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3855bd4cc59d78e0800000000000000
+      internalID: -1694033180111841217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_4
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 351
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c526258b6c94136c0800000000000000
+      internalID: -4165467062496239012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_5
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 351
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9009f71f0025128c0800000000000000
+      internalID: -4025846427887366135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_6
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 320
+        width: 18
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4499e39305b19eba0800000000000000
+      internalID: -6059281792278554300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_7
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 320
+        width: 18
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc3225a30ad4f4ae0800000000000000
+      internalID: -1562945195105705013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_8
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 320
+        width: 25
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 656d982f3657e6800800000000000000
+      internalID: 607552071872927318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_9
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 320
+        width: 28
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7bdd87c80fa1fa70800000000000000
+      internalID: 8859054394257038207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_10
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 320
+        width: 28
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8365e5b232f0b2600800000000000000
+      internalID: 444465631952000568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_11
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 320
+        width: 21
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 231575c38ed002240800000000000000
+      internalID: 4764823696853913906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_12
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 320
+        width: 24
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55d95659bfe677ce0800000000000000
+      internalID: -1407534331707679403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_13
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 320
+        width: 29
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d76cd2b2d2a7dac0800000000000000
+      internalID: -3830413932227696684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_14
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 320
+        width: 29
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f67ff7f2d4ff3fc0800000000000000
+      internalID: -3512819997384673550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_15
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 326
+        width: 14
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 856ce26e76bcfed60800000000000000
+      internalID: 7921773916671886936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_16
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 330
+        width: 28
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c35c8cd7688477b60800000000000000
+      internalID: 7743737826759984444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_17
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 319
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e323babd2d34fcb0800000000000000
+      internalID: -4831169233646574616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_18
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 319
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1e9a410bd4f6c200800000000000000
+      internalID: 200116454921248283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_19
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 258
+        width: 30
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40a1162f7f80ac160800000000000000
+      internalID: 7046454427990956548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_20
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 258
+        width: 30
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00bff09a344747800800000000000000
+      internalID: 609239683549887232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_21
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 292
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f38bc400002930490800000000000000
+      internalID: -7781215202463401921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_22
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 291
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac641fdf319506990800000000000000
+      internalID: -7394812645742655798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_23
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 304
+        width: 32
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4560a5d2ae8998e0800000000000000
+      internalID: -1686159755453635251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_24
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 290
+        width: 14
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e95392f830b785940800000000000000
+      internalID: 5285109417936237982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_25
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 306
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1528ed8e21fa68e0800000000000000
+      internalID: -1699280727127349987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_26
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 304
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4621256d0f155a740800000000000000
+      internalID: 5162622642679845476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_27
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 305
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4bc47846e1531920800000000000000
+      internalID: 2959799429612489550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_28
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 258
+        width: 62
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d581936ddf5099ba0800000000000000
+      internalID: -6081823234008213411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_29
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 264
+        width: 20
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48dcd131107738690800000000000000
+      internalID: -7601100899571872380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_30
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 258
+        width: 28
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42c5d617f0784fe50800000000000000
+      internalID: 6842242234279877668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_31
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 257
+        width: 28
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d6460d169280a000800000000000000
+      internalID: 45179577517360855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_32
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 288
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee4f114cf8ba6a8c0800000000000000
+      internalID: -3988311786031811346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_33
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 289
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53da67b092201e1e0800000000000000
+      internalID: -2170451170106626763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_34
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 259
+        width: 42
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e323e71d7f5ac4ec0800000000000000
+      internalID: -3581305119876173250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_35
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 263
+        width: 20
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25fb4037183501860800000000000000
+      internalID: 7498585195017453394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_36
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 258
+        width: 42
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d637061e2a7512f0800000000000000
+      internalID: -1002761003663411497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_37
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 256
+        width: 16
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0624fc0342826c7b0800000000000000
+      internalID: -5204428183477206432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_38
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 256
+        width: 16
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8cef75dd2446cfb0800000000000000
+      internalID: -4627936603430458229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_39
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 275
+        width: 28
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0436e0b93aab198b0800000000000000
+      internalID: -5147127687263919296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_40
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 192
+        width: 24
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a34686826e7f4720800000000000000
+      internalID: 2832621652268172196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_41
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 192
+        width: 24
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b5fccee8ae188080800000000000000
+      internalID: -9185057729112377930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_42
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 230
+        width: 14
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aaaf15772125cd510800000000000000
+      internalID: 1575224208937581226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_43
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 234
+        width: 28
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3894e9144bbc1e210800000000000000
+      internalID: 1360592537498044803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_44
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 223
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: edbc8b0535899e710800000000000000
+      internalID: 1723075816049920990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_45
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 223
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2f6dc41ab7cf6550800000000000000
+      internalID: 6156358817665609517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_46
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 192
+        width: 18
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a507a5d411f6f6180800000000000000
+      internalID: -9119948600299065254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_47
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 192
+        width: 18
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5356528c618c12fe0800000000000000
+      internalID: -1215470424240593611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_48
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 192
+        width: 25
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb11745020294a8c0800000000000000
+      internalID: -3988902832567283266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_49
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 192
+        width: 28
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 276456902c21b5350800000000000000
+      internalID: 6006415152619275890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_50
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 192
+        width: 28
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e2cb298f7172a1f0800000000000000
+      internalID: -1035140171765660956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_51
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 192
+        width: 21
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39b8ef5c2546bc070800000000000000
+      internalID: 8127700259192081299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_52
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 192
+        width: 24
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85bc2f20c195eef00800000000000000
+      internalID: 1147952931869477720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_53
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 192
+        width: 29
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7131948f25d77ab70800000000000000
+      internalID: 8910228183082144535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_54
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 192
+        width: 29
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afbaef5cd51190c20800000000000000
+      internalID: 3173086506910657530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_55
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 198
+        width: 14
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c66e9ebf27671ca60800000000000000
+      internalID: 7692559874750277228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_56
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 202
+        width: 28
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8fb1b8bfdde28e60800000000000000
+      internalID: 7963188636276604811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_57
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 191
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2dc8ee4bdba9b4560800000000000000
+      internalID: 7299097760659049682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_58
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 191
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43871063ba9d61710800000000000000
+      internalID: 1663756441728677940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_59
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 130
+        width: 30
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e24cf72aabac59900800000000000000
+      internalID: 690681020810249262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_60
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 130
+        width: 30
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2befd8e3c82f54ff0800000000000000
+      internalID: -52369136486056270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_61
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 164
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34aca6bff796d8310800000000000000
+      internalID: 1408898256836676163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_62
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 164
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 205c26bf2dbfcea00800000000000000
+      internalID: 787280918462252290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_63
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 176
+        width: 32
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac07de266946806c0800000000000000
+      internalID: -4176978057318534966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_64
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 162
+        width: 14
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 626b332a20358c140800000000000000
+      internalID: 4740129878583784998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_65
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 178
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 242a41953bda62f50800000000000000
+      internalID: 6856358468523434562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_66
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 176
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2324374515fda9370800000000000000
+      internalID: 8330216001177338418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_67
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 177
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5c51f8b4ff392480800000000000000
+      internalID: -8923530866350531492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_68
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 176
+        width: 10
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3385b217ec63faf20800000000000000
+      internalID: 3436025300996806707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_69
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 130
+        width: 62
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 884e6ac2d7b9db0d0800000000000000
+      internalID: -3405394781299874680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_70
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 136
+        width: 20
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa76d9b3ee1b13350800000000000000
+      internalID: 5994768215767345071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_71
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 130
+        width: 28
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9eb63fe43bcbf3e20800000000000000
+      internalID: 3332589727587199977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_72
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 136
+        width: 20
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 765803f2136a500e0800000000000000
+      internalID: -2304252904154823321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_73
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 130
+        width: 28
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5787658979fcac330800000000000000
+      internalID: 3732023491232692341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_74
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 160
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70033237a2c85ca80800000000000000
+      internalID: -8447191412115296249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_75
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 161
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64b8bd83f76379ba0800000000000000
+      internalID: -6082332851697906874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_76
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 144
+        width: 10
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af229951f6f923940800000000000000
+      internalID: 5274453413056815866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_77
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 131
+        width: 42
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ddee6ca64f54f030800000000000000
+      internalID: 3527549165283241424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_78
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 131
+        width: 42
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37a325b2edee6a620800000000000000
+      internalID: 2785176057552190067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_79
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 128
+        width: 32
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0880a4f670b30550800000000000000
+      internalID: 6125933943110797322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_80
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 151
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2580e6f3408ec0170800000000000000
+      internalID: 8146140930948073554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_81
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 128
+        width: 8
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd71b18b190151d20800000000000000
+      internalID: 3248520924262766557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_82
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 136
+        width: 16
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74bf89b6d78226160800000000000000
+      internalID: 7017215688537865031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_83
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 51
+        width: 64
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2aae771445f8608a0800000000000000
+      internalID: -6339221833438991710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_84
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 51
+        width: 63
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbb30e5d6084677e0800000000000000
+      internalID: -1768146609501094977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_85
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 35
+        width: 66
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a602d217044f09f00800000000000000
+      internalID: 1121664864829120618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_86
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 96
+        width: 14
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17da859e6bbbc8030800000000000000
+      internalID: 3498377404833377649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_87
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 96
+        width: 15
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6622ee9a4e5535590800000000000000
+      internalID: -7686705698399444378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_88
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 96
+        width: 14
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c51474ffb5f6a0c60800000000000000
+      internalID: 7785157346778890588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_89
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 96
+        width: 15
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 264f0271d71bf37c0800000000000000
+      internalID: -4089354785812056990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_90
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 96
+        width: 14
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40d1e9ad29f03f460800000000000000
+      internalID: 7274174946540920068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_91
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 96
+        width: 15
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7dea556469d340b80800000000000000
+      internalID: -8429544886896316713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_92
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 112
+        width: 32
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8241f7bc378cf7f90800000000000000
+      internalID: -6953618899975859160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_93
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 98
+        width: 14
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8342abe1dfe771db0800000000000000
+      internalID: -4821245250469485512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_94
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 97
+        width: 22
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cdc5b0ce00f24110800000000000000
+      internalID: 1243820393261026757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_95
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 66
+        width: 32
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c790f9873b247010800000000000000
+      internalID: 1185620119442724807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_96
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 66
+        width: 32
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a977e8a88695ca40800000000000000
+      internalID: 5387878042912127396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_97
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 66
+        width: 32
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 396e31d416527de40800000000000000
+      internalID: 5681050554786375315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_98
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 68
+        width: 12
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e8170c23650d8db0800000000000000
+      internalID: -4788164905326405404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_99
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 66
+        width: 32
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8df4fccb226deaa0800000000000000
+      internalID: -6130135577519653491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_100
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 66
+        width: 32
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0005bd85480f3a10800000000000000
+      internalID: 1891239463342112783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_101
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 66
+        width: 32
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2319caf4b9f66ea0800000000000000
+      internalID: -5879737707788692692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_102
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 68
+        width: 12
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10b1a95c3a509c380800000000000000
+      internalID: -8950616583469131007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_103
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 49
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f35fc04f0425980a0800000000000000
+      internalID: -6878876516905847489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_104
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 47
+        width: 10
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f181adf8f03aa59f0800000000000000
+      internalID: -478891123128264673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_105
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 48
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8256a09bc86a8d90800000000000000
+      internalID: -7094743039454326133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_106
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 48
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92a7d297c9db1f210800000000000000
+      internalID: 1365080641815542313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_107
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 0
+        width: 193
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4072b3a91119a1240800000000000000
+      internalID: 4763279060685760260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_108
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 32
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fdab320b4e4f90c0800000000000000
+      internalID: -4566845413063414283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_109
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 32
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 187efd6659ce1fba0800000000000000
+      internalID: -6056799897416374399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_110
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 34
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc47a9764d24e5af0800000000000000
+      internalID: -405813436378090289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_111
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 33
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 855eb9949e7770400800000000000000
+      internalID: 290332544834725208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_112
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 0
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ba4502615ba6f8b0800000000000000
+      internalID: -5118715560434775370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_113
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 0
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f04fa7d3279914540800000000000000
+      internalID: 4990438578040009743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_114
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 0
+        width: 20
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 481a1eabbf2946690800000000000000
+      internalID: -7609795860479499900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_115
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 17
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cc010eb33731f6f0800000000000000
+      internalID: -652679775621411641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_116
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 17
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90a88f3e168dadc70800000000000000
+      internalID: 8996741120574130697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_117
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 17
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba7dbc3ce0cb80f40800000000000000
+      internalID: 5695008500410472363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_118
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 20
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc88e9e77775ba240800000000000000
+      internalID: 4804029598257809613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_119
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 15
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b883fe47f7158f130800000000000000
+      internalID: 3600717509947242635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_120
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 18
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a80046accc950530800000000000000
+      internalID: 3820632261670209696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_121
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 21
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7584958d1478b60f0800000000000000
+      internalID: -1122654965226452905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_122
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 16
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cfd8c88cc124ab60800000000000000
+      internalID: 7756361620590747592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_123
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 16
+        width: 11
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6e82ac718aef9310800000000000000
+      internalID: 1414106649880333932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_124
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 17
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a564248bf54287770800000000000000
+      internalID: 8608670681250547290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_125
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 18
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c108748af14793f90800000000000000
+      internalID: -6973414868690436068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_126
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 16
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca847af61e58e8800800000000000000
+      internalID: 616577402283706540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_127
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 17
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af28ef241f9443a40800000000000000
+      internalID: 5346979958155543290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_128
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 1
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f422405e46472150800000000000000
+      internalID: 5847719943331783926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_129
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 1
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63126efc4e74f6ff0800000000000000
+      internalID: -40734823556964042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_130
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 2
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe8a6f9b05f000dd0800000000000000
+      internalID: -2521998951935727377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_131
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 0
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9bc0d45ae3a5cca0800000000000000
+      internalID: -5997207101933302886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_132
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 0
+        width: 10
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a19c65a48bc72b80800000000000000
+      internalID: -8419537207774375517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_133
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 0
+        width: 10
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29a530f99f2c7f040800000000000000
+      internalID: 4681424715045362322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_134
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 0
+        width: 26
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf43d9676412dcf70800000000000000
+      internalID: 9209053399563973883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_135
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 0
+        width: 9
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 640fead5fc3409610800000000000000
+      internalID: 1625874023389786182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_set_136
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 0
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b73c091f65b41ab40800000000000000
+      internalID: 5449719860887077755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      retro_bathroom_set_0: -3722326559385984840
+      retro_bathroom_set_1: 2351550566835651989
+      retro_bathroom_set_10: 444465631952000568
+      retro_bathroom_set_100: 1891239463342112783
+      retro_bathroom_set_101: -5879737707788692692
+      retro_bathroom_set_102: -8950616583469131007
+      retro_bathroom_set_103: -6878876516905847489
+      retro_bathroom_set_104: -478891123128264673
+      retro_bathroom_set_105: -7094743039454326133
+      retro_bathroom_set_106: 1365080641815542313
+      retro_bathroom_set_107: 4763279060685760260
+      retro_bathroom_set_108: -4566845413063414283
+      retro_bathroom_set_109: -6056799897416374399
+      retro_bathroom_set_11: 4764823696853913906
+      retro_bathroom_set_110: -405813436378090289
+      retro_bathroom_set_111: 290332544834725208
+      retro_bathroom_set_112: -5118715560434775370
+      retro_bathroom_set_113: 4990438578040009743
+      retro_bathroom_set_114: -7609795860479499900
+      retro_bathroom_set_115: -652679775621411641
+      retro_bathroom_set_116: 8996741120574130697
+      retro_bathroom_set_117: 5695008500410472363
+      retro_bathroom_set_118: 4804029598257809613
+      retro_bathroom_set_119: 3600717509947242635
+      retro_bathroom_set_12: -1407534331707679403
+      retro_bathroom_set_120: 3820632261670209696
+      retro_bathroom_set_121: -1122654965226452905
+      retro_bathroom_set_122: 7756361620590747592
+      retro_bathroom_set_123: 1414106649880333932
+      retro_bathroom_set_124: 8608670681250547290
+      retro_bathroom_set_125: -6973414868690436068
+      retro_bathroom_set_126: 616577402283706540
+      retro_bathroom_set_127: 5346979958155543290
+      retro_bathroom_set_128: 5847719943331783926
+      retro_bathroom_set_129: -40734823556964042
+      retro_bathroom_set_13: -3830413932227696684
+      retro_bathroom_set_130: -2521998951935727377
+      retro_bathroom_set_131: -5997207101933302886
+      retro_bathroom_set_132: -8419537207774375517
+      retro_bathroom_set_133: 4681424715045362322
+      retro_bathroom_set_134: 9209053399563973883
+      retro_bathroom_set_135: 1625874023389786182
+      retro_bathroom_set_136: 5449719860887077755
+      retro_bathroom_set_14: -3512819997384673550
+      retro_bathroom_set_15: 7921773916671886936
+      retro_bathroom_set_16: 7743737826759984444
+      retro_bathroom_set_17: -4831169233646574616
+      retro_bathroom_set_18: 200116454921248283
+      retro_bathroom_set_19: 7046454427990956548
+      retro_bathroom_set_2: 1250517418008748268
+      retro_bathroom_set_20: 609239683549887232
+      retro_bathroom_set_21: -7781215202463401921
+      retro_bathroom_set_22: -7394812645742655798
+      retro_bathroom_set_23: -1686159755453635251
+      retro_bathroom_set_24: 5285109417936237982
+      retro_bathroom_set_25: -1699280727127349987
+      retro_bathroom_set_26: 5162622642679845476
+      retro_bathroom_set_27: 2959799429612489550
+      retro_bathroom_set_28: -6081823234008213411
+      retro_bathroom_set_29: -7601100899571872380
+      retro_bathroom_set_3: -1694033180111841217
+      retro_bathroom_set_30: 6842242234279877668
+      retro_bathroom_set_31: 45179577517360855
+      retro_bathroom_set_32: -3988311786031811346
+      retro_bathroom_set_33: -2170451170106626763
+      retro_bathroom_set_34: -3581305119876173250
+      retro_bathroom_set_35: 7498585195017453394
+      retro_bathroom_set_36: -1002761003663411497
+      retro_bathroom_set_37: -5204428183477206432
+      retro_bathroom_set_38: -4627936603430458229
+      retro_bathroom_set_39: -5147127687263919296
+      retro_bathroom_set_4: -4165467062496239012
+      retro_bathroom_set_40: 2832621652268172196
+      retro_bathroom_set_41: -9185057729112377930
+      retro_bathroom_set_42: 1575224208937581226
+      retro_bathroom_set_43: 1360592537498044803
+      retro_bathroom_set_44: 1723075816049920990
+      retro_bathroom_set_45: 6156358817665609517
+      retro_bathroom_set_46: -9119948600299065254
+      retro_bathroom_set_47: -1215470424240593611
+      retro_bathroom_set_48: -3988902832567283266
+      retro_bathroom_set_49: 6006415152619275890
+      retro_bathroom_set_5: -4025846427887366135
+      retro_bathroom_set_50: -1035140171765660956
+      retro_bathroom_set_51: 8127700259192081299
+      retro_bathroom_set_52: 1147952931869477720
+      retro_bathroom_set_53: 8910228183082144535
+      retro_bathroom_set_54: 3173086506910657530
+      retro_bathroom_set_55: 7692559874750277228
+      retro_bathroom_set_56: 7963188636276604811
+      retro_bathroom_set_57: 7299097760659049682
+      retro_bathroom_set_58: 1663756441728677940
+      retro_bathroom_set_59: 690681020810249262
+      retro_bathroom_set_6: -6059281792278554300
+      retro_bathroom_set_60: -52369136486056270
+      retro_bathroom_set_61: 1408898256836676163
+      retro_bathroom_set_62: 787280918462252290
+      retro_bathroom_set_63: -4176978057318534966
+      retro_bathroom_set_64: 4740129878583784998
+      retro_bathroom_set_65: 6856358468523434562
+      retro_bathroom_set_66: 8330216001177338418
+      retro_bathroom_set_67: -8923530866350531492
+      retro_bathroom_set_68: 3436025300996806707
+      retro_bathroom_set_69: -3405394781299874680
+      retro_bathroom_set_7: -1562945195105705013
+      retro_bathroom_set_70: 5994768215767345071
+      retro_bathroom_set_71: 3332589727587199977
+      retro_bathroom_set_72: -2304252904154823321
+      retro_bathroom_set_73: 3732023491232692341
+      retro_bathroom_set_74: -8447191412115296249
+      retro_bathroom_set_75: -6082332851697906874
+      retro_bathroom_set_76: 5274453413056815866
+      retro_bathroom_set_77: 3527549165283241424
+      retro_bathroom_set_78: 2785176057552190067
+      retro_bathroom_set_79: 6125933943110797322
+      retro_bathroom_set_8: 607552071872927318
+      retro_bathroom_set_80: 8146140930948073554
+      retro_bathroom_set_81: 3248520924262766557
+      retro_bathroom_set_82: 7017215688537865031
+      retro_bathroom_set_83: -6339221833438991710
+      retro_bathroom_set_84: -1768146609501094977
+      retro_bathroom_set_85: 1121664864829120618
+      retro_bathroom_set_86: 3498377404833377649
+      retro_bathroom_set_87: -7686705698399444378
+      retro_bathroom_set_88: 7785157346778890588
+      retro_bathroom_set_89: -4089354785812056990
+      retro_bathroom_set_9: 8859054394257038207
+      retro_bathroom_set_90: 7274174946540920068
+      retro_bathroom_set_91: -8429544886896316713
+      retro_bathroom_set_92: -6953618899975859160
+      retro_bathroom_set_93: -4821245250469485512
+      retro_bathroom_set_94: 1243820393261026757
+      retro_bathroom_set_95: 1185620119442724807
+      retro_bathroom_set_96: 5387878042912127396
+      retro_bathroom_set_97: 5681050554786375315
+      retro_bathroom_set_98: -4788164905326405404
+      retro_bathroom_set_99: -6130135577519653491
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

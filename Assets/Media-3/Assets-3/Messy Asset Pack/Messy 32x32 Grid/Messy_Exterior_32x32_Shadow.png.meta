@@ -1,0 +1,1304 @@
+fileFormatVersion: 2
+guid: f7c690342eb04884589320bb9f535f10
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1416466875085502985
+    second: Messy_Exterior_32x32_Shadow_0
+  - first:
+      213: -1197372237345233200
+    second: Messy_Exterior_32x32_Shadow_1
+  - first:
+      213: 6443397715024577007
+    second: Messy_Exterior_32x32_Shadow_2
+  - first:
+      213: 5943500113870837932
+    second: Messy_Exterior_32x32_Shadow_3
+  - first:
+      213: 558524323832781303
+    second: Messy_Exterior_32x32_Shadow_4
+  - first:
+      213: 3477231875523820315
+    second: Messy_Exterior_32x32_Shadow_5
+  - first:
+      213: -9036798882742612011
+    second: Messy_Exterior_32x32_Shadow_6
+  - first:
+      213: 1733688198443818791
+    second: Messy_Exterior_32x32_Shadow_7
+  - first:
+      213: 6929662479487332254
+    second: Messy_Exterior_32x32_Shadow_8
+  - first:
+      213: 318758971160230228
+    second: Messy_Exterior_32x32_Shadow_9
+  - first:
+      213: -5644133365237161208
+    second: Messy_Exterior_32x32_Shadow_10
+  - first:
+      213: -8486490121129518363
+    second: Messy_Exterior_32x32_Shadow_11
+  - first:
+      213: 1132256005159283993
+    second: Messy_Exterior_32x32_Shadow_12
+  - first:
+      213: -1177208332621987370
+    second: Messy_Exterior_32x32_Shadow_13
+  - first:
+      213: -9017636673497341606
+    second: Messy_Exterior_32x32_Shadow_14
+  - first:
+      213: 2578518200884440290
+    second: Messy_Exterior_32x32_Shadow_15
+  - first:
+      213: 4623566587511300056
+    second: Messy_Exterior_32x32_Shadow_16
+  - first:
+      213: -4320750059821715148
+    second: Messy_Exterior_32x32_Shadow_17
+  - first:
+      213: 3994812364439618454
+    second: Messy_Exterior_32x32_Shadow_18
+  - first:
+      213: 8349907365109936140
+    second: Messy_Exterior_32x32_Shadow_19
+  - first:
+      213: -2703977633725625320
+    second: Messy_Exterior_32x32_Shadow_20
+  - first:
+      213: -5216670824289711261
+    second: Messy_Exterior_32x32_Shadow_21
+  - first:
+      213: -1661308448510103144
+    second: Messy_Exterior_32x32_Shadow_22
+  - first:
+      213: 5681913971091582320
+    second: Messy_Exterior_32x32_Shadow_23
+  - first:
+      213: -3279135116006980042
+    second: Messy_Exterior_32x32_Shadow_24
+  - first:
+      213: -4528396165203122236
+    second: Messy_Exterior_32x32_Shadow_25
+  - first:
+      213: 3153971987159958364
+    second: Messy_Exterior_32x32_Shadow_26
+  - first:
+      213: 3793214586782722584
+    second: Messy_Exterior_32x32_Shadow_27
+  - first:
+      213: -2256057658589478628
+    second: Messy_Exterior_32x32_Shadow_28
+  - first:
+      213: 7913271733236306241
+    second: Messy_Exterior_32x32_Shadow_29
+  - first:
+      213: 433367073418147320
+    second: Messy_Exterior_32x32_Shadow_30
+  - first:
+      213: 7715411746847974706
+    second: Messy_Exterior_32x32_Shadow_31
+  - first:
+      213: 5042912980624465020
+    second: Messy_Exterior_32x32_Shadow_32
+  - first:
+      213: -2184657704690848462
+    second: Messy_Exterior_32x32_Shadow_33
+  - first:
+      213: -6146171806253704317
+    second: Messy_Exterior_32x32_Shadow_34
+  - first:
+      213: 8005972459239807005
+    second: Messy_Exterior_32x32_Shadow_35
+  - first:
+      213: 175788037346041039
+    second: Messy_Exterior_32x32_Shadow_36
+  - first:
+      213: 3265375814334567183
+    second: Messy_Exterior_32x32_Shadow_37
+  - first:
+      213: -3794424729923613035
+    second: Messy_Exterior_32x32_Shadow_38
+  - first:
+      213: 3157399387248701236
+    second: Messy_Exterior_32x32_Shadow_39
+  - first:
+      213: 3284565028122143069
+    second: Messy_Exterior_32x32_Shadow_40
+  - first:
+      213: -6310735391208978549
+    second: Messy_Exterior_32x32_Shadow_41
+  - first:
+      213: -2199732693793820805
+    second: Messy_Exterior_32x32_Shadow_42
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Messy_Exterior_32x32_Shadow_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 191
+        width: 32
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90a349d3e1d48a310800000000000000
+      internalID: 1416466875085502985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Exterior_32x32_Shadow_1
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 191
+        width: 16
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d66f194b44126fe0800000000000000
+      internalID: -1197372237345233200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Exterior_32x32_Shadow_2
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 194
+        width: 20
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe18a9e451c8b6950800000000000000
+      internalID: 6443397715024577007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Exterior_32x32_Shadow_3
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 208
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca8d3c11ddd8b7250800000000000000
+      internalID: 5943500113870837932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Exterior_32x32_Shadow_4
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 207
+        width: 34
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f9d770d9e640c700800000000000000
+      internalID: 558524323832781303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Exterior_32x32_Shadow_5
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 209
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1b3346b7fb914030800000000000000
+      internalID: 3477231875523820315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Exterior_32x32_Shadow_6
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 212
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5dfca7f8b47d69280800000000000000
+      internalID: -9036798882742612011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Exterior_32x32_Shadow_7
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 160
+        width: 34
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72fd7832b3c4f0810800000000000000
+      internalID: 1733688198443818791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Exterior_32x32_Shadow_8
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 192
+        width: 25
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9fe1376f4b1b2060800000000000000
+      internalID: 6929662479487332254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Exterior_32x32_Shadow_9
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 160
+        width: 28
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45979fc68957c6400800000000000000
+      internalID: 318758971160230228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Exterior_32x32_Shadow_10
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 161
+        width: 25
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 803eb14bb920ca1b0800000000000000
+      internalID: -5644133365237161208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Exterior_32x32_Shadow_11
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 192
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ea963cb23ee93a80800000000000000
+      internalID: -8486490121129518363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Exterior_32x32_Shadow_12
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 200
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91d625676d496bf00800000000000000
+      internalID: 1132256005159283993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Exterior_32x32_Shadow_13
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 193
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d1cf633247b9afe0800000000000000
+      internalID: -1177208332621987370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Exterior_32x32_Shadow_14
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 193
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a51e7a2193bead280800000000000000
+      internalID: -9017636673497341606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Exterior_32x32_Shadow_15
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 200
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2eca89264acb8c320800000000000000
+      internalID: 2578518200884440290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Exterior_32x32_Shadow_16
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 159
+        width: 20
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8dfd9fb80553a2040800000000000000
+      internalID: 4623566587511300056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Exterior_32x32_Shadow_17
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 159
+        width: 20
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 431341186bc9904c0800000000000000
+      internalID: -4320750059821715148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Exterior_32x32_Shadow_18
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 159
+        width: 20
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69303c61eac607730800000000000000
+      internalID: 3994812364439618454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Exterior_32x32_Shadow_19
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 159
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c00bbc44284d0e370800000000000000
+      internalID: 8349907365109936140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Exterior_32x32_Shadow_20
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 97
+        width: 11
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81cce2d1baa897ad0800000000000000
+      internalID: -2703977633725625320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Exterior_32x32_Shadow_21
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 170
+        width: 34
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36b41104689aa97b0800000000000000
+      internalID: -5216670824289711261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Exterior_32x32_Shadow_22
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 167
+        width: 33
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8913330a4c8d1f8e0800000000000000
+      internalID: -1661308448510103144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Exterior_32x32_Shadow_23
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 129
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07d2e3317a63ade40800000000000000
+      internalID: 5681913971091582320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Exterior_32x32_Shadow_24
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 128
+        width: 25
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63605ef4cfb2e72d0800000000000000
+      internalID: -3279135116006980042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Exterior_32x32_Shadow_25
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 129
+        width: 24
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c7a3d22ea7e721c0800000000000000
+      internalID: -4528396165203122236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Exterior_32x32_Shadow_26
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 100
+        width: 130
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c53c336dfc825cb20800000000000000
+      internalID: 3153971987159958364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Exterior_32x32_Shadow_27
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 99
+        width: 27
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81aa302c19434a430800000000000000
+      internalID: 3793214586782722584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Exterior_32x32_Shadow_28
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 128
+        width: 20
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1189fa338fd0b0e0800000000000000
+      internalID: -2256057658589478628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Exterior_32x32_Shadow_29
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 103
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14190be07b691dd60800000000000000
+      internalID: 7913271733236306241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Exterior_32x32_Shadow_30
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 99
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f57074ae01a30600800000000000000
+      internalID: 433367073418147320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Exterior_32x32_Shadow_31
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 113
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 235efb21b16a21b60800000000000000
+      internalID: 7715411746847974706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Exterior_32x32_Shadow_32
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 113
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7cd35b23a60cf540800000000000000
+      internalID: 5042912980624465020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Exterior_32x32_Shadow_33
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 100
+        width: 28
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23de41474698ea1e0800000000000000
+      internalID: -2184657704690848462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Exterior_32x32_Shadow_34
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 97
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38b1ab75e4964baa0800000000000000
+      internalID: -6146171806253704317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Exterior_32x32_Shadow_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 129
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d189c82c88dea1f60800000000000000
+      internalID: 8005972459239807005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Exterior_32x32_Shadow_36
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 96
+        height: 92
+      alignment: 9
+      pivot: {x: 0.5019274, y: 0.64683115}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fcc16c1e946807200800000000000000
+      internalID: 175788037346041039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Exterior_32x32_Shadow_37
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 63
+        width: 34
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f03509f9002f05d20800000000000000
+      internalID: 3265375814334567183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Exterior_32x32_Shadow_38
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 32
+        width: 9
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59e02f5dfce775bc0800000000000000
+      internalID: -3794424729923613035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Exterior_32x32_Shadow_39
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 31
+        width: 9
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43faefa930651db20800000000000000
+      internalID: 3157399387248701236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Exterior_32x32_Shadow_40
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 31
+        width: 8
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5924ee9d7e159d20800000000000000
+      internalID: 3284565028122143069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Exterior_32x32_Shadow_41
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 0
+        width: 30
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b87c08fe893cb68a0800000000000000
+      internalID: -6310735391208978549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Exterior_32x32_Shadow_42
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 0
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7f2b9905caf871e0800000000000000
+      internalID: -2199732693793820805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Exterior_32x32_Shadow_43
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 64
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ed1cd92f1963d64d9c474a009b81104
+      internalID: 335023985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Exterior_32x32_Shadow_44
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 64
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2abb5f9a996707e419c8e2b27898fbe0
+      internalID: 181829849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Exterior_32x32_Shadow_45
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 0
+        width: 45
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3a9f7949a395c04fa4340828dfde0e0
+      internalID: 90870436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 94e7f37d8ee6a944397a1b49d6c484cf
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Messy_Exterior_32x32_Shadow_0: 1416466875085502985
+      Messy_Exterior_32x32_Shadow_1: -1197372237345233200
+      Messy_Exterior_32x32_Shadow_10: -5644133365237161208
+      Messy_Exterior_32x32_Shadow_11: -8486490121129518363
+      Messy_Exterior_32x32_Shadow_12: 1132256005159283993
+      Messy_Exterior_32x32_Shadow_13: -1177208332621987370
+      Messy_Exterior_32x32_Shadow_14: -9017636673497341606
+      Messy_Exterior_32x32_Shadow_15: 2578518200884440290
+      Messy_Exterior_32x32_Shadow_16: 4623566587511300056
+      Messy_Exterior_32x32_Shadow_17: -4320750059821715148
+      Messy_Exterior_32x32_Shadow_18: 3994812364439618454
+      Messy_Exterior_32x32_Shadow_19: 8349907365109936140
+      Messy_Exterior_32x32_Shadow_2: 6443397715024577007
+      Messy_Exterior_32x32_Shadow_20: -2703977633725625320
+      Messy_Exterior_32x32_Shadow_21: -5216670824289711261
+      Messy_Exterior_32x32_Shadow_22: -1661308448510103144
+      Messy_Exterior_32x32_Shadow_23: 5681913971091582320
+      Messy_Exterior_32x32_Shadow_24: -3279135116006980042
+      Messy_Exterior_32x32_Shadow_25: -4528396165203122236
+      Messy_Exterior_32x32_Shadow_26: 3153971987159958364
+      Messy_Exterior_32x32_Shadow_27: 3793214586782722584
+      Messy_Exterior_32x32_Shadow_28: -2256057658589478628
+      Messy_Exterior_32x32_Shadow_29: 7913271733236306241
+      Messy_Exterior_32x32_Shadow_3: 5943500113870837932
+      Messy_Exterior_32x32_Shadow_30: 433367073418147320
+      Messy_Exterior_32x32_Shadow_31: 7715411746847974706
+      Messy_Exterior_32x32_Shadow_32: 5042912980624465020
+      Messy_Exterior_32x32_Shadow_33: -2184657704690848462
+      Messy_Exterior_32x32_Shadow_34: -6146171806253704317
+      Messy_Exterior_32x32_Shadow_35: 8005972459239807005
+      Messy_Exterior_32x32_Shadow_36: 175788037346041039
+      Messy_Exterior_32x32_Shadow_37: 3265375814334567183
+      Messy_Exterior_32x32_Shadow_38: -3794424729923613035
+      Messy_Exterior_32x32_Shadow_39: 3157399387248701236
+      Messy_Exterior_32x32_Shadow_4: 558524323832781303
+      Messy_Exterior_32x32_Shadow_40: 3284565028122143069
+      Messy_Exterior_32x32_Shadow_41: -6310735391208978549
+      Messy_Exterior_32x32_Shadow_42: -2199732693793820805
+      Messy_Exterior_32x32_Shadow_43: 335023985
+      Messy_Exterior_32x32_Shadow_44: 181829849
+      Messy_Exterior_32x32_Shadow_45: 90870436
+      Messy_Exterior_32x32_Shadow_5: 3477231875523820315
+      Messy_Exterior_32x32_Shadow_6: -9036798882742612011
+      Messy_Exterior_32x32_Shadow_7: 1733688198443818791
+      Messy_Exterior_32x32_Shadow_8: 6929662479487332254
+      Messy_Exterior_32x32_Shadow_9: 318758971160230228
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

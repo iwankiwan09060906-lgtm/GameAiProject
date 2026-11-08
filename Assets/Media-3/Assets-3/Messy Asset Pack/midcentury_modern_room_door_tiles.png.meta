@@ -1,0 +1,1131 @@
+fileFormatVersion: 2
+guid: 311b0cdf2f717624797958861592ca63
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7147782549354741367
+    second: midcentury_modern_room_door_tiles_0
+  - first:
+      213: 6389623379765965787
+    second: midcentury_modern_room_door_tiles_1
+  - first:
+      213: -424225681027217626
+    second: midcentury_modern_room_door_tiles_2
+  - first:
+      213: -409581233621289139
+    second: midcentury_modern_room_door_tiles_3
+  - first:
+      213: -4398206160091878676
+    second: midcentury_modern_room_door_tiles_4
+  - first:
+      213: 6072804903956986199
+    second: midcentury_modern_room_door_tiles_5
+  - first:
+      213: 6515085116325997361
+    second: midcentury_modern_room_door_tiles_6
+  - first:
+      213: -5916842233212582628
+    second: midcentury_modern_room_door_tiles_7
+  - first:
+      213: 7746857590180202037
+    second: midcentury_modern_room_door_tiles_8
+  - first:
+      213: 5762311211275302727
+    second: midcentury_modern_room_door_tiles_9
+  - first:
+      213: -8243557495805263339
+    second: midcentury_modern_room_door_tiles_10
+  - first:
+      213: 8369806052091982184
+    second: midcentury_modern_room_door_tiles_11
+  - first:
+      213: 6419568571836913535
+    second: midcentury_modern_room_door_tiles_12
+  - first:
+      213: 4351649793274791317
+    second: midcentury_modern_room_door_tiles_13
+  - first:
+      213: -7046445422999704705
+    second: midcentury_modern_room_door_tiles_14
+  - first:
+      213: -821736706734873872
+    second: midcentury_modern_room_door_tiles_15
+  - first:
+      213: -2849562195090008266
+    second: midcentury_modern_room_door_tiles_16
+  - first:
+      213: 973973561656897042
+    second: midcentury_modern_room_door_tiles_17
+  - first:
+      213: -8446533950188114897
+    second: midcentury_modern_room_door_tiles_18
+  - first:
+      213: -648282474675533394
+    second: midcentury_modern_room_door_tiles_19
+  - first:
+      213: 1922137384004375073
+    second: midcentury_modern_room_door_tiles_20
+  - first:
+      213: -6757580224472541093
+    second: midcentury_modern_room_door_tiles_21
+  - first:
+      213: -1105183645840913086
+    second: midcentury_modern_room_door_tiles_22
+  - first:
+      213: -4947255339635257104
+    second: midcentury_modern_room_door_tiles_23
+  - first:
+      213: 1283700706340455149
+    second: midcentury_modern_room_door_tiles_24
+  - first:
+      213: -5063019690764511408
+    second: midcentury_modern_room_door_tiles_25
+  - first:
+      213: -349461190724807152
+    second: midcentury_modern_room_door_tiles_26
+  - first:
+      213: 6390195593914281561
+    second: midcentury_modern_room_door_tiles_27
+  - first:
+      213: -6690994610278664905
+    second: midcentury_modern_room_door_tiles_28
+  - first:
+      213: -233212755197128808
+    second: midcentury_modern_room_door_tiles_29
+  - first:
+      213: 5247819962130288273
+    second: midcentury_modern_room_door_tiles_30
+  - first:
+      213: 2696322935597179982
+    second: midcentury_modern_room_door_tiles_31
+  - first:
+      213: 1720447670596693229
+    second: midcentury_modern_room_door_tiles_32
+  - first:
+      213: -3476244973640283172
+    second: midcentury_modern_room_door_tiles_33
+  - first:
+      213: -1975513049356449203
+    second: midcentury_modern_room_door_tiles_34
+  - first:
+      213: 7210986441748902391
+    second: midcentury_modern_room_door_tiles_35
+  - first:
+      213: 2258152765541579261
+    second: midcentury_modern_room_door_tiles_36
+  - first:
+      213: -5809416133503894685
+    second: midcentury_modern_room_door_tiles_37
+  - first:
+      213: 3567438755623868381
+    second: midcentury_modern_room_door_tiles_38
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: midcentury_modern_room_door_tiles_0
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 351
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98189f554a9fdcc90800000000000000
+      internalID: -7147782549354741367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_room_door_tiles_1
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 351
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd33b773c908ca850800000000000000
+      internalID: 6389623379765965787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_room_door_tiles_2
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 351
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62746c1adf8dc1af0800000000000000
+      internalID: -424225681027217626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_room_door_tiles_3
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 351
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d47365fb900e05af0800000000000000
+      internalID: -409581233621289139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_room_door_tiles_4
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 255
+        width: 34
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ceae9c2dcce66f2c0800000000000000
+      internalID: -4398206160091878676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_room_door_tiles_5
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 319
+        width: 66
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7593b9292efe64450800000000000000
+      internalID: 6072804903956986199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_room_door_tiles_6
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 316
+        width: 66
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13bab08156b3a6a50800000000000000
+      internalID: 6515085116325997361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_room_door_tiles_7
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 335
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c15c551765723eda0800000000000000
+      internalID: -5916842233212582628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_room_door_tiles_8
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 335
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 536ca340fed528b60800000000000000
+      internalID: 7746857590180202037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_room_door_tiles_9
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 287
+        width: 78
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 747b0514487d7ff40800000000000000
+      internalID: 5762311211275302727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_room_door_tiles_10
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 313
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 512c4014220099d80800000000000000
+      internalID: -8243557495805263339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_room_door_tiles_11
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 313
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8617bdd5246872470800000000000000
+      internalID: 8369806052091982184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_room_door_tiles_12
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 287
+        width: 8
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f77d99f8a93e61950800000000000000
+      internalID: 6419568571836913535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_room_door_tiles_13
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 281
+        width: 34
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 595cb035e6a246c30800000000000000
+      internalID: 4351649793274791317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_room_door_tiles_14
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 281
+        width: 34
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7bece0b83ff53e90800000000000000
+      internalID: -7046445422999704705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_room_door_tiles_15
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 316
+        width: 34
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f22b28a1da9894f0800000000000000
+      internalID: -821736706734873872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_room_door_tiles_16
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 287
+        width: 8
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 637174cf7425478d0800000000000000
+      internalID: -2849562195090008266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_room_door_tiles_17
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 217
+        width: 78
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21e6e234bcf348d00800000000000000
+      internalID: 973973561656897042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_room_door_tiles_18
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 223
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2ca2cbbf12e7ca80800000000000000
+      internalID: -8446533950188114897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_room_door_tiles_19
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 223
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea98ad62686d007f0800000000000000
+      internalID: -648282474675533394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_room_door_tiles_20
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 223
+        width: 8
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 122541f44cdccaa10800000000000000
+      internalID: 1922137384004375073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_room_door_tiles_21
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 159
+        width: 40
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b581c1bc6904832a0800000000000000
+      internalID: -6757580224472541093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_room_door_tiles_22
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 159
+        width: 40
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24dc412645999a0f0800000000000000
+      internalID: -1105183645840913086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_room_door_tiles_23
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 95
+        width: 72
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f0d2e3fa71d75bb0800000000000000
+      internalID: -4947255339635257104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_room_door_tiles_24
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 223
+        width: 130
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de24757bdfe90d110800000000000000
+      internalID: 1283700706340455149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_room_door_tiles_25
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 188
+        width: 72
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0575c219a6a8cb9b0800000000000000
+      internalID: -5063019690764511408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_room_door_tiles_26
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 201
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 016101806e6762bf0800000000000000
+      internalID: -349461190724807152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_room_door_tiles_27
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 201
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95ee68439098ea850800000000000000
+      internalID: 6390195593914281561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_room_door_tiles_28
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 185
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73579443adfc423a0800000000000000
+      internalID: -6690994610278664905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_room_door_tiles_29
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 185
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89f82691c3673ccf0800000000000000
+      internalID: -233212755197128808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_room_door_tiles_30
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 185
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19ecaff837004d840800000000000000
+      internalID: 5247819962130288273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_room_door_tiles_31
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 185
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4422089c634b6520800000000000000
+      internalID: 2696322935597179982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_room_door_tiles_32
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 153
+        width: 34
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dec60948a0240e710800000000000000
+      internalID: 1720447670596693229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_room_door_tiles_33
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 95
+        width: 98
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdb0fe94d95e1cfc0800000000000000
+      internalID: -3476244973640283172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_room_door_tiles_34
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 127
+        width: 72
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4ac5fb29519594e0800000000000000
+      internalID: -1975513049356449203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_room_door_tiles_35
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 121
+        width: 34
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f1f99c96f1921460800000000000000
+      internalID: 7210986441748902391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_room_door_tiles_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 22
+        width: 161
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df9fbaed9f1965f10800000000000000
+      internalID: 2258152765541579261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_room_door_tiles_37
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 22
+        width: 162
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36bb3126ecec06fa0800000000000000
+      internalID: -5809416133503894685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_room_door_tiles_38
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 22
+        width: 162
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd71ceaa5a6128130800000000000000
+      internalID: 3567438755623868381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      midcentury_modern_room_door_tiles_0: -7147782549354741367
+      midcentury_modern_room_door_tiles_1: 6389623379765965787
+      midcentury_modern_room_door_tiles_10: -8243557495805263339
+      midcentury_modern_room_door_tiles_11: 8369806052091982184
+      midcentury_modern_room_door_tiles_12: 6419568571836913535
+      midcentury_modern_room_door_tiles_13: 4351649793274791317
+      midcentury_modern_room_door_tiles_14: -7046445422999704705
+      midcentury_modern_room_door_tiles_15: -821736706734873872
+      midcentury_modern_room_door_tiles_16: -2849562195090008266
+      midcentury_modern_room_door_tiles_17: 973973561656897042
+      midcentury_modern_room_door_tiles_18: -8446533950188114897
+      midcentury_modern_room_door_tiles_19: -648282474675533394
+      midcentury_modern_room_door_tiles_2: -424225681027217626
+      midcentury_modern_room_door_tiles_20: 1922137384004375073
+      midcentury_modern_room_door_tiles_21: -6757580224472541093
+      midcentury_modern_room_door_tiles_22: -1105183645840913086
+      midcentury_modern_room_door_tiles_23: -4947255339635257104
+      midcentury_modern_room_door_tiles_24: 1283700706340455149
+      midcentury_modern_room_door_tiles_25: -5063019690764511408
+      midcentury_modern_room_door_tiles_26: -349461190724807152
+      midcentury_modern_room_door_tiles_27: 6390195593914281561
+      midcentury_modern_room_door_tiles_28: -6690994610278664905
+      midcentury_modern_room_door_tiles_29: -233212755197128808
+      midcentury_modern_room_door_tiles_3: -409581233621289139
+      midcentury_modern_room_door_tiles_30: 5247819962130288273
+      midcentury_modern_room_door_tiles_31: 2696322935597179982
+      midcentury_modern_room_door_tiles_32: 1720447670596693229
+      midcentury_modern_room_door_tiles_33: -3476244973640283172
+      midcentury_modern_room_door_tiles_34: -1975513049356449203
+      midcentury_modern_room_door_tiles_35: 7210986441748902391
+      midcentury_modern_room_door_tiles_36: 2258152765541579261
+      midcentury_modern_room_door_tiles_37: -5809416133503894685
+      midcentury_modern_room_door_tiles_38: 3567438755623868381
+      midcentury_modern_room_door_tiles_4: -4398206160091878676
+      midcentury_modern_room_door_tiles_5: 6072804903956986199
+      midcentury_modern_room_door_tiles_6: 6515085116325997361
+      midcentury_modern_room_door_tiles_7: -5916842233212582628
+      midcentury_modern_room_door_tiles_8: 7746857590180202037
+      midcentury_modern_room_door_tiles_9: 5762311211275302727
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

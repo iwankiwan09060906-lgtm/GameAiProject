@@ -1,0 +1,3159 @@
+fileFormatVersion: 2
+guid: 0c696d1ee5559df4cae30984a213b380
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4384996313090517038
+    second: midcentury_modern_furnitureset_0
+  - first:
+      213: -7176421573105409682
+    second: midcentury_modern_furnitureset_1
+  - first:
+      213: 4601176279867208604
+    second: midcentury_modern_furnitureset_2
+  - first:
+      213: 8384691407070512008
+    second: midcentury_modern_furnitureset_3
+  - first:
+      213: -4602521618761965765
+    second: midcentury_modern_furnitureset_4
+  - first:
+      213: -7887350154657044649
+    second: midcentury_modern_furnitureset_5
+  - first:
+      213: 1164357988674146164
+    second: midcentury_modern_furnitureset_6
+  - first:
+      213: -3189483372387072037
+    second: midcentury_modern_furnitureset_7
+  - first:
+      213: -2301738383737941735
+    second: midcentury_modern_furnitureset_8
+  - first:
+      213: -3930265920204719658
+    second: midcentury_modern_furnitureset_9
+  - first:
+      213: -6824682918069417065
+    second: midcentury_modern_furnitureset_10
+  - first:
+      213: 7771429456970735958
+    second: midcentury_modern_furnitureset_11
+  - first:
+      213: -3450126964474699013
+    second: midcentury_modern_furnitureset_12
+  - first:
+      213: -931699732581697566
+    second: midcentury_modern_furnitureset_13
+  - first:
+      213: -962288027336924278
+    second: midcentury_modern_furnitureset_14
+  - first:
+      213: 5809167521907895671
+    second: midcentury_modern_furnitureset_15
+  - first:
+      213: 6212170640546406306
+    second: midcentury_modern_furnitureset_16
+  - first:
+      213: -5366127645123551254
+    second: midcentury_modern_furnitureset_17
+  - first:
+      213: -1757676899035647739
+    second: midcentury_modern_furnitureset_18
+  - first:
+      213: -2148550574398647844
+    second: midcentury_modern_furnitureset_19
+  - first:
+      213: -6868179047547604963
+    second: midcentury_modern_furnitureset_20
+  - first:
+      213: 4572481070757565399
+    second: midcentury_modern_furnitureset_21
+  - first:
+      213: -8457858364289468521
+    second: midcentury_modern_furnitureset_22
+  - first:
+      213: -699781483894542817
+    second: midcentury_modern_furnitureset_23
+  - first:
+      213: -3578378698688864845
+    second: midcentury_modern_furnitureset_24
+  - first:
+      213: -9071595755391500802
+    second: midcentury_modern_furnitureset_25
+  - first:
+      213: 3898772367187269162
+    second: midcentury_modern_furnitureset_26
+  - first:
+      213: 5386375980099525461
+    second: midcentury_modern_furnitureset_27
+  - first:
+      213: -8857238909371249173
+    second: midcentury_modern_furnitureset_28
+  - first:
+      213: 609537054044804368
+    second: midcentury_modern_furnitureset_29
+  - first:
+      213: 4021753037821475934
+    second: midcentury_modern_furnitureset_30
+  - first:
+      213: 1411357993506271769
+    second: midcentury_modern_furnitureset_31
+  - first:
+      213: 5921330714861391478
+    second: midcentury_modern_furnitureset_32
+  - first:
+      213: 3103193048332375771
+    second: midcentury_modern_furnitureset_33
+  - first:
+      213: -6864324884603656654
+    second: midcentury_modern_furnitureset_34
+  - first:
+      213: -4789130906739437422
+    second: midcentury_modern_furnitureset_35
+  - first:
+      213: -5176002006367925721
+    second: midcentury_modern_furnitureset_36
+  - first:
+      213: 3157232791298943807
+    second: midcentury_modern_furnitureset_37
+  - first:
+      213: -3796590050370791920
+    second: midcentury_modern_furnitureset_38
+  - first:
+      213: -5645054636426550770
+    second: midcentury_modern_furnitureset_39
+  - first:
+      213: 4153000504325563468
+    second: midcentury_modern_furnitureset_40
+  - first:
+      213: -6967355666301880992
+    second: midcentury_modern_furnitureset_41
+  - first:
+      213: -9181948655563142032
+    second: midcentury_modern_furnitureset_42
+  - first:
+      213: -4595904474566716853
+    second: midcentury_modern_furnitureset_43
+  - first:
+      213: -9132813280879455668
+    second: midcentury_modern_furnitureset_44
+  - first:
+      213: -9188028129750760642
+    second: midcentury_modern_furnitureset_45
+  - first:
+      213: 4601342595069320686
+    second: midcentury_modern_furnitureset_46
+  - first:
+      213: 2161988742484355210
+    second: midcentury_modern_furnitureset_47
+  - first:
+      213: 4532918654920286279
+    second: midcentury_modern_furnitureset_48
+  - first:
+      213: -1210594262749389245
+    second: midcentury_modern_furnitureset_49
+  - first:
+      213: -2490076723545991495
+    second: midcentury_modern_furnitureset_50
+  - first:
+      213: -2100195641526650840
+    second: midcentury_modern_furnitureset_51
+  - first:
+      213: 355369053585941616
+    second: midcentury_modern_furnitureset_52
+  - first:
+      213: 2665990181847876065
+    second: midcentury_modern_furnitureset_53
+  - first:
+      213: 1849738582336716113
+    second: midcentury_modern_furnitureset_54
+  - first:
+      213: 3449561318023177352
+    second: midcentury_modern_furnitureset_55
+  - first:
+      213: 4206197817284740277
+    second: midcentury_modern_furnitureset_56
+  - first:
+      213: -2387682723974630423
+    second: midcentury_modern_furnitureset_57
+  - first:
+      213: 2731397494720231605
+    second: midcentury_modern_furnitureset_58
+  - first:
+      213: -4015023911012874156
+    second: midcentury_modern_furnitureset_59
+  - first:
+      213: -7183067263784691846
+    second: midcentury_modern_furnitureset_60
+  - first:
+      213: 5726354294663855097
+    second: midcentury_modern_furnitureset_61
+  - first:
+      213: -3059753410627274019
+    second: midcentury_modern_furnitureset_62
+  - first:
+      213: 4619800373884367906
+    second: midcentury_modern_furnitureset_63
+  - first:
+      213: 7854368661504898888
+    second: midcentury_modern_furnitureset_64
+  - first:
+      213: 1249263708882058286
+    second: midcentury_modern_furnitureset_65
+  - first:
+      213: 6713092078291191211
+    second: midcentury_modern_furnitureset_66
+  - first:
+      213: -8590464409052290757
+    second: midcentury_modern_furnitureset_67
+  - first:
+      213: 8956174992524276477
+    second: midcentury_modern_furnitureset_68
+  - first:
+      213: 5854947968615011590
+    second: midcentury_modern_furnitureset_69
+  - first:
+      213: 5390846738851845076
+    second: midcentury_modern_furnitureset_70
+  - first:
+      213: 1097023653648514095
+    second: midcentury_modern_furnitureset_71
+  - first:
+      213: -5964187505234210420
+    second: midcentury_modern_furnitureset_72
+  - first:
+      213: -8023042452986893088
+    second: midcentury_modern_furnitureset_73
+  - first:
+      213: 2720491033775994296
+    second: midcentury_modern_furnitureset_74
+  - first:
+      213: -5955161794593212297
+    second: midcentury_modern_furnitureset_75
+  - first:
+      213: 6502513751525355056
+    second: midcentury_modern_furnitureset_76
+  - first:
+      213: -7463044774733905001
+    second: midcentury_modern_furnitureset_77
+  - first:
+      213: 8539616988422254501
+    second: midcentury_modern_furnitureset_78
+  - first:
+      213: -4421219072351518658
+    second: midcentury_modern_furnitureset_79
+  - first:
+      213: 2673204624954638492
+    second: midcentury_modern_furnitureset_80
+  - first:
+      213: -8447126365154279102
+    second: midcentury_modern_furnitureset_81
+  - first:
+      213: -1168732703172291444
+    second: midcentury_modern_furnitureset_82
+  - first:
+      213: 6499045676046407218
+    second: midcentury_modern_furnitureset_83
+  - first:
+      213: -2328479835907142735
+    second: midcentury_modern_furnitureset_84
+  - first:
+      213: -3144195055165028497
+    second: midcentury_modern_furnitureset_85
+  - first:
+      213: -5607149413298917471
+    second: midcentury_modern_furnitureset_86
+  - first:
+      213: -3460371086148129112
+    second: midcentury_modern_furnitureset_87
+  - first:
+      213: 1338551622439966343
+    second: midcentury_modern_furnitureset_88
+  - first:
+      213: -7679129379307358414
+    second: midcentury_modern_furnitureset_89
+  - first:
+      213: 187801695573786578
+    second: midcentury_modern_furnitureset_90
+  - first:
+      213: 4918689538167743938
+    second: midcentury_modern_furnitureset_91
+  - first:
+      213: -3258331607613169100
+    second: midcentury_modern_furnitureset_92
+  - first:
+      213: -4676885336851506238
+    second: midcentury_modern_furnitureset_93
+  - first:
+      213: 8585996754185634992
+    second: midcentury_modern_furnitureset_94
+  - first:
+      213: 6898378826026199881
+    second: midcentury_modern_furnitureset_95
+  - first:
+      213: -7061907845124388634
+    second: midcentury_modern_furnitureset_96
+  - first:
+      213: -2150093667409524708
+    second: midcentury_modern_furnitureset_97
+  - first:
+      213: -1689223053070626243
+    second: midcentury_modern_furnitureset_98
+  - first:
+      213: 3998938132889506001
+    second: midcentury_modern_furnitureset_99
+  - first:
+      213: -5959382372420263593
+    second: midcentury_modern_furnitureset_100
+  - first:
+      213: 5945657449090973220
+    second: midcentury_modern_furnitureset_101
+  - first:
+      213: 8372919388997824975
+    second: midcentury_modern_furnitureset_102
+  - first:
+      213: 1886430876304235490
+    second: midcentury_modern_furnitureset_103
+  - first:
+      213: -1934058562921329275
+    second: midcentury_modern_furnitureset_104
+  - first:
+      213: 4197014827738316155
+    second: midcentury_modern_furnitureset_105
+  - first:
+      213: -2600576161554679712
+    second: midcentury_modern_furnitureset_106
+  - first:
+      213: -7590595699671340510
+    second: midcentury_modern_furnitureset_107
+  - first:
+      213: -4543732817758975592
+    second: midcentury_modern_furnitureset_108
+  - first:
+      213: 3569531527942714685
+    second: midcentury_modern_furnitureset_109
+  - first:
+      213: 3264970663494353447
+    second: midcentury_modern_furnitureset_110
+  - first:
+      213: 3553052639379446739
+    second: midcentury_modern_furnitureset_111
+  - first:
+      213: 1550983243892109760
+    second: midcentury_modern_furnitureset_112
+  - first:
+      213: -6730982838418344973
+    second: midcentury_modern_furnitureset_113
+  - first:
+      213: 5498524988662674706
+    second: midcentury_modern_furnitureset_114
+  - first:
+      213: 4574830730085685477
+    second: midcentury_modern_furnitureset_115
+  - first:
+      213: -7465359958899534542
+    second: midcentury_modern_furnitureset_116
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: midcentury_modern_furnitureset_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 416
+        width: 28
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d797d0061d5523c0800000000000000
+      internalID: -4384996313090517038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_furnitureset_1
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 416
+        width: 28
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e612a900a9a386c90800000000000000
+      internalID: -7176421573105409682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_furnitureset_2
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 416
+        width: 30
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c93307ec279aadf30800000000000000
+      internalID: 4601176279867208604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_furnitureset_3
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 416
+        width: 28
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88345b529686c5470800000000000000
+      internalID: 8384691407070512008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_furnitureset_4
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 416
+        width: 28
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3f13a219fe8020c0800000000000000
+      internalID: -4602521618761965765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_furnitureset_5
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 416
+        width: 30
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7576b84c2d08a8290800000000000000
+      internalID: -7887350154657044649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_furnitureset_6
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 416
+        width: 28
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47f8f42fb61a82010800000000000000
+      internalID: 1164357988674146164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_furnitureset_7
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 416
+        width: 28
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd78adb75cdacb3d0800000000000000
+      internalID: -3189483372387072037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_furnitureset_8
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 416
+        width: 30
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9111b6792259e00e0800000000000000
+      internalID: -2301738383737941735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_furnitureset_9
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 417
+        width: 18
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d9bf5118f3e479c0800000000000000
+      internalID: -3930265920204719658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_furnitureset_10
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 417
+        width: 34
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79bcbc37b0bd941a0800000000000000
+      internalID: -6824682918069417065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_furnitureset_11
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 415
+        width: 16
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6516fb39ae9a9db60800000000000000
+      internalID: 7771429456970735958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_furnitureset_12
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 416
+        width: 22
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf22d7c2ecfae10d0800000000000000
+      internalID: -3450126964474699013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_furnitureset_13
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 416
+        width: 22
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e734229700f113f0800000000000000
+      internalID: -931699732581697566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_furnitureset_14
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 416
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a83a8f6332445a2f0800000000000000
+      internalID: -962288027336924278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_furnitureset_15
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 383
+        width: 65
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77d6e08351f4e9050800000000000000
+      internalID: 5809167521907895671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_furnitureset_16
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 351
+        width: 44
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2af11e9b840163650800000000000000
+      internalID: 6212170640546406306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_furnitureset_17
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 351
+        width: 44
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aefd105765fa785b0800000000000000
+      internalID: -5366127645123551254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_furnitureset_18
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 352
+        width: 16
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 501f1134c2a7b97e0800000000000000
+      internalID: -1757676899035647739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_furnitureset_19
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 352
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd1d107d2a0de22e0800000000000000
+      internalID: -2148550574398647844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_furnitureset_20
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 352
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d10f421ab835fa0a0800000000000000
+      internalID: -6868179047547604963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_furnitureset_21
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 352
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d3d3bcce47b47f30800000000000000
+      internalID: 4572481070757565399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_furnitureset_22
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 351
+        width: 18
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 797b5fb11a6af9a80800000000000000
+      internalID: -8457858364289468521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_furnitureset_23
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 351
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1ee110b270e946f0800000000000000
+      internalID: -699781483894542817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_furnitureset_24
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 352
+        width: 21
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bd53d8588b075ec0800000000000000
+      internalID: -3578378698688864845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_furnitureset_25
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 352
+        width: 27
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efdb2fd49b73b1280800000000000000
+      internalID: -9071595755391500802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_furnitureset_26
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 352
+        width: 18
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a265e46bfc83b1630800000000000000
+      internalID: 3898772367187269162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_furnitureset_27
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 352
+        width: 27
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55b57886a6040ca40800000000000000
+      internalID: 5386375980099525461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_furnitureset_28
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 352
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bed882cb324c41580800000000000000
+      internalID: -8857238909371249173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_furnitureset_29
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 355
+        width: 13
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01557cf98b2857800800000000000000
+      internalID: 609537054044804368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_furnitureset_30
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 355
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5c72b9641320d730800000000000000
+      internalID: 4021753037821475934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_furnitureset_31
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 355
+        width: 13
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91279dd0e96269310800000000000000
+      internalID: 1411357993506271769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_furnitureset_32
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 289
+        width: 38
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67e4ce0a9eacc2250800000000000000
+      internalID: 5921330714861391478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_furnitureset_33
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 288
+        width: 38
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd61053d2a1c01b20800000000000000
+      internalID: 3103193048332375771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_furnitureset_34
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 288
+        width: 31
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 236235ed2e40db0a0800000000000000
+      internalID: -6864324884603656654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_furnitureset_35
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 290
+        width: 20
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29093f070d6998db0800000000000000
+      internalID: -4789130906739437422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_furnitureset_36
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 289
+        width: 40
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72a0bbd49952b28b0800000000000000
+      internalID: -5176002006367925721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_furnitureset_37
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 288
+        width: 40
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3ba696fe7eb0db20800000000000000
+      internalID: 3157232791298943807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_furnitureset_38
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 288
+        width: 40
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 016ddd1e67dcf4bc0800000000000000
+      internalID: -3796590050370791920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_furnitureset_39
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 319
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e02af1a87bcb8a1b0800000000000000
+      internalID: -5645054636426550770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_furnitureset_40
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 288
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c44e75484fb62a930800000000000000
+      internalID: 4153000504325563468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_furnitureset_41
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 320
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0657546afeafe4f90800000000000000
+      internalID: -6967355666301880992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_furnitureset_42
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 290
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07c8847885a239080800000000000000
+      internalID: -9181948655563142032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_furnitureset_43
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 287
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4292d30b311830c0800000000000000
+      internalID: -4595904474566716853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_furnitureset_44
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 289
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c42d53175bab14180800000000000000
+      internalID: -9132813280879455668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_furnitureset_45
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 288
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e33c8e3a8119d7080800000000000000
+      internalID: -9188028129750760642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_furnitureset_46
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 224
+        width: 48
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eed1bf416b04bdf30800000000000000
+      internalID: 4601342595069320686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_furnitureset_47
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 224
+        width: 48
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a886c2c7e4de00e10800000000000000
+      internalID: 2161988742484355210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_furnitureset_48
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 224
+        width: 28
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 740e34e008928ee30800000000000000
+      internalID: 4532918654920286279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_furnitureset_49
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 223
+        width: 56
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34e52b99eea133fe0800000000000000
+      internalID: -1210594262749389245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_furnitureset_50
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 223
+        width: 56
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b69295b968717dd0800000000000000
+      internalID: -2490076723545991495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_furnitureset_51
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 223
+        width: 66
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 828fafbf03b9ad2e0800000000000000
+      internalID: -2100195641526650840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_furnitureset_52
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 256
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 074282b75468ee400800000000000000
+      internalID: 355369053585941616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_furnitureset_53
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 258
+        width: 34
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e1c8b302ff7ff420800000000000000
+      internalID: 2665990181847876065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_furnitureset_54
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 226
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15db387b0779ba910800000000000000
+      internalID: 1849738582336716113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_furnitureset_55
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 255
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88423bffdbd4fdf20800000000000000
+      internalID: 3449561318023177352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_furnitureset_56
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 256
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b4c74221aa6f5a30800000000000000
+      internalID: 4206197817284740277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_furnitureset_57
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 226
+        width: 44
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e3b729863f3dded0800000000000000
+      internalID: -2387682723974630423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_furnitureset_58
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 191
+        width: 34
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b8f035cc8fd7e520800000000000000
+      internalID: 2731397494720231605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_furnitureset_59
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 223
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 458c0638605c748c0800000000000000
+      internalID: -4015023911012874156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_furnitureset_60
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 223
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a775060916e905c90800000000000000
+      internalID: -7183067263784691846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_furnitureset_61
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 195
+        width: 22
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fbb87734e8187f40800000000000000
+      internalID: 5726354294663855097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_furnitureset_62
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 191
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dda754bfb729985d0800000000000000
+      internalID: -3059753410627274019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_furnitureset_63
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 192
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 224389a96f3dc1040800000000000000
+      internalID: 4619800373884367906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_furnitureset_64
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 191
+        width: 14
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 847b5f3fea2500d60800000000000000
+      internalID: 7854368661504898888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_furnitureset_65
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 191
+        width: 14
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2cb3be69b6465110800000000000000
+      internalID: 1249263708882058286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_furnitureset_66
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 191
+        width: 14
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba5090f7da1b92d50800000000000000
+      internalID: 6713092078291191211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_furnitureset_67
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 191
+        width: 20
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b316dca522a88c880800000000000000
+      internalID: -8590464409052290757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_furnitureset_68
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 191
+        width: 20
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df275af24b9ba4c70800000000000000
+      internalID: 8956174992524276477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_furnitureset_69
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 191
+        width: 20
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60551b71824f04150800000000000000
+      internalID: 5854947968615011590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_furnitureset_70
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 191
+        width: 17
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d356db0c8220da40800000000000000
+      internalID: 5390846738851845076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_furnitureset_71
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 191
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2cbbe16339693f00800000000000000
+      internalID: 1097023653648514095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_furnitureset_72
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 191
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8111b84013fa3da0800000000000000
+      internalID: -5964187505234210420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_furnitureset_73
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 191
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ec66db956d68a090800000000000000
+      internalID: -8023042452986893088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_furnitureset_74
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 191
+        width: 18
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b57ad27e2021c520800000000000000
+      internalID: 2720491033775994296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_furnitureset_75
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 162
+        width: 45
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7783b4d46e30b5da0800000000000000
+      internalID: -5955161794593212297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_furnitureset_76
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 191
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03ee2c22ec19d3a50800000000000000
+      internalID: 6502513751525355056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_furnitureset_77
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 191
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 793862b7150fd6890800000000000000
+      internalID: -7463044774733905001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_furnitureset_78
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 33
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5afacc8f760d28670800000000000000
+      internalID: 8539616988422254501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_furnitureset_79
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 137
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e304e46adaca4a2c0800000000000000
+      internalID: -4421219072351518658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_furnitureset_80
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 134
+        width: 20
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c904a527171291520800000000000000
+      internalID: 2673204624954638492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_furnitureset_81
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 135
+        width: 18
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24184206357c5ca80800000000000000
+      internalID: -8447126365154279102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_furnitureset_82
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 137
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8498067cc3d7cfe0800000000000000
+      internalID: -1168732703172291444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_furnitureset_83
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 134
+        width: 20
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 236d8c3eb9f313a50800000000000000
+      internalID: 6499045676046407218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_furnitureset_84
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 135
+        width: 18
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1bb48121de39fafd0800000000000000
+      internalID: -2328479835907142735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_furnitureset_85
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 137
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f67495881439d54d0800000000000000
+      internalID: -3144195055165028497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_furnitureset_86
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 134
+        width: 20
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1af27c901576f22b0800000000000000
+      internalID: -5607149413298917471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_furnitureset_87
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 135
+        width: 18
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8aeab1bb4da4affc0800000000000000
+      internalID: -3460371086148129112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_furnitureset_88
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 159
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7869e01db9d739210800000000000000
+      internalID: 1338551622439966343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_furnitureset_89
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 159
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2377e1ae3804e6590800000000000000
+      internalID: -7679129379307358414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_furnitureset_90
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 159
+        width: 24
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2df34e8a5a43b9200800000000000000
+      internalID: 187801695573786578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_furnitureset_91
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 159
+        width: 24
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c52bea1312b24440800000000000000
+      internalID: 4918689538167743938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_furnitureset_92
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 127
+        width: 33
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4322acf8aa418c2d0800000000000000
+      internalID: -3258331607613169100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_furnitureset_93
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 128
+        width: 34
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cb9bb9b09d581fb0800000000000000
+      internalID: -4676885336851506238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_furnitureset_94
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 128
+        width: 33
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b444efae86972770800000000000000
+      internalID: 8585996754185634992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_furnitureset_95
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 127
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94b2e5b3ef6fbbf50800000000000000
+      internalID: 6898378826026199881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_furnitureset_96
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 127
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e801defa301ffd90800000000000000
+      internalID: -7061907845124388634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_furnitureset_97
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 127
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c180d3083355922e0800000000000000
+      internalID: -2150093667409524708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_furnitureset_98
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 127
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d321357459cae88e0800000000000000
+      internalID: -1689223053070626243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_furnitureset_99
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 127
+        width: 16
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d094a96b051f7730800000000000000
+      internalID: 3998938132889506001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_furnitureset_100
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 32
+        width: 43
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7516a237e450c4da0800000000000000
+      internalID: -5959382372420263593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_furnitureset_101
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 32
+        width: 17
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42ef831d2f7338250800000000000000
+      internalID: 5945657449090973220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_furnitureset_102
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 32
+        width: 46
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc1323a92d5923470800000000000000
+      internalID: 8372919388997824975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_furnitureset_103
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 32
+        width: 18
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2eb517323e2fd2a10800000000000000
+      internalID: 1886430876304235490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_furnitureset_104
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 71
+        width: 50
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58d854eebf7d825e0800000000000000
+      internalID: -1934058562921329275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_furnitureset_105
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 63
+        width: 50
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7db364cfbace3a30800000000000000
+      internalID: 4197014827738316155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_furnitureset_106
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 65
+        width: 27
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0683f2f62c5e8ebd0800000000000000
+      internalID: -2600576161554679712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_furnitureset_107
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 71
+        width: 50
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22a6b778d69c8a690800000000000000
+      internalID: -7590595699671340510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_furnitureset_108
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 63
+        width: 50
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8990133731b61f0c0800000000000000
+      internalID: -4543732817758975592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_furnitureset_109
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 65
+        width: 27
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3535913306898130800000000000000
+      internalID: 3569531527942714685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_furnitureset_110
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 7
+        width: 50
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72207a715818f4d20800000000000000
+      internalID: 3264970663494353447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_furnitureset_111
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 0
+        width: 50
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3dbd976fc8afe4130800000000000000
+      internalID: 3553052639379446739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_furnitureset_112
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 1
+        width: 27
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c1b5c8fa03368510800000000000000
+      internalID: 1550983243892109760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_furnitureset_113
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 0
+        width: 42
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f3f2de45ceb692a0800000000000000
+      internalID: -6730982838418344973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_furnitureset_114
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 0
+        width: 19
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 215f8d1485fae4c40800000000000000
+      internalID: 5498524988662674706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_furnitureset_115
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 0
+        width: 42
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e85c4e7f401d7f30800000000000000
+      internalID: 4574830730085685477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: midcentury_modern_furnitureset_116
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 0
+        width: 19
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2355e59aba6b56890800000000000000
+      internalID: -7465359958899534542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      midcentury_modern_furnitureset_0: -4384996313090517038
+      midcentury_modern_furnitureset_1: -7176421573105409682
+      midcentury_modern_furnitureset_10: -6824682918069417065
+      midcentury_modern_furnitureset_100: -5959382372420263593
+      midcentury_modern_furnitureset_101: 5945657449090973220
+      midcentury_modern_furnitureset_102: 8372919388997824975
+      midcentury_modern_furnitureset_103: 1886430876304235490
+      midcentury_modern_furnitureset_104: -1934058562921329275
+      midcentury_modern_furnitureset_105: 4197014827738316155
+      midcentury_modern_furnitureset_106: -2600576161554679712
+      midcentury_modern_furnitureset_107: -7590595699671340510
+      midcentury_modern_furnitureset_108: -4543732817758975592
+      midcentury_modern_furnitureset_109: 3569531527942714685
+      midcentury_modern_furnitureset_11: 7771429456970735958
+      midcentury_modern_furnitureset_110: 3264970663494353447
+      midcentury_modern_furnitureset_111: 3553052639379446739
+      midcentury_modern_furnitureset_112: 1550983243892109760
+      midcentury_modern_furnitureset_113: -6730982838418344973
+      midcentury_modern_furnitureset_114: 5498524988662674706
+      midcentury_modern_furnitureset_115: 4574830730085685477
+      midcentury_modern_furnitureset_116: -7465359958899534542
+      midcentury_modern_furnitureset_12: -3450126964474699013
+      midcentury_modern_furnitureset_13: -931699732581697566
+      midcentury_modern_furnitureset_14: -962288027336924278
+      midcentury_modern_furnitureset_15: 5809167521907895671
+      midcentury_modern_furnitureset_16: 6212170640546406306
+      midcentury_modern_furnitureset_17: -5366127645123551254
+      midcentury_modern_furnitureset_18: -1757676899035647739
+      midcentury_modern_furnitureset_19: -2148550574398647844
+      midcentury_modern_furnitureset_2: 4601176279867208604
+      midcentury_modern_furnitureset_20: -6868179047547604963
+      midcentury_modern_furnitureset_21: 4572481070757565399
+      midcentury_modern_furnitureset_22: -8457858364289468521
+      midcentury_modern_furnitureset_23: -699781483894542817
+      midcentury_modern_furnitureset_24: -3578378698688864845
+      midcentury_modern_furnitureset_25: -9071595755391500802
+      midcentury_modern_furnitureset_26: 3898772367187269162
+      midcentury_modern_furnitureset_27: 5386375980099525461
+      midcentury_modern_furnitureset_28: -8857238909371249173
+      midcentury_modern_furnitureset_29: 609537054044804368
+      midcentury_modern_furnitureset_3: 8384691407070512008
+      midcentury_modern_furnitureset_30: 4021753037821475934
+      midcentury_modern_furnitureset_31: 1411357993506271769
+      midcentury_modern_furnitureset_32: 5921330714861391478
+      midcentury_modern_furnitureset_33: 3103193048332375771
+      midcentury_modern_furnitureset_34: -6864324884603656654
+      midcentury_modern_furnitureset_35: -4789130906739437422
+      midcentury_modern_furnitureset_36: -5176002006367925721
+      midcentury_modern_furnitureset_37: 3157232791298943807
+      midcentury_modern_furnitureset_38: -3796590050370791920
+      midcentury_modern_furnitureset_39: -5645054636426550770
+      midcentury_modern_furnitureset_4: -4602521618761965765
+      midcentury_modern_furnitureset_40: 4153000504325563468
+      midcentury_modern_furnitureset_41: -6967355666301880992
+      midcentury_modern_furnitureset_42: -9181948655563142032
+      midcentury_modern_furnitureset_43: -4595904474566716853
+      midcentury_modern_furnitureset_44: -9132813280879455668
+      midcentury_modern_furnitureset_45: -9188028129750760642
+      midcentury_modern_furnitureset_46: 4601342595069320686
+      midcentury_modern_furnitureset_47: 2161988742484355210
+      midcentury_modern_furnitureset_48: 4532918654920286279
+      midcentury_modern_furnitureset_49: -1210594262749389245
+      midcentury_modern_furnitureset_5: -7887350154657044649
+      midcentury_modern_furnitureset_50: -2490076723545991495
+      midcentury_modern_furnitureset_51: -2100195641526650840
+      midcentury_modern_furnitureset_52: 355369053585941616
+      midcentury_modern_furnitureset_53: 2665990181847876065
+      midcentury_modern_furnitureset_54: 1849738582336716113
+      midcentury_modern_furnitureset_55: 3449561318023177352
+      midcentury_modern_furnitureset_56: 4206197817284740277
+      midcentury_modern_furnitureset_57: -2387682723974630423
+      midcentury_modern_furnitureset_58: 2731397494720231605
+      midcentury_modern_furnitureset_59: -4015023911012874156
+      midcentury_modern_furnitureset_6: 1164357988674146164
+      midcentury_modern_furnitureset_60: -7183067263784691846
+      midcentury_modern_furnitureset_61: 5726354294663855097
+      midcentury_modern_furnitureset_62: -3059753410627274019
+      midcentury_modern_furnitureset_63: 4619800373884367906
+      midcentury_modern_furnitureset_64: 7854368661504898888
+      midcentury_modern_furnitureset_65: 1249263708882058286
+      midcentury_modern_furnitureset_66: 6713092078291191211
+      midcentury_modern_furnitureset_67: -8590464409052290757
+      midcentury_modern_furnitureset_68: 8956174992524276477
+      midcentury_modern_furnitureset_69: 5854947968615011590
+      midcentury_modern_furnitureset_7: -3189483372387072037
+      midcentury_modern_furnitureset_70: 5390846738851845076
+      midcentury_modern_furnitureset_71: 1097023653648514095
+      midcentury_modern_furnitureset_72: -5964187505234210420
+      midcentury_modern_furnitureset_73: -8023042452986893088
+      midcentury_modern_furnitureset_74: 2720491033775994296
+      midcentury_modern_furnitureset_75: -5955161794593212297
+      midcentury_modern_furnitureset_76: 6502513751525355056
+      midcentury_modern_furnitureset_77: -7463044774733905001
+      midcentury_modern_furnitureset_78: 8539616988422254501
+      midcentury_modern_furnitureset_79: -4421219072351518658
+      midcentury_modern_furnitureset_8: -2301738383737941735
+      midcentury_modern_furnitureset_80: 2673204624954638492
+      midcentury_modern_furnitureset_81: -8447126365154279102
+      midcentury_modern_furnitureset_82: -1168732703172291444
+      midcentury_modern_furnitureset_83: 6499045676046407218
+      midcentury_modern_furnitureset_84: -2328479835907142735
+      midcentury_modern_furnitureset_85: -3144195055165028497
+      midcentury_modern_furnitureset_86: -5607149413298917471
+      midcentury_modern_furnitureset_87: -3460371086148129112
+      midcentury_modern_furnitureset_88: 1338551622439966343
+      midcentury_modern_furnitureset_89: -7679129379307358414
+      midcentury_modern_furnitureset_9: -3930265920204719658
+      midcentury_modern_furnitureset_90: 187801695573786578
+      midcentury_modern_furnitureset_91: 4918689538167743938
+      midcentury_modern_furnitureset_92: -3258331607613169100
+      midcentury_modern_furnitureset_93: -4676885336851506238
+      midcentury_modern_furnitureset_94: 8585996754185634992
+      midcentury_modern_furnitureset_95: 6898378826026199881
+      midcentury_modern_furnitureset_96: -7061907845124388634
+      midcentury_modern_furnitureset_97: -2150093667409524708
+      midcentury_modern_furnitureset_98: -1689223053070626243
+      midcentury_modern_furnitureset_99: 3998938132889506001
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

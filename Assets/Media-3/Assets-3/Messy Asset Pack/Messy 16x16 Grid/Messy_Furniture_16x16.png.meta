@@ -1,0 +1,2717 @@
+fileFormatVersion: 2
+guid: 8d4f2d21791d2a84f80fe4701f331a0e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6215371482364202759
+    second: Messy_Furniture_16x16_0
+  - first:
+      213: 7350613229467219212
+    second: Messy_Furniture_16x16_1
+  - first:
+      213: 4151681314711910165
+    second: Messy_Furniture_16x16_2
+  - first:
+      213: 8410795589756277570
+    second: Messy_Furniture_16x16_3
+  - first:
+      213: -1139721191136897786
+    second: Messy_Furniture_16x16_4
+  - first:
+      213: -9016645192235419385
+    second: Messy_Furniture_16x16_5
+  - first:
+      213: -556124900143970339
+    second: Messy_Furniture_16x16_6
+  - first:
+      213: 8689975867419788371
+    second: Messy_Furniture_16x16_7
+  - first:
+      213: -2222908633895600807
+    second: Messy_Furniture_16x16_8
+  - first:
+      213: 8467304852742463288
+    second: Messy_Furniture_16x16_9
+  - first:
+      213: -1322726333786810680
+    second: Messy_Furniture_16x16_10
+  - first:
+      213: -7021404812989416653
+    second: Messy_Furniture_16x16_11
+  - first:
+      213: 8446380310373826993
+    second: Messy_Furniture_16x16_12
+  - first:
+      213: 5332821197737185227
+    second: Messy_Furniture_16x16_13
+  - first:
+      213: -8125482521770729045
+    second: Messy_Furniture_16x16_14
+  - first:
+      213: 7935992017481182647
+    second: Messy_Furniture_16x16_15
+  - first:
+      213: 3184604138009614145
+    second: Messy_Furniture_16x16_16
+  - first:
+      213: -2190465465013709646
+    second: Messy_Furniture_16x16_17
+  - first:
+      213: 8456724968278990431
+    second: Messy_Furniture_16x16_18
+  - first:
+      213: 7349878441864090687
+    second: Messy_Furniture_16x16_19
+  - first:
+      213: -1600586710515990487
+    second: Messy_Furniture_16x16_20
+  - first:
+      213: 1513325661488786475
+    second: Messy_Furniture_16x16_21
+  - first:
+      213: 5899514000744868936
+    second: Messy_Furniture_16x16_22
+  - first:
+      213: 3026009823657068509
+    second: Messy_Furniture_16x16_23
+  - first:
+      213: -205669529622276951
+    second: Messy_Furniture_16x16_24
+  - first:
+      213: -824877069268576172
+    second: Messy_Furniture_16x16_25
+  - first:
+      213: 8304881903481360733
+    second: Messy_Furniture_16x16_26
+  - first:
+      213: -3315547784773731453
+    second: Messy_Furniture_16x16_27
+  - first:
+      213: 4109547063630685597
+    second: Messy_Furniture_16x16_28
+  - first:
+      213: -68198665298080934
+    second: Messy_Furniture_16x16_29
+  - first:
+      213: -6530668351999637122
+    second: Messy_Furniture_16x16_30
+  - first:
+      213: -2343323228107152690
+    second: Messy_Furniture_16x16_31
+  - first:
+      213: -1831475122665353111
+    second: Messy_Furniture_16x16_32
+  - first:
+      213: -5844551007058593644
+    second: Messy_Furniture_16x16_33
+  - first:
+      213: -5242124589557118545
+    second: Messy_Furniture_16x16_34
+  - first:
+      213: -6541131966819437221
+    second: Messy_Furniture_16x16_35
+  - first:
+      213: -7284636435504080769
+    second: Messy_Furniture_16x16_36
+  - first:
+      213: 4843979029575935540
+    second: Messy_Furniture_16x16_37
+  - first:
+      213: 5345637787290894446
+    second: Messy_Furniture_16x16_38
+  - first:
+      213: -3316611074401373735
+    second: Messy_Furniture_16x16_39
+  - first:
+      213: 3522452570300079109
+    second: Messy_Furniture_16x16_40
+  - first:
+      213: 697452677644563287
+    second: Messy_Furniture_16x16_41
+  - first:
+      213: -2509377438240601055
+    second: Messy_Furniture_16x16_42
+  - first:
+      213: -1037842659668870976
+    second: Messy_Furniture_16x16_43
+  - first:
+      213: -1155071412276525562
+    second: Messy_Furniture_16x16_44
+  - first:
+      213: -6140293195794626890
+    second: Messy_Furniture_16x16_45
+  - first:
+      213: 69341791016778582
+    second: Messy_Furniture_16x16_46
+  - first:
+      213: 5492085396873032360
+    second: Messy_Furniture_16x16_47
+  - first:
+      213: -166294584106334815
+    second: Messy_Furniture_16x16_48
+  - first:
+      213: -4378545491407632136
+    second: Messy_Furniture_16x16_49
+  - first:
+      213: 4271406291690945389
+    second: Messy_Furniture_16x16_50
+  - first:
+      213: 8784118641563923370
+    second: Messy_Furniture_16x16_51
+  - first:
+      213: -6295544738807926581
+    second: Messy_Furniture_16x16_52
+  - first:
+      213: 520682539658497244
+    second: Messy_Furniture_16x16_53
+  - first:
+      213: -5164920451026488920
+    second: Messy_Furniture_16x16_54
+  - first:
+      213: 6288112072010646293
+    second: Messy_Furniture_16x16_55
+  - first:
+      213: 7808796157895282874
+    second: Messy_Furniture_16x16_56
+  - first:
+      213: -6440370450584589458
+    second: Messy_Furniture_16x16_57
+  - first:
+      213: -297035508546875446
+    second: Messy_Furniture_16x16_58
+  - first:
+      213: -652535166728229972
+    second: Messy_Furniture_16x16_59
+  - first:
+      213: -8368087472898744022
+    second: Messy_Furniture_16x16_60
+  - first:
+      213: 152492379821782120
+    second: Messy_Furniture_16x16_61
+  - first:
+      213: 715691964757044501
+    second: Messy_Furniture_16x16_62
+  - first:
+      213: 3803315365076531581
+    second: Messy_Furniture_16x16_63
+  - first:
+      213: -785237549227047421
+    second: Messy_Furniture_16x16_64
+  - first:
+      213: -4675139106078903861
+    second: Messy_Furniture_16x16_65
+  - first:
+      213: -2686450325999081123
+    second: Messy_Furniture_16x16_66
+  - first:
+      213: 5064929005271683654
+    second: Messy_Furniture_16x16_67
+  - first:
+      213: -6261105617898921241
+    second: Messy_Furniture_16x16_68
+  - first:
+      213: 6781994427260334870
+    second: Messy_Furniture_16x16_69
+  - first:
+      213: -18938799747303277
+    second: Messy_Furniture_16x16_70
+  - first:
+      213: -327978530529581000
+    second: Messy_Furniture_16x16_71
+  - first:
+      213: -6425587486284071534
+    second: Messy_Furniture_16x16_72
+  - first:
+      213: -8593149454735375170
+    second: Messy_Furniture_16x16_73
+  - first:
+      213: 2705922069650047306
+    second: Messy_Furniture_16x16_74
+  - first:
+      213: 3160922971876168149
+    second: Messy_Furniture_16x16_75
+  - first:
+      213: -3866524378178821552
+    second: Messy_Furniture_16x16_76
+  - first:
+      213: -6479556194433566897
+    second: Messy_Furniture_16x16_77
+  - first:
+      213: -5437287752416768052
+    second: Messy_Furniture_16x16_78
+  - first:
+      213: 4724373926778360765
+    second: Messy_Furniture_16x16_79
+  - first:
+      213: -2564958564578505504
+    second: Messy_Furniture_16x16_80
+  - first:
+      213: -5206674781380308160
+    second: Messy_Furniture_16x16_81
+  - first:
+      213: -3118302836322803845
+    second: Messy_Furniture_16x16_82
+  - first:
+      213: 4257724650441992965
+    second: Messy_Furniture_16x16_83
+  - first:
+      213: 6619590459990353818
+    second: Messy_Furniture_16x16_84
+  - first:
+      213: -6981757049957917706
+    second: Messy_Furniture_16x16_85
+  - first:
+      213: -334040928867187436
+    second: Messy_Furniture_16x16_86
+  - first:
+      213: -653935789771820909
+    second: Messy_Furniture_16x16_87
+  - first:
+      213: -5928483493953588775
+    second: Messy_Furniture_16x16_88
+  - first:
+      213: 1909123726123590501
+    second: Messy_Furniture_16x16_89
+  - first:
+      213: 8110293606666185683
+    second: Messy_Furniture_16x16_90
+  - first:
+      213: 3211316774082872760
+    second: Messy_Furniture_16x16_91
+  - first:
+      213: -5598258464634442888
+    second: Messy_Furniture_16x16_92
+  - first:
+      213: -224823577151273387
+    second: Messy_Furniture_16x16_93
+  - first:
+      213: -2211791084702757000
+    second: Messy_Furniture_16x16_94
+  - first:
+      213: -215980907460834008
+    second: Messy_Furniture_16x16_95
+  - first:
+      213: -8088822479099198113
+    second: Messy_Furniture_16x16_96
+  - first:
+      213: -6112086253782055205
+    second: Messy_Furniture_16x16_97
+  - first:
+      213: 8460201747436555691
+    second: Messy_Furniture_16x16_98
+  - first:
+      213: 6360282652284724710
+    second: Messy_Furniture_16x16_99
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Messy_Furniture_16x16_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 258
+        width: 64
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70f4969ce6f614650800000000000000
+      internalID: 6215371482364202759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Furniture_16x16_1
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 288
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c053ea779cf920660800000000000000
+      internalID: 7350613229467219212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Furniture_16x16_2
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 288
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 517b700c82cbd9930800000000000000
+      internalID: 4151681314711910165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Furniture_16x16_3
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 290
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24358ddc60629b470800000000000000
+      internalID: 8410795589756277570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Furniture_16x16_4
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 241
+        width: 28
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 605dc4b7d95ee20f0800000000000000
+      internalID: -1139721191136897786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Furniture_16x16_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 257
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 709f21b48f07ed280800000000000000
+      internalID: -9016645192235419385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Furniture_16x16_6
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 290
+        width: 15
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd74b2c895f3848f0800000000000000
+      internalID: -556124900143970339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Furniture_16x16_7
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 289
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 354064c820ff89870800000000000000
+      internalID: 8689975867419788371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Furniture_16x16_8
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 289
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95df08cff54a621e0800000000000000
+      internalID: -2222908633895600807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Furniture_16x16_9
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 257
+        width: 28
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83fd7a0e6e8e18570800000000000000
+      internalID: 8467304852742463288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Furniture_16x16_10
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 207
+        width: 146
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c61593586bb4ade0800000000000000
+      internalID: -1322726333786810680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Furniture_16x16_11
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 258
+        width: 24
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33b3c890685fe8e90800000000000000
+      internalID: -7021404812989416653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Furniture_16x16_12
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 258
+        width: 64
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b18fa53422973570800000000000000
+      internalID: 8446380310373826993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Furniture_16x16_13
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 257
+        width: 32
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcf4cc5ff9cf10a40800000000000000
+      internalID: 5332821197737185227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Furniture_16x16_14
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 193
+        width: 28
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba1e53572bc7c3f80800000000000000
+      internalID: -8125482521770729045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Furniture_16x16_15
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 191
+        width: 28
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bd2d4671be422e60800000000000000
+      internalID: 7935992017481182647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Furniture_16x16_16
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 193
+        width: 28
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1475d4c379cf13c20800000000000000
+      internalID: 3184604138009614145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Furniture_16x16_17
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 192
+        width: 27
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b4d811e347e991e0800000000000000
+      internalID: -2190465465013709646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Furniture_16x16_18
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 246
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5e12719d825c5570800000000000000
+      internalID: 8456724968278990431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Furniture_16x16_19
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 240
+        width: 21
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f345c956083000660800000000000000
+      internalID: 7349878441864090687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Furniture_16x16_20
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 16
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 920cb77fdd299c9e0800000000000000
+      internalID: -1600586710515990487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Furniture_16x16_21
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 239
+        width: 22
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2ca582dba9600510800000000000000
+      internalID: 1513325661488786475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Furniture_16x16_22
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 241
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84c67d90ab84fd150800000000000000
+      internalID: 5899514000744868936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Furniture_16x16_23
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 212
+        width: 17
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd70ce1f6eb8ef920800000000000000
+      internalID: 3026009823657068509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Furniture_16x16_24
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 192
+        width: 32
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a41eb907a0552df0800000000000000
+      internalID: -205669529622276951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Furniture_16x16_25
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 192
+        width: 32
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45891e60da27d84f0800000000000000
+      internalID: -824877069268576172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Furniture_16x16_26
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 211
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d51939e071ed04370800000000000000
+      internalID: 8304881903481360733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Furniture_16x16_27
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 225
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38b7ab43bdeccf1d0800000000000000
+      internalID: -3315547784773731453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Furniture_16x16_28
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 175
+        width: 50
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d95e473f74b080930800000000000000
+      internalID: 4109547063630685597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Furniture_16x16_29
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 197
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5b80ccdca5bd0ff0800000000000000
+      internalID: -68198665298080934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Furniture_16x16_30
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 209
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e790d2d1cb76e55a0800000000000000
+      internalID: -6530668351999637122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Furniture_16x16_31
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 178
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec260c280f7da7fd0800000000000000
+      internalID: -2343323228107152690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Furniture_16x16_32
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 178
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 960119a541b4596e0800000000000000
+      internalID: -1831475122665353111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Furniture_16x16_33
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 178
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 498fe9823dbf3eea0800000000000000
+      internalID: -5844551007058593644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Furniture_16x16_34
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 178
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa98b13b57b3047b0800000000000000
+      internalID: -5242124589557118545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Furniture_16x16_35
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 194
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5576c0f12b3935a0800000000000000
+      internalID: -6541131966819437221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Furniture_16x16_36
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 192
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7859efe1c5c7ea90800000000000000
+      internalID: -7284636435504080769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Furniture_16x16_37
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 179
+        width: 18
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 436a05d4345493340800000000000000
+      internalID: 4843979029575935540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Furniture_16x16_38
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 180
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e600161ce358f2a40800000000000000
+      internalID: 5345637787290894446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Furniture_16x16_39
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 178
+        width: 33
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d1fd2cccc709f1d0800000000000000
+      internalID: -3316611074401373735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Furniture_16x16_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 131
+        width: 29
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50cd5ee23f342e030800000000000000
+      internalID: 3522452570300079109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Furniture_16x16_41
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 131
+        width: 31
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75336aad389dda900800000000000000
+      internalID: 697452677644563287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Furniture_16x16_42
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 131
+        width: 30
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12c0a42e386ec2dd0800000000000000
+      internalID: -2509377438240601055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Furniture_16x16_43
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 132
+        width: 23
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c8b0b98997d891f0800000000000000
+      internalID: -1037842659668870976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Furniture_16x16_44
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 128
+        width: 25
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6068c0d9bac58ffe0800000000000000
+      internalID: -1155071412276525562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Furniture_16x16_45
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 128
+        width: 66
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b6c9effedb49caa0800000000000000
+      internalID: -6140293195794626890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Furniture_16x16_46
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 176
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65bf4a5ddf956f000800000000000000
+      internalID: 69341791016778582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Furniture_16x16_47
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 185
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a23ab4f19ec73c40800000000000000
+      internalID: 5492085396873032360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Furniture_16x16_48
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 128
+        width: 31
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a54542f4f331bdf0800000000000000
+      internalID: -166294584106334815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Furniture_16x16_49
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 128
+        width: 34
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f882c7f2184c33c0800000000000000
+      internalID: -4378545491407632136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Furniture_16x16_50
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 145
+        width: 22
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6b7b933465174b30800000000000000
+      internalID: 4271406291690945389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Furniture_16x16_51
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 145
+        width: 22
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa3fd4f3d5577e970800000000000000
+      internalID: 8784118641563923370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Furniture_16x16_52
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 145
+        width: 22
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc036cf4a6bb1a8a0800000000000000
+      internalID: -6295544738807926581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Furniture_16x16_53
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 145
+        width: 25
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdcc719d206d93700800000000000000
+      internalID: 520682539658497244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Furniture_16x16_54
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 81
+        width: 48
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a17a67f6348258b0800000000000000
+      internalID: -5164920451026488920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Furniture_16x16_55
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 81
+        width: 48
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5134a081d9cd34750800000000000000
+      internalID: 6288112072010646293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Furniture_16x16_56
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 80
+        width: 27
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab098ca9bba6e5c60800000000000000
+      internalID: 7808796157895282874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Furniture_16x16_57
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 88
+        width: 24
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6babfe92353f96a0800000000000000
+      internalID: -6440370450584589458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Furniture_16x16_58
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 98
+        width: 21
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: acfc26b57c7b0ebf0800000000000000
+      internalID: -297035508546875446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Furniture_16x16_59
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 87
+        width: 20
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: caba6bf19bab1f6f0800000000000000
+      internalID: -652535166728229972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Furniture_16x16_60
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 87
+        width: 20
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a21697887c49edb80800000000000000
+      internalID: -8368087472898744022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Furniture_16x16_61
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 112
+        width: 20
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8643b32f203cd1200800000000000000
+      internalID: 152492379821782120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Furniture_16x16_62
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 96
+        width: 20
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51de1ffcc06aee900800000000000000
+      internalID: 715691964757044501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Furniture_16x16_63
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 97
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d79fb287c2718c430800000000000000
+      internalID: 3803315365076531581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Furniture_16x16_64
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 97
+        width: 27
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 306060efb964a15f0800000000000000
+      internalID: -785237549227047421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Furniture_16x16_65
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 97
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc131a2c0c19e1fb0800000000000000
+      internalID: -4675139106078903861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Furniture_16x16_66
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 97
+        width: 24
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d59a71479afc7bad0800000000000000
+      internalID: -2686450325999081123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Furniture_16x16_67
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 48
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6429acb581e3a4640800000000000000
+      internalID: 5064929005271683654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Furniture_16x16_68
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 32
+        width: 48
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e2aeeffc951c19a0800000000000000
+      internalID: -6261105617898921241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Furniture_16x16_69
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 32
+        width: 48
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 613f781cffb7e1e50800000000000000
+      internalID: 6781994427260334870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Furniture_16x16_70
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 17
+        width: 25
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 398f6901347bcbff0800000000000000
+      internalID: -18938799747303277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Furniture_16x16_71
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 18
+        width: 61
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83864d1a349c27bf0800000000000000
+      internalID: -327978530529581000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Furniture_16x16_72
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 20
+        width: 39
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29db7d6b93ab3d6a0800000000000000
+      internalID: -6425587486284071534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Furniture_16x16_73
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 65
+        width: 17
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb408a079100fb880800000000000000
+      internalID: -8593149454735375170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Furniture_16x16_74
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 49
+        width: 48
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a41816729cd5d8520800000000000000
+      internalID: 2705922069650047306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Furniture_16x16_75
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 36
+        width: 63
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d11d0512badddb20800000000000000
+      internalID: 3160922971876168149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Furniture_16x16_76
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 57
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05263435098575ac0800000000000000
+      internalID: -3866524378178821552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Furniture_16x16_77
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 0
+        width: 46
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f47fa98a8fdf316a0800000000000000
+      internalID: -6479556194433566897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Furniture_16x16_78
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 1
+        width: 46
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccfcd9fd89fda84b0800000000000000
+      internalID: -5437287752416768052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Furniture_16x16_79
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 0
+        width: 18
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db3ddbb3e09509140800000000000000
+      internalID: 4724373926778360765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Furniture_16x16_80
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 3
+        width: 28
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ecc3b676cf676cd0800000000000000
+      internalID: -2564958564578505504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Furniture_16x16_81
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 18
+        width: 22
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04397da5fdc2eb7b0800000000000000
+      internalID: -5206674781380308160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Furniture_16x16_82
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 19
+        width: 26
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7fd2e2871099b4d0800000000000000
+      internalID: -3118302836322803845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Furniture_16x16_83
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 18
+        width: 21
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50be40dd20a761b30800000000000000
+      internalID: 4257724650441992965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Furniture_16x16_84
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 17
+        width: 16
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a972a4683728ddb50800000000000000
+      internalID: 6619590459990353818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Furniture_16x16_85
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 26
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fbdd2934f0db1f90800000000000000
+      internalID: -6981757049957917706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Furniture_16x16_86
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 18
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4150e668b8f3d5bf0800000000000000
+      internalID: -334040928867187436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Furniture_16x16_87
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 0
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3907cb82dd0cce6f0800000000000000
+      internalID: -653935789771820909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Furniture_16x16_88
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 0
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d131263cabc9bda0800000000000000
+      internalID: -5928483493953588775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Furniture_16x16_89
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 0
+        width: 24
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 563edd7f9e19e7a10800000000000000
+      internalID: 1909123726123590501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Furniture_16x16_90
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 1
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3dba579a01d8d8070800000000000000
+      internalID: 8110293606666185683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Furniture_16x16_91
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 0
+        width: 21
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b5867c7793e09c20800000000000000
+      internalID: 3211316774082872760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Furniture_16x16_92
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 0
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87be3a6569dfe42b0800000000000000
+      internalID: -5598258464634442888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Furniture_16x16_93
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 1
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55604c2d52441ecf0800000000000000
+      internalID: -224823577151273387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Furniture_16x16_94
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 1
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87f8aee1ab32e41e0800000000000000
+      internalID: -2211791084702757000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Furniture_16x16_95
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 0
+        width: 10
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82dc78c428ea00df0800000000000000
+      internalID: -215980907460834008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Furniture_16x16_96
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 0
+        width: 8
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f55091acfcabebf80800000000000000
+      internalID: -8088822479099198113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Furniture_16x16_97
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 1
+        width: 8
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd6c5c67fe18d2ba0800000000000000
+      internalID: -6112086253782055205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Furniture_16x16_98
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 0
+        width: 10
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bad481c4aaca86570800000000000000
+      internalID: 8460201747436555691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Furniture_16x16_99
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 0
+        width: 10
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e5a280cf53444850800000000000000
+      internalID: 6360282652284724710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Messy_Furniture_16x16_0: 6215371482364202759
+      Messy_Furniture_16x16_1: 7350613229467219212
+      Messy_Furniture_16x16_10: -1322726333786810680
+      Messy_Furniture_16x16_11: -7021404812989416653
+      Messy_Furniture_16x16_12: 8446380310373826993
+      Messy_Furniture_16x16_13: 5332821197737185227
+      Messy_Furniture_16x16_14: -8125482521770729045
+      Messy_Furniture_16x16_15: 7935992017481182647
+      Messy_Furniture_16x16_16: 3184604138009614145
+      Messy_Furniture_16x16_17: -2190465465013709646
+      Messy_Furniture_16x16_18: 8456724968278990431
+      Messy_Furniture_16x16_19: 7349878441864090687
+      Messy_Furniture_16x16_2: 4151681314711910165
+      Messy_Furniture_16x16_20: -1600586710515990487
+      Messy_Furniture_16x16_21: 1513325661488786475
+      Messy_Furniture_16x16_22: 5899514000744868936
+      Messy_Furniture_16x16_23: 3026009823657068509
+      Messy_Furniture_16x16_24: -205669529622276951
+      Messy_Furniture_16x16_25: -824877069268576172
+      Messy_Furniture_16x16_26: 8304881903481360733
+      Messy_Furniture_16x16_27: -3315547784773731453
+      Messy_Furniture_16x16_28: 4109547063630685597
+      Messy_Furniture_16x16_29: -68198665298080934
+      Messy_Furniture_16x16_3: 8410795589756277570
+      Messy_Furniture_16x16_30: -6530668351999637122
+      Messy_Furniture_16x16_31: -2343323228107152690
+      Messy_Furniture_16x16_32: -1831475122665353111
+      Messy_Furniture_16x16_33: -5844551007058593644
+      Messy_Furniture_16x16_34: -5242124589557118545
+      Messy_Furniture_16x16_35: -6541131966819437221
+      Messy_Furniture_16x16_36: -7284636435504080769
+      Messy_Furniture_16x16_37: 4843979029575935540
+      Messy_Furniture_16x16_38: 5345637787290894446
+      Messy_Furniture_16x16_39: -3316611074401373735
+      Messy_Furniture_16x16_4: -1139721191136897786
+      Messy_Furniture_16x16_40: 3522452570300079109
+      Messy_Furniture_16x16_41: 697452677644563287
+      Messy_Furniture_16x16_42: -2509377438240601055
+      Messy_Furniture_16x16_43: -1037842659668870976
+      Messy_Furniture_16x16_44: -1155071412276525562
+      Messy_Furniture_16x16_45: -6140293195794626890
+      Messy_Furniture_16x16_46: 69341791016778582
+      Messy_Furniture_16x16_47: 5492085396873032360
+      Messy_Furniture_16x16_48: -166294584106334815
+      Messy_Furniture_16x16_49: -4378545491407632136
+      Messy_Furniture_16x16_5: -9016645192235419385
+      Messy_Furniture_16x16_50: 4271406291690945389
+      Messy_Furniture_16x16_51: 8784118641563923370
+      Messy_Furniture_16x16_52: -6295544738807926581
+      Messy_Furniture_16x16_53: 520682539658497244
+      Messy_Furniture_16x16_54: -5164920451026488920
+      Messy_Furniture_16x16_55: 6288112072010646293
+      Messy_Furniture_16x16_56: 7808796157895282874
+      Messy_Furniture_16x16_57: -6440370450584589458
+      Messy_Furniture_16x16_58: -297035508546875446
+      Messy_Furniture_16x16_59: -652535166728229972
+      Messy_Furniture_16x16_6: -556124900143970339
+      Messy_Furniture_16x16_60: -8368087472898744022
+      Messy_Furniture_16x16_61: 152492379821782120
+      Messy_Furniture_16x16_62: 715691964757044501
+      Messy_Furniture_16x16_63: 3803315365076531581
+      Messy_Furniture_16x16_64: -785237549227047421
+      Messy_Furniture_16x16_65: -4675139106078903861
+      Messy_Furniture_16x16_66: -2686450325999081123
+      Messy_Furniture_16x16_67: 5064929005271683654
+      Messy_Furniture_16x16_68: -6261105617898921241
+      Messy_Furniture_16x16_69: 6781994427260334870
+      Messy_Furniture_16x16_7: 8689975867419788371
+      Messy_Furniture_16x16_70: -18938799747303277
+      Messy_Furniture_16x16_71: -327978530529581000
+      Messy_Furniture_16x16_72: -6425587486284071534
+      Messy_Furniture_16x16_73: -8593149454735375170
+      Messy_Furniture_16x16_74: 2705922069650047306
+      Messy_Furniture_16x16_75: 3160922971876168149
+      Messy_Furniture_16x16_76: -3866524378178821552
+      Messy_Furniture_16x16_77: -6479556194433566897
+      Messy_Furniture_16x16_78: -5437287752416768052
+      Messy_Furniture_16x16_79: 4724373926778360765
+      Messy_Furniture_16x16_8: -2222908633895600807
+      Messy_Furniture_16x16_80: -2564958564578505504
+      Messy_Furniture_16x16_81: -5206674781380308160
+      Messy_Furniture_16x16_82: -3118302836322803845
+      Messy_Furniture_16x16_83: 4257724650441992965
+      Messy_Furniture_16x16_84: 6619590459990353818
+      Messy_Furniture_16x16_85: -6981757049957917706
+      Messy_Furniture_16x16_86: -334040928867187436
+      Messy_Furniture_16x16_87: -653935789771820909
+      Messy_Furniture_16x16_88: -5928483493953588775
+      Messy_Furniture_16x16_89: 1909123726123590501
+      Messy_Furniture_16x16_9: 8467304852742463288
+      Messy_Furniture_16x16_90: 8110293606666185683
+      Messy_Furniture_16x16_91: 3211316774082872760
+      Messy_Furniture_16x16_92: -5598258464634442888
+      Messy_Furniture_16x16_93: -224823577151273387
+      Messy_Furniture_16x16_94: -2211791084702757000
+      Messy_Furniture_16x16_95: -215980907460834008
+      Messy_Furniture_16x16_96: -8088822479099198113
+      Messy_Furniture_16x16_97: -6112086253782055205
+      Messy_Furniture_16x16_98: 8460201747436555691
+      Messy_Furniture_16x16_99: 6360282652284724710
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

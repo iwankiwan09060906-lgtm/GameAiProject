@@ -1,0 +1,977 @@
+fileFormatVersion: 2
+guid: 2b00e93837f8bca4aa3d81512807d67d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1923929235276326870
+    second: professional_kitchen_room_door_tiles_0
+  - first:
+      213: -503535924217773325
+    second: professional_kitchen_room_door_tiles_1
+  - first:
+      213: 5926399199318144156
+    second: professional_kitchen_room_door_tiles_2
+  - first:
+      213: 6174151663365007318
+    second: professional_kitchen_room_door_tiles_3
+  - first:
+      213: -4852812555730172959
+    second: professional_kitchen_room_door_tiles_4
+  - first:
+      213: 3910811990701616965
+    second: professional_kitchen_room_door_tiles_5
+  - first:
+      213: 3849485068088866263
+    second: professional_kitchen_room_door_tiles_6
+  - first:
+      213: 8543986726685527016
+    second: professional_kitchen_room_door_tiles_7
+  - first:
+      213: 753712527074785301
+    second: professional_kitchen_room_door_tiles_8
+  - first:
+      213: -8316274566658978138
+    second: professional_kitchen_room_door_tiles_9
+  - first:
+      213: 1029922181753011931
+    second: professional_kitchen_room_door_tiles_10
+  - first:
+      213: 3840848699433970992
+    second: professional_kitchen_room_door_tiles_11
+  - first:
+      213: 220802303725893773
+    second: professional_kitchen_room_door_tiles_12
+  - first:
+      213: -1128698912489759691
+    second: professional_kitchen_room_door_tiles_13
+  - first:
+      213: -4273687045075215761
+    second: professional_kitchen_room_door_tiles_14
+  - first:
+      213: 3003543599478097058
+    second: professional_kitchen_room_door_tiles_15
+  - first:
+      213: 6937490706904830445
+    second: professional_kitchen_room_door_tiles_16
+  - first:
+      213: -6369109886147657631
+    second: professional_kitchen_room_door_tiles_17
+  - first:
+      213: -1569244554753682235
+    second: professional_kitchen_room_door_tiles_18
+  - first:
+      213: 5800509235349107774
+    second: professional_kitchen_room_door_tiles_19
+  - first:
+      213: 1617305754486620669
+    second: professional_kitchen_room_door_tiles_20
+  - first:
+      213: -7938009037839249905
+    second: professional_kitchen_room_door_tiles_21
+  - first:
+      213: -5398189371081043749
+    second: professional_kitchen_room_door_tiles_22
+  - first:
+      213: 4547344122240244182
+    second: professional_kitchen_room_door_tiles_23
+  - first:
+      213: 8569306974083547754
+    second: professional_kitchen_room_door_tiles_24
+  - first:
+      213: -2474932350653861485
+    second: professional_kitchen_room_door_tiles_25
+  - first:
+      213: -2027137690566790275
+    second: professional_kitchen_room_door_tiles_26
+  - first:
+      213: 7626425823191523174
+    second: professional_kitchen_room_door_tiles_27
+  - first:
+      213: -6168390597560132608
+    second: professional_kitchen_room_door_tiles_28
+  - first:
+      213: -7178753455531623378
+    second: professional_kitchen_room_door_tiles_29
+  - first:
+      213: 2483093599904365078
+    second: professional_kitchen_room_door_tiles_30
+  - first:
+      213: 3136251220020909063
+    second: professional_kitchen_room_door_tiles_31
+  - first:
+      213: 6781096341097961327
+    second: professional_kitchen_room_door_tiles_32
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: professional_kitchen_room_door_tiles_0
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 352
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a289d5ecd84dc45e0800000000000000
+      internalID: -1923929235276326870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_room_door_tiles_1
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 352
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f20a59aeb41309f0800000000000000
+      internalID: -503535924217773325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_room_door_tiles_2
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 352
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9474802cacce3250800000000000000
+      internalID: 5926399199318144156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_room_door_tiles_3
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 352
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d7224cc93efea550800000000000000
+      internalID: 6174151663365007318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_room_door_tiles_4
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 256
+        width: 32
+        height: 102
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e3c52e11b857acb0800000000000000
+      internalID: -4852812555730172959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_room_door_tiles_5
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 320
+        width: 64
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54fab1109cef54630800000000000000
+      internalID: 3910811990701616965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_room_door_tiles_6
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 317
+        width: 64
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d57b93264e1c6530800000000000000
+      internalID: 3849485068088866263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_room_door_tiles_7
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 336
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8eb4eb1f8a6529670800000000000000
+      internalID: 8543986726685527016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_room_door_tiles_8
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 336
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 518fd0fcc89b57a00800000000000000
+      internalID: 753712527074785301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_room_door_tiles_9
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 288
+        width: 76
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ae0da7d758a69c80800000000000000
+      internalID: -8316274566658978138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_room_door_tiles_10
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 314
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdefead74c40b4e00800000000000000
+      internalID: 1029922181753011931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_room_door_tiles_11
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 314
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03d68cdda8f6d4530800000000000000
+      internalID: 3840848699433970992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_room_door_tiles_12
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 288
+        width: 6
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d887b2f7682701300800000000000000
+      internalID: 220802303725893773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_room_door_tiles_13
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 282
+        width: 32
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53c9da6b15e0650f0800000000000000
+      internalID: -1128698912489759691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_room_door_tiles_14
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 282
+        width: 32
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6a5a158640d0b4c0800000000000000
+      internalID: -4273687045075215761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_room_door_tiles_15
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 317
+        width: 32
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a44a428dfabea920800000000000000
+      internalID: 3003543599478097058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_room_door_tiles_16
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 288
+        width: 6
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de1d2a1aa0be64060800000000000000
+      internalID: 6937490706904830445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_room_door_tiles_17
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 218
+        width: 76
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1608db4bd406c97a0800000000000000
+      internalID: -6369109886147657631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_room_door_tiles_18
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c4d034446ce83ae0800000000000000
+      internalID: -1569244554753682235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_room_door_tiles_19
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 224
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e343b59ca6c8f7050800000000000000
+      internalID: 5800509235349107774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_room_door_tiles_20
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 224
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df1ce5dc303d17610800000000000000
+      internalID: 1617305754486620669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_room_door_tiles_21
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 224
+        width: 6
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0e40c366d686d190800000000000000
+      internalID: -7938009037839249905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_room_door_tiles_22
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 160
+        width: 38
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd0dc6a2e57c515b0800000000000000
+      internalID: -5398189371081043749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_room_door_tiles_23
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 96
+        width: 70
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d91795e2696b1f30800000000000000
+      internalID: 4547344122240244182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_room_door_tiles_24
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 224
+        width: 128
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6207817a4b4ce670800000000000000
+      internalID: 8569306974083547754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_room_door_tiles_25
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 189
+        width: 70
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 391772cc32647add0800000000000000
+      internalID: -2474932350653861485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_room_door_tiles_26
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 202
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d73f5fab2092ed3e0800000000000000
+      internalID: -2027137690566790275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_room_door_tiles_27
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 186
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66f523131e186d960800000000000000
+      internalID: 7626425823191523174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_room_door_tiles_28
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 154
+        width: 32
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00c919cde69756aa0800000000000000
+      internalID: -6168390597560132608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_room_door_tiles_29
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 128
+        width: 70
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2cfde054c1ff5c90800000000000000
+      internalID: -7178753455531623378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_room_door_tiles_30
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 122
+        width: 32
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61a785e1978b57220800000000000000
+      internalID: 2483093599904365078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_room_door_tiles_31
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 23
+        width: 160
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7045bb73ed3368b20800000000000000
+      internalID: 3136251220020909063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_room_door_tiles_32
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 23
+        width: 320
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6758d6c13b4b1e50800000000000000
+      internalID: 6781096341097961327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: e936cd36b150e2a439c9be81709c882d
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":60.0,"y":60.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      professional_kitchen_room_door_tiles_0: -1923929235276326870
+      professional_kitchen_room_door_tiles_1: -503535924217773325
+      professional_kitchen_room_door_tiles_10: 1029922181753011931
+      professional_kitchen_room_door_tiles_11: 3840848699433970992
+      professional_kitchen_room_door_tiles_12: 220802303725893773
+      professional_kitchen_room_door_tiles_13: -1128698912489759691
+      professional_kitchen_room_door_tiles_14: -4273687045075215761
+      professional_kitchen_room_door_tiles_15: 3003543599478097058
+      professional_kitchen_room_door_tiles_16: 6937490706904830445
+      professional_kitchen_room_door_tiles_17: -6369109886147657631
+      professional_kitchen_room_door_tiles_18: -1569244554753682235
+      professional_kitchen_room_door_tiles_19: 5800509235349107774
+      professional_kitchen_room_door_tiles_2: 5926399199318144156
+      professional_kitchen_room_door_tiles_20: 1617305754486620669
+      professional_kitchen_room_door_tiles_21: -7938009037839249905
+      professional_kitchen_room_door_tiles_22: -5398189371081043749
+      professional_kitchen_room_door_tiles_23: 4547344122240244182
+      professional_kitchen_room_door_tiles_24: 8569306974083547754
+      professional_kitchen_room_door_tiles_25: -2474932350653861485
+      professional_kitchen_room_door_tiles_26: -2027137690566790275
+      professional_kitchen_room_door_tiles_27: 7626425823191523174
+      professional_kitchen_room_door_tiles_28: -6168390597560132608
+      professional_kitchen_room_door_tiles_29: -7178753455531623378
+      professional_kitchen_room_door_tiles_3: 6174151663365007318
+      professional_kitchen_room_door_tiles_30: 2483093599904365078
+      professional_kitchen_room_door_tiles_31: 3136251220020909063
+      professional_kitchen_room_door_tiles_32: 6781096341097961327
+      professional_kitchen_room_door_tiles_4: -4852812555730172959
+      professional_kitchen_room_door_tiles_5: 3910811990701616965
+      professional_kitchen_room_door_tiles_6: 3849485068088866263
+      professional_kitchen_room_door_tiles_7: 8543986726685527016
+      professional_kitchen_room_door_tiles_8: 753712527074785301
+      professional_kitchen_room_door_tiles_9: -8316274566658978138
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

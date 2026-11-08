@@ -1,0 +1,949 @@
+fileFormatVersion: 2
+guid: 964aa98db00028e4c895581169059dcd
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 22095256962547472
+    second: retro_bathroom_room_door_tiles1_0
+  - first:
+      213: 4002187162037783464
+    second: retro_bathroom_room_door_tiles1_1
+  - first:
+      213: -233363981563616117
+    second: retro_bathroom_room_door_tiles1_2
+  - first:
+      213: -1677896279975344815
+    second: retro_bathroom_room_door_tiles1_3
+  - first:
+      213: -8959506305690538147
+    second: retro_bathroom_room_door_tiles1_4
+  - first:
+      213: -2580164993838532710
+    second: retro_bathroom_room_door_tiles1_5
+  - first:
+      213: 6503484514430164565
+    second: retro_bathroom_room_door_tiles1_6
+  - first:
+      213: 5936270170544448850
+    second: retro_bathroom_room_door_tiles1_7
+  - first:
+      213: -4111584224872984881
+    second: retro_bathroom_room_door_tiles1_8
+  - first:
+      213: -2679820234345179901
+    second: retro_bathroom_room_door_tiles1_9
+  - first:
+      213: -1964200965095668663
+    second: retro_bathroom_room_door_tiles1_10
+  - first:
+      213: 1694978262672374260
+    second: retro_bathroom_room_door_tiles1_11
+  - first:
+      213: 785704436723930228
+    second: retro_bathroom_room_door_tiles1_12
+  - first:
+      213: -7196473866437195962
+    second: retro_bathroom_room_door_tiles1_13
+  - first:
+      213: -2120508989746791139
+    second: retro_bathroom_room_door_tiles1_14
+  - first:
+      213: 8002684789154794034
+    second: retro_bathroom_room_door_tiles1_15
+  - first:
+      213: -6115773879543746173
+    second: retro_bathroom_room_door_tiles1_16
+  - first:
+      213: 6787645880150903947
+    second: retro_bathroom_room_door_tiles1_17
+  - first:
+      213: 2201895781725795856
+    second: retro_bathroom_room_door_tiles1_18
+  - first:
+      213: -3449595942556301898
+    second: retro_bathroom_room_door_tiles1_19
+  - first:
+      213: 2062675711948079285
+    second: retro_bathroom_room_door_tiles1_20
+  - first:
+      213: -198706495142538538
+    second: retro_bathroom_room_door_tiles1_21
+  - first:
+      213: 7894651815776679649
+    second: retro_bathroom_room_door_tiles1_22
+  - first:
+      213: 7141785513421639652
+    second: retro_bathroom_room_door_tiles1_23
+  - first:
+      213: -7528228401718159626
+    second: retro_bathroom_room_door_tiles1_24
+  - first:
+      213: 8206050657645941028
+    second: retro_bathroom_room_door_tiles1_25
+  - first:
+      213: -5219744674521401772
+    second: retro_bathroom_room_door_tiles1_26
+  - first:
+      213: 3067398961195708295
+    second: retro_bathroom_room_door_tiles1_27
+  - first:
+      213: 985664124575537584
+    second: retro_bathroom_room_door_tiles1_28
+  - first:
+      213: -750224120681967071
+    second: retro_bathroom_room_door_tiles1_29
+  - first:
+      213: 3838219010388661120
+    second: retro_bathroom_room_door_tiles1_30
+  - first:
+      213: -3129965189616889608
+    second: retro_bathroom_room_door_tiles1_31
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: retro_bathroom_room_door_tiles1_0
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 351
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01f3976e48f7e4000800000000000000
+      internalID: 22095256962547472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_room_door_tiles1_1
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 351
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ab04e5f400aa8730800000000000000
+      internalID: 4002187162037783464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_room_door_tiles1_2
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 351
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b84a787f1bce2ccf0800000000000000
+      internalID: -233363981563616117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_room_door_tiles1_3
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 351
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 155ce16293ae6b8e0800000000000000
+      internalID: -1677896279975344815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_room_door_tiles1_4
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 255
+        width: 66
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5f61760c7079a380800000000000000
+      internalID: -8959506305690538147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_room_door_tiles1_5
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 319
+        width: 66
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a973b50cb99613cd0800000000000000
+      internalID: -2580164993838532710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_room_door_tiles1_6
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 316
+        width: 66
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55e1ddc75b4014a50800000000000000
+      internalID: 6503484514430164565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_room_door_tiles1_7
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 335
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 255ac06b44ed16250800000000000000
+      internalID: 5936270170544448850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_room_door_tiles1_8
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 335
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fce885c7ee7b0f6c0800000000000000
+      internalID: -4111584224872984881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_room_door_tiles1_9
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 287
+        width: 78
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30593f5f1bd5fcad0800000000000000
+      internalID: -2679820234345179901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_room_door_tiles1_10
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 313
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9444ef701a1cdb4e0800000000000000
+      internalID: -1964200965095668663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_room_door_tiles1_11
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 313
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f97890efb5c58710800000000000000
+      internalID: 1694978262672374260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_room_door_tiles1_12
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 287
+        width: 8
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 474d069b50267ea00800000000000000
+      internalID: 785704436723930228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_room_door_tiles1_13
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 281
+        width: 66
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64701a3a52df02c90800000000000000
+      internalID: -7196473866437195962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_room_door_tiles1_14
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 316
+        width: 34
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1dbe1b0f407292e0800000000000000
+      internalID: -2120508989746791139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_room_door_tiles1_15
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 287
+        width: 8
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23a4efa6a6f3f0f60800000000000000
+      internalID: 8002684789154794034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_room_door_tiles1_16
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 217
+        width: 78
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 381be2f2f08602ba0800000000000000
+      internalID: -6115773879543746173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_room_door_tiles1_17
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 95
+        width: 162
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8cc98b27ff823e50800000000000000
+      internalID: 6787645880150903947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_room_door_tiles1_18
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 223
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 016723e1c84be8e10800000000000000
+      internalID: 2201895781725795856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_room_door_tiles1_19
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 223
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b58d4954c29020d0800000000000000
+      internalID: -3449595942556301898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_room_door_tiles1_20
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 223
+        width: 8
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b0cd79a1a810ac10800000000000000
+      internalID: 2062675711948079285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_room_door_tiles1_21
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 95
+        width: 165
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d25776de7d0e3df0800000000000000
+      internalID: -198706495142538538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_room_door_tiles1_22
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 223
+        width: 130
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e6f2c0bfff6f8d60800000000000000
+      internalID: 7894651815776679649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_room_door_tiles1_23
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 188
+        width: 72
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ef078de518bc1360800000000000000
+      internalID: 7141785513421639652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_room_door_tiles1_24
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 201
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f61597a72c568790800000000000000
+      internalID: -7528228401718159626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_room_door_tiles1_25
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 185
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 421d8d9789fb1e170800000000000000
+      internalID: 8206050657645941028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_room_door_tiles1_26
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 153
+        width: 34
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4563ae8bfddbf87b0800000000000000
+      internalID: -5219744674521401772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_room_door_tiles1_27
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 127
+        width: 72
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78fe87a7a17919a20800000000000000
+      internalID: 3067398961195708295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_room_door_tiles1_28
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 121
+        width: 34
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b9db2d8c48cdad00800000000000000
+      internalID: 985664124575537584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_room_door_tiles1_29
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 22
+        width: 161
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12252d8132ba695f0800000000000000
+      internalID: -750224120681967071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_room_door_tiles1_30
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 22
+        width: 162
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0831e5caad7144530800000000000000
+      internalID: 3838219010388661120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: retro_bathroom_room_door_tiles1_31
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 22
+        width: 162
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f01c894e312094d0800000000000000
+      internalID: -3129965189616889608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      retro_bathroom_room_door_tiles1_0: 22095256962547472
+      retro_bathroom_room_door_tiles1_1: 4002187162037783464
+      retro_bathroom_room_door_tiles1_10: -1964200965095668663
+      retro_bathroom_room_door_tiles1_11: 1694978262672374260
+      retro_bathroom_room_door_tiles1_12: 785704436723930228
+      retro_bathroom_room_door_tiles1_13: -7196473866437195962
+      retro_bathroom_room_door_tiles1_14: -2120508989746791139
+      retro_bathroom_room_door_tiles1_15: 8002684789154794034
+      retro_bathroom_room_door_tiles1_16: -6115773879543746173
+      retro_bathroom_room_door_tiles1_17: 6787645880150903947
+      retro_bathroom_room_door_tiles1_18: 2201895781725795856
+      retro_bathroom_room_door_tiles1_19: -3449595942556301898
+      retro_bathroom_room_door_tiles1_2: -233363981563616117
+      retro_bathroom_room_door_tiles1_20: 2062675711948079285
+      retro_bathroom_room_door_tiles1_21: -198706495142538538
+      retro_bathroom_room_door_tiles1_22: 7894651815776679649
+      retro_bathroom_room_door_tiles1_23: 7141785513421639652
+      retro_bathroom_room_door_tiles1_24: -7528228401718159626
+      retro_bathroom_room_door_tiles1_25: 8206050657645941028
+      retro_bathroom_room_door_tiles1_26: -5219744674521401772
+      retro_bathroom_room_door_tiles1_27: 3067398961195708295
+      retro_bathroom_room_door_tiles1_28: 985664124575537584
+      retro_bathroom_room_door_tiles1_29: -750224120681967071
+      retro_bathroom_room_door_tiles1_3: -1677896279975344815
+      retro_bathroom_room_door_tiles1_30: 3838219010388661120
+      retro_bathroom_room_door_tiles1_31: -3129965189616889608
+      retro_bathroom_room_door_tiles1_4: -8959506305690538147
+      retro_bathroom_room_door_tiles1_5: -2580164993838532710
+      retro_bathroom_room_door_tiles1_6: 6503484514430164565
+      retro_bathroom_room_door_tiles1_7: 5936270170544448850
+      retro_bathroom_room_door_tiles1_8: -4111584224872984881
+      retro_bathroom_room_door_tiles1_9: -2679820234345179901
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,481 @@
+fileFormatVersion: 2
+guid: 5aa2ebe71bdefd448b1e9d3d3a5ef32b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7066943678227367091
+    second: Messy_Walls_16x16_0
+  - first:
+      213: 458466827699173571
+    second: Messy_Walls_16x16_1
+  - first:
+      213: 3077966462120722223
+    second: Messy_Walls_16x16_2
+  - first:
+      213: 741141090966230329
+    second: Messy_Walls_16x16_3
+  - first:
+      213: -7215925580752804442
+    second: Messy_Walls_16x16_4
+  - first:
+      213: 7346308930541555495
+    second: Messy_Walls_16x16_5
+  - first:
+      213: 8724285995671275097
+    second: Messy_Walls_16x16_6
+  - first:
+      213: 6570723097414229120
+    second: Messy_Walls_16x16_7
+  - first:
+      213: -5566294008439926740
+    second: Messy_Walls_16x16_8
+  - first:
+      213: 1638737062361313548
+    second: Messy_Walls_16x16_9
+  - first:
+      213: 2680241303709736005
+    second: Messy_Walls_16x16_10
+  - first:
+      213: 2616098493338582061
+    second: Messy_Walls_16x16_11
+  - first:
+      213: 9154147135156910363
+    second: Messy_Walls_16x16_12
+  - first:
+      213: -4973907722989302788
+    second: Messy_Walls_16x16_13
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Messy_Walls_16x16_0
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 233
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4bb09bba2c2ded90800000000000000
+      internalID: -7066943678227367091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Walls_16x16_1
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 223
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c83f46962dcc5600800000000000000
+      internalID: 458466827699173571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Walls_16x16_2
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 235
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2f7545803227ba20800000000000000
+      internalID: 3077966462120722223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Walls_16x16_3
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 235
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 935dc7f35ef094a00800000000000000
+      internalID: 741141090966230329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Walls_16x16_4
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 207
+        width: 14
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a523997ae1ebdb90800000000000000
+      internalID: -7215925580752804442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Walls_16x16_5
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 239
+        width: 42
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72f8537cc0553f560800000000000000
+      internalID: 7346308930541555495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Walls_16x16_6
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 169
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 956c6eac3e3e21970800000000000000
+      internalID: 8724285995671275097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Walls_16x16_7
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 169
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08c54da08d5ef2b50800000000000000
+      internalID: 6570723097414229120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Walls_16x16_8
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 159
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c209d8f371d80c2b0800000000000000
+      internalID: -5566294008439926740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Walls_16x16_9
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 175
+        width: 49
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0130520da6fdb610800000000000000
+      internalID: 1638737062361313548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Walls_16x16_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 86
+        width: 161
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54cd2f3e341223520800000000000000
+      internalID: 2680241303709736005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Walls_16x16_11
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 95
+        width: 97
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2c71e018bf3e4420800000000000000
+      internalID: 2616098493338582061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Walls_16x16_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6
+        width: 161
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b19ffa491501a0f70800000000000000
+      internalID: 9154147135156910363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Messy_Walls_16x16_13
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 15
+        width: 97
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfb86a1674129fab0800000000000000
+      internalID: -4973907722989302788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Messy_Walls_16x16_0: -7066943678227367091
+      Messy_Walls_16x16_1: 458466827699173571
+      Messy_Walls_16x16_10: 2680241303709736005
+      Messy_Walls_16x16_11: 2616098493338582061
+      Messy_Walls_16x16_12: 9154147135156910363
+      Messy_Walls_16x16_13: -4973907722989302788
+      Messy_Walls_16x16_2: 3077966462120722223
+      Messy_Walls_16x16_3: 741141090966230329
+      Messy_Walls_16x16_4: -7215925580752804442
+      Messy_Walls_16x16_5: 7346308930541555495
+      Messy_Walls_16x16_6: 8724285995671275097
+      Messy_Walls_16x16_7: 6570723097414229120
+      Messy_Walls_16x16_8: -5566294008439926740
+      Messy_Walls_16x16_9: 1638737062361313548
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

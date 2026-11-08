@@ -1,0 +1,4901 @@
+fileFormatVersion: 2
+guid: 8574209b7c242b5489b14f1b092a3f68
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8241119428076403819
+    second: professional_kitchen_0
+  - first:
+      213: 4052622177890692780
+    second: professional_kitchen_1
+  - first:
+      213: 6322246611364314586
+    second: professional_kitchen_2
+  - first:
+      213: -546059325824080867
+    second: professional_kitchen_3
+  - first:
+      213: -584564032528786382
+    second: professional_kitchen_4
+  - first:
+      213: -8585537744936757004
+    second: professional_kitchen_5
+  - first:
+      213: 4217214315915859732
+    second: professional_kitchen_6
+  - first:
+      213: 2978929065358788804
+    second: professional_kitchen_7
+  - first:
+      213: 7403939928844540948
+    second: professional_kitchen_8
+  - first:
+      213: -7302015746876940245
+    second: professional_kitchen_9
+  - first:
+      213: -934175757509975611
+    second: professional_kitchen_10
+  - first:
+      213: -3269636968387514398
+    second: professional_kitchen_11
+  - first:
+      213: 7659243790356209269
+    second: professional_kitchen_12
+  - first:
+      213: 1344966711224140463
+    second: professional_kitchen_13
+  - first:
+      213: -335586279172854712
+    second: professional_kitchen_14
+  - first:
+      213: 1392925970850050150
+    second: professional_kitchen_15
+  - first:
+      213: 4478834694094387345
+    second: professional_kitchen_16
+  - first:
+      213: -3048448682179783187
+    second: professional_kitchen_17
+  - first:
+      213: 6740442617326545234
+    second: professional_kitchen_18
+  - first:
+      213: 7899295447628503428
+    second: professional_kitchen_19
+  - first:
+      213: 3011553810407091462
+    second: professional_kitchen_20
+  - first:
+      213: 418309602994494466
+    second: professional_kitchen_21
+  - first:
+      213: -4588093931655806857
+    second: professional_kitchen_22
+  - first:
+      213: 3975589923799112776
+    second: professional_kitchen_23
+  - first:
+      213: -2823313250275399293
+    second: professional_kitchen_24
+  - first:
+      213: -8162808354695829819
+    second: professional_kitchen_25
+  - first:
+      213: 4022222572405172427
+    second: professional_kitchen_26
+  - first:
+      213: 313661115627587926
+    second: professional_kitchen_27
+  - first:
+      213: 2948473280915328541
+    second: professional_kitchen_28
+  - first:
+      213: -6159554036083538480
+    second: professional_kitchen_29
+  - first:
+      213: -8219354532139975225
+    second: professional_kitchen_30
+  - first:
+      213: -3844395171347304541
+    second: professional_kitchen_31
+  - first:
+      213: 3986494963216750779
+    second: professional_kitchen_32
+  - first:
+      213: 3951380620629096767
+    second: professional_kitchen_33
+  - first:
+      213: -3028639113617154887
+    second: professional_kitchen_34
+  - first:
+      213: 1391847805789350278
+    second: professional_kitchen_35
+  - first:
+      213: 7039864023536383764
+    second: professional_kitchen_36
+  - first:
+      213: 5952999619581380587
+    second: professional_kitchen_37
+  - first:
+      213: -7209464940235554890
+    second: professional_kitchen_38
+  - first:
+      213: 156891991693243841
+    second: professional_kitchen_39
+  - first:
+      213: -214693681164822045
+    second: professional_kitchen_40
+  - first:
+      213: -4070804765542804906
+    second: professional_kitchen_41
+  - first:
+      213: 1070264763357456988
+    second: professional_kitchen_42
+  - first:
+      213: -405251514999461593
+    second: professional_kitchen_43
+  - first:
+      213: -8597899226807223642
+    second: professional_kitchen_44
+  - first:
+      213: -3263552523185059316
+    second: professional_kitchen_45
+  - first:
+      213: -845888087595548945
+    second: professional_kitchen_46
+  - first:
+      213: 6946644365404663301
+    second: professional_kitchen_47
+  - first:
+      213: 3544911691725051833
+    second: professional_kitchen_48
+  - first:
+      213: -5584598691045509392
+    second: professional_kitchen_49
+  - first:
+      213: 1943084153027158120
+    second: professional_kitchen_50
+  - first:
+      213: 3224427601251173429
+    second: professional_kitchen_51
+  - first:
+      213: 5090666610635992179
+    second: professional_kitchen_52
+  - first:
+      213: 8484464813972957806
+    second: professional_kitchen_53
+  - first:
+      213: 5481906144270872997
+    second: professional_kitchen_54
+  - first:
+      213: -4700828183098682485
+    second: professional_kitchen_55
+  - first:
+      213: -3964550607664914166
+    second: professional_kitchen_56
+  - first:
+      213: -8031477939362278559
+    second: professional_kitchen_57
+  - first:
+      213: 4954474174380374238
+    second: professional_kitchen_58
+  - first:
+      213: 7728347155417873506
+    second: professional_kitchen_59
+  - first:
+      213: -5097605651570912031
+    second: professional_kitchen_60
+  - first:
+      213: 8376405203220194273
+    second: professional_kitchen_61
+  - first:
+      213: 595807731413361415
+    second: professional_kitchen_62
+  - first:
+      213: 7182340910248907913
+    second: professional_kitchen_63
+  - first:
+      213: 1799150435853619920
+    second: professional_kitchen_64
+  - first:
+      213: 71553887542353987
+    second: professional_kitchen_65
+  - first:
+      213: -775594222710437297
+    second: professional_kitchen_66
+  - first:
+      213: -8680829938274425293
+    second: professional_kitchen_67
+  - first:
+      213: 631329954555845108
+    second: professional_kitchen_68
+  - first:
+      213: -2382002292904173919
+    second: professional_kitchen_69
+  - first:
+      213: -7775006964283670316
+    second: professional_kitchen_70
+  - first:
+      213: -7208275265171017662
+    second: professional_kitchen_71
+  - first:
+      213: -3560797677749703534
+    second: professional_kitchen_72
+  - first:
+      213: 4125730220168982037
+    second: professional_kitchen_73
+  - first:
+      213: 1114337324393441753
+    second: professional_kitchen_74
+  - first:
+      213: 6338591205730453453
+    second: professional_kitchen_75
+  - first:
+      213: 8949482157673043067
+    second: professional_kitchen_76
+  - first:
+      213: 3445185578806972154
+    second: professional_kitchen_77
+  - first:
+      213: 8131897620214290452
+    second: professional_kitchen_78
+  - first:
+      213: -4887581768144142079
+    second: professional_kitchen_79
+  - first:
+      213: 8650754426174985007
+    second: professional_kitchen_80
+  - first:
+      213: -3955745032862816714
+    second: professional_kitchen_81
+  - first:
+      213: 2823620456920189183
+    second: professional_kitchen_82
+  - first:
+      213: -7923068415472173685
+    second: professional_kitchen_83
+  - first:
+      213: 682539174454093025
+    second: professional_kitchen_84
+  - first:
+      213: 3873672997061997526
+    second: professional_kitchen_85
+  - first:
+      213: -3867325981464185842
+    second: professional_kitchen_86
+  - first:
+      213: -8320994935984995138
+    second: professional_kitchen_87
+  - first:
+      213: 2585219976351134428
+    second: professional_kitchen_88
+  - first:
+      213: -4044280314508781340
+    second: professional_kitchen_89
+  - first:
+      213: -127422189924313185
+    second: professional_kitchen_90
+  - first:
+      213: -4600674987347064147
+    second: professional_kitchen_91
+  - first:
+      213: 891489713627236170
+    second: professional_kitchen_92
+  - first:
+      213: -953710949303123647
+    second: professional_kitchen_93
+  - first:
+      213: -3364394617051458092
+    second: professional_kitchen_94
+  - first:
+      213: 2230165286699150693
+    second: professional_kitchen_95
+  - first:
+      213: -7916132808184673786
+    second: professional_kitchen_96
+  - first:
+      213: -6263402168195317505
+    second: professional_kitchen_97
+  - first:
+      213: 4010699141602663006
+    second: professional_kitchen_98
+  - first:
+      213: 9066079258196845693
+    second: professional_kitchen_99
+  - first:
+      213: 8935821067547668954
+    second: professional_kitchen_100
+  - first:
+      213: -4044997207094582892
+    second: professional_kitchen_101
+  - first:
+      213: -4404975612125728264
+    second: professional_kitchen_102
+  - first:
+      213: -1296352331441844885
+    second: professional_kitchen_103
+  - first:
+      213: -7657763650959711737
+    second: professional_kitchen_104
+  - first:
+      213: 6636387357804229764
+    second: professional_kitchen_105
+  - first:
+      213: 8584938812865398059
+    second: professional_kitchen_106
+  - first:
+      213: -1890342529845225371
+    second: professional_kitchen_107
+  - first:
+      213: 8855878370525925542
+    second: professional_kitchen_108
+  - first:
+      213: -1663646213316498251
+    second: professional_kitchen_109
+  - first:
+      213: -6719538992823016569
+    second: professional_kitchen_110
+  - first:
+      213: 5756572246197879175
+    second: professional_kitchen_111
+  - first:
+      213: -3466851007373536996
+    second: professional_kitchen_112
+  - first:
+      213: -5574747345004397710
+    second: professional_kitchen_113
+  - first:
+      213: 4175881652379384552
+    second: professional_kitchen_114
+  - first:
+      213: 4421180341851324399
+    second: professional_kitchen_115
+  - first:
+      213: 7642104351252477741
+    second: professional_kitchen_116
+  - first:
+      213: 6326651494278471951
+    second: professional_kitchen_117
+  - first:
+      213: -3193165643209669160
+    second: professional_kitchen_118
+  - first:
+      213: 5743733598388059163
+    second: professional_kitchen_119
+  - first:
+      213: -7477230376506816933
+    second: professional_kitchen_120
+  - first:
+      213: -6934720539269231139
+    second: professional_kitchen_121
+  - first:
+      213: -1297746217086399732
+    second: professional_kitchen_122
+  - first:
+      213: -4286646383503428527
+    second: professional_kitchen_123
+  - first:
+      213: -1659911187994961308
+    second: professional_kitchen_124
+  - first:
+      213: -3508796971527505199
+    second: professional_kitchen_125
+  - first:
+      213: -429060456050640969
+    second: professional_kitchen_126
+  - first:
+      213: 5936296697244819668
+    second: professional_kitchen_127
+  - first:
+      213: 3196753387689206320
+    second: professional_kitchen_128
+  - first:
+      213: -7938759574503265291
+    second: professional_kitchen_129
+  - first:
+      213: 3517590454743477000
+    second: professional_kitchen_130
+  - first:
+      213: 3209973861909076077
+    second: professional_kitchen_131
+  - first:
+      213: -6195172204268930015
+    second: professional_kitchen_132
+  - first:
+      213: 1864102033342907393
+    second: professional_kitchen_133
+  - first:
+      213: 7443446974637400182
+    second: professional_kitchen_134
+  - first:
+      213: 1431632779269215949
+    second: professional_kitchen_135
+  - first:
+      213: 313970917672859038
+    second: professional_kitchen_136
+  - first:
+      213: 2611460067606348777
+    second: professional_kitchen_137
+  - first:
+      213: -8034011140204445922
+    second: professional_kitchen_138
+  - first:
+      213: 2766000304709348631
+    second: professional_kitchen_139
+  - first:
+      213: -4820671471555332102
+    second: professional_kitchen_140
+  - first:
+      213: 6920767784155233527
+    second: professional_kitchen_141
+  - first:
+      213: -4615314327632302736
+    second: professional_kitchen_142
+  - first:
+      213: -2213093234531824305
+    second: professional_kitchen_143
+  - first:
+      213: -2000481811878271585
+    second: professional_kitchen_144
+  - first:
+      213: -5944215939095926896
+    second: professional_kitchen_145
+  - first:
+      213: -8638891998014972912
+    second: professional_kitchen_146
+  - first:
+      213: -2145791237923646215
+    second: professional_kitchen_147
+  - first:
+      213: 8940861824239976337
+    second: professional_kitchen_148
+  - first:
+      213: 5325429402217614796
+    second: professional_kitchen_149
+  - first:
+      213: 1164817973221447284
+    second: professional_kitchen_150
+  - first:
+      213: -3146266107503818237
+    second: professional_kitchen_151
+  - first:
+      213: -561892740037629385
+    second: professional_kitchen_152
+  - first:
+      213: -3992151129967504555
+    second: professional_kitchen_153
+  - first:
+      213: 4973955758080420347
+    second: professional_kitchen_154
+  - first:
+      213: -5749026870709458700
+    second: professional_kitchen_155
+  - first:
+      213: 5888844933878078643
+    second: professional_kitchen_156
+  - first:
+      213: 5956844035978402019
+    second: professional_kitchen_157
+  - first:
+      213: 8791543294681312482
+    second: professional_kitchen_158
+  - first:
+      213: 3949151851564334476
+    second: professional_kitchen_159
+  - first:
+      213: -7438114905500855172
+    second: professional_kitchen_160
+  - first:
+      213: 9052864616196013139
+    second: professional_kitchen_161
+  - first:
+      213: 7260832429255623829
+    second: professional_kitchen_162
+  - first:
+      213: 5439740286692664629
+    second: professional_kitchen_163
+  - first:
+      213: -6267204012227391370
+    second: professional_kitchen_164
+  - first:
+      213: -4953081054815165647
+    second: professional_kitchen_165
+  - first:
+      213: 7849292734305338325
+    second: professional_kitchen_166
+  - first:
+      213: 1340680173776922279
+    second: professional_kitchen_167
+  - first:
+      213: -6798900533037399921
+    second: professional_kitchen_168
+  - first:
+      213: 8327106676318051948
+    second: professional_kitchen_169
+  - first:
+      213: -4362376958231551616
+    second: professional_kitchen_170
+  - first:
+      213: -8183299876307618664
+    second: professional_kitchen_171
+  - first:
+      213: 8348219826886647301
+    second: professional_kitchen_172
+  - first:
+      213: 6759907004094175505
+    second: professional_kitchen_173
+  - first:
+      213: 736986082723555059
+    second: professional_kitchen_174
+  - first:
+      213: -8863344654167897405
+    second: professional_kitchen_175
+  - first:
+      213: 7980072428918120382
+    second: professional_kitchen_176
+  - first:
+      213: -2891923588109403639
+    second: professional_kitchen_177
+  - first:
+      213: 442472337328900709
+    second: professional_kitchen_178
+  - first:
+      213: -4184793938587938607
+    second: professional_kitchen_179
+  - first:
+      213: 870949737146515986
+    second: professional_kitchen_180
+  - first:
+      213: -5134608945358260371
+    second: professional_kitchen_181
+  - first:
+      213: -9136096485304806119
+    second: professional_kitchen_182
+  - first:
+      213: 4800190679492718919
+    second: professional_kitchen_183
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: professional_kitchen_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 561
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5938fe12b89a1ad80800000000000000
+      internalID: -8241119428076403819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_1
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 563
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cae6b0a266ecd3830800000000000000
+      internalID: 4052622177890692780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_2
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 561
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: add79ccdbc12db750800000000000000
+      internalID: 6322246611364314586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_3
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 561
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1467f1bfe10c68f0800000000000000
+      internalID: -546059325824080867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_4
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 562
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23cd6ac0c1633e7f0800000000000000
+      internalID: -584564032528786382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_5
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 561
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f8165bb8ea0ad880800000000000000
+      internalID: -8585537744936757004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_6
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 544
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4175bd9931e868a30800000000000000
+      internalID: 4217214315915859732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_7
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 560
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c80ccfa338475920800000000000000
+      internalID: 2978929065358788804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_8
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 545
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41c1c15332410c660800000000000000
+      internalID: 7403939928844540948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_9
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 560
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b20671fad570aaa90800000000000000
+      internalID: -7302015746876940245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_10
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 545
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c126d719142903f0800000000000000
+      internalID: -934175757509975611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_11
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 560
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2efe6c2208aef92d0800000000000000
+      internalID: -3269636968387514398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_12
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 560
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57e5c4c95a91b4a60800000000000000
+      internalID: 7659243790356209269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_13
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 544
+        width: 10
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa28d3119184aa210800000000000000
+      internalID: 1344966711224140463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_14
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 560
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84c286e9e02c75bf0800000000000000
+      internalID: -335586279172854712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_15
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 560
+        width: 7
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 660feea5acaa45310800000000000000
+      internalID: 1392925970850050150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_16
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 559
+        width: 6
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 198f035ac64082e30800000000000000
+      internalID: 4478834694094387345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_17
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 560
+        width: 9
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de59aae231cb1b5d0800000000000000
+      internalID: -3048448682179783187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_18
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 561
+        width: 9
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25927aa19dcda8d50800000000000000
+      internalID: 6740442617326545234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_19
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 560
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 489d1cb7b5fef9d60800000000000000
+      internalID: 7899295447628503428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_20
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 562
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60de9431c303bc920800000000000000
+      internalID: 3011553810407091462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_21
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 543
+        width: 34
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20c1f9c1e522ec500800000000000000
+      internalID: 418309602994494466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_22
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 548
+        width: 30
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 770c78fb0e0d350c0800000000000000
+      internalID: -4588093931655806857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_23
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 548
+        width: 30
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84c1bacd8f12c2730800000000000000
+      internalID: 3975589923799112776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_24
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 545
+        width: 30
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3896ea3be8391d8d0800000000000000
+      internalID: -2823313250275399293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_25
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 548
+        width: 30
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c6a3c0cc01e7be80800000000000000
+      internalID: -8162808354695829819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_26
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 543
+        width: 22
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc8a4c37e1ec1d730800000000000000
+      internalID: 4022222572405172427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_27
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 546
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 659c5d07f195a5400800000000000000
+      internalID: 313661115627587926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_28
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 545
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1e40bac3d41be820800000000000000
+      internalID: 2948473280915328541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_29
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 545
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d5ca682d3ed48aa0800000000000000
+      internalID: -6159554036083538480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_30
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 545
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cdbcccd99cfeed80800000000000000
+      internalID: -8219354532139975225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_31
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 547
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3afed9bc5f6f5aac0800000000000000
+      internalID: -3844395171347304541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_32
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 546
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb81b653c00e25730800000000000000
+      internalID: 3986494963216750779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_33
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 545
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f39b5f83dbf16d630800000000000000
+      internalID: 3951380620629096767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_34
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 545
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bcdef7c5cc18f5d0800000000000000
+      internalID: -3028639113617154887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_35
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 544
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6892b7d7436d05310800000000000000
+      internalID: 1391847805789350278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_36
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 543
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41730f5d70f92b160800000000000000
+      internalID: 7039864023536383764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_37
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 544
+        width: 10
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be70f291d9d4d9250800000000000000
+      internalID: 5952999619581380587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_38
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 545
+        width: 7
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bf70a095d5d2fb90800000000000000
+      internalID: -7209464940235554890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_39
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 544
+        width: 6
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c5baf86f646d2200800000000000000
+      internalID: 156891991693243841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_40
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 544
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e956a60c31450df0800000000000000
+      internalID: -214693681164822045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_41
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 544
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6529adf32a89187c0800000000000000
+      internalID: -4070804765542804906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_42
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 532
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5ae98bb1285ade00800000000000000
+      internalID: 1070264763357456988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_43
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 529
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 729a4cbe4e1406af0800000000000000
+      internalID: -405251514999461593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_44
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 528
+        width: 10
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6aabc83f4302ea880800000000000000
+      internalID: -8597899226807223642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_45
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 528
+        width: 21
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0a89bd654885b2d0800000000000000
+      internalID: -3263552523185059316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_46
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 528
+        width: 21
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: feef12b144dc244f0800000000000000
+      internalID: -845888087595548945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_47
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 512
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50ee9e4de30776060800000000000000
+      internalID: 6946644365404663301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_48
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 512
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b79661e66e023130800000000000000
+      internalID: 3544911691725051833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_49
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 512
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f6fe1734158f72b0800000000000000
+      internalID: -5584598691045509392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_50
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 512
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 860efd50eb837fa10800000000000000
+      internalID: 1943084153027158120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_51
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 512
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5348a80d1d77fbc20800000000000000
+      internalID: 3224427601251173429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_52
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 512
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37c66e49f4ea5a640800000000000000
+      internalID: 5090666610635992179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_53
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 512
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6aa822bbcfdeb570800000000000000
+      internalID: 8484464813972957806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_54
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 528
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a1fb450894a31c40800000000000000
+      internalID: 5481906144270872997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_55
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 530
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b83124c6cad43ceb0800000000000000
+      internalID: -4700828183098682485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_56
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 520
+        width: 33
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a01e2183a361bf8c0800000000000000
+      internalID: -3964550607664914166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_57
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 518
+        width: 49
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 163dce2ed557a8090800000000000000
+      internalID: -8031477939362278559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_58
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 511
+        width: 49
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed8f9ccf204d1c440800000000000000
+      internalID: 4954474174380374238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_59
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 511
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26c35939aca904b60800000000000000
+      internalID: 7728347155417873506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_60
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 504
+        width: 25
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e4971d0baaa149b0800000000000000
+      internalID: -5097605651570912031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_61
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 495
+        width: 25
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e36ca8f628fe3470800000000000000
+      internalID: 8376405203220194273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_62
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 511
+        width: 12
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 703235999fbb44800800000000000000
+      internalID: 595807731413361415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_63
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 511
+        width: 10
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9845423110dcca360800000000000000
+      internalID: 7182340910248907913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_64
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 512
+        width: 21
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d25b820acdd7f810800000000000000
+      internalID: 1799150435853619920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_65
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 464
+        width: 30
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 340a241b1e53ef000800000000000000
+      internalID: 71553887542353987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_66
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 512
+        width: 21
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4acf79e9298c35f0800000000000000
+      internalID: -775594222710437297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_67
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 479
+        width: 17
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 336a3950a2f778780800000000000000
+      internalID: -8680829938274425293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_68
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 479
+        width: 17
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f95d5daf3fe2c800800000000000000
+      internalID: 631329954555845108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_69
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 511
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1aed745f88d61fed0800000000000000
+      internalID: -2382002292904173919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_70
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 511
+        width: 12
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d00fa71c50a91490800000000000000
+      internalID: -7775006964283670316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_71
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 511
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2403f3066df07fb90800000000000000
+      internalID: -7208275265171017662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_72
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 495
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29c61b4c061859ec0800000000000000
+      internalID: -3560797677749703534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_73
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 463
+        width: 33
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51e2444b6c9814930800000000000000
+      internalID: 4125730220168982037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_74
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 463
+        width: 33
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d92e6c74ebe67f00800000000000000
+      internalID: 1114337324393441753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_75
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 479
+        width: 24
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc78af94e1337f750800000000000000
+      internalID: 6338591205730453453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_76
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 479
+        width: 24
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b745cc32b92f23c70800000000000000
+      internalID: 8949482157673043067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_77
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 495
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afe8612d702cfcf20800000000000000
+      internalID: 3445185578806972154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_78
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 498
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41897ba0dcd4ad070800000000000000
+      internalID: 8131897620214290452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_79
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 479
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 101c7130742db2cb0800000000000000
+      internalID: -4887581768144142079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_80
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 480
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f235c432157ad0870800000000000000
+      internalID: 8650754426174985007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_81
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 415
+        width: 33
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 636223ed9de5a19c0800000000000000
+      internalID: -3955745032862816714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_82
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 415
+        width: 33
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff8014b68d38f2720800000000000000
+      internalID: 2823620456920189183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_83
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 416
+        width: 29
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8df9ac114b9b0290800000000000000
+      internalID: -7923068415472173685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_84
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 463
+        width: 32
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e4ef9e43cdd87900800000000000000
+      internalID: 682539174454093025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_85
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 415
+        width: 49
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d337e5311d02c530800000000000000
+      internalID: 3873672997061997526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_86
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 415
+        width: 33
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e043034828f745ac0800000000000000
+      internalID: -3867325981464185842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_87
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 415
+        width: 49
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb44ac63133e58c80800000000000000
+      internalID: -8320994935984995138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_88
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 415
+        width: 33
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd237a41fdb80e320800000000000000
+      internalID: 2585219976351134428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_89
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 416
+        width: 27
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e859914b74dfd7c0800000000000000
+      internalID: -4044280314508781340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_90
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 416
+        width: 27
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f971f01813e4b3ef0800000000000000
+      internalID: -127422189924313185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_91
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 415
+        width: 33
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: daa4724797e1720c0800000000000000
+      internalID: -4600674987347064147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_92
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 415
+        width: 33
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a478aa5db253f5c00800000000000000
+      internalID: 891489713627236170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_93
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 416
+        width: 29
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1410360d1fcb3c2f0800000000000000
+      internalID: -953710949303123647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_94
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 456
+        width: 33
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d5596ecbe44f41d0800000000000000
+      internalID: -3364394617051458092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_95
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 399
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56d2c18238323fe10800000000000000
+      internalID: 2230165286699150693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_96
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 379
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60a4655072f342290800000000000000
+      internalID: -7916132808184673786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_97
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 399
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff08e47b9ece319a0800000000000000
+      internalID: -6263402168195317505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_98
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 379
+        width: 15
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5ad034ae9dd8a730800000000000000
+      internalID: 4010699141602663006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_99
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 399
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d742c5a1d0f21dd70800000000000000
+      internalID: 9066079258196845693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_100
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 383
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad171abbae9620c70800000000000000
+      internalID: 8935821067547668954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_101
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 383
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4912ea1b8784dd7c0800000000000000
+      internalID: -4044997207094582892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_102
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 399
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f1bcf2f4026ed2c0800000000000000
+      internalID: -4404975612125728264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_103
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 367
+        width: 31
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6dc8a44c6e620ee0800000000000000
+      internalID: -1296352331441844885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_104
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 367
+        width: 31
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 702e5a238882ab590800000000000000
+      internalID: -7657763650959711737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_105
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 367
+        width: 31
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48470dd042f291c50800000000000000
+      internalID: 6636387357804229764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_106
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 367
+        width: 31
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b254e478d54d32770800000000000000
+      internalID: 8584938812865398059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_107
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 368
+        width: 27
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56813cc0c7724c5e0800000000000000
+      internalID: -1890342529845225371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_108
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 368
+        width: 27
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a05341257666ea70800000000000000
+      internalID: 8855878370525925542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_109
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 367
+        width: 49
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bca857559a89e8e0800000000000000
+      internalID: -1663646213316498251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_110
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 367
+        width: 33
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 783e56e33e66fb2a0800000000000000
+      internalID: -6719538992823016569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_111
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 367
+        width: 49
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7814f7255f373ef40800000000000000
+      internalID: 5756572246197879175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_112
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 367
+        width: 33
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c119b40806543efc0800000000000000
+      internalID: -3466851007373536996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_113
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 368
+        width: 27
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27bf57473d482a2b0800000000000000
+      internalID: -5574747345004397710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_114
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 368
+        width: 27
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8eaf422fc36b3f930800000000000000
+      internalID: 4175881652379384552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_115
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 351
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: feffcf3b8103b5d30800000000000000
+      internalID: 4421180341851324399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_116
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 352
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d27fed8fa653e0a60800000000000000
+      internalID: 7642104351252477741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_117
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 352
+        width: 15
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f01a9269308ccc750800000000000000
+      internalID: 6326651494278471951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_118
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 352
+        width: 17
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d5818ff3c89fa3d0800000000000000
+      internalID: -3193165643209669160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_119
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 304
+        width: 27
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1c7560b647d5bf40800000000000000
+      internalID: 5743733598388059163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_120
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 303
+        width: 49
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b560d80b69a8b3890800000000000000
+      internalID: -7477230376506816933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_121
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 303
+        width: 33
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddd8048496ce2cf90800000000000000
+      internalID: -6934720539269231139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_122
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 303
+        width: 49
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0b45f9f0ba7dfde0800000000000000
+      internalID: -1297746217086399732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_123
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 303
+        width: 33
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 154b09963d5c284c0800000000000000
+      internalID: -4286646383503428527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_124
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 303
+        width: 49
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46a1dd0b19fc6f8e0800000000000000
+      internalID: -1659911187994961308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_125
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 303
+        width: 33
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1daf22baebf3e4fc0800000000000000
+      internalID: -3508796971527505199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_126
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 303
+        width: 49
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b73fe9d9cbab0af0800000000000000
+      internalID: -429060456050640969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_127
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 303
+        width: 49
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d02a90f466f16250800000000000000
+      internalID: 5936296697244819668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_128
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 303
+        width: 49
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 032edbbd4462d5c20800000000000000
+      internalID: 3196753387689206320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_129
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 303
+        width: 33
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fb60847a3cd3d190800000000000000
+      internalID: -7938759574503265291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_130
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 304
+        width: 27
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80b2a40b1edf0d030800000000000000
+      internalID: 3517590454743477000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_131
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 226
+        width: 45
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d681161683e1c8c20800000000000000
+      internalID: 3209973861909076077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_132
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 223
+        width: 45
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12c3d2224b3560aa0800000000000000
+      internalID: -6195172204268930015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_133
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 223
+        width: 45
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 104cc724cee9ed910800000000000000
+      internalID: 1864102033342907393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_134
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 223
+        width: 45
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 670e7bb169f6c4760800000000000000
+      internalID: 7443446974637400182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_135
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 223
+        width: 45
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc695297d6e2ed310800000000000000
+      internalID: 1431632779269215949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_136
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 226
+        width: 45
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e95b1b9d2e27b5400800000000000000
+      internalID: 313970917672859038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_137
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 225
+        width: 21
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e34bca6815cd3420800000000000000
+      internalID: 2611460067606348777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_138
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 225
+        width: 36
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1f359a1f65718090800000000000000
+      internalID: -8034011140204445922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_139
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 225
+        width: 36
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71da2da4f9ec26620800000000000000
+      internalID: 2766000304709348631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_140
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 225
+        width: 36
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af7b51f66d8891db0800000000000000
+      internalID: -4820671471555332102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_141
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 146
+        width: 47
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fc3a83c1a18b0060800000000000000
+      internalID: 6920767784155233527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_142
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 146
+        width: 33
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07da4be621c13ffb0800000000000000
+      internalID: -4615314327632302736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_143
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 144
+        width: 17
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4d09ecbd638941e0800000000000000
+      internalID: -2213093234531824305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_144
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 144
+        width: 17
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f95ad5f146cdc34e0800000000000000
+      internalID: -2000481811878271585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_145
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 208
+        width: 49
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 097e8f1e817e18da0800000000000000
+      internalID: -5944215939095926896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_146
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 159
+        width: 49
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01c5a55af7d7c1880800000000000000
+      internalID: -8638891998014972912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_147
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 144
+        width: 17
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f45a6dec3e9832e0800000000000000
+      internalID: -2145791237923646215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_148
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 144
+        width: 17
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19fbcab5572541c70800000000000000
+      internalID: 8940861824239976337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_149
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 192
+        width: 33
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccd0a9373d9b7e940800000000000000
+      internalID: 5325429402217614796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_150
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 143
+        width: 17
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 476dad176c34a2010800000000000000
+      internalID: 1164817973221447284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_151
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 144
+        width: 27
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30a426515a73654d0800000000000000
+      internalID: -3146266107503818237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_152
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 146
+        width: 47
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73aaf2ca781c338f0800000000000000
+      internalID: -561892740037629385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_153
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 146
+        width: 33
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 553dc98d2b70998c0800000000000000
+      internalID: -3992151129967504555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_154
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 144
+        width: 16
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf964e8a86a070540800000000000000
+      internalID: 4973955758080420347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_155
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 144
+        width: 16
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f8ef2f458a5730b0800000000000000
+      internalID: -5749026870709458700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_156
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 143
+        width: 17
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bc5925544169b150800000000000000
+      internalID: 5888844933878078643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_157
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 143
+        width: 49
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e895ea0716faa250800000000000000
+      internalID: 5956844035978402019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_158
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 143
+        width: 33
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ec62f20c06d10a70800000000000000
+      internalID: 8791543294681312482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_159
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 144
+        width: 27
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8d719c7fa43ec630800000000000000
+      internalID: 3949151851564334476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_160
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 63
+        width: 49
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c74551bf6e186c890800000000000000
+      internalID: -7438114905500855172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_161
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 64
+        width: 27
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35cf010876c32ad70800000000000000
+      internalID: 9052864616196013139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_162
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 63
+        width: 33
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5940b67ff98a3c460800000000000000
+      internalID: 7260832429255623829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_163
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 64
+        width: 27
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 535a2b248f6dd7b40800000000000000
+      internalID: 5439740286692664629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_164
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 63
+        width: 33
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 670984ce72b6609a0800000000000000
+      internalID: -6267204012227391370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_165
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 63
+        width: 27
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1336600f50f134bb0800000000000000
+      internalID: -4953081054815165647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_166
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 66
+        width: 49
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d3035e872a4eec60800000000000000
+      internalID: 7849292734305338325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_167
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 64
+        width: 18
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a6e16bc38d0b9210800000000000000
+      internalID: 1340680173776922279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_168
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 64
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f808711ccf375a1a0800000000000000
+      internalID: -6798900533037399921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_169
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 63
+        width: 49
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6e98b83763df8370800000000000000
+      internalID: 8327106676318051948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_170
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 63
+        width: 49
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0816244f449b573c0800000000000000
+      internalID: -4362376958231551616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_171
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 0
+        width: 80
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 894bf269e141f6e80800000000000000
+      internalID: -8183299876307618664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_172
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 33
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50e9378a3b5dad370800000000000000
+      internalID: 8348219826886647301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_173
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 0
+        width: 29
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11955bdca9300dd50800000000000000
+      internalID: 6759907004094175505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_174
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 0
+        width: 31
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f6e42100fc4a3a00800000000000000
+      internalID: 736986082723555059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_175
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 0
+        width: 31
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ca077e3ff21ff480800000000000000
+      internalID: -8863344654167897405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_176
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 0
+        width: 28
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebf9d870899eebe60800000000000000
+      internalID: 7980072428918120382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_177
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 16
+        width: 33
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90a7a2591d2ddd7d0800000000000000
+      internalID: -2891923588109403639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_178
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 16
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56a0d691f3af32600800000000000000
+      internalID: 442472337328900709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_179
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 0
+        width: 49
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d01248b510ace5c0800000000000000
+      internalID: -4184793938587938607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_180
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 0
+        width: 18
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21286d3eb2c361c00800000000000000
+      internalID: 870949737146515986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_181
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 0
+        width: 49
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d67b0675e543eb8b0800000000000000
+      internalID: -5134608945358260371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_182
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 0
+        width: 27
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91556b7d6a0163180800000000000000
+      internalID: -9136096485304806119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: professional_kitchen_183
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 0
+        width: 49
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 741fd419df3bd9240800000000000000
+      internalID: 4800190679492718919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      professional_kitchen_0: -8241119428076403819
+      professional_kitchen_1: 4052622177890692780
+      professional_kitchen_10: -934175757509975611
+      professional_kitchen_100: 8935821067547668954
+      professional_kitchen_101: -4044997207094582892
+      professional_kitchen_102: -4404975612125728264
+      professional_kitchen_103: -1296352331441844885
+      professional_kitchen_104: -7657763650959711737
+      professional_kitchen_105: 6636387357804229764
+      professional_kitchen_106: 8584938812865398059
+      professional_kitchen_107: -1890342529845225371
+      professional_kitchen_108: 8855878370525925542
+      professional_kitchen_109: -1663646213316498251
+      professional_kitchen_11: -3269636968387514398
+      professional_kitchen_110: -6719538992823016569
+      professional_kitchen_111: 5756572246197879175
+      professional_kitchen_112: -3466851007373536996
+      professional_kitchen_113: -5574747345004397710
+      professional_kitchen_114: 4175881652379384552
+      professional_kitchen_115: 4421180341851324399
+      professional_kitchen_116: 7642104351252477741
+      professional_kitchen_117: 6326651494278471951
+      professional_kitchen_118: -3193165643209669160
+      professional_kitchen_119: 5743733598388059163
+      professional_kitchen_12: 7659243790356209269
+      professional_kitchen_120: -7477230376506816933
+      professional_kitchen_121: -6934720539269231139
+      professional_kitchen_122: -1297746217086399732
+      professional_kitchen_123: -4286646383503428527
+      professional_kitchen_124: -1659911187994961308
+      professional_kitchen_125: -3508796971527505199
+      professional_kitchen_126: -429060456050640969
+      professional_kitchen_127: 5936296697244819668
+      professional_kitchen_128: 3196753387689206320
+      professional_kitchen_129: -7938759574503265291
+      professional_kitchen_13: 1344966711224140463
+      professional_kitchen_130: 3517590454743477000
+      professional_kitchen_131: 3209973861909076077
+      professional_kitchen_132: -6195172204268930015
+      professional_kitchen_133: 1864102033342907393
+      professional_kitchen_134: 7443446974637400182
+      professional_kitchen_135: 1431632779269215949
+      professional_kitchen_136: 313970917672859038
+      professional_kitchen_137: 2611460067606348777
+      professional_kitchen_138: -8034011140204445922
+      professional_kitchen_139: 2766000304709348631
+      professional_kitchen_14: -335586279172854712
+      professional_kitchen_140: -4820671471555332102
+      professional_kitchen_141: 6920767784155233527
+      professional_kitchen_142: -4615314327632302736
+      professional_kitchen_143: -2213093234531824305
+      professional_kitchen_144: -2000481811878271585
+      professional_kitchen_145: -5944215939095926896
+      professional_kitchen_146: -8638891998014972912
+      professional_kitchen_147: -2145791237923646215
+      professional_kitchen_148: 8940861824239976337
+      professional_kitchen_149: 5325429402217614796
+      professional_kitchen_15: 1392925970850050150
+      professional_kitchen_150: 1164817973221447284
+      professional_kitchen_151: -3146266107503818237
+      professional_kitchen_152: -561892740037629385
+      professional_kitchen_153: -3992151129967504555
+      professional_kitchen_154: 4973955758080420347
+      professional_kitchen_155: -5749026870709458700
+      professional_kitchen_156: 5888844933878078643
+      professional_kitchen_157: 5956844035978402019
+      professional_kitchen_158: 8791543294681312482
+      professional_kitchen_159: 3949151851564334476
+      professional_kitchen_16: 4478834694094387345
+      professional_kitchen_160: -7438114905500855172
+      professional_kitchen_161: 9052864616196013139
+      professional_kitchen_162: 7260832429255623829
+      professional_kitchen_163: 5439740286692664629
+      professional_kitchen_164: -6267204012227391370
+      professional_kitchen_165: -4953081054815165647
+      professional_kitchen_166: 7849292734305338325
+      professional_kitchen_167: 1340680173776922279
+      professional_kitchen_168: -6798900533037399921
+      professional_kitchen_169: 8327106676318051948
+      professional_kitchen_17: -3048448682179783187
+      professional_kitchen_170: -4362376958231551616
+      professional_kitchen_171: -8183299876307618664
+      professional_kitchen_172: 8348219826886647301
+      professional_kitchen_173: 6759907004094175505
+      professional_kitchen_174: 736986082723555059
+      professional_kitchen_175: -8863344654167897405
+      professional_kitchen_176: 7980072428918120382
+      professional_kitchen_177: -2891923588109403639
+      professional_kitchen_178: 442472337328900709
+      professional_kitchen_179: -4184793938587938607
+      professional_kitchen_18: 6740442617326545234
+      professional_kitchen_180: 870949737146515986
+      professional_kitchen_181: -5134608945358260371
+      professional_kitchen_182: -9136096485304806119
+      professional_kitchen_183: 4800190679492718919
+      professional_kitchen_19: 7899295447628503428
+      professional_kitchen_2: 6322246611364314586
+      professional_kitchen_20: 3011553810407091462
+      professional_kitchen_21: 418309602994494466
+      professional_kitchen_22: -4588093931655806857
+      professional_kitchen_23: 3975589923799112776
+      professional_kitchen_24: -2823313250275399293
+      professional_kitchen_25: -8162808354695829819
+      professional_kitchen_26: 4022222572405172427
+      professional_kitchen_27: 313661115627587926
+      professional_kitchen_28: 2948473280915328541
+      professional_kitchen_29: -6159554036083538480
+      professional_kitchen_3: -546059325824080867
+      professional_kitchen_30: -8219354532139975225
+      professional_kitchen_31: -3844395171347304541
+      professional_kitchen_32: 3986494963216750779
+      professional_kitchen_33: 3951380620629096767
+      professional_kitchen_34: -3028639113617154887
+      professional_kitchen_35: 1391847805789350278
+      professional_kitchen_36: 7039864023536383764
+      professional_kitchen_37: 5952999619581380587
+      professional_kitchen_38: -7209464940235554890
+      professional_kitchen_39: 156891991693243841
+      professional_kitchen_4: -584564032528786382
+      professional_kitchen_40: -214693681164822045
+      professional_kitchen_41: -4070804765542804906
+      professional_kitchen_42: 1070264763357456988
+      professional_kitchen_43: -405251514999461593
+      professional_kitchen_44: -8597899226807223642
+      professional_kitchen_45: -3263552523185059316
+      professional_kitchen_46: -845888087595548945
+      professional_kitchen_47: 6946644365404663301
+      professional_kitchen_48: 3544911691725051833
+      professional_kitchen_49: -5584598691045509392
+      professional_kitchen_5: -8585537744936757004
+      professional_kitchen_50: 1943084153027158120
+      professional_kitchen_51: 3224427601251173429
+      professional_kitchen_52: 5090666610635992179
+      professional_kitchen_53: 8484464813972957806
+      professional_kitchen_54: 5481906144270872997
+      professional_kitchen_55: -4700828183098682485
+      professional_kitchen_56: -3964550607664914166
+      professional_kitchen_57: -8031477939362278559
+      professional_kitchen_58: 4954474174380374238
+      professional_kitchen_59: 7728347155417873506
+      professional_kitchen_6: 4217214315915859732
+      professional_kitchen_60: -5097605651570912031
+      professional_kitchen_61: 8376405203220194273
+      professional_kitchen_62: 595807731413361415
+      professional_kitchen_63: 7182340910248907913
+      professional_kitchen_64: 1799150435853619920
+      professional_kitchen_65: 71553887542353987
+      professional_kitchen_66: -775594222710437297
+      professional_kitchen_67: -8680829938274425293
+      professional_kitchen_68: 631329954555845108
+      professional_kitchen_69: -2382002292904173919
+      professional_kitchen_7: 2978929065358788804
+      professional_kitchen_70: -7775006964283670316
+      professional_kitchen_71: -7208275265171017662
+      professional_kitchen_72: -3560797677749703534
+      professional_kitchen_73: 4125730220168982037
+      professional_kitchen_74: 1114337324393441753
+      professional_kitchen_75: 6338591205730453453
+      professional_kitchen_76: 8949482157673043067
+      professional_kitchen_77: 3445185578806972154
+      professional_kitchen_78: 8131897620214290452
+      professional_kitchen_79: -4887581768144142079
+      professional_kitchen_8: 7403939928844540948
+      professional_kitchen_80: 8650754426174985007
+      professional_kitchen_81: -3955745032862816714
+      professional_kitchen_82: 2823620456920189183
+      professional_kitchen_83: -7923068415472173685
+      professional_kitchen_84: 682539174454093025
+      professional_kitchen_85: 3873672997061997526
+      professional_kitchen_86: -3867325981464185842
+      professional_kitchen_87: -8320994935984995138
+      professional_kitchen_88: 2585219976351134428
+      professional_kitchen_89: -4044280314508781340
+      professional_kitchen_9: -7302015746876940245
+      professional_kitchen_90: -127422189924313185
+      professional_kitchen_91: -4600674987347064147
+      professional_kitchen_92: 891489713627236170
+      professional_kitchen_93: -953710949303123647
+      professional_kitchen_94: -3364394617051458092
+      professional_kitchen_95: 2230165286699150693
+      professional_kitchen_96: -7916132808184673786
+      professional_kitchen_97: -6263402168195317505
+      professional_kitchen_98: 4010699141602663006
+      professional_kitchen_99: 9066079258196845693
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
