@@ -109,7 +109,10 @@ namespace GameAi.EditorTools
         {
             Scene scene = EditorSceneManager.NewScene(NewSceneSetup.EmptyScene, NewSceneMode.Single);
             var bootstrap = new GameObject("MainMenuBootstrap");
-            bootstrap.AddComponent<MainMenuBootstrap>();
+            var menu = bootstrap.AddComponent<MainMenuBootstrap>();
+            var serializedMenu = new SerializedObject(menu);
+            serializedMenu.FindProperty("catalog").objectReferenceValue = AssetDatabase.LoadAssetAtPath<AssetCatalog>(AssetCatalogBuilder.CatalogPath);
+            serializedMenu.ApplyModifiedPropertiesWithoutUndo();
             CreateCamera(null);
             EditorSceneManager.SaveScene(scene, MainMenuPath);
         }

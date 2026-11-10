@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "enabled": true,
+  "endpoint": "http://127.0.0.1:11434/v1/chat/completions",
+  "model": "qwen2.5:7b",
+  "warmup_on_start": true,
+  "timeout_s": 2.0,
+  "max_concurrent": 1,
+  "queue_max": 4,
+  "max_tokens": 32,
+  "temperature": 0.7,
+  "fail_stop_count": 5,
+  "merge_window_s": 0.5,
+  "screen_center_m": 6,
+  "use_json_schema": true,
+  "history_per_npc": 5,
+  "history_global": 10,
+  "log_max": 200,
+  "chatter_interval_s": 60,
+  "reply_delay_s": 1.0,
+  "reply_radius_m": 10
+}

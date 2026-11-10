@@ -14,6 +14,7 @@ namespace GameAi
             Log("시나리오: " + scenario);
             if (scenario == "ai") yield return RunAi();
             else if (scenario == "mission") yield return RunMission();
+            else if (scenario == "ui") yield return RunUi();
             else yield return Run();
         }
 
@@ -165,6 +166,97 @@ namespace GameAi
             Check("다시 시작하면 적 4명 초기화", game.Enemies.Count == 4 && !game.Enemies[0].IsDead);
             Check("사망하면 실패", game.Mission.Outcome == MissionResult.Fail);
             yield return Shot("mission_02_fail");
+        }
+
+        // 화면 확인: 브리핑 대화, HUD, 일시정지, Qwen 대사, 결과 화면(Phase 7)
+        IEnumerator RunUi()
+        {
+            if (game.Dialogue.IsActive)
+            {
+                yield return new WaitForSecondsRealtime(0.6f);
+                yield return Shot("ui_01_briefing");
+                Check("브리핑 대화 중 게임 정지", game.Mission.State == MissionManager.Briefing);
+            }
+            float wait = 0f;
+            while (game.Dialogue.IsActive && wait < 20f) { wait += Time.unscaledDeltaTime; yield return null; }
+            Check("브리핑 뒤 진행", game.Mission.State == MissionManager.Running);
+            int qwenLines = 0, fallbackLines = 0;
+            Action<BarkEvent> onBark = e =>
+            {
+                if (e.source == "Fallback") fallbackLines++; else qwenLines++;
+                Log($"  대사 적{e.enemyId} \"{e.text}\" [{e.emotion}/{e.source}]");
+            };
+            EventBus.Subscribe(onBark);
+            yield return new WaitForSeconds(1f);
+            yield return Shot("ui_02_hud");
+            Log("Qwen 상태: " + game.Qwen.Status);
+
+            // 적 앞에서 소리를 내 대사를 여러 번 끌어낸다
+            for (int i = 0; i < game.Enemies.Count && i < 3; i++)
+            {
+                EnemyController enemy = game.Enemies[i];
+                if (enemy.IsDead) continue;
+                // 적 뒤 5m에서 적을 바라보며 제자리걸음으로 발소리(달리기 9m)를 낸다
+                Vector2 near = FindFree(enemy.Position - enemy.Facing * 5f, enemy.Position);
+                game.Player.SetPosition(near);
+                Aim(enemy.Position);
+                scripted.State.RunHeld = true;
+                for (int k = 0; k < 6; k++)
+                {
+                    scripted.State.Move = k % 2 == 0 ? Vector2.up : Vector2.down;
+                    yield return new WaitForSeconds(0.25f);
+                }
+                scripted.State.Move = Vector2.zero;
+                scripted.State.RunHeld = false;
+                yield return new WaitForSeconds(3f);
+            }
+            yield return Shot("ui_03_bark");
+            Log($"대사: Qwen·캐시 {qwenLines}, 기본 {fallbackLines}, Qwen 요청 {game.Qwen.Requests}, 성공 {game.Qwen.Successes}, 평균 {game.Qwen.AverageLatencyMs:F0}ms");
+            foreach (var kv in game.Qwen.FailCounts) Log("  결과 " + kv.Key + " " + kv.Value);
+            foreach (var entry in game.Qwen.Log) Log($"  qwen #{entry.RequestId} 적{entry.EnemyId} {entry.Code} {entry.Result} {entry.LatencyMs:F0}ms \"{entry.Line}\"");
+            Check("대사가 떴음", qwenLines + fallbackLines > 0);
+
+            game.SetPaused(true);
+            yield return new WaitForSecondsRealtime(0.3f);
+            yield return Shot("ui_04_pause");
+            float clock = GameClock.Time;
+            yield return new WaitForSecondsRealtime(0.5f);
+            Check("일시정지 중 게임 시각 정지", Mathf.Approximately(clock, GameClock.Time));
+            game.SetPaused(false);
+
+            SendDamage(500);
+            wait = 0f;
+            while (!game.ResultVisible && wait < 15f) { wait += Time.unscaledDeltaTime; yield return null; }
+            yield return new WaitForSecondsRealtime(0.3f);
+            yield return Shot("ui_05_result");
+            Check("결과 화면", game.ResultVisible);
+            EventBus.Unsubscribe(onBark);
+        }
+
+        // 메인 메뉴·미션 선택·크레딧·설정 화면(Phase 7)
+        IEnumerator RunMenu()
+        {
+            MainMenuBootstrap menu = null;
+            while (menu == null || !menu.IsReady)
+            {
+                menu = FindAnyObjectByType<MainMenuBootstrap>();
+                yield return null;
+            }
+            yield return new WaitForSecondsRealtime(0.5f);
+            yield return Shot("menu_01_main");
+            menu.ShowSelect(true);
+            yield return new WaitForSecondsRealtime(0.3f);
+            yield return Shot("menu_02_select");
+            menu.ShowSelect(false);
+            menu.OpenCredits();
+            yield return new WaitForSecondsRealtime(0.3f);
+            yield return Shot("menu_03_credits");
+            menu.CloseCredits();
+            menu.OpenSettings();
+            yield return new WaitForSecondsRealtime(0.3f);
+            yield return Shot("menu_04_settings");
+            menu.CloseSettings();
+            Check("메뉴 화면을 모두 열었다", true);
         }
 
         // 원하는 위치 근처에서 플레이어가 설 수 있는 칸(기준점까지 시야가 트인 곳)

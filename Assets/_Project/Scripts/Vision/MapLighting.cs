@@ -19,6 +19,8 @@ namespace GameAi
         float cellSize = 1f;
 
         public Light2D GlobalLight { get; private set; }
+        // 맵 조명 순서대로(스위치로 끄고 켤 때 쓴다)
+        public readonly List<Light2D> Lamps = new List<Light2D>();
 
         public MapLighting(AssetCatalog catalog, LightingConfig config, Transform parent)
         {
@@ -59,6 +61,7 @@ namespace GameAi
             Color lampColor = MathUtil.ParseColor(config.lamp_color, new Color(1f, 0.78f, 0.45f));
             var light = go.AddComponent<Light2D>();
             light.lightType = Light2D.LightType.Point;
+            Lamps.Add(light);
             light.color = string.IsNullOrEmpty(data.color) ? lampColor : MathUtil.ParseColor(data.color, lampColor);
             light.intensity = data.intensity;
             light.pointLightInnerRadius = 0f;

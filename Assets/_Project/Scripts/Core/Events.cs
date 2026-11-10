@@ -134,6 +134,9 @@ namespace GameAi
         public bool isNew;
     }
 
+    // UI 버튼을 눌렀다(클릭음)
+    public struct UiClickEvent { }
+
     // 죽은 적이 무기를 떨궜다(그림 표시용)
     public struct DroppedWeaponEvent
     {

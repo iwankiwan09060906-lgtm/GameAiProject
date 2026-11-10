@@ -62,6 +62,19 @@ namespace GameAi // 게임의 AI 및 핵심 로직들을 묶어둔 네임스페�
         MissionManager mission;
         MissionConfig missionConfig;
         Func<string, bool> playDialogue = id => false;
+        AudioManager audioManager;
+        Hud hud;
+        DialogueBox dialogue;
+        PauseMenu pauseMenu;
+        SettingsOverlay settings;
+        ResultScreen resultScreen;
+        QwenBarkSource qwen;
+        bool resultShown;
+        bool smokeMode;
+        LightGrid lightGrid;
+        MapLighting mapLighting;
+        readonly List<LightSwitch> switches = new List<LightSwitch>();
+        bool nightVisionOn;
 
         // 값이 있으면 자동 재생(SmokeRunner)이 조준선을 직접 움직인다
         Vector2? crosshairOverride; // null이 아니면 플레이어 마우스 대신 시스템(또는 리플레이)이 조준선 위치를 강제합니다.
@@ -112,12 +125,17 @@ namespace GameAi // 게임의 AI 및 핵심 로직들을 묶어둔 네임스페�
             if (!LoadMap(SceneFlow.SelectedMapId)) return; // 선택된 맵 데이터를 불러옵니다. 실패하면 이 밑의 초기화는 진행하지 않습니다(return).
             BuildWorld(); // 성공적으로 맵을 불러왔다면, 실제 게임 오브젝트들과 시스템들을 생성하고 조립합니다.
             ready = true; // 모든 준비가 끝났으므로 ready 플래그를 켭니다. 이제 Update가 작동합니다.
-            mission.Begin();
         }
 
         // 수직동기를 켜서 모니터 주사율에 프레임을 맞춘다. 제한 없이 그리면 노트북이 뜨거워져
         // 클럭이 오르내리고 프레임 간격이 들쭉날쭉해져 끊겨 보인다.
         // 에디터는 수직동기를 Game 뷰 설정이 정하므로, 꺼져 있어도 주사율로 상한을 둔다.
+        // 브리핑 대화는 OnEnable 구독 뒤에 시작해야 대화 중 정지가 걸린다
+        void Start()
+        {
+            if (ready) mission.Begin();
+        }
+
         void ApplyFramePacing() // 프레임 속도를 관리하는 함수입니다.
         {
             QualitySettings.vSyncCount = config.vsync_count; // 설정값에 따라 유니티 엔진의 수직동기화(VSync)를 켭니다(1) 거나 끕니다(0).
@@ -132,12 +150,14 @@ namespace GameAi // 게임의 AI 및 핵심 로직들을 묶어둔 네임스페�
         {
             EventBus.Subscribe<DialogueStateEvent>(OnDialogueState); // 대화창 상태 변경 이벤트를 구독하여 OnDialogueState 함수가 반응하게 합니다.
             EventBus.Subscribe<PauseEvent>(OnPause); // 일시정지 이벤트를 구독하여 OnPause 함수가 반응하게 합니다.
+            EventBus.Subscribe<DoorChangedEvent>(OnDoorChanged);
         }
 
         void OnDisable() // 스크립트가 꺼지거나 파괴될 때 호출됩니다.
         {
             EventBus.Unsubscribe<DialogueStateEvent>(OnDialogueState); // 켜질 때 등록했던 대화 이벤트를 해제합니다(메모리 누수 방지).
             EventBus.Unsubscribe<PauseEvent>(OnPause); // 일시정지 이벤트 구독을 해제합니다.
+            EventBus.Unsubscribe<DoorChangedEvent>(OnDoorChanged);
         }
 
         // 대화 중에는 Time.timeScale을 건드리지 않고 시뮬레이션 단계만 건너뛴다(7.19)
@@ -181,6 +201,10 @@ namespace GameAi // 게임의 AI 및 핵심 로직들을 묶어둔 네임스페�
             new MapLoader(catalog).Build(map, mapData, config, world); // 벽, 바닥 등 맵의 정적 환경 오브젝트들을 생성해 World 아래 배치합니다.
             var lighting = new MapLighting(catalog, config.lighting, world); // 맵의 조명 시스템 객체를 만듭니다.
             lighting.Build(map, mapData); // 조명과 그림자 데이터를 계산하고 생성합니다.
+            mapLighting = lighting;
+            lightGrid = new LightGrid(map.Grid, mapData.ambient.indoor, mapData.ambient.outdoor);
+            foreach (MapLight light in mapData.lights) lightGrid.AddLight(light.Position, light.radius_m, light.intensity);
+            lightGrid.RecomputeAll();
 
             var fxObject = new GameObject("CombatFx"); // 전투 이펙트를 관리할 빈 게임오브젝트를 만듭니다.
             fxObject.transform.SetParent(world, false); // 이것도 World 자식으로 넣습니다.
@@ -198,6 +222,13 @@ namespace GameAi // 게임의 AI 및 핵심 로직들을 묶어둔 네임스페�
             interaction = new InteractionSystem(map.Grid, config.interact_range_m); // 상호작용 시스템을 초기화합니다 (상호작용 거리 설정 적용).
             foreach (Door door in doors) // 방금 생성한 모든 문들을 돌면서
                 interaction.Add(door); // 상호작용 시스템에 등록하여 플레이어가 접근 시 인식할 수 있게 합니다.
+            for (int i = 0; i < mapData.lights.Length; i++)
+            {
+                if (!mapData.lights[i].HasSwitch) continue;
+                var sw = new LightSwitch(map.Grid, mapData.lights[i].SwitchPosition, i, lightGrid, i < lighting.Lamps.Count ? lighting.Lamps[i] : null);
+                switches.Add(sw);
+                interaction.Add(sw);
+            }
 
             melee = new MeleeTakedown(map.Grid, weaponConfig.melee, aiConfig.gauge.detect, enemies); // 근접 공격 시스템을 초기화합니다.
             weapons = new WeaponController(map.Grid, targets, Player.View, catalog, weaponConfig, EntityIds.Player); // 무기 시스템을 초기화합니다 (아군/적 피격 판정 대상 공유).
@@ -224,6 +255,7 @@ namespace GameAi // 게임의 AI 및 핵심 로직들을 묶어둔 네임스페�
             barks = gameObject.AddComponent<BarkPicker>();
             barks.Init(director, barkConfig, eventTable, aiConfig.bark, barkView, IsEnemyOnScreen, () => (Vector2)worldCamera.transform.position, 0.5f, 6f);
             SetupMission(world);
+            SetupScreens(ui);
         }
 
         // 플레이어: 맵의 P 칸에서 시작한다. id 0은 항상 플레이어
@@ -344,7 +376,7 @@ namespace GameAi // 게임의 AI 및 핵심 로직들을 묶어둔 네임스페�
             foreach (EnemyController enemy in enemies)
             {
                 if (enemy.Id != enemyId) continue;
-                if (!enemy.Target.Alive || !vision.IsVisible(enemy.Position)) return false;
+                if (!EnemyRendered(enemy)) return false;
                 Vector3 v = worldCamera.WorldToViewportPoint(enemy.Position);
                 return v.x >= 0f && v.x <= 1f && v.y >= 0f && v.y <= 1f;
             }
@@ -395,6 +427,218 @@ namespace GameAi // 게임의 AI 및 핵심 로직들을 묶어둔 네임스페�
             return renderer;
         }
 
+        public QwenBarkSource Qwen { get { return qwen; } }
+        public DialogueBox Dialogue { get { return dialogue; } }
+        public AudioManager Audio { get { return audioManager; } }
+        public Hud HudView { get { return hud; } }
+
+        // Phase 7 화면·소리·대화·상황 대사
+        void SetupScreens(UiRoot ui)
+        {
+            smokeMode = Array.IndexOf(Environment.GetCommandLineArgs(), "-smoke") >= 0;
+            Widgets.EnsureEventSystem(transform);
+            audioManager = AudioManager.Create(transform, catalog, config.audio.ambience_fade_s);
+            audioManager.SetListener(() => Player.Position);
+            audioManager.PlayBgm("bgm_game");
+
+            hud = UiRoot.CreateRect("Hud", ui.Rect).gameObject.AddComponent<Hud>();
+            hud.Init(ui, catalog, weaponConfig.player.hp, weaponConfig.player.armor);
+            hud.Objective = () => mission.ObjectiveText;
+            hud.Timer = () => mission.TimeLimit > 0f ? mission.TimeLeft : mission.Elapsed;
+            hud.TimerIsCountdown = () => mission.TimeLimit > 0f;
+            hud.Mode = () => Player.Mode;
+            hud.Moving = () => Player.IsMoving;
+            hud.WeaponDefs = () => weaponConfig.weapons;
+            WeaponSlot slot = weapons.Inventory.Current;
+            hud.SetAmmo(slot.Def.id, slot.Mag, slot.Reserve);
+
+            dialogue = UiRoot.CreateRect("Dialogue", ui.Rect).gameObject.AddComponent<DialogueBox>();
+            dialogue.Init(ui, catalog, ConfigLoader.Load<DialogueConfig>("dialogue.json"));
+            playDialogue = id => dialogue.Play(id, smokeMode);
+
+            settings = new SettingsOverlay(ui.Rect, catalog) { OnVolumeChanged = audioManager.ApplyVolumes };
+            pauseMenu = new PauseMenu(ui.Rect, catalog, settings, () => barks.History);
+            resultScreen = new ResultScreen(ui.Rect, catalog, SceneFlow.Restart, LoadNextMission, SceneFlow.LoadMainMenu);
+
+            var qwenConfig = ConfigLoader.Load<QwenConfig>("qwen.json");
+            qwen = new QwenBarkSource(qwenConfig, barks, barkConfig, eventTable, BuildBarkContext, () => (Vector2)worldCamera.transform.position, config.fixed_seed_enabled);
+            barks.LineSource = qwen;
+            director.SetLightSource(LightAt);
+            director.LightInfo = id => (lightGrid.Get(id).Position, lightGrid.Get(id).Radius);
+            hud.LightLevel = () => director.PlayerLight(Player.Position, GameClock.Time);
+            foreach (LightSwitch sw in switches) SpawnMarker(transform, "obj_switch", sw.Position, SortOrder.Prop);
+        }
+
+        void OnDestroy()
+        {
+            qwen?.Dispose();
+        }
+
+        // 상황 상태값 만들기(7.22). 적이 아는 것과 주변 상황만 담는다
+        BarkContext BuildBarkContext(EnemyController enemy, BarkTrigger trigger)
+        {
+            EventTypeDef def = eventTable.Get(trigger.When);
+            PersonaDef persona = barkConfig.FindPersona(enemy.Persona) ?? new PersonaDef();
+            var c = new BarkContext
+            {
+                Event = def != null ? def.name_ko : StateLabel(trigger.When),
+                Category = def != null ? def.CategoryKo : "상태",
+                Route = trigger.Direct ? "직접" : "무전",
+                Direction = trigger.Direct ? BarkContext.DirectionOf(enemy.Facing, enemy.Position, trigger.Position) : "",
+                Distance = BarkContext.DistanceOf(Vector2.Distance(enemy.Position, trigger.Position)),
+                When = BarkContext.WhenOf(GameClock.Time - trigger.Time),
+                Repeat = BarkContext.RepeatOf(barks.RepeatCount(enemy, trigger.When)),
+                Role = enemy.Type.id == "rifleman" ? "소총병" : "경비병",
+                Persona = persona.label,
+                PersonaStyle = persona.style,
+                Task = BarkContext.TaskOf(enemy.State, enemy.IsMoving, enemy.IsReturning),
+                Tension = SuspicionMeter.TensionKo(enemy.Tension),
+                Body = BarkContext.BodyOf((float)enemy.Health.Hp / Mathf.Max(1, enemy.Type.hp)),
+                Allies = BarkContext.AlliesOf(AlliesNear(enemy, 10f)),
+                Place = FloorAt(enemy.Position) == FloorType.Outdoor ? "야외" : "실내",
+                Light = LightAt(enemy.Position) >= 0.5f ? "밝음" : "어두움",
+                Wind = director.GustActive ? "강함" : "없음",
+                Alert = BarkContext.AlertOf(director.GlobalAlertLevel),
+                DefaultEmotion = trigger.DefaultEmotion,
+            };
+            if (def != null)
+                foreach (string field in def.detail_fields)
+                {
+                    string value = DetailValue(field, trigger);
+                    if (!string.IsNullOrEmpty(value)) c.Detail.Add(new KeyValuePair<string, string>(field, value));
+                }
+            foreach (string line in barks.Recent(enemy.Id)) c.Recent.Add(line);
+            return c;
+        }
+
+        static string StateLabel(string when)
+        {
+            switch (when)
+            {
+                case "lost": return "침입자를 놓침";
+                case "search_end": return "수색 종료";
+                case "reload": return "재장전";
+                case "hit": return "피격";
+                default: return when;
+            }
+        }
+
+        string DetailValue(string field, BarkTrigger trigger)
+        {
+            switch (field)
+            {
+                case "동료 이름":
+                    foreach (EnemyController other in enemies)
+                        if (other.IsDead && !string.IsNullOrEmpty(other.Callsign) && Vector2.Distance(other.Position, trigger.Position) < 1.5f) return other.Callsign;
+                    foreach (EnemyController other in enemies)
+                        if (other.IsDead && !string.IsNullOrEmpty(other.Callsign) && Vector2.Distance(other.SpawnPosition, trigger.Position) < 0.5f) return other.Callsign;
+                    return null;
+                case "평소 문 상태":
+                    foreach (Door door in doors)
+                        if (Vector2.Distance(door.Position, trigger.Position) < 0.6f) return door.UsualOpen ? "열림" : "닫힘";
+                    return null;
+                case "바닥":
+                    switch (FloorAt(trigger.Position))
+                    {
+                        case FloorType.Tile: return "타일";
+                        case FloorType.Carpet: return "카펫";
+                        case FloorType.Outdoor: return "야외";
+                        default: return "나무";
+                    }
+                default: return null;
+            }
+        }
+
+        int AlliesNear(EnemyController enemy, float radius)
+        {
+            int n = 0;
+            foreach (EnemyController other in enemies)
+                if (other != enemy && !other.IsDead && Vector2.Distance(other.Position, enemy.Position) <= radius) n++;
+            return n;
+        }
+
+        FloorType FloorAt(Vector2 p)
+        {
+            Vector2Int c = map.Grid.WorldToCell(p);
+            return map.Grid.GetFloor(c.x, c.y);
+        }
+
+        // 칸 밝기(7.17). 밝기 격자가 없으면 1
+        public float LightAt(Vector2 p) { return lightGrid != null ? lightGrid.At(map.Grid.WorldToCell(p)) : 1f; }
+
+        void LoadNextMission()
+        {
+            MissionMapEntry[] maps = missionConfig.maps;
+            for (int i = 0; i < maps.Length - 1; i++)
+                if (maps[i].id == mapData.id) { SceneFlow.LoadGame(maps[i + 1].id); return; }
+            SceneFlow.LoadMainMenu();
+        }
+
+        bool HasNextMission()
+        {
+            MissionMapEntry[] maps = missionConfig.maps;
+            return maps.Length > 0 && maps[maps.Length - 1].id != mapData.id;
+        }
+
+        public void SetPaused(bool open) { pauseMenu.SetOpen(open); }
+        public bool ResultVisible { get { return resultScreen != null && resultScreen.IsOpen; } }
+
+        // 일시정지·대화·결과 화면·HUD·소리(일시정지 중에도 돈다)
+        void TickScreens()
+        {
+            float unscaled = Time.unscaledDeltaTime;
+            if (dialogue.IsActive)
+            {
+                int number = Input.GetKeyDown(KeyCode.Alpha1) ? 1 : Input.GetKeyDown(KeyCode.Alpha2) ? 2 : Input.GetKeyDown(KeyCode.Alpha3) ? 3 : 0;
+                bool advance = Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0);
+                dialogue.Tick(unscaled, advance, number);
+            }
+            else if (Input.GetKeyDown(KeyCode.Escape) && !resultScreen.IsOpen)
+            {
+                if (settings.IsOpen) settings.Close();
+                else pauseMenu.SetOpen(!pauseMenu.IsOpen);
+            }
+            qwen.SetPaused(paused || inDialogue);
+            if (mission.State == MissionManager.Result && !resultShown)
+            {
+                resultShown = true;
+                bool newRecord = false;
+                if (mission.Outcome == MissionResult.Success)
+                {
+                    newRecord = GameSession.Data.Submit(mission.MakeRecord(SceneFlow.SelectedDifficulty));
+                    if (newRecord) GameSession.Save();
+                }
+                resultScreen.Show(mission, newRecord, HasNextMission(), GameSession.LastSaveFailed);
+            }
+            hud.Tick();
+            Vector2Int cell = map.Grid.WorldToCell(Player.Position);
+            audioManager.SetAmbience(map.Grid.GetFloor(cell.x, cell.y) == FloorType.Outdoor, director.GustActive);
+            audioManager.Tick();
+            bool overlay = paused || dialogue.IsActive || resultScreen.IsOpen;
+            Cursor.visible = overlay;
+            crosshair.gameObject.SetActive(!overlay);
+            hud.gameObject.SetActive(!dialogue.IsActive);
+        }
+
+        // 문이 바뀌면 그 문 반경 안 조명만 밝기를 다시 계산(7.17)
+        void OnDoorChanged(DoorChangedEvent e)
+        {
+            if (lightGrid == null) return;
+            foreach (Door door in doors)
+                if (door.Id == e.doorId) lightGrid.OnDoorChanged(map.Grid.AreaRect(door.Area));
+        }
+
+        // 플레이어 화면에 그릴 적: 시야 안이고, 어두운 칸(밝기 0.15 미만)이면 4m 안일 때만(야간 투시 켜면 해제)
+        bool EnemyRendered(EnemyController enemy)
+        {
+            if (!enemy.Target.Alive || !vision.IsVisible(enemy.Position)) return false;
+            if (nightVisionOn) return true;
+            if (LightAt(enemy.Position) >= aiConfig.light.dark_threshold) return true;
+            return Vector2.Distance(enemy.Position, Player.Position) <= aiConfig.light.dark_visible_m;
+        }
+
+        public LightGrid Light { get { return lightGrid; } }
+
         void SpawnDoors(Transform world, MapLighting lighting) // 맵상의 문을 생성하는 함수입니다.
         {
             Sprite horizontal = catalog.GetSprite("door_closed"); // 가로로 닫힌 문 스프라이트.
@@ -435,6 +679,7 @@ namespace GameAi // 게임의 AI 및 핵심 로직들을 묶어둔 네임스페�
 
             perf.EndSection(); // 연산 시간 측정 종료.
             perfOverlay.Tick(Time.unscaledDeltaTime); // 성능 수치 UI 업데이트.
+            TickScreens();
         }
 
         // 5.4의 1~8단계. 순서를 바꾸면 규칙이 바뀐다
@@ -493,7 +738,7 @@ namespace GameAi // 게임의 AI 및 핵심 로직들을 묶어둔 네임스페�
                 door.Tick(dt); // 열림/닫힘 애니메이션을 진행합니다.
             }
             foreach (EnemyController enemy in enemies) // 적 객체를 순회하며
-                if (enemy.Target.Alive) enemy.View.SetVisible(vision.IsVisible(enemy.Target.Position)); // 살아있는 적이 플레이어 시야 안에 있을 때만 화면에 보이도록(SpriteRenderer On) 만듭니다.
+                if (enemy.Target.Alive) enemy.View.SetVisible(EnemyRendered(enemy));
             barks.Tick(dt);
             foreach (EnemyController enemy in enemies)
                 barkView.Tick(dt, enemy.Id, enemy.Position, IsEnemyOnScreen(enemy.Id), AwarenessIcon(enemy), enemy.Target.Alive);

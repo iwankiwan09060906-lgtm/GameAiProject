@@ -20,6 +20,11 @@ namespace GameAi
         }
 
         // 게임 씬을 다시 불러오면 탐색 기억·적·타이머·전투 흔적이 함께 초기화된다(5.3)
+        public static void LoadMainMenu()
+        {
+            SceneManager.LoadScene(MainMenuScene);
+        }
+
         public static void Restart()
         {
             SceneManager.LoadScene(GameScene);

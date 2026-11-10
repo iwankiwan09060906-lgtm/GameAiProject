@@ -64,6 +64,13 @@ namespace GameAi
         IEnumerator Start()
         {
             Directory.CreateDirectory(outputDir);
+            if (scenario == "menu")
+            {
+                yield return RunMenu();
+                File.WriteAllLines(Path.Combine(outputDir, "smoke_report.txt"), report);
+                Application.Quit(failures == 0 ? 0 : 1);
+                yield break;
+            }
             while (game == null || !game.IsReady)
             {
                 game = FindAnyObjectByType<GameManager>();
