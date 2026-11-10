@@ -47,6 +47,17 @@ namespace GameAi
         public static RayHit Cast<TVisitor>(GridMap grid, Vector2 origin, Vector2 dir, float maxDistance, RayMask mask, ref TVisitor visitor)
             where TVisitor : struct, ICellVisitor
         {
+            // NaN·무한대가 들어오면 아래 루프의 거리 비교가 항상 거짓이 되어 끝나지 않는다. 막고 한 번 알린다
+            if (!IsFinite(origin) || !IsFinite(dir) || float.IsNaN(maxDistance))
+            {
+                if (!warnedBadInput)
+                {
+                    warnedBadInput = true;
+                    Debug.LogWarning("[Raycast] 비정상 입력을 무시합니다: origin " + origin + ", dir " + dir + ", max " + maxDistance + " / " + System.Environment.StackTrace);
+                }
+                return new RayHit { Hit = true, Cell = new Vector2Int(0, 0), Point = IsFinite(origin) ? origin : Vector2.zero, Distance = 0f };
+            }
+            maxDistance = Mathf.Min(maxDistance, (grid.Width + grid.Height) * grid.CellSize * 2f);
             float cellSize = grid.CellSize;
             Vector2 worldOrigin = origin;
             origin /= cellSize;
@@ -69,7 +80,9 @@ namespace GameAi
             float tMaxY = stepY != 0 ? FirstCrossing(origin.y, y, stepY) / Mathf.Abs(dir.y) : float.PositiveInfinity;
 
             const float CornerEpsilon = 1e-4f;
-            while (true)
+            // 지나는 칸 수는 가로+세로를 넘을 수 없다. 만일을 위한 상한
+            int guard = (grid.Width + grid.Height) * 4 + 16;
+            while (guard-- > 0)
             {
                 float t;
                 if (Mathf.Abs(tMaxX - tMaxY) < CornerEpsilon)
@@ -117,6 +130,13 @@ namespace GameAi
         }
 
         // 시작점에서 진행 방향의 첫 칸 경계까지의 거리(축 방향 성분만)
+        static bool warnedBadInput;
+
+        static bool IsFinite(Vector2 v)
+        {
+            return !float.IsNaN(v.x) && !float.IsNaN(v.y) && !float.IsInfinity(v.x) && !float.IsInfinity(v.y);
+        }
+
         static float FirstCrossing(float origin, int cell, int step)
         {
             return step > 0 ? cell + 1 - origin : origin - cell;

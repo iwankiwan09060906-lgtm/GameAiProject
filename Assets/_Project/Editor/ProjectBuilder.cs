@@ -41,6 +41,8 @@ namespace GameAi.EditorTools
 
             var config = ConfigLoader.Load<GameConfig>("game.json");
             EnsureRenderPipeline();
+            // 창이 포커스를 잃어도 멈추지 않게 한다(자동 확인 실행이 멈추는 원인). 실제 플레이는 GameManager가 일시정지 메뉴를 연다
+            PlayerSettings.runInBackground = true;
             AssetCatalogBuilder.Build();
             CreateMainMenuScene();
             CreateGameScene(config);

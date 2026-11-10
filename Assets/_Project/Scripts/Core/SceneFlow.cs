@@ -12,6 +12,9 @@ namespace GameAi
         public static string SelectedMapId { get; set; } = "map_01";
         // 미션 선택에서 고른 난이도(easy / normal / hard)
         public static string SelectedDifficulty { get; set; } = "normal";
+        // 재현 테스트용: 고정 시드 강제(Qwen도 꺼진다)와 고정 시간 간격(0이면 실제 프레임 시간)
+        public static bool ForceFixedSeed { get; set; }
+        public static float FixedDeltaTime { get; set; }
 
         public static void LoadGame(string mapId)
         {

@@ -38,11 +38,15 @@ namespace GameAi
         }
 
         // 구간의 끝. 걸린 시간(ms)을 기록하고 돌려준다. 렌더링은 이 구간에 들어가지 않는다
+        // 마지막 구간 시간(ms)
+        public float LastSectionMs { get; private set; }
+
         public float EndSection()
         {
             clock.Stop();
             float ms = (float)clock.Elapsed.TotalMilliseconds;
             Push(sections, ref sectionCount, ref sectionNext, ms);
+            LastSectionMs = ms;
             return ms;
         }
 

@@ -26,6 +26,7 @@ namespace GameAi
         {
             if (catalog == null) catalog = ScriptableObject.CreateInstance<AssetCatalog>();
             config = ConfigLoader.Load<GameConfig>("game.json");
+            FontPrewarm.Run(catalog.Font);
             if (string.IsNullOrEmpty(SceneFlow.SelectedDifficulty)) SceneFlow.SelectedDifficulty = config.default_difficulty;
             GameSession.ApplyScreenOnce();
             BuildBackground();

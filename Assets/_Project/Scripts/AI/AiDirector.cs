@@ -79,6 +79,19 @@ namespace GameAi
             difficulty = difficultyMult;
         }
 
+        // 단계별 누적 시간(ms): 0 시작, 1 이벤트, 2 감지, 3 경보·경로, 4 적 판단·이동. 부하 측정용
+        readonly System.Diagnostics.Stopwatch stage = new System.Diagnostics.Stopwatch();
+        public readonly double[] StageMs = new double[5];
+        double lastMark;
+
+        void Mark(int index)
+        {
+            if (index == 0) { stage.Restart(); lastMark = 0; return; }
+            double t = stage.Elapsed.TotalMilliseconds;
+            StageMs[index] += t - lastMark;
+            lastMark = t;
+        }
+
         public void SetLightSource(Func<Vector2, float> source) { lightAt = source ?? (p => 1f); }
 
         public void Add(EnemyController enemy)
@@ -169,12 +182,16 @@ namespace GameAi
             PathsThisFrame = 0;
             TickWind(now);
             DeliverRadio(now);
+            Mark(0);
             ProcessEvents(now);
             ProcessLightOff(now);
+            Mark(1);
             Sense(dt, now);
+            Mark(2);
             RadioChecks(now);
             ResendAlerts(now);
             PlanPaths(now);
+            Mark(3);
             foreach (EnemyController enemy in enemies)
             {
                 if (enemy.IsDead) continue;
@@ -182,6 +199,7 @@ namespace GameAi
                 enemy.Tick(dt, now);
             }
             UpdateGlobalLevel();
+            Mark(4);
         }
 
         void TickWind(float now)
@@ -211,6 +229,10 @@ namespace GameAi
                 {
                     case "CLU_CASING":
                     case "CLU_BLOOD":
+                        // 1m 안에 같은 종류 단서가 이미 있으면 하나로 본다(교전 중 탄피·혈흔이 수백 개 쌓이는 것을 막는다)
+                        if (HasNearbyClue(e.code, e.position, 1f)) break;
+                        clueObjects.Add(new ClueObject { EventId = e.eventId, Code = e.code, Position = e.position, ObjectId = e.objectId });
+                        break;
                     case "CLU_CORPSE":
                     case "CLU_WEAPON":
                         clueObjects.Add(new ClueObject { EventId = e.eventId, Code = e.code, Position = e.position, ObjectId = e.objectId });
@@ -350,8 +372,19 @@ namespace GameAi
             enemy.Suspicion.Accumulate(record.EventId, def.score * senseDt, 100f, now, playerPos);
         }
 
+        bool HasNearbyClue(string code, Vector2 position, float radius)
+        {
+            for (int i = 0; i < clueObjects.Count; i++)
+                if (clueObjects[i].Code == code && (clueObjects[i].Position - position).sqrMagnitude <= radius * radius) return true;
+            return false;
+        }
+
+        public int ClueObjectCount { get { return clueObjects.Count; } }
+
         void SeeClueObjects(EnemyController enemy, float now)
         {
+            // 추격·교전 중에는 바닥을 살피지 않는다(눈앞의 침입자가 우선)
+            if (enemy.State == EnemyState.Chase || enemy.State == EnemyState.Engage) return;
             for (int i = 0; i < clueObjects.Count; i++)
             {
                 ClueObject o = clueObjects[i];

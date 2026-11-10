@@ -74,6 +74,8 @@ OFL은 폰트와 라이선스를 함께 배포하도록 정하고 있으므로 `
 | 플레이어·적 재채색본, 시체 임시본 | Claude Code | `AssetSource/build_assets.ps1` | `Art/chars/` — 원본이 CC BY 4.0이므로 5장 크레딧 유지 |
 | HUD 무기 그림(빨강 윤곽 재채색, 소음기 추가) | Claude Code | `AssetSource/build_assets.ps1` | `Art/ui/weapon_*` — 원본은 CC0 |
 | 초상화 2장, 폭탄·탈출·유인탄, 밝기·소음 아이콘, 자세 실루엣 4장, UI 패널 3장, 천장등, 탄피 (임시본) | Claude Code | 문자 격자·코드(`AssetSource/drawn/`, `build_assets.cs`) | 이미지 생성 AI가 아니라 픽셀을 직접 지정해 그림 |
+| 깡통·조명 스위치 그림, 깡통·비명·스위치·돌풍 소리, 그 밖에 파일이 없는 효과음·배경음의 대체 톤 | Claude Code | 실행 중 코드 생성(`Util/ProceduralSprites.cs`, `Audio/ProceduralAudio.cs`) | 파일로 저장하지 않으므로 라이선스 없음. 같은 이름 파일을 넣으면 바뀜 |
+| 맵 2~4 | Claude Code | `AssetSource/maps/gen_maps.py` | `StreamingAssets/Config/maps/` |
 | (예) 시체 스프라이트 다듬기 | 김성범 | Aseprite | `Art/chars/corpse_*.png` |
 | (예) 초상화 교체 | 김성범 | Aseprite | `Art/portraits/*.png` |
 

@@ -1,0 +1,27 @@
+시나리오: ai
+적1 8초 이동 7.9m, 상태 Patrol
+적2 8초 이동 5.9m, 상태 Patrol
+적3 8초 이동 3.7m, 상태 Patrol
+적4 8초 이동 7.1m, 상태 Patrol
+[통과] 적이 순찰로 움직임(2명 이상)
+  전이 t=7.4 적1 Patrol→Investigate (new_clue)
+총소리 뒤 적1 상태 Investigate, 의심도 100
+[통과] 총소리에 조사·추격으로 반응
+  대사 적1 "움직임 확인, 조심히." [긴장/Qwen]
+  전이 t=9.5 적1 Investigate→Engage (sight_gauge_100)
+정면 노출 0.9초 뒤 적1 상태 Engage, 게이지 100
+[통과] 정면에서 발견해 추격·교전
+[통과] 발견 이벤트
+교전 중 플레이어 피격 4회, 체력 100/2
+[통과] 적이 플레이어를 쏨
+  전이 t=13.1 적1 Engage→Search (lost_player)
+  전이 t=15.8 적1 Search→Investigate (new_clue)
+  전이 t=18.4 적1 Investigate→Search (clue_reached)
+  전이 t=30.4 적1 Search→Patrol (search_timeout)
+숨은 뒤 18.4초: 수색 True, 순찰 복귀 True, 상태 Patrol
+[통과] 놓치면 수색
+[통과] 수색 후 순찰 복귀
+전이 6회, 발견 1회, 대사 1회
+[통과] 대사가 떴음
+성능: 프레임 600개, 평균 16.7ms(60fps), 최대 38.9ms, 33ms 초과 3회
+성능: 게임 코드 평균 0.84ms, 최대 3.40ms

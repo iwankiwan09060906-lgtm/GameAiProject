@@ -77,6 +77,9 @@ namespace GameAi // 게임의 AI 및 핵심 로직들을 묶어둔 네임스페�
         bool nightVisionOn;
         DecoySystem decoys;
         NightVision nightVision;
+        DebugOverlay debugOverlay;
+        StateTransitionLogger transitionLog;
+        readonly PerfProbe aiPerf = new PerfProbe();
 
         // 값이 있으면 자동 재생(SmokeRunner)이 조준선을 직접 움직인다
         Vector2? crosshairOverride; // null이 아니면 플레이어 마우스 대신 시스템(또는 리플레이)이 조준선 위치를 강제합니다.
@@ -113,10 +116,12 @@ namespace GameAi // 게임의 AI 및 핵심 로직들을 묶어둔 네임스페�
             if (worldCamera == null) worldCamera = Camera.main; // 카메라가 연결되지 않았다면 씬의 메인 카메라를 찾아 자동으로 연결합니다.
 
             config = ConfigLoader.Load<GameConfig>("game.json"); // StreamingAssets 등에서 game.json 설정 파일을 읽어 객체로 만듭니다.
+            FontPrewarm.Run(catalog.Font);
             weaponConfig = ConfigLoader.Load<WeaponConfig>("weapons.json"); // 무기 설정 파일을 읽습니다.
             enemyConfig = ConfigLoader.Load<EnemyConfig>("enemies.json"); // 적 설정 파일을 읽습니다.
             aiConfig = ConfigLoader.Load<AiConfig>("ai.json"); // AI 설정 파일을 읽습니다.
-            Rng.Init(config.fixed_seed_enabled, config.fixed_seed); // 설정에 따라 랜덤(난수) 생성기의 시드를 고정하여 리플레이가 똑같이 재생되게 하거나 랜덤하게 만듭니다.
+            if (SceneFlow.ForceFixedSeed) config.fixed_seed_enabled = true;
+            Rng.Init(config.fixed_seed_enabled, config.fixed_seed);
             GameClock.Reset();
             eventTable = new EventTypeTable(ConfigLoader.Load<EventTypeConfig>("events.json"));
             WorldEvents.Reset(eventTable);
@@ -153,6 +158,7 @@ namespace GameAi // 게임의 AI 및 핵심 로직들을 묶어둔 네임스페�
             EventBus.Subscribe<DialogueStateEvent>(OnDialogueState); // 대화창 상태 변경 이벤트를 구독하여 OnDialogueState 함수가 반응하게 합니다.
             EventBus.Subscribe<PauseEvent>(OnPause); // 일시정지 이벤트를 구독하여 OnPause 함수가 반응하게 합니다.
             EventBus.Subscribe<DoorChangedEvent>(OnDoorChanged);
+            EventBus.Subscribe<NoiseEvent>(OnNoiseDebug);
         }
 
         void OnDisable() // 스크립트가 꺼지거나 파괴될 때 호출됩니다.
@@ -160,6 +166,7 @@ namespace GameAi // 게임의 AI 및 핵심 로직들을 묶어둔 네임스페�
             EventBus.Unsubscribe<DialogueStateEvent>(OnDialogueState); // 켜질 때 등록했던 대화 이벤트를 해제합니다(메모리 누수 방지).
             EventBus.Unsubscribe<PauseEvent>(OnPause); // 일시정지 이벤트 구독을 해제합니다.
             EventBus.Unsubscribe<DoorChangedEvent>(OnDoorChanged);
+            EventBus.Unsubscribe<NoiseEvent>(OnNoiseDebug);
         }
 
         // 대화 중에는 Time.timeScale을 건드리지 않고 시뮬레이션 단계만 건너뛴다(7.19)
@@ -472,12 +479,15 @@ namespace GameAi // 게임의 AI 및 핵심 로직들을 묶어둔 네임스페�
             resultScreen = new ResultScreen(ui.Rect, catalog, SceneFlow.Restart, LoadNextMission, SceneFlow.LoadMainMenu);
 
             var qwenConfig = ConfigLoader.Load<QwenConfig>("qwen.json");
-            qwen = new QwenBarkSource(qwenConfig, barks, barkConfig, eventTable, BuildBarkContext, () => (Vector2)worldCamera.transform.position, config.fixed_seed_enabled);
+            qwen = new QwenBarkSource(qwenConfig, barks, barkConfig, eventTable, BuildBarkContext, () => (Vector2)worldCamera.transform.position, config.fixed_seed_enabled || SceneFlow.ForceFixedSeed);
             barks.LineSource = qwen;
             barks.IsOutdoor = p => FloorAt(p) == FloorType.Outdoor;
             barks.ChatterInterval = qwenConfig.chatter_interval_s;
             barks.ReplyDelay = qwenConfig.reply_delay_s;
             barks.ReplyRadius = qwenConfig.reply_radius_m;
+            debugOverlay = new DebugOverlay(transform, ui, catalog, map.Grid);
+            transitionLog = gameObject.AddComponent<StateTransitionLogger>();
+            transitionLog.FilePath = System.IO.Path.Combine(Application.persistentDataPath, "state_log.txt");
             decoys = new DecoySystem(map.Grid, weaponConfig.player.decoys, SpawnMarker(transform, "obj_decoy", Player.Position, SortOrder.Fx));
             nightVision = new NightVision(ui, config.lighting, mapLighting.GlobalLight, mapLighting.Lamps, weaponConfig.player.nvg_battery_s, weaponConfig.player.nvg_recharge_per_s);
             hud.Decoys = () => decoys.Count;
@@ -602,6 +612,13 @@ namespace GameAi // 게임의 AI 및 핵심 로직들을 묶어둔 네임스페�
         }
 
         public void SetPaused(bool open) { pauseMenu.SetOpen(open); }
+
+        // 창이 포커스를 잃으면 일시정지(자동 확인 실행은 제외)
+        void OnApplicationFocus(bool focused)
+        {
+            if (focused || smokeMode || !ready || pauseMenu == null) return;
+            if (mission.State == MissionManager.Running && !dialogue.IsActive && !resultScreen.IsOpen) pauseMenu.SetOpen(true);
+        }
         public bool ResultVisible { get { return resultScreen != null && resultScreen.IsOpen; } }
 
         // 일시정지·대화·결과 화면·HUD·소리(일시정지 중에도 돈다)
@@ -661,6 +678,28 @@ namespace GameAi // 게임의 AI 및 핵심 로직들을 묶어둔 네임스페�
         public LightGrid Light { get { return lightGrid; } }
         public IReadOnlyList<LightSwitch> Switches { get { return switches; } }
 
+        void OnNoiseDebug(NoiseEvent e) { debugOverlay?.OnNoise(e); }
+
+        public PerfProbe AiPerf { get { return aiPerf; } }
+        public StateTransitionLogger TransitionLog { get { return transitionLog; } }
+
+        // 부하 시험용: 적을 더 놓는다(기존 적의 종류·순찰을 따라 쓴다)
+        public void SpawnExtraEnemies(int count)
+        {
+            Transform world = transform.Find("World") ?? transform;
+            int nextId = 1000;
+            int baseCount = enemies.Count;
+            for (int i = 0; i < count && baseCount > 0; i++)
+            {
+                EnemyController source = enemies[i % baseCount];
+                MapEnemy data = mapData.enemies[i % mapData.enemies.Length];
+                Vector2 offset = MathUtil.FromAngleDeg(i * 47f) * 1.2f;
+                Vector2 p = PlayerMotor.PushOutOfCells(map.Grid, source.SpawnPosition + offset, 0.4f);
+                EnemyController enemy = SpawnEnemy(world, nextId++, source.Type, p, Vector2.right, data);
+                enemies.Add(enemy);
+            }
+        }
+
         void SpawnDoors(Transform world, MapLighting lighting) // 맵상의 문을 생성하는 함수입니다.
         {
             Sprite horizontal = catalog.GetSprite("door_closed"); // 가로로 닫힌 문 스프라이트.
@@ -691,7 +730,7 @@ namespace GameAi // 게임의 AI 및 핵심 로직들을 묶어둔 네임스페�
             perf.Record(Time.unscaledDeltaTime); // 프로파일러에 렉을 포함한 쌩 프레임 시간을 기록.
             perf.BeginSection(); // 코드 연산 시간 측정 시작.
 
-            float dt = Mathf.Min(Time.deltaTime, MaxDeltaTime); // 델타 타임(프레임 간 간격)이 비정상적으로 커지는 걸 방지하기 위해 MaxDeltaTime(0.05)으로 상한선을 둡니다.
+            float dt = SceneFlow.FixedDeltaTime > 0f ? SceneFlow.FixedDeltaTime : Mathf.Min(Time.deltaTime, MaxDeltaTime);
 
             // 대화·일시정지 중에는 1~8단계(시뮬레이션)를 건너뛴다. 화면 갱신은 계속한다
             if (!paused && !inDialogue) // 일시정지도 아니고 대화창도 닫혀 있을 때만
@@ -702,6 +741,7 @@ namespace GameAi // 게임의 AI 및 핵심 로직들을 묶어둔 네임스페�
             perf.EndSection(); // 연산 시간 측정 종료.
             perfOverlay.Tick(Time.unscaledDeltaTime); // 성능 수치 UI 업데이트.
             TickScreens();
+            debugOverlay.Tick(Input.GetKeyDown(KeyCode.F3), this, worldCamera, perf, aiPerf, qwen);
         }
 
         // 5.4의 1~8단계. 순서를 바꾸면 규칙이 바뀐다
@@ -729,7 +769,9 @@ namespace GameAi // 게임의 AI 및 핵심 로직들을 묶어둔 네임스페�
             }
 
             // 3. 소음은 Phase 4, 4~5. 감지·상태 전환은 Phase 5. 지금은 허수아비라 표시만 갱신한다
+            aiPerf.BeginSection();
             director.Tick(dt);
+            aiPerf.EndSection();
 
             // 6. 공격·피해. 근접을 먼저 처리해 같은 프레임의 사격보다 우선한다
             if (playerAlive) // 공격 처리

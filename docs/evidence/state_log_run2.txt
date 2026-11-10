@@ -1,0 +1,5 @@
+12.533 enemy=4 Patrol->Investigate reason=new_clue
+20.217 enemy=4 Investigate->Engage reason=sight_gauge_100
+20.733 enemy=1 Patrol->Investigate reason=alert_received
+20.733 enemy=2 Patrol->Investigate reason=alert_received
+20.733 enemy=3 Patrol->Investigate reason=alert_received

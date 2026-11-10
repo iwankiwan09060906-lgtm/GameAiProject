@@ -49,6 +49,8 @@ namespace GameAi
         public int Hp { get { return model.Hp; } }
         public int Armor { get { return model.Armor; } }
         public bool IsDead { get { return model.IsDead; } }
+        // 부하 시험에서만 켠다(피해 무시)
+        public bool Invulnerable { get; set; }
 
         public void Init(CombatTarget owner, int hp, int armor, CharacterView characterView, float flashS, bool player, string corpse)
         {
@@ -74,7 +76,7 @@ namespace GameAi
         // 모든 Health가 모든 DamageEvent를 받으므로, 자기 대상이 아니면 무시한다
         void OnDamage(DamageEvent evt)
         {
-            if (model == null || evt.targetId != target.Id || model.IsDead) return;
+            if (model == null || evt.targetId != target.Id || model.IsDead || Invulnerable) return;
             model.Apply(evt.amount);
             view.Flash(flashSeconds);
             // 적이 총에 맞으면 비명(근접 제압은 소리 없음, 7.5)

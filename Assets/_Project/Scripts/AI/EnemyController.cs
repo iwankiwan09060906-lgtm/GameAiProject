@@ -59,6 +59,7 @@ namespace GameAi
         float reloadLeft;
         float nextShotTime;
         Vector2? coverSpot;
+        float nextCoverSearch;
         bool wasDetected;
 
         // 감지 결과(AiDirector가 채움)
@@ -136,8 +137,11 @@ namespace GameAi
 
         // ---- 매 프레임 판단·행동 ----
 
+        float lastDt;
+
         public void Tick(float dt, float now)
         {
+            lastDt = dt;
             if (State == EnemyState.Dead) return;
             AiConfig ai = world.Ai;
             gauge.Tick(dt, playerSeen, riseMult, ai.gauge);
@@ -340,14 +344,20 @@ namespace GameAi
             bool inRange = distance <= Type.weapon.range_m;
             bool lineBlocked = !LineOfSight.IsClear(world.Grid, Position, LastKnownPlayer, RayMask.Bullet);
             float hpRatio = (float)Health.Hp / Mathf.Max(1, Type.hp);
-            bool coverAvailable = coverSpot.HasValue || FindCover(out _);
+            // 엄폐가 필요한 조건일 때만, 0.5초에 한 번만 엄폐 위치를 찾는다(시선 판정이 많아 비싸다)
+            bool wantsCover = hpRatio <= ai.combat.cover_hp_ratio || reloadLeft > 0f || (lineBlocked && playerSeen);
+            if (wantsCover && !coverSpot.HasValue && now >= nextCoverSearch)
+            {
+                nextCoverSearch = now + 0.5f;
+                if (FindCover(out Vector2 found)) coverSpot = found;
+            }
+            bool coverAvailable = coverSpot.HasValue;
             CombatAction action = CombatTree.Decide(hpRatio, ai.combat.cover_hp_ratio, reloadLeft > 0f, mag <= 0, lineBlocked,
                 inRange, playerSeen, coverAvailable, true);
 
             switch (action)
             {
                 case CombatAction.TakeCover:
-                    if (!coverSpot.HasValue && FindCover(out Vector2 spot)) coverSpot = spot;
                     if (coverSpot.HasValue && Vector2.Distance(destination, coverSpot.Value) > 0.3f) SetDestination(coverSpot.Value);
                     if (mag <= 0 && reloadLeft <= 0f) StartReload();
                     if (playerSeen) FaceToward(LastKnownPlayer, 999f);
@@ -460,7 +470,7 @@ namespace GameAi
             if (to.sqrMagnitude < 1e-4f) return;
             float current = MathUtil.AngleDeg(Facing);
             float target = MathUtil.AngleDeg(to);
-            float next = maxDegPerSecond >= 900f ? target : Mathf.MoveTowardsAngle(current, target, maxDegPerSecond * Time.deltaTime);
+            float next = maxDegPerSecond >= 900f ? target : Mathf.MoveTowardsAngle(current, target, maxDegPerSecond * lastDt);
             Facing = MathUtil.FromAngleDeg(next);
             View.SetAim(next);
         }

@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using System.IO;
 using UnityEngine;
 
 namespace GameAi
@@ -17,6 +18,10 @@ namespace GameAi
             else if (scenario == "ui") yield return RunUi();
             else if (scenario == "maps") yield return RunMaps();
             else if (scenario == "gadgets") yield return RunGadgets();
+            else if (scenario == "replay") yield return RunReplay();
+            else if (scenario == "perf") yield return RunPerf();
+            else if (scenario == "soak") yield return RunSoak();
+            else if (scenario == "evidence") yield return RunEvidence();
             else yield return Run();
         }
 
@@ -366,6 +371,177 @@ namespace GameAi
         System.Collections.Generic.IEnumerable<LightSwitch> FindSwitches()
         {
             return game.Switches;
+        }
+
+        // 고정 시드 재현(13.3): 같은 맵·시드·입력으로 3회 실행한 상태 전이 로그가 같은지
+        IEnumerator RunReplay()
+        {
+            var runs = new System.Collections.Generic.List<string[]>();
+            for (int run = 0; run < 3; run++)
+            {
+                SceneFlow.ForceFixedSeed = true;
+                SceneFlow.FixedDeltaTime = 1f / 60f;
+                yield return LoadMap("map_01");
+                // 사망 → 디브리핑(실제 시간 진행) 때문에 시뮬레이션 프레임 수가 달라지지 않게 무적
+                game.Player.Health.Invulnerable = true;
+                for (int frame = 0; frame < 1800; frame++)
+                {
+                    // 정해진 입력: 시작점에서 동쪽·북쪽으로 걷다가 가끔 쏜다
+                    int phase = frame / 240;
+                    scripted.State.Move = phase % 3 == 0 ? Vector2.right : phase % 3 == 1 ? Vector2.up : new Vector2(1f, 1f).normalized;
+                    scripted.State.RunHeld = phase % 2 == 1;
+                    Aim(game.Player.Position + scripted.State.Move * 5f);
+                    if (frame % 300 == 150) scripted.State.FirePressed = true;
+                    yield return null;
+                }
+                string[] lines = new string[game.TransitionLog.Lines.Count];
+                for (int i = 0; i < lines.Length; i++) lines[i] = game.TransitionLog.Lines[i];
+                runs.Add(lines);
+                File.WriteAllLines(Path.Combine(outputDir, "state_log_run" + (run + 1) + ".txt"), lines);
+                Log($"실행 {run + 1}: 상태 전이 {lines.Length}줄, 게임 시각 {GameClock.Time:F2}");
+            }
+            SceneFlow.ForceFixedSeed = false;
+            SceneFlow.FixedDeltaTime = 0f;
+            bool same = runs[0].Length > 0;
+            for (int r = 1; r < runs.Count && same; r++)
+            {
+                if (runs[r].Length != runs[0].Length) { same = false; Log("  줄 수가 다름: " + runs[0].Length + " / " + runs[r].Length); break; }
+                for (int i = 0; i < runs[0].Length; i++)
+                    if (runs[r][i] != runs[0][i]) { same = false; Log("  다른 줄 " + i + ": " + runs[0][i] + " / " + runs[r][i]); break; }
+            }
+            Check("3회 실행 상태 전이 로그가 같음", same);
+        }
+
+        // 부하(7.14): 적 20명이 추격·교전하는 60초, 조명 켠 상태
+        IEnumerator RunPerf()
+        {
+            yield return LoadMap("map_04");
+            game.SpawnExtraEnemies(20 - game.Enemies.Count);
+            game.Player.Health.Invulnerable = true;
+            Log($"적 {game.Enemies.Count}명, 조명 {game.Light.Count}개");
+            game.Player.SetPosition(new Vector2(40.5f, 25.5f));
+            for (int i = 0; i < 180; i++)
+            {
+                yield return null;
+            }
+            game.Perf.Reset();
+            game.AiPerf.Reset();
+            for (int i = 0; i < game.Director.StageMs.Length; i++) game.Director.StageMs[i] = 0;
+            float t = 0f;
+            int samples = 0, combat = 0, over2 = 0, frames = 0;
+            long memoryBefore = GC.GetTotalMemory(false);
+            while (t < 60f)
+            {
+                t += Time.unscaledDeltaTime;
+                frames++;
+                // 복도를 오가며 사격해 적을 끌어들인다
+                float a = t * 0.6f;
+                scripted.State.Move = new Vector2(Mathf.Sin(a), 0f);
+                Aim(game.Player.Position + new Vector2(Mathf.Cos(a * 2f), Mathf.Sin(a * 2f)) * 6f);
+                if (frames % 40 == 0) scripted.State.FirePressed = true;
+                if (frames % 120 == 0) scripted.State.ReloadPressed = true;
+                if (game.AiPerf.LastSectionMs > 2f) over2++;
+                if (frames % 60 == 0)
+                {
+                    samples++;
+                    foreach (EnemyController e in game.Enemies)
+                        if (!e.IsDead && (e.State == EnemyState.Chase || e.State == EnemyState.Engage)) combat++;
+                }
+                yield return null;
+            }
+            Log("성능(프레임): " + game.Perf.FrameSummary());
+            Log("성능(게임 코드 전체): " + game.Perf.SectionSummary());
+            Log("성능(AI): 평균 " + game.AiPerf.AverageSectionMs.ToString("F2") + "ms, 최대 " + game.AiPerf.MaxSectionMs.ToString("F2") + "ms, 2ms 초과 " + over2 + "/" + frames + "프레임(" + (100f * over2 / Mathf.Max(1, frames)).ToString("F1") + "%)");
+            Log("AI 단계별 프레임당 평균(ms): 이벤트 " + (game.Director.StageMs[1] / frames).ToString("F2") + ", 감지 " + (game.Director.StageMs[2] / frames).ToString("F2") + ", 경보·경로 " + (game.Director.StageMs[3] / frames).ToString("F2") + ", 적 판단·이동 " + (game.Director.StageMs[4] / frames).ToString("F2"));
+            Log("추격·교전 중인 적 평균 " + ((float)combat / Mathf.Max(1, samples)).ToString("F1") + "명, 힙 변화 " + (GC.GetTotalMemory(false) - memoryBefore) / 1024 + "KB");
+            Check("AI 처리 평균 2ms 이하", game.AiPerf.AverageSectionMs <= 2f);
+        }
+
+        // 장시간(7.14): 무작위로 움직이고 쏘며, 판정이 나면 다른 맵으로. 예외·메모리 증가 확인(-minutes N, 기본 30)
+        IEnumerator RunSoak()
+        {
+            int exceptions = 0;
+            Application.LogCallback onLog = (msg, stack, type) => { if (type == LogType.Exception) exceptions++; };
+            Application.logMessageReceived += onLog;
+            float minutes = 30f;
+            string[] args = Environment.GetCommandLineArgs();
+            int mi = Array.IndexOf(args, "-minutes");
+            if (mi >= 0 && mi + 1 < args.Length) float.TryParse(args[mi + 1], out minutes);
+            string[] maps = { "map_01", "map_02", "map_03", "map_04" };
+            int round = 0;
+            float elapsed = 0f;
+            long firstMemory = 0;
+            float nextReport = 0f;
+            var rng = new RandomSource(77);
+            while (elapsed < minutes * 60f)
+            {
+                yield return LoadMap(maps[round++ % maps.Length]);
+                float roundTime = 0f;
+                while (roundTime < 120f && game.Mission.State == MissionManager.Running && elapsed < minutes * 60f)
+                {
+                    float dt = Time.unscaledDeltaTime;
+                    roundTime += dt;
+                    elapsed += dt;
+                    if (Time.frameCount % 30 == 0)
+                    {
+                        scripted.State.Move = new Vector2(rng.Range(-1f, 1f), rng.Range(-1f, 1f));
+                        scripted.State.RunHeld = rng.Value() < 0.3f;
+                        scripted.State.CrouchHeld = rng.Value() < 0.2f;
+                        Aim(game.Player.Position + new Vector2(rng.Range(-6f, 6f), rng.Range(-6f, 6f)));
+                        scripted.State.FirePressed = rng.Value() < 0.3f;
+                        scripted.State.InteractPressed = rng.Value() < 0.2f;
+                        scripted.State.WeaponSelect = rng.Value() < 0.05f ? rng.Int(1, 4) : 0;
+                    }
+                    if (elapsed >= nextReport)
+                    {
+                        GC.Collect();
+                        long mem = GC.GetTotalMemory(true);
+                        if (firstMemory == 0) firstMemory = mem;
+                        Log($"  {elapsed / 60f:F1}분: {maps[(round - 1) % maps.Length]}, 관리 힙 {mem / 1024}KB, 예외 {exceptions}, {game.Perf.FrameSummary()}");
+                        nextReport += 60f;
+                    }
+                    yield return null;
+                }
+            }
+            Application.logMessageReceived -= onLog;
+            GC.Collect();
+            long last = GC.GetTotalMemory(true);
+            Log($"장시간 {minutes:F0}분: 판 {round}회, 예외 {exceptions}, 관리 힙 {firstMemory / 1024}KB → {last / 1024}KB");
+            Check("예외 없음", exceptions == 0);
+            Check("관리 힙이 크게 늘지 않음(+8MB 이하)", last - firstMemory < 8 * 1024 * 1024);
+        }
+
+        // 목표 화면 비교용 실내 교전 장면: 밝은 방에서 교전, 총구 화염·혈흔·시체·대사·HUD가 함께 보이게
+        IEnumerator RunEvidence()
+        {
+            yield return LoadMap("map_01");
+            game.Player.Health.Invulnerable = true;
+            EnemyController first = game.Enemies[0];
+            EnemyController second = game.Enemies[1];
+            // 첫 번째 적은 사격으로 쓰러뜨려 시체·혈흔을 남긴다
+            float t = 0f;
+            while (!first.IsDead && t < 8f)
+            {
+                game.Player.SetPosition(FindFree(first.Position - first.Facing * 4f, first.Position));
+                Aim(first.Position);
+                scripted.State.FirePressed = true;
+                yield return new WaitForSeconds(0.32f);
+                t += 0.32f;
+            }
+            // 두 번째 적과 교전하는 순간을 찍는다
+            Vector2 spot = FindFree(second.Position - second.Facing * 5f, second.Position);
+            game.Player.SetPosition(spot);
+            Aim(second.Position);
+            yield return new WaitForSeconds(1.5f);
+            for (int i = 0; i < 6 && !second.IsDead; i++)
+            {
+                Aim(second.Position);
+                scripted.State.FirePressed = true;
+                yield return new WaitForSeconds(0.1f);
+                if (i == 1) yield return Shot("evidence_combat");
+                yield return new WaitForSeconds(0.25f);
+            }
+            Check("교전 장면 촬영", true);
         }
 
         // 원하는 위치 근처에서 플레이어가 설 수 있는 칸(기준점까지 시야가 트인 곳)
