@@ -48,6 +48,7 @@ namespace GameAi
                 case "sfx_can": return Can(id, rng);
                 case "sfx_scream": return ScreamTone(id, rng);
                 case "sfx_switch": return Clicks(id, 0.05f, 1);
+                case "sfx_smoke": return SmokeBurst(id, rng);
                 case "amb_wind_gust": return Wind(id, 4f, rng);
                 case "amb_outdoor_night": return Crickets(id, 11f, rng);
                 case "bgm_menu": return Pad(id, 20f, 55f);
@@ -134,6 +135,21 @@ namespace GameAi
             {
                 phase += 2f * Mathf.PI * Mathf.Lerp(700f, 300f, t / s) / Rate;
                 return Envelope(t, s) * (Mathf.Sin(phase) * 0.4f + (rng.Value() - 0.5f) * 0.2f);
+            });
+        }
+
+        // 연막탄: 짧은 '펑' + 2초 동안 줄어드는 '쉬익'
+        static AudioClip SmokeBurst(string id, RandomSource rng)
+        {
+            const float s = 2.2f;
+            float low = 0f;
+            return Build(id, s, (i, t) =>
+            {
+                float pop = t < 0.08f ? Mathf.Sin(2f * Mathf.PI * 90f * t) * (1f - t / 0.08f) * 0.8f : 0f;
+                float hiss = (rng.Value() * 2f - 1f);
+                low = low * 0.6f + hiss * 0.4f;
+                float env = Mathf.Clamp01(t / 0.05f) * Mathf.Clamp01((s - t) / 1.6f);
+                return pop + (hiss - low) * 0.35f * env;
             });
         }
 

@@ -203,7 +203,7 @@ namespace GameAi
             }
             float battery = Battery != null ? Battery() : -1f;
             batteryText.text = battery >= 0f ? "NVG " + Mathf.RoundToInt(battery * 100f) + "%" : "";
-            decoyText.text = Decoys != null ? "유인탄 " + Decoys() : "";
+            decoyText.text = Decoys != null ? "연막탄 " + Decoys() : "";
             MoveMode mode = Mode();
             string pose = !Moving() ? (mode == MoveMode.Crouch ? "stance_crouch" : "stance_idle") : mode == MoveMode.Run ? "stance_run" : mode == MoveMode.Crouch ? "stance_crouch" : "stance_walk";
             stance.sprite = catalog.GetSprite(pose);

@@ -20,7 +20,7 @@ namespace GameAi
             "SND_SCREAM|sound|비명소리|10|50|0|15|qwen||4|긴장||0|0",
             "SND_WIND|sound|바람소리|0|0|0|4|chatter||1|안도||0|0",
             "SND_CAN|sound|깡통 차는 소리|8|30|0|15|qwen||3|놀람||0|0",
-            "SND_DECOY|sound|유인탄 금속음|10|30|0|15|qwen||3|의심||0|0",
+            "SND_DECOY|sound|연막탄 터지는 소리|10|30|0|15|qwen||3|의심||0|0",
             "CLU_CORPSE|clue|죽은 동료 발견|0|60|0|-1|qwen||5|놀람|동료 이름|0.15|1",
             "CLU_DOOR_OPEN|clue|문이 열려 있음|8|30|0|30|qwen||2|의심|평소 문 상태|0.15|1",
             "CLU_DOOR_CLOSED|clue|열려 있어야 할 문이 닫힘|8|30|0|30|qwen||2|의심|평소 문 상태|0.15|1",

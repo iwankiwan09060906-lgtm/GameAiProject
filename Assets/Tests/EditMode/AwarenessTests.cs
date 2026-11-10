@@ -11,34 +11,34 @@ namespace GameAi.Tests
         readonly SuspicionConfig suspicion = new SuspicionConfig();
 
         [Test]
-        public void 게이지는_보이면_초당_40_오르고_100에서_멈춘다()
+        public void 게이지는_보이면_초당_80_오르고_100에서_멈춘다()
         {
             var g = new AwarenessGauge();
-            g.Tick(1f, true, 1f, gauge);
+            g.Tick(0.5f, true, 1f, gauge);
             Assert.AreEqual(40f, g.Value, 1e-4f);
             g.Tick(5f, true, 1f, gauge);
             Assert.AreEqual(100f, g.Value);
         }
 
         [Test]
-        public void 놓치면_1초_유지_후_초당_15_내린다()
+        public void 놓치면_3초_유지_후_초당_10_내린다()
         {
             var g = new AwarenessGauge();
             g.Set(60f);
-            g.Tick(0.9f, false, 1f, gauge);
+            g.Tick(2.9f, false, 1f, gauge);
             Assert.AreEqual(60f, g.Value);
             g.Tick(0.2f, false, 1f, gauge);
-            Assert.AreEqual(57f, g.Value, 1e-3f);
+            Assert.AreEqual(58f, g.Value, 1e-3f);
         }
 
         [Test]
         public void 배율_근접_달리기_웅크리기_밝기()
         {
-            Assert.AreEqual(2f, AwarenessGauge.RiseMultiplier(2f, MoveMode.Walk, 0f, gauge, light), 1e-4f, "3m 이내는 ×2, 밝기 무시");
-            Assert.AreEqual(1.5f, AwarenessGauge.RiseMultiplier(5f, MoveMode.Run, 1f, gauge, light), 1e-4f);
-            Assert.AreEqual(0.5f, AwarenessGauge.RiseMultiplier(5f, MoveMode.Crouch, 1f, gauge, light), 1e-4f);
-            Assert.AreEqual(0.3f, AwarenessGauge.RiseMultiplier(5f, MoveMode.Walk, 0f, gauge, light), 1e-4f, "어두우면 ×0.3");
-            Assert.AreEqual(0.65f, AwarenessGauge.RiseMultiplier(5f, MoveMode.Walk, 0.5f, gauge, light), 1e-4f);
+            Assert.AreEqual(2f, AwarenessGauge.RiseMultiplier(4f, MoveMode.Walk, 0f, gauge, light), 1e-4f, "5m 이내는 ×2, 밝기 무시");
+            Assert.AreEqual(1.5f, AwarenessGauge.RiseMultiplier(6f, MoveMode.Run, 1f, gauge, light), 1e-4f);
+            Assert.AreEqual(0.5f, AwarenessGauge.RiseMultiplier(6f, MoveMode.Crouch, 1f, gauge, light), 1e-4f);
+            Assert.AreEqual(0.5f, AwarenessGauge.RiseMultiplier(6f, MoveMode.Walk, 0f, gauge, light), 1e-4f, "어두우면 ×0.5");
+            Assert.AreEqual(0.75f, AwarenessGauge.RiseMultiplier(6f, MoveMode.Walk, 0.5f, gauge, light), 1e-4f);
         }
 
         [Test]

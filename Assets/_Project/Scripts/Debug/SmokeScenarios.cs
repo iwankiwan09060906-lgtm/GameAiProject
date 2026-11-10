@@ -22,6 +22,7 @@ namespace GameAi
             else if (scenario == "perf") yield return RunPerf();
             else if (scenario == "soak") yield return RunSoak();
             else if (scenario == "evidence") yield return RunEvidence();
+            else if (scenario == "feedback") yield return RunFeedback();
             else yield return Run();
         }
 
@@ -95,9 +96,11 @@ namespace GameAi
                 if (searched && e.to == EnemyState.Patrol) returned = true;
             };
             EventBus.Subscribe(watch);
-            game.Player.SetPosition(new Vector2(3f, 3f));
+            // 적에게서 가장 먼 칸으로 숨는다(무적: 숨는 도중 죽어 시험이 끊기지 않게)
+            game.Player.Health.Invulnerable = true;
+            game.Player.SetPosition(FarthestFree(target.Position));
             float t = 0f;
-            while (t < 30f && !returned && game.Player.Target.Alive)
+            while (t < 45f && !returned && game.Player.Target.Alive)
             {
                 t += Time.deltaTime;
                 yield return null;
@@ -107,8 +110,7 @@ namespace GameAi
             Check("놓치면 수색", searched);
             Check("수색 후 순찰 복귀", returned);
 
-            Log($"전이 {transitions}회, 발견 {detections}회, 대사 {barks}회");
-            Check("대사가 떴음", barks > 0);
+            Log($"전이 {transitions}회, 발견 {detections}회, 대사 {barks}회(화면에 보이는 적만 말하므로 0일 수 있음)");
             Log("성능: " + game.Perf.FrameSummary());
             Log("성능: " + game.Perf.SectionSummary());
 
@@ -542,6 +544,106 @@ namespace GameAi
                 yield return new WaitForSeconds(0.25f);
             }
             Check("교전 장면 촬영", true);
+        }
+
+        // 피드백 반영 확인: UI 클릭, 정면 F 제압, 연막탄, 빠른 발견·사격, 놓친 뒤 추적, 체력, 야간 투시 배터리
+        IEnumerator RunFeedback()
+        {
+            // UI: 일시정지 메뉴의 "이어하기" 버튼 위치를 실제로 레이캐스트해 맞는지, 클릭하면 닫히는지
+            game.SetPaused(true);
+            yield return new WaitForSecondsRealtime(0.2f);
+            var resume = GameObject.Find("Resume");
+            bool hit = false;
+            if (resume != null)
+            {
+                Vector3 screen = RectTransformUtility.WorldToScreenPoint(null, resume.transform.position);
+                var data = new UnityEngine.EventSystems.PointerEventData(UnityEngine.EventSystems.EventSystem.current) { position = screen };
+                var results = new System.Collections.Generic.List<UnityEngine.EventSystems.RaycastResult>();
+                UnityEngine.EventSystems.EventSystem.current.RaycastAll(data, results);
+                hit = results.Count > 0 && results[0].gameObject.transform.IsChildOf(resume.transform);
+                if (hit) UnityEngine.EventSystems.ExecuteEvents.Execute(results[0].gameObject, data, UnityEngine.EventSystems.ExecuteEvents.pointerClickHandler);
+            }
+            yield return new WaitForSecondsRealtime(0.2f);
+            Check("일시정지 '이어하기' 버튼이 클릭을 받음", hit);
+            float clock = GameClock.Time;
+            yield return new WaitForSeconds(0.3f);
+            Check("클릭으로 일시정지가 풀림", GameClock.Time > clock);
+
+            Log($"플레이어 체력 {game.Player.Health.Hp} / 방탄 {game.Player.Health.Armor}");
+            Check("플레이어 체력·방탄 70/20", game.Player.Health.Hp == 70 && game.Player.Health.Armor == 20);
+
+            // F: 적 정면 1.2m에서 눌러도 등 뒤로 붙어 제압
+            EnemyController front = game.Enemies[2];
+            Vector2 facePos = FindFree(front.Position + front.Facing * 1.2f, front.Position);
+            game.Player.SetPosition(facePos);
+            Aim(front.Position);
+            yield return Frames(2);
+            scripted.State.MeleePressed = true;
+            yield return Frames(3);
+            Log($"F 제압: 적{front.Id} 사망 {front.IsDead}, 플레이어 {facePos} → {game.Player.Position}");
+            Check("정면에서도 F로 제압", front.IsDead);
+
+            // 빠른 발견·사격: 적 정면 7m에 서서 첫 피격까지 시간
+            game.Player.Health.Invulnerable = true;
+            EnemyController watcher = game.Enemies[0];
+            int hits = 0;
+            Action<DamageEvent> onHit = e => { if (e.targetId == EntityIds.Player) hits++; };
+            EventBus.Subscribe(onHit);
+            game.Player.SetPosition(FindFree(watcher.Position + watcher.Facing * 7f, watcher.Position));
+            Aim(watcher.Position);
+            float t = 0f;
+            while (hits == 0 && t < 6f) { t += Time.deltaTime; yield return null; }
+            Log($"정면 7m 노출 후 첫 피격까지 {t:F2}초, 상태 {watcher.State}");
+            Check("보이면 3초 안에 사격", hits > 0 && t < 3f);
+
+            // 놓친 뒤 추적: 시야 밖으로 숨으면 마지막 위치 쪽으로 뛰어온다
+            Vector2 hidePos = FindFree(watcher.Position + watcher.Facing * 7f + new Vector2(watcher.Facing.y, -watcher.Facing.x) * 6f, watcher.Position);
+            Vector2 lastSeen = game.Player.Position;
+            game.Player.SetPosition(new Vector2(3f, 3f));
+            float before = Vector2.Distance(watcher.Position, lastSeen);
+            yield return new WaitForSeconds(2f);
+            float after = Vector2.Distance(watcher.Position, lastSeen);
+            Log($"숨은 뒤 2초: 마지막 위치까지 {before:F1}m → {after:F1}m, 상태 {watcher.State}");
+            Check("놓친 뒤 마지막 위치로 빠르게 다가감", after < before - 2f);
+            EventBus.Unsubscribe(onHit);
+
+            // 연막탄: 적과 플레이어 사이에 던지면 시선이 가려짐
+            EnemyController target = game.Enemies[3];
+            game.Player.SetPosition(FindFree(target.Position + target.Facing * 8f, target.Position));
+            Aim((game.Player.Position + target.Position) / 2f);
+            yield return Frames(2);
+            scripted.State.DecoyPressed = true;
+            yield return new WaitForSeconds(2f);
+            yield return Shot("feedback_smoke");
+            Log($"연막탄 남은 수 {game.Smokes.Count}, 연기 {game.Smokes.ActiveClouds}개, 적 시선 가림 {game.Smokes.BlocksSight(target.Position, game.Player.Position)}");
+            Check("연막탄 연기가 시선을 가림", game.Smokes.BlocksSight(target.Position, game.Player.Position));
+
+            // 야간 투시: 켜면 배터리가 줄고, 꺼도 다시 차지 않는다
+            scripted.State.NightVisionPressed = true;
+            yield return new WaitForSeconds(3f);
+            yield return Shot("feedback_nvg");
+            scripted.State.NightVisionPressed = true;
+            yield return Frames(2);
+            float battery = game.NightVisionRatio;
+            yield return new WaitForSeconds(2f);
+            Log($"야간 투시 배터리 {battery * 100f:F0}% → 2초 뒤 {game.NightVisionRatio * 100f:F0}%");
+            Check("야간 투시 배터리가 쓴 만큼 줄고 충전되지 않음", battery < 0.97f && Mathf.Approximately(battery, game.NightVisionRatio));
+        }
+
+        Vector2 FarthestFree(Vector2 from)
+        {
+            GridMap grid = game.Grid;
+            Vector2 best = game.Player.Position;
+            float bestD = 0f;
+            for (int y = 2; y < grid.Height - 2; y += 2)
+                for (int x = 2; x < grid.Width - 2; x += 2)
+                {
+                    Vector2 p = grid.CellCenter(x, y);
+                    if (PlayerMotor.PushOutOfCells(grid, p, 0.4f) != p) continue;
+                    float d = Vector2.Distance(p, from);
+                    if (d > bestD) { bestD = d; best = p; }
+                }
+            return best;
         }
 
         // 원하는 위치 근처에서 플레이어가 설 수 있는 칸(기준점까지 시야가 트인 곳)

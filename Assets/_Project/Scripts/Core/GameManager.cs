@@ -75,7 +75,7 @@ namespace GameAi // 게임의 AI 및 핵심 로직들을 묶어둔 네임스페�
         MapLighting mapLighting;
         readonly List<LightSwitch> switches = new List<LightSwitch>();
         bool nightVisionOn;
-        DecoySystem decoys;
+        SmokeGrenadeSystem smokes;
         NightVision nightVision;
         DebugOverlay debugOverlay;
         StateTransitionLogger transitionLog;
@@ -488,10 +488,18 @@ namespace GameAi // 게임의 AI 및 핵심 로직들을 묶어둔 네임스페�
             debugOverlay = new DebugOverlay(transform, ui, catalog, map.Grid);
             transitionLog = gameObject.AddComponent<StateTransitionLogger>();
             transitionLog.FilePath = System.IO.Path.Combine(Application.persistentDataPath, "state_log.txt");
-            decoys = new DecoySystem(map.Grid, weaponConfig.player.decoys, SpawnMarker(transform, "obj_decoy", Player.Position, SortOrder.Fx));
+            smokes = new SmokeGrenadeSystem(map.Grid, weaponConfig.player.decoys, catalog.GetSprite("obj_decoy"), catalog.GetSprite("cloud"), () =>
+            {
+                var r = new GameObject("Smoke", typeof(SpriteRenderer)).GetComponent<SpriteRenderer>();
+                r.transform.SetParent(transform, false);
+                r.sharedMaterial = catalog.SpriteUnlit;
+                r.sortingOrder = SortOrder.Fx + 5;
+                return r;
+            });
+            director.SetSightBlocker(smokes.BlocksSight);
             nightVision = new NightVision(ui, config.lighting, mapLighting.GlobalLight, mapLighting.Lamps, weaponConfig.player.nvg_battery_s, weaponConfig.player.nvg_recharge_per_s);
-            hud.Decoys = () => decoys.Count;
-            hud.Battery = () => nightVision.On ? nightVision.Ratio : -1f;
+            hud.Decoys = () => smokes.Count;
+            hud.Battery = () => nightVision.Ratio;
             director.SetLightSource(LightAt);
             director.LightInfo = id => (lightGrid.Get(id).Position, lightGrid.Get(id).Radius);
             hud.LightLevel = () => director.PlayerLight(Player.Position, GameClock.Time);
@@ -677,6 +685,8 @@ namespace GameAi // 게임의 AI 및 핵심 로직들을 묶어둔 네임스페�
 
         public LightGrid Light { get { return lightGrid; } }
         public IReadOnlyList<LightSwitch> Switches { get { return switches; } }
+        public SmokeGrenadeSystem Smokes { get { return smokes; } }
+        public float NightVisionRatio { get { return nightVision.Ratio; } }
 
         void OnNoiseDebug(NoiseEvent e) { debugOverlay?.OnNoise(e); }
 
@@ -749,7 +759,7 @@ namespace GameAi // 게임의 AI 및 핵심 로직들을 묶어둔 네임스페�
         {
             bool playerAlive = Player.Target.Alive && !mission.InputBlocked;
             GameClock.Advance(dt);
-            decoys.Tick(dt);
+            smokes.Tick(dt);
 
             // 1. 입력 읽기
             input = inputSource.Read(worldCamera); // 키보드/마우스 상태를 읽어와 구조체에 갱신합니다 (입력을 가장 먼저 처리해야 즉각 반응).
@@ -762,7 +772,7 @@ namespace GameAi // 게임의 AI 및 핵심 로직들을 묶어둔 네임스페�
                 Player.TickMove(dt, input); // 키 입력에 따라 플레이어의 위치를 움직입니다.
                 playerNoise.Tick(dt, Player.IsMoving, Player.Mode, Player.Position);
                 cans.Tick(Player.Position, Player.Mode, GameClock.Time);
-                if (input.DecoyPressed) decoys.Throw(Player.Position, input.AimWorld);
+                if (input.DecoyPressed) smokes.Throw(Player.Position, input.AimWorld);
                 if (nightVision.Tick(dt, input.NightVisionPressed)) audioManager.Play(nightVision.On ? "sfx_nvg_on" : "sfx_nvg_off");
                 nightVisionOn = nightVision.On;
                 interaction.Tick(Player.Position, input.InteractPressed, EntityIds.Player); // 플레이어 위치 주변의 문이나 아이템과 상호작용 버튼(Space) 처리를 합니다.
@@ -776,7 +786,15 @@ namespace GameAi // 게임의 AI 및 핵심 로직들을 묶어둔 네임스페�
             // 6. 공격·피해. 근접을 먼저 처리해 같은 프레임의 사격보다 우선한다
             if (playerAlive) // 공격 처리
             {
-                melee.Tick(input.MeleePressed, Player.Position, Player.View); // 근접 공격(테이크다운)을 먼저 처리합니다 (근접과 총격이 동시에 일어나면 근접이 이깁니다).
+                EnemyController takedown = melee.Tick(input.MeleePressed, Player.Position, Player.View);
+                if (takedown != null)
+                {
+                    // 대상의 등 뒤로 붙어 제압한다(벽이면 제자리)
+                    Vector2 behind = takedown.Position - takedown.Facing * (takedown.Target.Radius + config.player.radius_m + 0.05f);
+                    Vector2 safe = PlayerMotor.PushOutOfCells(map.Grid, behind, config.player.radius_m);
+                    if (LineOfSight.IsClear(map.Grid, takedown.Position, safe, RayMask.Bullet)) Player.SetPosition(safe);
+                    Player.View.SetAim(MathUtil.AngleDeg(takedown.Position - Player.Position));
+                }
                 weapons.Tick(dt, input, Player.Position, Player.AimDir); // 그 다음 총기 발사(사격 레이캐스트 판정, 탄약 소모 등)를 처리합니다.
             }
 

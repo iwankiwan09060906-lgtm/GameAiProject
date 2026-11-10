@@ -1,8 +1,8 @@
 {
   "version": 2,
   "types": [
-    { "id": "guard",    "hp": 50, "fov_deg": 90, "view_m": 10, "weapon": { "damage": 12, "interval_s": 0.5,  "range_m": 12, "mag": 12, "reload_s": 1.5 }, "alert": "shout", "sprite": "guard",    "debug_color": "#E04545" },
-    { "id": "rifleman", "hp": 60, "fov_deg": 70, "view_m": 14, "weapon": { "damage": 8,  "interval_s": 0.25, "range_m": 20, "mag": 30, "reload_s": 2.5 }, "alert": "radio", "sprite": "rifleman", "debug_color": "#A82020" }
+    { "id": "guard",    "hp": 50, "fov_deg": 110, "view_m": 14, "weapon": { "damage": 12, "interval_s": 0.5,  "range_m": 12, "mag": 12, "reload_s": 1.5 }, "alert": "shout", "sprite": "guard",    "debug_color": "#E04545" },
+    { "id": "rifleman", "hp": 60, "fov_deg": 90, "view_m": 18, "weapon": { "damage": 8,  "interval_s": 0.25, "range_m": 20, "mag": 30, "reload_s": 2.5 }, "alert": "radio", "sprite": "rifleman", "debug_color": "#A82020" }
   ],
   "move": { "patrol_speed": 2.0, "chase_speed": 3.5 }
 }

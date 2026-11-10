@@ -4,45 +4,50 @@ using UnityEngine;
 
 namespace GameAi.Tests
 {
-    // 유인탄(7.4)·야간 투시 배터리(7.20)
+    // 연막탄(7.4)·야간 투시 배터리(7.20)
     public class GadgetTests
     {
         [Test]
-        public void 유인탄은_2개이고_3초간_0점5초마다_금속음()
+        public void 연막탄은_터질_때_소리_한번_10초간_시선을_가리고_사라진다()
         {
             WorldEvents.Reset(new EventTypeTable(new EventTypeConfig()));
-            var grid = new GridMap(30, 5);
-            var decoy = new DecoySystem(grid, 2, null);
-            var events = new List<WorldEvent>();
-            System.Action<WorldEvent> h = e => { if (e.code == "SND_DECOY") events.Add(e); };
+            var grid = new GridMap(30, 9);
+            var smoke = new SmokeGrenadeSystem(grid, 2, null, null, null);
+            int sounds = 0;
+            System.Action<WorldEvent> h = e => { if (e.code == "SND_DECOY") sounds++; };
             EventBus.Subscribe(h);
+            Vector2 enemy = new Vector2(10.5f, 8f), player = new Vector2(10.5f, 1f);
             try
             {
-                Assert.IsTrue(decoy.Throw(new Vector2(1.5f, 2.5f), new Vector2(6.5f, 2.5f)));
-                Assert.IsFalse(decoy.Throw(new Vector2(1.5f, 2.5f), new Vector2(6.5f, 2.5f)), "비행·소음 중에는 못 던짐");
-                for (int i = 0; i < 100; i++) decoy.Tick(0.05f);
+                Assert.IsTrue(smoke.Throw(new Vector2(2.5f, 4.5f), new Vector2(10.5f, 4.5f)));
+                Assert.IsFalse(smoke.BlocksSight(enemy, player), "날아가는 중에는 안 가림");
+                for (int i = 0; i < 40; i++) smoke.Tick(0.05f);
+                Assert.IsTrue(smoke.BlocksSight(enemy, player), "퍼진 연기가 시선을 가림");
+                Assert.IsFalse(smoke.BlocksSight(new Vector2(20.5f, 8f), new Vector2(20.5f, 1f)), "연기 밖 시선");
+                for (int i = 0; i < 220; i++) smoke.Tick(0.05f);
             }
             finally
             {
                 EventBus.Unsubscribe(h);
             }
-            Assert.AreEqual(6, events.Count);
-            Assert.AreEqual(10f, events[0].radius, 1e-4f);
-            Assert.AreEqual(1, decoy.Count);
-            Assert.IsFalse(decoy.Active);
+            Assert.AreEqual(1, sounds);
+            Assert.AreEqual(1, smoke.Count);
+            Assert.AreEqual(0, smoke.ActiveClouds);
+            Assert.IsFalse(smoke.BlocksSight(enemy, player));
         }
 
         [Test]
-        public void 유인탄은_최대_10m_벽_앞까지()
+        public void 연막탄은_최대_10m_벽_앞까지()
         {
             var grid = new GridMap(30, 5);
-            var decoy = new DecoySystem(grid, 2, null);
-            decoy.Throw(new Vector2(0.5f, 2.5f), new Vector2(25.5f, 2.5f));
-            Assert.AreEqual(10.5f, decoy.LandingPoint.x, 1e-3f);
+            var smoke = new SmokeGrenadeSystem(grid, 2, null, null, null);
+            smoke.Throw(new Vector2(0.5f, 2.5f), new Vector2(25.5f, 2.5f));
+            Assert.AreEqual(10.5f, smoke.LastLanding.x, 1e-3f);
             grid.SetTile(5, 2, TileType.Wall);
-            var blocked = new DecoySystem(grid, 2, null);
-            blocked.Throw(new Vector2(0.5f, 2.5f), new Vector2(9.5f, 2.5f));
-            Assert.Less(blocked.LandingPoint.x, 5f);
+            smoke.Throw(new Vector2(0.5f, 2.5f), new Vector2(9.5f, 2.5f));
+            Assert.Less(smoke.LastLanding.x, 5f);
+            Assert.AreEqual(0, smoke.Count);
+            Assert.IsFalse(smoke.Throw(new Vector2(0.5f, 2.5f), new Vector2(5f, 2.5f)), "다 쓰면 못 던짐");
         }
 
         [Test]

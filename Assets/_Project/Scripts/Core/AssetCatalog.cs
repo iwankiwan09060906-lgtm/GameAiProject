@@ -157,7 +157,7 @@ namespace GameAi
         {
             "tile_floor_wood", "tile_floor_tile", "tile_floor_carpet", "tile_floor_outdoor", "tile_wall", "tile_window",
             "door_closed", "door_open", "lamp", "muzzle_flash", "casing",
-            "obj_target", "obj_bomb", "obj_exit", "obj_decoy", "obj_can", "obj_switch",
+            "obj_target", "obj_bomb", "obj_exit", "obj_decoy", "obj_can", "obj_switch", "cloud",
             "crosshair", "icon_suspect", "icon_detect", "icon_armor", "icon_light", "icon_noise",
             "panel_dark", "panel_gold", "panel_dialogue",
         };

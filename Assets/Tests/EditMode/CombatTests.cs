@@ -189,42 +189,24 @@ namespace GameAi.Tests
 
         static readonly MeleeConfig Melee = new MeleeConfig { range_m = 1.5f, back_arc_deg = 120f };
 
-        static bool Takedown(Vector2 player, Vector2 facing, EnemyState state = EnemyState.Patrol, float gauge = 0f)
+        static bool Takedown(Vector2 player)
         {
-            return MeleeRules.CanTakedown(new GridMap(10, 10), player, new Vector2(5.5f, 5.5f), facing, state, gauge, 100f, Melee);
+            return MeleeRules.CanTakedown(new GridMap(10, 10), player, new Vector2(5.5f, 5.5f), Melee);
         }
 
         [Test]
-        public void 뒤에서는_제압되고_앞에서는_안_된다()
+        public void 근접_거리_안이면_방향과_관계없이_제압된다()
         {
-            Assert.IsTrue(Takedown(new Vector2(4.5f, 5.5f), Vector2.right));
-            Assert.IsFalse(Takedown(new Vector2(6.5f, 5.5f), Vector2.right));
+            Assert.IsTrue(Takedown(new Vector2(4.5f, 5.5f)), "뒤");
+            Assert.IsTrue(Takedown(new Vector2(6.5f, 5.5f)), "앞");
+            Assert.IsTrue(Takedown(new Vector2(5.5f, 6.9f)), "옆");
         }
 
         [Test]
-        public void 뒤쪽_부채꼴은_120도다()
+        public void 근접_거리_밖이면_안_된다()
         {
-            Vector2 enemy = new Vector2(5.5f, 5.5f);
-            Assert.IsTrue(Takedown(enemy + MathUtil.FromAngleDeg(180f - 59f), Vector2.right));
-            Assert.IsFalse(Takedown(enemy + MathUtil.FromAngleDeg(180f - 61f), Vector2.right));
-        }
-
-        [Test]
-        public void 거리가_멀면_안_된다()
-        {
-            Assert.IsTrue(Takedown(new Vector2(4.1f, 5.5f), Vector2.right));
-            Assert.IsFalse(Takedown(new Vector2(3.9f, 5.5f), Vector2.right));
-        }
-
-        [TestCase(EnemyState.Patrol, 0f, true)]
-        [TestCase(EnemyState.Investigate, 50f, true)]
-        [TestCase(EnemyState.Investigate, 100f, false)]
-        [TestCase(EnemyState.Chase, 0f, false)]
-        [TestCase(EnemyState.Engage, 0f, false)]
-        [TestCase(EnemyState.Search, 0f, false)]
-        public void 발각되지_않은_적만_제압된다(EnemyState state, float gauge, bool expected)
-        {
-            Assert.AreEqual(expected, Takedown(new Vector2(4.5f, 5.5f), Vector2.right, state, gauge));
+            Assert.IsTrue(Takedown(new Vector2(4.1f, 5.5f)));
+            Assert.IsFalse(Takedown(new Vector2(3.9f, 5.5f)));
         }
 
         [Test]
@@ -232,8 +214,7 @@ namespace GameAi.Tests
         {
             var grid = new GridMap(10, 10);
             grid.SetTile(5, 5, TileType.Wall);
-            Assert.IsFalse(MeleeRules.CanTakedown(grid, new Vector2(4.5f, 5.5f), new Vector2(6.1f, 5.5f), Vector2.right,
-                EnemyState.Patrol, 0f, 100f, new MeleeConfig { range_m = 2f, back_arc_deg = 120f }));
+            Assert.IsFalse(MeleeRules.CanTakedown(grid, new Vector2(4.5f, 5.5f), new Vector2(6.1f, 5.5f), new MeleeConfig { range_m = 2f, back_arc_deg = 120f }));
         }
 
         [Test]

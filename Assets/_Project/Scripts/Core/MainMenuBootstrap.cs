@@ -29,6 +29,9 @@ namespace GameAi
             FontPrewarm.Run(catalog.Font);
             if (string.IsNullOrEmpty(SceneFlow.SelectedDifficulty)) SceneFlow.SelectedDifficulty = config.default_difficulty;
             GameSession.ApplyScreenOnce();
+            // 게임 씬에서 숨긴 커서를 메뉴에서는 다시 보인다
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
             BuildBackground();
             ui = new UiRoot(config, transform);
             Widgets.EnsureEventSystem(transform);

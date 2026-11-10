@@ -30,10 +30,10 @@ namespace GameAi
     {
         public float suspect = 30f;
         public float detect = 100f;
-        public float rise_per_s = 40f;
-        public float hold_after_lost_s = 1f;
-        public float fall_per_s = 15f;
-        public float near_dist_m = 3f;
+        public float rise_per_s = 80f;
+        public float hold_after_lost_s = 3f;
+        public float fall_per_s = 10f;
+        public float near_dist_m = 5f;
         public float near_mult = 2f;
         public float run_mult = 1.5f;
         public float crouch_mult = 0.5f;
@@ -43,7 +43,7 @@ namespace GameAi
     [Serializable]
     public class AiLightConfig
     {
-        public float gauge_min_mult = 0.3f;
+        public float gauge_min_mult = 0.5f;
         public float view_min_mult = 0.5f;
         public float shot_flash_s = 0.3f;
         public float dark_threshold = 0.15f;
@@ -123,8 +123,8 @@ namespace GameAi
     [Serializable]
     public class CombatConfig
     {
-        public float reaction_delay_s = 0.5f;
-        public float first_shot_s = 0.8f;
+        public float reaction_delay_s = 0.3f;
+        public float first_shot_s = 0.5f;
         public float accuracy = 0.6f;
         public float aim_error_deg = 5f;
         public float run_aim_mult = 1.5f;

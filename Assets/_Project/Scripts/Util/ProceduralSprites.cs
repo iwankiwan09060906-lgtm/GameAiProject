@@ -262,6 +262,12 @@ namespace GameAi
                     c = new Canvas(32, 32);
                     c.Frame(2, Hex(0x37, 0xC8, 0x71));
                     return c;
+                case "cloud":
+                    c = new Canvas(64, 40);
+                    c.Circle(20f, 20f, 15f, new Color32(0xD0, 0xD4, 0xD8, 0xC0));
+                    c.Circle(38f, 22f, 17f, new Color32(0xD0, 0xD4, 0xD8, 0xC0));
+                    c.Circle(50f, 18f, 11f, new Color32(0xD0, 0xD4, 0xD8, 0xC0));
+                    return c;
                 case "obj_can":
                     c = new Canvas(8, 8);
                     c.Rect(2, 1, 4, 6, Hex(0x9A, 0x9A, 0xA0));

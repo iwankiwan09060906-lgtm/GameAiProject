@@ -42,7 +42,7 @@
 ## 2. 범위
 
 ### 2.1 포함 (구현 대상)
-플레이어 이동·조준·사격, 방탄, 무기 3종, 재장전, 유인탄, 근접 제압, 야간 투시, 시야 차폐와 탐색 기억, 2D 조명과 칸별 밝기, 문, 엄폐물, 창문, 전투 흔적(총구 화염·탄피·혈흔·시체), 적 AI(시각·청각·밝기·인지 게이지·의심도·FSM·교전·순찰·수색·A*·동료 경보·문 기대 상태·난이도·통로 충돌), 월드 이벤트 22종(소리 8·단서 8·시야 6, 시체·동료 사망 반응 포함), 깡통 소품, 바람 마스킹, 조명 스위치, 적 대사와 Qwen 상황 대사, 미션(소탕·자료 탈취·자료 탈취 후 탈출·폭탄 해체), 브리핑 대화, 승패·발각·기록, HUD, 조준선, 상호작용 안내, 메뉴, 설정, 일시정지, 결과 화면, 크레딧 화면, 야외 환경음, 저장·복구, 디버그 오버레이, 고정 시드 재현 모드.
+플레이어 이동·조준·사격, 방탄, 무기 3종, 재장전, 연막탄, 근접 제압, 야간 투시, 시야 차폐와 탐색 기억, 2D 조명과 칸별 밝기, 문, 엄폐물, 창문, 전투 흔적(총구 화염·탄피·혈흔·시체), 적 AI(시각·청각·밝기·인지 게이지·의심도·FSM·교전·순찰·수색·A*·동료 경보·문 기대 상태·난이도·통로 충돌), 월드 이벤트 22종(소리 8·단서 8·시야 6, 시체·동료 사망 반응 포함), 깡통 소품, 바람 마스킹, 조명 스위치, 적 대사와 Qwen 상황 대사, 미션(소탕·자료 탈취·자료 탈취 후 탈출·폭탄 해체), 브리핑 대화, 승패·발각·기록, HUD, 조준선, 상호작용 안내, 메뉴, 설정, 일시정지, 결과 화면, 크레딧 화면, 야외 환경음, 저장·복구, 디버그 오버레이, 고정 시드 재현 모드.
 
 ### 2.2 제외 (만들지 않는다)
 인질 구출, 섬광탄, 잠금 문·열쇠·문 파괴, 적의 측면 이동, 문 경로 우회 소리 전파, 총알 관통, 적끼리 피해, 피격 경직·밀림·무적 시간, 마우스 감도·키 변경 설정, 창 크기 자유 변경, 온라인 네트워크·게임 서버·계정·클라우드(대사 생성용 로컬 `llama-server`는 7.22), AI 판단용 학습형 AI, 100×100 대형 맵, **대화 분기, 방탄 획득·회복, 음성 대사, Qwen이 AI 상태를 바꾸는 것**.
@@ -98,7 +98,7 @@ repo-root/
       │  ├─ Core/                 # GameManager, SceneFlow, EventBus, Events, Rng, Config 로더, AssetCatalog
       │  ├─ Grid/                 # GridMap, TileType, Raycast(DDA), LineOfSight, SoundPropagation, LightGrid
       │  ├─ Player/               # PlayerController, PlayerMotor, PlayerNoise, CameraFollow, NightVision
-      │  ├─ Weapons/              # WeaponData, WeaponController, Hitscan, Decoy(유인탄), MeleeTakedown
+      │  ├─ Weapons/              # WeaponData, WeaponController, Hitscan, Decoy(연막탄), MeleeTakedown
       │  ├─ Combat/               # Health(체력·방탄), DamageRequest, CoverObject, CombatFx(화염·탄피·혈흔·시체)
       │  ├─ Vision/               # PlayerVision, FogOfWar(탐색 기억), VisionRenderer, MapLighting(Light2D 배치)
       │  ├─ Map/                  # MapData, MapLoader, Door, Interactable, MapRegistry
@@ -140,7 +140,7 @@ repo-root/
 
 | 이벤트 | 필드 | 보내는 쪽 → 받는 쪽 |
 | --- | --- | --- |
-| `NoiseEvent` | position, kind(Footstep/Gunshot/Decoy/Door/Reload/Scream/Can), radius, sourceId, time | 플레이어·무기·유인탄·문·깡통·Health → HearingSensor, HUD 소음 미터 |
+| `NoiseEvent` | position, kind(Footstep/Gunshot/Decoy/Door/Reload/Scream/Can), radius, sourceId, time | 플레이어·무기·연막탄·문·깡통·Health → HearingSensor, HUD 소음 미터 |
 | `WorldEvent` | eventId, code, position, time, intensity, sourceId, objectId | 소음·전투 흔적·문·조명·Health·RadioCheck → ClueSensor, WorldEventLog |
 | `DamageEvent` | targetId, amount, attackerId, hitPoint, kind(Bullet/Melee), time | Hitscan·MeleeTakedown → Health, CombatFx |
 | `HealthChangedEvent` | entityId, hp, armor | Health → HUD |
@@ -211,7 +211,7 @@ repo-root/
 - **완료 조건**: 허수아비 적을 사격·제압할 수 있고, 벽·문·창문·엄폐물 뒤는 맞지 않으며, 혈흔·탄피·시체가 남는다.
 
 ### Phase 4 — 소리 시스템
-- `NoiseEmitter`(발소리·사격·유인탄·문·장전·비명·깡통), `SoundPropagation`: 7.6 공식.
+- `NoiseEmitter`(발소리·사격·연막탄·문·장전·비명·깡통), `SoundPropagation`: 7.6 공식.
 - `EventTypeTable`(`events.json`, 9.11)과 `WorldEvent` 발생·기록(`WorldEventLog`). 맵 문자 `k` 깡통.
 - F3에서 소리 반경 원 표시.
 - **완료 조건**: `SoundTests`·`EventTests` 통과.
@@ -252,7 +252,7 @@ repo-root/
 3. 동료 경보·전역 경계도(7.8)
 4. 난이도 3단계(7.12)
 5. 통로 충돌 처리
-6. 유인탄
+6. 연막탄
 7. 야간 투시(7.20)
 8. 폭탄 해체 미션(`missions.json` 설정, 기본값은 자료 탈취 후 탈출 유지)
 9. 시체·동료 사망 반응(`CLU_CORPSE`, `SIG_ALLY_DOWN`)과 떨어진 무기
@@ -289,7 +289,7 @@ C 기능은 S가 모두 끝난 뒤 이 순서로 한다: 조명 스위치·불 �
 | 웅크리기 | Left Ctrl (누르고 있는 동안) |
 | 상호작용(문·자료·폭탄·조명 스위치) | **Space** (폭탄은 누르고 있기) |
 | 근접 제압 | F |
-| 유인탄 투척 | G (커서 위치로) |
+| 연막탄 투척 | G (커서 위치로) |
 | 야간 투시 | N |
 | 대화 넘기기 / 선택지 | Space·좌클릭 / 1~3 |
 | 일시정지 | Esc |
@@ -301,8 +301,8 @@ C 기능은 S가 모두 끝난 뒤 이 순서로 한다: 조명 스위치·불 �
 
 | 항목 | 값 |
 | --- | --- |
-| 최대 체력 | 100 |
-| 방탄 | 50으로 시작(최대 50). 피해를 먼저 1:1로 받고, 0이 되면 체력이 줄어든다. 회복·획득 없음 |
+| 최대 체력 | 70 |
+| 방탄 | 20으로 시작(최대 20). 피해를 먼저 1:1로 받고, 0이 되면 체력이 줄어든다. 회복·획득 없음 |
 | 걷기 속도 | 3.5 m/s |
 | 달리기 | 걷기 ×1.5 (5.25 m/s) |
 | 웅크리기 | 걷기 ×0.5 (1.75 m/s) |
@@ -311,7 +311,7 @@ C 기능은 S가 모두 끝난 뒤 이 순서로 한다: 조명 스위치·불 �
 | 시야 | 90°, 12m, 마우스 방향 기준 |
 | 피격 반응 | 적색 깜빡임 0.1초 + 피격음(방탄이 받으면 `sfx_hit_armor`). 경직·밀림·둔화·무적 없음 |
 | 사망 | 체력 0 이하 → `DeathEvent` 1회 → 미션 실패 |
-| 시작 장비 | 3종 무기, 권총을 든 채 시작, 유인탄 2개, 야간 투시(배터리 100%) |
+| 시작 장비 | 3종 무기, 권총을 든 채 시작, 연막탄 2개, 야간 투시(배터리 100%) |
 | 상호작용 거리 | 1.2m (가장 가까운 대상 1개) |
 
 ### 7.3 무기
@@ -327,11 +327,11 @@ C 기능은 S가 모두 끝난 뒤 이 순서로 한다: 조명 스위치·불 �
 - **히트스캔**: 발사 순간 조준 방향으로 사거리까지 DDA 레이. 처음 닿는 적·벽·닫힌 문·창문·엄폐물에서 멈춘다. **관통 없음**. 적이 쏜 탄은 다른 적을 무시한다. 궤적선 약 0.1초.
 - 소총 피해 > 권총 피해 > 소음권총 피해 관계를 유지한다. 표시 이름은 가상 이름이다.
 
-### 7.4 유인탄 (S)
-2개. 던진 지점에서 소음 반경 10m가 3초간 지속(0.5초 간격으로 소음 이벤트 반복). 벽 감쇠 동일. 플레이어에게 영향 없음. 최대 10m, 비행 0.5초.
+### 7.4 연막탄 (S)
+2개. G로 커서 위치(최대 10m, 벽 앞까지)에 던지고 0.5초 비행 후 터진다. 터질 때 소리 한 번(반경 10m, `SND_DECOY`), 연기는 구름 그림(`cloud`) 3덩이가 1.2초 동안 퍼져 10초간 반경 2.5m를 덮고 마지막 2초에 사라진다. 짙은 연기를 지나는 적의 시선은 가려진다. 효과음 `sfx_smoke`(코드 생성).
 
 ### 7.5 근접 제압
-조건 **모두** 만족: 적과 1.5m 이내, 플레이어가 적의 뒤쪽 120° 부채꼴 안, 적 상태가 순찰·조사(미발각)이며 게이지 100 미만. 성공하면 소음 없이 즉시 제압(사망 처리, 처치 수 +1, 시체 남음). 비명(`SND_SCREAM`)도 내지 않는다.
+F를 누르면 1.5m 안(벽에 막히지 않음)의 가장 가까운 적 등 뒤로 붙어 제압한다. 방향·적 상태와 관계없다. 성공하면 소음 없이 즉시 제압(사망 처리, 처치 수 +1, 시체 남음). 비명(`SND_SCREAM`)도 내지 않는다.
 
 ### 7.6 소리 전파 (SoundPropagation) — 순수 함수
 
@@ -353,7 +353,7 @@ else:
 | 항목 | 경비병 (Guard) | 소총병 (Rifleman) |
 | --- | --- | --- |
 | 체력 | 50 | 60 |
-| 시야 | 90°, 10m | 70°, 14m |
+| 시야 | 110°, 14m | 90°, 18m |
 | 무기 | 권총형: 피해 12, 간격 0.5초, 사거리 12m, 탄창 12 | 소총형: 피해 8, 간격 0.25초, 사거리 20m, 탄창 30 |
 | 장전 | 1.5초 | 2.5초 |
 | 예비 탄약 | 무제한 | 무제한 |
@@ -361,17 +361,17 @@ else:
 | 외형 | 어두운 붉은 갈색 옷, 권총 | 짙은 녹갈색 옷, 소총 |
 | 경보 방식 | 외침(반경 12m) | 무전(전체) |
 
-**공통 교전 수치**: 반응 지연 0.5초, 첫 발 0.8초, 명중률 약 60%(조준 오차 ±5° 균등 난수, 플레이어가 달리면 ×1.5), 사거리 안이면 멈춰 사격, 밖이면 접근.
+**공통 교전 수치**: 반응 지연 0.3초, 첫 발 0.5초, 명중률 약 60%(조준 오차 ±5° 균등 난수, 플레이어가 달리면 ×1.5), 사거리 안이면 멈춰 사격, 밖이면 접근.
 
 **인지 게이지** (적마다 0~100):
 
 | 항목 | 값 |
 | --- | --- |
 | 의심 / 발견 기준 | 30 / 100 |
-| 시야 안 상승 | 초당 +40 |
-| 상승 배율 (곱함) | 3m 이내 ×2, 달리기 ×1.5, 웅크리기 ×0.5, **밝기 ×(0.3 + 0.7·L)** (3m 이내면 밝기 배율 생략) |
+| 시야 안 상승 | 초당 +80 |
+| 상승 배율 (곱함) | 5m 이내 ×2, 달리기 ×1.5, 웅크리기 ×0.5, **밝기 ×(0.5 + 0.5·L)** (5m 이내면 밝기 배율 생략) |
 | 실제 시야 거리 | 기본 거리 × (0.5 + 0.5·L) (3m 이내는 항상 보임) |
-| 놓친 뒤 | 1초 유지 후 초당 −15 |
+| 놓친 뒤 | 3초 유지 후 초당 −10. 놓친 순간 마지막 이동 방향으로 1.5초 앞(최대 5m)을 예측해 뛰어서 쫓고, 수색으로 넘어가면 그 위치부터 뛰어서 수색 |
 | 새 단서 | 7.21 이벤트 인지로 의심도가 10 이상이 되면 그 위치를 단서로 저장(게이지는 바꾸지 않음) |
 
 L은 플레이어가 서 있는 칸의 밝기(7.17). Phase 8 전에는 L = 1.
@@ -396,7 +396,7 @@ L은 플레이어가 서 있는 칸의 밝기(7.17). Phase 8 전에는 L = 1.
 **조건 충돌 시 우선순위**: 사망 > 눈앞의 플레이어 > 새 단서 > 수색 종료.
 
 **상태 설명**
-- 조사: 단서 위치로 걸어가 둘러본다(도착 후 1초 정지). 2.0 m/s.
+- 조사: 단서 위치로 가서 둘러본다(도착 후 1초 정지). 2.0 m/s, 의심도 30 이상이면 추격 속도로 뛴다.
 - 수색: 마지막 인지 위치 반경 8m 안 도달 가능한 무작위 3곳(의심도 50 이상이면 5곳)을 가까운 순서로, **총 10초**. 끝나면 가장 가까운 순찰 지점으로.
 - 순찰: 순찰 지점 순환, 지점마다 2~3초 대기.
 
@@ -494,7 +494,7 @@ for 각 칸 c:
 - 대화 중 `Time.timeScale`을 바꾸지 말고 `GameManager`가 1~8 단계 Tick을 건너뛴다(타이머·AI 정지). BGM은 계속.
 
 ### 7.20 야간 투시 (S)
-- N 토글. 배터리 60초, 켜면 초당 1 소모, 끄면 초당 0.5 충전. 0이면 자동 꺼짐.
+- N 토글. 배터리 60초, 켜면 초당 1 소모, 충전되지 않는다(미션 동안 쓴 만큼 줄어든다). 0이면 자동 꺼짐. HUD에 배터리 %를 늘 표시.
 - 화면: URP 풀스크린 패스 또는 카메라 앞 쿼드로 녹색 단색 + 노이즈 + 비네팅. 켜져 있는 동안 화면용 Global Light2D 강도를 `lighting.nvg_global_intensity`(0.6)로 올린다. 어두운 칸의 적 표시 규칙(7.17)을 해제한다.
 - 밝기 값·AI 감지에는 영향 없음. HUD 무기 칸 아래에 배터리 %.
 
@@ -521,7 +521,7 @@ for 각 칸 c:
 | `SND_SCREAM` | 비명소리 | 적이 총에 맞거나 사망(소음권총 포함, 근접 제압 제외) | 10m | 50 | 15초 | Qwen | M |
 | `SND_WIND` | 바람소리 | 야외(`o`) 칸 돌풍 시작(20초마다 4초) | 야외 칸 전체 | 0 | 4초 | Qwen (잡담만) | S |
 | `SND_CAN` | 깡통 차는 소리 | 플레이어가 웅크리지 않고 깡통(`k`) 칸에 들어감(깡통마다 2초에 1회) | 8m | 30 | 15초 | Qwen | M |
-| `SND_DECOY` | 유인탄 금속음 | 유인탄 착지 후 0.5초마다 3초간 | 10m | 30 | 15초 | Qwen | S |
+| `SND_DECOY` | 연막탄 터지는 소리 | 연막탄 착지 후 0.5초마다 3초간 | 10m | 30 | 15초 | Qwen | S |
 | `CLU_CORPSE` | 죽은 동료 발견 | 시체가 시야에 들어옴 | 시야 거리 | 60 | 미션 끝까지 (대응 1회) | Qwen | S |
 | `CLU_DOOR_OPEN` | 문이 열려 있음 | 평소 닫힌 문이 열린 것을 봄 | 8m | 30 | 30초 | Qwen | M |
 | `CLU_DOOR_CLOSED` | 열려 있어야 할 문이 닫힘 | 평소 열린 문이 닫힌 것을 봄 | 8m | 30 | 30초 | Qwen | M |
@@ -722,7 +722,7 @@ for 각 칸 c:
     { "id": "rifle",           "display_name": "AR-30",  "damage": 30, "range_m": 30, "fire_interval_s": 0.12, "noise_radius_m": 25, "mag_size": 30, "reserve": 90, "reload_s": 2.5, "auto": true }
   ],
   "switch_delay_s": 0.3,
-  "player": { "hp": 100, "armor": 50, "decoys": 2, "nvg_battery_s": 60, "nvg_recharge_per_s": 0.5 },
+  "player": { "hp": 70, "armor": 20, "decoys": 2, "nvg_battery_s": 60, "nvg_recharge_per_s": 0 },
   "melee": { "range_m": 1.5, "back_arc_deg": 120 }
 }
 ```
@@ -827,8 +827,8 @@ for 각 칸 c:
 {
   "version": 2,
   "types": [
-    { "id": "guard",    "hp": 50, "fov_deg": 90, "view_m": 10, "weapon": { "damage": 12, "interval_s": 0.5,  "range_m": 12, "mag": 12, "reload_s": 1.5 }, "alert": "shout", "sprite": "guard",    "debug_color": "#E04545" },
-    { "id": "rifleman", "hp": 60, "fov_deg": 70, "view_m": 14, "weapon": { "damage": 8,  "interval_s": 0.25, "range_m": 20, "mag": 30, "reload_s": 2.5 }, "alert": "radio", "sprite": "rifleman", "debug_color": "#A82020" }
+    { "id": "guard",    "hp": 50, "fov_deg": 110, "view_m": 14, "weapon": { "damage": 12, "interval_s": 0.5,  "range_m": 12, "mag": 12, "reload_s": 1.5 }, "alert": "shout", "sprite": "guard",    "debug_color": "#E04545" },
+    { "id": "rifleman", "hp": 60, "fov_deg": 90, "view_m": 18, "weapon": { "damage": 8,  "interval_s": 0.25, "range_m": 20, "mag": 30, "reload_s": 2.5 }, "alert": "radio", "sprite": "rifleman", "debug_color": "#A82020" }
   ],
   "move": { "patrol_speed": 2.0, "chase_speed": 3.5 }
 }
@@ -838,17 +838,17 @@ for 각 칸 c:
 ```json
 {
   "version": 2,
-  "gauge": { "suspect": 30, "detect": 100, "rise_per_s": 40, "hold_after_lost_s": 1.0, "fall_per_s": 15,
-             "near_dist_m": 3, "near_mult": 2.0, "run_mult": 1.5, "crouch_mult": 0.5 },
+  "gauge": { "suspect": 30, "detect": 100, "rise_per_s": 80, "hold_after_lost_s": 3.0, "fall_per_s": 10,
+             "near_dist_m": 5, "near_mult": 2.0, "run_mult": 1.5, "crouch_mult": 0.5 },
   "suspicion": { "quiet_s": 3, "decay_per_s": 6, "new_clue_min": 10, "detected_floor": 90, "radio_confidence": 0.8,
                  "tension_bands": [10, 30, 50, 70, 90], "search_points_high": 5, "search_points_high_at": 50 },
   "clue": { "min_light": 0.15, "small_min_light": 0.3, "radio_check_s": 45, "dropped_weapon_offset_m": 0.4, "can_cooldown_s": 2 },
-  "light": { "gauge_min_mult": 0.3, "view_min_mult": 0.5, "shot_flash_s": 0.3,
+  "light": { "gauge_min_mult": 0.5, "view_min_mult": 0.5, "shot_flash_s": 0.3,
              "dark_threshold": 0.15, "dark_visible_m": 4 },
   "hearing": { "wall_mult": 0.5, "react_threshold": 0.2, "floor_mult": { "t": 1.2, "w": 1.0, "k": 0.6, "o": 0.8 } },
   "wind": { "period_s": 20, "gust_s": 4, "mult": 0.6 },
   "memory": { "sound_clue_s": 15, "last_seen_s": 8 },
-  "combat": { "reaction_delay_s": 0.5, "first_shot_s": 0.8, "accuracy": 0.6, "aim_error_deg": 5, "run_aim_mult": 1.5,
+  "combat": { "reaction_delay_s": 0.3, "first_shot_s": 0.5, "accuracy": 0.6, "aim_error_deg": 5, "run_aim_mult": 1.5,
              "cover_search_radius_m": 6, "cover_hp_ratio": 0.4 },
   "patrol": { "wait_min_s": 2, "wait_max_s": 3 },
   "search": { "radius_m": 8, "points": 3, "total_s": 10 },
@@ -1050,7 +1050,7 @@ Unity 빌드는 `Assets/` 폴더를 실행 중에 읽지 못하므로, 파일 �
 | 시체 | 같은 색 눕힌 타원 + 혈흔 | 미션 끝까지 남음 |
 | 혈흔 / 탄피 / 총구 화염 | `#6E0F0F` 얼룩 / `#D9B24C` 2px / 노란 별 0.05초 + 빛 `#FFD38A` 3m | 풀 최대 512 |
 | 총알 궤적 | `#FFE680` 선, 0.1초 | |
-| 목표 / 폭탄 / 탈출 / 유인탄 | 노랑 서류 `#F2C230` / 빨간 상자 `#C8323C` / 초록 윤곽 `#37C871` / 주황 원 `#FF9A3C` | |
+| 목표 / 폭탄 / 탈출 / 연막탄 | 노랑 서류 `#F2C230` / 빨간 상자 `#C8323C` / 초록 윤곽 `#37C871` / 주황 원 `#FF9A3C` | |
 | 깡통 `k` / 조명 스위치 | 회색 원통 `#9A9AA0` 8×8 / 벽면 흰 사각 `#E8E4DA` 8×8 | 스위치는 C |
 | 떨어진 무기 | 그 적의 `held_*` 그림(없으면 회색 막대) | 시체 옆 |
 | 탐색 기억 오버레이 | 미탐색 알파 1.0, 기억 알파 0.65(회색조), 현재 시야 알파 0 | 조명 위에 덮음 |
@@ -1079,7 +1079,7 @@ Unity 빌드는 `Assets/` 폴더를 실행 중에 읽지 못하므로, 파일 �
 | `sfx_takedown` | 근접 제압 | 0.2s | 둔탁한 소리 |
 | `sfx_alert` | 발각 경고음 | 1.0s | 880Hz 두 번 |
 | `sfx_bark` | 대사 표시음 | 0.15s | 낮은 웅얼(저역 노이즈 + 사인) |
-| `sfx_decoy` | 유인탄 | 0.3s | 금속 틱 반복 |
+| `sfx_decoy` | 연막탄 | 0.3s | 금속 틱 반복 |
 | `sfx_can` | 깡통 차는 소리 | 0.25s | 고음 금속 틱 + 짧은 굴림 노이즈 |
 | `sfx_scream` | 적 비명 | 0.3s | 하강 톤 + 노이즈 |
 | `sfx_switch` | 조명 스위치 (C) | 0.05s | 클릭 |
@@ -1148,7 +1148,7 @@ HUD·대화창·메뉴·적 대사는 같은 폰트 하나로 통일한다. 디�
 - [ ] 이동 모드별 소음 반경이 6m·9m·3m이고 HUD 소음 미터·자세 실루엣이 따라 바뀐다
 - [ ] 피해가 방탄 → 체력 순서로 줄고 HUD 막대 두 개가 맞다
 - [ ] 벽·닫힌 문·창문·엄폐물 뒤 적은 맞지 않고 적끼리 피해가 없다
-- [ ] 근접 제압은 뒤 120°·1.5m 안 미발각 적에게만 된다
+- [ ] F는 1.5m 안의 적 등 뒤로 붙어 제압한다(벽 너머 불가)
 - [ ] 혈흔·탄피·시체가 남고 512개 이상 쌓여도 메모리가 늘지 않는다
 - [ ] 벽 뒤는 보이지 않고, 방문 지형이 회색조로 남으며 재시작하면 지워진다
 - [ ] 밝은 칸에서 어두운 칸보다 빨리 발견되고, 사격하면 순간 밝아진다(F3 게이지·히트맵)

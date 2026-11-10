@@ -146,7 +146,7 @@ namespace GameAi
                 case "SND_RELOAD": Play("sfx_reload"); break;
                 case "SND_CAN": Play("sfx_can", e.position); break;
                 case "SND_SCREAM": Play("sfx_scream", e.position, 0.8f); break;
-                case "SND_DECOY": Play("sfx_decoy", e.position); break;
+                case "SND_DECOY": Play("sfx_smoke", e.position); break;
             }
         }
 

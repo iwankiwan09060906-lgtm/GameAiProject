@@ -1,39 +1,56 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering.Universal;
 using UnityEngine.UI;
 
 namespace GameAi
 {
-    // 유인탄(7.4, S): G로 커서 위치(최대 10m, 벽 앞까지)에 던진다. 0.5초 비행 후 착지점에서 3초 동안 0.5초마다 금속음(반경 10m)
-    public sealed class DecoySystem
+    // 연막탄(7.4, S): G로 커서 위치(최대 10m, 벽 앞까지)에 던진다. 0.5초 비행 후 터져 연기가 퍼지고(구름 3덩이),
+    // 10초 동안 연기를 지나는 적의 시선을 가린다. 터질 때 소리(반경 10m)가 한 번 난다
+    public sealed class SmokeGrenadeSystem
     {
         public const float MaxRange = 10f;
         public const float FlightSeconds = 0.5f;
-        public const float NoiseSeconds = 3f;
-        public const float NoiseInterval = 0.5f;
+        public const float SmokeSeconds = 10f;
+        public const float GrowSeconds = 1.2f;
+        public const float FadeSeconds = 2f;
+        public const float Radius = 2.5f;
+        const int Puffs = 3;
+
+        sealed class Cloud
+        {
+            public Vector2 From, To;
+            public float Clock;
+            public bool Burst;
+            public SpriteRenderer Can;
+            public SpriteRenderer[] Puffs;
+            public Vector2[] Offsets;
+            public float[] Spin;
+        }
 
         readonly GridMap grid;
-        readonly SpriteRenderer view;
-        Vector2 from, to;
-        float clock = -1f;
-        float nextNoise;
+        readonly List<Cloud> clouds = new List<Cloud>();
+        readonly System.Func<SpriteRenderer> makeRenderer;
+        readonly Sprite canSprite;
+        readonly Sprite cloudSprite;
 
         public int Count { get; private set; }
-        public bool Active { get { return clock >= 0f; } }
-        public Vector2 LandingPoint { get { return to; } }
+        public int ActiveClouds { get { return clouds.Count; } }
+        public Vector2 LastLanding { get; private set; }
 
-        public DecoySystem(GridMap grid, int count, SpriteRenderer renderer)
+        public SmokeGrenadeSystem(GridMap grid, int count, Sprite can, Sprite cloud, System.Func<SpriteRenderer> renderer)
         {
             this.grid = grid;
             Count = count;
-            view = renderer;
-            if (view != null) view.enabled = false;
+            canSprite = can;
+            cloudSprite = cloud;
+            makeRenderer = renderer;
         }
 
         // 던질 수 있으면 착지점을 계산해 비행을 시작한다
         public bool Throw(Vector2 player, Vector2 cursor)
         {
-            if (Count <= 0 || Active) return false;
+            if (Count <= 0) return false;
             Vector2 delta = cursor - player;
             float distance = Mathf.Min(MaxRange, delta.magnitude);
             if (distance < 0.1f) return false;
@@ -41,29 +58,97 @@ namespace GameAi
             RayHit hit = Raycast.Cast(grid, player, dir, distance, RayMask.Bullet);
             float reach = hit.Hit ? Mathf.Max(0f, hit.Distance - 0.3f) : distance;
             Count--;
-            from = player;
-            to = player + dir * reach;
-            clock = 0f;
-            nextNoise = FlightSeconds;
-            if (view != null) view.enabled = true;
+            var c = new Cloud { From = player, To = player + dir * reach };
+            LastLanding = c.To;
+            if (makeRenderer != null)
+            {
+                c.Can = makeRenderer();
+                c.Can.sprite = canSprite;
+                c.Puffs = new SpriteRenderer[Puffs];
+                c.Offsets = new Vector2[Puffs];
+                c.Spin = new float[Puffs];
+                for (int i = 0; i < Puffs; i++)
+                {
+                    c.Puffs[i] = makeRenderer();
+                    c.Puffs[i].sprite = cloudSprite;
+                    c.Puffs[i].enabled = false;
+                    c.Offsets[i] = MathUtil.FromAngleDeg(i * 120f + Rng.Fx.Range(-30f, 30f)) * Rng.Fx.Range(0.4f, 0.9f);
+                    c.Spin[i] = Rng.Fx.Range(-12f, 12f);
+                }
+            }
+            clouds.Add(c);
             return true;
+        }
+
+        // 연기 짙기 0~1(퍼지는 중·사라지는 중은 옅다)
+        static float Density(Cloud c)
+        {
+            if (!c.Burst) return 0f;
+            float t = c.Clock - FlightSeconds;
+            float grow = Mathf.Clamp01(t / GrowSeconds);
+            float fade = Mathf.Clamp01((SmokeSeconds - t) / FadeSeconds);
+            return Mathf.Min(grow, fade);
+        }
+
+        // a→b 시선이 짙은 연기(짙기 0.5 이상)를 지나면 true
+        public bool BlocksSight(Vector2 a, Vector2 b)
+        {
+            for (int i = 0; i < clouds.Count; i++)
+            {
+                Cloud c = clouds[i];
+                float density = Density(c);
+                if (density < 0.5f) continue;
+                float r = Radius * density;
+                if (DistanceToSegment(c.To, a, b) <= r) return true;
+            }
+            return false;
+        }
+
+        public static float DistanceToSegment(Vector2 p, Vector2 a, Vector2 b)
+        {
+            Vector2 ab = b - a;
+            float len = ab.sqrMagnitude;
+            float t = len > 1e-8f ? Mathf.Clamp01(Vector2.Dot(p - a, ab) / len) : 0f;
+            return Vector2.Distance(p, a + ab * t);
         }
 
         public void Tick(float dt)
         {
-            if (!Active) return;
-            clock += dt;
-            float t = Mathf.Clamp01(clock / FlightSeconds);
-            if (view != null) view.transform.position = Vector2.Lerp(from, to, t) + Vector2.up * Mathf.Sin(t * Mathf.PI) * 0.6f;
-            while (clock >= nextNoise && nextNoise <= FlightSeconds + NoiseSeconds - 1e-4f)
+            for (int k = clouds.Count - 1; k >= 0; k--)
             {
-                WorldEvents.Raise("SND_DECOY", to, EntityIds.Player);
-                nextNoise += NoiseInterval;
-            }
-            if (clock >= FlightSeconds + NoiseSeconds)
-            {
-                clock = -1f;
-                if (view != null) view.enabled = false;
+                Cloud c = clouds[k];
+                c.Clock += dt;
+                float t = Mathf.Clamp01(c.Clock / FlightSeconds);
+                if (c.Can != null) c.Can.transform.position = Vector2.Lerp(c.From, c.To, t) + Vector2.up * Mathf.Sin(t * Mathf.PI) * 0.6f;
+                if (!c.Burst && c.Clock >= FlightSeconds)
+                {
+                    c.Burst = true;
+                    WorldEvents.Raise("SND_DECOY", c.To, EntityIds.Player);
+                }
+                if (c.Puffs != null && c.Burst)
+                {
+                    float life = c.Clock - FlightSeconds;
+                    float density = Density(c);
+                    for (int i = 0; i < c.Puffs.Length; i++)
+                    {
+                        SpriteRenderer r = c.Puffs[i];
+                        r.enabled = true;
+                        // 뭉게뭉게: 조금씩 커지고 돌며 바깥으로 흘러간다
+                        float size = Radius * 2.2f * (0.35f + 0.65f * Mathf.Clamp01(life / GrowSeconds)) * (1f + 0.04f * Mathf.Sin(life * 1.3f + i * 2f));
+                        float width = r.sprite != null ? r.sprite.bounds.size.x : 1f;
+                        float s = size / Mathf.Max(0.01f, width);
+                        r.transform.localScale = new Vector3(s, s, 1f);
+                        r.transform.position = c.To + c.Offsets[i] * (1f + life * 0.08f);
+                        r.transform.rotation = Quaternion.Euler(0f, 0f, c.Spin[i] * life + i * 40f);
+                        r.color = new Color(0.82f, 0.84f, 0.86f, 0.85f * density + 0.1f * Mathf.Clamp01(1f - life));
+                    }
+                }
+                if (c.Clock >= FlightSeconds + SmokeSeconds)
+                {
+                    if (c.Can != null) Object.Destroy(c.Can.gameObject);
+                    if (c.Puffs != null) foreach (SpriteRenderer r in c.Puffs) Object.Destroy(r.gameObject);
+                    clouds.RemoveAt(k);
+                }
             }
         }
     }
@@ -137,7 +222,7 @@ namespace GameAi
             normalIntensity = globalLight != null ? globalLight.intensity : 1f;
             normalColor = globalLight != null ? globalLight.color : Color.white;
             // 화면용 세기는 판정값 × 배율인데, 녹색 전역광은 그대로 쓰면 과다 노출되어 1/4로 쓴다
-            nvgIntensity = lighting.nvg_global_intensity * lighting.global_intensity_scale * 0.25f;
+            nvgIntensity = lighting.nvg_global_intensity * lighting.global_intensity_scale * 0.35f;
             Color green = MathUtil.ParseColor(lighting.nvg_color, new Color(0.49f, 1f, 0.6f));
             // 화면 전역광을 녹색으로 바꿔 곱하기처럼 보이게 한다(어두운 곳·미탐색은 그대로 검다)
             nvgColor = green;
@@ -147,12 +232,12 @@ namespace GameAi
             tint = root.gameObject.AddComponent<RawImage>();
             tint.texture = Texture2D.whiteTexture;
             // Linear 색공간이라 UI 알파가 진하게 보인다. 덧칠은 끄고 노이즈만 아주 옅게(필름 그레인과 같은 보정)
-            tint.color = new Color(green.r, green.g, green.b, 0f);
+            tint.color = new Color(green.r, green.g, green.b, Mathf.GammaToLinearSpace(0.16f));
             tint.raycastTarget = false;
             noise = UiRoot.CreateRect("Noise", root).gameObject.AddComponent<RawImage>();
             Widgets.Stretch(noise.rectTransform);
             noise.texture = ProceduralSprites.NoiseTexture();
-            noise.color = new Color(green.r, green.g, green.b, Mathf.GammaToLinearSpace(0.05f));
+            noise.color = new Color(green.r, green.g, green.b, Mathf.GammaToLinearSpace(0.09f));
             noise.raycastTarget = false;
             vignette = UiRoot.CreateImage("Vignette", root, VignetteSprite());
             Widgets.Stretch(vignette.rectTransform);

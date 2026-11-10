@@ -13,7 +13,8 @@ namespace GameAi
 
         public UiRoot(GameConfig config, Transform parent)
         {
-            var go = new GameObject("Canvas", typeof(Canvas), typeof(CanvasScaler));
+            // GraphicRaycaster가 있어야 버튼이 클릭을 받는다
+            var go = new GameObject("Canvas", typeof(Canvas), typeof(CanvasScaler), typeof(GraphicRaycaster));
             go.transform.SetParent(parent, false);
             Canvas = go.GetComponent<Canvas>();
 

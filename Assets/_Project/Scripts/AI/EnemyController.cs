@@ -59,6 +59,7 @@ namespace GameAi
         float reloadLeft;
         float nextShotTime;
         Vector2? coverSpot;
+        bool cameFromPursuit;
         float nextCoverSearch;
         bool wasDetected;
 
@@ -118,10 +119,27 @@ namespace GameAi
 
         public void SetSight(bool seen, Vector2 playerPos, float mult)
         {
+            if (seen)
+            {
+                float t = GameClock.Time;
+                if (playerSeen && t > lastSeenTime) seenVelocity = (playerPos - LastKnownPlayer) / (t - lastSeenTime);
+                lastSeenTime = t;
+                LastKnownPlayer = playerPos;
+            }
+            else if (playerSeen)
+            {
+                // 시야에서 사라진 순간: 마지막 이동 방향으로 조금 앞을 예측해 그쪽을 쫓는다
+                Vector2 ahead = LastKnownPlayer + Vector2.ClampMagnitude(seenVelocity * 1.5f, 5f);
+                if (LineOfSight.IsClear(world.Grid, LastKnownPlayer, ahead, RayMask.Bullet)) LastKnownPlayer = ahead;
+                seenVelocity = Vector2.zero;
+            }
             playerSeen = seen;
             riseMult = mult;
-            if (seen) LastKnownPlayer = playerPos;
         }
+
+        Vector2 seenVelocity;
+        float lastSeenTime;
+        bool pursuitSearch;
 
         // 의심도에 새 단서가 들어왔다(의심도 10 이상)
         public void FlagNewClue(ClueRecord record, bool radio)
@@ -196,6 +214,7 @@ namespace GameAi
                     StartInvestigate(gauge.Value >= world.Ai.gauge.suspect && playerSeen ? null : Suspicion.BestClue(Position));
                     break;
                 case EnemyState.Search:
+                    cameFromPursuit = from == EnemyState.Chase || from == EnemyState.Engage || Suspicion.Value >= world.Ai.suspicion.search_points_high_at;
                     StartSearch(now);
                     break;
                 case EnemyState.Engage:
@@ -295,6 +314,8 @@ namespace GameAi
             Vector2 center = currentClue != null && !playerSeen ? currentClue.Position : LastKnownPlayer;
             if (currentClue == null && LastKnownPlayer == Vector2.zero) center = Position;
             searchPoints.Clear();
+            pursuitSearch = cameFromPursuit;
+            if (cameFromPursuit) searchPoints.Add(LastKnownPlayer);
             searchPoints.AddRange(SearchPointPicker.Pick(world.Nav, world.Grid, center, Position, world.Ai.search.radius_m, count, Rng.Ai));
             searchIndex = 0;
             lookLeft = 0f;
@@ -549,7 +570,9 @@ namespace GameAi
                 }
             }
             doorWait = 0f;
-            bool chase = State == EnemyState.Chase || State == EnemyState.Engage;
+            // 추격·교전, 추격 직후 수색, 의심도가 높은 조사는 뛰어서 쫓는다
+            bool chase = State == EnemyState.Chase || State == EnemyState.Engage || (State == EnemyState.Search && pursuitSearch)
+                         || (State == EnemyState.Investigate && Suspicion.Value >= world.Ai.suspicion.tension_bands[1]);
             float speed = chase ? world.Move.chase_speed : world.Move.patrol_speed;
             Vector2 to = target - Position;
             float distance = to.magnitude;

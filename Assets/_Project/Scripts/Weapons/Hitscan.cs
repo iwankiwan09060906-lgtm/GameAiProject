@@ -92,22 +92,11 @@ namespace GameAi
     public static class MeleeRules
     {
         // 조건을 모두 만족해야 한다. enemyFacing은 정규화된 벡터
-        public static bool CanTakedown(GridMap grid, Vector2 playerPos, Vector2 enemyPos, Vector2 enemyFacing,
-            EnemyState state, float gauge, float detectGauge, MeleeConfig config)
+        // F 근접 제압: 근접 거리(1.5m) 안이고 벽에 막히지 않은 적이면 등 뒤로 붙어 제압한다
+        public static bool CanTakedown(GridMap grid, Vector2 playerPos, Vector2 enemyPos, MeleeConfig config)
         {
-            // 순찰·조사(미발각)이고 게이지가 발견 기준(100) 미만일 때만
-            if (state != EnemyState.Patrol && state != EnemyState.Investigate) return false;
-            if (gauge >= detectGauge) return false;
-
-            Vector2 toPlayer = playerPos - enemyPos;
-            float distance = toPlayer.magnitude;
-            if (distance > config.range_m || distance < 1e-5f) return false;
-
-            // 적이 바라보는 방향의 반대(등 뒤)와 플레이어 방향이 이루는 각이 부채꼴 절반 이내인지
-            float fromBack = Vector2.Angle(-enemyFacing, toPlayer);
-            if (fromBack > config.back_arc_deg / 2f) return false;
-
-            // 벽 너머로는 제압할 수 없다
+            float distance = Vector2.Distance(playerPos, enemyPos);
+            if (distance > config.range_m) return false;
             return LineOfSight.IsClear(grid, playerPos, enemyPos, RayMask.Bullet);
         }
     }

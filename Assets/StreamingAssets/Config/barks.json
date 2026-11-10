@@ -15,7 +15,7 @@
     { "when": "SND_RELOAD", "lines": ["철컥... 뭐지?", "방금 그거 장전 소리?"], "emotion": "의심" },
     { "when": "SND_SCREAM", "lines": ["비명이다!", "누가 당했어?"], "emotion": "긴장" },
     { "when": "SND_CAN", "lines": ["뭐야, 깡통?", "누가 뭘 찼어?"], "emotion": "놀람" },
-    { "when": "SND_DECOY", "lines": ["저쪽에서 쇳소리가...", "뭐가 떨어졌나?"], "emotion": "의심" },
+    { "when": "SND_DECOY", "lines": ["웬 연기야?", "연기다! 조심해!"], "emotion": "의심" },
     { "when": "SND_WIND", "lines": ["바람 한번 세네.", "으, 춥다."], "emotion": "안도" },
     { "when": "CLU_CORPSE", "lines": ["이봐, 정신 차려!", "누가 이랬어…"], "emotion": "놀람" },
     { "when": "CLU_DOOR_OPEN", "lines": ["이 문이 왜 열려 있지?", "누가 열어 뒀어?"], "emotion": "의심" },

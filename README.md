@@ -24,7 +24,7 @@
 | 달리기 / 웅크리기 | Left Shift / Left Ctrl (누르고 있는 동안) |
 | 재장전 / 무기 | R / 1 권총 · 2 소음권총 · 3 소총 |
 | 상호작용(문·자료·폭탄·조명 스위치) | **Space** (폭탄은 누르고 있기) |
-| 근접 제압 / 유인탄 / 야간 투시 | F / G / N |
+| 근접 제압 / 연막탄 / 야간 투시 | F / G / N |
 | 대화 넘기기 / 선택지 | Space·좌클릭 / 1~3 |
 | 일시정지 / 디버그 | Esc / F3 (디버그 중 적을 오른쪽 클릭하면 마지막 Qwen 입력·출력) |
 
@@ -53,7 +53,7 @@ $U = "C:\Program Files\Unity\Hub\Editor\6000.3.24f1\Editor\Unity.exe"
 .\Build\Game.exe -smoke Logs\smoke -scenario ai      # 빌드를 정해진 조작으로 실행해 보고서·스크린샷 저장
 ```
 
-시나리오: `ai`(순찰·조사·교전·수색) · `mission`(소탕 성공·실패) · `ui` · `menu` · `maps`(맵 2~4) · `gadgets`(유인탄·야간 투시·스위치) · `replay`(고정 시드 3회 비교) · `perf`(적 20명 60초) · `soak -minutes 30` · `evidence`. 결과 기록은 [docs/VERIFY.md](docs/VERIFY.md).
+시나리오: `ai`(순찰·조사·교전·수색) · `mission`(소탕 성공·실패) · `ui` · `menu` · `maps`(맵 2~4) · `gadgets`(연막탄·야간 투시·스위치) · `replay`(고정 시드 3회 비교) · `perf`(적 20명 60초) · `soak -minutes 30` · `evidence`. 결과 기록은 [docs/VERIFY.md](docs/VERIFY.md).
 
 ## 문서
 

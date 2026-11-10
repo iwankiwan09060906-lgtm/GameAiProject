@@ -23,11 +23,11 @@ namespace GameAi
         }
 
         // F를 눌렀을 때 제압할 적이 있으면 제압하고 true
-        public bool Tick(bool pressed, Vector2 playerPos, CharacterView view)
+        public EnemyController Tick(bool pressed, Vector2 playerPos, CharacterView view)
         {
-            if (!pressed) return false;
+            if (!pressed) return null;
             EnemyController target = FindTarget(playerPos);
-            if (target == null) return false;
+            if (target == null) return null;
 
             view.PlayMelee();
 
@@ -41,7 +41,7 @@ namespace GameAi
                 kind = DamageKind.Melee,
                 time = Time.time,
             });
-            return true;
+            return target;
         }
 
         // 조건을 만족하는 적 중 가장 가까운 하나. 없으면 null
@@ -53,7 +53,7 @@ namespace GameAi
             {
                 EnemyController enemy = enemies[i];
                 if (!enemy.Target.Alive) continue;
-                if (!MeleeRules.CanTakedown(grid, playerPos, enemy.Target.Position, enemy.Facing, enemy.State, enemy.Gauge, detectGauge, config))
+                if (!MeleeRules.CanTakedown(grid, playerPos, enemy.Target.Position, config))
                     continue;
                 float distance = Vector2.Distance(playerPos, enemy.Target.Position);
                 if (distance < bestDistance)

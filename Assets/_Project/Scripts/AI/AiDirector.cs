@@ -92,6 +92,11 @@ namespace GameAi
             lastMark = t;
         }
 
+        Func<Vector2, Vector2, bool> sightBlocked = (a, b) => false;
+
+        // 연막탄 연기처럼 시선을 가리는 것(a→b)
+        public void SetSightBlocker(Func<Vector2, Vector2, bool> blocked) { sightBlocked = blocked ?? ((a, b) => false); }
+
         public void SetLightSource(Func<Vector2, float> source) { lightAt = source ?? (p => 1f); }
 
         public void Add(EnemyController enemy)
@@ -339,7 +344,8 @@ namespace GameAi
             {
                 if (enemy.IsDead) continue;
                 if (enemy.Id % phases != frame % phases) continue;
-                bool seen = playerAlive && SightSensor.CanSee(grid, enemy.Position, enemy.Facing, enemy.Fov, enemy.ViewRange, playerPos, light, ai.gauge.near_dist_m, ai.light);
+                bool seen = playerAlive && SightSensor.CanSee(grid, enemy.Position, enemy.Facing, enemy.Fov, enemy.ViewRange, playerPos, light, ai.gauge.near_dist_m, ai.light)
+                            && !sightBlocked(enemy.Position, playerPos);
                 float distance = Vector2.Distance(enemy.Position, playerPos);
                 float mult = AwarenessGauge.RiseMultiplier(distance, player.IsMoving ? player.Mode : MoveMode.Walk, light, ai.gauge, ai.light);
                 if (player.Mode == MoveMode.Crouch) mult = AwarenessGauge.RiseMultiplier(distance, MoveMode.Crouch, light, ai.gauge, ai.light);

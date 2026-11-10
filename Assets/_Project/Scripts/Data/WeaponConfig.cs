@@ -51,11 +51,11 @@ namespace GameAi
     [Serializable]
     public class PlayerLoadout
     {
-        public int hp = 100;
-        public int armor = 50;
+        public int hp = 70;
+        public int armor = 20;
         public int decoys = 2;
         public float nvg_battery_s = 60f;
-        public float nvg_recharge_per_s = 0.5f;
+        public float nvg_recharge_per_s = 0f;
     }
 
     // 근접 제압 조건(7.5)
@@ -84,12 +84,12 @@ namespace GameAi
             {
                 new EnemyTypeDef
                 {
-                    id = "guard", hp = 50, fov_deg = 90, view_m = 10, alert = "shout", sprite = "guard", debug_color = "#E04545",
+                    id = "guard", hp = 50, fov_deg = 110, view_m = 14, alert = "shout", sprite = "guard", debug_color = "#E04545",
                     weapon = new EnemyWeaponDef { damage = 12, interval_s = 0.5f, range_m = 12, mag = 12, reload_s = 1.5f },
                 },
                 new EnemyTypeDef
                 {
-                    id = "rifleman", hp = 60, fov_deg = 70, view_m = 14, alert = "radio", sprite = "rifleman", debug_color = "#A82020",
+                    id = "rifleman", hp = 60, fov_deg = 90, view_m = 18, alert = "radio", sprite = "rifleman", debug_color = "#A82020",
                     weapon = new EnemyWeaponDef { damage = 8, interval_s = 0.25f, range_m = 20, mag = 30, reload_s = 2.5f },
                 },
             };

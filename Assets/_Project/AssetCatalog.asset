@@ -31,6 +31,9 @@ MonoBehaviour:
   - name: casing
     frames:
     - {fileID: 21300000, guid: 02a9733b87067d74fb42603a20b5d024, type: 3}
+  - name: cloud
+    frames:
+    - {fileID: 21300000, guid: 60ea4e364716d07418ff0a2548f8de5d, type: 3}
   - name: corpse_guard
     frames:
     - {fileID: 21300000, guid: 85ec256100d25dd4690868ee5feacfe2, type: 3}

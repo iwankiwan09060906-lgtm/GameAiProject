@@ -135,7 +135,7 @@
 | --- | --- | --- | --- | --- |
 | The Free Firearm Sound Library | Ben Jaszczak 외 | 권총·소총 사격(사격음만 있는 팩) | CC0 | [opengameart](https://opengameart.org/content/the-free-firearm-sound-library) |
 | 25 CC0 Bang / Firework SFX | rubberduck | 소음권총 | CC0 | [opengameart](https://opengameart.org/content/25-cc0-bang-firework-sfx) |
-| Impact Sounds | Kenney | 발소리, 피격, 근접 제압, 유인탄, 탄피 | CC0 | [kenney.nl](https://kenney.nl/assets/impact-sounds) |
+| Impact Sounds | Kenney | 발소리, 피격, 근접 제압, 연막탄, 탄피 | CC0 | [kenney.nl](https://kenney.nl/assets/impact-sounds) |
 | RPG Audio | Kenney | 문 개폐, 자료 확보, 재장전 | CC0 | [kenney.nl](https://kenney.nl/assets/rpg-audio) |
 | Interface Sounds | Kenney | 버튼, 빈 탄창, 발각 경고음, 대화 넘김, 성공·실패 | CC0 | [kenney.nl](https://kenney.nl/assets/interface-sounds) |
 | Abandoned passages (horror ambience loop) | congusbongus | **인게임 배경음** `bgm_game` — 어둡고 좁은 실내의 불안한 앰비언트 루프 | CC0 | [opengameart](https://opengameart.org/content/abandoned-passages-horror-ambience-loop) |
@@ -199,7 +199,7 @@ Neo둥근모는 받은 파일이 소스뿐이고 `.ttf`가 없어 제외했다. 
 | `fx/casing.png` | 탄피 | 2×2 | 코드로 그림 | 금색 점 |
 | `props/lamp.png` | 천장등 위치 표시 | 8×8 | 코드로 그림 | 노란 점 |
 | `obj/obj_target.png` | 목표 서류 | 32×32 | dyru 2배 | 노란 서류 |
-| `obj/obj_bomb.png` · `obj_exit.png` · `obj_decoy.png` | 폭탄·탈출 지점·유인탄 | 32×32 | 코드로 그림 | 빨간 상자 / 초록 윤곽 / 주황 원 |
+| `obj/obj_bomb.png` · `obj_exit.png` · `obj_decoy.png` | 폭탄·탈출 지점·연막탄 | 32×32 | 코드로 그림 | 빨간 상자 / 초록 윤곽 / 주황 원 |
 | `obj/obj_can.png` | 깡통(맵 문자 `k`) | 8×8 | 파일 없음 | 회색 원통 `#9A9AA0` |
 | `obj/obj_switch.png` | 조명 스위치(C) | 8×8 | 파일 없음 | 흰 사각 `#E8E4DA` |
 | `ui/crosshair.png` | 꺾쇠 조준선(1px 어두운 외곽선 포함) | 32×32 | Kenney Crosshair | 흰 꺾쇠 4개 |
@@ -234,7 +234,7 @@ Neo둥근모는 받은 파일이 소스뿐이고 `.ttf`가 없어 제외했다. 
 | `sfx_takedown` | 근접 제압 | 0.51s | Impact `impactSoft_heavy_000` |
 | `sfx_alert` | 발각 경고음 | 0.50s | Interface `error_006` |
 | `sfx_bark` | 적 대사 표시음 | 0.12s | Interface `bong_001` |
-| `sfx_decoy` | 유인탄 | 0.27s | Impact `impactMetal_medium_000` |
+| `sfx_decoy` | 연막탄 | 0.27s | Impact `impactMetal_medium_000` |
 | `sfx_can` | 깡통 차는 소리 | 0.25s | 파일 없음(코드 생성 톤) |
 | `sfx_scream` | 적 비명 | 0.3s | 파일 없음(코드 생성 톤) |
 | `sfx_switch` | 조명 스위치(C) | 0.05s | 파일 없음(코드 생성 톤) |
