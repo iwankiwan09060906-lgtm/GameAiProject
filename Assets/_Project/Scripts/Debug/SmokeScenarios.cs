@@ -13,6 +13,7 @@ namespace GameAi
         {
             Log("시나리오: " + scenario);
             if (scenario == "ai") yield return RunAi();
+            else if (scenario == "mission") yield return RunMission();
             else yield return Run();
         }
 
@@ -107,6 +108,63 @@ namespace GameAi
             EventBus.Unsubscribe(onDetect);
             EventBus.Unsubscribe(onBark);
             EventBus.Unsubscribe(onDamage);
+        }
+
+        // 맵 1 소탕을 끝까지 클리어하고, 다시 시작해 사망으로 실패한다(Phase 6 완료 조건)
+        IEnumerator RunMission()
+        {
+            Check("시작하면 미션 진행 중(브리핑 없으면 바로)", game.Mission.State == MissionManager.Running || game.Mission.State == MissionManager.Briefing);
+            while (game.Mission.State == MissionManager.Briefing)
+            {
+                scripted.State.InteractPressed = true;
+                yield return new WaitForSeconds(0.3f);
+            }
+            foreach (EnemyController enemy in game.Enemies)
+            {
+                float t = 0f;
+                while (!enemy.IsDead && t < 6f && game.Player.Target.Alive)
+                {
+                    Vector2 behind = FindFree(enemy.Position - enemy.Facing * 1.1f, enemy.Position);
+                    game.Player.SetPosition(behind);
+                    Aim(enemy.Position);
+                    scripted.State.MeleePressed = true;
+                    yield return Frames(2);
+                    if (!enemy.IsDead)
+                    {
+                        scripted.State.FirePressed = true;
+                        yield return new WaitForSeconds(0.35f);
+                    }
+                    t += 0.4f;
+                }
+                Log($"적{enemy.Id} 처치 {enemy.IsDead}");
+            }
+            yield return Frames(5);
+            MissionManager m = game.Mission;
+            Log($"결과 {m.Outcome}, 상태 {m.State}, 처치 {m.Kills}/{m.TotalEnemies}, 발각 {m.Detections}, 시간 {m.ClearTime:F3}");
+            yield return Shot("mission_01_success");
+            Check("소탕 성공", m.Outcome == MissionResult.Success);
+            Check("처치 수 4", m.Kills == 4);
+            Check("판정 뒤 입력 막힘", m.InputBlocked);
+
+            SceneFlow.Restart();
+            game = null;
+            while (game == null || !game.IsReady)
+            {
+                game = FindAnyObjectByType<GameManager>();
+                yield return null;
+            }
+            game.SetInputSource(scripted, true);
+            while (game.Mission.State == MissionManager.Briefing)
+            {
+                scripted.State.InteractPressed = true;
+                yield return new WaitForSeconds(0.3f);
+            }
+            SendDamage(500);
+            yield return Frames(5);
+            Log($"재시작 후 결과 {game.Mission.Outcome}, 상태 {game.Mission.State}");
+            Check("다시 시작하면 적 4명 초기화", game.Enemies.Count == 4 && !game.Enemies[0].IsDead);
+            Check("사망하면 실패", game.Mission.Outcome == MissionResult.Fail);
+            yield return Shot("mission_02_fail");
         }
 
         // 원하는 위치 근처에서 플레이어가 설 수 있는 칸(기준점까지 시야가 트인 곳)

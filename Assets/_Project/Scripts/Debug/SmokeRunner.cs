@@ -21,6 +21,8 @@ namespace GameAi
                 PlayerInputState current = State;
                 State.FirePressed = false;
                 State.InteractPressed = false;
+                State.DecoyPressed = false;
+                State.NightVisionPressed = false;
                 State.MeleePressed = false;
                 State.ReloadPressed = false;
                 State.WeaponSelect = 0;

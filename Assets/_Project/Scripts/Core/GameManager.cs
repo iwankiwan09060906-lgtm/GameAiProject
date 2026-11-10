@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic; // List, IReadOnlyList 등 제네릭 컬렉션을 사용하기 위한 네임스페이스입니다.
 using UnityEngine; // MonoBehaviour, GameObject, Vector2 등 유니티 엔진의 핵심 기능을 사용하기 위한 네임스페이스입니다.
 
@@ -58,6 +59,9 @@ namespace GameAi // 게임의 AI 및 핵심 로직들을 묶어둔 네임스페�
         BarkView barkView;
         BarkConfig barkConfig;
         float difficultyMult = 1f;
+        MissionManager mission;
+        MissionConfig missionConfig;
+        Func<string, bool> playDialogue = id => false;
 
         // 값이 있으면 자동 재생(SmokeRunner)이 조준선을 직접 움직인다
         Vector2? crosshairOverride; // null이 아니면 플레이어 마우스 대신 시스템(또는 리플레이)이 조준선 위치를 강제합니다.
@@ -108,6 +112,7 @@ namespace GameAi // 게임의 AI 및 핵심 로직들을 묶어둔 네임스페�
             if (!LoadMap(SceneFlow.SelectedMapId)) return; // 선택된 맵 데이터를 불러옵니다. 실패하면 이 밑의 초기화는 진행하지 않습니다(return).
             BuildWorld(); // 성공적으로 맵을 불러왔다면, 실제 게임 오브젝트들과 시스템들을 생성하고 조립합니다.
             ready = true; // 모든 준비가 끝났으므로 ready 플래그를 켭니다. 이제 Update가 작동합니다.
+            mission.Begin();
         }
 
         // 수직동기를 켜서 모니터 주사율에 프레임을 맞춘다. 제한 없이 그리면 노트북이 뜨거워져
@@ -149,7 +154,8 @@ namespace GameAi // 게임의 AI 및 핵심 로직들을 묶어둔 네임스페�
         // missions.json에서 맵 파일을 찾아 읽고 격자로 바꾼다. 오류가 있으면 false
         bool LoadMap(string mapId) // 선택된 맵 ID를 바탕으로 맵을 메모리에 로드하는 함수입니다.
         {
-            var missions = ConfigLoader.Load<MissionConfig>("missions.json"); // 미션 목록이 담긴 JSON을 읽어옵니다.
+            missionConfig = ConfigLoader.Load<MissionConfig>("missions.json");
+            var missions = missionConfig;
             string file = MapRegistry.FindFile(missions, mapId); // 미션 목록 안에서 mapId와 일치하는 실제 맵 파일의 경로를 찾습니다.
             string json = file != null ? ConfigLoader.ReadText(file) : null; // 파일 경로가 존재하면 해당 맵의 JSON 텍스트를 읽어옵니다.
             if (json == null) // 파일을 읽지 못했다면
@@ -217,6 +223,7 @@ namespace GameAi // 게임의 AI 및 핵심 로직들을 묶어둔 네임스페�
             barkView = new BarkView(ui, catalog, worldCamera, aiConfig.bark);
             barks = gameObject.AddComponent<BarkPicker>();
             barks.Init(director, barkConfig, eventTable, aiConfig.bark, barkView, IsEnemyOnScreen, () => (Vector2)worldCamera.transform.position, 0.5f, 6f);
+            SetupMission(world);
         }
 
         // 플레이어: 맵의 P 칸에서 시작한다. id 0은 항상 플레이어
@@ -352,6 +359,42 @@ namespace GameAi // 게임의 AI 및 핵심 로직들을 묶어둔 네임스페�
             return 0;
         }
 
+        public MissionManager Mission { get { return mission; } }
+        public AiDirector Director { get { return director; } }
+        public BarkPicker Barks { get { return barks; } }
+
+        // 미션 종류·목표(T)·탈출 지점(X)을 놓는다
+        void SetupMission(Transform world)
+        {
+            string type = mapData.mission;
+            foreach (MissionMapEntry entry in missionConfig.maps)
+                if (entry.id == mapData.id && !string.IsNullOrEmpty(entry.mission)) type = entry.mission;
+            if (missionConfig.bomb.enabled && type == "steal_exit") type = "bomb";
+            ObjectiveItem objective = null;
+            if (type != "eliminate" && map.Targets.Count > 0)
+            {
+                objective = new ObjectiveItem(map.Grid, map.Targets[0], type == "bomb");
+                objective.Renderer = SpawnMarker(world, objective.IsBomb ? "obj_bomb" : "obj_target", map.Targets[0], SortOrder.Prop);
+                interaction.Add(objective);
+            }
+            if (type == "steal_exit")
+                foreach (Vector2 exit in map.Exits) SpawnMarker(world, "obj_exit", exit, SortOrder.FloorProp);
+            mission = gameObject.AddComponent<MissionManager>();
+            mission.Init(mapData.id, type, mapData.target_time_s, enemies.Count, Player, objective, map.Exits, missionConfig.bomb,
+                director.AllPatrolling, id => playDialogue(id));
+        }
+
+        SpriteRenderer SpawnMarker(Transform world, string sprite, Vector2 position, int order)
+        {
+            var renderer = new GameObject(sprite, typeof(SpriteRenderer)).GetComponent<SpriteRenderer>();
+            renderer.transform.SetParent(world, false);
+            renderer.transform.position = position;
+            renderer.sprite = catalog.GetSprite(sprite);
+            renderer.sharedMaterial = catalog.SpriteLit;
+            renderer.sortingOrder = order;
+            return renderer;
+        }
+
         void SpawnDoors(Transform world, MapLighting lighting) // 맵상의 문을 생성하는 함수입니다.
         {
             Sprite horizontal = catalog.GetSprite("door_closed"); // 가로로 닫힌 문 스프라이트.
@@ -397,7 +440,7 @@ namespace GameAi // 게임의 AI 및 핵심 로직들을 묶어둔 네임스페�
         // 5.4의 1~8단계. 순서를 바꾸면 규칙이 바뀐다
         void TickSimulation(float dt) // 게임 로직의 핵심 파이프라인. 여기서 실행 순서가 곧 이 게임의 물리/판정 규칙입니다.
         {
-            bool playerAlive = Player.Target.Alive; // 플레이어가 살아있는지 확인합니다.
+            bool playerAlive = Player.Target.Alive && !mission.InputBlocked;
             GameClock.Advance(dt);
 
             // 1. 입력 읽기
@@ -428,6 +471,7 @@ namespace GameAi // 게임의 AI 및 핵심 로직들을 묶어둔 네임스페�
                 enemy.Health.Tick(); // 죽은 적은 타겟에서 제외되거나 시체로 변하는 처리를 합니다.
 
             // 8. 미션 판정은 Phase 6
+            mission.Tick(dt, input.InteractHeld && playerAlive, interaction.Current == mission.Objective);
             // (주석만 존재하고 현재 코드에는 탈출/클리어 조건 판정 코드가 생략되어 있음)
         }
 

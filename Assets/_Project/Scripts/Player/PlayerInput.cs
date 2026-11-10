@@ -22,6 +22,11 @@ namespace GameAi
         public bool FirePressed;
         public bool ReloadPressed;
         public bool InteractPressed;
+        // 폭탄 해체처럼 누르고 있는 동안
+        public bool InteractHeld;
+        // 유인탄(G)·야간 투시(N)
+        public bool DecoyPressed;
+        public bool NightVisionPressed;
         public bool MeleePressed;
 
         // 0이면 선택 없음, 1~3은 무기 번호
@@ -56,6 +61,9 @@ namespace GameAi
             state.FirePressed = Input.GetMouseButtonDown(0);
             state.ReloadPressed = Input.GetKeyDown(KeyCode.R);
             state.InteractPressed = Input.GetKeyDown(KeyCode.Space);
+            state.InteractHeld = Input.GetKey(KeyCode.Space);
+            state.DecoyPressed = Input.GetKeyDown(KeyCode.G);
+            state.NightVisionPressed = Input.GetKeyDown(KeyCode.N);
             state.MeleePressed = Input.GetKeyDown(KeyCode.F);
 
             if (Input.GetKeyDown(KeyCode.Alpha1)) state.WeaponSelect = 1;
