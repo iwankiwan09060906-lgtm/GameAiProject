@@ -23,6 +23,7 @@ namespace GameAi
             else if (scenario == "soak") yield return RunSoak();
             else if (scenario == "evidence") yield return RunEvidence();
             else if (scenario == "feedback") yield return RunFeedback();
+            else if (scenario == "audio") yield return RunAudio();
             else yield return Run();
         }
 
@@ -628,6 +629,32 @@ namespace GameAi
             yield return new WaitForSeconds(2f);
             Log($"야간 투시 배터리 {battery * 100f:F0}% → 2초 뒤 {game.NightVisionRatio * 100f:F0}%");
             Check("야간 투시 배터리가 쓴 만큼 줄고 충전되지 않음", battery < 0.97f && Mathf.Approximately(battery, game.NightVisionRatio));
+        }
+
+        // 소리: 씬에 AudioListener가 하나 있고, 사격·문·발소리 때 실제로 소리가 재생되는지
+        IEnumerator RunAudio()
+        {
+            var listeners = FindObjectsByType<AudioListener>(FindObjectsSortMode.None);
+            Log($"AudioListener {listeners.Length}개, 전체 음량 {AudioListener.volume:F2}, 일시정지 {AudioListener.pause}");
+            Check("AudioListener가 정확히 1개", listeners.Length == 1);
+            bool bgm = false;
+            foreach (AudioSource a in FindObjectsByType<AudioSource>(FindObjectsSortMode.None))
+                if (a.isPlaying && a.loop && a.clip != null && a.clip.name.StartsWith("bgm")) bgm = true;
+            Check("배경음 재생 중", bgm);
+            scripted.State.FirePressed = true;
+            yield return Frames(2);
+            int playing = 0;
+            string names = "";
+            foreach (AudioSource a in FindObjectsByType<AudioSource>(FindObjectsSortMode.None))
+                if (a.isPlaying && !a.loop) { playing++; }
+            Log($"사격 직후 재생 중인 효과음 소스 {playing}개");
+            Check("사격하면 효과음이 재생됨", playing > 0);
+            float[] samples = new float[256];
+            AudioListener.GetOutputData(samples, 0);
+            float peak = 0f;
+            foreach (float v in samples) peak = Mathf.Max(peak, Mathf.Abs(v));
+            Log($"출력 파형 최대값 {peak:F3}{names}");
+            Check("오디오 출력에 소리가 실림", peak > 0.001f);
         }
 
         Vector2 FarthestFree(Vector2 from)

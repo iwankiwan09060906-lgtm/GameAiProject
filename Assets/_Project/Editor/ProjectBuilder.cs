@@ -148,6 +148,8 @@ namespace GameAi.EditorTools
             go.transform.position = new Vector3(0f, 0f, -10f);
 
             var camera = go.AddComponent<Camera>();
+            // 코드로 만든 카메라에는 AudioListener가 없어 소리가 들리지 않는다
+            go.AddComponent<AudioListener>();
             camera.orthographic = true;
             camera.orthographicSize = config.camera_ortho_size;
             camera.backgroundColor = Color.black;

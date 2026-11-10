@@ -24,6 +24,14 @@ namespace GameAi
 
         public static AudioManager Create(Transform parent, AssetCatalog catalog, float ambienceFade)
         {
+            // 씬에 소리를 듣는 쪽이 없으면 아무 소리도 나지 않는다. 카메라(없으면 자신)에 하나 붙인다
+            if (Object.FindAnyObjectByType<AudioListener>() == null)
+            {
+                Camera main = Camera.main;
+                if (main != null) main.gameObject.AddComponent<AudioListener>();
+                else parent.gameObject.AddComponent<AudioListener>();
+                Debug.LogWarning("[Audio] AudioListener가 없어 새로 붙였습니다. Tools/Build Project를 다시 실행하세요.");
+            }
             var go = new GameObject("AudioManager");
             go.transform.SetParent(parent, false);
             var manager = go.AddComponent<AudioManager>();
