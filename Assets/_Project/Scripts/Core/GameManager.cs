@@ -360,7 +360,10 @@ namespace GameAi // 게임의 AI 및 핵심 로직들을 묶어둔 네임스페�
 
             // 시야 밖 문은 마지막으로 본 모습을 유지하고, 시야 밖 적은 그리지 않는다
             foreach (Door door in doors) // 문 객체를 순회하며
-                door.RefreshView(vision.IsVisible(door.Area)); // 문 칸 중 하나라도 시야에 들어온 문만 시각적으로 업데이트합니다(시야 밖이면 열렸는지 닫혔는지 갱신 안됨).
+            {
+                door.RefreshView(vision.IsVisible(door.Area)); // 문 칸 중 하나라도 시야에 들어온 문만 목표 상태를 갱신합니다(시야 밖이면 마지막 모습 유지).
+                door.Tick(dt); // 열림/닫힘 애니메이션을 진행합니다.
+            }
             foreach (EnemyController enemy in enemies) // 적 객체를 순회하며
                 if (enemy.Target.Alive) enemy.View.SetVisible(vision.IsVisible(enemy.Target.Position)); // 살아있는 적이 플레이어 시야 안에 있을 때만 화면에 보이도록(SpriteRenderer On) 만듭니다.
 

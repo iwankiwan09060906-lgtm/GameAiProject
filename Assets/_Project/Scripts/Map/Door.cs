@@ -12,6 +12,13 @@ namespace GameAi
         // 열린 문 막대를 문 끝에서 안쪽으로 들이는 거리(m)
         const float BarInset = 0.06f;
 
+        // shortcut: 두께·열리는 시간은 상수, 튜닝이 잦아지면 Config JSON으로 옮긴다
+        const float Thickness = 0.1f;
+        const float OpenSeconds = 0.5f;
+
+        // 0 = 닫힘, 1 = 활짝 열림. 화면에 보이는 문의 진행 정도
+        float progress;
+
         GridMap grid;
 
         // 열린 문 칸에 서 있는 대상을 찾는 데 쓴다
@@ -56,9 +63,9 @@ namespace GameAi
             else isHorizontal = IsWall(area.x - 1, area.y) || IsWall(area.xMax, area.y);
             length = Mathf.Max(area.width, area.height) * map.CellSize;
 
-            // 일부러 "열림"으로 시작해 첫 RefreshView가 닫힌 실제 상태로 바꾸게 한다
-            shownOpen = true;
-            RefreshView(true);
+            shownOpen = IsOpen;
+            progress = shownOpen ? 1f : 0f;
+            ApplyView();
         }
 
         bool IsWall(int x, int y)
@@ -98,27 +105,34 @@ namespace GameAi
             EventBus.Publish(new DoorChangedEvent { doorId = Id, isOpen = open, actorId = actorId, time = Time.time });
         }
 
-        // 보이는 문만 실제 상태로 그림을 맞춘다. 시야 밖 문은 마지막으로 본 모습을 유지한다
+        // 보이는 문만 목표 상태를 실제 상태로 맞춘다. 시야 밖 문은 마지막으로 본 모습을 유지한다
         public void RefreshView(bool visible)
         {
-            if (!visible || shownOpen == IsOpen) return;
-            shownOpen = IsOpen;
+            if (visible) shownOpen = IsOpen;
+        }
 
-            // 가로 문이 닫히면 가로 막대, 열리면 세로 막대로 돌아간 모습(세로 문은 반대)
-            bool bar = isHorizontal != shownOpen;
-            view.sprite = bar ? horizontalBar : verticalBar;
+        // 열림 정도(progress)를 목표 쪽으로 서서히 옮기고 그림에 반영한다
+        public void Tick(float dt)
+        {
+            float target = shownOpen ? 1f : 0f;
+            if (Mathf.Approximately(progress, target)) return;
+            progress = Mathf.MoveTowards(progress, target, dt / OpenSeconds);
+            ApplyView();
+        }
 
-            // 막대 그림의 긴 쪽을 문 폭에 맞춘다
+        // 닫힘 자세에서 열림 자세로 막대를 회전·이동시킨다(가로 문은 0°→90°, 세로 문은 90°→0°)
+        void ApplyView()
+        {
+            view.sprite = horizontalBar;
             Vector2 size = view.sprite != null ? (Vector2)view.sprite.bounds.size : Vector2.one;
-            float spriteLength = Mathf.Max(0.01f, bar ? size.x : size.y);
-            float scale = length / spriteLength;
-            view.transform.localScale = bar ? new Vector3(scale, 1f, 1f) : new Vector3(1f, scale, 1f);
+            view.transform.localScale = new Vector3(length / Mathf.Max(0.01f, size.x), Thickness / Mathf.Max(0.01f, size.y), 1f);
+
+            float closedAngle = isHorizontal ? 0f : 90f;
+            view.transform.rotation = Quaternion.Euler(0f, 0f, Mathf.Lerp(closedAngle, 90f - closedAngle, progress));
 
             // 열린 문은 한쪽 끝(경첩)에 붙여 그린다
-            Vector2 center = Position;
-            if (shownOpen)
-                center += (isHorizontal ? Vector2.left : Vector2.up) * (length / 2f - BarInset);
-            view.transform.position = center;
+            Vector2 openCenter = Position + (isHorizontal ? Vector2.left : Vector2.up) * (length / 2f - BarInset);
+            view.transform.position = Vector2.Lerp(Position, openCenter, progress);
         }
     }
 }
