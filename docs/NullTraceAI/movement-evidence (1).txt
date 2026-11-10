@@ -1,0 +1,9 @@
+Unity=6000.3.24f1; OS=Windows 11  (10.0.26200)
+CPU=AMD Ryzen 9 9950X3D 16-Core Processor ; logical cores=32; GPU=NVIDIA GeForce RTX 5070 Ti
+NPC=20; grid=40x32; real shared EnemyTarget; shared sprite quads; automatic Update only; captureDeltaTime=1/60.
+120 warmup + 600 measured frames; every 60 measured frames: toggle cover, Rebuild, publish 16 distinct noises.
+Update-window elapsed ms: p50=0.1910; p95=1.4869; max=2.9129; mean=0.3093
+Path requests/frame max=4; measured requests=200; peak waiting=16; waiting NPC-frames=400
+Peak radio pending=20; per-NPC memory max=8; received reports=25; attack events=0
+Includes Update dispatch/perception/Utility/BT/navigation/collision/radio/Rebuild. Excludes rendering/LateUpdate/record serialization. No allocation claim or fixed ms threshold.
+20/40 are comparison samples, not an agreed NPC maximum. No final map/models/Animator/team combat/real Qwen. Not a final-game FPS guarantee.

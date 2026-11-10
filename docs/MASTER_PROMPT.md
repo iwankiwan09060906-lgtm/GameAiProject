@@ -36,18 +36,19 @@
 | `docs/reference/ref_02_dialogue.png` | 하단 대화창. 초상화·빨강 이름표·대사·번호 선택지 |
 | `docs/reference/ref_03_nightvision.png` | 야간 투시 녹색 필터, 문 앞 `[SPACE] 열기` 안내, 자세 실루엣 |
 
-- **AI**: 학습형 AI 없음. 규칙 기반 FSM + 행동 트리 + 직접 구현한 A*.
+- **AI**: 학습형 AI 없음. 규칙 기반 FSM + 행동 트리 + 직접 구현한 A*. 적은 소리·단서·시야 이벤트 22종(7.21)을 인지해 의심도를 쌓는다.
+- **상황 대사**: 같은 PC의 로컬 Qwen(`llama-server`)이 적이 인지한 상황을 받아 20자 이내 대사 한 줄을 만든다(7.22). 대사 문장에만 쓰고 AI 판단에는 쓰지 않으며, 서버가 없으면 기본 대사로 동작한다.
 
 ## 2. 범위
 
 ### 2.1 포함 (구현 대상)
-플레이어 이동·조준·사격, 방탄, 무기 3종, 재장전, 유인탄, 근접 제압, 야간 투시, 시야 차폐와 탐색 기억, 2D 조명과 칸별 밝기, 문, 엄폐물, 창문, 전투 흔적(총구 화염·탄피·혈흔·시체), 적 AI(시각·청각·밝기·인지 게이지·FSM·교전·순찰·수색·A*·동료 경보·문 흔적·난이도·통로 충돌), 적 대사, 미션(소탕·자료 탈취·자료 탈취 후 탈출·폭탄 해체), 브리핑 대화, 승패·발각·기록, HUD, 조준선, 상호작용 안내, 메뉴, 설정, 일시정지, 결과 화면, 크레딧 화면, 야외 환경음, 저장·복구, 디버그 오버레이, 고정 시드 재현 모드.
+플레이어 이동·조준·사격, 방탄, 무기 3종, 재장전, 유인탄, 근접 제압, 야간 투시, 시야 차폐와 탐색 기억, 2D 조명과 칸별 밝기, 문, 엄폐물, 창문, 전투 흔적(총구 화염·탄피·혈흔·시체), 적 AI(시각·청각·밝기·인지 게이지·의심도·FSM·교전·순찰·수색·A*·동료 경보·문 기대 상태·난이도·통로 충돌), 월드 이벤트 22종(소리 8·단서 8·시야 6, 시체·동료 사망 반응 포함), 깡통 소품, 바람 마스킹, 조명 스위치, 적 대사와 Qwen 상황 대사, 미션(소탕·자료 탈취·자료 탈취 후 탈출·폭탄 해체), 브리핑 대화, 승패·발각·기록, HUD, 조준선, 상호작용 안내, 메뉴, 설정, 일시정지, 결과 화면, 크레딧 화면, 야외 환경음, 저장·복구, 디버그 오버레이, 고정 시드 재현 모드.
 
 ### 2.2 제외 (만들지 않는다)
-인질 구출, 섬광탄, 잠금 문·열쇠·문 파괴, 적의 측면 이동, 문 경로 우회 소리 전파, 총알 관통, 적끼리 피해, 피격 경직·밀림·무적 시간, 마우스 감도·키 변경 설정, 창 크기 자유 변경, 네트워크·서버·계정·클라우드, 학습형 AI, 100×100 대형 맵, **대화 분기, 시체 발견 반응, 방탄 획득·회복, 전원 차단(조명 끄기), 음성 대사**.
+인질 구출, 섬광탄, 잠금 문·열쇠·문 파괴, 적의 측면 이동, 문 경로 우회 소리 전파, 총알 관통, 적끼리 피해, 피격 경직·밀림·무적 시간, 마우스 감도·키 변경 설정, 창 크기 자유 변경, 온라인 네트워크·게임 서버·계정·클라우드(대사 생성용 로컬 `llama-server`는 7.22), AI 판단용 학습형 AI, 100×100 대형 맵, **대화 분기, 방탄 획득·회복, 음성 대사, Qwen이 AI 상태를 바꾸는 것**.
 
 ### 2.3 우선순위
-- **M(필수)**: 기말 전에 반드시 완성. **S(권장)**: M 이후. **C(여유)**: 하지 않는다.
+- **M(필수)**: 기말 전에 반드시 완성. **S(권장)**: M 이후. **C(여유)**: S가 모두 끝난 뒤 시간이 남으면 한다. 빠져도 미완성이 아니다.
 - 야간 투시와 폭탄 해체는 S. M이 모두 끝난 뒤 구현한다.
 
 ## 3. 기술 스택·환경
@@ -78,6 +79,7 @@ repo-root/
 ├─ docs/
 │  ├─ MASTER_PROMPT.md            # 이 문서
 │  ├─ 요구사항 정의서.md / 기능 정의서.md
+│  ├─ DB설계.md                   # 월드 이벤트 22종·Qwen 상황 대사 기능 정의와 데이터 표
 │  ├─ ASSET_DIRECTION.md          # 목표 화면 분석, 아트·사운드 방향, 파일 이름 규칙
 │  ├─ ASSET_CREDITS.md            # 사용한 외부 에셋 출처·라이선스
 │  ├─ DECISIONS.md                # 구현 중 스스로 내린 결정 기록
@@ -88,7 +90,7 @@ repo-root/
 ├─ Packages/manifest.json
 ├─ ProjectSettings/
 └─ Assets/
-   ├─ StreamingAssets/Config/     # game, weapons, enemies, ai, difficulty, missions, barks, dialogue .json, credits.txt
+   ├─ StreamingAssets/Config/     # game, weapons, enemies, ai, difficulty, missions, barks, dialogue, events, qwen .json, credits.txt
    │  └─ maps/                    # map_01.json ~ map_04.json
    ├─ Tests/EditMode/             # 13.1의 테스트
    └─ _Project/
@@ -102,9 +104,11 @@ repo-root/
       │  ├─ Map/                  # MapData, MapLoader, Door, Interactable, MapRegistry
       │  ├─ Mission/              # MissionManager, Objective(Eliminate/Steal/Bomb), ResultEvaluator, Records
       │  ├─ AI/
-      │  │  ├─ Perception/        # SightSensor, HearingSensor, AwarenessGauge, ClueMemory
+      │  │  ├─ Perception/        # SightSensor, HearingSensor, ClueSensor, AwarenessGauge, SuspicionMeter, ClueMemory
+      │  │  ├─ Events/            # EventTypeTable(events.json), WorldEventLog, PerceptionLog, RadioCheck, WindZone
       │  │  ├─ FSM/               # EnemyBrain, EnemyState(Patrol/Investigate/Chase/Engage/Search/Dead)
-      │  │  ├─ Behavior/          # BehaviorTree 노드, CombatTree, BarkPicker(상황 → 대사)
+      │  │  ├─ Behavior/          # BehaviorTree 노드, CombatTree
+      │  │  ├─ Bark/              # BarkPicker, BarkContextBuilder, BarkQueue, BarkValidator, BarkCache, BarkHistory, QwenClient, QwenLog
       │  │  ├─ Navigation/        # AStarPathfinder, PathFollower, PatrolRoute, SearchPointPicker, PassageYield
       │  │  ├─ Alert/             # AlertSystem(외침·무전), GlobalAlertLevel
       │  │  └─ EnemyController.cs
@@ -129,14 +133,15 @@ repo-root/
 ### 5.1 원칙
 - 시스템끼리는 **이벤트 버스**로만 대화한다. 이벤트 구조체는 `Core/Events.cs` 한 파일에 모은다.
 - 모든 구독은 `OnEnable`에서 하고 `OnDisable`에서 반드시 해제한다.
-- 감지와 길찾기는 **적마다 시간 간격을 엇갈려** 처리한다(5.4). 밝기 격자는 문이 바뀔 때만 부분 재계산한다.
+- 감지와 길찾기는 **적마다 시간 간격을 엇갈려** 처리한다(5.4). 밝기 격자는 문·조명이 바뀔 때만 부분 재계산한다.
 - 난수는 `Rng` 한 곳에서 만든다. **AI용 난수원과 연출용 난수원(대사 선택·혈흔 모양·탄피 방향·총구 화염 그림·피 입자)을 분리**해, 연출이 AI 재현성에 영향을 주지 않게 한다. 고정 시드 모드면 AI 난수원 시드를 고정한다.
 
 ### 5.2 이벤트 목록 (Core/Events.cs)
 
 | 이벤트 | 필드 | 보내는 쪽 → 받는 쪽 |
 | --- | --- | --- |
-| `NoiseEvent` | position, kind, radius, sourceId, time | 플레이어·무기·유인탄 → HearingSensor, HUD 소음 미터 |
+| `NoiseEvent` | position, kind(Footstep/Gunshot/Decoy/Door/Reload/Scream/Can), radius, sourceId, time | 플레이어·무기·유인탄·문·깡통·Health → HearingSensor, HUD 소음 미터 |
+| `WorldEvent` | eventId, code, position, time, intensity, sourceId, objectId | 소음·전투 흔적·문·조명·Health·RadioCheck → ClueSensor, WorldEventLog |
 | `DamageEvent` | targetId, amount, attackerId, hitPoint, kind(Bullet/Melee), time | Hitscan·MeleeTakedown → Health, CombatFx |
 | `HealthChangedEvent` | entityId, hp, armor | Health → HUD |
 | `DeathEvent` | entityId, isPlayer, position, corpseSprite, rotationDeg, time (1회만) | Health → Mission·AI·UI·CombatFx |
@@ -144,8 +149,9 @@ repo-root/
 | `EnemyStateChangedEvent` | enemyId, from, to, reason, time | EnemyBrain → UI·Mission·Debug·BarkPicker |
 | `DetectionEvent` | enemyId, time | AwarenessGauge → Mission·Alert |
 | `AlertEvent` | kind(Shout/Radio), position, time, senderId | AlertSystem → 수신 적 |
-| `BarkEvent` | enemyId, text | BarkPicker → BarkView, Audio |
-| `DoorChangedEvent` | doorId, isOpen, actorId, time | Door → Vision·LightGrid·Nav·AI |
+| `BarkEvent` | enemyId, text, emotion, source(Qwen/Cache/Fallback) | BarkPicker → BarkView, Audio, BarkHistory |
+| `DoorChangedEvent` | doorId, isOpen, actorId, time | Door → Vision·LightGrid·Nav·AI(문 기대 상태) |
+| `LightChangedEvent` | lightId, isOn, actorId, time | LightSwitch → MapLighting·LightGrid·ClueSensor *(C)* |
 | `DialogueStateEvent` | dialogueId, isActive | DialogueBox → GameManager(정지)·Mission·Audio |
 | `MissionStateEvent` | state, objectiveProgress, timeLeft, result | Mission → UI·Audio·GameManager |
 | `AmmoChangedEvent` | weaponId, mag, reserve | Weapon → HUD |
@@ -160,7 +166,9 @@ repo-root/
 ### 5.4 매 프레임 처리 순서와 분산
 `GameManager.Update` 한 곳에서 아래 순서를 보장한다(각 시스템은 `Tick(dt)`를 노출). 대화·일시정지 중에는 1~8을 건너뛴다.
 
-1. 입력 읽기 → 2. 플레이어 이동 → 3. 소음 발생·전달 → 4. 적 감지(분산, 밝기 반영) → 5. 적 상태 전환·이동 → 6. 공격·피해 → 7. 사망 확정 → 8. 미션 판정 → 9. 화면 갱신(시야·조명·전투 흔적·대사·UI)
+1. 입력 읽기 → 2. 플레이어 이동 → 3. 소음·월드 이벤트 발생·전달 → 4. 적 감지(분산, 밝기 반영)·의심도 갱신 → 5. 적 상태 전환·이동 → 6. 공격·피해 → 7. 사망 확정 → 8. 미션 판정 → 9. 화면 갱신(시야·조명·전투 흔적·대사·UI)
+
+`BarkPicker`는 9단계에서 Qwen 응답을 받아 검증·표시한다. Qwen 요청은 비동기라 프레임을 기다리게 하지 않고, 응답 대기 2초만 실제 시간으로 잰다.
 
 분산 규칙: 적마다 `phase = id % 4`, 시각 감지는 `frame % 4 == phase`인 적만 실행. 길찾기는 한 프레임 **최대 2건**, 나머지는 큐. 이동·상태 전환은 매 프레임.
 
@@ -203,19 +211,20 @@ repo-root/
 - **완료 조건**: 허수아비 적을 사격·제압할 수 있고, 벽·문·창문·엄폐물 뒤는 맞지 않으며, 혈흔·탄피·시체가 남는다.
 
 ### Phase 4 — 소리 시스템
-- `NoiseEmitter`(발소리·사격·유인탄), `SoundPropagation`: 7.6 공식.
+- `NoiseEmitter`(발소리·사격·유인탄·문·장전·비명·깡통), `SoundPropagation`: 7.6 공식.
+- `EventTypeTable`(`events.json`, 9.11)과 `WorldEvent` 발생·기록(`WorldEventLog`). 맵 문자 `k` 깡통.
 - F3에서 소리 반경 원 표시.
-- **완료 조건**: `SoundTests` 통과.
+- **완료 조건**: `SoundTests`·`EventTests` 통과.
 
 ### Phase 5 — 적 AI 기본 (M)
 1. `AStarPathfinder` + `AStarTests`.
 2. `PathFollower`, `PatrolRoute`.
-3. `SightSensor`, `HearingSensor`, `AwarenessGauge`(밝기 배율 자리는 두되 L=1로 고정), `ClueMemory`.
+3. `SightSensor`, `HearingSensor`, `ClueSensor`(탄피·혈흔·떨어진 무기·문 상태·총구 화염·움직임 포착), `AwarenessGauge`(밝기 배율 자리는 두되 L=1로 고정), `SuspicionMeter`(7.21), `ClueMemory`.
 4. `EnemyBrain` FSM 6상태(7.7), `StateTransitionLogger`.
 5. `SearchPointPicker`.
 6. 교전 기본 사격.
-7. `AwarenessIcon`(? / !), `BarkPicker` + `BarkView`(7.18).
-- **완료 조건**: 맵 1에서 적이 순찰하고, 플레이어를 보면 `?`→`!`과 대사가 뜨고 쫓아와 쏘고, 놓치면 수색 후 순찰로 돌아간다. 소리에도 반응한다.
+7. `AwarenessIcon`(? / !), `BarkPicker`(기본 대사, 7.18) + `BarkView`(감정별 색). 이 Phase는 Qwen 없이 기본 대사만 쓴다.
+- **완료 조건**: 맵 1에서 적이 순찰하고, 플레이어를 보면 `?`→`!`과 대사가 뜨고 쫓아와 쏘고, 놓치면 수색 후 순찰로 돌아간다. 소리·단서에도 반응한다. `AwarenessTests`·`FsmTests`·`BarkTests` 통과.
 
 ### Phase 6 — 미션·결과 (M)
 - `MissionManager`: 준비→(브리핑)→진행→종료→(디브리핑)→결과. `Eliminate`, `Steal`(Space 상호작용), 탈출 지점(맵 3).
@@ -225,9 +234,10 @@ repo-root/
 ### Phase 7 — UI·메뉴·대화·사운드·설정 (M)
 - `Hud`: 10장 좌하단 통합 패널(체력·방탄, 소음 미터, 무기 칸, 자세 실루엣; 밝기 미터는 Phase 8에서 켬), 좌상단 목표·타이머, 우상단 경계.
 - `DialogueBox`(7.19) + `dialogue.json` 맵 1 브리핑.
+- 상황 대사(7.22): `BarkContextBuilder`(상황 묶기), `BarkQueue`(우선순위 큐), `QwenClient`(`qwen.json`의 로컬 `llama-server`에 비동기 요청, 2초 한도), `BarkValidator`(응답 검증, 실패 시 기본 대사). 서버가 없으면 경고 1회 후 기본 대사.
 - `MainMenu`, `MissionSelect`(난이도), `SettingsOverlay`, `PauseMenu`, `ResultScreen`, `CreditsScreen`(11.5).
 - `AudioManager`: `Audio/`의 외부 소리 재생(파일이 없으면 코드 생성 톤, 11.2), 일시정지 시 정지·이어 재생, 음량 3종. `AmbienceZone`: 플레이어 칸 바닥이 야외(`o`)면 `amb_outdoor_night`를 0.5초 페이드 인, 실내면 페이드 아웃(배경음 음량을 따름).
-- **완료 조건**: 메인 메뉴 → 미션 선택 → 브리핑 → 플레이 → 결과 → 메인 메뉴를 오갈 수 있고, 메인 메뉴에서 크레딧 화면이 열린다. HUD 배치가 ref_01과 같다.
+- **완료 조건**: 메인 메뉴 → 미션 선택 → 브리핑 → 플레이 → 결과 → 메인 메뉴를 오갈 수 있고, Qwen 서버가 있으면 검증된 상황 대사가, 없으면 기본 대사가 뜨며, 메인 메뉴에서 크레딧 화면이 열린다. HUD 배치가 ref_01과 같다.
 
 ### Phase 8 — 밝기 격자·맵 2~4·나머지 M
 - `Grid/LightGrid`(7.17): 칸별 밝기 계산, 문 변경 시 부분 재계산, 사격 밝기. `SightSensor`에 밝기 배율·시야 거리 반영. HUD 밝기 미터 켜기. 어두운 칸의 적 표시 규칙.
@@ -241,11 +251,16 @@ repo-root/
 2. 저장·복구(7.13)
 3. 동료 경보·전역 경계도(7.8)
 4. 난이도 3단계(7.12)
-5. 문 흔적 인지(+30)
-6. 통로 충돌 처리
-7. 유인탄
-8. 야간 투시(7.20)
-9. 폭탄 해체 미션(`missions.json` 설정, 기본값은 자료 탈취 후 탈출 유지)
+5. 통로 충돌 처리
+6. 유인탄
+7. 야간 투시(7.20)
+8. 폭탄 해체 미션(`missions.json` 설정, 기본값은 자료 탈취 후 탈출 유지)
+9. 시체·동료 사망 반응(`CLU_CORPSE`, `SIG_ALLY_DOWN`)과 떨어진 무기
+10. 동료 무응답 점검(`CLU_NO_ANSWER`)
+11. 바닥재별 발소리, 바람 마스킹(`SND_WIND`)
+12. 상황 대사 S 기능(7.22): 반복 방지, 감정 태그, 성격, 동료 이름, 대사 캐시, `qwen_log`·F3 상태값 보기, 사전 생성 도구
+
+C 기능은 S가 모두 끝난 뒤 이 순서로 한다: 조명 스위치·불 꺼짐(`SIG_LIGHT_OFF`), 대기 중 혼잣말, 동료 대구, 들은 대사 기록.
 
 ### Phase 10 — 마감
 - `DebugOverlay`(F3, 밝기 히트맵 포함), `PerfProbe`, 고정 시드 모드.
@@ -272,7 +287,7 @@ repo-root/
 | 무기 전환 | 1 권총 / 2 소음권총 / 3 소총 |
 | 달리기 | Left Shift (누르고 있는 동안) |
 | 웅크리기 | Left Ctrl (누르고 있는 동안) |
-| 상호작용(문·자료·폭탄) | **Space** (폭탄은 누르고 있기) |
+| 상호작용(문·자료·폭탄·조명 스위치) | **Space** (폭탄은 누르고 있기) |
 | 근접 제압 | F |
 | 유인탄 투척 | G (커서 위치로) |
 | 야간 투시 | N |
@@ -316,7 +331,7 @@ repo-root/
 2개. 던진 지점에서 소음 반경 10m가 3초간 지속(0.5초 간격으로 소음 이벤트 반복). 벽 감쇠 동일. 플레이어에게 영향 없음. 최대 10m, 비행 0.5초.
 
 ### 7.5 근접 제압
-조건 **모두** 만족: 적과 1.5m 이내, 플레이어가 적의 뒤쪽 120° 부채꼴 안, 적 상태가 순찰·조사(미발각)이며 게이지 100 미만. 성공하면 소음 없이 즉시 제압(사망 처리, 처치 수 +1, 시체 남음).
+조건 **모두** 만족: 적과 1.5m 이내, 플레이어가 적의 뒤쪽 120° 부채꼴 안, 적 상태가 순찰·조사(미발각)이며 게이지 100 미만. 성공하면 소음 없이 즉시 제압(사망 처리, 처치 수 +1, 시체 남음). 비명(`SND_SCREAM`)도 내지 않는다.
 
 ### 7.6 소리 전파 (SoundPropagation) — 순수 함수
 
@@ -330,6 +345,8 @@ else:
   세기 = base * 0.5^walls             # 열린 문은 세지 않는다
 반응 조건: 세기 >= 0.2
 ```
+- 발소리 반경은 플레이어 칸 바닥 배율을 곱한다: 타일 ×1.2, 나무 ×1.0, 카펫 ×0.6, 야외 ×0.8 *(S)*.
+- 돌풍(`SND_WIND`) 4초 동안 소음 위치가 야외(`o`) 칸이면 세기 ×0.6 *(S)*.
 
 ### 7.7 적 종류와 수치
 
@@ -355,33 +372,32 @@ else:
 | 상승 배율 (곱함) | 3m 이내 ×2, 달리기 ×1.5, 웅크리기 ×0.5, **밝기 ×(0.3 + 0.7·L)** (3m 이내면 밝기 배율 생략) |
 | 실제 시야 거리 | 기본 거리 × (0.5 + 0.5·L) (3m 이내는 항상 보임) |
 | 놓친 뒤 | 1초 유지 후 초당 −15 |
-| 새 소리 | 게이지를 최소 30까지 올리고 소리 위치를 단서로 저장 |
-| 문 흔적 | +30 |
+| 새 단서 | 7.21 이벤트 인지로 의심도가 10 이상이 되면 그 위치를 단서로 저장(게이지는 바꾸지 않음) |
 
 L은 플레이어가 서 있는 칸의 밝기(7.17). Phase 8 전에는 L = 1.
 
-**단서 기억**: 소리 8초, 마지막 목격 15초. 우선순위 최근 목격 > 가까운 큰 소리 > 먼 소리.
+**단서 기억**: 소리 15초, 마지막 목격 8초, 그 밖의 단서는 이벤트별 수명(7.21). 우선순위 최근 목격 > 의심도 기여가 큰 단서 > 가까운 단서. 의심도·긴장도 규칙은 7.21.
 
 **FSM 전환 표**:
 
 | 현재 | 조건 | 다음 |
 | --- | --- | --- |
-| 순찰 | 게이지 ≥ 30 또는 새 소리 | 조사 |
+| 순찰 | 게이지 ≥ 30 또는 새 단서 | 조사 |
 | 조사 | 게이지 = 100, 사거리 안 | 교전 |
 | 조사 | 게이지 = 100, 사거리 밖 | 추격 |
 | 조사 | 단서 위치 도착, 플레이어 없음 | 수색 |
 | 추격 | 사거리 안 & 시야 확보 | 교전 |
 | 추격·교전 | 플레이어를 놓쳐 게이지 < 100 | 수색 |
-| 수색 | 새 소리 | 조사 |
+| 수색 | 새 단서 | 조사 |
 | 수색 | 플레이어를 다시 봄(게이지 100) | 추격 또는 교전 |
 | 수색 | 수색 10초 종료 | 순찰 복귀 |
 | 모든 상태 | 체력 ≤ 0 | 사망 |
 
-**조건 충돌 시 우선순위**: 사망 > 눈앞의 플레이어 > 새 소리 > 수색 종료.
+**조건 충돌 시 우선순위**: 사망 > 눈앞의 플레이어 > 새 단서 > 수색 종료.
 
 **상태 설명**
 - 조사: 단서 위치로 걸어가 둘러본다(도착 후 1초 정지). 2.0 m/s.
-- 수색: 마지막 인지 위치 반경 8m 안 도달 가능한 무작위 3곳을 가까운 순서로, **총 10초**. 끝나면 가장 가까운 순찰 지점으로.
+- 수색: 마지막 인지 위치 반경 8m 안 도달 가능한 무작위 3곳(의심도 50 이상이면 5곳)을 가까운 순서로, **총 10초**. 끝나면 가장 가까운 순찰 지점으로.
 - 순찰: 순찰 지점 순환, 지점마다 2~3초 대기.
 
 **교전 행동 트리** (`Selector`):
@@ -393,7 +409,7 @@ L은 플레이어가 서 있는 칸의 밝기(7.17). Phase 8 전에는 L = 1.
 
 ### 7.8 동료 경보·전역 경계도 (S)
 - 적이 **발견 상태에 처음 들어갈 때**(`DetectionEvent`) 경보. 경비병은 외침(12m, 벽 무시), 소총병은 무전(전체).
-- 수신 적은 **조사 상태**로 그 위치를 조사, 재전파 없음. 발신은 5초에 1회, 사건당 최대 2회.
+- 수신 적은 0.5초 뒤 `CLU_RADIO_HELP`(원본 점수 × 신뢰도 0.8, 원본 수명)로 인지하고 **조사 상태**로 그 위치를 조사, 재전파 없음. 같은 사건을 이미 직접 인지했으면 점수를 다시 더하지 않는다. 발신은 5초에 1회, 사건당 최대 2회.
 - **전역 경계도**: 평상(전원 순찰)·경계(조사·수색 존재)·전투(추격·교전 존재). 경계 이상이면 수색 시간 ×1.2. HUD 우상단.
 
 ### 7.9 승패 판정 (프레임당 1회)
@@ -458,16 +474,19 @@ for 각 칸 c:
       L += k.intensity * (1 - |k.pos - c| / k.radius)
   light[c] = clamp(L, 0, 1)
 문이 바뀌면: 그 문에서 반경 안에 있는 조명이 비추는 칸만 다시 계산
+조명이 꺼지거나 켜지면: 그 조명 반경 안의 칸만 다시 계산 (C)
 사격하면: 0.3초 동안 사수 칸 밝기 = 1 (플레이어만 감지에 영향)
 ```
 - 화면 조명(`Light2D`)과 같은 조명 목록을 쓴다. 화면 밝기와 논리 밝기가 완전히 같을 필요는 없지만 "밝아 보이는 곳이 밝다"는 일치해야 한다.
 - 플레이어 시야: 밝기 0.15 미만 칸의 적은 4m 밖이면 렌더러를 끈다(야간 투시 켜면 켬).
 - HUD 밝기 미터 = 플레이어 칸 밝기.
+- **조명 스위치 (C)**: 맵 `lights[].switch` 자리에서 플레이어가 Space로 그 조명을 끄고 켠다. 꺼진 조명은 화면 `Light2D`와 논리 밝기에서 모두 빠지고 `LightChangedEvent`·`SIG_LIGHT_OFF`를 낸다. 적은 스위치를 쓰지 않는다.
 
 ### 7.18 적 대사 (Bark)
-- `EnemyStateChangedEvent`·피격·재장전·경보 수신 때 `BarkPicker`가 `barks.json`에서 상황에 맞는 대사 하나를 연출용 난수로 고른다.
-- 머리 위 0.9m에 흰 글자(그림자 1px), 2초 표시 후 0.3초 페이드. 적 1명당 3초에 1회. 플레이어 화면에 렌더되는 적만.
-- 소음·경보·AI 상태에 아무 영향도 없다. 표시음 `sfx_bark` 1회.
+- 대사 계기: 7.21 이벤트 인지, `EnemyStateChangedEvent`(발견·놓침·수색 종료), 피격, 재장전, 경보 수신. `BarkPicker`가 받는다.
+- 문장: **즉시** 이벤트(7.21 표)와 Qwen이 꺼졌거나 실패·지연된 경우는 `barks.json` 기본 대사를 연출 난수원으로 고른다. 나머지는 7.22의 Qwen 대사를 쓴다.
+- 머리 위 0.9m에 감정별 색 글자(7.22, 그림자 1px), 2초 표시 후 0.3초 페이드. 적 1명당 3초에 1회. 플레이어 화면에 렌더되는 적만.
+- 소음·경보·AI 상태·의심도·이동·공격에 아무 영향도 없다. 표시음 `sfx_bark` 1회.
 
 ### 7.19 대화 (브리핑·디브리핑)
 - 미션 시작 전과 판정 후 `dialogue.json`의 `{map_id}_briefing` / `{map_id}_debrief_success` / `{map_id}_debrief_fail`를 재생. 없으면 건너뛴다.
@@ -479,6 +498,141 @@ for 각 칸 c:
 - 화면: URP 풀스크린 패스 또는 카메라 앞 쿼드로 녹색 단색 + 노이즈 + 비네팅. 켜져 있는 동안 화면용 Global Light2D 강도를 `lighting.nvg_global_intensity`(0.6)로 올린다. 어두운 칸의 적 표시 규칙(7.17)을 해제한다.
 - 밝기 값·AI 감지에는 영향 없음. HUD 무기 칸 아래에 배터리 %.
 
+### 7.21 월드 이벤트와 의심도
+기능 정의와 데이터 표 전체는 `docs/DB설계.md`이고, 수치는 `events.json`(9.11)에서 읽는다.
+
+- **이벤트**: 월드에서 일어난 사건 1건(`WorldEvent`: ID·코드·위치·게임 시각·세기). 코드는 `분류_이름`(`SND` 소리, `CLU` 단서, `SIG` 시야).
+- **인지**: 적마다 센서(청각·시각·무전)가 조건을 검사해 인지 1건을 만든다. 같은 이벤트도 적마다 따로 생긴다.
+- **세기(0~1)**: 소리는 7.6 세기(바닥재·바람 반영), 시각은 `max(0, 1 − d / 인지 거리) × (0.3 + 0.7·L)`(3m 이내면 1). **신뢰도**: 직접 1.0, 무전 0.8.
+- **의심도**(적마다 0~100, 인지 게이지와 별개): 인지 1건마다 `기여 = 점수 × 세기 × 신뢰도`를 더한다.
+  - 같은 이벤트(`eventId`)는 적마다 한 번만 더한다. 직접 듣고 무전으로도 받으면 큰 기여 하나만 남긴다.
+  - 새 기여가 3초 없으면 남은 기여 전체를 비율대로 초당 6씩 줄인다. 이벤트 수명이 끝나면 그 기여만 뺀다.
+  - 발견(게이지 100) 동안은 90 이상을 유지한다. 의심도가 높아도 게이지 100을 대신하지 않는다(공격은 7.7 교전 조건만).
+- **긴장도**(의심도 구간): 평상 0~9 / 주의 10~29 / 수색 30~49 / 적극 수색 50~69 / 교전 준비 70~89 / 높은 위협 90~100. 대사 상황 값과 우선순위(7.22)에 쓴다.
+- **사물 단서(`CLU_*`)**: 시야 각도 안 + DDA 차폐 없음 + 인지 거리 안 + 물체 칸 밝기 0.15 이상(탄피·혈흔은 0.3 이상)일 때 인지. 같은 물체는 적마다 한 번만.
+- **문 기대 상태**: 맵 `open_doors`(9.3)에 있는 문은 평소 열림, 나머지는 평소 닫힘. 마지막 개폐자가 플레이어이고 지금 상태가 평소와 다른 문을 보면 `CLU_DOOR_OPEN`/`CLU_DOOR_CLOSED`. 적이 바꾼 문은 단서가 아니다.
+
+| 코드 | 이벤트 | 발생 조건 | 반경·인지 거리 | 점수 | 수명 | 대사 | 등급 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| `SND_FOOTSTEP` | 발소리 | 플레이어 이동 중 발소리 간격마다 | 걷기 6m / 달리기 9m / 웅크리기 3m | 15 | 15초 | Qwen | M |
+| `SND_DOOR` | 문소리 | 플레이어가 문을 열거나 닫음 | 6m | 25 | 15초 | Qwen | M |
+| `SND_GUNSHOT` | 총소리 | 플레이어 사격 | 무기별 12m / 3m / 25m | 60 (소음권총 30) | 15초 | 즉시 (소음권총은 Qwen) | M |
+| `SND_RELOAD` | 장전소리 | 플레이어 재장전 시작 | 4m | 20 | 15초 | Qwen | M |
+| `SND_SCREAM` | 비명소리 | 적이 총에 맞거나 사망(소음권총 포함, 근접 제압 제외) | 10m | 50 | 15초 | Qwen | M |
+| `SND_WIND` | 바람소리 | 야외(`o`) 칸 돌풍 시작(20초마다 4초) | 야외 칸 전체 | 0 | 4초 | Qwen (잡담만) | S |
+| `SND_CAN` | 깡통 차는 소리 | 플레이어가 웅크리지 않고 깡통(`k`) 칸에 들어감(깡통마다 2초에 1회) | 8m | 30 | 15초 | Qwen | M |
+| `SND_DECOY` | 유인탄 금속음 | 유인탄 착지 후 0.5초마다 3초간 | 10m | 30 | 15초 | Qwen | S |
+| `CLU_CORPSE` | 죽은 동료 발견 | 시체가 시야에 들어옴 | 시야 거리 | 60 | 미션 끝까지 (대응 1회) | Qwen | S |
+| `CLU_DOOR_OPEN` | 문이 열려 있음 | 평소 닫힌 문이 열린 것을 봄 | 8m | 30 | 30초 | Qwen | M |
+| `CLU_DOOR_CLOSED` | 열려 있어야 할 문이 닫힘 | 평소 열린 문이 닫힌 것을 봄 | 8m | 30 | 30초 | Qwen | M |
+| `CLU_CASING` | 탄피 발견 | 플레이어 사격으로 떨어진 탄피를 봄 | 4m | 25 | 60초 | Qwen | M |
+| `CLU_BLOOD` | 혈흔 | 바닥 혈흔을 봄 | 6m | 35 | 60초 | Qwen | M |
+| `CLU_RADIO_HELP` | 무전 지원요청 | 동료의 경보(7.8)가 0.5초 뒤 도착 | 전체 | 원본 점수 × 0.8 | 원본 수명 | Qwen | S |
+| `CLU_WEAPON` | 떨어진 무기 발견 | 죽은 적이 떨군 무기를 봄 | 6m | 40 | 미션 끝까지 (대응 1회) | Qwen | S |
+| `CLU_NO_ANSWER` | 동료 무응답 | 소총병이 45초마다 무전 점검, 죽은 동료가 응답 없음 | 전체(소총병만 점검) | 35 | 30초 | Qwen | S |
+| `SIG_FLASH` | 번쩍임 | 플레이어 총구 화염 0.3초를 봄(시야 각도 무관, 차폐 없음) | 시야 거리 ×2 | 45 | 15초 | Qwen | M |
+| `SIG_INTRUDER` | 침입자 발견 | 게이지 100 도달(`DetectionEvent`) | 시야 거리 | 90 이상 유지 | 8초 | 즉시 | M |
+| `SIG_GLIMPSE` | 움직임 포착 | 게이지 30 이상 100 미만으로 흐릿하게 봄 | 시야 거리 | 시각 누적(초당 최대 20) | 8초 | Qwen | M |
+| `SIG_LIGHT_OFF` | 불 꺼짐 | 시야 안 또는 같은 방의 조명이 꺼짐 | 같은 방 | 40 | 30초 | Qwen | C |
+| `SIG_ALLY_DOWN` | 동료가 쓰러지는 장면 | 시야 안에서 동료가 사망 | 시야 거리 | 80 | 15초 | 즉시 | S |
+| `SIG_DOOR_MOVE` | 문이 저절로 움직임 | 개폐자는 안 보이는데 문이 움직이는 것을 봄 | 시야 거리 | 35 | 15초 | Qwen | M |
+
+- 시체: 시체를 본 적은 그 자리를 단서로 조사하고, 수색으로 넘어가면 수색 시간이 끝날 때까지 순찰로 돌아가지 않는다(7.7 전환 표 그대로). 같은 시체에는 한 번만 반응한다.
+- 떨어진 무기: 적이 죽으면 시체 옆 0.4m에 그 적의 `held_*` 그림을 남긴다. 줍기는 없다.
+- 깡통: 맵 문자 `k`. 이동·시야·총알·빛을 막지 않는다.
+- 동료 무응답: 소총병이 45초마다 점검하고, 그 소총병이 아직 모르는 죽은 동료가 있으면 1건을 만든다.
+- 기록: `WorldEvent`(최근 256건)와 인지(최근 512건)는 메모리 링 버퍼에만 두고 재시작하면 지운다.
+
+### 7.22 상황 대사 (Qwen)
+적이 이벤트를 인지하면 그 순간의 상황을 말로 된 구간값으로 묶어 Qwen에 넘기고, Qwen은 **20자 이내 대사 한 줄 + 감정**을 돌려준다. Qwen 출력은 말풍선과 연출에만 쓴다. 상태 전환·의심도·이동·공격은 7.7·7.21 규칙이 정한다.
+
+**처리 흐름**: 발생 → 인지 → 상황 묶기 → 요청 → 검증 → 표시. AI 판단은 인지에서 끝나고 상황 묶기부터는 대사만 다룬다.
+1. 발생: `WorldEvent` 1건. 2. 인지: 센서가 인지 1건을 만들고 의심도에 더함. 3. 상황 묶기: `BarkContextBuilder`가 인지 1건 + 적 상태로 상황 상태값을 만든다. 4. 요청: 즉시 이벤트는 기본 대사로 바로 6단계. 나머지는 캐시를 보고 없으면 Qwen 대기열에 넣는다. 5. 검증: 아래 표. 실패하면 기본 대사. 6. 표시: `BarkEvent` → 말풍선, 대사 기록.
+
+**상황 상태값(입력)**: 숫자 대신 말로 된 구간값만 넘긴다.
+
+| 묶음 | 필드 | 값 |
+| --- | --- | --- |
+| 사건 | `사건` / `분류` / `알게 된 경로` | 이벤트 한국어 이름 / 소리·단서·시야 / 직접·무전 |
+| 사건 | `방향` | 앞·뒤·왼쪽·오른쪽(정면 기준 90° 4분할, 무전이면 생략) |
+| 사건 | `거리` / `시점` / `반복` | 가까움(4m 미만)·중간(4~10m)·멀음 / 방금(2초 미만)·조금 전(10초 미만)·오래 전 / 처음·두 번째·여러 번(같은 추적 중 같은 코드) |
+| 사건 | `세부` | 이벤트별 허용 필드만(`detail_fields`, 예: 동료 이름·평소 문 상태·바닥) |
+| 적 | `역할` / `성격` | 경비병·소총병 / 성격 이름 |
+| 적 | `업무` | 초소 대기·순찰·확인(조사)·수색·교전 준비(추격·교전)·복귀(순찰 지점으로 돌아가는 중) |
+| 적 | `긴장도` | 7.21 6구간 |
+| 적 | `몸 상태` / `주변 동료` | 멀쩡(체력 70% 이상)·부상(30% 이상)·위독 / 10m 안 살아 있는 동료 없음·한 명·여럿 |
+| 환경 | `장소` / `밝기` / `바람` / `전체 경계` | 실내·야외(적 칸 바닥) / 밝음·어두움(적 칸 밝기 0.5 기준) / 없음·강함 / 평상·경계·전투(7.8) |
+| 기록 | `최근 대사` | 그 적의 최근 대사 최대 5개 |
+
+넣지 않는 값: 플레이어 실제 위치·체력·무기, 의심도 숫자, 다른 적의 상태, 맵 좌표. **추적 번호**는 적이 순찰을 벗어날 때마다 1 늘고, **행동 번호**는 상태가 바뀔 때마다 1 는다.
+
+**출력**: `{"line":"박 상병? 정신 차려!","emotion":"놀람"}`. `line`은 1~20자(공백·문장부호 포함) 한 문장, `emotion`은 `의심`·`놀람`·`긴장`·`분노`·`안도` 중 하나. `llama-server`의 JSON 스키마 제약으로 이 형태만 받는다. 제약을 못 쓰면 한 줄 텍스트만 받고 감정은 이벤트 기본 감정을 쓴다.
+
+**검증** (하나라도 실패하면 기본 대사, 실패 코드를 `qwen_log`에 기록):
+
+| 규칙 | 기준 | 실패 코드 |
+| --- | --- | --- |
+| 길이 | `StringInfo` 글자 수 1~20 | `TOO_LONG` / `EMPTY` |
+| 한 문장 | 줄바꿈 없음. `<think>` 태그·따옴표는 미리 제거 | `MULTI_LINE` |
+| 한국어 | 한글 비율 60% 이상, 영문 단어·숫자 없음(동료 이름 제외) | `NOT_KOREAN` |
+| 정보 누출 금지 | 입력에 없는 고유명사·무기 이름·방향을 말하지 않음(동료 이름은 `세부`에 있을 때만) | `LEAK` |
+| 금지어 | `barks.json`의 `banned_words`(욕설 수위, "AI·모델·플레이어·게임") | `BANNED` |
+| 반복 금지 | 같은 적 최근 5개·전체 최근 10개와 같으면 버림(문장부호·공백 무시) | `REPEAT` |
+| 감정 | 5종이 아니면 이벤트 기본 감정으로 교체(대사는 살림) | — |
+| 상황 일치 | 도착 때 추적 번호·행동 번호·생존·업무가 요청 때와 같음 | `STALE` |
+
+**우선순위·호출 제한**: Qwen에는 한 번에 1건만 보내고 대기열은 4건까지. 넘치면 점수가 낮은 요청부터 기본 대사로 돌린다.
+```
+우선순위 = events.priority × 10 + 긴장도 단계(0~5) × 3 + (카메라 중심 6m 안 ? 5 : 0) − 이번 추적에서 같은 코드로 말한 횟수 × 5
+```
+- 같은 적에게 0.5초 안에 여러 인지가 오면 점수가 가장 높은 하나만 대사로 보낸다(나머지는 의심도에만 반영).
+- 같은 이벤트에 여러 적이 반응하면 카메라 중심에 가장 가까운 적 한 명만 Qwen을 쓰고 나머지는 기본 대사 또는 대사 없음.
+- 잡담(`SND_WIND`, 혼잣말)은 대기열이 비었을 때만 보낸다.
+- 적 1명당 진행 중 요청 1건(새 요청이 이전 요청을 취소), 응답 대기 실제 시간 2초, 최대 출력 토큰 32.
+
+**예외 처리**
+
+| 상황 | 처리 |
+| --- | --- |
+| Qwen 꺼짐·서버 없음 | 모두 기본 대사. 경고 로그 1회 |
+| 2초 초과 | 기본 대사. 늦은 응답은 버리되 검증을 통과하면 캐시에만 저장 |
+| 검증 실패 | 기본 대사, 실패 코드 기록. 연속 5회면 이번 실행 동안 Qwen 중지 |
+| 요청 중 적 사망 | 요청 취소, 응답 버림 |
+| 요청 중 업무 변경 | 응답 버림(`STALE`), 새 상황으로 다시 판단 |
+| 일시정지·대화 중 도착 | 보류 → 재개 때 상황 일치 다시 검사 |
+| 고정 시드 재현 모드 | Qwen 꺼짐, 기본 대사만(13.3) |
+| 기본 대사도 없음 | 대사 없이 진행, 경고 로그. AI 영향 없음 |
+
+**성격**(말투만 바꾸고 AI 수치에는 영향 없음, 맵 `enemies[].persona`가 없으면 스폰 순서로 돌려 배정):
+
+| ID | 이름 | 말투 | 예시(문소리) |
+| --- | --- | --- | --- |
+| `veteran` | 결단한 고참 | 짧고 단정적, 명령조 | "문 쪽이다. 확인한다." |
+| `rookie` | 겁 많은 신참 | 더듬거림, 혼잣말 많음 | "뭐, 무슨 소리지…?" |
+| `grumpy` | 투덜이 | 짜증, 귀찮음 | "또 문이야? 귀찮게…" |
+| `cautious` | 신중한 감시병 | 차분, 상황 보고조 | "문소리 확인, 접근한다." |
+
+**감정별 말풍선**: 의심 흰 글자(끝에 "…" 허용) / 놀람 노랑 글자 + 0.2초 흔들림 / 긴장 흰 글자 + 글자 간격 좁힘 / 분노 빨강 글자 / 안도 회색 글자. 감정은 연출에만 쓴다.
+
+**연결**: Qwen은 같은 PC에서 따로 실행한 OpenAI 호환 로컬 서버다. 기본은 Ollama(`qwen2.5:7b`, 포트 11434)이고 llama.cpp의 `llama-server`(포트 8080)도 `endpoint`만 바꿔 쓸 수 있다. 게임은 서버를 설치·실행하지 않고, `qwen.json`(9.12)의 `127.0.0.1` 주소로 `UnityWebRequest` POST(`/v1/chat/completions`, `response_format`에 JSON 스키마)만 보낸다. 첫 요청은 모델을 불러오느라 수십 초 걸리므로 메인 메뉴에서 1회 미리 요청(`warmup_on_start`)하고, 그 응답은 버린다. 모델 파일은 저장소에 넣지 않는다. 시스템 프롬프트에는 성격 말투, 출력 규격, 20자 제한, 입력에 없는 정보를 말하지 말라는 규칙을 넣는다.
+
+**부가 기능**
+
+| 기능 | 내용 | 등급 |
+| --- | --- | --- |
+| 반복 사건 단계 상승 | `반복` 값으로 말투가 바뀜("뭐지?" → "또야?" → "누가 장난치나!") | S |
+| 반복 방지 | 적별 최근 5개·전체 최근 10개를 프롬프트에 넣고 같은 대사는 버림 | S |
+| 감정 태그·성격 | 위 표 | S |
+| 동료 이름 | 적마다 호칭(`enemies[].callsign`, 예 "박 상병")을 두고 죽은 동료·무응답 대사의 `세부`에 넣음 | S |
+| 대사 캐시 | 같은 상황 키(코드·경로·방향·거리·반복·업무·긴장도·성격)의 통과 대사를 실행 중 메모리에 저장해 재사용 | S |
+| `qwen_log`·F3 상태값 보기 | 요청·응답·지연·결과 코드 기록(최근 200건), F3 통계, F3에서 적을 클릭하면 마지막 입력 JSON·출력·지연·결과 | S |
+| 사전 생성 도구 | 에디터 메뉴 `Tools/Pregenerate Barks`로 상황 키별 대사를 생성·검증해 `barks.json`에 `source: "pregen"`으로 추가 | S |
+| 대기 중 혼잣말 | 초소 대기·순찰 중 60초마다 낮은 우선순위로 잡담(`IDLE_CHATTER`). 잠입 전 적 위치를 귀로 찾는 힌트 | C |
+| 동료 대구 | A의 대사에 10m 안 동료 B가 1초 뒤 짧게 답함(대화 분기가 아니라 한 쌍) | C |
+| 들은 대사 기록 | 일시정지 메뉴에서 최근 대사 20개 다시 보기 | C |
+
+대사는 적이 아는 것만 담으므로 적의 인지 상태를 알려 주는 피드백이 된다. 정보 누출 금지는 버그 방지이자 밸런스 규칙이다.
+
 ---
 
 ## 8. AI는 어떻게 쓰이는가
@@ -486,10 +640,11 @@ for 각 칸 c:
 ### 8.1 구성 한눈에
 ```
 [감각]  SightSensor ──┐  (LightGrid 밝기 반영)
-        HearingSensor ─┼─> AwarenessGauge ─> (의심 30 / 발견 100)
-        DoorClue ──────┘          │
+        HearingSensor ─┼─> AwarenessGauge(발견 100) + SuspicionMeter(의심도·긴장도, 7.21)
+        ClueSensor ────┤          │
+        무전(경보) ────┘          │
                                   v
-[판단]  EnemyBrain (FSM 6상태) ── 전환 표(7.7) ── EnemyStateChangedEvent ─> BarkPicker(연출)
+[판단]  EnemyBrain (FSM 6상태) ── 전환 표(7.7) ── EnemyStateChangedEvent ─> BarkPicker ─> Qwen(연출, 7.22)
                                   │
                   교전 상태일 때만 v
         CombatTree (행동 트리: 엄폐→재장전→접근→사격→추적)
@@ -498,14 +653,14 @@ for 각 칸 c:
 ```
 - **FSM**이 큰 상태를 정하고, **행동 트리**는 교전 안에서 "무엇을 할지"만 고른다.
 - 적은 **자기가 보고 들은 것과 전달받은 정보**로만 움직인다. 플레이어 위치를 직접 읽는 코드는 `SightSensor` 한 곳에만 둔다.
-- 대사는 FSM 결과를 **읽기만** 한다. 대사가 AI 판단에 되먹임되면 안 된다.
+- 대사와 Qwen은 FSM·의심도 결과를 **읽기만** 한다. 대사가 AI 판단에 되먹임되면 안 된다.
 - 모든 상태 전환은 `reason` 문자열과 함께 로그로 남긴다(예: `"sight_gauge_100"`, `"heard_noise"`, `"search_timeout"`).
 
 ### 8.2 구현 규칙
-- 학습형 AI·외부 AI 패키지·NavMesh 금지.
+- AI 판단용 학습형 AI·외부 AI 패키지·NavMesh 금지. Qwen은 Unity 패키지가 아니라 따로 실행한 로컬 `llama-server`이고, 대사 문장 생성에만 쓴다(7.22).
 - AI 난수(순찰 대기, 수색 지점, 조준 오차)는 `Rng`의 AI 난수원에서만. 고정 시드 모드에서 같은 입력이면 같은 상태 전이.
 - `PerfProbe`가 AI 처리 시간을 `Stopwatch`로 잰다.
-- F3: 적 ID·상태·게이지, 시야 부채꼴, A* 경로선, 소리 반경 원, 칸별 밝기 히트맵.
+- F3: 적 ID·상태·게이지·의심도·긴장도, 시야 부채꼴, A* 경로선, 소리 반경 원, 칸별 밝기 히트맵, Qwen 통계(요청·성공·실패 코드별·평균 지연).
 
 ### 8.3 Claude Code가 이 프로젝트에서 AI(자기 자신)를 쓰는 방식
 - 이 문서가 단일 진실 공급원이다. 숫자·표를 따르고, 문서에 없으면 `docs/DECISIONS.md`에 적고 진행한다. 화면 요소는 `docs/reference/` 이미지를 본다.
@@ -579,6 +734,9 @@ for 각 칸 c:
 - `floor_rows`는 `rows`와 같은 크기이며 바닥 종류를 적는다(생략하면 모두 `w`). 벽 칸의 값은 무시한다.
 - `floor_sprites`(선택): 바닥 종류 순서(`w`,`t`,`k`,`o`)대로 쓸 그림 이름. 맵 1은 금속 바닥(`floor_metal_dark`, `floor_metal_plate`, `floor_metal_blue`, `floor_ground`). 바닥 종류의 규칙(전역광·환경음)은 그대로다.
 - `lights[]`의 `color`(선택, `#RRGGBB`, 비우면 `lighting.lamp_color`)와 `no_shadows`(선택, 모니터·경고등 같은 작은 빛).
+- `open_doors`(선택): 평소 열려 있는 문 칸 `[[x, y], ...]`. 게임 시작 때 열린 채로 놓이고 문 기대 상태(7.21)의 기준이 된다. 없으면 모든 문이 평소 닫힘.
+- `lights[].switch`(선택, C): 그 조명을 끄고 켜는 스위치 칸 `[x, y]`.
+- `enemies[].persona`(선택, `veteran`·`rookie`·`grumpy`·`cautious`)와 `enemies[].callsign`(선택, 예 "박 상병"): 상황 대사용(7.22). AI 수치에는 영향 없음.
 - `props[]`(선택): 그림만 있는 장식 `{ "sprite": "deco_...", "pos": [x, y], "rot": 0, "layer": 0|1|2 }`. 0 바닥(혈흔 아래), 1 세운 물건, 2 물건 위. 이동·시야 판정은 같은 자리의 `c`/`C` 칸이 맡는다. 맵 1은 `AssetSource/build_map.ps1`이 소품 그림 크기로 엄폐 칸을 찍어 만든다.
 
 | `rows` 문자 | 뜻 |
@@ -590,6 +748,7 @@ for 각 칸 c:
 | `c` | 낮은 엄폐물(총알 차단, 시야·빛 투과, 이동 불가) |
 | `C` | 높은 엄폐물(시야·총알·빛 차단, 이동 불가) |
 | `f` | 풀숲·나무(이동만 불가, 시야·총알·빛·소리 투과. 야외 장식) |
+| `k` | 깡통(바닥과 같음. 웅크리지 않고 들어가면 `SND_CAN`) |
 | `P` | 플레이어 시작 |
 | `T` | 목표(자료 / 폭탄 위치) |
 | `X` | 탈출 지점 |
@@ -602,7 +761,7 @@ for 각 칸 c:
 | `k` | 카펫 | 실내 0.15 |
 | `o` | 야외(풀·자갈) | 야외 0.08 |
 
-바닥 문자는 그림 파일 `tile_floor_wood` / `tile_floor_tile` / `tile_floor_carpet` / `tile_floor_outdoor`에 대응한다. 야외(`o`) 칸에 있으면 야외 환경음이 켜진다(6장 Phase 7 `AmbienceZone`).
+`rows`의 `k`(깡통)와 `floor_rows`의 `k`(카펫)는 표가 달라 겹치지 않는다. 바닥 문자는 그림 파일 `tile_floor_wood` / `tile_floor_tile` / `tile_floor_carpet` / `tile_floor_outdoor`에 대응한다. 야외(`o`) 칸에 있으면 야외 환경음이 켜진다(6장 Phase 7 `AmbienceZone`).
 
 ```json
 {
@@ -638,7 +797,7 @@ for 각 칸 c:
     { "pos": [12.0, 1.5], "radius_m": 4, "intensity": 0.7 }
   ],
   "enemies": [
-    { "spawn": 1, "type": "guard",    "patrol": [[13.5,5.5],[17.5,5.5],[17.5,2.5]] },
+    { "spawn": 1, "type": "guard",    "patrol": [[13.5,5.5],[17.5,5.5],[17.5,2.5]], "persona": "veteran", "callsign": "박 상병" },
     { "spawn": 2, "type": "rifleman", "patrol": [[3.5,1.5],[5.5,1.5]] },
     { "spawn": 3, "type": "guard",    "patrol": [[17.5,1.5],[14.5,1.5]] }
   ]
@@ -680,11 +839,15 @@ for 각 칸 c:
 {
   "version": 2,
   "gauge": { "suspect": 30, "detect": 100, "rise_per_s": 40, "hold_after_lost_s": 1.0, "fall_per_s": 15,
-             "near_dist_m": 3, "near_mult": 2.0, "run_mult": 1.5, "crouch_mult": 0.5, "door_clue": 30 },
+             "near_dist_m": 3, "near_mult": 2.0, "run_mult": 1.5, "crouch_mult": 0.5 },
+  "suspicion": { "quiet_s": 3, "decay_per_s": 6, "new_clue_min": 10, "detected_floor": 90, "radio_confidence": 0.8,
+                 "tension_bands": [10, 30, 50, 70, 90], "search_points_high": 5, "search_points_high_at": 50 },
+  "clue": { "min_light": 0.15, "small_min_light": 0.3, "radio_check_s": 45, "dropped_weapon_offset_m": 0.4, "can_cooldown_s": 2 },
   "light": { "gauge_min_mult": 0.3, "view_min_mult": 0.5, "shot_flash_s": 0.3,
              "dark_threshold": 0.15, "dark_visible_m": 4 },
-  "hearing": { "wall_mult": 0.5, "react_threshold": 0.2 },
-  "memory": { "sound_clue_s": 8, "last_seen_s": 15 },
+  "hearing": { "wall_mult": 0.5, "react_threshold": 0.2, "floor_mult": { "t": 1.2, "w": 1.0, "k": 0.6, "o": 0.8 } },
+  "wind": { "period_s": 20, "gust_s": 4, "mult": 0.6 },
+  "memory": { "sound_clue_s": 15, "last_seen_s": 8 },
   "combat": { "reaction_delay_s": 0.5, "first_shot_s": 0.8, "accuracy": 0.6, "aim_error_deg": 5, "run_aim_mult": 1.5,
              "cover_search_radius_m": 6, "cover_hp_ratio": 0.4 },
   "patrol": { "wait_min_s": 2, "wait_max_s": 3 },
@@ -733,10 +896,24 @@ for 각 칸 c:
     { "when": "reload",            "lines": ["장전 중! 엄호해!"] },
     { "when": "lost",              "lines": ["어디 숨었어...", "놓쳤다, 찾아!"] },
     { "when": "search_end",        "lines": ["기분 탓인가.", "아무도 없군."] },
-    { "when": "alert_received",    "lines": ["연락 받았다, 간다."] }
-  ]
+    { "when": "alert_received",    "lines": ["연락 받았다, 간다."] },
+    { "when": "SND_DOOR",          "lines": ["문소리?", "누가 문 열었나?"], "emotion": "의심" },
+    { "when": "SND_GUNSHOT",       "lines": ["총소리다!", "어디서 쏜 거야!"], "emotion": "긴장" },
+    { "when": "CLU_CORPSE",        "tension": "any", "persona": "any", "lines": ["이봐, 정신 차려!", "누가 이랬어…"], "emotion": "놀람", "source": "manual" },
+    { "when": "SIG_ALLY_DOWN",     "lines": ["쓰러졌다! 적이다!"], "emotion": "분노" }
+  ],
+  "personas": [
+    { "id": "veteran",  "label": "결단한 고참",   "style": "짧고 단정적, 명령조" },
+    { "id": "rookie",   "label": "겁 많은 신참",  "style": "더듬거림, 혼잣말 많음" },
+    { "id": "grumpy",   "label": "투덜이",        "style": "짜증, 귀찮음" },
+    { "id": "cautious", "label": "신중한 감시병", "style": "차분, 상황 보고조" }
+  ],
+  "banned_words": ["AI", "모델", "플레이어", "게임"]
 }
 ```
+- `when`은 상태 계기(위 8종) 또는 이벤트 코드(7.21). 모든 이벤트 코드에 기본 대사가 1개 이상 있어야 한다(없으면 경고 로그).
+- `tension`(긴장도 이름 또는 `any`)·`persona`(성격 ID 또는 `any`)로 후보를 좁힌다. 생략하면 `any`. 맞는 후보가 없으면 `any` 후보에서 고른다.
+- `emotion`은 그 후보의 감정, `source`는 `manual`(기본) 또는 `pregen`(사전 생성 도구).
 
 ### 9.9 `dialogue.json`
 ```json
@@ -768,6 +945,53 @@ for 각 칸 c:
 ```
 키는 소문자 snake_case, `version`은 정수. 구버전·누락 키는 기본값 + 경고 로그.
 
+### 9.11 `events.json`
+7.21 표 22종을 그대로 담는다. 코드 수정 없이 수치를 바꾼다.
+```json
+{
+  "version": 1,
+  "events": [
+    { "code": "SND_FOOTSTEP", "category": "sound", "name_ko": "발소리", "radius_m": 0, "score": 15, "lifetime_s": 15,
+      "bark": "qwen", "priority": 2, "default_emotion": "의심", "detail_fields": ["바닥"] },
+    { "code": "SND_GUNSHOT", "category": "sound", "name_ko": "총소리", "radius_m": 0, "score": 60, "score_silenced": 30, "lifetime_s": 15,
+      "bark": "instant", "bark_silenced": "qwen", "priority": 4, "default_emotion": "긴장", "detail_fields": [] },
+    { "code": "CLU_CORPSE", "category": "clue", "name_ko": "죽은 동료 발견", "range_m": 0, "score": 60, "lifetime_s": -1, "once": true,
+      "bark": "qwen", "priority": 5, "default_emotion": "놀람", "detail_fields": ["동료 이름"], "min_light": 0.15 }
+  ]
+}
+```
+- `category`: `sound`·`clue`·`sight`. `radius_m`/`range_m`이 0이면 7장 값(발소리·무기 반경, 시야 거리)을 쓴다. `lifetime_s`가 −1이면 미션 끝까지.
+- `bark`: `instant`(기본 대사 즉시)·`qwen`·`chatter`(대기열이 비었을 때만). `priority`는 1~5(7.22 우선순위 식).
+- 우선순위·기본 감정 초기값: `SND_FOOTSTEP` 2 의심, `SND_DOOR` 2 의심, `SND_GUNSHOT` 4 긴장, `SND_RELOAD` 2 의심, `SND_SCREAM` 4 긴장, `SND_WIND` 1 안도, `SND_CAN` 3 놀람, `SND_DECOY` 3 의심, `CLU_CORPSE` 5 놀람, `CLU_DOOR_OPEN` 2 의심, `CLU_DOOR_CLOSED` 2 의심, `CLU_CASING` 2 의심, `CLU_BLOOD` 3 긴장, `CLU_RADIO_HELP` 3 긴장, `CLU_WEAPON` 3 긴장, `CLU_NO_ANSWER` 3 긴장, `SIG_FLASH` 3 놀람, `SIG_INTRUDER` 5 놀람, `SIG_GLIMPSE` 3 의심, `SIG_LIGHT_OFF` 3 놀람, `SIG_ALLY_DOWN` 5 분노, `SIG_DOOR_MOVE` 3 의심.
+- `detail_fields` 초기값: `CLU_CORPSE`·`CLU_NO_ANSWER`·`SIG_ALLY_DOWN`은 `동료 이름`, `CLU_DOOR_OPEN`·`CLU_DOOR_CLOSED`는 `평소 문 상태`, `SND_FOOTSTEP`은 `바닥`, 나머지는 없음.
+
+### 9.12 `qwen.json`
+```json
+{
+  "version": 1,
+  "enabled": true,
+  "endpoint": "http://127.0.0.1:11434/v1/chat/completions",
+  "model": "qwen2.5:7b",
+  "warmup_on_start": true,
+  "timeout_s": 2.0,
+  "max_concurrent": 1,
+  "queue_max": 4,
+  "max_tokens": 32,
+  "temperature": 0.7,
+  "fail_stop_count": 5,
+  "merge_window_s": 0.5,
+  "screen_center_m": 6,
+  "use_json_schema": true,
+  "history_per_npc": 5,
+  "history_global": 10,
+  "log_max": 200,
+  "chatter_interval_s": 60,
+  "reply_delay_s": 1.0,
+  "reply_radius_m": 10
+}
+```
+`endpoint`는 `127.0.0.1`·`localhost`만 허용한다(다른 주소면 경고 후 꺼짐). 파일이 없거나 `enabled`가 false면 기본 대사만 쓴다.
+
 ---
 
 ## 10. 화면 구성
@@ -780,12 +1004,12 @@ for 각 칸 c:
 | 게임(`Game` 씬) | 월드(조명·탐색 기억) + HUD |
 | **HUD 좌하단 통합 패널** | ① 체력(빨강 `#C8323C`)·방탄(하늘색 `#8FD3F0`) 2줄 막대 + 방탄 아이콘 ② 밝기 미터(전구 아이콘 + 초록 눈금) ③ 소음 미터(스피커 아이콘 + 노랑 눈금) ④ 무기 칸: 무기 그림(빨강 윤곽), `탄창 \| 예비`, 탄창 눈금, 무기 이름(금색 테두리). 패널 오른쪽에 자세 실루엣. 야간 투시 켜면 무기 칸에 배터리 % |
 | HUD 좌상단 / 우상단 | 목표 문구·타이머(작게) / 전역 경계 3단계(평상 회색·경계 노랑·전투 빨강) |
-| 월드 위 UI | 조준선(흰 꺾쇠), 상호작용 안내(`[SPACE] 열기`), 적 머리 위 `?`(노랑)·`!`(빨강)·대사(흰 글자) |
+| 월드 위 UI | 조준선(흰 꺾쇠), 상호작용 안내(`[SPACE] 열기`·`[SPACE] 조명`), 적 머리 위 `?`(노랑)·`!`(빨강)·대사(감정별 색, 7.22) |
 | 대화창 | 하단 전체 폭, 위쪽 1px 빨강 선, 초상화 + 빨강 이름표, 대사, 번호 선택지(선택된 줄 빨강 막대) |
-| 일시정지 | 이어하기·설정·메인 메뉴. 소리·AI·타이머 정지 |
+| 일시정지 | 이어하기·설정·메인 메뉴. 소리·AI·타이머 정지. 들은 대사 기록 20개 *(C)* |
 | 설정(오버레이) | 음량 3개, 전체화면, 해상도, 적용·닫기 |
 | 결과 | 성공/실패, 클리어 시간, 발각 횟수, 처치 수, 최고 기록 갱신 여부, 다시 하기·다음 미션·메인 메뉴 |
-| 디버그(F3) | 적 ID·상태·게이지, 시야 부채꼴, A* 경로선, 소리 반경, 밝기 히트맵, 피아 색 원, FPS·AI ms |
+| 디버그(F3) | 적 ID·상태·게이지·의심도·긴장도, 시야 부채꼴, A* 경로선, 소리 반경, 밝기 히트맵, 피아 색 원, FPS·AI ms, Qwen 통계. 적을 클릭하면 마지막 상황 입력 JSON·출력·지연·결과 코드 *(S)* |
 
 UI는 **uGUI**(Canvas Screen Space Overlay, Canvas Scaler 1920×1080 Scale With Screen Size). 픽셀 UI 이미지는 정수 배율(×2)로 표시한다. 폰트는 11.3을 따른다. 한글이 깨지면 DECISIONS에 적고 영문 라벨로 대체.
 
@@ -827,6 +1051,8 @@ Unity 빌드는 `Assets/` 폴더를 실행 중에 읽지 못하므로, 파일 �
 | 혈흔 / 탄피 / 총구 화염 | `#6E0F0F` 얼룩 / `#D9B24C` 2px / 노란 별 0.05초 + 빛 `#FFD38A` 3m | 풀 최대 512 |
 | 총알 궤적 | `#FFE680` 선, 0.1초 | |
 | 목표 / 폭탄 / 탈출 / 유인탄 | 노랑 서류 `#F2C230` / 빨간 상자 `#C8323C` / 초록 윤곽 `#37C871` / 주황 원 `#FF9A3C` | |
+| 깡통 `k` / 조명 스위치 | 회색 원통 `#9A9AA0` 8×8 / 벽면 흰 사각 `#E8E4DA` 8×8 | 스위치는 C |
+| 떨어진 무기 | 그 적의 `held_*` 그림(없으면 회색 막대) | 시체 옆 |
 | 탐색 기억 오버레이 | 미탐색 알파 1.0, 기억 알파 0.65(회색조), 현재 시야 알파 0 | 조명 위에 덮음 |
 | 조준선 | 흰 꺾쇠 4개 | |
 | 인지 아이콘 | `?` 노랑 / `!` 빨강 | |
@@ -854,6 +1080,10 @@ Unity 빌드는 `Assets/` 폴더를 실행 중에 읽지 못하므로, 파일 �
 | `sfx_alert` | 발각 경고음 | 1.0s | 880Hz 두 번 |
 | `sfx_bark` | 대사 표시음 | 0.15s | 낮은 웅얼(저역 노이즈 + 사인) |
 | `sfx_decoy` | 유인탄 | 0.3s | 금속 틱 반복 |
+| `sfx_can` | 깡통 차는 소리 | 0.25s | 고음 금속 틱 + 짧은 굴림 노이즈 |
+| `sfx_scream` | 적 비명 | 0.3s | 하강 톤 + 노이즈 |
+| `sfx_switch` | 조명 스위치 (C) | 0.05s | 클릭 |
+| `amb_wind_gust` | 돌풍(야외에 있을 때만, 4초) | 4s | 저역 필터 노이즈, 0.5초 페이드 인·아웃 |
 | `sfx_pickup` | 목표 확보 | 0.3s | 상승 톤 |
 | `sfx_nvg_on` / `sfx_nvg_off` | 야간 투시 | 0.2s | 상승 / 하강 전자음 |
 | `sfx_dialogue_next` | 대화 넘김 | 0.05s | 클릭 |
@@ -900,17 +1130,19 @@ HUD·대화창·메뉴·적 대사는 같은 폰트 하나로 통일한다. 디�
 | --- | --- |
 | GridTests | DDA가 벽·닫힌 문·높은 엄폐물에서 멈춤, 낮은 엄폐물·창문은 시야 통과·총알 차단, 풀숲은 시야·총알 통과, 모서리 |
 | AStarTests | 최단 경로, 대각 모서리 금지, 문 비용, 창문·풀숲 통과 불가, 도달 불가, 재시도 |
-| SoundTests | 거리별 세기, 벽 1·2개, 창문, 닫힌/열린 문, 임계값 0.2 |
+| SoundTests | 거리별 세기, 벽 1·2개, 창문, 닫힌/열린 문, 임계값 0.2, 새 소음 종류(문·장전·비명·깡통), 바닥재 배율, 돌풍 ×0.6 |
+| EventTests | `events.json` 22종 읽기·누락 기본값, 사물 단서 조건(시야·차폐·거리·밝기), 같은 물체 1회, 문 기대 상태, 무응답 점검 45초, 시체·떨어진 무기 |
 | LightGridTests | 전역광만 있을 때 값, 조명 거리 감쇠, 벽·닫힌 문 뒤는 조명 제외, 문 열면 부분 재계산 결과가 전체 재계산과 같음, 사격 밝기 0.3초 |
-| AwarenessTests | 게이지 상승·유지·하강, 배율(근접·달리기·웅크리기·밝기), 3m 이내 밝기 무시, 소리로 30 |
+| AwarenessTests | 게이지 상승·유지·하강, 배율(근접·달리기·웅크리기·밝기), 3m 이내 밝기 무시, 의심도 기여(점수×세기×신뢰도)·중복 제거(직접+무전)·3초 뒤 감쇠·수명 만료·발견 중 90 유지, 긴장도 구간 |
 | HealthTests | 방탄 먼저 감소, 방탄 초과 피해가 체력으로 넘어감, 사망 1회 |
-| FsmTests | 7.7 전환 표 모든 줄, 우선순위 |
+| FsmTests | 7.7 전환 표 모든 줄(새 단서 포함), 우선순위 |
+| BarkTests | 상황 상태값 구간값과 금지 필드 없음, 검증 규칙 8종과 실패 코드, 우선순위 식·0.5초 합치기·대기열 4·같은 사건 1명, 타임아웃·STALE·사망 취소·연속 5회 실패 중지, Qwen 꺼짐에서 기본 대사, 대사 유무와 무관하게 상태 전이·의심도 같음 |
 | MissionResultTests | 7.9 네 가지 동시 사건, 한 번만 판정 |
 | DetectionCountTests | 동시 발견 1회, 전원 순찰 복귀 후 +1, 경보 제외 |
 | RecordsTests | 비교 순서, 동점 유지, 미션·난이도별, 대화 시간 제외 |
 | SaveTests | 실패 재시도, `.corrupt`, `.bak`, 동의 후 초기화 |
 | MapValidatorTests | 4개 맵 도달 가능성·목표 개수·문 연결·밝은 칸 비율 30~60% |
-| ConfigTests | `barks.json`·`dialogue.json`·`game.json`의 `lighting` 누락 시 기본값, `credits.txt` 없을 때 기본 문구, 대사·총구 화염·혈흔 선택이 AI 난수원을 쓰지 않음 |
+| ConfigTests | `barks.json`·`dialogue.json`·`events.json`·`qwen.json`·`game.json`의 `lighting` 누락 시 기본값, `qwen.json` 로컬 주소 외 거부, `credits.txt` 없을 때 기본 문구, 대사·총구 화염·혈흔 선택이 AI 난수원을 쓰지 않음 |
 
 ### 13.2 `docs/VERIFY.md` 체크리스트
 - [ ] 이동 모드별 소음 반경이 6m·9m·3m이고 HUD 소음 미터·자세 실루엣이 따라 바뀐다
@@ -923,7 +1155,10 @@ HUD·대화창·메뉴·적 대사는 같은 폰트 하나로 통일한다. 디�
 - [ ] 같은 상황의 적 상태 전환이 FSM 표와 같다
 - [ ] 소리는 벽·닫힌 문·창문 1개마다 절반, 열린 문은 그대로
 - [ ] A* 경로가 벽 모서리를 대각선으로 통과하지 않고 닫힌 문은 열고 지나간다
-- [ ] 대사가 상태 전환 때 뜨고 적 1명당 3초에 1회를 넘지 않으며, 대사를 꺼도 상태 전이 로그가 같다
+- [ ] 대사가 상태 전환·이벤트 인지 때 뜨고 적 1명당 3초에 1회를 넘지 않으며, 대사·Qwen을 꺼도 상태 전이 로그가 같다
+- [ ] Qwen 서버가 없거나 2초를 넘기면 기본 대사가 뜨고, Qwen 대사는 20자 이내 한국어 한 줄이며 플레이어 위치·무기를 말하지 않는다
+- [ ] 문·장전·깡통·비명 소리와 탄피·혈흔·열린 문·떨어진 무기·시체를 본 적이 조사하러 오고, 같은 사건을 직접+무전으로 알아도 의심도가 한 번만 오른다(F3)
+- [ ] 돌풍 중 야외 소리가 약해지고, 카펫 위 발소리가 타일보다 작다
 - [ ] 문 앞 1.2m에서 `[SPACE] 열기`가 뜨고 Space로 열린다
 - [ ] 브리핑 중 타이머·AI가 멈추고, 클리어 시간에 대화 시간이 빠진다
 - [ ] 같은 프레임 승패 4가지 결과가 표와 같다
@@ -939,7 +1174,7 @@ HUD·대화창·메뉴·적 대사는 같은 폰트 하나로 통일한다. 디�
 - [ ] 크레딧 화면 문구가 `ASSET_CREDITS.md` 5장과 같고, 사용한 CC-BY 에셋의 지정 문구가 모두 있다
 
 ### 13.3 고정 시드 재현
-`fixed_seed_enabled`가 true면 AI 난수원을 `fixed_seed`로 초기화한다. 입력을 파일(`docs/evidence/input_replay.json`)로 기록·재생해 같은 입력으로 3회 실행, `StateTransitionLogger` 출력을 비교한다. 대화는 리플레이 때 자동으로 넘긴다.
+`fixed_seed_enabled`가 true면 AI 난수원을 `fixed_seed`로 초기화한다. 입력을 파일(`docs/evidence/input_replay.json`)로 기록·재생해 같은 입력으로 3회 실행, `StateTransitionLogger` 출력을 비교한다. 대화는 리플레이 때 자동으로 넘긴다. 고정 시드 모드에서는 Qwen을 끄고 기본 대사만 쓴다.
 
 ### 13.4 증거 (`docs/evidence/`)
 결과표, 상태 전이 로그 3회분, 주요 스크린샷, **목표 화면 비교 이미지 3장**(`compare_01_combat.png` 등, 왼쪽 목표·오른쪽 우리 게임), 미션별 클리어 영상 1건(불가능하면 DECISIONS에 사유 + 로그·스크린샷).
@@ -954,13 +1189,13 @@ HUD·대화창·메뉴·적 대사는 같은 폰트 하나로 통일한다. 디�
 4. S 기능은 Phase 9 순서대로 가능한 만큼 구현되어 있고, 못 한 것은 `DECISIONS.md`에 사유가 있다.
 5. EditMode 테스트가 모두 통과한다.
 6. 7.14 성능 기준과 13.2 체크리스트 결과가 `VERIFY.md`에 기록되어 있다.
-7. 에셋이 없어도 실행되며, 외부 에셋을 쓴 경우 `ASSET_CREDITS.md`에 출처가 있고(상태 `사용`), CC-BY 에셋의 지정 문구가 크레딧 화면에 나온다.
+7. 에셋·Qwen 서버가 없어도 실행되며, 외부 에셋을 쓴 경우 `ASSET_CREDITS.md`에 출처가 있고(상태 `사용`), CC-BY 에셋의 지정 문구가 크레딧 화면에 나온다.
 8. `README.md`에 실행·조작(7.1)·빌드·폴더 구조 설명이 있다.
 9. git 이력에 Phase별 커밋이 남아 있다.
 10. 목표 화면 비교 이미지 3장이 `docs/evidence/`에 있다.
 
 ## 15. 금지 사항 요약
-인질·섬광·잠금 문·측면 이동·관통·피격 경직·대화 분기·시체 발견 반응 구현 금지 / NavMesh·외부 AI 패키지 금지 / `Physics2D`로 시야·소리·총알·밝기 판정 금지 / 수치 하드코딩 금지 / 구독 해제 누락 금지 / 11.5 허용 라이선스(CC0·CC BY·OFL) 밖의 에셋(CC-BY-SA·GPL·NC·재배포 금지·표기 없음·유료)과 목표 화면 게임의 그림 사용 금지 / CC-BY 에셋의 크레딧 누락 금지 / 대사·연출이 AI 판단이나 AI 난수에 영향 주는 것 금지 / 사용자에게 질문하며 멈추기 금지(문서 기준으로 결정하고 기록).
+인질·섬광·잠금 문·측면 이동·관통·피격 경직·대화 분기 구현 금지 / NavMesh·외부 AI 패키지 금지 / Qwen 출력이 AI 상태·의심도·이동·공격을 바꾸는 것 금지 / 로컬(`127.0.0.1`) 밖으로 Qwen 요청 금지 / `Physics2D`로 시야·소리·총알·밝기 판정 금지 / 수치 하드코딩 금지 / 구독 해제 누락 금지 / 11.5 허용 라이선스(CC0·CC BY·OFL) 밖의 에셋(CC-BY-SA·GPL·NC·재배포 금지·표기 없음·유료)과 목표 화면 게임의 그림 사용 금지 / CC-BY 에셋의 크레딧 누락 금지 / 대사·Qwen·연출이 AI 판단이나 AI 난수에 영향 주는 것 금지 / 사용자에게 질문하며 멈추기 금지(문서 기준으로 결정하고 기록).
 
 ---
 

@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="28" result="Passed" total="28" passed="28" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-11-05 16:46:31Z" end-time="2026-11-05 16:47:17Z" duration="46.032962">
+  <test-suite type="TestSuite" id="1040" name="NullTraceAI" fullname="NullTraceAI" runstate="Runnable" testcasecount="28" result="Passed" start-time="2026-11-05 16:46:31Z" end-time="2026-11-05 16:47:17Z" duration="46.032962" total="28" passed="28" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="PlayMode" />
+    </properties>
+    <test-suite type="Assembly" id="1033" name="NullTrace.AI.PlayModeTests.dll" fullname="D:/유니티 과제/게임인공지능/NullTraceAI/Library/ScriptAssemblies/NullTrace.AI.PlayModeTests.dll" runstate="Runnable" testcasecount="28" result="Passed" start-time="2026-11-05 16:46:31Z" end-time="2026-11-05 16:47:17Z" duration="46.028979" total="28" passed="28" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="47324" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+        <property name="EditorOnly" value="False" />
+      </properties>
+      <test-suite type="TestSuite" id="1034" name="NullTrace" fullname="NullTrace" runstate="Runnable" testcasecount="28" result="Passed" start-time="2026-11-05 16:46:31Z" end-time="2026-11-05 16:47:17Z" duration="46.028540" total="28" passed="28" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="TestSuite" id="1035" name="AI" fullname="NullTrace.AI" runstate="Runnable" testcasecount="28" result="Passed" start-time="2026-11-05 16:46:31Z" end-time="2026-11-05 16:47:17Z" duration="46.028241" total="28" passed="28" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="TestSuite" id="1036" name="Tests" fullname="NullTrace.AI.Tests" runstate="Runnable" testcasecount="28" result="Passed" start-time="2026-11-05 16:46:31Z" end-time="2026-11-05 16:47:17Z" duration="46.027924" total="28" passed="28" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-suite type="TestFixture" id="1001" name="CrowdLoadTests" fullname="NullTrace.AI.Tests.CrowdLoadTests" classname="NullTrace.AI.Tests.CrowdLoadTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-11-05 16:46:31Z" end-time="2026-11-05 16:46:31Z" duration="0.876211" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1003" name="FortyNpcDiscoveryReplanningAndRadioLoad" fullname="NullTrace.AI.Tests.CrowdLoadTests.FortyNpcDiscoveryReplanningAndRadioLoad" methodname="FortyNpcDiscoveryReplanningAndRadioLoad" classname="NullTrace.AI.Tests.CrowdLoadTests" runstate="Runnable" seed="1565803073" result="Passed" start-time="2026-11-05 16:46:31Z" end-time="2026-11-05 16:46:31Z" duration="0.553528" asserts="0">
+                <properties>
+                  <property name="_JOINTYPE" value="UnityCombinatorial" />
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1002" name="TwentyNpcDiscoveryReplanningAndRadioLoad" fullname="NullTrace.AI.Tests.CrowdLoadTests.TwentyNpcDiscoveryReplanningAndRadioLoad" methodname="TwentyNpcDiscoveryReplanningAndRadioLoad" classname="NullTrace.AI.Tests.CrowdLoadTests" runstate="Runnable" seed="980307176" result="Passed" start-time="2026-11-05 16:46:31Z" end-time="2026-11-05 16:46:31Z" duration="0.315529" asserts="0">
+                <properties>
+                  <property name="_JOINTYPE" value="UnityCombinatorial" />
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-suite type="TestFixture" id="1004" name="DialogueLifecycleTests" fullname="NullTrace.AI.Tests.DialogueLifecycleTests" classname="NullTrace.AI.Tests.DialogueLifecycleTests" runstate="Runnable" testcasecount="4" result="Passed" start-time="2026-11-05 16:46:31Z" end-time="2026-11-05 16:46:32Z" duration="0.262012" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1005" name="ActualDisableCancelsRequestAndDiscardsLateResponse" fullname="NullTrace.AI.Tests.DialogueLifecycleTests.ActualDisableCancelsRequestAndDiscardsLateResponse" methodname="ActualDisableCancelsRequestAndDiscardsLateResponse" classname="NullTrace.AI.Tests.DialogueLifecycleTests" runstate="Runnable" seed="2050839810" result="Passed" start-time="2026-11-05 16:46:31Z" end-time="2026-11-05 16:46:31Z" duration="0.005592" asserts="0">
+                <properties>
+                  <property name="_JOINTYPE" value="UnityCombinatorial" />
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1006" name="ActualPauseHoldsCompletedOutputUntilResume" fullname="NullTrace.AI.Tests.DialogueLifecycleTests.ActualPauseHoldsCompletedOutputUntilResume" methodname="ActualPauseHoldsCompletedOutputUntilResume" classname="NullTrace.AI.Tests.DialogueLifecycleTests" runstate="Runnable" seed="745739975" result="Passed" start-time="2026-11-05 16:46:31Z" end-time="2026-11-05 16:46:32Z" duration="0.101999" asserts="0">
+                <properties>
+                  <property name="_JOINTYPE" value="UnityCombinatorial" />
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1008" name="GenerationLimitUsesFallbackAndCancelledWorkKeepsSlotUntilActuallyFinished" fullname="NullTrace.AI.Tests.DialogueLifecycleTests.GenerationLimitUsesFallbackAndCancelledWorkKeepsSlotUntilActuallyFinished" methodname="GenerationLimitUsesFallbackAndCancelledWorkKeepsSlotUntilActuallyFinished" classname="NullTrace.AI.Tests.DialogueLifecycleTests" runstate="Runnable" seed="176448332" result="Passed" start-time="2026-11-05 16:46:32Z" end-time="2026-11-05 16:46:32Z" duration="0.001944" asserts="0">
+                <properties>
+                  <property name="_JOINTYPE" value="UnityCombinatorial" />
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1007" name="PausedTimeoutUsesOneFallbackAndLateResultCannotSpeakAgain" fullname="NullTrace.AI.Tests.DialogueLifecycleTests.PausedTimeoutUsesOneFallbackAndLateResultCannotSpeakAgain" methodname="PausedTimeoutUsesOneFallbackAndLateResultCannotSpeakAgain" classname="NullTrace.AI.Tests.DialogueLifecycleTests" runstate="Runnable" seed="1334092728" result="Passed" start-time="2026-11-05 16:46:32Z" end-time="2026-11-05 16:46:32Z" duration="0.151131" asserts="0">
+                <properties>
+                  <property name="_JOINTYPE" value="UnityCombinatorial" />
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-suite type="TestFixture" id="1009" name="IntegrationTests" fullname="NullTrace.AI.Tests.IntegrationTests" classname="NullTrace.AI.Tests.IntegrationTests" runstate="Runnable" testcasecount="20" result="Passed" start-time="2026-11-05 16:46:32Z" end-time="2026-11-05 16:47:13Z" duration="41.734765" total="20" passed="20" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1024" name="BusAndAgentReactivationDoNotDuplicateSubscriptions" fullname="NullTrace.AI.Tests.IntegrationTests.BusAndAgentReactivationDoNotDuplicateSubscriptions" methodname="BusAndAgentReactivationDoNotDuplicateSubscriptions" classname="NullTrace.AI.Tests.IntegrationTests" runstate="Runnable" seed="70152150" result="Passed" start-time="2026-11-05 16:46:32Z" end-time="2026-11-05 16:46:32Z" duration="0.604366" asserts="0">
+                <properties>
+                  <property name="_JOINTYPE" value="UnityCombinatorial" />
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1011" name="DirectIdentifiedEnemyCanBeAttackedBeforeWeakClueProtectionExpires" fullname="NullTrace.AI.Tests.IntegrationTests.DirectIdentifiedEnemyCanBeAttackedBeforeWeakClueProtectionExpires" methodname="DirectIdentifiedEnemyCanBeAttackedBeforeWeakClueProtectionExpires" classname="NullTrace.AI.Tests.IntegrationTests" runstate="Runnable" seed="551853218" result="Passed" start-time="2026-11-05 16:46:32Z" end-time="2026-11-05 16:46:33Z" duration="0.212507" asserts="0">
+                <properties>
+                  <property name="_JOINTYPE" value="UnityCombinatorial" />
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1025" name="DoorRebuildUnblocksPathAndAgentResumes" fullname="NullTrace.AI.Tests.IntegrationTests.DoorRebuildUnblocksPathAndAgentResumes" methodname="DoorRebuildUnblocksPathAndAgentResumes" classname="NullTrace.AI.Tests.IntegrationTests" runstate="Runnable" seed="2097551619" result="Passed" start-time="2026-11-05 16:46:33Z" end-time="2026-11-05 16:46:35Z" duration="2.440341" asserts="0">
+                <properties>
+                  <property name="_JOINTYPE" value="UnityCombinatorial" />
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1027" name="FallingSuspicionFromThirtyFiveToEightStopsSearch" fullname="NullTrace.AI.Tests.IntegrationTests.FallingSuspicionFromThirtyFiveToEightStopsSearch" methodname="FallingSuspicionFromThirtyFiveToEightStopsSearch" classname="NullTrace.AI.Tests.IntegrationTests" runstate="Runnable" seed="1522401857" result="Passed" start-time="2026-11-05 16:46:35Z" end-time="2026-11-05 16:46:39Z" duration="4.493689" asserts="0">
+                <properties>
+                  <property name="_JOINTYPE" value="UnityCombinatorial" />
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1028" name="IncidentDuringPostReturnRestoresPostDutyAndCompletesOnlyAtPost" fullname="NullTrace.AI.Tests.IntegrationTests.IncidentDuringPostReturnRestoresPostDutyAndCompletesOnlyAtPost" methodname="IncidentDuringPostReturnRestoresPostDutyAndCompletesOnlyAtPost" classname="NullTrace.AI.Tests.IntegrationTests" runstate="Runnable" seed="1187083030" result="Passed" start-time="2026-11-05 16:46:39Z" end-time="2026-11-05 16:46:44Z" duration="4.947282" asserts="0">
+                <properties>
+                  <property name="_JOINTYPE" value="UnityCombinatorial" />
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1014" name="LockedDoorIsNotOpenedAndNpcUsesAvailableDetour" fullname="NullTrace.AI.Tests.IntegrationTests.LockedDoorIsNotOpenedAndNpcUsesAvailableDetour" methodname="LockedDoorIsNotOpenedAndNpcUsesAvailableDetour" classname="NullTrace.AI.Tests.IntegrationTests" runstate="Runnable" seed="1442240464" result="Passed" start-time="2026-11-05 16:46:44Z" end-time="2026-11-05 16:46:46Z" duration="1.828906" asserts="0">
+                <properties>
+                  <property name="_JOINTYPE" value="UnityCombinatorial" />
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1015" name="LockedOnlyPassageDefendsWithoutNewEpisodeAndUnlockResumesPatrol" fullname="NullTrace.AI.Tests.IntegrationTests.LockedOnlyPassageDefendsWithoutNewEpisodeAndUnlockResumesPatrol" methodname="LockedOnlyPassageDefendsWithoutNewEpisodeAndUnlockResumesPatrol" classname="NullTrace.AI.Tests.IntegrationTests" runstate="Runnable" seed="371023875" result="Passed" start-time="2026-11-05 16:46:46Z" end-time="2026-11-05 16:46:54Z" duration="7.766368" asserts="0">
+                <properties>
+                  <property name="_JOINTYPE" value="UnityCombinatorial" />
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1026" name="NoisePublishedBeforeNpcUpdateInSameFrameIsHeard" fullname="NullTrace.AI.Tests.IntegrationTests.NoisePublishedBeforeNpcUpdateInSameFrameIsHeard" methodname="NoisePublishedBeforeNpcUpdateInSameFrameIsHeard" classname="NullTrace.AI.Tests.IntegrationTests" runstate="Runnable" seed="1281397272" result="Passed" start-time="2026-11-05 16:46:54Z" end-time="2026-11-05 16:46:54Z" duration="0.002398" asserts="0">
+                <properties>
+                  <property name="_JOINTYPE" value="UnityCombinatorial" />
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1013" name="NpcPlansThroughOrdinaryDoorButOpensOnlyWhenNearAndThenPasses" fullname="NullTrace.AI.Tests.IntegrationTests.NpcPlansThroughOrdinaryDoorButOpensOnlyWhenNearAndThenPasses" methodname="NpcPlansThroughOrdinaryDoorButOpensOnlyWhenNearAndThenPasses" classname="NullTrace.AI.Tests.IntegrationTests" runstate="Runnable" seed="266250851" result="Passed" start-time="2026-11-05 16:46:54Z" end-time="2026-11-05 16:46:55Z" duration="1.439792" asserts="0">
+                <properties>
+                  <property name="_JOINTYPE" value="UnityCombinatorial" />
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1021" name="PatrolActuallyDetoursAroundCollider" fullname="NullTrace.AI.Tests.IntegrationTests.PatrolActuallyDetoursAroundCollider" methodname="PatrolActuallyDetoursAroundCollider" classname="NullTrace.AI.Tests.IntegrationTests" runstate="Runnable" seed="1389362294" result="Passed" start-time="2026-11-05 16:46:55Z" end-time="2026-11-05 16:46:57Z" duration="1.966448" asserts="0">
+                <properties>
+                  <property name="_JOINTYPE" value="UnityCombinatorial" />
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1012" name="PermanentlyBlockedReturnDefendsInPlaceThenResumesOriginalAnchor" fullname="NullTrace.AI.Tests.IntegrationTests.PermanentlyBlockedReturnDefendsInPlaceThenResumesOriginalAnchor" methodname="PermanentlyBlockedReturnDefendsInPlaceThenResumesOriginalAnchor" classname="NullTrace.AI.Tests.IntegrationTests" runstate="Runnable" seed="763461576" result="Passed" start-time="2026-11-05 16:46:57Z" end-time="2026-11-05 16:47:03Z" duration="6.001581" asserts="0">
+                <properties>
+                  <property name="_JOINTYPE" value="UnityCombinatorial" />
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1029" name="RadioBecomesPersonalKnowledgeOnlyAfterDelivery" fullname="NullTrace.AI.Tests.IntegrationTests.RadioBecomesPersonalKnowledgeOnlyAfterDelivery" methodname="RadioBecomesPersonalKnowledgeOnlyAfterDelivery" classname="NullTrace.AI.Tests.IntegrationTests" runstate="Runnable" seed="1732851454" result="Passed" start-time="2026-11-05 16:47:03Z" end-time="2026-11-05 16:47:04Z" duration="0.502591" asserts="0">
+                <properties>
+                  <property name="_JOINTYPE" value="UnityCombinatorial" />
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1016" name="RadioBurstCoalescesDuplicatesBoundsQueueAndEventuallyDrains" fullname="NullTrace.AI.Tests.IntegrationTests.RadioBurstCoalescesDuplicatesBoundsQueueAndEventuallyDrains" methodname="RadioBurstCoalescesDuplicatesBoundsQueueAndEventuallyDrains" classname="NullTrace.AI.Tests.IntegrationTests" runstate="Runnable" seed="377916283" result="Passed" start-time="2026-11-05 16:47:04Z" end-time="2026-11-05 16:47:05Z" duration="1.262707" asserts="0">
+                <properties>
+                  <property name="_JOINTYPE" value="UnityCombinatorial" />
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1023" name="ReplacingVisualDoesNotInterruptLogicOrDebugView" fullname="NullTrace.AI.Tests.IntegrationTests.ReplacingVisualDoesNotInterruptLogicOrDebugView" methodname="ReplacingVisualDoesNotInterruptLogicOrDebugView" classname="NullTrace.AI.Tests.IntegrationTests" runstate="Runnable" seed="967218480" result="Passed" start-time="2026-11-05 16:47:05Z" end-time="2026-11-05 16:47:06Z" duration="0.601522" asserts="0">
+                <properties>
+                  <property name="_JOINTYPE" value="UnityCombinatorial" />
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1019" name="SoundInvestigatesPublishedPositionWithoutTrackingHiddenTarget" fullname="NullTrace.AI.Tests.IntegrationTests.SoundInvestigatesPublishedPositionWithoutTrackingHiddenTarget" methodname="SoundInvestigatesPublishedPositionWithoutTrackingHiddenTarget" classname="NullTrace.AI.Tests.IntegrationTests" runstate="Runnable" seed="967029651" result="Passed" start-time="2026-11-05 16:47:06Z" end-time="2026-11-05 16:47:07Z" duration="0.752662" asserts="0">
+                <properties>
+                  <property name="_JOINTYPE" value="UnityCombinatorial" />
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1022" name="TargetReplacementDisableDeathAndDestroyAreSafe" fullname="NullTrace.AI.Tests.IntegrationTests.TargetReplacementDisableDeathAndDestroyAreSafe" methodname="TargetReplacementDisableDeathAndDestroyAreSafe" classname="NullTrace.AI.Tests.IntegrationTests" runstate="Runnable" seed="694083816" result="Passed" start-time="2026-11-05 16:47:07Z" end-time="2026-11-05 16:47:07Z" duration="0.401268" asserts="0">
+                <properties>
+                  <property name="_JOINTYPE" value="UnityCombinatorial" />
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1020" name="ThreeLightLevelsAffectActualPerception" fullname="NullTrace.AI.Tests.IntegrationTests.ThreeLightLevelsAffectActualPerception" methodname="ThreeLightLevelsAffectActualPerception" classname="NullTrace.AI.Tests.IntegrationTests" runstate="Runnable" seed="1964593912" result="Passed" start-time="2026-11-05 16:47:07Z" end-time="2026-11-05 16:47:07Z" duration="0.001892" asserts="0">
+                <properties>
+                  <property name="_JOINTYPE" value="UnityCombinatorial" />
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1017" name="VisionToCombatLossSearchAndCalm" fullname="NullTrace.AI.Tests.IntegrationTests.VisionToCombatLossSearchAndCalm" methodname="VisionToCombatLossSearchAndCalm" classname="NullTrace.AI.Tests.IntegrationTests" runstate="Runnable" seed="1765196419" result="Passed" start-time="2026-11-05 16:47:07Z" end-time="2026-11-05 16:47:10Z" duration="3.201363" asserts="0">
+                <properties>
+                  <property name="_JOINTYPE" value="UnityCombinatorial" />
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1018" name="WallBlocksDetectionAndFireEvenAfterCombat" fullname="NullTrace.AI.Tests.IntegrationTests.WallBlocksDetectionAndFireEvenAfterCombat" methodname="WallBlocksDetectionAndFireEvenAfterCombat" classname="NullTrace.AI.Tests.IntegrationTests" runstate="Runnable" seed="827824696" result="Passed" start-time="2026-11-05 16:47:10Z" end-time="2026-11-05 16:47:11Z" duration="1.101128" asserts="0">
+                <properties>
+                  <property name="_JOINTYPE" value="UnityCombinatorial" />
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1010" name="WeakClueProtectionExpiresByTimeWithoutNextPatrolArrival" fullname="NullTrace.AI.Tests.IntegrationTests.WeakClueProtectionExpiresByTimeWithoutNextPatrolArrival" methodname="WeakClueProtectionExpiresByTimeWithoutNextPatrolArrival" classname="NullTrace.AI.Tests.IntegrationTests" runstate="Runnable" seed="2145989524" result="Passed" start-time="2026-11-05 16:47:11Z" end-time="2026-11-05 16:47:13Z" duration="2.202487" asserts="0">
+                <properties>
+                  <property name="_JOINTYPE" value="UnityCombinatorial" />
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-suite type="TestFixture" id="1030" name="SandboxRunTests" fullname="NullTrace.AI.Tests.SandboxRunTests" classname="NullTrace.AI.Tests.SandboxRunTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-11-05 16:47:13Z" end-time="2026-11-05 16:47:17Z" duration="3.153800" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1031" name="SavedSandboxRunsCapturesAndControlsWork" fullname="NullTrace.AI.Tests.SandboxRunTests.SavedSandboxRunsCapturesAndControlsWork" methodname="SavedSandboxRunsCapturesAndControlsWork" classname="NullTrace.AI.Tests.SandboxRunTests" runstate="Runnable" seed="423587292" result="Passed" start-time="2026-11-05 16:47:13Z" end-time="2026-11-05 16:47:17Z" duration="3.078455" asserts="0">
+                <properties>
+                  <property name="_JOINTYPE" value="UnityCombinatorial" />
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1032" name="TwentyAgentCpuSample" fullname="NullTrace.AI.Tests.SandboxRunTests.TwentyAgentCpuSample" methodname="TwentyAgentCpuSample" classname="NullTrace.AI.Tests.SandboxRunTests" runstate="Runnable" seed="269763105" result="Passed" start-time="2026-11-05 16:47:17Z" end-time="2026-11-05 16:47:17Z" duration="0.074694" asserts="0">
+                <properties>
+                  <property name="_JOINTYPE" value="UnityCombinatorial" />
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <output><![CDATA[Saving results to: C:/Users/max03/AppData/LocalLow/DefaultCompany/NullTraceAI\TestResults.xml
+]]></output>
+              </test-case>
+            </test-suite>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

@@ -4,9 +4,10 @@
 
 ## 문서 우선순위
 1. `docs/MASTER_PROMPT.md` — 규칙·수치·데이터 형식·개발 순서(Phase)
-2. `docs/요구사항 정의서.md` — 팀 결정 #1~#30 (바뀌면 여기부터 고친다)
-3. `docs/기능 정의서.md` — 기능별 동작 규칙
-4. `docs/ASSET_DIRECTION.md` + `docs/reference/*.png` — 화면 모습(색·배치·연출)의 기준
+2. `docs/요구사항 정의서.md` — 팀 결정 #1~#32 (바뀌면 여기부터 고친다)
+3. `docs/DB설계.md` — 월드 이벤트 22종·Qwen 상황 대사 기능 정의와 데이터 표
+4. `docs/기능 정의서.md` — 기능별 동작 규칙
+5. `docs/ASSET_DIRECTION.md` + `docs/reference/*.png` — 화면 모습(색·배치·연출)의 기준
 
 문서에 없는 것은 가장 단순한 방식으로 정하고 `docs/DECISIONS.md`에 한 줄로 적는다. 사용자에게 되묻지 않는다.
 
@@ -24,4 +25,5 @@
 - 각 시스템은 자체 `Update` 대신 `Tick(dt)`를 노출하고 `GameManager`가 순서대로 부른다.
 - 난수는 `Rng`에서만. AI 난수원과 연출 난수원을 분리한다.
 - 시야·소리·총알·밝기 판정은 `Physics2D` 대신 자체 격자 DDA. NavMesh·외부 AI 패키지 금지.
+- Qwen은 로컬 `llama-server`(`127.0.0.1`)에 `UnityWebRequest`로만 요청하고 대사·감정에만 쓴다. AI 상태·의심도·이동·공격에 되먹임 금지, 서버가 없어도 기본 대사로 동작.
 - 입력은 레거시 `UnityEngine.Input`. 상호작용 키는 Space.

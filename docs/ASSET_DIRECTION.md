@@ -23,7 +23,7 @@
 | 문 | 벽 사이의 얇은 금색 막대 | 닫힘 = 얇은 막대, 열림 = 90° 회전 막대 | FN-MAP-02 |
 | 창문 | 벽 중간의 흰 직사각형 | `W` 타일: 시야 투과, 이동·총알 차단 | FN-COM-02 |
 | 전투 연출 | 총구 화염, 노란 탄 궤적, 바닥 탄피, 피 웅덩이, 쓰러진 시체 | 궤적선 0.1초, 총구 화염 0.05초, 탄피·혈흔·시체는 미션 동안 남음 | FN-COM-04 |
-| 적 대사 | 머리 위 흰 글씨 짧은 외침 | 상태가 바뀔 때 한 줄 대사 2초 표시(?/! 아이콘과 함께) | FN-UI-07 |
+| 적 대사 | 머리 위 짧은 외침(감정별 색: 의심·긴장 흰색, 놀람 노랑, 분노 빨강, 안도 회색) | 상태가 바뀌거나 이벤트를 인지할 때 20자 이내 한 줄 대사 2초 표시(?/! 아이콘과 함께) | FN-UI-07, FN-BRK-04 |
 | 조준선 | 가운데가 빈 4갈래 꺾쇠 | 흰색 꺾쇠, 사격·이동 시 벌어짐(표시만, 명중률에는 영향 없음) | FN-UI-08 |
 | HUD | 좌하단에 세로로 묶인 패널 하나 | 아래 0.2 참고 | FN-UI-01 |
 | 상호작용 | 대상 근처에 `SPACE Open` 키 안내 | `[SPACE] 열기 / 닫기 / 자료 확보 / 해체` | FN-UI-09 |
@@ -200,6 +200,8 @@ Neo둥근모는 받은 파일이 소스뿐이고 `.ttf`가 없어 제외했다. 
 | `props/lamp.png` | 천장등 위치 표시 | 8×8 | 코드로 그림 | 노란 점 |
 | `obj/obj_target.png` | 목표 서류 | 32×32 | dyru 2배 | 노란 서류 |
 | `obj/obj_bomb.png` · `obj_exit.png` · `obj_decoy.png` | 폭탄·탈출 지점·유인탄 | 32×32 | 코드로 그림 | 빨간 상자 / 초록 윤곽 / 주황 원 |
+| `obj/obj_can.png` | 깡통(맵 문자 `k`) | 8×8 | 파일 없음 | 회색 원통 `#9A9AA0` |
+| `obj/obj_switch.png` | 조명 스위치(C) | 8×8 | 파일 없음 | 흰 사각 `#E8E4DA` |
 | `ui/crosshair.png` | 꺾쇠 조준선(1px 어두운 외곽선 포함) | 32×32 | Kenney Crosshair | 흰 꺾쇠 4개 |
 | `ui/icon_suspect.png` / `icon_detect.png` | `?` / `!` | 16×16 | Kenney Emotes 재채색 | 노랑 / 빨강 글자 |
 | `ui/icon_armor.png` | HUD 방탄 아이콘 | 16×16 | dyru 하늘색 재채색 | 단색 기호 |
@@ -213,7 +215,7 @@ Neo둥근모는 받은 파일이 소스뿐이고 `.ttf`가 없어 제외했다. 
 
 **캐릭터 사용법**: 모든 캐릭터는 오른쪽(+X)을 본다. dyru 캐릭터에는 총이 없으므로 `held_*`를 겹쳐 그린다. 기준점은 캐릭터 칸의 아래쪽 손 (25, 24)px이고, 총 그림의 왼쪽 끝이 손잡이다.
 
-3장의 이름이 있는 파일은 모두 들어 있다. "코드로 그림"은 외부 에셋이 없어 `AssetSource/`에서 만든 임시본이고, 팀이 그린 그림이 나오면 같은 이름으로 덮어쓴다. 화자를 `dialogue.json`에 더하면 `portraits/{speaker_id}.png`도 더한다.
+3장의 이름이 있는 파일은 "파일 없음" 표시 항목을 빼고 모두 들어 있다. "파일 없음"은 코드 생성으로 실행되며 같은 이름 파일을 넣으면 바뀐다. 떨어진 무기는 따로 그림 없이 `chars/held_*`를 쓴다. "코드로 그림"은 외부 에셋이 없어 `AssetSource/`에서 만든 임시본이고, 팀이 그린 그림이 나오면 같은 이름으로 덮어쓴다. 화자를 `dialogue.json`에 더하면 `portraits/{speaker_id}.png`도 더한다.
 
 ### 3.2 사운드 (`Audio/sfx/`, `Audio/bgm/`)
 
@@ -233,6 +235,9 @@ Neo둥근모는 받은 파일이 소스뿐이고 `.ttf`가 없어 제외했다. 
 | `sfx_alert` | 발각 경고음 | 0.50s | Interface `error_006` |
 | `sfx_bark` | 적 대사 표시음 | 0.12s | Interface `bong_001` |
 | `sfx_decoy` | 유인탄 | 0.27s | Impact `impactMetal_medium_000` |
+| `sfx_can` | 깡통 차는 소리 | 0.25s | 파일 없음(코드 생성 톤) |
+| `sfx_scream` | 적 비명 | 0.3s | 파일 없음(코드 생성 톤) |
+| `sfx_switch` | 조명 스위치(C) | 0.05s | 파일 없음(코드 생성 톤) |
 | `sfx_pickup` | 자료 확보 | 0.28s | RPG Audio `bookPlace1` |
 | `sfx_nvg_on` / `sfx_nvg_off` | 야간 투시 켜기·끄기 | 0.21s | Interface `maximize_003` / `minimize_003` |
 | `sfx_dialogue_next` | 대화 넘김 | 0.04s | Interface `select_001` |
@@ -240,6 +245,7 @@ Neo둥근모는 받은 파일이 소스뿐이고 `.ttf`가 없어 제외했다. 
 | `bgm_menu` | 메뉴 배경음(`Audio/bgm/`) | 루프 120s | Dark Cavern Ambient 002 |
 | `bgm_game` | 게임 배경음(`Audio/bgm/`) | 루프 31s | Abandoned passages `freezer` |
 | `amb_outdoor_night` (`.mp3`) | 야외 환경음(`Audio/bgm/`) | 루프 | Crickets ambient noise |
+| `amb_wind_gust` | 돌풍(`Audio/bgm/`, 야외에서 4초) | 4s | 파일 없음(코드 생성 톤) |
 
 소리는 파일 길이와 파형으로만 골랐고 귀로 듣지 않았다. Phase 7에서 들어 보고 어울리지 않으면 같은 팩의 다른 파일로 바꾼다.
 
