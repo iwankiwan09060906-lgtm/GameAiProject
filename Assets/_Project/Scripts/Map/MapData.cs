@@ -158,6 +158,20 @@ namespace GameAi
         public readonly List<Vector2Int> Cans = new List<Vector2Int>();
 
         // 스폰 번호의 위치를 찾는다. 없으면 false
+        // 같은 번호 칸이 여러 개면 occurrence번째(0부터). 스폰 번호가 한 자리라 적이 10명인 맵에서 쓴다
+        public bool TryGetSpawn(int number, int occurrence, out Vector2 position)
+        {
+            foreach (var sp in Spawns)
+            {
+                if (sp.Number != number) continue;
+                if (occurrence-- > 0) continue;
+                position = sp.Position;
+                return true;
+            }
+            position = Vector2.zero;
+            return false;
+        }
+
         public bool TryGetSpawn(int number, out Vector2 position)
         {
             foreach (var s in Spawns)

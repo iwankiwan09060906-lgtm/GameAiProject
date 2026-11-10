@@ -284,9 +284,12 @@ namespace GameAi // 게임의 AI 및 핵심 로직들을 묶어둔 네임스페�
         void SpawnEnemies(Transform world) // 맵 데이터를 기반으로 다수의 적을 생성하는 함수입니다.
         {
             int nextId = EntityIds.Player + 1; // 플레이어 다음 ID부터 적들에게 순차적으로 부여하기 위한 변수입니다.
+            var spawnUses = new Dictionary<int, int>();
             foreach (MapEnemy data in mapData.enemies) // JSON에 정의된 적 스폰 정보 목록을 순회합니다.
             {
-                if (!map.TryGetSpawn(data.spawn, out Vector2 position)) // 맵 격자상에서 해당 스폰 번호의 실제 좌표(position)를 찾아오는데 실패하면
+                spawnUses.TryGetValue(data.spawn, out int used);
+                spawnUses[data.spawn] = used + 1;
+                if (!map.TryGetSpawn(data.spawn, used, out Vector2 position))
                 {
                     Debug.LogError("[Map] 적 스폰 번호를 맵에서 찾을 수 없습니다: " + data.spawn); // 에러를 뿜고
                     continue; // 이 적은 건너뛰고 다음 적으로 넘어갑니다.

@@ -15,6 +15,7 @@ namespace GameAi
             if (scenario == "ai") yield return RunAi();
             else if (scenario == "mission") yield return RunMission();
             else if (scenario == "ui") yield return RunUi();
+            else if (scenario == "maps") yield return RunMaps();
             else yield return Run();
         }
 
@@ -257,6 +258,65 @@ namespace GameAi
             yield return Shot("menu_04_settings");
             menu.CloseSettings();
             Check("메뉴 화면을 모두 열었다", true);
+        }
+
+        IEnumerator LoadMap(string id)
+        {
+            SceneFlow.LoadGame(id);
+            game = null;
+            yield return null;
+            while (game == null || !game.IsReady)
+            {
+                game = FindAnyObjectByType<GameManager>();
+                yield return null;
+            }
+            game.SetInputSource(scripted, true);
+            float wait = 0f;
+            while (game.Dialogue.IsActive && wait < 30f) { wait += Time.unscaledDeltaTime; yield return null; }
+        }
+
+        // 맵 2~4: 불러오기, 적 순찰, 탈취·탈출 미션 성공(Phase 8)
+        IEnumerator RunMaps()
+        {
+            foreach (string id in new[] { "map_02", "map_03", "map_04" })
+            {
+                yield return LoadMap(id);
+                Log($"{id}: 적 {game.Enemies.Count}, 문 {game.Doors.Count}, 미션 {game.Mission.MissionType}, 밝기 격자 {(game.Light != null)}");
+                Vector2[] start = new Vector2[game.Enemies.Count];
+                for (int i = 0; i < start.Length; i++) start[i] = game.Enemies[i].Position;
+                yield return new WaitForSeconds(6f);
+                int moved = 0;
+                for (int i = 0; i < start.Length; i++) if (Vector2.Distance(start[i], game.Enemies[i].Position) > 1f) moved++;
+                Log($"  6초 동안 움직인 적 {moved}/{start.Length}");
+                Check(id + " 적이 순찰", moved >= start.Length / 2);
+                yield return Shot(id + "_play");
+                if (game.Mission.Objective != null)
+                {
+                    game.Player.SetPosition(FindFree(game.Mission.Objective.Position, game.Mission.Objective.Position));
+                    Aim(game.Mission.Objective.Position);
+                    yield return Frames(3);
+                    scripted.State.InteractPressed = true;
+                    yield return Frames(5);
+                    Check(id + " 자료 확보", game.Mission.Stolen);
+                    if (game.Mission.MissionType == "steal_exit")
+                    {
+                        Vector2 exit = FindExit();
+                        game.Player.SetPosition(exit);
+                        yield return Frames(5);
+                    }
+                    float wait = 0f;
+                    while (game.Mission.State != MissionManager.Result && wait < 15f) { wait += Time.unscaledDeltaTime; yield return null; }
+                    Log($"  결과 {game.Mission.Outcome}");
+                    Check(id + " 미션 성공", game.Mission.Outcome == MissionResult.Success);
+                }
+            }
+        }
+
+        Vector2 FindExit()
+        {
+            foreach (var r in FindObjectsByType<SpriteRenderer>(FindObjectsSortMode.None))
+                if (r.name == "obj_exit") return r.transform.position;
+            return game.Player.Position;
         }
 
         // 원하는 위치 근처에서 플레이어가 설 수 있는 칸(기준점까지 시야가 트인 곳)

@@ -9,6 +9,45 @@
       { "speaker": "accomplice", "text": "저택 안에 경비가 넷. 전부 정리하면 끝이야.", "choices": ["[...]"] },
       { "speaker": "accomplice", "text": "불 켜진 방에선 금방 들켜. 어두운 쪽으로 다녀.", "choices": ["알았어.", "[...]"] },
       { "speaker": "accomplice", "text": "할 수 있겠어?", "choices": ["[...]"] }
+    ] },
+    { "id": "map_01_debrief_success", "lines": [
+      { "speaker": "accomplice", "text": "깔끔했어. 아무도 연락 못 했을 거야.", "choices": ["[...]"] }
+    ] },
+    { "id": "map_01_debrief_fail", "lines": [
+      { "speaker": "accomplice", "text": "응답이 끊겼어... 다시 들어가 보자.", "choices": ["[...]"] }
+    ] },
+    { "id": "map_02_briefing", "lines": [
+      { "speaker": "accomplice", "text": "창고 사무실 금고에 자료가 있어. 가져오기만 하면 돼.", "choices": ["[...]"] },
+      { "speaker": "accomplice", "text": "상자가 많아서 숨기 좋지만, 탄피나 핏자국은 남기지 마. 놈들이 알아챈다.", "choices": ["알았어.", "[...]"] },
+      { "speaker": "player", "text": "문은 닫고 다닐게.", "choices": ["[...]"] }
+    ] },
+    { "id": "map_02_debrief_success", "lines": [
+      { "speaker": "accomplice", "text": "자료 확인했어. 다음은 사무동이야.", "choices": ["[...]"] }
+    ] },
+    { "id": "map_02_debrief_fail", "lines": [
+      { "speaker": "accomplice", "text": "들켰어. 경계가 풀리면 다시 가자.", "choices": ["[...]"] }
+    ] },
+    { "id": "map_03_briefing", "lines": [
+      { "speaker": "accomplice", "text": "야간 사무동이야. 불이 거의 꺼져 있어.", "choices": ["[...]"] },
+      { "speaker": "accomplice", "text": "자료를 챙기면 마당 북쪽 탈출 지점으로 나와. 거기까지 와야 끝이야.", "choices": ["알았어.", "[...]"] },
+      { "speaker": "accomplice", "text": "바람이 불 때는 발소리가 묻혀. 그때 움직여.", "choices": ["[...]"] }
+    ] },
+    { "id": "map_03_debrief_success", "lines": [
+      { "speaker": "accomplice", "text": "무사히 나왔네. 마지막 하나 남았어.", "choices": ["[...]"] }
+    ] },
+    { "id": "map_03_debrief_fail", "lines": [
+      { "speaker": "accomplice", "text": "탈출로가 막혔어. 다시 짜 보자.", "choices": ["[...]"] }
+    ] },
+    { "id": "map_04_briefing", "lines": [
+      { "speaker": "accomplice", "text": "본거지야. 경비 열 명, 소총병이 넷.", "choices": ["[...]"] },
+      { "speaker": "accomplice", "text": "소총병은 무전으로 전부 부른다. 먼저 조용히 줄여.", "choices": ["알았어.", "[...]"] },
+      { "speaker": "player", "text": "끝내고 올게.", "choices": ["[...]"] }
+    ] },
+    { "id": "map_04_debrief_success", "lines": [
+      { "speaker": "accomplice", "text": "끝났어. 이제 아무도 우릴 못 쫓아.", "choices": ["[...]"] }
+    ] },
+    { "id": "map_04_debrief_fail", "lines": [
+      { "speaker": "accomplice", "text": "너무 많았어. 숨 고르고 다시 가.", "choices": ["[...]"] }
     ] }
   ]
 }
