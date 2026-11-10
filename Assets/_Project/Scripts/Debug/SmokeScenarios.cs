@@ -16,6 +16,7 @@ namespace GameAi
             else if (scenario == "mission") yield return RunMission();
             else if (scenario == "ui") yield return RunUi();
             else if (scenario == "maps") yield return RunMaps();
+            else if (scenario == "gadgets") yield return RunGadgets();
             else yield return Run();
         }
 
@@ -317,6 +318,54 @@ namespace GameAi
             foreach (var r in FindObjectsByType<SpriteRenderer>(FindObjectsSortMode.None))
                 if (r.name == "obj_exit") return r.transform.position;
             return game.Player.Position;
+        }
+
+        // 유인탄·야간 투시·조명 스위치(Phase 9)
+        IEnumerator RunGadgets()
+        {
+            yield return LoadMap("map_02");
+            // 조명 스위치: 첫 번째 상호작용 가능한 스위치를 찾는다
+            LightSwitch sw = null;
+            foreach (var item in FindSwitches()) { sw = item; break; }
+            Check("맵 2에 조명 스위치", sw != null);
+            if (sw != null)
+            {
+                Vector2Int cell = game.Grid.WorldToCell(game.Light.Get(sw.LightIds[0]).Position);
+                float before = game.Light.At(cell);
+                game.Player.SetPosition(FindFree(sw.Position, sw.Position));
+                Aim(sw.Position);
+                yield return Frames(3);
+                scripted.State.InteractPressed = true;
+                yield return Frames(3);
+                float after = game.Light.At(cell);
+                Log($"스위치: 밝기 {before:F2} → {after:F2}, 켜짐 {sw.IsOn}");
+                Check("스위치로 조명을 끄면 그 칸이 어두워짐", !sw.IsOn && after < before);
+                yield return Shot("gadget_01_light_off");
+                scripted.State.InteractPressed = true;
+                yield return Frames(3);
+            }
+
+            // 야간 투시
+            scripted.State.NightVisionPressed = true;
+            yield return Frames(3);
+            yield return Shot("gadget_02_nvg");
+            scripted.State.NightVisionPressed = true;
+            yield return Frames(3);
+
+            // 유인탄: 적 근처 4m에 던진다
+            EnemyController target = game.Enemies[1];
+            game.Player.SetPosition(FindFree(target.Position - target.Facing * 9f, target.Position));
+            Aim(target.Position + target.Facing * 3f);
+            yield return Frames(3);
+            scripted.State.DecoyPressed = true;
+            yield return new WaitForSeconds(2f);
+            Log($"유인탄 뒤 적{target.Id} 상태 {target.State}, 의심도 {target.Suspicion.Value:F0}");
+            Check("유인탄 소리에 반응", target.State != EnemyState.Patrol || target.Suspicion.Value > 0f);
+        }
+
+        System.Collections.Generic.IEnumerable<LightSwitch> FindSwitches()
+        {
+            return game.Switches;
         }
 
         // 원하는 위치 근처에서 플레이어가 설 수 있는 칸(기준점까지 시야가 트인 곳)

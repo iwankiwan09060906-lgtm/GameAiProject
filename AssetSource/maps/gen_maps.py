@@ -151,6 +151,14 @@ def tune(b, low=0.38, high=0.52):
         else: break
     return b.bright_ratio()
 
+def add_switch(b, room, light_index):
+    # 방 문 안쪽 옆 칸에 그 방 조명 스위치(C)
+    dx, drow = room["door"]
+    row = drow - 1 if room["top"] else drow + 1
+    x = dx - 1 if b.walkable(dx - 1, row) else dx + 2
+    b.lights[light_index]["switch"] = b.world(x, row)
+    b.lights[light_index + 1]["switch"] = b.world(x, row)
+
 def room_lights(b, r, radius, intensity):
     # 방 하나에 조명 2개(가로로 1/3, 2/3 지점)
     y = (r["y0"] + r["y1"]) // 2
@@ -174,6 +182,7 @@ def map02():
     for i, r in enumerate(rooms):
         if i in (2,): continue                              # 조명 없는 방(어둠)
         room_lights(b, r, 6.5, 0.9)
+    add_switch(b, rooms[0], 0)
     for x in (16, 30, 44): b.light(x, cr + 1, 4.5, 0.8)
     kinds = ["guard", "rifleman", "guard", "guard", "rifleman", "guard"]
     for i, r in enumerate(rooms):
@@ -195,6 +204,7 @@ def map03():
     for i, r in enumerate(rooms):
         if i in (1, 4, 6): continue                          # 야간 사무동: 조명 적음
         room_lights(b, r, 7, 0.9)
+    add_switch(b, rooms[0], 0)
     for x in (14, 34, 52): b.light(x, cr + 1, 5, 0.8)
     kinds = ["guard", "rifleman", "guard", "rifleman", "guard", "guard", "rifleman"]
     for i, r in enumerate(rooms):
@@ -242,7 +252,8 @@ def dump(path, data):
             lines.append('  ]' + comma)
         elif k == "lights":
             lines.append('  "lights": [')
-            lines += ['    {"pos": %s, "radius_m": %g, "intensity": %g}%s' % (pt(L["pos"]), L["radius_m"], L["intensity"], ',' if j < len(v) - 1 else '') for j, L in enumerate(v)]
+            lines += ['    {"pos": %s, "radius_m": %g, "intensity": %g%s}%s' % (pt(L["pos"]), L["radius_m"], L["intensity"],
+                      (', "switch": %s' % pt(L["switch"])) if "switch" in L else '', ',' if j < len(v) - 1 else '') for j, L in enumerate(v)]
             lines.append('  ]' + comma)
         elif k == "open_doors":
             lines.append('  "open_doors": [%s]%s' % (", ".join(pt(p) for p in v), comma))

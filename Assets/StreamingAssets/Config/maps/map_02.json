@@ -91,8 +91,8 @@
     "wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww"
   ],
   "lights": [
-    {"pos": [14.5, 31.5], "radius_m": 8.1, "intensity": 0.9},
-    {"pos": [18.5, 31.5], "radius_m": 8.1, "intensity": 0.9},
+    {"pos": [14.5, 31.5], "radius_m": 8.1, "intensity": 0.9, "switch": [15.5, 23.5]},
+    {"pos": [18.5, 31.5], "radius_m": 8.1, "intensity": 0.9, "switch": [15.5, 23.5]},
     {"pos": [27.5, 31.5], "radius_m": 8.1, "intensity": 0.9},
     {"pos": [31.5, 31.5], "radius_m": 8.1, "intensity": 0.9},
     {"pos": [14.5, 9.5], "radius_m": 8.1, "intensity": 0.9},

@@ -75,6 +75,8 @@ namespace GameAi // 게임의 AI 및 핵심 로직들을 묶어둔 네임스페�
         MapLighting mapLighting;
         readonly List<LightSwitch> switches = new List<LightSwitch>();
         bool nightVisionOn;
+        DecoySystem decoys;
+        NightVision nightVision;
 
         // 값이 있으면 자동 재생(SmokeRunner)이 조준선을 직접 움직인다
         Vector2? crosshairOverride; // null이 아니면 플레이어 마우스 대신 시스템(또는 리플레이)이 조준선 위치를 강제합니다.
@@ -225,9 +227,15 @@ namespace GameAi // 게임의 AI 및 핵심 로직들을 묶어둔 네임스페�
             for (int i = 0; i < mapData.lights.Length; i++)
             {
                 if (!mapData.lights[i].HasSwitch) continue;
-                var sw = new LightSwitch(map.Grid, mapData.lights[i].SwitchPosition, i, lightGrid, i < lighting.Lamps.Count ? lighting.Lamps[i] : null);
-                switches.Add(sw);
-                interaction.Add(sw);
+                Vector2 at = mapData.lights[i].SwitchPosition;
+                LightSwitch sw = switches.Find(x => Vector2.Distance(x.Position, at) < 0.01f);
+                if (sw == null)
+                {
+                    sw = new LightSwitch(map.Grid, at, lightGrid);
+                    switches.Add(sw);
+                    interaction.Add(sw);
+                }
+                sw.Add(i, i < lighting.Lamps.Count ? lighting.Lamps[i] : null);
             }
 
             melee = new MeleeTakedown(map.Grid, weaponConfig.melee, aiConfig.gauge.detect, enemies); // 근접 공격 시스템을 초기화합니다.
@@ -466,6 +474,14 @@ namespace GameAi // 게임의 AI 및 핵심 로직들을 묶어둔 네임스페�
             var qwenConfig = ConfigLoader.Load<QwenConfig>("qwen.json");
             qwen = new QwenBarkSource(qwenConfig, barks, barkConfig, eventTable, BuildBarkContext, () => (Vector2)worldCamera.transform.position, config.fixed_seed_enabled);
             barks.LineSource = qwen;
+            barks.IsOutdoor = p => FloorAt(p) == FloorType.Outdoor;
+            barks.ChatterInterval = qwenConfig.chatter_interval_s;
+            barks.ReplyDelay = qwenConfig.reply_delay_s;
+            barks.ReplyRadius = qwenConfig.reply_radius_m;
+            decoys = new DecoySystem(map.Grid, weaponConfig.player.decoys, SpawnMarker(transform, "obj_decoy", Player.Position, SortOrder.Fx));
+            nightVision = new NightVision(ui, config.lighting, mapLighting.GlobalLight, mapLighting.Lamps, weaponConfig.player.nvg_battery_s, weaponConfig.player.nvg_recharge_per_s);
+            hud.Decoys = () => decoys.Count;
+            hud.Battery = () => nightVision.On ? nightVision.Ratio : -1f;
             director.SetLightSource(LightAt);
             director.LightInfo = id => (lightGrid.Get(id).Position, lightGrid.Get(id).Radius);
             hud.LightLevel = () => director.PlayerLight(Player.Position, GameClock.Time);
@@ -522,6 +538,8 @@ namespace GameAi // 게임의 AI 및 핵심 로직들을 묶어둔 네임스페�
                 case "search_end": return "수색 종료";
                 case "reload": return "재장전";
                 case "hit": return "피격";
+                case "IDLE_CHATTER": return "대기 중 혼잣말";
+                case "reply": return "동료의 말에 대답";
                 default: return when;
             }
         }
@@ -641,6 +659,7 @@ namespace GameAi // 게임의 AI 및 핵심 로직들을 묶어둔 네임스페�
         }
 
         public LightGrid Light { get { return lightGrid; } }
+        public IReadOnlyList<LightSwitch> Switches { get { return switches; } }
 
         void SpawnDoors(Transform world, MapLighting lighting) // 맵상의 문을 생성하는 함수입니다.
         {
@@ -690,6 +709,7 @@ namespace GameAi // 게임의 AI 및 핵심 로직들을 묶어둔 네임스페�
         {
             bool playerAlive = Player.Target.Alive && !mission.InputBlocked;
             GameClock.Advance(dt);
+            decoys.Tick(dt);
 
             // 1. 입력 읽기
             input = inputSource.Read(worldCamera); // 키보드/마우스 상태를 읽어와 구조체에 갱신합니다 (입력을 가장 먼저 처리해야 즉각 반응).
@@ -697,9 +717,14 @@ namespace GameAi // 게임의 AI 및 핵심 로직들을 묶어둔 네임스페�
             // 2. 플레이어 이동과 상호작용(죽었으면 입력을 막는다)
             if (playerAlive) // 살아있을 때만
             {
+                if (mission.Objective != null && mission.Objective.IsBomb && input.InteractHeld && interaction.Current == mission.Objective)
+                    input.Move = Vector2.zero;
                 Player.TickMove(dt, input); // 키 입력에 따라 플레이어의 위치를 움직입니다.
                 playerNoise.Tick(dt, Player.IsMoving, Player.Mode, Player.Position);
                 cans.Tick(Player.Position, Player.Mode, GameClock.Time);
+                if (input.DecoyPressed) decoys.Throw(Player.Position, input.AimWorld);
+                if (nightVision.Tick(dt, input.NightVisionPressed)) audioManager.Play(nightVision.On ? "sfx_nvg_on" : "sfx_nvg_off");
+                nightVisionOn = nightVision.On;
                 interaction.Tick(Player.Position, input.InteractPressed, EntityIds.Player); // 플레이어 위치 주변의 문이나 아이템과 상호작용 버튼(Space) 처리를 합니다.
             }
 

@@ -201,7 +201,8 @@ namespace GameAi
                 magTicks[i].enabled = i < magSize;
                 magTicks[i].color = i < mag ? Widgets.Text : Off;
             }
-            batteryText.text = Battery != null ? "NVG " + Mathf.RoundToInt(Battery() * 100f) + "%" : "";
+            float battery = Battery != null ? Battery() : -1f;
+            batteryText.text = battery >= 0f ? "NVG " + Mathf.RoundToInt(battery * 100f) + "%" : "";
             decoyText.text = Decoys != null ? "유인탄 " + Decoys() : "";
             MoveMode mode = Mode();
             string pose = !Moving() ? (mode == MoveMode.Crouch ? "stance_crouch" : "stance_idle") : mode == MoveMode.Run ? "stance_run" : mode == MoveMode.Crouch ? "stance_crouch" : "stance_walk";

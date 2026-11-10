@@ -556,6 +556,9 @@ namespace GameAi
             }
             Vector2 step = to / distance * Mathf.Min(distance, speed * dt);
             float radius = Target.Radius;
+            // 통로 충돌(7.16): 순찰 중인 적이 앞을 막은 동료에게 길을 비켜 옆으로 선다
+            if (stuckTime > world.Ai.nav.blocked_s && State == EnemyState.Patrol && AllyAhead(step, radius))
+                step = new Vector2(-step.y, step.x);
             Vector2 next = PlayerMotor.Move(grid, Position, step, radius);
             // 통로 충돌: 2초 이상 막히면 다른 개체와 겹침을 잠시 허용(7.16)
             if (stuckTime < world.Ai.passage.overlap_after_s)
@@ -568,6 +571,18 @@ namespace GameAi
             IsMoving = moved > 1e-4f;
             if (State != EnemyState.Engage || !playerSeen) FaceToward(Position + to, TurnDegPerSecond);
             View.Tick(dt, IsMoving ? CharacterPose.Walk : CharacterPose.Idle);
+        }
+
+        bool AllyAhead(Vector2 step, float radius)
+        {
+            Vector2 dir = step.normalized;
+            foreach (CombatTarget other in world.Targets)
+            {
+                if (other.Id == Id || !other.Alive || other.Team != Team.Enemy) continue;
+                Vector2 to = other.Position - Position;
+                if (to.magnitude < radius + other.Radius + 0.3f && Vector2.Dot(to, dir) > 0f) return true;
+            }
+            return false;
         }
 
         public void SetPosition(Vector2 p)

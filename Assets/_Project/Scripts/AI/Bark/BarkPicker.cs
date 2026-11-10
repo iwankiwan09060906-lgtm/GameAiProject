@@ -47,6 +47,13 @@ namespace GameAi
         public readonly List<(int enemyId, string text, string emotion, string source)> History = new List<(int, string, string, string)>();
         public int Spoken { get; private set; }
         public IBarkLineSource LineSource { get; set; }
+        // 잡담·대구(C)
+        public Func<Vector2, bool> IsOutdoor { get; set; } = p => false;
+        public float ChatterInterval { get; set; } = 60f;
+        public float ReplyDelay { get; set; } = 1f;
+        public float ReplyRadius { get; set; } = 10f;
+        readonly Dictionary<int, float> nextChatter = new Dictionary<int, float>();
+        readonly List<(float at, int enemyId)> replies = new List<(float, int)>();
 
         public void Init(AiDirector aiDirector, BarkConfig barkConfig, EventTypeTable eventTable, BarkTimingConfig barkTiming, BarkView barkView,
             Func<int, bool> visible, Func<Vector2> center, float merge, float centerM)
@@ -68,6 +75,7 @@ namespace GameAi
             EventBus.Subscribe<EnemyStateChangedEvent>(OnStateChanged);
             EventBus.Subscribe<DamageEvent>(OnDamage);
             EventBus.Subscribe<EnemyActionEvent>(OnAction);
+            EventBus.Subscribe<WorldEvent>(OnWorldEvent);
         }
 
         void OnDisable()
@@ -76,6 +84,7 @@ namespace GameAi
             EventBus.Unsubscribe<EnemyStateChangedEvent>(OnStateChanged);
             EventBus.Unsubscribe<DamageEvent>(OnDamage);
             EventBus.Unsubscribe<EnemyActionEvent>(OnAction);
+            EventBus.Unsubscribe<WorldEvent>(OnWorldEvent);
         }
 
         EnemyController Enemy(int id)
@@ -128,6 +137,18 @@ namespace GameAi
                 Offer(new BarkTrigger { EnemyId = e.enemyId, When = "reload", Time = e.time, DefaultEmotion = "긴장" }, 2);
         }
 
+        // 돌풍이 불면 야외에 있는 적 한 명이 잡담(점수 0, 단서 아님)
+        void OnWorldEvent(WorldEvent e)
+        {
+            if (e.code != "SND_WIND") return;
+            foreach (EnemyController enemy in director.Enemies)
+            {
+                if (enemy.IsDead || !isVisible(enemy.Id) || !IsOutdoor(enemy.Position)) continue;
+                Offer(new BarkTrigger { EnemyId = enemy.Id, When = "SND_WIND", Chatter = true, Time = e.time, Position = enemy.Position, DefaultEmotion = "안도" }, 1);
+                break;
+            }
+        }
+
         // 우선순위 = priority×10 + 긴장도×3 + 화면 중앙 6m 안 5 − 같은 추적에서 같은 코드 발화 수×5
         public static float Score(int priority, Tension tension, bool nearCenter, int repeatsInEpisode)
         {
@@ -163,7 +184,49 @@ namespace GameAi
                 pending.Remove(id);
                 Resolve(trigger, now);
             }
+            TickChatter(now);
             LineSource?.Tick(dt);
+        }
+
+        // 초소 대기·순찰 중 60초마다 낮은 우선순위로 혼잣말(C). 잠입 전 적 위치를 귀로 찾는 힌트
+        void TickChatter(float now)
+        {
+            foreach (EnemyController enemy in director.Enemies)
+            {
+                if (enemy.IsDead) continue;
+                if (!nextChatter.TryGetValue(enemy.Id, out float at))
+                {
+                    nextChatter[enemy.Id] = now + ChatterInterval * 0.5f + enemy.Id * 7f;
+                    continue;
+                }
+                if (now < at) continue;
+                nextChatter[enemy.Id] = now + ChatterInterval;
+                if (enemy.State != EnemyState.Patrol || !isVisible(enemy.Id)) continue;
+                Offer(new BarkTrigger { EnemyId = enemy.Id, When = "IDLE_CHATTER", Chatter = true, Time = now, Position = enemy.Position, DefaultEmotion = "안도" }, 1);
+            }
+            // 동료 대구: 앞 대사 1초 뒤 가까운 동료가 짧게 답한다(분기 없음)
+            for (int i = replies.Count - 1; i >= 0; i--)
+            {
+                if (now < replies[i].at) continue;
+                EnemyController enemy = Enemy(replies[i].enemyId);
+                replies.RemoveAt(i);
+                if (enemy == null || enemy.IsDead) continue;
+                string line = BarkFallback.Pick(config, "reply", SuspicionMeter.TensionKo(enemy.Tension), enemy.Persona, Recent(enemy.Id), Rng.Fx, out string emotion);
+                if (line != null) Say(enemy, new BarkTrigger { EnemyId = enemy.Id, When = "reply", Time = now }, line, string.IsNullOrEmpty(emotion) ? "의심" : emotion, "Reply");
+            }
+        }
+
+        void ScheduleReply(EnemyController speaker, float now)
+        {
+            EnemyController best = null;
+            float bestD = ReplyRadius;
+            foreach (EnemyController other in director.Enemies)
+            {
+                if (other == speaker || other.IsDead || !isVisible(other.Id)) continue;
+                float d = Vector2.Distance(other.Position, speaker.Position);
+                if (d <= bestD) { bestD = d; best = other; }
+            }
+            if (best != null) replies.Add((now + ReplyDelay, best.Id));
         }
 
         void Resolve(BarkTrigger trigger, float now)
@@ -202,6 +265,7 @@ namespace GameAi
             Spoken++;
             view.Say(enemy.Id, line, emotion);
             EventBus.Publish(new BarkEvent { enemyId = enemy.Id, text = line, emotion = emotion, source = source });
+            if (source != "Reply" && !trigger.Instant && (trigger.Chatter || trigger.When.StartsWith("SND_", StringComparison.Ordinal))) ScheduleReply(enemy, now);
             return true;
         }
 

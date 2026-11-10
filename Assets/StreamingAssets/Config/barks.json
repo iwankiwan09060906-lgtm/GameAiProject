@@ -1,13 +1,44 @@
 {
   "version": 1,
   "barks": [
-    { "when": "investigate_noise", "lines": ["뭐지, 방금 그 소리?", "누구 있어?"] },
-    { "when": "investigate_sight", "lines": ["저기... 뭐가 움직였나?", "잘못 봤나?"] },
-    { "when": "detect",            "lines": ["저기 있다!", "침입자다!", "거기 서!"] },
-    { "when": "hit",               "lines": ["윽!", "맞았다!"] },
-    { "when": "reload",            "lines": ["장전 중! 엄호해!"] },
-    { "when": "lost",              "lines": ["어디 숨었어...", "놓쳤다, 찾아!"] },
-    { "when": "search_end",        "lines": ["기분 탓인가.", "아무도 없군."] },
-    { "when": "alert_received",    "lines": ["연락 받았다, 간다."] }
-  ]
+    { "when": "investigate_noise", "lines": ["뭐지, 방금 그 소리?", "누구 있어?"], "emotion": "의심" },
+    { "when": "investigate_sight", "lines": ["저기... 뭐가 움직였나?", "잘못 봤나?"], "emotion": "의심" },
+    { "when": "detect", "lines": ["저기 있다!", "침입자다!", "거기 서!"], "emotion": "놀람" },
+    { "when": "hit", "lines": ["윽!", "맞았다!"], "emotion": "분노" },
+    { "when": "reload", "lines": ["장전 중! 엄호해!"], "emotion": "긴장" },
+    { "when": "lost", "lines": ["어디 숨었어...", "놓쳤다, 찾아!"], "emotion": "긴장" },
+    { "when": "search_end", "lines": ["기분 탓인가.", "아무도 없군."], "emotion": "안도" },
+    { "when": "alert_received", "lines": ["연락 받았다, 간다."], "emotion": "긴장" },
+    { "when": "SND_FOOTSTEP", "lines": ["발소리...?", "누가 걸어다니나?"], "emotion": "의심" },
+    { "when": "SND_DOOR", "lines": ["문소리?", "누가 문 열었나?"], "emotion": "의심" },
+    { "when": "SND_GUNSHOT", "lines": ["총소리다!", "어디서 쏜 거야!"], "emotion": "긴장" },
+    { "when": "SND_RELOAD", "lines": ["철컥... 뭐지?", "방금 그거 장전 소리?"], "emotion": "의심" },
+    { "when": "SND_SCREAM", "lines": ["비명이다!", "누가 당했어?"], "emotion": "긴장" },
+    { "when": "SND_CAN", "lines": ["뭐야, 깡통?", "누가 뭘 찼어?"], "emotion": "놀람" },
+    { "when": "SND_DECOY", "lines": ["저쪽에서 쇳소리가...", "뭐가 떨어졌나?"], "emotion": "의심" },
+    { "when": "SND_WIND", "lines": ["바람 한번 세네.", "으, 춥다."], "emotion": "안도" },
+    { "when": "CLU_CORPSE", "lines": ["이봐, 정신 차려!", "누가 이랬어…"], "emotion": "놀람" },
+    { "when": "CLU_DOOR_OPEN", "lines": ["이 문이 왜 열려 있지?", "누가 열어 뒀어?"], "emotion": "의심" },
+    { "when": "CLU_DOOR_CLOSED", "lines": ["문이 닫혀 있네...?", "열어 둔 문이었는데."], "emotion": "의심" },
+    { "when": "CLU_CASING", "lines": ["탄피? 누가 쐈어?", "바닥에 탄피가..."], "emotion": "의심" },
+    { "when": "CLU_BLOOD", "lines": ["피다...", "핏자국이 있어."], "emotion": "긴장" },
+    { "when": "CLU_RADIO_HELP", "lines": ["무전이다, 간다.", "지원 요청 확인."], "emotion": "긴장" },
+    { "when": "CLU_WEAPON", "lines": ["무기가 떨어져 있어.", "이건 우리 총인데..."], "emotion": "긴장" },
+    { "when": "CLU_NO_ANSWER", "lines": ["왜 응답이 없지?", "대답해, 들리나?"], "emotion": "긴장" },
+    { "when": "SIG_FLASH", "lines": ["방금 번쩍였어!", "저기 불빛이!"], "emotion": "놀람" },
+    { "when": "SIG_INTRUDER", "lines": ["저기 있다!", "침입자다!", "거기 서!"], "emotion": "놀람" },
+    { "when": "SIG_GLIMPSE", "lines": ["저기... 뭐가 움직였나?", "그림자가 지나갔어."], "emotion": "의심" },
+    { "when": "SIG_LIGHT_OFF", "lines": ["불이 왜 꺼져?", "누가 불 껐어?"], "emotion": "놀람" },
+    { "when": "SIG_ALLY_DOWN", "lines": ["쓰러졌다! 적이다!", "당했어! 조심해!"], "emotion": "분노" },
+    { "when": "SIG_DOOR_MOVE", "lines": ["문이 혼자 움직였어?", "거기 누구야?"], "emotion": "의심" },
+    { "when": "IDLE_CHATTER", "lines": ["오늘따라 조용하네.", "교대는 언제야...", "하품 나온다."], "emotion": "안도" },
+    { "when": "reply", "lines": ["그러게.", "나도 들었어.", "신경 쓰지 마."], "emotion": "의심" }
+  ],
+  "personas": [
+    { "id": "veteran",  "label": "결단한 고참",   "style": "짧고 단정적, 명령조" },
+    { "id": "rookie",   "label": "겁 많은 신참",  "style": "더듬거림, 혼잣말 많음" },
+    { "id": "grumpy",   "label": "투덜이",        "style": "짜증, 귀찮음" },
+    { "id": "cautious", "label": "신중한 감시병", "style": "차분, 상황 보고조" }
+  ],
+  "banned_words": ["AI", "모델", "플레이어", "게임", "씨발", "개새끼", "병신"]
 }
