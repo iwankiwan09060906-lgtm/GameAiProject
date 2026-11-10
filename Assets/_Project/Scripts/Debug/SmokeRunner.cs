@@ -9,7 +9,7 @@ namespace GameAi
 {
     // 빌드를 `-smoke <폴더>`로 실행하면 정해진 조작을 재생해 판정 결과와 스크린샷을 남기고 스스로 종료한다.
     // 사람 입력 없이 실제 화면과 게임 흐름을 확인하는 용도다. 일반 실행에서는 아무 일도 하지 않는다
-    public sealed class SmokeRunner : MonoBehaviour
+    public sealed partial class SmokeRunner : MonoBehaviour
     {
         // 키보드 대신 정해 둔 입력을 돌려주는 입력원. 한 번 읽히면 "누른 순간" 값은 꺼진다
         sealed class ScriptedInput : IInputSource
@@ -45,7 +45,10 @@ namespace GameAi
 
             var go = new GameObject("SmokeRunner");
             DontDestroyOnLoad(go);
-            go.AddComponent<SmokeRunner>().outputDir = args[index + 1];
+            var runner = go.AddComponent<SmokeRunner>();
+            runner.outputDir = args[index + 1];
+            int scenarioIndex = Array.IndexOf(args, "-scenario");
+            runner.scenario = scenarioIndex >= 0 && scenarioIndex + 1 < args.Length ? args[scenarioIndex + 1] : "phase3";
         }
 
         // 0.025초(40fps 미만)를 넘긴 프레임을 직전 로그 줄과 함께 남긴다
@@ -66,7 +69,7 @@ namespace GameAi
             }
 
             game.SetInputSource(scripted, true);
-            yield return Run();
+            yield return RunScenario();
 
             report.AddRange(hitchLines);
             File.WriteAllLines(Path.Combine(outputDir, "smoke_report.txt"), report);

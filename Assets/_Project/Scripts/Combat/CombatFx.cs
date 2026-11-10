@@ -100,6 +100,7 @@ namespace GameAi
             EventBus.Subscribe<ShotFiredEvent>(OnShot);
             EventBus.Subscribe<DamageEvent>(OnDamage);
             EventBus.Subscribe<DeathEvent>(OnDeath);
+            EventBus.Subscribe<DroppedWeaponEvent>(OnDroppedWeapon);
         }
 
         void OnDisable()
@@ -107,6 +108,7 @@ namespace GameAi
             EventBus.Unsubscribe<ShotFiredEvent>(OnShot);
             EventBus.Unsubscribe<DamageEvent>(OnDamage);
             EventBus.Unsubscribe<DeathEvent>(OnDeath);
+            EventBus.Unsubscribe<DroppedWeaponEvent>(OnDroppedWeapon);
         }
 
         SpriteRenderer CreateRenderer(string objectName, Material material, int order)
@@ -272,6 +274,14 @@ namespace GameAi
         }
 
         // 9단계: 시간에 맞춰 연출을 끄고 갱신한다. 대화·일시정지 중에도 불린다
+        // 시체 옆에 떨군 무기(단서 CLU_WEAPON)
+        void OnDroppedWeapon(DroppedWeaponEvent evt)
+        {
+            SpriteRenderer weapon = CreateRenderer("DroppedWeapon", catalog.SpriteLit, SortOrder.Corpse);
+            weapon.sprite = catalog.GetSprite(evt.weaponSprite);
+            weapon.transform.SetPositionAndRotation(evt.position, Quaternion.Euler(0f, 0f, Rng.Fx.Range(0f, 360f)));
+        }
+
         public void Tick(float dt)
         {
             // 궤적선·총구 화염: 시간이 다 되면 끈다

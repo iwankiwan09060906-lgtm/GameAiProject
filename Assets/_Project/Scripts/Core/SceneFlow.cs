@@ -10,6 +10,8 @@ namespace GameAi
 
         // 게임 씬이 시작할 때 읽는 맵 ID. 씬이 바뀌어도 값이 유지되도록 정적으로 둔다
         public static string SelectedMapId { get; set; } = "map_01";
+        // 미션 선택에서 고른 난이도(easy / normal / hard)
+        public static string SelectedDifficulty { get; set; } = "normal";
 
         public static void LoadGame(string mapId)
         {

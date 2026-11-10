@@ -118,6 +118,43 @@ namespace GameAi
         public bool flag;
     }
 
+    // 적 한 명이 이벤트를 인지했다(npc_perception). AI 판단은 여기서 끝나고 대사는 이것을 읽기만 한다
+    public struct PerceptionEvent
+    {
+        public int enemyId;
+        public int eventId;
+        public string code;
+        // 직접(true) / 무전(false)
+        public bool direct;
+        public Vector2 position;
+        public float strength;
+        public float contribution;
+        public float time;
+        public bool flag;
+        public bool isNew;
+    }
+
+    // 죽은 적이 무기를 떨궜다(그림 표시용)
+    public struct DroppedWeaponEvent
+    {
+        public Vector2 position;
+        public string weaponSprite;
+    }
+
+    // 적의 행동 알림(재장전 등). 대사 계기로만 쓴다
+    public struct EnemyActionEvent
+    {
+        public int enemyId;
+        public string action;
+        public float time;
+    }
+
+    // 전역 경계도가 바뀌었다(0 평상, 1 경계, 2 전투)
+    public struct GlobalAlertChangedEvent
+    {
+        public int level;
+    }
+
     // 조명이 꺼지거나 켜졌다(C)
     public struct LightChangedEvent
     {

@@ -52,6 +52,12 @@ namespace GameAi // 게임의 AI 및 핵심 로직들을 묶어둔 네임스페�
         PlayerNoise playerNoise;
         CanSystem cans;
         EventTypeTable eventTable;
+        AStarPathfinder nav;
+        AiDirector director;
+        BarkPicker barks;
+        BarkView barkView;
+        BarkConfig barkConfig;
+        float difficultyMult = 1f;
 
         // 값이 있으면 자동 재생(SmokeRunner)이 조준선을 직접 움직인다
         Vector2? crosshairOverride; // null이 아니면 플레이어 마우스 대신 시스템(또는 리플레이)이 조준선 위치를 강제합니다.
@@ -95,6 +101,8 @@ namespace GameAi // 게임의 AI 및 핵심 로직들을 묶어둔 네임스페�
             GameClock.Reset();
             eventTable = new EventTypeTable(ConfigLoader.Load<EventTypeConfig>("events.json"));
             WorldEvents.Reset(eventTable);
+            barkConfig = ConfigLoader.Load<BarkConfig>("barks.json");
+            difficultyMult = ConfigLoader.Load<DifficultyConfig>("difficulty.json").MultFor(SceneFlow.SelectedDifficulty);
             ApplyFramePacing(); // 프레임 속도 제한 및 수직동기를 적용하는 함수를 호출합니다.
 
             if (!LoadMap(SceneFlow.SelectedMapId)) return; // 선택된 맵 데이터를 불러옵니다. 실패하면 이 밑의 초기화는 진행하지 않습니다(return).
@@ -174,6 +182,9 @@ namespace GameAi // 게임의 AI 및 핵심 로직들을 묶어둔 네임스페�
             fx.Init(catalog, config); // 이펙트 관련 에셋과 설정을 초기화합니다.
 
             SpawnPlayer(world); // 플레이어 캐릭터를 맵에 생성합니다.
+            nav = new AStarPathfinder(map.Grid, config.view.enemy_radius_m);
+            director = gameObject.AddComponent<AiDirector>();
+            director.Init(map.Grid, nav, aiConfig, enemyConfig.move, eventTable, targets, doors, Player, difficultyMult);
             SpawnEnemies(world); // 적 캐릭터들을 맵에 생성합니다.
             SpawnDoors(world, lighting); // 문 객체들을 맵에 생성하고 조명 시스템과 연결합니다.
 
@@ -203,6 +214,9 @@ namespace GameAi // 게임의 AI 및 핵심 로직들을 묶어둔 네임스페�
             cans = new CanSystem(map.Grid, map.Cans, aiConfig.clue.can_cooldown_s);
             SpawnCans(world);
             ApplyUsualOpenDoors();
+            barkView = new BarkView(ui, catalog, worldCamera, aiConfig.bark);
+            barks = gameObject.AddComponent<BarkPicker>();
+            barks.Init(director, barkConfig, eventTable, aiConfig.bark, barkView, IsEnemyOnScreen, () => (Vector2)worldCamera.transform.position, 0.5f, 6f);
         }
 
         // 플레이어: 맵의 P 칸에서 시작한다. id 0은 항상 플레이어
@@ -244,7 +258,7 @@ namespace GameAi // 게임의 AI 및 핵심 로직들을 묶어둔 네임스페�
                     Debug.LogError("[Map] 알 수 없는 적 종류입니다: " + data.type); // 에러를 뿜고
                     continue; // 건너뜁니다.
                 }
-                enemies.Add(SpawnEnemy(world, nextId++, type, position, FirstFacing(data, position))); // 적 하나를 스폰하는 함수를 호출하여 리스트에 추가하고, nextId를 1 올립니다.
+                enemies.Add(SpawnEnemy(world, nextId++, type, position, FirstFacing(data, position), data));
             }
         }
 
@@ -259,7 +273,7 @@ namespace GameAi // 게임의 AI 및 핵심 로직들을 묶어둔 네임스페�
             return Vector2.right; // 순찰 지점이 자기 자리이거나 없다면 기본적으로 오른쪽을 바라보게 합니다.
         }
 
-        EnemyController SpawnEnemy(Transform world, int id, EnemyTypeDef type, Vector2 position, Vector2 facing) // 개별 적 오브젝트를 세팅하여 생성하는 함수입니다.
+        EnemyController SpawnEnemy(Transform world, int id, EnemyTypeDef type, Vector2 position, Vector2 facing, MapEnemy data)
         {
             var target = new CombatTarget { Id = id, Team = Team.Enemy, Position = position, Radius = config.view.enemy_radius_m }; // 피격 판정용 적 객체 데이터를 만듭니다.
             targets.Add(target); // 전체 사격 대상 목록에 추가합니다 (플레이어가 쏠 때 판정 대상).
@@ -275,7 +289,12 @@ namespace GameAi // 게임의 AI 및 핵심 로직들을 묶어둔 네임스페�
             var health = go.AddComponent<Health>(); // 적 체력 관리 컴포넌트 추가.
             health.Init(target, type.hp, 0, view, config.fx.hit_flash_s, false, "corpse_" + type.sprite); // 적 체력 스탯 및 사망 시 시체 스프라이트 세팅 (방어력은 0).
             var enemy = go.AddComponent<EnemyController>(); // 적 AI 컨트롤러 컴포넌트 추가.
-            enemy.Init(target, health, view, facing); // 방금 만든 요소들과 바라보는 방향으로 AI를 묶어 초기화합니다.
+            var patrol = new Vector2[data.patrol.Length];
+            for (int i = 0; i < patrol.Length; i++) patrol[i] = data.patrol[i].Position;
+            enemy.Init(director, target, health, view, type, facing, patrol);
+            enemy.Persona = string.IsNullOrEmpty(data.persona) ? PersonaFor(enemies.Count) : data.persona;
+            enemy.Callsign = data.callsign ?? "";
+            director.Add(enemy);
             return enemy; // 다 만들어진 적 컨트롤러를 반환합니다.
         }
 
@@ -306,6 +325,31 @@ namespace GameAi // 게임의 AI 및 핵심 로직들을 묶어둔 네임스페�
                 if (door != null) door.SetUsualOpen();
                 else Debug.LogWarning("[Map] open_doors 위치에 문이 없습니다: " + point.Position);
             }
+        }
+
+        static readonly string[] Personas = { "veteran", "rookie", "grumpy", "cautious" };
+
+        static string PersonaFor(int index) { return Personas[index % Personas.Length]; }
+
+        // 플레이어 화면에 그려지는 적인지(시야 안 + 카메라 안)
+        bool IsEnemyOnScreen(int enemyId)
+        {
+            foreach (EnemyController enemy in enemies)
+            {
+                if (enemy.Id != enemyId) continue;
+                if (!enemy.Target.Alive || !vision.IsVisible(enemy.Position)) return false;
+                Vector3 v = worldCamera.WorldToViewportPoint(enemy.Position);
+                return v.x >= 0f && v.x <= 1f && v.y >= 0f && v.y <= 1f;
+            }
+            return false;
+        }
+
+        // 머리 위 아이콘: 0 없음, 1 ?(조사·수색·의심), 2 !(추격·교전)
+        int AwarenessIcon(EnemyController enemy)
+        {
+            if (enemy.State == EnemyState.Chase || enemy.State == EnemyState.Engage) return 2;
+            if (enemy.State == EnemyState.Investigate || enemy.State == EnemyState.Search || enemy.Gauge >= aiConfig.gauge.suspect) return 1;
+            return 0;
         }
 
         void SpawnDoors(Transform world, MapLighting lighting) // 맵상의 문을 생성하는 함수입니다.
@@ -369,8 +413,7 @@ namespace GameAi // 게임의 AI 및 핵심 로직들을 묶어둔 네임스페�
             }
 
             // 3. 소음은 Phase 4, 4~5. 감지·상태 전환은 Phase 5. 지금은 허수아비라 표시만 갱신한다
-            foreach (EnemyController enemy in enemies) // 맵상의 모든 적들을 순회합니다.
-                enemy.Tick(dt); // 적들의 AI(순찰, 추적, 조준 등)를 진행합니다. 플레이어가 움직인 다음이므로 플레이어의 최신 위치를 보고 반응할 수 있습니다.
+            director.Tick(dt);
 
             // 6. 공격·피해. 근접을 먼저 처리해 같은 프레임의 사격보다 우선한다
             if (playerAlive) // 공격 처리
@@ -407,6 +450,9 @@ namespace GameAi // 게임의 AI 및 핵심 로직들을 묶어둔 네임스페�
             }
             foreach (EnemyController enemy in enemies) // 적 객체를 순회하며
                 if (enemy.Target.Alive) enemy.View.SetVisible(vision.IsVisible(enemy.Target.Position)); // 살아있는 적이 플레이어 시야 안에 있을 때만 화면에 보이도록(SpriteRenderer On) 만듭니다.
+            barks.Tick(dt);
+            foreach (EnemyController enemy in enemies)
+                barkView.Tick(dt, enemy.Id, enemy.Position, IsEnemyOnScreen(enemy.Id), AwarenessIcon(enemy), enemy.Target.Alive);
 
             Player.TickView(dt); // 플레이어의 스프라이트 애니메이션(걷기, 조준 방향 회전 등)을 갱신합니다.
             fx.Tick(dt); // 피 흘림, 총구 섬광 등 특수효과 파티클의 타이머를 줄이고 갱신합니다.
