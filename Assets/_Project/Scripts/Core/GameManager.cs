@@ -49,6 +49,9 @@ namespace GameAi // 게임의 AI 및 핵심 로직들을 묶어둔 네임스페�
         InteractPrompt prompt; // 상호작용이 가능할 때 화면에 띄워주는 안내 문구(예: "Space로 열기") UI입니다.
         FilmGrain filmGrain; // 화면에 영화 같은 노이즈 효과를 주는 후처리 객체입니다.
         PerfOverlay perfOverlay; // 화면 구석에 성능 지표(FPS 등)를 띄워주는 UI 객체입니다.
+        PlayerNoise playerNoise;
+        CanSystem cans;
+        EventTypeTable eventTable;
 
         // 값이 있으면 자동 재생(SmokeRunner)이 조준선을 직접 움직인다
         Vector2? crosshairOverride; // null이 아니면 플레이어 마우스 대신 시스템(또는 리플레이)이 조준선 위치를 강제합니다.
@@ -89,6 +92,9 @@ namespace GameAi // 게임의 AI 및 핵심 로직들을 묶어둔 네임스페�
             enemyConfig = ConfigLoader.Load<EnemyConfig>("enemies.json"); // 적 설정 파일을 읽습니다.
             aiConfig = ConfigLoader.Load<AiConfig>("ai.json"); // AI 설정 파일을 읽습니다.
             Rng.Init(config.fixed_seed_enabled, config.fixed_seed); // 설정에 따라 랜덤(난수) 생성기의 시드를 고정하여 리플레이가 똑같이 재생되게 하거나 랜덤하게 만듭니다.
+            GameClock.Reset();
+            eventTable = new EventTypeTable(ConfigLoader.Load<EventTypeConfig>("events.json"));
+            WorldEvents.Reset(eventTable);
             ApplyFramePacing(); // 프레임 속도 제한 및 수직동기를 적용하는 함수를 호출합니다.
 
             if (!LoadMap(SceneFlow.SelectedMapId)) return; // 선택된 맵 데이터를 불러옵니다. 실패하면 이 밑의 초기화는 진행하지 않습니다(return).
@@ -193,6 +199,10 @@ namespace GameAi // 게임의 AI 및 핵심 로직들을 묶어둔 네임스페�
             crosshair = crosshairObject.gameObject.AddComponent<Crosshair>(); // 조준선 스크립트를 붙입니다.
             crosshair.Init(ui, catalog, config.crosshair); // 조준선 에셋과 설정을 초기화합니다.
             perfOverlay = new PerfOverlay(ui, catalog, perf); // 성능(FPS 등) 측정치를 띄우는 UI를 제일 위에 올립니다.
+            playerNoise = new PlayerNoise(map.Grid, config.player, aiConfig.hearing.floor_mult);
+            cans = new CanSystem(map.Grid, map.Cans, aiConfig.clue.can_cooldown_s);
+            SpawnCans(world);
+            ApplyUsualOpenDoors();
         }
 
         // 플레이어: 맵의 P 칸에서 시작한다. id 0은 항상 플레이어
@@ -270,6 +280,34 @@ namespace GameAi // 게임의 AI 및 핵심 로직들을 묶어둔 네임스페�
         }
 
         // 맵의 이어진 D 칸마다 문 하나. 문 그림 하나와 그림자 상자 하나를 달아 준다
+        // 깡통 그림(이동·시야·총알을 막지 않음)
+        void SpawnCans(Transform world)
+        {
+            Sprite sprite = catalog.GetSprite("obj_can");
+            for (int i = 0; i < cans.Count; i++)
+            {
+                var renderer = new GameObject("Can_" + i, typeof(SpriteRenderer)).GetComponent<SpriteRenderer>();
+                renderer.transform.SetParent(world, false);
+                renderer.transform.position = map.Grid.CellCenter(cans.CanCell(i));
+                renderer.sprite = sprite;
+                renderer.sharedMaterial = catalog.SpriteLit;
+                renderer.sortingOrder = SortOrder.FloorProp;
+            }
+        }
+
+        // 맵 open_doors에 적힌 문을 평소 열린 문으로 둔다
+        void ApplyUsualOpenDoors()
+        {
+            if (mapData.open_doors == null) return;
+            foreach (MapPoint point in mapData.open_doors)
+            {
+                Vector2Int cell = map.Grid.WorldToCell(point.Position);
+                Door door = doors.Find(d => d.Area.Contains(cell));
+                if (door != null) door.SetUsualOpen();
+                else Debug.LogWarning("[Map] open_doors 위치에 문이 없습니다: " + point.Position);
+            }
+        }
+
         void SpawnDoors(Transform world, MapLighting lighting) // 맵상의 문을 생성하는 함수입니다.
         {
             Sprite horizontal = catalog.GetSprite("door_closed"); // 가로로 닫힌 문 스프라이트.
@@ -316,6 +354,7 @@ namespace GameAi // 게임의 AI 및 핵심 로직들을 묶어둔 네임스페�
         void TickSimulation(float dt) // 게임 로직의 핵심 파이프라인. 여기서 실행 순서가 곧 이 게임의 물리/판정 규칙입니다.
         {
             bool playerAlive = Player.Target.Alive; // 플레이어가 살아있는지 확인합니다.
+            GameClock.Advance(dt);
 
             // 1. 입력 읽기
             input = inputSource.Read(worldCamera); // 키보드/마우스 상태를 읽어와 구조체에 갱신합니다 (입력을 가장 먼저 처리해야 즉각 반응).
@@ -324,6 +363,8 @@ namespace GameAi // 게임의 AI 및 핵심 로직들을 묶어둔 네임스페�
             if (playerAlive) // 살아있을 때만
             {
                 Player.TickMove(dt, input); // 키 입력에 따라 플레이어의 위치를 움직입니다.
+                playerNoise.Tick(dt, Player.IsMoving, Player.Mode, Player.Position);
+                cans.Tick(Player.Position, Player.Mode, GameClock.Time);
                 interaction.Tick(Player.Position, input.InteractPressed, EntityIds.Player); // 플레이어 위치 주변의 문이나 아이템과 상호작용 버튼(Space) 처리를 합니다.
             }
 

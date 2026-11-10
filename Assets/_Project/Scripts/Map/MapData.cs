@@ -32,6 +32,8 @@ namespace GameAi
 
         // 그림만 있는 장식 소품. 이동·시야 판정은 rows의 c·C 칸이 맡고, 이 목록은 화면에만 쓴다
         [OptionalKey] public MapProp[] props = new MapProp[0];
+        // 평소 열려 있는 문 위치(m). 시작할 때 열린 채로 놓이고 문 기대 상태의 기준이 된다(7.21)
+        [OptionalKey] public MapPoint[] open_doors = new MapPoint[0];
     }
 
     // 장식 소품 하나
@@ -75,6 +77,10 @@ namespace GameAi
 
         // 모니터 불빛처럼 작은 빛은 그림자를 끄고 위치 표시 점도 그리지 않는다
         public bool no_shadows;
+        // 이 조명을 끄고 켜는 스위치 위치(m). 비우면 스위치 없음(C)
+        public float[] @switch = new float[0];
+        public bool HasSwitch { get { return @switch != null && @switch.Length >= 2; } }
+        public Vector2 SwitchPosition { get { return HasSwitch ? new Vector2(@switch[0], @switch[1]) : Vector2.zero; } }
 
         public Vector2 Position { get { return new Vector2(pos[0], pos[1]); } }
     }
@@ -86,6 +92,9 @@ namespace GameAi
         public int spawn;
         public string type = "guard";
         public MapPoint[] patrol = new MapPoint[0];
+        // 상황 대사용 성격·호칭(7.22). 비우면 스폰 순서로 배정
+        public string persona = "";
+        public string callsign = "";
     }
 
     // 순찰 지점 하나. JsonUtility가 [[x,y]] 같은 중첩 배열을 못 읽어서 {"v":[x,y]}로 한 번 감싼다
@@ -101,14 +110,14 @@ namespace GameAi
     public static class MapJson
     {
         // "patrol": [[x,y],[x,y]] 덩어리와, 그 안의 [x,y] 한 쌍을 찾는 정규식
-        static readonly Regex PatrolBlock = new Regex("\"patrol\"\\s*:\\s*\\[((?:\\s*\\[[^\\]]*\\]\\s*,?)*)\\s*\\]");
+        static readonly Regex PatrolBlock = new Regex("\"(patrol|open_doors)\"\\s*:\\s*\\[((?:\\s*\\[[^\\]]*\\]\\s*,?)*)\\s*\\]");
         static readonly Regex Pair = new Regex("\\[([^\\]]*)\\]");
 
         // 파일 형식은 문서 그대로 두고, 읽기 직전에만 [[x,y]]를 [{"v":[x,y]}]로 바꾼다
         public static string Normalize(string json)
         {
             return PatrolBlock.Replace(json, m =>
-                "\"patrol\": [" + Pair.Replace(m.Groups[1].Value, p => "{\"v\":[" + p.Groups[1].Value + "]}") + "]");
+                "\"" + m.Groups[1].Value + "\": [" + Pair.Replace(m.Groups[2].Value, p => "{\"v\":[" + p.Groups[1].Value + "]}") + "]");
         }
 
         public static MapData Parse(string json, string label)
@@ -145,6 +154,8 @@ namespace GameAi
         public readonly List<Vector2Int> Foliage = new List<Vector2Int>();
         public readonly List<Vector2> Targets = new List<Vector2>();
         public readonly List<Vector2> Exits = new List<Vector2>();
+        // 깡통(`k`) 칸
+        public readonly List<Vector2Int> Cans = new List<Vector2Int>();
 
         // 스폰 번호의 위치를 찾는다. 없으면 false
         public bool TryGetSpawn(int number, out Vector2 position)
@@ -268,6 +279,7 @@ namespace GameAi
                     break;
                 case 'T': map.Targets.Add(center); break;
                 case 'X': map.Exits.Add(center); break;
+                case 'k': map.Cans.Add(new Vector2Int(x, y)); break;
                 default:
                     if (c >= '1' && c <= '9')
                         map.Spawns.Add(new EnemySpawn { Number = c - '0', Position = center });

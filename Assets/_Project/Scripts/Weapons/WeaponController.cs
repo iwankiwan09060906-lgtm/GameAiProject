@@ -42,7 +42,8 @@ namespace GameAi
                 PublishAmmo();
             }
 
-            if (input.ReloadPressed) Inventory.TryReload();
+            if (input.ReloadPressed && Inventory.TryReload())
+                WorldEvents.Raise("SND_RELOAD", position, ownerId);
 
             // 권총류는 누른 순간 한 발, 소총은 누르고 있는 동안 연사
             bool wantsFire = Inventory.Current.Def.auto ? input.FireHeld : input.FirePressed;
@@ -70,6 +71,8 @@ namespace GameAi
                 weaponId = weapon.id,
                 endPos = hit.End,
             });
+            // 총소리(7.21). 소음권총은 flag로 표시해 점수·대사 방식을 바꾼다
+            WorldEvents.Raise("SND_GUNSHOT", position, ownerId, -1, weapon.noise_radius_m, weapon.id == "silenced_pistol");
             PublishAmmo();
 
             if (hit.HitTarget)

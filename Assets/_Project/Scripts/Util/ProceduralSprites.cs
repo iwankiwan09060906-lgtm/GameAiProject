@@ -262,6 +262,16 @@ namespace GameAi
                     c = new Canvas(32, 32);
                     c.Frame(2, Hex(0x37, 0xC8, 0x71));
                     return c;
+                case "obj_can":
+                    c = new Canvas(8, 8);
+                    c.Rect(2, 1, 4, 6, Hex(0x9A, 0x9A, 0xA0));
+                    c.Rect(2, 5, 4, 1, Hex(0x6A, 0x6A, 0x70));
+                    return c;
+                case "obj_switch":
+                    c = new Canvas(8, 8);
+                    c.Rect(1, 1, 6, 6, Paper);
+                    c.Rect(3, 2, 2, 4, Hex(0x40, 0x40, 0x48));
+                    return c;
                 case "obj_decoy":
                     c = new Canvas(32, 32);
                     c.Circle(16f, 16f, 7f, Hex(0xFF, 0x9A, 0x3C));

@@ -77,6 +77,8 @@ namespace GameAi
             if (model == null || evt.targetId != target.Id || model.IsDead) return;
             model.Apply(evt.amount);
             view.Flash(flashSeconds);
+            // 적이 총에 맞으면 비명(근접 제압은 소리 없음, 7.5)
+            if (!isPlayer && evt.kind == DamageKind.Bullet) WorldEvents.Raise("SND_SCREAM", target.Position, target.Id);
             EventBus.Publish(new HealthChangedEvent { entityId = target.Id, hp = model.Hp, armor = model.Armor });
         }
 

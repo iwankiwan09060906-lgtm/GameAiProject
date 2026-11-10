@@ -7,7 +7,7 @@ namespace GameAi
     public enum FloorType { Wood, Tile, Carpet, Outdoor }
 
     // 레이가 무엇에 막히는지 고르는 값. 같은 칸이라도 시야·총알·빛이 다르게 막힌다
-    public enum RayMask { Sight, Bullet, Light }
+    public enum RayMask { Sight, Bullet, Light, Sound }
 
     // 칸 종류별 차단 규칙을 한곳에 모았다. 규칙을 바꿀 때는 이 파일만 고치면 된다
     public static class TileRules
@@ -29,6 +29,8 @@ namespace GameAi
         // 풀숲과 열린 문은 아무것도 막지 않는다.
         public static bool BlocksRay(TileType type, bool doorOpen, RayMask mask)
         {
+            // 소리는 막히지 않고 감쇠만 한다(SoundPropagation이 칸을 센다)
+            if (mask == RayMask.Sound) return false;
             switch (type)
             {
                 case TileType.Wall:

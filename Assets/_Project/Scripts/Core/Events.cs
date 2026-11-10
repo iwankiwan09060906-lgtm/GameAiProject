@@ -5,7 +5,7 @@ namespace GameAi
     // 시스템 사이를 오가는 이벤트 구조체 모음(5.2). 구조체라서 보내도 메모리 할당이 없다.
 
     // 소리의 종류. 소음 반경과 적의 반응이 종류에 따라 달라질 수 있다
-    public enum NoiseKind { Footstep, Shot, Decoy }
+    public enum NoiseKind { Footstep, Shot, Decoy, Door, Reload, Scream, Can }
 
     // 피해의 종류. 총알은 피 튀김 연출을 만들고 근접 제압은 만들지 않는다
     public enum DamageKind { Bullet, Melee }
@@ -94,6 +94,37 @@ namespace GameAi
     {
         public int enemyId;
         public string text;
+        public string emotion;
+        // Qwen / Cache / Fallback
+        public string source;
+    }
+
+    // 월드에서 일어난 사건 1건(7.21). 소리·단서·시야 이벤트를 모두 이 하나로 보낸다
+    public struct WorldEvent
+    {
+        public int eventId;
+        public string code;
+        public Vector2 position;
+        // 게임 시각(대화·일시정지 중 멈춤)
+        public float time;
+        // 발생 세기 0~1 (소리는 1)
+        public float intensity;
+        // 소리 반경(m). 소리가 아니면 0
+        public float radius;
+        public int sourceId;
+        // 관련 물체(시체·탄피·혈흔·조명 등). 없으면 -1
+        public int objectId;
+        // 소음권총 사격 등 이벤트별 보조 표시
+        public bool flag;
+    }
+
+    // 조명이 꺼지거나 켜졌다(C)
+    public struct LightChangedEvent
+    {
+        public int lightId;
+        public bool isOn;
+        public int actorId;
+        public float time;
     }
 
     // 문이 열리거나 닫혔다. 시야·밝기·길찾기가 받는다

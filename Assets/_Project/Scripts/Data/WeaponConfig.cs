@@ -68,21 +68,7 @@ namespace GameAi
         public float back_arc_deg = 120f;
     }
 
-    // ai.json. 지금은 근접 제압이 쓰는 게이지 값만 읽는다. 나머지는 Phase 5에서 더한다
-    [Serializable]
-    public class AiConfig
-    {
-        public int version = 2;
-        public GaugeConfig gauge = new GaugeConfig();
-    }
 
-    [Serializable]
-    public class GaugeConfig
-    {
-        // 의심(30)과 발견(100) 기준
-        public float suspect = 30f;
-        public float detect = 100f;
-    }
 
     // enemies.json: 적 종류별 수치(7.7)
     [Serializable]

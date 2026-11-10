@@ -94,6 +94,13 @@ namespace GameAi
 
         // 시야 부채꼴에 쏘는 레이 개수. 많을수록 정확하고 느리다
         public int vision_rays = 90;
+        // 발소리 반경(m)과 간격(초), 7.2
+        [OptionalKey] public float footstep_walk_m = 6f;
+        [OptionalKey] public float footstep_run_m = 9f;
+        [OptionalKey] public float footstep_crouch_m = 3f;
+        [OptionalKey] public float step_walk_s = 0.6f;
+        [OptionalKey] public float step_run_s = 0.4f;
+        [OptionalKey] public float step_crouch_s = 0.8f;
     }
 
     // 캐릭터 그림 배치. 모든 값은 몸 중심에서 본 거리(m)이고 오른쪽(+X)을 보는 기준이다

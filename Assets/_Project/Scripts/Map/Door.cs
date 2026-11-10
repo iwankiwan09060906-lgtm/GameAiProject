@@ -46,6 +46,32 @@ namespace GameAi
         // 열린 문 칸에 살아 있는 대상이 서 있으면 닫지 못한다
         public bool CanInteract { get { return !IsOpen || !IsOccupied(); } }
 
+        // 평소 상태(맵 open_doors). 문 기대 상태 단서의 기준(7.21)
+        public bool UsualOpen { get; private set; }
+        // 마지막으로 여닫은 개체. 아직 아무도 안 건드렸으면 -1
+        public int LastActorId { get; private set; } = -1;
+        // 마지막으로 상태가 바뀐 게임 시각
+        public float LastChangedTime { get; private set; } = float.NegativeInfinity;
+
+        // 맵이 정한 평소 열린 문을 소리·이벤트 없이 연다
+        public void SetUsualOpen()
+        {
+            UsualOpen = true;
+            SetCells(true);
+            shownOpen = true;
+            progress = 1f;
+            ApplyView();
+        }
+
+        // 열린 문은 빛을 막지 않으므로 그림자 상자도 함께 끈다
+        void SetCells(bool open)
+        {
+            for (int y = Area.yMin; y < Area.yMax; y++)
+                for (int x = Area.xMin; x < Area.xMax; x++)
+                    grid.SetDoorOpen(x, y, open);
+            shadow.enabled = !open;
+        }
+
         public void Init(int id, RectInt area, GridMap map, IReadOnlyList<CombatTarget> targets,
             SpriteRenderer renderer, ShadowCaster2D caster, Sprite horizontal, Sprite vertical)
         {
@@ -93,16 +119,14 @@ namespace GameAi
         public void Interact(int actorId)
         {
             bool open = !IsOpen;
-            for (int y = Area.yMin; y < Area.yMax; y++)
-                for (int x = Area.xMin; x < Area.xMax; x++)
-                    grid.SetDoorOpen(x, y, open);
-
-            // 열린 문은 빛을 막지 않으므로 그림자 상자를 끈다
-            shadow.enabled = !open;
+            SetCells(open);
+            LastActorId = actorId;
+            LastChangedTime = GameClock.Time;
 
             // 플레이어가 직접 연 문은 방금 본 것이니 바로 그림을 바꾼다
             RefreshView(actorId == EntityIds.Player);
-            EventBus.Publish(new DoorChangedEvent { doorId = Id, isOpen = open, actorId = actorId, time = Time.time });
+            EventBus.Publish(new DoorChangedEvent { doorId = Id, isOpen = open, actorId = actorId, time = GameClock.Time });
+            if (actorId == EntityIds.Player) WorldEvents.Raise("SND_DOOR", Position, actorId, Id);
         }
 
         // 보이는 문만 목표 상태를 실제 상태로 맞춘다. 시야 밖 문은 마지막으로 본 모습을 유지한다
