@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 0b2dbca2fe1e61c45b41363b7d53af5a
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - gameManager: {instanceID: 0}
+  - pistolImage: {fileID: 21300000, guid: af59afbfd58fad240815e40712dc5692, type: 3}
+  - silencedPistolImage: {fileID: 21300000, guid: 7943cb264e1ab8f4fbea61d8b6d53239, type: 3}
+  - rifleImage: {fileID: 21300000, guid: 0396c5ebc9880df459499039503dda1d, type: 3}
+  - smokeImage: {fileID: 21300000, guid: 4ec49e6716935ac48994ad6ce88c186e, type: 3}
+  - nvgImage: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

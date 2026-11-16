@@ -1,0 +1,2275 @@
+fileFormatVersion: 2
+guid: 3d2032bd1d88eca4bb00bd62e19d1584
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -959638257961090745
+    second: fancy_mansion_furnitureset_withshadow_0
+  - first:
+      213: 7030030330854121872
+    second: fancy_mansion_furnitureset_withshadow_1
+  - first:
+      213: -4325068161473071528
+    second: fancy_mansion_furnitureset_withshadow_2
+  - first:
+      213: -6928222372883233862
+    second: fancy_mansion_furnitureset_withshadow_3
+  - first:
+      213: -4412735838682752429
+    second: fancy_mansion_furnitureset_withshadow_4
+  - first:
+      213: 2387454520019719961
+    second: fancy_mansion_furnitureset_withshadow_5
+  - first:
+      213: 5047435163090220794
+    second: fancy_mansion_furnitureset_withshadow_6
+  - first:
+      213: -9061148596643819951
+    second: fancy_mansion_furnitureset_withshadow_7
+  - first:
+      213: -6071806417892156250
+    second: fancy_mansion_furnitureset_withshadow_8
+  - first:
+      213: -4584863459049349393
+    second: fancy_mansion_furnitureset_withshadow_9
+  - first:
+      213: -1303973675151909479
+    second: fancy_mansion_furnitureset_withshadow_10
+  - first:
+      213: -7534972012212887518
+    second: fancy_mansion_furnitureset_withshadow_11
+  - first:
+      213: -947387497940128537
+    second: fancy_mansion_furnitureset_withshadow_12
+  - first:
+      213: 2511829285168862568
+    second: fancy_mansion_furnitureset_withshadow_13
+  - first:
+      213: 1578750461939166583
+    second: fancy_mansion_furnitureset_withshadow_14
+  - first:
+      213: -5346217410010171422
+    second: fancy_mansion_furnitureset_withshadow_15
+  - first:
+      213: 3293452294475299653
+    second: fancy_mansion_furnitureset_withshadow_16
+  - first:
+      213: -2828824635055205682
+    second: fancy_mansion_furnitureset_withshadow_17
+  - first:
+      213: -4310630953717144103
+    second: fancy_mansion_furnitureset_withshadow_18
+  - first:
+      213: -5630893474660666543
+    second: fancy_mansion_furnitureset_withshadow_19
+  - first:
+      213: -6451758602763547145
+    second: fancy_mansion_furnitureset_withshadow_20
+  - first:
+      213: -4343101431135058355
+    second: fancy_mansion_furnitureset_withshadow_21
+  - first:
+      213: 391185301646421584
+    second: fancy_mansion_furnitureset_withshadow_22
+  - first:
+      213: 9004056447804634530
+    second: fancy_mansion_furnitureset_withshadow_23
+  - first:
+      213: -3504936458037412060
+    second: fancy_mansion_furnitureset_withshadow_24
+  - first:
+      213: -33245959456385480
+    second: fancy_mansion_furnitureset_withshadow_25
+  - first:
+      213: 718970775212048853
+    second: fancy_mansion_furnitureset_withshadow_26
+  - first:
+      213: 8247881385222603697
+    second: fancy_mansion_furnitureset_withshadow_27
+  - first:
+      213: -3562847854256878211
+    second: fancy_mansion_furnitureset_withshadow_28
+  - first:
+      213: 4087839651693919291
+    second: fancy_mansion_furnitureset_withshadow_29
+  - first:
+      213: 5005572065183359932
+    second: fancy_mansion_furnitureset_withshadow_30
+  - first:
+      213: 7175838903096364871
+    second: fancy_mansion_furnitureset_withshadow_31
+  - first:
+      213: 5239719398710169380
+    second: fancy_mansion_furnitureset_withshadow_32
+  - first:
+      213: -4627583292702956187
+    second: fancy_mansion_furnitureset_withshadow_33
+  - first:
+      213: -2780480664138194316
+    second: fancy_mansion_furnitureset_withshadow_34
+  - first:
+      213: -4990100162017099138
+    second: fancy_mansion_furnitureset_withshadow_35
+  - first:
+      213: -2516129878246811272
+    second: fancy_mansion_furnitureset_withshadow_36
+  - first:
+      213: 1600049178848961751
+    second: fancy_mansion_furnitureset_withshadow_37
+  - first:
+      213: -8777050149770415186
+    second: fancy_mansion_furnitureset_withshadow_38
+  - first:
+      213: -3192941139554079059
+    second: fancy_mansion_furnitureset_withshadow_39
+  - first:
+      213: 6781432620496246821
+    second: fancy_mansion_furnitureset_withshadow_40
+  - first:
+      213: 1912493526231467448
+    second: fancy_mansion_furnitureset_withshadow_41
+  - first:
+      213: 5995104811207182802
+    second: fancy_mansion_furnitureset_withshadow_42
+  - first:
+      213: -9195935903189612430
+    second: fancy_mansion_furnitureset_withshadow_43
+  - first:
+      213: -6213705689012300259
+    second: fancy_mansion_furnitureset_withshadow_44
+  - first:
+      213: -3626602952153406643
+    second: fancy_mansion_furnitureset_withshadow_45
+  - first:
+      213: 6537970162697025307
+    second: fancy_mansion_furnitureset_withshadow_46
+  - first:
+      213: 1015983773205745522
+    second: fancy_mansion_furnitureset_withshadow_47
+  - first:
+      213: 6708650854760141610
+    second: fancy_mansion_furnitureset_withshadow_48
+  - first:
+      213: -3656400531400575905
+    second: fancy_mansion_furnitureset_withshadow_49
+  - first:
+      213: -5442731369322541813
+    second: fancy_mansion_furnitureset_withshadow_50
+  - first:
+      213: 4706823761525850833
+    second: fancy_mansion_furnitureset_withshadow_51
+  - first:
+      213: 6448356117975709953
+    second: fancy_mansion_furnitureset_withshadow_52
+  - first:
+      213: -4557259024046434922
+    second: fancy_mansion_furnitureset_withshadow_53
+  - first:
+      213: 1967215434555108793
+    second: fancy_mansion_furnitureset_withshadow_54
+  - first:
+      213: 1705304317969671
+    second: fancy_mansion_furnitureset_withshadow_55
+  - first:
+      213: 2470195465560911804
+    second: fancy_mansion_furnitureset_withshadow_56
+  - first:
+      213: -678362500141466686
+    second: fancy_mansion_furnitureset_withshadow_57
+  - first:
+      213: 4442392235391537204
+    second: fancy_mansion_furnitureset_withshadow_58
+  - first:
+      213: -3874275631597763089
+    second: fancy_mansion_furnitureset_withshadow_59
+  - first:
+      213: 5589987182307534848
+    second: fancy_mansion_furnitureset_withshadow_60
+  - first:
+      213: -5301005649775223393
+    second: fancy_mansion_furnitureset_withshadow_61
+  - first:
+      213: 5445019728656371876
+    second: fancy_mansion_furnitureset_withshadow_62
+  - first:
+      213: -3404145685152381838
+    second: fancy_mansion_furnitureset_withshadow_63
+  - first:
+      213: -8024446581689327270
+    second: fancy_mansion_furnitureset_withshadow_64
+  - first:
+      213: 5958298433384955505
+    second: fancy_mansion_furnitureset_withshadow_65
+  - first:
+      213: 8343462494888083675
+    second: fancy_mansion_furnitureset_withshadow_66
+  - first:
+      213: 1841669571406612052
+    second: fancy_mansion_furnitureset_withshadow_67
+  - first:
+      213: -617510819351173882
+    second: fancy_mansion_furnitureset_withshadow_68
+  - first:
+      213: -8041092123961254687
+    second: fancy_mansion_furnitureset_withshadow_69
+  - first:
+      213: 7156732410409917640
+    second: fancy_mansion_furnitureset_withshadow_70
+  - first:
+      213: -4882818457756552045
+    second: fancy_mansion_furnitureset_withshadow_71
+  - first:
+      213: 4936577957038146323
+    second: fancy_mansion_furnitureset_withshadow_72
+  - first:
+      213: -5785494834687701686
+    second: fancy_mansion_furnitureset_withshadow_73
+  - first:
+      213: 1757718249013037891
+    second: fancy_mansion_furnitureset_withshadow_74
+  - first:
+      213: 3056805535273272551
+    second: fancy_mansion_furnitureset_withshadow_75
+  - first:
+      213: 4210809375124613071
+    second: fancy_mansion_furnitureset_withshadow_76
+  - first:
+      213: -9091593053288700107
+    second: fancy_mansion_furnitureset_withshadow_77
+  - first:
+      213: -3430904751393190398
+    second: fancy_mansion_furnitureset_withshadow_78
+  - first:
+      213: -1315739961963184830
+    second: fancy_mansion_furnitureset_withshadow_79
+  - first:
+      213: -4865798802862807341
+    second: fancy_mansion_furnitureset_withshadow_80
+  - first:
+      213: -4794147654807681916
+    second: fancy_mansion_furnitureset_withshadow_81
+  - first:
+      213: -3755529338319652184
+    second: fancy_mansion_furnitureset_withshadow_82
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: fancy_mansion_furnitureset_withshadow_0
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 416
+        width: 22
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 741ca59b61eaea2f0800000000000000
+      internalID: -959638257961090745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fancy_mansion_furnitureset_withshadow_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 416
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09128c6d65faf8160800000000000000
+      internalID: 7030030330854121872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fancy_mansion_furnitureset_withshadow_2
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 419
+        width: 20
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 856bb0e1c654af3c0800000000000000
+      internalID: -4325068161473071528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fancy_mansion_furnitureset_withshadow_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 415
+        width: 32
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab3816b85720adf90800000000000000
+      internalID: -6928222372883233862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fancy_mansion_furnitureset_withshadow_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 415
+        width: 32
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35adda76220d2c2c0800000000000000
+      internalID: -4412735838682752429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fancy_mansion_furnitureset_withshadow_5
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 415
+        width: 29
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9171d279c31f12120800000000000000
+      internalID: 2387454520019719961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fancy_mansion_furnitureset_withshadow_6
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 417
+        width: 58
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af6fec2d9871c0640800000000000000
+      internalID: 5047435163090220794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fancy_mansion_furnitureset_withshadow_7
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 417
+        width: 58
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15e04000c55504280800000000000000
+      internalID: -9061148596643819951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fancy_mansion_furnitureset_withshadow_8
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 417
+        width: 30
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6acd9949b3c9cbba0800000000000000
+      internalID: -6071806417892156250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fancy_mansion_furnitureset_withshadow_9
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 418
+        width: 20
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: feed1b3c9fa4f50c0800000000000000
+      internalID: -4584863459049349393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fancy_mansion_furnitureset_withshadow_10
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 418
+        width: 33
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99d1c18e9da57ede0800000000000000
+      internalID: -1303973675151909479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fancy_mansion_furnitureset_withshadow_11
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 383
+        width: 14
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2206a8b70e66e6790800000000000000
+      internalID: -7534972012212887518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fancy_mansion_furnitureset_withshadow_12
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 383
+        width: 12
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ece1a017143ad2f0800000000000000
+      internalID: -947387497940128537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fancy_mansion_furnitureset_withshadow_13
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 383
+        width: 22
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 865d9e63d6fcbd220800000000000000
+      internalID: 2511829285168862568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fancy_mansion_furnitureset_withshadow_14
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 383
+        width: 18
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77d2ed83e29d8e510800000000000000
+      internalID: 1578750461939166583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fancy_mansion_furnitureset_withshadow_15
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 387
+        width: 22
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e7b550579b6ec5b0800000000000000
+      internalID: -5346217410010171422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fancy_mansion_furnitureset_withshadow_16
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 387
+        width: 20
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54b35e09961b4bd20800000000000000
+      internalID: 3293452294475299653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fancy_mansion_furnitureset_withshadow_17
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 384
+        width: 34
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec219af6bfefdb8d0800000000000000
+      internalID: -2828824635055205682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fancy_mansion_furnitureset_withshadow_18
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 386
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d5e2ed7cff8d24c0800000000000000
+      internalID: -4310630953717144103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fancy_mansion_furnitureset_withshadow_19
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 383
+        width: 26
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15339c2f73c0bd1b0800000000000000
+      internalID: -5630893474660666543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fancy_mansion_furnitureset_withshadow_20
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 383
+        width: 26
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fd45b1dbbfb676a0800000000000000
+      internalID: -6451758602763547145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fancy_mansion_furnitureset_withshadow_21
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 383
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4644b552443ab3c0800000000000000
+      internalID: -4343101431135058355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fancy_mansion_furnitureset_withshadow_22
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 383
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05e2df195f4cd6500800000000000000
+      internalID: 391185301646421584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fancy_mansion_furnitureset_withshadow_23
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 383
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a5f5fc32a5d4fc70800000000000000
+      internalID: 9004056447804634530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fancy_mansion_furnitureset_withshadow_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 319
+        width: 49
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42f3d528cd6fb5fc0800000000000000
+      internalID: -3504936458037412060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fancy_mansion_furnitureset_withshadow_25
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 319
+        width: 34
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 836926cd9f2e98ff0800000000000000
+      internalID: -33245959456385480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fancy_mansion_furnitureset_withshadow_26
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 319
+        width: 18
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d1c66c5c1c4af900800000000000000
+      internalID: 718970775212048853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fancy_mansion_furnitureset_withshadow_27
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 352
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b300c3bb6c567270800000000000000
+      internalID: 8247881385222603697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fancy_mansion_furnitureset_withshadow_28
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 357
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7d814ad0c83e8ec0800000000000000
+      internalID: -3562847854256878211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fancy_mansion_furnitureset_withshadow_29
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 353
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3cf8f1418ceab830800000000000000
+      internalID: 4087839651693919291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fancy_mansion_furnitureset_withshadow_30
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 327
+        width: 18
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb36fdac54d577540800000000000000
+      internalID: 5005572065183359932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fancy_mansion_furnitureset_withshadow_31
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 329
+        width: 18
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74fcc709673b59360800000000000000
+      internalID: 7175838903096364871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fancy_mansion_furnitureset_withshadow_32
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 325
+        width: 18
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42fc7da280937b840800000000000000
+      internalID: 5239719398710169380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fancy_mansion_furnitureset_withshadow_33
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 352
+        width: 22
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56568e5638587cfb0800000000000000
+      internalID: -4627583292702956187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fancy_mansion_furnitureset_withshadow_34
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 352
+        width: 22
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 472633d419fb969d0800000000000000
+      internalID: -2780480664138194316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fancy_mansion_furnitureset_withshadow_35
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 352
+        width: 22
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e720a51675a9fbab0800000000000000
+      internalID: -4990100162017099138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fancy_mansion_furnitureset_withshadow_36
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 319
+        width: 18
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8791a5ee439e41dd0800000000000000
+      internalID: -2516129878246811272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fancy_mansion_furnitureset_withshadow_37
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 319
+        width: 18
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d4a2703044843610800000000000000
+      internalID: 1600049178848961751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fancy_mansion_furnitureset_withshadow_38
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 319
+        width: 22
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea3352f3467a13680800000000000000
+      internalID: -8777050149770415186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fancy_mansion_furnitureset_withshadow_39
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 319
+        width: 22
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: daee52453f460b3d0800000000000000
+      internalID: -3192941139554079059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fancy_mansion_furnitureset_withshadow_40
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 319
+        width: 19
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 528dcece90d7c1e50800000000000000
+      internalID: 6781432620496246821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fancy_mansion_furnitureset_withshadow_41
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 255
+        width: 64
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b5c242baba8a8a10800000000000000
+      internalID: 1912493526231467448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fancy_mansion_furnitureset_withshadow_42
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 255
+        width: 64
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d94d37ff04e23350800000000000000
+      internalID: 5995104811207182802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fancy_mansion_furnitureset_withshadow_43
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 255
+        width: 27
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2784f19a409716080800000000000000
+      internalID: -9195935903189612430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fancy_mansion_furnitureset_withshadow_44
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 256
+        width: 42
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d161993f89b74c9a0800000000000000
+      internalID: -6213705689012300259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fancy_mansion_furnitureset_withshadow_45
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 256
+        width: 42
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d43638f54d7bbadc0800000000000000
+      internalID: -3626602952153406643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fancy_mansion_furnitureset_withshadow_46
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 256
+        width: 42
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b17b8ab29398bba50800000000000000
+      internalID: 6537970162697025307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fancy_mansion_furnitureset_withshadow_47
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 255
+        width: 17
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27f4d7bdbdf791e00800000000000000
+      internalID: 1015983773205745522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fancy_mansion_furnitureset_withshadow_48
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 255
+        width: 22
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a235910986ae91d50800000000000000
+      internalID: 6708650854760141610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fancy_mansion_furnitureset_withshadow_49
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 159
+        width: 42
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f54b151d61bd14dc0800000000000000
+      internalID: -3656400531400575905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fancy_mansion_furnitureset_withshadow_50
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 159
+        width: 18
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0d87ab08a88774b0800000000000000
+      internalID: -5442731369322541813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fancy_mansion_furnitureset_withshadow_51
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 232
+        width: 17
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d2cd16f54ff15140800000000000000
+      internalID: 4706823761525850833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fancy_mansion_furnitureset_withshadow_52
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 232
+        width: 17
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 109b82579b92d7950800000000000000
+      internalID: 6448356117975709953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fancy_mansion_furnitureset_withshadow_53
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 231
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 695d442201d51c0c0800000000000000
+      internalID: -4557259024046434922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fancy_mansion_furnitureset_withshadow_54
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 159
+        width: 42
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bda255d304fc4b10800000000000000
+      internalID: 1967215434555108793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fancy_mansion_furnitureset_withshadow_55
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 159
+        width: 42
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7054b1a17fe060000800000000000000
+      internalID: 1705304317969671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fancy_mansion_furnitureset_withshadow_56
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 159
+        width: 42
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbfe98230b5e74220800000000000000
+      internalID: 2470195465560911804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fancy_mansion_furnitureset_withshadow_57
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 159
+        width: 18
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cb3f1676e8f596f0800000000000000
+      internalID: -678362500141466686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fancy_mansion_furnitureset_withshadow_58
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 200
+        width: 17
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4305777833c86ad30800000000000000
+      internalID: 4442392235391537204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fancy_mansion_furnitureset_withshadow_59
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 160
+        width: 28
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe5c9a007decb3ac0800000000000000
+      internalID: -3874275631597763089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fancy_mansion_furnitureset_withshadow_60
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 159
+        width: 55
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0086d6ca9bf939d40800000000000000
+      internalID: 5589987182307534848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fancy_mansion_furnitureset_withshadow_61
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 96
+        width: 22
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9d1fcc827b0f66b0800000000000000
+      internalID: -5301005649775223393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fancy_mansion_furnitureset_withshadow_62
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 96
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a09e812898909b40800000000000000
+      internalID: 5445019728656371876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fancy_mansion_furnitureset_withshadow_63
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 96
+        width: 28
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27440d8098b02c0d0800000000000000
+      internalID: -3404145685152381838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fancy_mansion_furnitureset_withshadow_64
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 128
+        width: 11
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a516f4b695073a090800000000000000
+      internalID: -8024446581689327270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fancy_mansion_furnitureset_withshadow_65
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 128
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17e3da35bd020b250800000000000000
+      internalID: 5958298433384955505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fancy_mansion_furnitureset_withshadow_66
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 128
+        width: 11
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd0499cfeeee9c370800000000000000
+      internalID: 8343462494888083675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fancy_mansion_furnitureset_withshadow_67
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 128
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4564655b7bcee8910800000000000000
+      internalID: 1841669571406612052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fancy_mansion_furnitureset_withshadow_68
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 128
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 605ec977e292e67f0800000000000000
+      internalID: -617510819351173882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fancy_mansion_furnitureset_withshadow_69
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 96
+        width: 44
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ec1919115d486090800000000000000
+      internalID: -8041092123961254687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fancy_mansion_furnitureset_withshadow_70
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 96
+        width: 44
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cc12039532d15360800000000000000
+      internalID: 7156732410409917640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fancy_mansion_furnitureset_withshadow_71
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 96
+        width: 28
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39433b2ab7ebc3cb0800000000000000
+      internalID: -4882818457756552045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fancy_mansion_furnitureset_withshadow_72
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 96
+        width: 22
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 313484f2f7f328440800000000000000
+      internalID: 4936577957038146323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fancy_mansion_furnitureset_withshadow_73
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 96
+        width: 22
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4d0598c91bc5bfa0800000000000000
+      internalID: -5785494834687701686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fancy_mansion_furnitureset_withshadow_74
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 96
+        width: 22
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34bc4a74f6ba46810800000000000000
+      internalID: 1757718249013037891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fancy_mansion_furnitureset_withshadow_75
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 96
+        width: 38
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e4496d4074fb6a20800000000000000
+      internalID: 3056805535273272551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fancy_mansion_furnitureset_withshadow_76
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 0
+        width: 60
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc7ef2d11dccf6a30800000000000000
+      internalID: 4210809375124613071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fancy_mansion_furnitureset_withshadow_77
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 0
+        width: 60
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5376150994c24d180800000000000000
+      internalID: -9091593053288700107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fancy_mansion_furnitureset_withshadow_78
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 37
+        width: 66
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20e420b6e4af260d0800000000000000
+      internalID: -3430904751393190398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fancy_mansion_furnitureset_withshadow_79
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 6
+        width: 64
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24df566c97d8dbde0800000000000000
+      internalID: -1315739961963184830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fancy_mansion_furnitureset_withshadow_80
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 72
+        width: 17
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d667d6d4c5397cb0800000000000000
+      internalID: -4865798802862807341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fancy_mansion_furnitureset_withshadow_81
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 76
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4848a62cb14c77db0800000000000000
+      internalID: -4794147654807681916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fancy_mansion_furnitureset_withshadow_82
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 0
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8aa36e5e6fda1ebc0800000000000000
+      internalID: -3755529338319652184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      fancy_mansion_furnitureset_withshadow_0: -959638257961090745
+      fancy_mansion_furnitureset_withshadow_1: 7030030330854121872
+      fancy_mansion_furnitureset_withshadow_10: -1303973675151909479
+      fancy_mansion_furnitureset_withshadow_11: -7534972012212887518
+      fancy_mansion_furnitureset_withshadow_12: -947387497940128537
+      fancy_mansion_furnitureset_withshadow_13: 2511829285168862568
+      fancy_mansion_furnitureset_withshadow_14: 1578750461939166583
+      fancy_mansion_furnitureset_withshadow_15: -5346217410010171422
+      fancy_mansion_furnitureset_withshadow_16: 3293452294475299653
+      fancy_mansion_furnitureset_withshadow_17: -2828824635055205682
+      fancy_mansion_furnitureset_withshadow_18: -4310630953717144103
+      fancy_mansion_furnitureset_withshadow_19: -5630893474660666543
+      fancy_mansion_furnitureset_withshadow_2: -4325068161473071528
+      fancy_mansion_furnitureset_withshadow_20: -6451758602763547145
+      fancy_mansion_furnitureset_withshadow_21: -4343101431135058355
+      fancy_mansion_furnitureset_withshadow_22: 391185301646421584
+      fancy_mansion_furnitureset_withshadow_23: 9004056447804634530
+      fancy_mansion_furnitureset_withshadow_24: -3504936458037412060
+      fancy_mansion_furnitureset_withshadow_25: -33245959456385480
+      fancy_mansion_furnitureset_withshadow_26: 718970775212048853
+      fancy_mansion_furnitureset_withshadow_27: 8247881385222603697
+      fancy_mansion_furnitureset_withshadow_28: -3562847854256878211
+      fancy_mansion_furnitureset_withshadow_29: 4087839651693919291
+      fancy_mansion_furnitureset_withshadow_3: -6928222372883233862
+      fancy_mansion_furnitureset_withshadow_30: 5005572065183359932
+      fancy_mansion_furnitureset_withshadow_31: 7175838903096364871
+      fancy_mansion_furnitureset_withshadow_32: 5239719398710169380
+      fancy_mansion_furnitureset_withshadow_33: -4627583292702956187
+      fancy_mansion_furnitureset_withshadow_34: -2780480664138194316
+      fancy_mansion_furnitureset_withshadow_35: -4990100162017099138
+      fancy_mansion_furnitureset_withshadow_36: -2516129878246811272
+      fancy_mansion_furnitureset_withshadow_37: 1600049178848961751
+      fancy_mansion_furnitureset_withshadow_38: -8777050149770415186
+      fancy_mansion_furnitureset_withshadow_39: -3192941139554079059
+      fancy_mansion_furnitureset_withshadow_4: -4412735838682752429
+      fancy_mansion_furnitureset_withshadow_40: 6781432620496246821
+      fancy_mansion_furnitureset_withshadow_41: 1912493526231467448
+      fancy_mansion_furnitureset_withshadow_42: 5995104811207182802
+      fancy_mansion_furnitureset_withshadow_43: -9195935903189612430
+      fancy_mansion_furnitureset_withshadow_44: -6213705689012300259
+      fancy_mansion_furnitureset_withshadow_45: -3626602952153406643
+      fancy_mansion_furnitureset_withshadow_46: 6537970162697025307
+      fancy_mansion_furnitureset_withshadow_47: 1015983773205745522
+      fancy_mansion_furnitureset_withshadow_48: 6708650854760141610
+      fancy_mansion_furnitureset_withshadow_49: -3656400531400575905
+      fancy_mansion_furnitureset_withshadow_5: 2387454520019719961
+      fancy_mansion_furnitureset_withshadow_50: -5442731369322541813
+      fancy_mansion_furnitureset_withshadow_51: 4706823761525850833
+      fancy_mansion_furnitureset_withshadow_52: 6448356117975709953
+      fancy_mansion_furnitureset_withshadow_53: -4557259024046434922
+      fancy_mansion_furnitureset_withshadow_54: 1967215434555108793
+      fancy_mansion_furnitureset_withshadow_55: 1705304317969671
+      fancy_mansion_furnitureset_withshadow_56: 2470195465560911804
+      fancy_mansion_furnitureset_withshadow_57: -678362500141466686
+      fancy_mansion_furnitureset_withshadow_58: 4442392235391537204
+      fancy_mansion_furnitureset_withshadow_59: -3874275631597763089
+      fancy_mansion_furnitureset_withshadow_6: 5047435163090220794
+      fancy_mansion_furnitureset_withshadow_60: 5589987182307534848
+      fancy_mansion_furnitureset_withshadow_61: -5301005649775223393
+      fancy_mansion_furnitureset_withshadow_62: 5445019728656371876
+      fancy_mansion_furnitureset_withshadow_63: -3404145685152381838
+      fancy_mansion_furnitureset_withshadow_64: -8024446581689327270
+      fancy_mansion_furnitureset_withshadow_65: 5958298433384955505
+      fancy_mansion_furnitureset_withshadow_66: 8343462494888083675
+      fancy_mansion_furnitureset_withshadow_67: 1841669571406612052
+      fancy_mansion_furnitureset_withshadow_68: -617510819351173882
+      fancy_mansion_furnitureset_withshadow_69: -8041092123961254687
+      fancy_mansion_furnitureset_withshadow_7: -9061148596643819951
+      fancy_mansion_furnitureset_withshadow_70: 7156732410409917640
+      fancy_mansion_furnitureset_withshadow_71: -4882818457756552045
+      fancy_mansion_furnitureset_withshadow_72: 4936577957038146323
+      fancy_mansion_furnitureset_withshadow_73: -5785494834687701686
+      fancy_mansion_furnitureset_withshadow_74: 1757718249013037891
+      fancy_mansion_furnitureset_withshadow_75: 3056805535273272551
+      fancy_mansion_furnitureset_withshadow_76: 4210809375124613071
+      fancy_mansion_furnitureset_withshadow_77: -9091593053288700107
+      fancy_mansion_furnitureset_withshadow_78: -3430904751393190398
+      fancy_mansion_furnitureset_withshadow_79: -1315739961963184830
+      fancy_mansion_furnitureset_withshadow_8: -6071806417892156250
+      fancy_mansion_furnitureset_withshadow_80: -4865798802862807341
+      fancy_mansion_furnitureset_withshadow_81: -4794147654807681916
+      fancy_mansion_furnitureset_withshadow_82: -3755529338319652184
+      fancy_mansion_furnitureset_withshadow_9: -4584863459049349393
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

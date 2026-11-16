@@ -119,7 +119,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+<<<<<<< Updated upstream
 --- !u!1 &247141229
+=======
+--- !u!1 &2541281
+>>>>>>> Stashed changes
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -127,23 +131,36 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
+<<<<<<< Updated upstream
   - component: {fileID: 247141230}
   - component: {fileID: 247141233}
   - component: {fileID: 247141232}
   - component: {fileID: 247141231}
   m_Layer: 5
   m_Name: setting
+=======
+  - component: {fileID: 2541283}
+  - component: {fileID: 2541282}
+  m_Layer: 0
+  m_Name: Main Menu
+>>>>>>> Stashed changes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+<<<<<<< Updated upstream
 --- !u!224 &247141230
 RectTransform:
+=======
+--- !u!114 &2541282
+MonoBehaviour:
+>>>>>>> Stashed changes
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
   m_GameObject: {fileID: 247141229}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -467,6 +484,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 510703890}
   m_CullTransparentMesh: 1
+=======
+  m_GameObject: {fileID: 2541281}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08d54a9a1c5c47644a03681157bf3614, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MainMenuUI
+  hudFont: {fileID: 11400000, guid: dccec26223ad6c3488bca2d9c93a41d4, type: 2}
+  gameTitle: GAME TITLE
+  mapImages:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  mapNames:
+  - "\uB9F5 01 - \uC801 \uC18C\uD0D5"
+  - "\uB9F5 02 - \uC790\uB8CC \uD0C8\uCDE8"
+  - "\uB9F5 03 - \uD0C8\uCDE8 \uD6C4 \uD0C8\uCD9C"
+  - "\uB9F5 04 - \uCD5C\uC885 \uC18C\uD0D5"
+  mapSceneNames:
+  - 
+  - 
+  - 
+  - 
+  hoverSound: {fileID: 0}
+  clickSound: {fileID: 0}
+  mapSelectSound: {fileID: 0}
+  backSound: {fileID: 0}
+  soundVolume: 0.7
+--- !u!4 &2541283
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2541281}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 971.28186, y: 535.5967, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+>>>>>>> Stashed changes
 --- !u!1 &583765121
 GameObject:
   m_ObjectHideFlags: 0
@@ -604,6 +666,7 @@ MonoBehaviour:
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
   m_Version: 2
+<<<<<<< Updated upstream
 --- !u!1 &764453341
 GameObject:
   m_ObjectHideFlags: 0
@@ -1427,10 +1490,16 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1680688710}
   m_CullTransparentMesh: 1
+=======
+>>>>>>> Stashed changes
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 583765124}
+<<<<<<< Updated upstream
   - {fileID: 1640964076}
   - {fileID: 320609639}
+=======
+  - {fileID: 2541283}
+>>>>>>> Stashed changes

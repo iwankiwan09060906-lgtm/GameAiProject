@@ -1,0 +1,86 @@
+
+{
+  "version": "1.0",
+  "map_id": "corporate_hq_01",
+  "map_size_cells": {
+    "width": 133,
+    "height": 46
+  },
+  "grid": {
+    "cell_m": 0.5,
+    "asset_tile_m": 1.0,
+    "cells_per_asset_tile": 2
+  },
+  "coordinate_note": "x,y는 맵 좌상단 기준 0.5m 셀 좌표. 일반 오브젝트는 충돌 영역의 좌상단. surface_on은 가구 위에 올리는 장식.",
+  "objects": [
+    {"id":"desk_open_01","asset":"Props/Desks/office_desk/office_desk_front.png","x":3,"y":2,"room":"일반 사무실","blocks_movement":true},
+    {"id":"chair_open_01","asset":"Props/Seating/office_chair/office_chair_front.png","x":4,"y":4,"room":"일반 사무실","blocks_movement":true},
+    {"id":"computer_open_01","asset":"Props/Tech/computer/computer_front.png","x":4,"y":2,"room":"일반 사무실","blocks_movement":false,"surface_on":"desk_open_01"},
+    {"id":"cabinet_open_01","asset":"Props/Storage/filing_cabinet/filing_cabinet_front.png","x":13,"y":2,"room":"일반 사무실","blocks_movement":true},
+    {"id":"plant_open_01","asset":"Props/Decor/office_plant/office_plant_front.png","x":13,"y":7,"room":"일반 사무실","blocks_movement":true},
+
+    {"id":"desk_office_02","asset":"Props/Desks/office_desk/office_desk_front.png","x":20,"y":2,"room":"개별 사무실","blocks_movement":true},
+    {"id":"chair_office_02","asset":"Props/Seating/office_chair/office_chair_front.png","x":21,"y":4,"room":"개별 사무실","blocks_movement":true},
+    {"id":"computer_office_02","asset":"Props/Tech/computer/computer_front.png","x":21,"y":2,"room":"개별 사무실","blocks_movement":false,"surface_on":"desk_office_02"},
+
+    {"id":"cabinet_archive_01","asset":"Props/Storage/filing_cabinet/filing_cabinet_front.png","x":36,"y":2,"room":"문서 보관실","blocks_movement":true},
+    {"id":"cabinet_archive_02","asset":"Props/Storage/filing_cabinet/filing_cabinet_front.png","x":40,"y":2,"room":"문서 보관실","blocks_movement":true},
+    {"id":"plant_archive","asset":"Props/Decor/tall_plant/tall_plant_front.png","x":45,"y":7,"room":"문서 보관실","blocks_movement":true},
+
+    {"id":"desk_office_03","asset":"Props/Desks/office_desk/office_desk_front.png","x":52,"y":2,"room":"일반 사무실","blocks_movement":true},
+    {"id":"chair_office_03","asset":"Props/Seating/office_chair/office_chair_front.png","x":53,"y":4,"room":"일반 사무실","blocks_movement":true},
+    {"id":"computer_office_03","asset":"Props/Tech/computer/computer_front.png","x":53,"y":2,"room":"일반 사무실","blocks_movement":false,"surface_on":"desk_office_03"},
+    {"id":"desk_office_04","asset":"Props/Desks/office_desk/office_desk_front.png","x":58,"y":2,"room":"일반 사무실","blocks_movement":true},
+    {"id":"chair_office_04","asset":"Props/Seating/office_chair/office_chair_front.png","x":59,"y":4,"room":"일반 사무실","blocks_movement":true},
+    {"id":"computer_office_04","asset":"Props/Tech/computer/computer_front.png","x":59,"y":2,"room":"일반 사무실","blocks_movement":false,"surface_on":"desk_office_04"},
+
+    {"id":"conference_table_01","asset":"Props/Meeting/conference_table/conference_table_front.png","x":70,"y":2,"room":"회의실","blocks_movement":true},
+    {"id":"chair_meeting_01","asset":"Props/Seating/office_chair/office_chair_front.png","x":70,"y":6,"room":"회의실","blocks_movement":true},
+    {"id":"chair_meeting_02","asset":"Props/Seating/office_chair/office_chair_front.png","x":74,"y":6,"room":"회의실","blocks_movement":true},
+    {"id":"flipchart_meeting_01","asset":"Props/Meeting/flip_chart/flip_chart_front.png","x":79,"y":4,"room":"회의실","blocks_movement":true},
+
+    {"id":"water_break_01","asset":"Props/Kitchen/water_cooler/water_cooler_front.png","x":102,"y":2,"room":"휴게실","blocks_movement":true},
+    {"id":"trash_break_01","asset":"Props/Kitchen/trash_bin/trash_bin_front.png","x":106,"y":2,"room":"휴게실","blocks_movement":true},
+    {"id":"desk_break_01","asset":"Props/Desks/office_desk/office_desk_front.png","x":108,"y":5,"room":"휴게실","blocks_movement":true},
+    {"id":"mug_break_01","asset":"Props/Desk_Items/coffee_mug/coffee_mug_front.png","x":109,"y":5,"room":"휴게실","blocks_movement":false,"surface_on":"desk_break_01"},
+
+    {"id":"desk_boss","asset":"Props/Desks/office_desk/office_desk_front.png","x":119,"y":2,"room":"사장실","blocks_movement":true},
+    {"id":"chair_boss","asset":"Props/Seating/office_chair/office_chair_front.png","x":120,"y":4,"room":"사장실","blocks_movement":true},
+    {"id":"laptop_boss","asset":"Props/Tech/laptop/laptop_front.png","x":120,"y":2,"room":"사장실","blocks_movement":false,"surface_on":"desk_boss"},
+    {"id":"papers_boss","asset":"Props/Desk_Items/paper_stack/paper_stack_front.png","x":124,"y":2,"room":"사장실","blocks_movement":false,"surface_on":"desk_boss"},
+    {"id":"lamp_boss","asset":"Props/Desk_Items/desk_lamp/desk_lamp_front.png","x":124,"y":2,"room":"사장실","blocks_movement":false,"surface_on":"desk_boss"},
+    {"id":"plant_boss","asset":"Props/Decor/tall_plant/tall_plant_front.png","x":127,"y":7,"room":"사장실","blocks_movement":true},
+    {"id":"cabinet_boss","asset":"Props/Storage/filing_cabinet/filing_cabinet_front.png","x":127,"y":2,"room":"사장실","blocks_movement":true},
+
+    {"id":"desk_lower_01","asset":"Props/Desks/office_desk/office_desk_front.png","x":3,"y":29,"room":"일반 사무실","blocks_movement":true},
+    {"id":"chair_lower_01","asset":"Props/Seating/office_chair/office_chair_front.png","x":4,"y":31,"room":"일반 사무실","blocks_movement":true},
+    {"id":"computer_lower_01","asset":"Props/Tech/computer/computer_front.png","x":4,"y":29,"room":"일반 사무실","blocks_movement":false,"surface_on":"desk_lower_01"},
+
+    {"id":"cabinet_lower_02a","asset":"Props/Storage/filing_cabinet/filing_cabinet_front.png","x":20,"y":29,"room":"문서 보관실","blocks_movement":true},
+    {"id":"cabinet_lower_02b","asset":"Props/Storage/filing_cabinet/filing_cabinet_front.png","x":24,"y":29,"room":"문서 보관실","blocks_movement":true},
+
+    {"id":"desk_lower_03","asset":"Props/Desks/office_desk/office_desk_front.png","x":36,"y":29,"room":"개별 사무실","blocks_movement":true},
+    {"id":"chair_lower_03","asset":"Props/Seating/office_chair/office_chair_front.png","x":37,"y":31,"room":"개별 사무실","blocks_movement":true},
+    {"id":"computer_lower_03","asset":"Props/Tech/computer/computer_front.png","x":37,"y":29,"room":"개별 사무실","blocks_movement":false,"surface_on":"desk_lower_03"},
+
+    {"id":"conference_lower","asset":"Props/Meeting/conference_table/conference_table_front.png","x":53,"y":29,"room":"회의실","blocks_movement":true},
+    {"id":"chair_lower_meet1","asset":"Props/Seating/office_chair/office_chair_front.png","x":53,"y":33,"room":"회의실","blocks_movement":true},
+    {"id":"chair_lower_meet2","asset":"Props/Seating/office_chair/office_chair_front.png","x":57,"y":33,"room":"회의실","blocks_movement":true},
+
+    {"id":"desk_lower_05","asset":"Props/Desks/office_desk/office_desk_front.png","x":69,"y":29,"room":"일반 사무실","blocks_movement":true},
+    {"id":"chair_lower_05","asset":"Props/Seating/office_chair/office_chair_front.png","x":70,"y":31,"room":"일반 사무실","blocks_movement":true},
+    {"id":"computer_lower_05","asset":"Props/Tech/computer/computer_front.png","x":70,"y":29,"room":"일반 사무실","blocks_movement":false,"surface_on":"desk_lower_05"},
+
+    {"id":"cabinet_lower_06a","asset":"Props/Storage/filing_cabinet/filing_cabinet_front.png","x":87,"y":29,"room":"문서 보관실","blocks_movement":true},
+    {"id":"cabinet_lower_06b","asset":"Props/Storage/filing_cabinet/filing_cabinet_front.png","x":91,"y":29,"room":"문서 보관실","blocks_movement":true},
+
+    {"id":"water_lower_lounge","asset":"Props/Kitchen/water_cooler/water_cooler_front.png","x":102,"y":29,"room":"휴게실","blocks_movement":true},
+    {"id":"trash_lower_lounge","asset":"Props/Kitchen/trash_bin/trash_bin_front.png","x":106,"y":29,"room":"휴게실","blocks_movement":true},
+    {"id":"desk_lower_lounge","asset":"Props/Desks/office_desk/office_desk_front.png","x":108,"y":32,"room":"휴게실","blocks_movement":true},
+    {"id":"mug_lower_lounge","asset":"Props/Desk_Items/coffee_mug/coffee_mug_front.png","x":109,"y":32,"room":"휴게실","blocks_movement":false,"surface_on":"desk_lower_lounge"},
+
+    {"id":"desk_lower_boss","asset":"Props/Desks/office_desk/office_desk_front.png","x":119,"y":29,"room":"사장실","blocks_movement":true},
+    {"id":"chair_lower_boss","asset":"Props/Seating/office_chair/office_chair_front.png","x":120,"y":31,"room":"사장실","blocks_movement":true},
+    {"id":"laptop_lower_boss","asset":"Props/Tech/laptop/laptop_front.png","x":120,"y":29,"room":"사장실","blocks_movement":false,"surface_on":"desk_lower_boss"}
+  ]
+}
